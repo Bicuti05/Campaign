@@ -1,0 +1,145 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "DGS-01 | Hai thanh ngoài đường pin, ngàm còn giữ và hai cửa vòng dùng chung",
+  "author": "Codex + GD / research",
+  "notes": "Research mới7 vòng radius1,75/2thanh thẳng default/2Guide đầy đủ/7pin. Nguồn kín B cùng giữ Q/A; T nhận Q/A, AT nhận A/D, DG giữ D. Hai thanh H/V không pin,ngàm có vai trò retention. Q input mở sau T-90 nhưng vách pin Q->T còn đi qua hai thanh;hạ V-5 chỉ mở đoạn đầu,H1 mở đoạn sau nhưng ngàm V còn tồn tại trong khe thânQ. RútV-7 gỡ V/Guide rồi H1 mở đườngQ180;H vẫn giữ qua Guide để có thể trả H0 đóng đườngpinQ. Cửa T/AT phục vụ nhiều nguồn/return thật. Không thêm Guide vào thanh pin,không nửa ngàm,không radius khác/Stop/Bom/Chain/Booster. Thử hữu hạn hai hướng/deep/repeated/reinsert/relock/ablation và full target-until-release;không giả định thứ tự bắt buộc hoặc khó từ count. T270 partial thử đầu chưa cho đường pinQra đúng phía,savedhold;T-90 là prefix đúng được đo. Chưa bàn giao,chờ proof/CLI/finalreadback/preview/GD visual.",
+  "rings": [
+    {
+      "id": "Q",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -0.1,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "x": -4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180.1,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "T"
+        },
+        {
+          "angle": 90,
+          "target": "AT"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "Q"
+        },
+        {
+          "angle": 90,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "AT",
+      "x": -4.5854,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "D",
+      "x": -9.1708,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "AT"
+        }
+      ]
+    },
+    {
+      "id": "DG",
+      "x": -9.1708,
+      "y": 13.7562,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": 5.5,
+      "y": 0.9,
+      "angle": 0,
+      "color": "green",
+      "guides": [
+        {
+          "x": 5.5,
+          "y": 0.9,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "V",
+      "shape": "straight",
+      "x": 2.2,
+      "y": 1.3,
+      "angle": 90,
+      "color": "purple",
+      "guides": [
+        {
+          "x": 2.2,
+          "y": -1.2,
+          "angle": 90
+        }
+      ]
+    }
+  ]
+}

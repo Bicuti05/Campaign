@@ -1,0 +1,359 @@
+{
+  "format": "rotate-guide-retention-counterexample",
+  "version": 1,
+  "withGuide": {
+    "data": {
+      "solved": false,
+      "remaining": 10,
+      "initialContacts": [],
+      "trace": [
+        {
+          "part": "S",
+          "target": 0.8,
+          "pose": 0.7999999999999998,
+          "remaining": 10,
+          "began": true,
+          "events": [],
+          "removed": []
+        }
+      ],
+      "links": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "bindings": [
+        true
+      ],
+      "guides": [
+        {
+          "active": true,
+          "engaged": true
+        }
+      ],
+      "poses": {
+        "A": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "B": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "C": {
+          "pose": 90,
+          "solved": false,
+          "locked": false
+        },
+        "E": {
+          "pose": 90,
+          "solved": false,
+          "locked": true
+        },
+        "ET": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "EB": {
+          "pose": 0,
+          "solved": false,
+          "locked": false
+        },
+        "F": {
+          "pose": 90,
+          "solved": false,
+          "locked": true
+        },
+        "FT": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "FB": {
+          "pose": 0,
+          "solved": false,
+          "locked": false
+        },
+        "S": {
+          "pose": 0.7999999999999998,
+          "solved": false,
+          "locked": false
+        }
+      }
+    },
+    "bombs": [
+      {
+        "host": 9,
+        "active": true,
+        "center": {
+          "x": -3.15,
+          "y": 2.8354
+        }
+      }
+    ]
+  },
+  "withoutGuide": {
+    "data": {
+      "solved": false,
+      "remaining": 9,
+      "initialContacts": [],
+      "trace": [
+        {
+          "part": "S",
+          "target": 0.8,
+          "pose": 0.7999999999999998,
+          "remaining": 9,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_1"
+          ]
+        }
+      ],
+      "links": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "bindings": [],
+      "guides": [],
+      "poses": {
+        "A": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "B": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "C": {
+          "pose": 90,
+          "solved": false,
+          "locked": false
+        },
+        "E": {
+          "pose": 90,
+          "solved": false,
+          "locked": true
+        },
+        "ET": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "EB": {
+          "pose": 0,
+          "solved": false,
+          "locked": false
+        },
+        "F": {
+          "pose": 90,
+          "solved": false,
+          "locked": true
+        },
+        "FT": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "FB": {
+          "pose": 0,
+          "solved": false,
+          "locked": false
+        },
+        "S": {
+          "pose": 0.7999999999999998,
+          "solved": true,
+          "locked": false
+        }
+      }
+    },
+    "bombs": [
+      {
+        "host": -1,
+        "active": true,
+        "center": {
+          "x": -3.15,
+          "y": 2.8354
+        }
+      }
+    ]
+  },
+  "withoutGuideDeepFirst": {
+    "solved": true,
+    "remaining": 0,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "S",
+        "target": 2,
+        "pose": 1.0145848426080317,
+        "remaining": 8,
+        "began": true,
+        "events": [
+          {
+            "bomb": 0,
+            "target": 2,
+            "otherBomb": -1,
+            "colliderId": "bomb_1/object/000002",
+            "pose": 1.0145848426080317
+          }
+        ],
+        "explosion": {
+          "explosions": [
+            {
+              "bombId": "bomb_1",
+              "hostId": "slide_bar_1",
+              "position": {
+                "x": -3.364584842608032,
+                "y": 2.8354
+              }
+            }
+          ],
+          "removedParts": [
+            "slide_bar_1",
+            "ring_3"
+          ]
+        }
+      },
+      {
+        "part": "B",
+        "target": 360,
+        "pose": 348.74999999999903,
+        "remaining": 6,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2",
+          "ring_1"
+        ]
+      },
+      {
+        "part": "ET",
+        "target": 360,
+        "pose": 348.7499999999996,
+        "remaining": 5,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_5"
+        ]
+      },
+      {
+        "part": "EB",
+        "target": 180,
+        "pose": 168.7499999999993,
+        "remaining": 3,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_6",
+          "ring_4"
+        ]
+      },
+      {
+        "part": "FT",
+        "target": 360,
+        "pose": 348.74999999999983,
+        "remaining": 2,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_8"
+        ]
+      },
+      {
+        "part": "FB",
+        "target": 180,
+        "pose": 168.75000000000043,
+        "remaining": 0,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_9",
+          "ring_7"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 0,
+        "solved": true,
+        "locked": false
+      },
+      "B": {
+        "pose": 348.74999999999903,
+        "solved": true,
+        "locked": false
+      },
+      "C": {
+        "pose": 90,
+        "solved": true,
+        "locked": false
+      },
+      "E": {
+        "pose": 90,
+        "solved": true,
+        "locked": false
+      },
+      "ET": {
+        "pose": 348.7499999999996,
+        "solved": true,
+        "locked": false
+      },
+      "EB": {
+        "pose": 168.7499999999993,
+        "solved": true,
+        "locked": false
+      },
+      "F": {
+        "pose": 90,
+        "solved": true,
+        "locked": false
+      },
+      "FT": {
+        "pose": 348.74999999999983,
+        "solved": true,
+        "locked": false
+      },
+      "FB": {
+        "pose": 168.75000000000043,
+        "solved": true,
+        "locked": false
+      },
+      "S": {
+        "pose": 1.0145848426080317,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "scope": "Guide keeps carrier through shallow release after pin is off; long first gesture can still bomb without Guide. Local retention role, not globally necessary preparation."
+}

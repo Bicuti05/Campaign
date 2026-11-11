@@ -1,0 +1,366 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v16-detached-bomb-relay",
+      "name": "Nhả vòng mang bom — bom còn lại mở vòng kín",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Nhả vòng mang bom — bom còn lại mở vòng kín",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Vòng kín giữ pin tới vòng phải đang mang bom. Nhả vòng phải bằng quay CCW: vật mang rời bàn nhưng bom được tool giữ lại tại vị trí sau quay dưới dạng bom tự do. Lúc này vòng kín đã hết pin đi ra và được xoay; pin vật lý còn trên nó quét tới bom vừa để lại, phá vòng kín rồi nhả nguồn dưới. Không thêm chốt vì pin còn lại đã làm vai trò quét. Proof minh họa hai giai đoạn; không khẳng định đây là đường giải duy nhất. Bom gameplay cần thiết, không Booster/Chain. Đây là nghiên cứu hành vi detachment đã có trong Designer, chưa nghiệm thu mỹ thuật/độ khó.",
+        "rings": [
+          {
+            "id": "C",
+            "x": 0,
+            "y": 0,
+            "gapDir": 90,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 0,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "T"
+              }
+            ]
+          },
+          {
+            "id": "T",
+            "x": 4.5854,
+            "y": 0,
+            "gapDir": 90,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [],
+            "bomb": {
+              "x": 4.448010078577708,
+              "y": 2.2306629439454935,
+              "radius": 0.3
+            }
+          },
+          {
+            "id": "L",
+            "x": 0,
+            "y": -4.5854,
+            "gapDir": 270,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "C"
+              }
+            ]
+          }
+        ],
+        "sticks": []
+      },
+      "bombs": true,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 1,
+          "links": 2,
+          "pins": 2,
+          "stops": 0,
+          "closedRings": 1
+        }
+      },
+      "solverLog": "found with 2 drags after 9 explorations",
+      "moves": [
+        {
+          "part": "ring_2",
+          "target": 150
+        },
+        {
+          "part": "ring_1",
+          "target": 126
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 90,
+          "to": 150,
+          "direction": "CCW",
+          "removedNow": 1,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "ring_1",
+          "label": "R1",
+          "kind": "ring",
+          "from": 90,
+          "to": 126,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 6,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_2",
+            "pointer": 150,
+            "pose": 143.99999999999926,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 126,
+            "pose": 105.31247932796053,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": [
+              {
+                "target": "ring_1",
+                "pose": 105.31247932796053
+              }
+            ]
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_2",
+            "pointer": 150,
+            "pose": 143.99999999999932,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 126,
+            "pose": 105.31247932796056,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": [
+              {
+                "target": "ring_1",
+                "pose": 105.31247932796056
+              }
+            ]
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "L",
+          "angle": 90,
+          "logicMargin": 135
+        }
+      ],
+      "witness": {
+        "initial": {
+          "remaining": 3,
+          "bombs": [
+            {
+              "id": "bomb_1",
+              "host": 1,
+              "hostId": "ring_2",
+              "active": true,
+              "center": {
+                "x": 4.448010078577708,
+                "y": 2.2306629439454935
+              }
+            }
+          ],
+          "cLocked": true
+        },
+        "afterCarrier": {
+          "remaining": 2,
+          "bombs": [
+            {
+              "id": "bomb_1",
+              "host": -1,
+              "hostId": null,
+              "active": true,
+              "center": {
+                "x": 2.7000000000000153,
+                "y": 1.200000000000024
+              }
+            }
+          ],
+          "cLocked": false
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "T",
+              "pointer": 144,
+              "pose": 143.99999999999926,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2"
+              ],
+              "events": []
+            },
+            {
+              "part": "C",
+              "pointer": 120,
+              "pose": 105.31247932796053,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3"
+              ],
+              "events": [
+                {
+                  "bomb": 0,
+                  "target": "ring_1",
+                  "pose": 105.31247932796053
+                }
+              ]
+            }
+          ]
+        },
+        "clockwiseCarrier": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "T",
+              "pointer": -300,
+              "pose": -143.99999999999974,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "clockwiseRelay": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "T",
+              "pointer": -300,
+              "pose": -143.99999999999974,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2"
+              ],
+              "events": []
+            },
+            {
+              "part": "C",
+              "pointer": 30,
+              "pose": 75.39715877298813,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3"
+              ],
+              "events": [
+                {
+                  "bomb": 0,
+                  "target": "ring_1",
+                  "pose": 75.39715877298813
+                }
+              ]
+            }
+          ]
+        },
+        "cAfterCCWCarrier": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 27.348632812500142,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 90,
+            "to": 105.31247932796053,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "withoutBomb": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 3,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 0,
+              "links": 2,
+              "pins": 2,
+              "stops": 0,
+              "closedRings": 1
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 18,
+            "seconds": 0.02,
+            "log": "NOT FOUND after 18 explorations, 0 s (limits 500 nodes / 2 s, open 0)",
+            "route": []
+          }
+        },
+        "cBefore": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      }
+    }
+  ]
+}

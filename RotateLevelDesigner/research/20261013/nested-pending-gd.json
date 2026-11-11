@@ -1,0 +1,115 @@
+{
+  "status": "pending GD radius decision; not delivered to levels",
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "Thăm dò: nhả vòng ngoài rồi mở hai vòng lồng",
+    "author": "Codex ongoing research 20261013",
+    "notes": "Đề xuất nghiên cứu vòng lớn/nhỏ, chưa đưa vào thư viện Designer vì cần GD chốt việc mở rộng radius hiện hành.",
+    "rings": [
+      {
+        "id": "I",
+        "x": 0,
+        "y": 0,
+        "gapDir": 180,
+        "color": "orange",
+        "radius": 1.75,
+        "gap": 90,
+        "pins": [
+          {
+            "angle": 0,
+            "target": "O"
+          }
+        ]
+      },
+      {
+        "id": "O",
+        "x": 0,
+        "y": 0,
+        "gapDir": 270,
+        "color": "purple",
+        "radius": 2.8354,
+        "gap": 90,
+        "pins": [
+          {
+            "angle": 90,
+            "target": "T"
+          }
+        ]
+      },
+      {
+        "id": "T",
+        "x": 0,
+        "y": 5.6708,
+        "gapDir": 90,
+        "color": "blue",
+        "radius": 1.75,
+        "gap": 90,
+        "pins": []
+      }
+    ],
+    "sticks": []
+  },
+  "inspection": {
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 3,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 2,
+        "pins": 2,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "solution": {
+      "found": true,
+      "moves": [
+        {
+          "obj": 2,
+          "target": 234
+        },
+        {
+          "obj": 1,
+          "target": 321
+        }
+      ],
+      "log": "found with 2 drags after 7 explorations",
+      "nodes": 7,
+      "seconds": 0.006,
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_3",
+          "label": "R3",
+          "kind": "ring",
+          "from": 90,
+          "to": 234,
+          "direction": "CCW",
+          "removedNow": 1,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 270,
+          "to": 321,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ]
+    }
+  },
+  "resolution": {
+    "status": "GD authorized separate large/small research group",
+    "supersededBy": "study-20261013-v9-nested-source-relay",
+    "date": "2026-10-13"
+  }
+}

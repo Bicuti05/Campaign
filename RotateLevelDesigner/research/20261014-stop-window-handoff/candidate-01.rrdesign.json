@@ -1,0 +1,129 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SWH-01 | Đổi cửa để chốt ra, quay lại nguồn còn giữ",
+  "author": "Codex + GD / research",
+  "notes": "Thăm dò tổ hợp: A input mở, nhận C/D và có Stop0 dài1,6, chân trên vật liệu ngoài khe A90. Stop nằm trong khe R180; R nhận RR nên còn giữ sau RT/DB mở input. DB dùng chung D/R. Dọn RT/DB rồi đổi khe R150 để A quay cửaC180 rồiD270; quay lại R0 sau khi A/DB dọn. Pitch A/R4,2 có mục đích cản Stop gọn, các root1,75/pitch4,5854. Không Bom/Stick/Guide/Chain/Booster. Chưa đủ proof để giao, không coi cản một lần là chuẩn bị bắt buộc.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange",
+      "pins": [],
+      "stops": [
+        {
+          "angle": 0,
+          "length": 1.6
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        },
+        {
+          "angle": 0,
+          "target": "DB"
+        }
+      ]
+    },
+    {
+      "id": "DB",
+      "x": 4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "R",
+      "x": 4.2,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "RT"
+        },
+        {
+          "angle": 270,
+          "target": "DB"
+        }
+      ]
+    },
+    {
+      "id": "RT",
+      "x": 4.2,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "RR",
+      "x": 8.7854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R"
+        },
+        {
+          "angle": 270,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 8.7854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "red",
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

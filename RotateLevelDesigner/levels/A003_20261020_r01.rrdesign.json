@@ -1,0 +1,14 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "A003 r01 - Xoay mot vong, thao vong ben canh",
+  "author": "Codex - GD review 20/10/2026",
+  "notes": "Board A level 3, bản sinh lại r01 chờ GD review. Theo report_20Level.md: Practice + mở rộng tư duy, bốn vòng hở, không thêm cơ chế. Ý tưởng cần nhận ra: tháo nhánh dưới R4 để mở quyền xoay vòng lớn R1 ở giữa; xoay R1 làm vòng phía trên R3 rời, R1 vẫn ở lại; tiếp tục dùng R1 để tháo cặp cuối R1/R2. Cụm dọc ba nhánh thay khung kim cương nguồn; thay cây liên kết dạng đường bằng nút giữa ba nhánh và dùng hai cỡ vòng. Chỉ xoay, không vòng kín, chốt chặn, thanh, bom, Xích hay Booster. Số kéo của route kiểm không phải độ khó người chơi hoặc lời giải tối thiểu.",
+  "rings": [
+    { "id": "R1", "x": 0, "y": 0, "radius": 2, "gap": 90, "gapDir": 180, "color": "blue", "pins": [{ "id": "p1", "angle": 270, "length": 0.8354, "targets": ["R4"] }] },
+    { "id": "R2", "x": 4.6854, "y": 0, "radius": 1.6, "gap": 90, "gapDir": 0, "color": "orange", "pins": [{ "id": "p1", "angle": 180, "length": 0.8354, "targets": ["R1"] }] },
+    { "id": "R3", "x": 0, "y": 4.6854, "radius": 1.6, "gap": 90, "gapDir": 90, "color": "green", "pins": [{ "id": "p1", "angle": 270, "length": 0.8354, "targets": ["R1"] }] },
+    { "id": "R4", "x": 0, "y": -4.6854, "radius": 1.6, "gap": 90, "gapDir": 270, "color": "purple" }
+  ]
+}

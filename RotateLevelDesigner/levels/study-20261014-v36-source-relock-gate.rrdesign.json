@@ -1,0 +1,68 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Nhả pin — quay chốt — pin cắm lại",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Thanh ngang ở đầu cụm hai vòng thẳng cột. Dịch thanh một đoạn để nhả pin A nhưng ngàm giữ thanh. A quay CW dời chốt khỏi lối rút; pin cắm lại vào thanh, vách rắn của pin chạm thanh giới hạn đường quay. Rút thanh lần nữa nhả pin/ngàm, rồi A mới quay tiếp mở nguồn C. Hai chốt chặn hai hướng rút trực tiếp. Không bom/Booster/Chain; bản nghiên cứu chưa GD nghiệm thu bố cục/độ khó.",
+  "rings": [
+    {
+      "id": "C",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 180,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "S"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 120,
+          "length": 1.75
+        },
+        {
+          "angle": 45,
+          "length": 2.5
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 0.6,
+      "y": 2.8354,
+      "length": 2.2,
+      "angle": 180,
+      "color": "blue",
+      "guides": [
+        {
+          "x": 1.4,
+          "y": 2.8354,
+          "angle": 180
+        }
+      ]
+    }
+  ]
+}

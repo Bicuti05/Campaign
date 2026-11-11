@@ -1,0 +1,879 @@
+{
+  "status": "ready_to_apply",
+  "pack": "Tools\\RotateLevelDesigner\\levels\\A010_20261026_image-r01.rrpack.json",
+  "design": "Level 10",
+  "checks": {
+    "file": "Tools/RotateLevelDesigner/levels/A010_20261026_image-r01.rrpack.json",
+    "source": null,
+    "solutionSearch": false,
+    "checks": {
+      "nativeValidation": null,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 2,
+          "guides": 2,
+          "bombs": 0,
+          "links": 7,
+          "pins": 7,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pinMargins": [
+        {
+          "ring": "R1",
+          "margin": 46.19006999999999
+        },
+        {
+          "ring": "R1",
+          "margin": 136.190068
+        },
+        {
+          "ring": "R2",
+          "margin": 135
+        },
+        {
+          "ring": "R2",
+          "margin": 45
+        },
+        {
+          "ring": "R3",
+          "margin": 135
+        },
+        {
+          "ring": "R3",
+          "margin": 45
+        },
+        {
+          "ring": "R5",
+          "margin": 90
+        }
+      ],
+      "guides": [
+        {
+          "id": "guide_1",
+          "engaged": true
+        },
+        {
+          "id": "guide_2",
+          "engaged": true
+        }
+      ],
+      "links": [
+        {
+          "source": "ring_1",
+          "target": "ring_2",
+          "pin": "attachment.pin_1",
+          "active": true
+        },
+        {
+          "source": "ring_1",
+          "target": "ring_3",
+          "pin": "attachment.pin_2",
+          "active": true
+        },
+        {
+          "source": "ring_2",
+          "target": "ring_4",
+          "pin": "attachment.pin_3",
+          "active": true
+        },
+        {
+          "source": "ring_2",
+          "target": "slide_bar_1",
+          "pin": "attachment.pin_4",
+          "active": true
+        },
+        {
+          "source": "ring_3",
+          "target": "ring_4",
+          "pin": "attachment.pin_5",
+          "active": true
+        },
+        {
+          "source": "ring_3",
+          "target": "slide_bar_2",
+          "pin": "attachment.pin_6",
+          "active": true
+        },
+        {
+          "source": "ring_5",
+          "target": "ring_1",
+          "pin": "attachment.pin_7",
+          "active": true
+        }
+      ],
+      "colors": {
+        "near": [],
+        "sizeClash": []
+      },
+      "strictOVL": {
+        "source": [],
+        "current": [],
+        "newOrDeeper": []
+      },
+      "initialBombContacts": [],
+      "stopRoots": [],
+      "bars": [
+        {
+          "id": "S1",
+          "lengths": [
+            3.55,
+            1.55
+          ],
+          "isU": false,
+          "guides": 1
+        },
+        {
+          "id": "S2",
+          "lengths": [
+            3.55,
+            1.55
+          ],
+          "isU": false,
+          "guides": 1
+        }
+      ],
+      "roundtripRuntime": true
+    },
+    "errors": [],
+    "limitations": [
+      "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+      "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+      "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+    ],
+    "ok": true
+  },
+  "exactRebuild": true,
+  "route": {
+    "moves": [
+      {
+        "part": "slide_bar_2",
+        "target": -0.95
+      },
+      {
+        "part": "ring_4",
+        "target": 350
+      },
+      {
+        "part": "slide_bar_1",
+        "target": -1.9500000000000004
+      },
+      {
+        "part": "slide_bar_2",
+        "target": -1.7500000000000002
+      },
+      {
+        "part": "slide_bar_1",
+        "target": 0.9271362304687499
+      },
+      {
+        "part": "slide_bar_1",
+        "target": 1.7271362304687503
+      },
+      {
+        "part": "ring_3",
+        "target": 36
+      },
+      {
+        "part": "ring_4",
+        "target": 499.2499999999972
+      },
+      {
+        "part": "ring_3",
+        "target": 211.0466308593767
+      },
+      {
+        "part": "ring_2",
+        "target": -30
+      },
+      {
+        "part": "ring_1",
+        "target": 264
+      }
+    ],
+    "defaultFeel": {
+      "ok": true,
+      "solved": true,
+      "trace": [
+        {
+          "part": "slide_bar_2",
+          "target": -0.95,
+          "grab": {
+            "x": 1.646153846153846,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": -0.9499999999999997,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 350,
+          "grab": {
+            "x": -6.7093645435633915,
+            "y": 4.3571122801202185
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 94,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 348.4999991914211,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -1.9500000000000004,
+          "grab": {
+            "x": -1.646153846153846,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": -1.4228637695312498,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": -1.7500000000000002,
+          "grab": {
+            "x": 0.6961538461538463,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_2"
+          ],
+          "pose": -1.7500000000000004,
+          "remaining": 6,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 0.9271362304687499,
+          "grab": {
+            "x": -3.853633000300481,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 17,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 0.9271362304687498,
+          "remaining": 6,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 1.7271362304687503,
+          "grab": {
+            "x": -0.7190176156850963,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_1"
+          ],
+          "pose": 1.72713623046875,
+          "remaining": 5,
+          "links": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 36,
+          "grab": {
+            "x": 2.3706796089501627,
+            "y": 2.777145961456971
+          },
+          "grabBodySdf": -0.10484749984802469,
+          "selectable": 87,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 49.04663168933813,
+          "remaining": 5,
+          "links": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 499.2499999999972,
+          "grab": {
+            "x": -7.901506724761101,
+            "y": 1.2514757203218478
+          },
+          "grabBodySdf": -0.2499999999999991,
+          "selectable": 97,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_4"
+          ],
+          "pose": 498.31249979785184,
+          "remaining": 4,
+          "links": [
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 211.0466308593767,
+          "grab": {
+            "x": 2.0123116594048622,
+            "y": 1.8435655349597693
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 86,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_3"
+          ],
+          "pose": 204.29663106686544,
+          "remaining": 3,
+          "links": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_2",
+          "target": -30,
+          "grab": {
+            "x": -3.9945218953682735,
+            "y": 2.1045284632676537
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 87,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_2"
+          ],
+          "pose": -24.000000207490235,
+          "remaining": 2,
+          "links": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 264,
+          "grab": {
+            "x": -0.6293203910498373,
+            "y": 0.777145961456971
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 87,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_5",
+            "ring_1"
+          ],
+          "pose": 257.2500002938256,
+          "remaining": 0,
+          "links": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+    },
+    "analytic": {
+      "ok": true,
+      "solved": true,
+      "trace": [
+        {
+          "part": "slide_bar_2",
+          "target": -0.95,
+          "grab": {
+            "x": 1.646153846153846,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": -0.9499999999999997,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 350,
+          "grab": {
+            "x": -6.7093645435633915,
+            "y": 4.3571122801202185
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 94,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 349.9999991914211,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -1.9500000000000004,
+          "grab": {
+            "x": -1.646153846153846,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": -1.4228637695312498,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": -1.7500000000000002,
+          "grab": {
+            "x": 0.6961538461538463,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_2"
+          ],
+          "pose": -1.7500000000000004,
+          "remaining": 6,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 0.9271362304687499,
+          "grab": {
+            "x": -3.853633000300481,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 17,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 0.9271362304687498,
+          "remaining": 6,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 1.7271362304687503,
+          "grab": {
+            "x": -0.7190176156850963,
+            "y": 5
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 18,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_1"
+          ],
+          "pose": 1.72713623046875,
+          "remaining": 5,
+          "links": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 36,
+          "grab": {
+            "x": 2.3706796089501627,
+            "y": 2.777145961456971
+          },
+          "grabBodySdf": -0.10484749984802469,
+          "selectable": 87,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 49.04663168933813,
+          "remaining": 5,
+          "links": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 499.2499999999972,
+          "grab": {
+            "x": -7.956175162946186,
+            "y": 0.8362277061412299
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 96,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_4"
+          ],
+          "pose": 499.2499999999961,
+          "remaining": 4,
+          "links": [
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 211.0466308593767,
+          "grab": {
+            "x": 2.0123116594048622,
+            "y": 1.8435655349597693
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 86,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_3"
+          ],
+          "pose": 211.04663085937483,
+          "remaining": 3,
+          "links": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_2",
+          "target": -30,
+          "grab": {
+            "x": -3.9945218953682735,
+            "y": 2.1045284632676537
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 87,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_2"
+          ],
+          "pose": -29.99999999999971,
+          "remaining": 2,
+          "links": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 264,
+          "grab": {
+            "x": -0.6293203910498373,
+            "y": 0.777145961456971
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 87,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_5",
+            "ring_1"
+          ],
+          "pose": 263.9999999999992,
+          "remaining": 0,
+          "links": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+    },
+    "jitter": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "margin": {
+      "ring": 3,
+      "stick": 0.15
+    }
+  },
+  "selectable": [
+    {
+      "id": "ring_1",
+      "points": 87
+    },
+    {
+      "id": "ring_2",
+      "points": 87
+    },
+    {
+      "id": "ring_3",
+      "points": 87
+    },
+    {
+      "id": "ring_4",
+      "points": 94
+    },
+    {
+      "id": "ring_5",
+      "points": 61
+    },
+    {
+      "id": "slide_bar_1",
+      "points": 18
+    },
+    {
+      "id": "slide_bar_2",
+      "points": 18
+    }
+  ],
+  "roles": [
+    {
+      "kind": "L_arm",
+      "host": "S1",
+      "effectFound": true,
+      "evidence": {
+        "prefix": [],
+        "actor": "S1",
+        "delta": 3,
+        "effect": {
+          "id": "S1",
+          "a": {
+            "solved": false,
+            "pose": 1.4199951171874994
+          },
+          "b": {
+            "solved": true,
+            "pose": 2.0571411132812507
+          }
+        }
+      }
+    },
+    {
+      "kind": "Guide",
+      "host": "S1",
+      "effectFound": false,
+      "evidence": null
+    },
+    {
+      "kind": "L_arm",
+      "host": "S2",
+      "effectFound": true,
+      "evidence": {
+        "prefix": [],
+        "actor": "S1",
+        "delta": 3,
+        "effect": {
+          "id": "S1",
+          "a": {
+            "solved": false,
+            "pose": 1.4199951171874994
+          },
+          "b": {
+            "solved": true,
+            "pose": 2.0571411132812507
+          }
+        }
+      }
+    },
+    {
+      "kind": "Guide",
+      "host": "S2",
+      "effectFound": false,
+      "evidence": null
+    }
+  ],
+  "sourceImage": "gd-reference.png",
+  "imageAdjustments": {
+    "R1Gap": 65,
+    "R2R3Gap": 60,
+    "GuideOffsetOutward": 0.8
+  },
+  "limits": [
+    "Designer analytic JS only; no Unity/device gameplay test.",
+    "Eight endpoint perturbations are local checks, not exhaustive route robustness.",
+    "Feature effects at stored reachable prefixes do not prove global necessity.",
+    "Both Guides from the explicit GD image are engaged; no independent counterfactual effect found at tested prefixes. Retained to reproduce the requested image, not certified individually necessary."
+  ]
+}

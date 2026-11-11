@@ -1,0 +1,64 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Nhả nguồn rồi đánh bom trong vòng kín",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Vòng kín nhận pin từ dưới và còn giữ pin sang phải. Nhả vòng bên phải trước để vòng kín được xoay; chốt hướng vào trong vòng quét tới bom tự do, phá vòng kín và giải phóng nguồn dưới. Bom nằm trong cụm; chốt và bom có vai trò cần đối chứng. Chỉ bom gameplay, không Booster/Chain.",
+  "rings": [
+    {
+      "id": "C",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 180,
+          "length": -0.8
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 90,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "L",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 270,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "C"
+        }
+      ]
+    }
+  ],
+  "sticks": [],
+  "bombs": [
+    {
+      "x": -0.6,
+      "y": 0.6,
+      "radius": 0.3
+    }
+  ]
+}

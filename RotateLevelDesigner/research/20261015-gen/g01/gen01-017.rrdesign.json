@@ -1,0 +1,164 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 225,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R2",
+      "x": 3.2424,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 315,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "R1"
+        },
+        {
+          "angle": 45,
+          "target": "R3"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R3",
+      "x": 6.4847,
+      "y": 6.4847,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R4",
+      "x": 3.2424,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 225,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R1"
+        },
+        {
+          "angle": 315,
+          "target": "R7"
+        },
+        {
+          "angle": 45.0009,
+          "target": "R5"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R5",
+      "x": 6.4847,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 135,
+      "pins": [],
+      "color": "teal"
+    },
+    {
+      "id": "R6",
+      "x": 9.7271,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "R5"
+        },
+        {
+          "angle": 135.0009,
+          "target": "R3"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R7",
+      "x": 6.4847,
+      "y": -6.4847,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "R8",
+      "x": 9.7271,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R5"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R9",
+      "x": 12.9695,
+      "y": 0,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R6"
+        }
+      ],
+      "color": "sky"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "x": 9.25,
+      "y": -8.25,
+      "angle": 315,
+      "color": "sky",
+      "guides": [
+        {
+          "x": 9.25,
+          "y": -8.25,
+          "angle": 315
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "shape": "L",
+      "x": 4.25,
+      "y": 9.5,
+      "angle": 135,
+      "color": "orange",
+      "guides": [
+        {
+          "x": 4.25,
+          "y": 9.5,
+          "angle": 135
+        }
+      ]
+    }
+  ],
+  "name": "G01-017 | Nghỉ: thanh rút gọn",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 17 (relief). Ý tưởng: R5 bị 3 vòng (R4, R6, R8) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R4 còn giữ R1, R7: nếu chưa nhả hết nơi khác thì quay R5 tiếp sẽ bị khóa lại; vòng kín R9 không tự quay để thoát: phải nhả hết các vòng nó giữ; thanh S1 chặn đường quay của vòng bên cạnh: rút thanh đúng lúc. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 3.4 lần kéo/vật, mục tiêu 2–3.5). Không Booster/Chain/bom; lockCount 0."
+}

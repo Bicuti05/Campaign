@@ -1,0 +1,192 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R5"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R1"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R3",
+      "x": 9.1708,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R2"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R4",
+      "x": 13.7562,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R3"
+        },
+        {
+          "angle": 270,
+          "target": "R6"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R5",
+      "x": 0,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "green",
+      "stops": [
+        {
+          "angle": 150,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": 13.7562,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "purple",
+      "stops": [
+        {
+          "angle": 60,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": 0,
+      "y": -9.1708,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R8"
+        },
+        {
+          "angle": 90,
+          "target": "R5"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R8",
+      "x": 4.5854,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R11"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R9",
+      "x": 9.1708,
+      "y": -9.1708,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R8"
+        },
+        {
+          "angle": 0,
+          "target": "R10"
+        },
+        {
+          "angle": 270,
+          "target": "R12"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R10",
+      "x": 13.7562,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R6"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R11",
+      "x": 4.5854,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R12",
+      "x": 9.1708,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R11"
+        }
+      ],
+      "color": "red"
+    }
+  ],
+  "sticks": [],
+  "name": "G01-024 | Chỉ vòng, nhiều cửa",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 24 (build). Ý tưởng: R5 bị 2 vòng (R1, R7) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R7 còn giữ R8: nếu chưa nhả hết nơi khác thì quay R5 tiếp sẽ bị khóa lại; vòng kín R7, R9 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R6 chặn một chiều quay: chọn chiều hoặc dọn đường trước. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 5.6 lần kéo/vật, mục tiêu 4.5–7). Không Booster/Chain/bom; lockCount 0."
+}

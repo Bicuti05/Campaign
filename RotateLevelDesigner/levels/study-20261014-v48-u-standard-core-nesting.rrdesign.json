@@ -1,0 +1,110 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "U giữ hai vùng — hai lõi vòng chuẩn",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Revision V35: CL radius0.8 thành1.75, đặt đồng tâm trái; IL thành2.8354 và OL thành3.9208 để pin270 CL chạm IL, pin90 IL chạm OL. Bên phải thêm CR chuẩn giữ IR, IR/OR cũng thành2.8354/3.9208. Tâm trái X-4.2, tâm phải X4.5 Y-3.5 để đủ chỗ các vòng lớn và tạo độ rút khác nhau. Nhánh trái U chuyển theo khe OL lớn, nhánh phải vẫn nhận pin IR thấp hơn; không ngàm/pin trái thừa. Một U dùng chung hai vùng lồng, được nhánh phải giữ cả tay trái qua giai đoạn đầu. Sáu Ring+U thành7 mảnh, không ghép hai cụm độc lập. Radius lớn có mục đích lồng vòng chuẩn, không thu nhỏ nguồn để nhét cụm. Không Stop/Bom/Booster/Chain, chưa GD nghiệm thu hình/khó. Thứ tự vùng là lựa chọn; không dùng một drag bị cản làm proof toàn cục. Bên phải OR có thể nhả tại mức rút-2 nhưng IR vẫn khóa input bởi pin vào U; phải nhả cả OR và U mới quay IR để dọn CR. Có thể kéo U sâu trước để mở cả hai vùng; không ép thứ tự trái trước phải. Kéo OL lặp qua cản U được kiểm riêng; cản thân là lựa chọn gesture, không phải invariant thứ tự chuẩn bị toàn cục. File giao xoay toàn board90 độ để bố cục dọc: vùng IL/OL/CL ở dưới, vùng IR/OR/CR phía trên; U rút sang phải khi offset âm. Mô tả trái/phải ở trên theo khung U trước xoay. Mọi witness/proof dùng pose đã xoay; không xuất thêm bản chỉ khác góc.",
+  "rings": [
+    {
+      "id": "IL",
+      "x": 0,
+      "y": -4.2,
+      "gapDir": 270,
+      "color": "orange",
+      "radius": 2.8354,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "OL"
+        }
+      ]
+    },
+    {
+      "id": "OL",
+      "x": 0,
+      "y": -4.2,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 3.9208,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "CL",
+      "x": 0,
+      "y": -4.2,
+      "gapDir": 180,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "IL"
+        }
+      ]
+    },
+    {
+      "id": "IR",
+      "x": 3.5,
+      "y": 4.5,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 2.8354,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "U"
+        },
+        {
+          "angle": 180,
+          "target": "OR"
+        }
+      ]
+    },
+    {
+      "id": "OR",
+      "x": 3.5,
+      "y": 4.5,
+      "gapDir": 90,
+      "color": "teal",
+      "radius": 3.9208,
+      "gap": 120,
+      "pins": []
+    },
+    {
+      "id": "CR",
+      "x": 3.5,
+      "y": 4.5,
+      "gapDir": 180,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "IR"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 8.4,
+      "y": 4.0708,
+      "length": 8.7,
+      "arm": 8.9,
+      "angle": 90,
+      "color": "red",
+      "slideAxis": [
+        0,
+        1
+      ]
+    }
+  ]
+}

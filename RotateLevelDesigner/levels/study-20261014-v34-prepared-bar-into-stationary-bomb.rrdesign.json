@@ -1,0 +1,89 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Giữ thanh trong lòng — dọn chốt rồi chạm bom đứng",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Bom đứng tại tâm vòng lớn kín C. Thanh S nằm trong lòng C nhưng chốt G chặn đường kéo xuống. Mở vòng nhận D để nguồn G/chốt rời trước, ngàm giữ S sống qua bước này. Sau đó S trượt xuống chạm bom C, phá S/C, nhả nguồn kín N bên trái. Bom gameplay, không Booster/Chain. Chỉ nghiên cứu và proof Designer; chưa GD nghiệm thu bố cục/độ khó.",
+  "rings": [
+    {
+      "id": "C",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 5.3354,
+      "gap": 0,
+      "pins": [],
+      "bomb": {
+        "x": 0,
+        "y": 0,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "N",
+      "x": -2.5,
+      "y": 0,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "C"
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "x": 2.8,
+      "y": 1.5,
+      "gapDir": 180,
+      "color": "green",
+      "radius": 0.8,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 180,
+          "length": 2.1
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 2.8,
+      "y": -1.1854,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 0.8,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 0,
+      "y": 3,
+      "length": 2.6,
+      "angle": 90,
+      "color": "red",
+      "guides": [
+        {
+          "x": 0,
+          "y": 2.3,
+          "angle": 90
+        }
+      ]
+    }
+  ]
+}

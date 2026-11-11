@@ -1,0 +1,764 @@
+{
+  "format": "rotate-multibar-study",
+  "version": 1,
+  "drafts": [
+    {
+      "stem": "study-20261013-v3-u-gates-divider",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Khung U mở đường cho thanh ngang — ba hàng",
+        "author": "Codex reference study 20261013",
+        "notes": "Ý tưởng cần nhận ra: khung U giữ các pin bên hông và chặn hai lối trượt của thanh ngang. Kéo U xuống để mở đường ngang; sau đó mới dịch thanh ngang và tháo cặp vòng dưới. Hai thanh có vai trò khác nhau. Không ngàm, Chain, bom hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "R1",
+            "x": 0,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "S1"
+              }
+            ]
+          },
+          {
+            "id": "R2",
+            "x": 4.5854,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "S1"
+              }
+            ]
+          },
+          {
+            "id": "R3",
+            "x": 0,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 45,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "S1"
+              },
+              {
+                "angle": 270,
+                "target": "S2"
+              }
+            ]
+          },
+          {
+            "id": "R4",
+            "x": 4.5854,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 135,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "S1"
+              },
+              {
+                "angle": 270,
+                "target": "S2"
+              }
+            ]
+          },
+          {
+            "id": "R5",
+            "x": 0,
+            "y": -9.1708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "S1"
+              },
+              {
+                "angle": 0,
+                "target": "R6"
+              }
+            ]
+          },
+          {
+            "id": "R6",
+            "x": 4.5854,
+            "y": -9.1708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "S1"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S1",
+            "shape": "U",
+            "length": 10.2562,
+            "arm": 13.206199999999999,
+            "x": 2.2927,
+            "y": -12.5062,
+            "angle": 0,
+            "color": "red",
+            "slideAxis": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": "S2",
+            "shape": "straight",
+            "length": 8.1854,
+            "x": 2.2927,
+            "y": -7.4208,
+            "angle": 0,
+            "color": "teal"
+          }
+        ]
+      },
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 6,
+          "sticks": 2,
+          "guides": 0,
+          "bombs": 0,
+          "links": 9,
+          "pins": 9,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "found": true,
+      "log": "found with 6 drags after 59 explorations",
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": -0.8,
+          "direction": "-",
+          "removedNow": 2,
+          "remaining": 6
+        },
+        {
+          "step": 2,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": -0.8,
+          "to": -5.4,
+          "direction": "-",
+          "removedNow": 0,
+          "remaining": 6
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": -5.4,
+          "to": -9.9,
+          "direction": "-",
+          "removedNow": 1,
+          "remaining": 5
+        },
+        {
+          "step": 4,
+          "part": "slide_bar_2",
+          "label": "S2",
+          "kind": "stick",
+          "from": 0,
+          "to": 1.9,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 4
+        },
+        {
+          "step": 5,
+          "part": "slide_bar_2",
+          "label": "S2",
+          "kind": "stick",
+          "from": 1.9,
+          "to": 6.5,
+          "direction": "+",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 6,
+          "part": "ring_6",
+          "label": "R6",
+          "kind": "ring",
+          "from": 90,
+          "to": 144,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "moves": [
+        {
+          "obj": 6,
+          "target": -0.7999999999999999
+        },
+        {
+          "obj": 6,
+          "target": -5.399999999999998
+        },
+        {
+          "obj": 6,
+          "target": -9.899999999999983
+        },
+        {
+          "obj": 7,
+          "target": 1.9000000000000006
+        },
+        {
+          "obj": 7,
+          "target": 6.499999999999993
+        },
+        {
+          "obj": 5,
+          "target": 144
+        }
+      ],
+      "pinMargins": [
+        {
+          "owner": "R1",
+          "angle": 180,
+          "logicMargin": 135
+        },
+        {
+          "owner": "R2",
+          "angle": 0,
+          "logicMargin": 135
+        },
+        {
+          "owner": "R3",
+          "angle": 180,
+          "logicMargin": 90
+        },
+        {
+          "owner": "R3",
+          "angle": 270,
+          "logicMargin": 90
+        },
+        {
+          "owner": "R4",
+          "angle": 0,
+          "logicMargin": 90
+        },
+        {
+          "owner": "R4",
+          "angle": 270,
+          "logicMargin": 90
+        },
+        {
+          "owner": "R5",
+          "angle": 180,
+          "logicMargin": 45
+        },
+        {
+          "owner": "R5",
+          "angle": 0,
+          "logicMargin": 45
+        },
+        {
+          "owner": "R6",
+          "angle": 0,
+          "logicMargin": 45
+        }
+      ],
+      "initialBarProbes": [
+        {
+          "direction": -1,
+          "pointerReached": -1.4753906249999997,
+          "offset": -1.0953857421874988,
+          "barRemoved": false,
+          "solvedObjects": []
+        },
+        {
+          "direction": 1,
+          "pointerReached": 1.4753906249999997,
+          "offset": 1.0953857421874988,
+          "barRemoved": false,
+          "solvedObjects": []
+        }
+      ],
+      "counterfactual": "remove_gate",
+      "counterfactualBarProbes": [
+        {
+          "direction": -1,
+          "pointerReached": -6.499999999999993,
+          "offset": -6.499999999999993,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "slide_bar_1"
+          ]
+        },
+        {
+          "direction": 1,
+          "pointerReached": 6.499999999999993,
+          "offset": 6.499999999999993,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "slide_bar_1"
+          ]
+        }
+      ],
+      "afterGateProbes": [
+        {
+          "direction": -1,
+          "pointerReached": -6.499999999999993,
+          "offset": -6.499999999999993,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "slide_bar_1",
+            "slide_bar_2"
+          ]
+        },
+        {
+          "direction": 1,
+          "pointerReached": 6.499999999999993,
+          "offset": 6.499999999999993,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "slide_bar_1",
+            "slide_bar_2"
+          ]
+        }
+      ]
+    },
+    {
+      "stem": "study-20261013-v3-guide-holds-frame",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Ngàm giữ khung không có pin — mở đường ngang",
+        "author": "Codex reference study 20261013",
+        "notes": "Ý tưởng cần nhận ra: thanh ngang được hai pin giữ; khung U ngoài không nhận pin nên cần đúng một ngàm để tồn tại và chặn hai lối trượt ngang. Trượt khung U xuống khỏi ngàm, mở đường cho thanh ngang; rồi tháo cặp vòng dưới. Đối chứng bỏ ngàm phải cho phép thanh ngang đi trước mà không kéo U. Không Chain, bom hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "R1",
+            "x": 0,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 270,
+                "target": "S2"
+              }
+            ]
+          },
+          {
+            "id": "R2",
+            "x": 4.5854,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 270,
+                "target": "S2"
+              }
+            ]
+          },
+          {
+            "id": "R3",
+            "x": 0,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "R4"
+              }
+            ]
+          },
+          {
+            "id": "R4",
+            "x": 4.5854,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "blue",
+            "pins": []
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S1",
+            "shape": "U",
+            "length": 10.2562,
+            "arm": 8.1208,
+            "x": 2.2927,
+            "y": -7.4208,
+            "angle": 0,
+            "color": "blue",
+            "slideAxis": [
+              0,
+              1
+            ],
+            "guides": [
+              {
+                "id": "G1",
+                "x": -2.8354,
+                "y": 0.2,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "S2",
+            "shape": "straight",
+            "length": 8.1854,
+            "x": 2.2927,
+            "y": -2.8354,
+            "angle": 0,
+            "color": "red"
+          }
+        ]
+      },
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 4,
+          "sticks": 2,
+          "guides": 1,
+          "bombs": 0,
+          "links": 3,
+          "pins": 3,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "found": true,
+      "log": "found with 4 drags after 31 explorations",
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": -0.6,
+          "direction": "-",
+          "removedNow": 1,
+          "remaining": 5
+        },
+        {
+          "step": 2,
+          "part": "slide_bar_2",
+          "label": "S2",
+          "kind": "stick",
+          "from": 0,
+          "to": 1.9,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 4
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_2",
+          "label": "S2",
+          "kind": "stick",
+          "from": 1.9,
+          "to": 6.5,
+          "direction": "+",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 4,
+          "part": "ring_4",
+          "label": "R4",
+          "kind": "ring",
+          "from": 90,
+          "to": 144,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "moves": [
+        {
+          "obj": 4,
+          "target": -0.6
+        },
+        {
+          "obj": 5,
+          "target": 1.9000000000000006
+        },
+        {
+          "obj": 5,
+          "target": 6.499999999999993
+        },
+        {
+          "obj": 3,
+          "target": 144
+        }
+      ],
+      "pinMargins": [
+        {
+          "owner": "R1",
+          "angle": 270,
+          "logicMargin": 135
+        },
+        {
+          "owner": "R2",
+          "angle": 270,
+          "logicMargin": 135
+        },
+        {
+          "owner": "R3",
+          "angle": 0,
+          "logicMargin": 45
+        }
+      ],
+      "initialBarProbes": [
+        {
+          "direction": -1,
+          "pointerReached": -1.4753906249999997,
+          "offset": -1.0953857421874988,
+          "barRemoved": false,
+          "solvedObjects": []
+        },
+        {
+          "direction": 1,
+          "pointerReached": 1.4753906249999997,
+          "offset": 1.0953857421874988,
+          "barRemoved": false,
+          "solvedObjects": []
+        }
+      ],
+      "counterfactual": "remove_guide",
+      "counterfactualBarProbes": [
+        {
+          "direction": -1,
+          "pointerReached": -6.455395507812494,
+          "offset": -6.455395507812494,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "slide_bar_1",
+            "slide_bar_2"
+          ]
+        },
+        {
+          "direction": 1,
+          "pointerReached": 6.4553955078124945,
+          "offset": 6.455395507812494,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "slide_bar_1",
+            "slide_bar_2"
+          ]
+        }
+      ],
+      "afterGateProbes": [
+        {
+          "direction": -1,
+          "pointerReached": -6.499999999999993,
+          "offset": -6.499999999999993,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "slide_bar_1",
+            "slide_bar_2"
+          ]
+        },
+        {
+          "direction": 1,
+          "pointerReached": 6.499999999999993,
+          "offset": 6.499999999999993,
+          "barRemoved": true,
+          "solvedObjects": [
+            "ring_1",
+            "ring_2",
+            "slide_bar_1",
+            "slide_bar_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceRetentionAudit": {
+    "source": "LevelTrainingData/ring-lab/data/original_levels.json",
+    "assets": 384,
+    "bars": 2255,
+    "counts": {
+      "no_authored_pin+guide": 1691,
+      "authored_pin+no_guide": 534,
+      "authored_pin+guide": 30
+    },
+    "examples": {
+      "no_authored_pin+guide": [
+        {
+          "asset": "10010",
+          "part": "slide_bar_1"
+        },
+        {
+          "asset": "10010",
+          "part": "slide_bar_2"
+        },
+        {
+          "asset": "10011",
+          "part": "slide_bar_1"
+        },
+        {
+          "asset": "10011",
+          "part": "slide_bar_2"
+        },
+        {
+          "asset": "10011",
+          "part": "slide_bar_3"
+        },
+        {
+          "asset": "10011",
+          "part": "slide_bar_4"
+        },
+        {
+          "asset": "10012",
+          "part": "slide_bar_1"
+        },
+        {
+          "asset": "10012",
+          "part": "slide_bar_2"
+        }
+      ],
+      "authored_pin+no_guide": [
+        {
+          "asset": "10013",
+          "part": "slide_bar_1"
+        },
+        {
+          "asset": "10014",
+          "part": "slide_bar_4"
+        },
+        {
+          "asset": "10017",
+          "part": "slide_bar_1"
+        },
+        {
+          "asset": "10017",
+          "part": "slide_bar_2"
+        },
+        {
+          "asset": "10017",
+          "part": "slide_bar_3"
+        },
+        {
+          "asset": "10018",
+          "part": "slide_bar_4"
+        },
+        {
+          "asset": "10019",
+          "part": "slide_bar_1"
+        },
+        {
+          "asset": "10019",
+          "part": "slide_bar_2"
+        }
+      ],
+      "authored_pin+guide": [
+        {
+          "asset": "10034",
+          "part": "slide_bar_6"
+        },
+        {
+          "asset": "10041",
+          "part": "slide_bar_6"
+        },
+        {
+          "asset": "10046",
+          "part": "slide_bar_6"
+        },
+        {
+          "asset": "10108",
+          "part": "slide_bar_6"
+        },
+        {
+          "asset": "10117",
+          "part": "slide_bar_6"
+        },
+        {
+          "asset": "10123",
+          "part": "slide_bar_6"
+        },
+        {
+          "asset": "70011",
+          "part": "slide_bar_3"
+        },
+        {
+          "asset": "70011",
+          "part": "slide_bar_4"
+        }
+      ]
+    },
+    "limits": [
+      "Counts authored relation references, not verified physical contacts or solutions.",
+      "Resource assets may repeat layouts; not a deduplicated campaign sample.",
+      "The 30 pin-and-guide bars need individual role review; no universal prohibition."
+    ]
+  }
+}

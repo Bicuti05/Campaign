@@ -1,0 +1,183 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "STG-04 research | Ba cửa quay lại, thanh mở đôi và nguồn còn giữ",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp10 vòng radius1,75 +1 straight default/14 pin. T/C/U là hàng đều; D/Z/E hàng trên cùng pitch4,5854; DG/EG kín giữ D/E. Hai nguồn A/Q dưới cùng giữ S. C kín cùng giữ A/Q và T/U; D/E giữ T/U và Z. T/U dùng chung cả nguồn dưới lẫn nguồn trên: mở cửa D/E rồi quay lại cửa A/Q/C; Z phục vụ D rồi E nên còn lượt quay thật. Không thêm các cụm độc lập. Full-release, role từng pin/S và retention cần được kiểm cuối; không tự chốt khó/đẹp từ10 vòng. Kế thừa relation có kiểm của03, thay recipe return còn bị chặn và mở rộng bằng chính T/U dùng chung. Các01/02/03 giữ research, không ghi đè. Không Guide/Stop/Bom/Chain/Booster; mọi hình học bake bởi CLI có sẵn.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 120,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 60,
+          "target": "U"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": -2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "U",
+      "x": 6.8781,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "U"
+        },
+        {
+          "angle": 240,
+          "target": "A"
+        },
+        {
+          "angle": 300,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": -2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 150,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "x": 6.8781,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 30,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "U"
+        },
+        {
+          "angle": 180,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "Z",
+      "x": 2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "DG",
+      "x": -2.2927,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "EG",
+      "x": 6.8781,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "E"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "green"
+    }
+  ]
+}

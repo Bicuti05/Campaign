@@ -1,0 +1,86 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Hai bom chạm nhau — điểm tiếp xúc trên vùng đang khóa",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Một vòng kín giữ pin vào vòng kín dưới nên không được xoay; nó mang bom ở phía trên. Vòng hở trên mang bom thứ hai, còn nhận pin từ nguồn trên cùng. Quay vòng hở CW để hai bom chạm nhau trước khi bất kỳ bom nào chạm thân vòng đối diện. Hai host bị phá, ba nguồn/đích còn lại được nhả. Bỏ một trong hai bom giữ lại vùng pin vào vòng kín: bom di chuyển không đủ gần thân để phá trực tiếp, bom cố định không thể được quay do host còn link đi ra. CCW nhả vật mang sớm và để bom tự do ở vị trí khác, chưa mở vùng kín. Đây là hành vi tiếp xúc bom/bom của engine Designer, không cơ chế Xích hoặc Booster; chưa nghiệm thu đẹp/khó và chưa đối chiếu độc lập với video gốc.",
+  "rings": [
+    {
+      "id": "C",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "X"
+        }
+      ],
+      "bomb": {
+        "x": 0,
+        "y": 2.2,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "X",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": []
+    },
+    {
+      "id": "E",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 0,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "C"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 0,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [],
+      "bomb": {
+        "x": 2.2,
+        "y": 4.5854,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "G",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R"
+        }
+      ]
+    }
+  ],
+  "sticks": []
+}

@@ -1,0 +1,566 @@
+{
+  "format": "rotate-other-families-verification",
+  "version": 1,
+  "verificationScope": "Supplied Designer engine only, no Unity replay",
+  "results": [
+    {
+      "stem": "study-20261013-v4-l-lifts-roof",
+      "moves": [
+        {
+          "part": "slide_bar_1",
+          "target": 1
+        },
+        {
+          "part": "ring_2",
+          "target": 150
+        },
+        {
+          "part": "ring_4",
+          "target": 510
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 5.4
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": 1,
+          "direction": "+",
+          "removedNow": 0,
+          "remaining": 5
+        },
+        {
+          "step": 2,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 90,
+          "to": 150,
+          "direction": "CCW",
+          "removedNow": 1,
+          "remaining": 4
+        },
+        {
+          "step": 3,
+          "part": "ring_4",
+          "label": "R4",
+          "kind": "ring",
+          "from": 270,
+          "to": 510,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 4,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 1,
+          "to": 5.4,
+          "direction": "+",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 6,
+      "proofOrigin": "Designer solver FOUND independently; authored demonstration releases R2 while L remains retained",
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "target": 1,
+            "remaining": 5,
+            "solved": []
+          },
+          {
+            "part": "ring_2",
+            "target": 150,
+            "remaining": 4,
+            "solved": [
+              "ring_2"
+            ]
+          },
+          {
+            "part": "ring_4",
+            "target": 510,
+            "remaining": 2,
+            "solved": [
+              "ring_2",
+              "ring_3",
+              "ring_4"
+            ]
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.4,
+            "remaining": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4",
+              "slide_bar_1"
+            ]
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "target": 1,
+            "remaining": 5,
+            "solved": []
+          },
+          {
+            "part": "ring_2",
+            "target": 150,
+            "remaining": 4,
+            "solved": [
+              "ring_2"
+            ]
+          },
+          {
+            "part": "ring_4",
+            "target": 510,
+            "remaining": 2,
+            "solved": [
+              "ring_2",
+              "ring_3",
+              "ring_4"
+            ]
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.4,
+            "remaining": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4",
+              "slide_bar_1"
+            ]
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "R1",
+          "angle": 180,
+          "gap": 90,
+          "logicMargin": 45
+        },
+        {
+          "owner": "R1",
+          "angle": 0,
+          "gap": 90,
+          "logicMargin": 45
+        },
+        {
+          "owner": "R3",
+          "angle": 180,
+          "gap": 90,
+          "logicMargin": 45
+        },
+        {
+          "owner": "R3",
+          "angle": 0,
+          "gap": 90,
+          "logicMargin": 45
+        }
+      ],
+      "mechanicWitness": {
+        "type": "L arm changes access before full bar removal",
+        "initial": [
+          {
+            "direction": -1,
+            "pointerReached": 69,
+            "removed": false,
+            "remaining": 5,
+            "activeLinks": 4,
+            "gateRemoved": false
+          },
+          {
+            "direction": 1,
+            "pointerReached": 111,
+            "removed": false,
+            "remaining": 5,
+            "activeLinks": 4,
+            "gateRemoved": false
+          }
+        ],
+        "afterPreparation": [
+          {
+            "direction": -1,
+            "pointerReached": -144,
+            "removed": true,
+            "remaining": 4,
+            "activeLinks": 2,
+            "gateRemoved": false
+          },
+          {
+            "direction": 1,
+            "pointerReached": 144,
+            "removed": true,
+            "remaining": 4,
+            "activeLinks": 2,
+            "gateRemoved": false
+          }
+        ],
+        "armRemoved": [
+          {
+            "direction": -1,
+            "pointerReached": -144,
+            "removed": true,
+            "remaining": 4,
+            "activeLinks": 3,
+            "gateRemoved": false
+          },
+          {
+            "direction": 1,
+            "pointerReached": 144,
+            "removed": true,
+            "remaining": 4,
+            "activeLinks": 3,
+            "gateRemoved": false
+          }
+        ]
+      }
+    },
+    {
+      "stem": "study-20261013-v4-stop-selects-direction",
+      "moves": [
+        {
+          "part": "ring_4",
+          "target": 150
+        },
+        {
+          "part": "ring_3",
+          "target": 120
+        },
+        {
+          "part": "ring_2",
+          "target": 210
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_4",
+          "label": "R4",
+          "kind": "ring",
+          "from": 90,
+          "to": 150,
+          "direction": "CCW",
+          "removedNow": 1,
+          "remaining": 3
+        },
+        {
+          "step": 2,
+          "part": "ring_3",
+          "label": "R3",
+          "kind": "ring",
+          "from": 270,
+          "to": 120,
+          "direction": "CW",
+          "removedNow": 1,
+          "remaining": 2
+        },
+        {
+          "step": 3,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 270,
+          "to": 210,
+          "direction": "CW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 6,
+      "proofOrigin": "found with 3 drags after 16 explorations",
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_4",
+            "target": 150,
+            "remaining": 3,
+            "solved": [
+              "ring_4"
+            ]
+          },
+          {
+            "part": "ring_3",
+            "target": 120,
+            "remaining": 2,
+            "solved": [
+              "ring_3",
+              "ring_4"
+            ]
+          },
+          {
+            "part": "ring_2",
+            "target": 210,
+            "remaining": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4"
+            ]
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_4",
+            "target": 150,
+            "remaining": 3,
+            "solved": [
+              "ring_4"
+            ]
+          },
+          {
+            "part": "ring_3",
+            "target": 120,
+            "remaining": 2,
+            "solved": [
+              "ring_3",
+              "ring_4"
+            ]
+          },
+          {
+            "part": "ring_2",
+            "target": 210,
+            "remaining": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4"
+            ]
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "R1",
+          "angle": 0,
+          "gap": 90,
+          "logicMargin": 90
+        },
+        {
+          "owner": "R1",
+          "angle": 270,
+          "gap": 90,
+          "logicMargin": 90
+        },
+        {
+          "owner": "R3",
+          "angle": 0,
+          "gap": 90,
+          "logicMargin": 45
+        }
+      ],
+      "mechanicWitness": {
+        "type": "Stop removes one release direction",
+        "withStop": [
+          {
+            "direction": -1,
+            "pointerReached": 216,
+            "removed": true,
+            "remaining": 3,
+            "activeLinks": 2,
+            "gateRemoved": false
+          },
+          {
+            "direction": 1,
+            "pointerReached": 354,
+            "removed": false,
+            "remaining": 4,
+            "activeLinks": 3,
+            "gateRemoved": false
+          }
+        ],
+        "withoutStop": [
+          {
+            "direction": -1,
+            "pointerReached": 216,
+            "removed": true,
+            "remaining": 3,
+            "activeLinks": 2,
+            "gateRemoved": false
+          },
+          {
+            "direction": 1,
+            "pointerReached": 504,
+            "removed": true,
+            "remaining": 3,
+            "activeLinks": 2,
+            "gateRemoved": false
+          }
+        ]
+      }
+    },
+    {
+      "stem": "study-20261013-v4-closed-body-gate",
+      "moves": [
+        {
+          "part": "ring_3",
+          "target": 420
+        },
+        {
+          "part": "ring_2",
+          "target": -60
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_3",
+          "label": "R3",
+          "kind": "ring",
+          "from": 270,
+          "to": 420,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 45,
+          "to": -60,
+          "direction": "CW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 6,
+      "proofOrigin": "found with 2 drags after 12 explorations",
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "target": 420,
+            "remaining": 2,
+            "solved": [
+              "ring_1",
+              "ring_3"
+            ]
+          },
+          {
+            "part": "ring_2",
+            "target": -60,
+            "remaining": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4"
+            ]
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "target": 420,
+            "remaining": 2,
+            "solved": [
+              "ring_1",
+              "ring_3"
+            ]
+          },
+          {
+            "part": "ring_2",
+            "target": -60,
+            "remaining": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4"
+            ]
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "R1",
+          "angle": 270,
+          "gap": 0,
+          "logicMargin": null
+        },
+        {
+          "owner": "R4",
+          "angle": 90,
+          "gap": 90,
+          "logicMargin": 135
+        }
+      ],
+      "mechanicWitness": {
+        "closed": [
+          {
+            "direction": -1,
+            "removed": false,
+            "pointerReached": -5.999999999999993
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "pointerReached": 66
+          }
+        ],
+        "opened": [
+          {
+            "direction": -1,
+            "removed": true,
+            "pointerReached": -53.99999999999999
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "pointerReached": 66
+          }
+        ],
+        "withoutStop": [
+          {
+            "direction": -1,
+            "removed": true,
+            "pointerReached": -53.99999999999999
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "pointerReached": 234
+          }
+        ]
+      }
+    }
+  ],
+  "holdout": {
+    "stem": "study-20261013-v4-clear-bomb-corridor",
+    "reason": "Known authored route replays, but bounded Designer solver has not found a route; not delivered under Designer AGENTS gate",
+    "solverLog": "NOT FOUND after 850 explorations, 30 s (limits 1200 nodes / 30 s, open 8)"
+  }
+}

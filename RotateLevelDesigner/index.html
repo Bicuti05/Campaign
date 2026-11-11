@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TURP Designer</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">TURP <span>Level Designer</span></div>
+  <div class="group">
+    <button id="btnNew" title="Level mới (Ctrl+N)">Mới</button>
+    <button id="btnOpen" title="Mở file .rrdesign.json, .rrpack.json hoặc Level*.json (Ctrl+O)">Mở…</button>
+    <input id="fileInput" type="file" accept=".json" multiple hidden>
+    <button id="btnSave" title="Lưu vào thư mục levels/ (Ctrl+S). File .rrpack.json này cũng là file gửi Dev">Lưu</button>
+    <button id="btnSaveAs" title="Lưu với tên khác trong levels/ (Ctrl+Shift+S)">Lưu thành…</button>
+    <button id="btnSaveProof" class="primary" title="Tìm lời giải cho bản hiện tại (nếu chưa có) rồi lưu kèm vào levels/ — file sẵn sàng gửi Dev">Lưu kèm lời giải</button>
+  </div>
+  <div class="group">
+    <button id="btnExportRuntime" title="Tải JSON runtime đúng schema game (Level&lt;ID&gt;.json)">Xuất level</button>
+    <button id="btnExportDesign" title="Tải file thiết kế gọn (.rrdesign.json) — Codex đọc/sửa được">Xuất thiết kế</button>
+  </div>
+  <div class="group">
+    <button id="btnGallery" title="Xem 20 level một lúc từ thư mục đang mở (hoặc campaign). Phím ← → để chuyển trang, Esc để đóng">Xem 20 level</button>
+  </div>
+  <div class="group">
+    <button id="btnUndo" title="Hoàn tác (Ctrl+Z)">↶</button>
+    <button id="btnRedo" title="Làm lại (Ctrl+Y)">↷</button>
+  </div>
+  <div class="segmented" id="modeSwitch">
+    <button data-mode="edit" class="on" title="Chỉnh sửa (Tab)">Chỉnh sửa</button>
+    <button data-mode="play" title="Chơi thử (Tab)">Chơi thử</button>
+  </div>
+  <div class="spacer"></div>
+  <div class="docname"><span id="docTitle">Level mới</span><span id="dirtyMark" hidden>●</span></div>
+</header>
+
+<main class="layout">
+  <aside class="left">
+    <section id="toolsPanel">
+      <h3>Công cụ</h3>
+      <div class="tools" id="tools">
+        <button data-tool="select" class="on" title="Chọn, kéo để di chuyển, kéo tay cầm tròn để xoay (V)"><b>V</b>Chọn</button>
+        <button data-tool="ring" title="Đặt vòng hở (R)"><b>R</b>Vòng</button>
+        <button data-tool="closed" title="Đặt vòng kín (O)"><b>O</b>Vòng kín</button>
+        <button data-tool="pin" title="Bấm cạnh một vòng để gắn pin theo hướng bấm (P)"><b>P</b>Pin</button>
+        <button data-tool="stop" title="Chốt chặn: chỉ chặn, không khóa (T)"><b>T</b>Chốt chặn</button>
+        <button data-tool="stick" title="Đặt thanh trượt (S)"><b>S</b>Thanh</button>
+        <button data-tool="guide" title="Bấm lên một thanh để gắn ngàm (G)"><b>G</b>Ngàm</button>
+        <button data-tool="bomb" title="Bấm lên vòng/thanh để gắn bom, bấm chỗ trống để đặt bom tự do (B)"><b>B</b>Bom</button>
+        <button data-tool="link" title="Bấm pin rồi bấm vật đích để bật/tắt liên kết (L)"><b>L</b>Liên kết</button>
+        <button data-tool="erase" title="Bấm để xóa vật/pin/chốt (X)"><b>X</b>Xóa</button>
+      </div>
+      <div class="row" id="stickPresetRow">
+        <label>Dạng thanh</label>
+        <div class="segmented small" id="stickPreset">
+          <button data-preset="straight" class="on">Thẳng</button><button data-preset="L">L</button><button data-preset="U">U</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Bố cục</h3>
+      <label class="switch"><input type="checkbox" id="optGrid" checked><span></span>Lưới đều</label>
+      <div class="hint" id="gridHint">Vòng cùng cỡ 1,75; tâm bắt vào lưới bước 4,5854 (khoảng cách pin chuẩn); góc bắt 15°.</div>
+      <div class="row" id="latticeRow">
+        <label>Kiểu lưới</label>
+        <div class="segmented small" id="lattice">
+          <button data-lattice="square" class="on">Vuông</button><button data-lattice="hex">Lục giác</button>
+        </div>
+      </div>
+      <label class="switch"><input type="checkbox" id="optAutoLink" checked><span></span>Tự nối pin</label>
+      <div class="hint">Bật: pin tự liên kết với vật nó đang chạm sau mỗi lần sửa. Tắt khi sửa level gốc có liên kết đặc biệt.</div>
+    </section>
+
+    <section>
+      <h3>Hiển thị</h3>
+      <label class="switch"><input type="checkbox" id="optLabels" checked><span></span>Nhãn R1, S1…</label>
+      <label class="switch"><input type="checkbox" id="optLinks"><span></span>Đường liên kết</label>
+      <label class="switch"><input type="checkbox" id="optPhone"><span></span>Khung màn dọc 9:16</label>
+      <label class="switch"><input type="checkbox" id="optDebug"><span></span>Collider ẩn (sensor/hard)</label>
+      <label class="switch"><input type="checkbox" id="optFeel" checked><span></span>Feel K1/K2 khi chơi</label>
+      <button id="btnFit" class="wide" title="Vừa khung (F)">Vừa khung</button>
+    </section>
+
+    <section id="folderPanel">
+      <h3>Level của tôi <small id="folderInfo"></small></h3>
+      <div id="folderActions"></div>
+      <ul class="list" id="levelList"></ul>
+    </section>
+
+    <section id="campaignPanel">
+      <h3>Campaign <small id="campaignInfo"></small></h3>
+      <div class="hint" id="campaignHint">Chưa có rr-campaign.js. Chạy: <code>node rr-cli.js bundle-campaign</code></div>
+      <ul class="list" id="campaignList"></ul>
+    </section>
+  </aside>
+
+  <section class="stage" id="stage">
+    <div id="canvas" class="canvas" tabindex="0"></div>
+    <div class="banner" id="banner" hidden></div>
+    <div class="status" id="status">Sẵn sàng</div>
+  </section>
+
+  <aside class="right">
+    <section id="levelPanel">
+      <h3>Level</h3>
+      <div class="grid2">
+        <label>Tên</label><input id="metaName" type="text" placeholder="Tên gợi nhớ">
+        <label>Level ID</label><input id="metaId" type="text" title="Dev sẽ cấp ID 90001–99999 khi nhập; để 'draft' nếu chưa có">
+        <label>Tác giả</label><input id="metaAuthor" type="text">
+      </div>
+      <label class="block">Ghi chú thiết kế</label>
+      <textarea id="metaNotes" rows="2" placeholder="Ý tưởng, độ khó mong muốn…"></textarea>
+      <div class="counts" id="counts"></div>
+    </section>
+
+    <section id="inspector">
+      <h3>Thuộc tính</h3>
+      <div id="inspectorBody" class="hint">Chọn một vật trên bảng.</div>
+    </section>
+
+    <section id="playPanel" hidden>
+      <h3>Chơi thử</h3>
+      <div class="counts" id="playInfo"></div>
+      <div class="row gap">
+        <button id="btnPlayUndo" title="Lùi một nước (Ctrl+Z)">Lùi nước</button>
+        <button id="btnPlayReset" title="Chơi lại từ đầu (R)">Chơi lại</button>
+      </div>
+      <div class="hint">Mô phỏng logic theo lõi game (chặn, khóa, tự tháo, bom). Không có mesh gốm sứ, hiệu ứng và feel cảm ứng thật.</div>
+    </section>
+
+    <section id="checkPanel">
+      <h3>Kiểm tra <small id="checkBadge"></small></h3>
+      <ul class="issues" id="issues"></ul>
+    </section>
+
+    <section id="solvePanel">
+      <h3>Lời giải</h3>
+      <div class="row gap">
+        <button id="btnSolve" class="primary">Tìm lời giải</button>
+        <button id="btnSolveStop" hidden>Dừng</button>
+        <button id="btnReplay" disabled title="Phát lại lời giải trong chế độ Chơi thử">Phát lại</button>
+      </div>
+      <div class="row small">
+        <label>Giới hạn</label>
+        <input id="solveNodes" type="number" value="4000" min="100" step="500" title="Số nhánh thử tối đa"> nhánh
+        <input id="solveTime" type="number" value="60" min="5" step="5" title="Thời gian tối đa (giây)"> giây
+      </div>
+      <label class="switch small"><input type="checkbox" id="optSolveBombs" checked><span></span>Cho bom nổ khi tìm</label>
+      <div id="solveResult" class="hint">Chưa chạy. Tìm thấy = level kết thúc được trong mô phỏng; không tìm thấy ≠ vô nghiệm.</div>
+      <ol id="solveSteps" class="steps"></ol>
+    </section>
+  </aside>
+</main>
+
+<div class="gallery" id="gallery" hidden>
+  <div class="gallery-head"><b>Xem nhiều level</b><span id="gallerySource"></span><button id="galleryClose" title="Đóng (Esc)">✕</button></div>
+  <div class="gallery-grid" id="galleryGrid"></div>
+  <div class="gallery-foot"><button id="galleryPrev" title="Trang trước (←)">◀</button><span id="galleryPage"></span><button id="galleryNext" title="Trang sau (→)">▶</button></div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="rr-constants.js"></script>
+<script src="core/rr-math.js"></script>
+<script src="core/rr-world.js"></script>
+<script src="core/rr-sim.js"></script>
+<script src="core/rr-level.js"></script>
+<script src="core/rr-solver.js"></script>
+<script src="core/rr-render.js"></script>
+<script src="rr-campaign.js" onerror="window.RR_CAMPAIGN = null"></script>
+<script src="app.js"></script>
+</body>
+</html>

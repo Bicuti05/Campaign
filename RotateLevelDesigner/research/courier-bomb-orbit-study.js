@@ -1,0 +1,14 @@
+"use strict";
+const fs=require("fs"),path=require("path"),h=require("./ongoing-study.js"),delivery=require("./bar-delivered-bomb-study.js");
+const {RR,OUT,clone,ring,pin,design,build,inspect,probe,replay}=h;
+const Y=3.9208,orbit=Math.hypot(3,Y+.8);
+function make(guideX=.1,length=2.6){return design("Đưa bom rời vào quỹ đạo bom của nguồn", "Thanh S mang bom trong hành lang pin của vòng lớn kín D. Pin D khóa input D; ngàm giữ S sau khi thanh rời pin để S đưa bom đi xa hơn. S tự tháo và để lại bom tự do. Khi đó D xoay bom của nó tới bom vừa giao, phá D và giải phóng nguồn kín E lồng bên trong. Bom gameplay, không Booster/Chain. Bố cục/vị trí hai bom nhỏ là bản nghiên cứu, chưa GD nghiệm thu; cần proof vận chuyển, tách host, quỹ đạo và vai trò pin/ngàm.",[
+ ring("E",-.8,-Y,90,"orange",[pin(270,"D")],{gap:0}),
+ ring("D",-.8,-Y,90,"purple",[pin(90,"S")],{radius:2.8354,gap:0,bomb:{x:-.8,y:-Y+orbit,radius:.15}})
+ ],[{id:"S",shape:"straight",x:0,y:0,length,angle:0,color:"green",guides:[{x:guideX,y:0,angle:0}],bomb:{x:.7,y:.8,radius:.15}}]);}
+const state=delivery.state,d=make(),partial=[{part:"S",target:.6}],delivered=[{part:"S",target:3}],route=[...delivered,{part:"D",target:30}];
+const noGuide=clone(d);delete noGuide.sticks[0].guides;const noPin=clone(d);noPin.rings[1].pins=[];const noMovingBomb=clone(d);delete noMovingBomb.rings[1].bomb;const noCourierBomb=clone(d);delete noCourierBomb.sticks[0].bomb;const noIncoming=clone(d);noIncoming.rings.shift();
+const w={orbit,initial:state(d),partial:state(d,partial),delivered:state(d,delivered),correct:state(d,route),trace:replay(d,route,true),feel:replay(d,route,true,true),initialD:[-1,1].map(dir=>probe(d,"D",dir,[],true)),partialD:[-1,1].map(dir=>probe(d,"D",dir,partial,true)),deliveredD:[-1,1].map(dir=>probe(d,"D",dir,delivered,true)),withoutGuide:state(noGuide,route),withoutGuideInspection:inspect(noGuide,true,2,500),withoutPinFirst:state(noPin,[{part:"D",target:30}]),withoutPinPreaim:state(noPin,[{part:"D",target:65},...delivered]),withoutMovingBomb:inspect(noMovingBomb,true,2,500),withoutCourierBomb:inspect(noCourierBomb,true,2,500),withoutIncoming:state(noIncoming,delivered),wrongLeft:state(d,[{part:"S",target:-3},{part:"D",target:450}]),finiteGuides:[.05,.15].map(x=>{const v=make(x);return {guideX:x,analysis:RR.analyze(build(v).level),initial:state(v),delivered:state(v,delivered),correct:state(v,route),feel:replay(v,route,true,true)};})};
+const c={stem:"study-20261014-v40-courier-bomb-orbit",design:d,bombs:true,authorMoves:route,inspection:inspect(d,true,6,1000),witness:w,holdout:true};
+if(require.main===module){fs.writeFileSync(path.join(OUT,"courier-bomb-orbit-study.json"),JSON.stringify({format:"rotate-courier-bomb-orbit-study",version:1,candidates:[c]},null,2));console.log(JSON.stringify({inspection:c.inspection,witness:w}));}
+module.exports={make,state,d,partial,delivered,route,c};

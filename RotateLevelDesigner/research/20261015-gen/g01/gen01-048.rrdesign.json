@@ -1,0 +1,246 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R2",
+      "x": 1.1868,
+      "y": -4.4292,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 165,
+          "target": "R3"
+        },
+        {
+          "angle": 105,
+          "target": "R1"
+        },
+        {
+          "angle": 15,
+          "target": "R13"
+        },
+        {
+          "angle": 285,
+          "target": "R6"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R3",
+      "x": -3.2424,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 120,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "R9"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R4",
+      "x": -4.4292,
+      "y": 1.1868,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R5",
+      "x": -7.6716,
+      "y": -2.0556,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 285,
+          "target": "R9"
+        },
+        {
+          "angle": 45,
+          "target": "R4"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R6",
+      "x": 2.3736,
+      "y": -8.8584,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "red",
+      "stops": [
+        {
+          "angle": 255,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": -2.0556,
+      "y": -10.0452,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 15,
+          "target": "R6"
+        },
+        {
+          "angle": 240.0002,
+          "target": "R11"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R8",
+      "x": -4.4292,
+      "y": 5.7722,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R4"
+        },
+        {
+          "angle": 0,
+          "target": "R10"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R9",
+      "x": -6.4848,
+      "y": -6.4848,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R10",
+      "x": 0.1562,
+      "y": 5.7722,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R11",
+      "x": -4.3483,
+      "y": -14.0163,
+      "gap": 90,
+      "gapDir": 165,
+      "pins": [],
+      "color": "blue",
+      "stops": [
+        {
+          "angle": 255,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "x": -9.0146,
+      "y": 5.7722,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R8"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R13",
+      "x": 5.616,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "orange",
+      "stops": [
+        {
+          "angle": 75,
+          "length": 1.47
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "x": 1.5,
+      "y": 5.5,
+      "angle": 180,
+      "color": "teal",
+      "guides": [
+        {
+          "x": 1.5,
+          "y": 5.5,
+          "angle": 180
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "shape": "straight",
+      "x": -8,
+      "y": -14.5,
+      "angle": 180,
+      "color": "orange",
+      "guides": [
+        {
+          "x": -8,
+          "y": -14.5,
+          "angle": 180
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "shape": "straight",
+      "x": -6.5,
+      "y": -10.5,
+      "angle": 270,
+      "color": "purple",
+      "guides": [
+        {
+          "x": -6.5,
+          "y": -10.5,
+          "angle": 270
+        }
+      ]
+    }
+  ],
+  "name": "G01-048 | Chương cuối",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 48 (build). Ý tưởng: R6 bị 2 vòng (R2, R7) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R2 còn giữ R3, R1, R13: nếu chưa nhả hết nơi khác thì quay R6 tiếp sẽ bị khóa lại; vòng kín R2, R7, R12 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R13 chặn một chiều quay: chọn chiều hoặc dọn đường trước. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 2.8 lần kéo/vật, mục tiêu 6–8). Không Booster/Chain/bom; lockCount 0."
+}

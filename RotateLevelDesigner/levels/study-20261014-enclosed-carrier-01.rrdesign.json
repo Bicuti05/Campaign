@@ -1,0 +1,157 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "EC-01 | Ngàm giữ thanh sau nhả pin trong vòng kín",
+  "author": "Codex + GD / research",
+  "notes": "Một thanh mang bom nằm trong vòng kín lớn C chứa hai vòng chuẩn A/B. Pin A giữ thanh ở đầu; sau trượt nông nhả pin, ngàm đầy đủ giữ thanh qua lần thả tay để còn kéo tiếp. Bom phá C và thanh, mở hai nguồn kín ngoài E/F vẫn được cửa riêng giữ. Ngàm có vai trò giữ pose sau pin, không thêm để trang trí. Vòng chuẩn1,75; C radius4,95 có mục đích chứa linh kiện và quỹ đạo bom. Thanh kích thước mặc định; không Chain/Booster/Stop. Có thể kéo dài kích bom ngay từ đầu; không ép thứ tự nhả pin/dọn A/B trước, không chứng nhận đẹp/khó.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 2.2927,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 360,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "S"
+        },
+        {
+          "angle": 180,
+          "target": "B"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": -2.2927,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 0,
+      "radius": 4.95,
+      "gap": 0,
+      "gapDir": 90,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "E",
+      "x": 0,
+      "y": -7.7854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 90,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "C"
+        },
+        {
+          "angle": 180,
+          "target": "ET"
+        },
+        {
+          "angle": 360,
+          "target": "EB"
+        }
+      ]
+    },
+    {
+      "id": "ET",
+      "x": -4.5854,
+      "y": -7.7854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "navy",
+      "pins": []
+    },
+    {
+      "id": "EB",
+      "x": 4.5854,
+      "y": -7.7854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 360,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "F",
+      "x": 0,
+      "y": 7.7854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 90,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "C"
+        },
+        {
+          "angle": 180,
+          "target": "FT"
+        },
+        {
+          "angle": 360,
+          "target": "FB"
+        }
+      ]
+    },
+    {
+      "id": "FT",
+      "x": -4.5854,
+      "y": 7.7854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "FB",
+      "x": 4.5854,
+      "y": 7.7854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 360,
+      "color": "orange",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 0,
+      "y": 2.8354,
+      "angle": 180,
+      "color": "red",
+      "guides": [
+        {
+          "x": 0,
+          "y": 2.8354,
+          "angle": 180
+        }
+      ],
+      "bomb": {
+        "x": -2.35,
+        "y": 2.8354,
+        "radius": 0.3
+      }
+    }
+  ]
+}

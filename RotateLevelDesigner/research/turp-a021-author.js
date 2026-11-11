@@ -1,0 +1,23 @@
+"use strict";
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),{api,RR}=require('./turp-continue'),{color}=require('./turp-feedback-author');
+const OUT=path.join(__dirname,'20261015-turp-a021-01');fs.mkdirSync(OUT,{recursive:true});const save=(n,v)=>fs.writeFileSync(path.join(OUT,n),JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+function author(rev='01'){
+ const d={format:'turp-design',version:1,levelId:'draft',name:'A021 — Thanh giữa và hai pha cửa phải / TURP r'+rev,author:'Codex / TURP continuation',notes:'Remake nguồn70005 bằng bố cục dọc13 vòng,3 thanh; chuyển thanh xiên thành L ngang/dọc và thanh giữa. Nối R7→R3 để liên hệ cụm trên với cửa trái, hai nguồn R7/R13 dùng chung R8; R10 kín giữ ba receiver ở dưới. Một Stop trên R9 được đo vai trò tại các pha thực; không coi input mở là đường đã mở. Kích thước/màu thay theo vai trò. Không Bom/Chain/Booster, chưa GD duyệt viền và độ khó.',rings:[],sticks:[]};
+ const specs=[['R1',1,0,1.75,0,60],['R2',1,-2,1.75,225,90],['R3',-1,0,1.75,180,60],['R4',-1,-2,1.75,180,90],['R5',0,-1,2.15,0,60],['R6',-1,-3,1.75,0,60],['R7',-1,1,2.15,180,60],['R8',0,2,1.75,90,90],['R9',1,-1,1.75,0,90],['R10',0,-2,2.15,90,0],['R11',1,-3,1.75,270,90],['R12',-1,-1,1.75,180,60],['R13',1,1,1.75,0,60]];
+ for(const[id,x,y,radius,gapDir,gap]of specs)d.rings.push({id,x:x*4.9,y:y*4.9,radius,gapDir,gap,lockCount:0,pins:[],color:'blue'});
+ const r=id=>d.rings.find(r=>r.id===id);
+ if(+rev>=2)r('R5').radius=1.75;
+ function link(a,b){a=r(a);b=r(b);const dx=b.x-a.x,dy=b.y-a.y;a.pins.push({id:'to'+b.id,angle:(Math.atan2(dy,dx)*180/Math.PI+360)%360,length:Math.hypot(dx,dy)-a.radius-.25-b.radius,target:b.id});}
+ for(const[a,b]of [['R1','R9'],['R2','R9'],['R3','R12'],['R5','R3'],['R7','R8'],['R7','R3'],['R10','R6'],['R10','R5'],['R10','R11'],['R12','R4'],['R13','R1'],['R13','R8']])link(a,b);
+ function bar(id,owner,angle,points,axis){const o=r(owner),L=o.radius+1.0854;d.sticks.push({id,x:o.x+Math.cos(angle*Math.PI/180)*L,y:o.y+Math.sin(angle*Math.PI/180)*L,angle:0,path:points,slideAxis:axis,color:'red'});o.pins.push({id:'to'+id,angle,target:id});}
+ bar('S1','R2',0,[[0,-1.4],[0,1.4],[1.3,1.4]],[0,1]);
+ bar('S2','R6',180,[[0,-1.4],[0,1.4],[-1.3,1.4]],[0,1]);
+ d.sticks.push({id:'S3',x:0,y:r('R7').y,angle:0,path:[[0,-1.6],[0,1.6]],slideAxis:[0,1],color:'red'});r('R7').pins.push({id:'centralBar',angle:0,length:-r('R7').x-r('R7').radius-.25,target:'S3'});
+ if(+rev>=3){d.sticks.find(s=>s.id==='S3').path=[[0,1.6],[0,-5],[1.5,-5]];d.notes+=' Thanh giữa S3 kéo dài thành L dọc trong khoảng trống trung tâm; giữ cùng cửa pin R7, không tăng số vật chỉ để đủ mật độ.';}
+ r('R9').stops=[{angle:225,length:1.3}];
+ color(d);const stem='turp-A021-70005-middle-stop-r'+rev;save(stem+'.rrdesign.json',d);const geometry={analysis:RR.analyze(RR.Design.toLevel(d).level),strict:api.OVL.check(d)};save(stem+'-geometry.json',geometry);console.log(JSON.stringify({stem,...geometry}));return{stem,d};
+}
+function baseline(){const hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex'),files=['AGENTS.md','Tools/RotateLevelDesigner/AGENTS.md','C:/Project Folder/TURPLevel/report.md','C:/Project Folder/TURPLevel/LevelVariants/sources/Level70005.rrdesign.json','C:/Project Folder/TURPLevel/LevelVariants/selection_active.json','Tools/RotateLevelDesigner/core/rr-level.js','Tools/RotateLevelDesigner/app.js','Tools/RotateLevelDesigner/rr-cli.js'];
+ const prior=['20261015-turp-feedback-delivery','20261015-turp-a018-delivery','20261015-turp-a019-delivery'].flatMap(dir=>JSON.parse(fs.readFileSync(path.join(__dirname,dir,'delivery-index.json'))).levels).map(l=>({stem:l.stem,design:l.design,pack:l.pack,designHash:hash(l.design),packHash:hash(l.pack),matchesPriorDesign:hash(l.design)===l.designSha256,matchesPriorPack:hash(l.pack)===l.packSha256}));
+ const inv=JSON.parse(fs.readFileSync(path.join(__dirname,'20261015-turplevel-approved-read/approval-inventory.json'))),approved=inv.entries.map(e=>({...e,packUnchanged:hash(e.packSource)===e.packSha256,designUnchanged:hash(e.designSource)===e.designSha256}));save('baseline-input-hashes.json',{createdAt:new Date().toISOString(),files:files.map(file=>({file,hash:hash(file)})),prior,approved:approved.map(e=>({stem:e.stem,packSource:e.packSource,packSha256:e.packSha256,designSource:e.designSource,designSha256:e.designSha256,packUnchanged:e.packUnchanged,designUnchanged:e.designUnchanged}))});console.log(JSON.stringify({priorAlreadyEdited:prior.filter(x=>!x.matchesPriorDesign||!x.matchesPriorPack).map(x=>x.stem),approvedPairs:approved.length}));}
+if(require.main===module){if(process.argv[2]==='baseline')baseline();else author(process.argv[2]||'01');}module.exports={OUT,save,author};

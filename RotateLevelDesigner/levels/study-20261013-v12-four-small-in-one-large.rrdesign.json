@@ -1,0 +1,81 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Vòng lớn bao bốn nguồn theo ô đều",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Nhóm lớn/nhỏ được GD mở riêng. Bốn vòng nhỏ cùng radius 1,75 và pitch 4,5854 nằm theo ô 2x2 trong vòng lớn radius tính từ đầu pin. Mỗi vòng nhỏ hướng pin ra ngoài, cùng giữ vòng lớn; khe nhỏ hướng vào hành lang ngang. Vòng ngoài khe logic 60 độ để các pin nhận ban đầu không nằm sát mép hở. Xoay vòng ngoài nhả từng nguồn rồi tiếp tục xử lý các nguồn còn lại. Không special/Booster/Chain. Đây là thử quan hệ vùng bao nhiều tâm nhỏ, chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "TL",
+      "x": -2.2927,
+      "y": 2.2927,
+      "gapDir": 0,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "TR",
+      "x": 2.2927,
+      "y": 2.2927,
+      "gapDir": 180,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 45,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "BL",
+      "x": -2.2927,
+      "y": -2.2927,
+      "gapDir": 0,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "BR",
+      "x": 2.2927,
+      "y": -2.2927,
+      "gapDir": 180,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 315,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "radius": 6.077767434452795,
+      "gap": 60,
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

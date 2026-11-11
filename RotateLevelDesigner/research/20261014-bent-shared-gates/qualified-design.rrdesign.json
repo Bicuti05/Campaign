@@ -1,0 +1,152 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "BSG-02 | Khuỷu L, ngàm giữ và hai lối qua cụm",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp L/H default cùng8 vòng radius1,75. A giữ L ở đầu nhánh đứng và cửa AT; ngàm đầy đủ trên phần trên nhánh L giữ L sau pin nhả, có vai trò thật. D giữ AT/DT, thân D chặn đường nâng dài L trước khi dọn vùng trên. AT nhận A/D nên có hai hướng nhả nguồn khác nhau. C giữ A sau mở input để còn lượt quay thực. H dưới khuỷu bị J bên trái và vách ngàm L bên phải chặn; sau L tháo còn thân A chặn phải. Có route dọn J/H trái trước hoặc dọn D/L/A cho lối H phải. R giữ H và nhận K, còn quay thật sau H nhả. L/base khác arm-only control; không Guide dư trên H, nửa ngàm/chốt/Bom/Chain/Booster. Các hàng/cột riêng theo hình học thanh default, không thu nhỏ vòng hoặc kéo dài chốt. Không nhận khó/đẹp từ count/drag. Original overlap drafts giữ research.",
+  "rings": [
+    {
+      "id": "J",
+      "x": -4.9854,
+      "y": 0.8999999999999999,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "K",
+      "x": -4.9854,
+      "y": -3.6854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "J"
+        },
+        {
+          "angle": 0,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": -0.4,
+      "y": -3.6854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "H"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "x": 5.543733254999999,
+      "y": -2.1,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        },
+        {
+          "angle": 90,
+          "target": "AT"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 5.543733254999999,
+      "y": -6.6854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "x": 5.543733254999999,
+      "y": 2.4854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "D",
+      "x": 0.9583332549999994,
+      "y": 2.4854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "AT"
+        },
+        {
+          "angle": 90,
+          "target": "DT"
+        }
+      ]
+    },
+    {
+      "id": "DT",
+      "x": 0.9583332549999994,
+      "y": 7.0708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "blue",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "L",
+      "shape": "L",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "color": "green",
+      "guides": [
+        {
+          "x": 2.708333255,
+          "y": -0.85,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": -0.4,
+      "y": -0.85,
+      "angle": 0,
+      "color": "red"
+    }
+  ]
+}

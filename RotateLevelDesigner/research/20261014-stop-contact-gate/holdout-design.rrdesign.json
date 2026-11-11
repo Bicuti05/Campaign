@@ -1,0 +1,147 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SCG-04 research | Chốt chọn contact, còn nhánh bom bế tắc",
+  "author": "Codex + GD / research",
+  "notes": "Nghiên cứu, chưa bàn giao level. Chốt0,5 gắn cung phải nguồn kín B bắt bom radius0,3 của A trước vách pin cũ, phá A/B và mở cửa dùng chung T. Bỏ chốt, cú kéo sâu chưa nổ; kéo lặp có thể phá A/C, sau đó cặp F→B kín không thể tự tháo khi đã mất bom. Với chốt vẫn có hướng ngược kéo lặp đi tới C và bế tắc. Giữ counterexample, không sửa engine/tolerance hoặc xuất levels. B được F giữ sau nhả T/L; prefix S-4,L0,T270 mở input B nhưng giữ B cho lượt quay.8Ring radius1,75 +1 thanh default,8pin +1Stop +1Bom. CLI/replay route nổ đúng B được kiểm nhưng chưa đủ gate bàn giao vì nhánh irreversible cần sửa thiết kế hoặc GD xem xét.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ],
+      "bomb": {
+        "x": -1.5556349186104046,
+        "y": -1.5556349186104046,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "B",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "T"
+        },
+        {
+          "angle": 180,
+          "target": "L"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 0,
+          "length": 0.5
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "x": -9.1708,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "T",
+      "x": -4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "A"
+        },
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "CT"
+        }
+      ]
+    },
+    {
+      "id": "CT",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "F",
+      "x": -4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "B"
+        },
+        {
+          "angle": 0,
+          "target": "AF"
+        }
+      ]
+    },
+    {
+      "id": "AF",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.8354,
+      "y": 0,
+      "angle": 90,
+      "color": "red"
+    }
+  ]
+}

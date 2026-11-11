@@ -1,0 +1,23 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Mẫu: 4 vòng + thanh có ngàm",
+  "author": "designer-tool sample",
+  "notes": "Ví dụ định dạng thiết kế. Toạ độ theo đơn vị board; 4.5854 = khoảng cách tâm chuẩn để pin chạm vòng bên cạnh.",
+  "rings": [
+    { "id": "R1", "x": 0, "y": 0, "gapDir": 135, "color": "blue",
+      "pins": [ { "id": "p1", "angle": 0, "targets": ["R2"] } ] },
+    { "id": "R2", "x": 4.5854, "y": 0, "gapDir": 45, "color": "red",
+      "pins": [ { "id": "p1", "angle": 270, "targets": ["R4"] } ] },
+    { "id": "R3", "x": 0, "y": -4.5854, "gapDir": 225, "color": "green",
+      "pins": [ { "id": "p1", "angle": 90, "targets": ["R1"] } ],
+      "stops": [ { "angle": 180, "length": 0.6 } ] },
+    { "id": "R4", "x": 4.5854, "y": -4.5854, "gapDir": 315, "color": "purple",
+      "pins": [ { "id": "p1", "angle": 270, "targets": ["S1"] } ] }
+  ],
+  "sticks": [
+    { "id": "S1", "shape": "straight", "length": 5.4167, "x": 4.5854, "y": -7.4208, "angle": 0, "color": "orange",
+      "guides": [ { "x": 6.5, "y": -7.4208, "angle": 0 } ] }
+  ]
+}

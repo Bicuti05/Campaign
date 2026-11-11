@@ -1,0 +1,19 @@
+{
+  "format": "rotate-guide-role-review",
+  "version": 1,
+  "source": "poc-manifest.json, selected[].ablations[type=guide]",
+  "review": "GD rejected the guides on all three PoCs. A delayed release and a changed solved-part trace are insufficient evidence of a meaningful puzzle role.",
+  "cases": [
+    {"intent":"divider","with_guide_part_order":["S1","S1","S1","R4"],"without_guide_part_order":["S1","S1","R4"],"essential_object_order_unchanged":true},
+    {"intent":"corner","with_guide_part_order":["R4","R4","S1","S1","S1"],"without_guide_part_order":["R4","R4","S1","S1"],"essential_object_order_unchanged":true},
+    {"intent":"frame","with_guide_part_order":["S1","S1","S1","R4"],"without_guide_part_order":["S1","S1","R4"],"essential_object_order_unchanged":true}
+  ],
+  "revision": "Remove all three guides. Keep slide axes explicit for bent bars, using the existing design schema.",
+  "future_acceptance": [
+    "Demonstrate a necessary change in object dependencies, available motion, or access to an obstructed route when removing a guide.",
+    "Do not justify a guide only by additional pointer travel, drag count, or retention after pins release.",
+    "Pin-held bars do not automatically require a guide. Evaluate a proposed guide after its pin contacts release.",
+    "Do not generalize to banning every guide on a pin-held bar: later obstruction or axis constraints can be meaningful, but require a witness."
+  ],
+  "reference_observation": {"reference_id":"ref_041","evidence":"Upper-left horizontal green bar and upper-center blue U have visible pin contacts without a visible clamp. Outer bent bars display clamps.","confidence":"visual observation only; mechanical behavior unknown"}
+}

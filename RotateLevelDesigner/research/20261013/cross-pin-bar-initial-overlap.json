@@ -1,0 +1,920 @@
+{
+  "format": "rotate-cross-pin-bar-retention-study",
+  "version": 1,
+  "candidates": [
+    {
+      "stem": "study-20261014-v38-cross-pin-bar-retention",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Pin sang vòng quay lại giữ thanh",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Thanh đứng nhận pin từ A và B, không thêm ngàm. Nâng thanh nhả pin chính của A, B giữ thanh; mở vòng trên để nhả pin còn lại của A. Khi A quay dời chốt, chính pin vốn khai báo sang vòng trên có thể chạm thanh và phục hồi link A–thanh theo scope Ring. Cần kiểm va chạm rắn, trạng thái input, vai trò từng chốt và đường giải cả analytic/feel trước khi xuất.",
+        "rings": [
+          {
+            "id": "C",
+            "x": 0,
+            "y": -4.5854,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "S"
+              },
+              {
+                "angle": 90,
+                "target": "R"
+              }
+            ],
+            "stops": [
+              {
+                "angle": 30,
+                "length": 1.75
+              },
+              {
+                "angle": 315,
+                "length": 2.5
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "x": 0,
+            "y": 4.5854,
+            "gapDir": 0,
+            "color": "green",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "B",
+            "x": 5.6708,
+            "y": 0.9,
+            "gapDir": 0,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "S"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S",
+            "shape": "straight",
+            "x": 2.8354,
+            "y": 0.35,
+            "length": 1.7,
+            "angle": 90,
+            "color": "red"
+          }
+        ]
+      },
+      "authorMoves": [
+        {
+          "part": "S",
+          "target": 0.6
+        },
+        {
+          "part": "R",
+          "target": -90
+        },
+        {
+          "part": "A",
+          "target": -90
+        },
+        {
+          "part": "S",
+          "target": 3
+        },
+        {
+          "part": "A",
+          "target": 90
+        }
+      ],
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_2",
+              "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.050)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_4",
+              "text": "R4 chồng lên vật khác lúc bắt đầu (độ xuyên 0.050)"
+            }
+          ],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 0,
+            "bombs": 0,
+            "links": 4,
+            "pins": 4,
+            "stops": 2,
+            "closedRings": 0
+          }
+        },
+        "solution": null
+      },
+      "witness": {
+        "initial": {
+          "remaining": 5,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "ring_3",
+              "pin": "attachment.pin_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_4",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "first": {
+          "remaining": 5,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "ring_3",
+              "pin": "attachment.pin_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_4",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0.38824462890625,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "prepared": {
+          "remaining": 4,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "ring_3",
+              "pin": "attachment.pin_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_4",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": -53.999999999999574,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0.38824462890625,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "turned": {
+          "remaining": 4,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "ring_3",
+              "pin": "attachment.pin_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_4",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": -53.999999999999574,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0.38824462890625,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "pulled": {
+          "remaining": 4,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "ring_3",
+              "pin": "attachment.pin_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_4",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": -53.999999999999574,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0.41295166015625007,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "trace": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 0.6,
+              "pose": 0.38824462890625,
+              "remaining": 5,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R",
+              "pointer": -90,
+              "pose": -53.999999999999574,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": -90,
+              "pose": 180,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "S",
+              "pointer": 3,
+              "pose": 0.41295166015625007,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 90,
+              "pose": 180,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feel": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 0.6,
+              "pose": 0.38824462890625,
+              "remaining": 5,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R",
+              "pointer": -90,
+              "pose": -53.999999999999616,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": -90,
+              "pose": 180,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "S",
+              "pointer": 3,
+              "pose": 0.41295166015625007,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 90,
+              "pose": 180,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "initialBar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.3,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.4549804687500001,
+            "remaining": 5,
+            "links": 4
+          }
+        ],
+        "initialA": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 5,
+            "links": 4
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 5,
+            "links": 4
+          }
+        ],
+        "onlyBarA": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 5,
+            "links": 4
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 5,
+            "links": 4
+          }
+        ],
+        "onlyReceiverA": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "preparedA": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "afterTurnA": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "afterTurnBar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0.38824462890625,
+            "to": -1.3117553710937502,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0.38824462890625,
+            "to": 0.4764526367187501,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "withoutUpper": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.3,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.5,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "withoutLower": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.3,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.4549804687500001,
+            "remaining": 5,
+            "links": 4
+          }
+        ],
+        "withoutB": {
+          "remaining": 4,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "ring_3",
+              "pin": "attachment.pin_3",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            },
+            "S": {
+              "pose": 0.38824462890625,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "withoutC": {
+          "remaining": 3,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_2",
+              "active": false
+            },
+            {
+              "source": "ring_3",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_3",
+              "active": true
+            }
+          ],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": -53.999999999999574,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0.38824462890625,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "withoutCrossPin": {
+          "remaining": 4,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_3",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_3",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0.38824462890625,
+              "solved": false,
+              "locked": false
+            }
+          }
+        },
+        "turnFeel": {
+          "remaining": 4,
+          "solved": false,
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "pin": "attachment.pin_1",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_2",
+              "active": true
+            },
+            {
+              "source": "ring_2",
+              "target": "ring_3",
+              "pin": "attachment.pin_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "slide_bar_1",
+              "pin": "attachment.pin_4",
+              "active": true
+            }
+          ],
+          "poses": {
+            "C": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "R": {
+              "pose": -53.999999999999616,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "S": {
+              "pose": 0.38824462890625,
+              "solved": false,
+              "locked": false
+            }
+          }
+        }
+      },
+      "holdout": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+"use strict";
+// A052 r01 export (generate-only; GD solves). New files only.
+const fs=require('fs'),path=require('path'),{execFileSync}=require('child_process'),A=require('./turp-a052-author.js');
+const stem='turp-A052-70006-frame-inner-pinbars-r01',LV=path.join(__dirname,'../levels'),CLI=path.join(__dirname,'../rr-cli.js'),sharp=require('C:/Users/ADMIN/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const d=A.author('01');
+for(const id of ['S3','S4'])d.sticks.find(x=>x.id===id).color='red';{const n=require('./turp-color-near.js')(d);if(n.near.length||n.sizeClash.length)throw Error(JSON.stringify(n));}
+d.notes='Board A level52 (ref index (6).html: 17 vòng/20 pin, vòng kín1 và14, không thanh; nguồn khớp TURP 70006, xếp lục giác, có vòng tự do/link idle lúc nạp). Bản mới dựng thẳng khung chữ nhật4 cột×5 hàng bước4,9, bỏ góc trên trái và dưới trái → 14 vòng + 8 thanh ngang/dọc, không vật tự do. Hai nguồn kín R13/R14 radius2,15 cùng màu đặt chéo bên trong; ô trong còn lại là hai thanh pin dọc S1/S2 dùng chung: S1 nhận pin nguồn R13 và vòng viền R7, bị R14 chặn trên và R2 chặn dưới; S2 nhận pin nguồn R14 và R6, bị R10 chặn trên và R13 chặn dưới. Liên kết: R13→R4/R5/R1/S1, R14→R8/R9/R11/S2, R5→R6, R1→R2→R3→R7, R8→R7, R10→R11→R12→R9. Thanh: U trái S3 xuyên khe R5/R6 (hàng trên), U phải S4 xuyên khe R7/R8 (hàng dưới), hai chân bằng nhau, mỗi chân một Guide; S5 L từ dưới vào khe R4 (góc dưới trái đã bỏ); S6 L từ dưới vào khe R2; S7 L từ trái vào khe R10 (góc trên trái đã bỏ); S8 L từ phải vào khe R9. lockCount0, không Stop/Bom/Xích. Ý tưởng cần nhận ra: mỗi thanh pin trong bị kẹp giữa một nguồn kín và một vòng viền, phải mở viền để nhường đường trượt rồi quay lại nhả nguồn. Lời giải do GD tìm (quyết định người dùng16/10/2026), Codex không chạy solve/proof.';
+const dp=path.join(LV,stem+'.rrdesign.json'),pp=path.join(LV,stem+'.rrpack.json');
+fs.writeFileSync(dp,JSON.stringify(d,null,2)+'\n',{flag:'wx'});
+fs.writeFileSync(path.join(A.OUT,stem+'-geometry.json'),JSON.stringify(require('./turp-a042-author.js').check(d),null,2)+'\n',{flag:'wx'});
+console.log(execFileSync('node',[CLI,'validate',dp]).toString());
+execFileSync('node',[CLI,'pack',dp,'-o',pp,'--author','Codex / TURP','--no-solve']);
+console.log(execFileSync('node',[CLI,'validate',pp]).toString());
+execFileSync('node',[CLI,'render',dp,'-o',path.join(A.OUT,'r01.svg'),'--links']);
+(async()=>{await sharp(path.join(A.OUT,'r01.svg')).png().toFile(path.join(A.OUT,'r01.png'));const a=await sharp(path.join(A.OUT,'source.png')).resize({height:800}).toBuffer(),b=await sharp(path.join(A.OUT,'r01.png')).resize({height:800}).toBuffer(),ma=await sharp(a).metadata(),mb=await sharp(b).metadata();await sharp({create:{width:ma.width+mb.width+20,height:800,channels:3,background:'#ffffff'}}).composite([{input:a,left:0,top:0},{input:b,left:ma.width+20,top:0}]).png().toFile(path.join(A.OUT,'r01-vs-source.png'));console.log(require('crypto').createHash('sha256').update(fs.readFileSync(pp)).digest('hex'));})();

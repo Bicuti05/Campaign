@@ -1,0 +1,153 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Bốn nguồn cùng giữ cửa giữa",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Cụm 3×3 gồm 9 vòng radius 1,75. Bốn nguồn nằm giữa các cạnh, mỗi nguồn giữ hai vòng góc và vòng giữa. Mở một góc hoặc cửa giữa riêng lẻ chưa nhả nguồn: cần phối hợp các cửa đang cùng giữ nguồn. Sau một nguồn rời, lựa chọn của các cửa lân cận đổi, rồi quay lại cửa giữa để xử lý nguồn khác. Không thanh/ngàm/chốt/bom/Booster/Chain; quy mô là sketch nghiên cứu, chưa chốt vị trí campaign hoặc độ khó.",
+  "rings": [
+    {
+      "id": "BL",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "SB",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "BL"
+        },
+        {
+          "angle": 0,
+          "target": "BR"
+        },
+        {
+          "angle": 90,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "BR",
+      "x": 9.1708,
+      "y": 0,
+      "gapDir": 315,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "SL",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "BL"
+        },
+        {
+          "angle": 90,
+          "target": "TL"
+        },
+        {
+          "angle": 0,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 45,
+      "color": "sky",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "SR",
+      "x": 9.1708,
+      "y": 4.5854,
+      "gapDir": 0,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "BR"
+        },
+        {
+          "angle": 90,
+          "target": "TR"
+        },
+        {
+          "angle": 180,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "TL",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 135,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "ST",
+      "x": 4.5854,
+      "y": 9.1708,
+      "gapDir": 90,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "TL"
+        },
+        {
+          "angle": 0,
+          "target": "TR"
+        },
+        {
+          "angle": 270,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "TR",
+      "x": 9.1708,
+      "y": 9.1708,
+      "gapDir": 45,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

@@ -1,0 +1,220 @@
+{
+  "slot": 1,
+  "stem": "batch01-001",
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "B01-001 | Hai cửa cùng mở",
+    "author": "Codex + GD / batch 01",
+    "notes": "Bộ 15 level đầu, vị trí đề xuất 1/15. Chuẩn bị hai cửa ở hai hướng để nhả nguồn ở góc; mở một cửa vẫn còn pin kia giữ nguồn. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. ",
+    "rings": [
+      {
+        "id": "A",
+        "x": 0,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 225,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 0,
+            "target": "E"
+          },
+          {
+            "angle": 90,
+            "target": "N"
+          }
+        ]
+      },
+      {
+        "id": "E",
+        "x": 4.5854,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 315,
+        "color": "blue",
+        "pins": []
+      },
+      {
+        "id": "N",
+        "x": 0,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 135,
+        "color": "purple",
+        "pins": []
+      }
+    ],
+    "sticks": []
+  },
+  "authorMoves": [
+    {
+      "part": "E",
+      "target": 180
+    },
+    {
+      "part": "N",
+      "target": 270
+    }
+  ],
+  "bombs": false,
+  "idea": "Chuẩn bị hai cửa ở hai hướng để nhả nguồn ở góc; mở một cửa vẫn còn pin kia giữ nguồn.",
+  "sourceStudy": null,
+  "probes": [],
+  "analysis": {
+    "error": null,
+    "warnings": [],
+    "info": {
+      "rings": 3,
+      "sticks": 0,
+      "guides": 0,
+      "bombs": 0,
+      "links": 2,
+      "pins": 2,
+      "stops": 0,
+      "closedRings": 0
+    }
+  },
+  "initial": {
+    "solved": false,
+    "remaining": 3,
+    "initialContacts": [],
+    "trace": [],
+    "links": [
+      true,
+      true
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 225.00000000000003,
+        "solved": false,
+        "locked": true
+      },
+      "E": {
+        "pose": 315,
+        "solved": false,
+        "locked": false
+      },
+      "N": {
+        "pose": 135,
+        "solved": false,
+        "locked": false
+      }
+    }
+  },
+  "full": {
+    "solved": true,
+    "remaining": 0,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "E",
+        "target": 180,
+        "pose": 191.25000000000048,
+        "remaining": 2,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ]
+      },
+      {
+        "part": "N",
+        "target": 270,
+        "pose": 258.7499999999987,
+        "remaining": 0,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3",
+          "ring_1"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      false
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 225.00000000000003,
+        "solved": true,
+        "locked": false
+      },
+      "E": {
+        "pose": 191.25000000000048,
+        "solved": true,
+        "locked": false
+      },
+      "N": {
+        "pose": 258.7499999999987,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "release": {
+    "ok": true,
+    "solved": true,
+    "trace": [
+      {
+        "part": "ring_2",
+        "target": 180,
+        "grab": {
+          "x": 3.6322816887237024,
+          "y": 1.467673493904492
+        },
+        "selectableBodySamples": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ],
+        "pose": 191.25000000000048,
+        "remaining": 2,
+        "links": [
+          false,
+          true
+        ]
+      },
+      {
+        "part": "ring_3",
+        "target": 270,
+        "grab": {
+          "x": -1.5155444566227676,
+          "y": 3.7104
+        },
+        "selectableBodySamples": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3",
+          "ring_1"
+        ],
+        "pose": 258.7499999999987,
+        "remaining": 0,
+        "links": [
+          false,
+          false
+        ]
+      }
+    ],
+    "bombs": []
+  },
+  "analytic": {
+    "solved": true,
+    "remaining": 0
+  },
+  "feel": {
+    "solved": true,
+    "remaining": 0
+  }
+}

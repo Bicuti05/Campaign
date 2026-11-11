@@ -1,0 +1,6 @@
+"use strict";
+const fs=require("fs"),path=require("path"),source=JSON.parse(fs.readFileSync(path.resolve(__dirname,"../../../LevelTrainingData/ring-lab/data/original_levels.json")));
+const a={stopOwners:0,stops:0,stopOwnerLogicGaps:{},closedIncomingBoardHasBomb:0,closedIncomingBoardWithoutBomb:0};
+for(const l of source.levels){const bomb=l.parts.some(p=>p.partData&&Number(p.partData.HasBomb)>0)||l.parts.some(p=>p.id.startsWith("bomb"));for(const r of l.parts.filter(p=>p.ring)){const stops=r.ring.attachments.filter(x=>x.type==="0");if(stops.length){a.stopOwners++;a.stops+=stops.length;const k=r.partData.GapAngleDeg;a.stopOwnerLogicGaps[k]=(a.stopOwnerLogicGaps[k]||0)+stops.length;}if(Number(r.partData.GapAngleDeg)===0&&l.links.some(x=>x.targetPartId===r.id))a[bomb?"closedIncomingBoardHasBomb":"closedIncomingBoardWithoutBomb"]++;}}
+fs.writeFileSync(path.join(__dirname,"20261013/special-source-audit.json"),JSON.stringify({source:"Ring Lab resource assets, authored fields only",...a,limits:["Type 0 is a stop-pin per RotatePrefabReader; type 1 is a pin.","HasBomb somewhere on a board does not prove which object it targets or that its explosion is required.","No campaign/image ID mapping or layout deduplication."]},null,2));
+console.log(JSON.stringify(a));

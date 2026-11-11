@@ -1,0 +1,150 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R2",
+      "x": 3.2424,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 45,
+          "target": "R3"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R3",
+      "x": 6.4847,
+      "y": 6.4847,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R4",
+      "x": 3.2424,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 225,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R1"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R5",
+      "x": 6.4847,
+      "y": 0,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 45,
+          "target": "R6"
+        },
+        {
+          "angle": 134.9991,
+          "target": "R2"
+        },
+        {
+          "angle": 315,
+          "target": "R8"
+        },
+        {
+          "angle": 225.0009,
+          "target": "R4"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R6",
+      "x": 9.7271,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 315,
+          "target": "R9"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R7",
+      "x": 6.4847,
+      "y": -6.4847,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R4"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R8",
+      "x": 9.7271,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R9",
+      "x": 12.9695,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "R8"
+        }
+      ],
+      "color": "sky"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "L",
+      "x": -1.75,
+      "y": 2.75,
+      "angle": 315,
+      "color": "green",
+      "guides": [
+        {
+          "x": -1.75,
+          "y": 2.75,
+          "angle": 315
+        }
+      ]
+    }
+  ],
+  "name": "G01-012 | Thanh chữ L",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 12 (build). Ý tưởng: R8 bị 2 vòng (R5, R9) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R5 còn giữ R6, R2, R4: nếu chưa nhả hết nơi khác thì quay R8 tiếp sẽ bị khóa lại; vòng kín R5, R7 không tự quay để thoát: phải nhả hết các vòng nó giữ; thanh S1 chặn đường quay của vòng bên cạnh: rút thanh đúng lúc. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 4.7 lần kéo/vật, mục tiêu 3–5). Không Booster/Chain/bom; lockCount 0."
+}

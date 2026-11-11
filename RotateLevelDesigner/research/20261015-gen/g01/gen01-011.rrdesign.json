@@ -1,0 +1,161 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R2"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R5"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R3",
+      "x": 9.1708,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R2"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R5",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "red"
+    },
+    {
+      "id": "R6",
+      "x": 9.1708,
+      "y": -4.5854,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R3"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R7",
+      "x": 0,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R8"
+        },
+        {
+          "angle": 90,
+          "target": "R4"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R8",
+      "x": 4.5854,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R9"
+        },
+        {
+          "angle": 90,
+          "target": "R5"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R9",
+      "x": 9.1708,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "orange"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "x": 2.25,
+      "y": -3.5,
+      "angle": 90,
+      "color": "orange",
+      "guides": [
+        {
+          "x": 2.25,
+          "y": -3.5,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "shape": "straight",
+      "x": 11.25,
+      "y": -8,
+      "angle": 270,
+      "color": "purple",
+      "guides": [
+        {
+          "x": 11.25,
+          "y": -8,
+          "angle": 270
+        }
+      ]
+    }
+  ],
+  "name": "G01-011 | Hai thanh thẳng",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 11 (build). Ý tưởng: R2 bị 2 vòng (R1, R3) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; vòng kín R6 không tự quay để thoát: phải nhả hết các vòng nó giữ; thanh S1 chặn đường quay của vòng bên cạnh: rút thanh đúng lúc; thanh S2 chặn đường quay của vòng bên cạnh: rút thanh đúng lúc. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 3.0 lần kéo/vật, mục tiêu 2–3.5). Không Booster/Chain/bom; lockCount 0."
+}

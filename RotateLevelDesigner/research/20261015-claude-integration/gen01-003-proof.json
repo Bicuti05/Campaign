@@ -1,0 +1,270 @@
+{
+  "ok": false,
+  "status": "held_full_material_gesture",
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 3,
+        "pins": 3,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "R2",
+        "target": "R1",
+        "margin": 90
+      },
+      {
+        "owner": "R3",
+        "target": "R1",
+        "margin": 90
+      },
+      {
+        "owner": "R4",
+        "target": "R2",
+        "margin": 90.0009
+      }
+    ],
+    "guides": [],
+    "bodyAccess": [
+      {
+        "label": "R1",
+        "visibleBodyPoints": 73
+      },
+      {
+        "label": "R2",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "R3",
+        "visibleBodyPoints": 91
+      },
+      {
+        "label": "R4",
+        "visibleBodyPoints": 91
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "bakedMargins": {
+    "ok": true,
+    "rows": [
+      {
+        "owner": "ring_2",
+        "pin": 0,
+        "margin": 90,
+        "ok": true
+      },
+      {
+        "owner": "ring_3",
+        "pin": 0,
+        "margin": 90,
+        "ok": true
+      },
+      {
+        "owner": "ring_4",
+        "pin": 0,
+        "margin": 90.00090018933548,
+        "ok": true
+      }
+    ]
+  },
+  "body": [
+    {
+      "label": "R1",
+      "points": 73,
+      "locked": false,
+      "began": true,
+      "ok": true
+    },
+    {
+      "label": "R2",
+      "points": 82,
+      "locked": true,
+      "began": false,
+      "ok": true
+    },
+    {
+      "label": "R3",
+      "points": 91,
+      "locked": true,
+      "began": false,
+      "ok": true
+    },
+    {
+      "label": "R4",
+      "points": 91,
+      "locked": true,
+      "began": false,
+      "ok": true
+    }
+  ],
+  "runtimeMoves": [
+    {
+      "part": "ring_1",
+      "target": 279
+    },
+    {
+      "part": "ring_1",
+      "target": 368.99999999999943
+    },
+    {
+      "part": "ring_2",
+      "target": -9
+    }
+  ],
+  "moves": [
+    {
+      "part": "R1",
+      "target": 279
+    },
+    {
+      "part": "R1",
+      "target": 368.99999999999943
+    },
+    {
+      "part": "R2",
+      "target": -9
+    }
+  ],
+  "analytic": {
+    "ok": true,
+    "solved": true,
+    "trace": [
+      {
+        "part": "ring_1",
+        "target": 279,
+        "grab": {
+          "x": -1.237436867076458,
+          "y": 1.2374368670764582
+        },
+        "grabBodySdf": -0.0002125308097238876,
+        "selectable": 73,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3"
+        ],
+        "pose": 279.00000000000006,
+        "remaining": 3,
+        "links": [
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "part": "ring_1",
+        "target": 368.99999999999943,
+        "grab": {
+          "x": -1.5155444566227678,
+          "y": 0.8749999999999999
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ],
+        "pose": 368.9999999999992,
+        "remaining": 2,
+        "links": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "part": "ring_2",
+        "target": -9,
+        "grab": {
+          "x": 1.7268555433772323,
+          "y": 2.3674
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4",
+          "ring_2"
+        ],
+        "pose": -8.999999999999034,
+        "remaining": 0,
+        "links": [
+          false,
+          false,
+          false
+        ]
+      }
+    ],
+    "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+  },
+  "default": {
+    "ok": false,
+    "solved": false,
+    "trace": [
+      {
+        "part": "ring_1",
+        "target": 279,
+        "grab": {
+          "x": -1.237436867076458,
+          "y": 1.2374368670764582
+        },
+        "grabBodySdf": -0.0002125308097238876,
+        "selectable": 73,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 276.75000000000006,
+        "remaining": 4,
+        "links": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_1",
+        "target": 368.99999999999943,
+        "grab": {
+          "x": -1.4157797401561578,
+          "y": 1.0286241915118282
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 79,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3"
+        ],
+        "pose": 345.93749999999864,
+        "remaining": 3,
+        "links": [
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "part": "ring_2",
+        "target": -9,
+        "began": false,
+        "locked": true,
+        "selectable": 82
+      }
+    ],
+    "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+  }
+}

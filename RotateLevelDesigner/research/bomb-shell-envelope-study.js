@@ -1,0 +1,14 @@
+"use strict";
+const fs=require("fs"),path=require("path"),h=require("./ongoing-study.js"),door=require("./bomb-geometry-door-study.js");
+const {RR,P,OUT,clone,build,probe,inspect,replay}=h;
+const cases=[4.8,5,5.3354,5.8,6.2,6.6].map(radius=>{const d=door.makeNested(2,radius),b=build(d),noFirst=clone(d);delete noFirst.rings[2].bomb;const before=door.state(d,[{part:"K",target:0}]);return {radius,analysis:RR.analyze(b.level),initial:door.state(d),bodyClearanceInvariant:radius-.25-(P/2+2.2+.3),beforeK:[-1,1].map(dir=>probe(d,"K",dir,[],true)),secondFirst:before,authoredRoute:door.state(d,[...door.first,{part:"K",target:0}]),withoutFirst:inspect(noFirst,true,2,500)};});
+const open=door.makeNested();open.rings[1].gap=90;open.rings[1].gapDir=270;
+const openWitness={analysis:RR.analyze(build(open).level),wrongFirstThenSecond:door.state(open,[{part:"R",target:360},{part:"K",target:0}])};
+const base=JSON.parse(fs.readFileSync(path.join(OUT,"bomb-geometry-door-study.json"))),held=base.candidates.find(c=>c.holdout),alternative=held.witness.withoutFirst.solution.route.map(m=>({part:m.part,target:m.to}));
+const noFirst=clone(held.design);delete noFirst.rings[2].bomb;
+const holdoutAlternatives=[0,6,12].map(pad=>{const moves=alternative.map((m,i)=>({...m,target:m.target+[1,-1,1,1][i]*pad}));return {pointerExtension:pad,moves,analytic:replay(noFirst,moves,true),feel:replay(noFirst,moves,true,true)};});
+const holdoutAlternative=holdoutAlternatives.find(v=>v.analytic.solved&&v.feel.solved);
+if(!holdoutAlternative)throw Error("No feel proof of the open door bypass");
+const report={format:"rotate-bomb-shell-envelope-study",version:1,scope:"Finite geometry counterexamples, not statistical robustness or new level variants",cases,openShell:openWitness,openDoorHoldoutAlternatives:holdoutAlternatives,openDoorHoldoutAlternative:holdoutAlternative};
+fs.writeFileSync(path.join(OUT,"bomb-shell-envelope-study.json"),JSON.stringify(report,null,2));
+console.log(JSON.stringify({cases:cases.map(c=>({radius:c.radius,warnings:c.analysis.warnings.map(w=>w.code),initialContacts:c.initial.initialContacts.length,invariant:c.bodyClearanceInvariant,secondFirst:c.secondFirst.events,beforeK:c.beforeK,withoutFirstFound:c.withoutFirst.solution?.found,routeSolved:c.authoredRoute.solved})),openShell:openWitness,holdoutAlternative}));

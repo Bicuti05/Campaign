@@ -1,0 +1,129 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SWH-04 | Chốt trong khe, đổi cửa rồi quay lại nguồn",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp 8 vòng radius 1,75, hàng/cột pitch 4,5854, 7 pin và 1 Stop trên A: góc 0, length 1,6, chân nối vật liệu ngoài khe A90. A nhận C/D và đã mở input, nhưng chốt chạm thân R ở cả hai hướng khi khe R180. DB120/RT180 mở input R; RR phía trên giữ R để có lượt R150 đổi khe, cho chốt A đi ra. A180 rồi A270 phục vụ C/D; DB dùng chung D/R còn D giữ sau khi R nhả. DB180 dọn D, R90 phục vụ RR, Q180 dọn cuối. Hai lần kéo A180 từ đầu có thể vượt cản, dọn C; continuation không có R150 vẫn hoàn thành. Không chứng nhận chuẩn bị R hoặc thứ tự là bắt buộc, không suy độ khó từ count. Kéo sai A/R có recovery đã kiểm. Controls length 1,4/1,5/1,55 không cản A quay dương trực tiếp trong cùng geometry; giữ 1,6 vì vai trò có đối chứng, không đặt min Stop phổ quát. Prototype01 pin lệch/overlap và02 pin R đối diện kẹt cleanup giữ research. Không Stick/Guide/Bom/Chain/Booster. Visual/difficulty chờ GD; proof Designer analytic/default feel/body gesture tới target rồi thả, không Unity/browser/device.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange",
+      "pins": [],
+      "stops": [
+        {
+          "angle": 0,
+          "length": 1.6
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        },
+        {
+          "angle": 0,
+          "target": "DB"
+        }
+      ]
+    },
+    {
+      "id": "DB",
+      "x": 4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "R",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "RT"
+        },
+        {
+          "angle": 270,
+          "target": "DB"
+        }
+      ]
+    },
+    {
+      "id": "RT",
+      "x": 9.1708,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "RR",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R"
+        },
+        {
+          "angle": 0,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 9.1708,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "red",
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

@@ -1,0 +1,166 @@
+{
+  "format": "rotate-other-families-cli",
+  "version": 1,
+  "scope": "Designer only; no Unity",
+  "checks": [
+    {
+      "stem": "study-20261013-v4-l-lifts-roof",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js validate Tools/RotateLevelDesigner/levels/study-20261013-v4-l-lifts-roof.rrdesign.json",
+      "exitCode": 0,
+      "output": "OK   Tools/RotateLevelDesigner/levels/study-20261013-v4-l-lifts-roof.rrdesign.json (design) rings 4 (closed 0), pins 4, links 4, stops 0, sticks 1, guides 0, bombs 0"
+    },
+    {
+      "stem": "study-20261013-v4-l-lifts-roof",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js solve Tools/RotateLevelDesigner/levels/study-20261013-v4-l-lifts-roof.rrdesign.json --no-bombs --time 8 --nodes 1000 --json",
+      "exitCode": 0,
+      "output": {
+        "found": true,
+        "drags": 4,
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.285,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.8,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0.8,
+            "to": 5.4,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      }
+    },
+    {
+      "stem": "study-20261013-v4-stop-selects-direction",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js validate Tools/RotateLevelDesigner/levels/study-20261013-v4-stop-selects-direction.rrdesign.json",
+      "exitCode": 0,
+      "output": "OK   Tools/RotateLevelDesigner/levels/study-20261013-v4-stop-selects-direction.rrdesign.json (design) rings 4 (closed 0), pins 3, links 3, stops 1, sticks 0, guides 0, bombs 0"
+    },
+    {
+      "stem": "study-20261013-v4-stop-selects-direction",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js solve Tools/RotateLevelDesigner/levels/study-20261013-v4-stop-selects-direction.rrdesign.json --no-bombs --time 8 --nodes 1000 --json",
+      "exitCode": 0,
+      "output": {
+        "found": true,
+        "drags": 3,
+        "log": "found with 3 drags after 16 explorations",
+        "nodes": 16,
+        "seconds": 0.076,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 2,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 3,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 270,
+            "to": 216,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      }
+    },
+    {
+      "stem": "study-20261013-v4-closed-body-gate",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js validate Tools/RotateLevelDesigner/levels/study-20261013-v4-closed-body-gate.rrdesign.json",
+      "exitCode": 0,
+      "output": "OK   Tools/RotateLevelDesigner/levels/study-20261013-v4-closed-body-gate.rrdesign.json (design) rings 4 (closed 1), pins 2, links 2, stops 1, sticks 0, guides 0, bombs 0"
+    },
+    {
+      "stem": "study-20261013-v4-closed-body-gate",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js solve Tools/RotateLevelDesigner/levels/study-20261013-v4-closed-body-gate.rrdesign.json --no-bombs --time 8 --nodes 1000 --json",
+      "exitCode": 0,
+      "output": {
+        "found": true,
+        "drags": 2,
+        "log": "found with 2 drags after 12 explorations",
+        "nodes": 12,
+        "seconds": 0.046,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 45,
+            "to": -54,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      }
+    }
+  ]
+}

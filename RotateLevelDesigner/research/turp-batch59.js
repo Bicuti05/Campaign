@@ -1,0 +1,19 @@
+"use strict";
+// Batch driver A059–A069 (balanced remakes). Usage: node turp-batch59.js <slot> [kind] [dry]
+const fs=require('fs'),path=require('path'),B=require('./turp-balanced.js'),{check}=require('./turp-a042-author'),near=require('./turp-color-near.js');
+const map=require('./20261016-boardA-ref-51/mapping-51-100.json'),ref=require('./20261016-boardA-ref-51/boardA-51-100.json');
+const kinds=['rot180','flipX','flipY'];
+function make(slot,kind){const m=map.find(x=>x.level===slot),src='./20261016-boardA-ref-51/sources/Level'+m.source+'.rrdesign.json';const st=B.remake(src,{kind:kind||kinds[slot%3],seed:slot});st.d.name='Level '+slot;st.d.author='Codex / TURP';return {m,st};}
+module.exports={make};
+if(require.main===module&&process.argv[2]!=='export'){const slot=+process.argv[2],{m,st}=make(slot,process.argv[3]);const c=check(st.d),n=near(st.d);
+ console.log(slot,m.source,m.basis,JSON.stringify(st.log));console.log(JSON.stringify(c.analysis.warnings.map(w=>w.text)),JSON.stringify(c.margins.filter(x=>x.margin<45)),c.links.filter(l=>!l.active).length,JSON.stringify(n),JSON.stringify(c.analysis.info));
+ const out=path.join(__dirname,'20261017-turp-a0'+slot+'-01');fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(require('os').tmpdir(),'claude','a0'+slot+'.rrdesign.json'),JSON.stringify(st.d,null,1));}
+// Export: node turp-batch59.js export <slot> [kind]
+async function exportSlot(slot,kind,rev='r01'){const F=require('./turp-src-finish.js'),sharp=require('C:/Users/ADMIN/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp'),{execFileSync}=require('child_process');
+ const {m,st}=make(slot,kind),out=path.join(__dirname,'20261017-turp-a0'+slot+'-01');fs.mkdirSync(out,{recursive:true});
+ const srcSvg=path.join(out,'source.svg');execFileSync('node',[path.join(__dirname,'../rr-cli.js'),'render',path.join(__dirname,'20261016-boardA-ref-51/sources/Level'+m.source+'.rrdesign.json'),'-o',srcSvg,'--links']);await sharp(srcSvg).png().toFile(path.join(out,'source.png'));
+ const l=ref.levels.find(x=>x.level===slot).board_A,c=l.counts,info=check(st.d).analysis.info;
+ const notes='Board A level'+slot+' (ref index (6).html: '+c.rings+' vòng/'+c.blocking_pins+' pin/'+c.stop_pins+' Stop, '+c.slide_bars+' thanh/'+c.clamps+' ngàm, '+c.bombs+' Bom, vòng kín '+JSON.stringify(l.closed_rings||[])+'; nguồn TURP '+m.source+(m.basis==='exact'?'':' (khớp '+m.basis+', chưa đủ)')+'). Hướng cân bằng theo feedback 16/10/2026: giữ ý tưởng cốt lõi và cụm chính của nguồn, đổi viền rõ. Thao tác (id theo nguồn): '+st.log.slice(1).join('; ')+'; đặt lại độ dài pin cho chạm lúc nạp, xoay nhẹ khe cho biên pin ≥45°, màu sửa cho không cặp gần cùng màu và cùng màu cùng cỡ. Kết quả '+info.rings+' vòng ('+info.closedRings+' kín)/'+info.sticks+' thanh/'+info.guides+' ngàm/'+info.stops+' Stop/'+info.bombs+' Bom, lockCount0, không Xích. Thanh mới thêm là L ngang/dọc vào khe vòng ngoài, chặn vòng đó quay tới khi rút. '+(st.log.some(x=>/giữ pin trong/.test(x))?'Pin gắn trong của nguồn được giữ nguyên dạng gắn trong (Designer hỗ trợ isInnerMount từ 17/10/2026, giống generator Unity). ':'')+(info.bombs?'Có Bom giữ từ nguồn; GD xác nhận có cần nổ không. ':'')+'Lời giải do GD tìm (quyết định người dùng16/10/2026), Codex không chạy solve/proof.';
+ const sha=await F({d:st.d,stem:'turp-A0'+slot+'-'+m.source+'-balanced-'+rev,out,rev,notes,compare:rev!=='r01'?[path.join(out,'r01.png')]:[]});return {slot,source:m.source,basis:m.basis,stem:'turp-A0'+slot+'-'+m.source+'-balanced-'+rev,sha,log:st.log.slice(1),info};}
+module.exports.exportSlot=exportSlot;
+if(require.main===module&&process.argv[2]==='export')exportSlot(+process.argv[3],process.argv[4]||undefined,process.argv[5]||'r01').then(r=>{fs.appendFileSync(path.join(__dirname,'20261017-batch59-index.jsonl'),JSON.stringify(r)+'\n');console.log(JSON.stringify(r));}).catch(e=>{console.error('FAIL',e.message);process.exit(1);});

@@ -1,0 +1,66 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Ba pin hội tụ — mở từng nguồn",
+  "author": "Codex reference study 20261013",
+  "notes": "Ba nguồn trái, phải, trên giữ cùng một vòng nhận pin. Khe 90 độ không nhả ba hướng cùng lúc; xoay vòng nhận để nhả từng nguồn, quan sát pin nguồn biến mất rồi tiếp tục quay. Cụm T nhỏ gọn, giữ khoảng trống phía dưới. Không thanh, ngàm, bom, chốt, Chain hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "C",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "L",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "C"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "C"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "C"
+        }
+      ]
+    }
+  ],
+  "sticks": []
+}

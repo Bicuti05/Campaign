@@ -1,0 +1,2488 @@
+{
+  "format": "rotate-joint-poc",
+  "version": 1,
+  "seed": 131026,
+  "algorithm": "bounded role/contact hypotheses + discrete gap search; no learned aesthetic model",
+  "container": {
+    "width": 18,
+    "height": 24,
+    "aspect": "3:4",
+    "units": "board"
+  },
+  "candidates": [
+    {
+      "stem": "poc-divider-135",
+      "intent": "divider",
+      "reference_ids": [
+        "ref_028",
+        "ref_041"
+      ],
+      "gap": 135,
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 3,
+        "pins": 3,
+        "stops": 0,
+        "closedRings": 0
+      },
+      "bounds": {
+        "xMin": -3.281369553823252,
+        "yMin": -7.866769553823252,
+        "xMax": 7.866769553823252,
+        "yMax": 3.2813695538232523
+      },
+      "fits_container": true,
+      "solver_status": "solved",
+      "nodes": 25,
+      "seconds": 0.224,
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": 1.9000000000000006,
+            "pose": 1.9000000000000004,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 6.499999999999993,
+            "pose": 6.499999999999993,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.599999999999989,
+            "pose": 7.499999999999989,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 150,
+            "pose": 143.99999999999972,
+            "remaining": 0,
+            "removed": 2
+          }
+        ]
+      },
+      "raw_feel_replay": {
+        "solved": false,
+        "remaining": 2,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": 1.9000000000000006,
+            "pose": 1.9000000000000004,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 6.499999999999993,
+            "pose": 6.499999999999993,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.599999999999989,
+            "pose": 7.499999999999989,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 144,
+            "pose": 141.74999999999977,
+            "remaining": 2,
+            "removed": 0
+          }
+        ]
+      },
+      "pointer_extension_degrees": 6,
+      "search_moves": [
+        {
+          "part": "slide_bar_1",
+          "target": 1.9000000000000006
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 6.499999999999993
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 7.599999999999989
+        },
+        {
+          "part": "ring_4",
+          "target": 144
+        }
+      ],
+      "selected_for_review": true,
+      "human_accepted": false,
+      "unity_verified": true,
+      "ablations": [
+        {
+          "special": "S1",
+          "type": "stick",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 90,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 4,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        },
+        {
+          "special": "S1/guide0",
+          "type": "guide",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 1.9,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 1.9,
+              "to": 6.5,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 3,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 90,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [
+                "ring_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": true
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        }
+      ]
+    },
+    {
+      "stem": "poc-corner-225",
+      "intent": "corner",
+      "reference_ids": [
+        "ref_019",
+        "ref_052"
+      ],
+      "gap": 225,
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 4,
+        "pins": 4,
+        "stops": 0,
+        "closedRings": 0
+      },
+      "bounds": {
+        "xMin": -3.2813695538232523,
+        "yMin": -7.866769553823252,
+        "xMax": 7.866769553823252,
+        "yMax": 3.2813695538232523
+      },
+      "fits_container": true,
+      "solver_status": "solved",
+      "nodes": 29,
+      "seconds": 0.191,
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "ring_4",
+            "target": 420,
+            "pose": 416.25000000000165,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 510.00000000000136,
+            "pose": 504.00000000000307,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999,
+            "pose": 0.7999999999999999,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997,
+            "pose": 5.399999999999997,
+            "remaining": 1,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999,
+            "pose": 7.19999999999999,
+            "remaining": 0,
+            "removed": 1
+          }
+        ]
+      },
+      "raw_feel_replay": {
+        "solved": false,
+        "remaining": 2,
+        "steps": [
+          {
+            "part": "ring_4",
+            "target": 414,
+            "pose": 411.75000000000136,
+            "remaining": 5,
+            "removed": 0
+          },
+          {
+            "part": "ring_4",
+            "target": 504.00000000000136,
+            "pose": 480.9375000000012,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999,
+            "pose": 0.7999999999999999,
+            "remaining": 4,
+            "removed": 0
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997,
+            "pose": 5.399999999999997,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999,
+            "pose": 7.19999999999999,
+            "remaining": 2,
+            "removed": 1
+          }
+        ]
+      },
+      "pointer_extension_degrees": 6,
+      "search_moves": [
+        {
+          "part": "ring_4",
+          "target": 414
+        },
+        {
+          "part": "ring_4",
+          "target": 504.00000000000136
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 0.7999999999999999
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 5.399999999999997
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 7.19999999999999
+        }
+      ],
+      "selected_for_review": true,
+      "human_accepted": false,
+      "unity_verified": true,
+      "ablations": [
+        {
+          "special": "S1",
+          "type": "stick",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 414,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 2,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 414,
+              "to": 504,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "ring_4",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_2"
+              ],
+              "baseSolvedParts": [
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        },
+        {
+          "special": "S1/guide0",
+          "type": "guide",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 414,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 414,
+              "to": 504,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 3
+            },
+            {
+              "step": 3,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 0.8,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 4,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0.8,
+              "to": 5.4,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "ring_4",
+              "remaining": 4,
+              "solvedParts": [
+                "ring_2"
+              ],
+              "baseSolvedParts": [
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 3,
+              "solvedParts": [
+                "ring_2",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": true
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        }
+      ]
+    },
+    {
+      "stem": "poc-corner-270",
+      "intent": "corner",
+      "reference_ids": [
+        "ref_019",
+        "ref_052"
+      ],
+      "gap": 270,
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 4,
+        "pins": 4,
+        "stops": 0,
+        "closedRings": 0
+      },
+      "bounds": {
+        "xMin": -3.281369553823252,
+        "yMin": -7.866769553823252,
+        "xMax": 7.866769553823252,
+        "yMax": 3.2813695538232523
+      },
+      "fits_container": true,
+      "solver_status": "solved",
+      "nodes": 29,
+      "seconds": 0.16,
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "ring_4",
+            "target": 420,
+            "pose": 416.25000000000165,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 510.00000000000136,
+            "pose": 504.00000000000307,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999,
+            "pose": 0.7999999999999999,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997,
+            "pose": 5.399999999999997,
+            "remaining": 1,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999,
+            "pose": 7.19999999999999,
+            "remaining": 0,
+            "removed": 1
+          }
+        ]
+      },
+      "raw_feel_replay": {
+        "solved": false,
+        "remaining": 2,
+        "steps": [
+          {
+            "part": "ring_4",
+            "target": 414,
+            "pose": 411.75000000000136,
+            "remaining": 5,
+            "removed": 0
+          },
+          {
+            "part": "ring_4",
+            "target": 504.00000000000136,
+            "pose": 480.9375000000012,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999,
+            "pose": 0.7999999999999999,
+            "remaining": 4,
+            "removed": 0
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997,
+            "pose": 5.399999999999997,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999,
+            "pose": 7.19999999999999,
+            "remaining": 2,
+            "removed": 1
+          }
+        ]
+      },
+      "pointer_extension_degrees": 6
+    },
+    {
+      "stem": "poc-corner-315",
+      "intent": "corner",
+      "reference_ids": [
+        "ref_019",
+        "ref_052"
+      ],
+      "gap": 315,
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 4,
+        "pins": 4,
+        "stops": 0,
+        "closedRings": 0
+      },
+      "bounds": {
+        "xMin": -3.2813695538232523,
+        "yMin": -7.866769553823252,
+        "xMax": 7.866769553823252,
+        "yMax": 3.2813695538232523
+      },
+      "fits_container": true,
+      "solver_status": "solved",
+      "nodes": 29,
+      "seconds": 0.185,
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "ring_4",
+            "target": 420,
+            "pose": 416.25000000000165,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 510.00000000000136,
+            "pose": 504.00000000000307,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999,
+            "pose": 0.7999999999999999,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997,
+            "pose": 5.399999999999997,
+            "remaining": 1,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999,
+            "pose": 7.19999999999999,
+            "remaining": 0,
+            "removed": 1
+          }
+        ]
+      },
+      "raw_feel_replay": {
+        "solved": false,
+        "remaining": 2,
+        "steps": [
+          {
+            "part": "ring_4",
+            "target": 414,
+            "pose": 411.75000000000136,
+            "remaining": 5,
+            "removed": 0
+          },
+          {
+            "part": "ring_4",
+            "target": 504.00000000000136,
+            "pose": 480.9375000000012,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999,
+            "pose": 0.7999999999999999,
+            "remaining": 4,
+            "removed": 0
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997,
+            "pose": 5.399999999999997,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999,
+            "pose": 7.19999999999999,
+            "remaining": 2,
+            "removed": 1
+          }
+        ]
+      },
+      "pointer_extension_degrees": 6
+    },
+    {
+      "stem": "poc-frame-45",
+      "intent": "frame",
+      "reference_ids": [
+        "ref_018",
+        "ref_041"
+      ],
+      "gap": 45,
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 5,
+        "pins": 5,
+        "stops": 0,
+        "closedRings": 0
+      },
+      "bounds": {
+        "xMin": -3.281369553823252,
+        "yMin": -7.866769553823252,
+        "xMax": 7.866769553823252,
+        "yMax": 3.2813695538232523
+      },
+      "fits_container": true,
+      "solver_status": "solved",
+      "nodes": 26,
+      "seconds": 0.562,
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999,
+            "pose": -0.8000000000000007,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998,
+            "pose": -5.399999999999999,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994,
+            "pose": -6.499999999999995,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 120,
+            "pose": 125.99999999999878,
+            "remaining": 0,
+            "removed": 2
+          }
+        ]
+      },
+      "raw_feel_replay": {
+        "solved": false,
+        "remaining": 2,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999,
+            "pose": -0.8000000000000007,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998,
+            "pose": -5.399999999999999,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994,
+            "pose": -6.499999999999995,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 126,
+            "pose": 128.2499999999988,
+            "remaining": 2,
+            "removed": 0
+          }
+        ]
+      },
+      "pointer_extension_degrees": 6,
+      "search_moves": [
+        {
+          "part": "slide_bar_1",
+          "target": -0.7999999999999999
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -5.399999999999998
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -6.599999999999994
+        },
+        {
+          "part": "ring_4",
+          "target": 126
+        }
+      ],
+      "selected_for_review": true,
+      "human_accepted": false,
+      "unity_verified": true,
+      "ablations": [
+        {
+          "special": "S1",
+          "type": "stick",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 126,
+              "direction": "CW",
+              "removedNow": 4,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        },
+        {
+          "special": "S1/guide0",
+          "type": "guide",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": -0.8,
+              "direction": "-",
+              "removedNow": 1,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": -0.8,
+              "to": -5.4,
+              "direction": "-",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 3,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 126,
+              "direction": "CW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [
+                "ring_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": true
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        }
+      ]
+    },
+    {
+      "stem": "poc-frame-90",
+      "intent": "frame",
+      "reference_ids": [
+        "ref_018",
+        "ref_041"
+      ],
+      "gap": 90,
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 5,
+        "pins": 5,
+        "stops": 0,
+        "closedRings": 0
+      },
+      "bounds": {
+        "xMin": -3.281369553823252,
+        "yMin": -7.866769553823252,
+        "xMax": 7.866769553823252,
+        "yMax": 3.2813695538232523
+      },
+      "fits_container": true,
+      "solver_status": "solved",
+      "nodes": 26,
+      "seconds": 0.538,
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999,
+            "pose": -0.8000000000000007,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998,
+            "pose": -5.399999999999999,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994,
+            "pose": -6.499999999999995,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 120,
+            "pose": 125.99999999999878,
+            "remaining": 0,
+            "removed": 2
+          }
+        ]
+      },
+      "raw_feel_replay": {
+        "solved": false,
+        "remaining": 2,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999,
+            "pose": -0.8000000000000007,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998,
+            "pose": -5.399999999999999,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994,
+            "pose": -6.499999999999995,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 126,
+            "pose": 128.2499999999988,
+            "remaining": 2,
+            "removed": 0
+          }
+        ]
+      },
+      "pointer_extension_degrees": 6
+    },
+    {
+      "stem": "poc-frame-270",
+      "intent": "frame",
+      "reference_ids": [
+        "ref_018",
+        "ref_041"
+      ],
+      "gap": 270,
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 5,
+        "pins": 5,
+        "stops": 0,
+        "closedRings": 0
+      },
+      "bounds": {
+        "xMin": -3.281369553823252,
+        "yMin": -7.866769553823252,
+        "xMax": 7.866769553823252,
+        "yMax": 3.2813695538232523
+      },
+      "fits_container": true,
+      "solver_status": "solved",
+      "nodes": 26,
+      "seconds": 0.582,
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999,
+            "pose": -0.8000000000000007,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998,
+            "pose": -5.399999999999999,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994,
+            "pose": -6.499999999999995,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 120,
+            "pose": 125.99999999999878,
+            "remaining": 0,
+            "removed": 2
+          }
+        ]
+      },
+      "raw_feel_replay": {
+        "solved": false,
+        "remaining": 2,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999,
+            "pose": -0.8000000000000007,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998,
+            "pose": -5.399999999999999,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994,
+            "pose": -6.499999999999995,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 126,
+            "pose": 128.2499999999988,
+            "remaining": 2,
+            "removed": 0
+          }
+        ]
+      },
+      "pointer_extension_degrees": 6
+    }
+  ],
+  "selected": [
+    {
+      "stem": "poc-divider-135",
+      "name": "Thanh ngang chia hai hàng",
+      "reference_ids": [
+        "ref_028",
+        "ref_041"
+      ],
+      "visual_relations": [
+        "between_rows",
+        "separates_regions"
+      ],
+      "proof": {
+        "found": true,
+        "drags": 4,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 1.9,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 1.9,
+            "to": 6.5,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 6.5,
+            "to": 7.6,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 90,
+            "to": 150,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ],
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 1.9000000000000006
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 6.499999999999993
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.599999999999989
+          },
+          {
+            "part": "ring_4",
+            "target": 150
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.224,
+        "limits": {
+          "nodes": 600,
+          "seconds": 4
+        },
+        "explodeBombs": false
+      },
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": 1.9000000000000006,
+            "pose": 1.9000000000000004,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 6.499999999999993,
+            "pose": 6.499999999999993,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.599999999999989,
+            "pose": 7.499999999999989,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 150,
+            "pose": 143.99999999999972,
+            "remaining": 0,
+            "removed": 2
+          }
+        ]
+      },
+      "ablations": [
+        {
+          "special": "S1",
+          "type": "stick",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 90,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 4,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        },
+        {
+          "special": "S1/guide0",
+          "type": "guide",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 1.9,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 1.9,
+              "to": 6.5,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 3,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 90,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [
+                "ring_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": true
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        }
+      ],
+      "view": {
+        "xMin": -6.7073,
+        "xMax": 11.2927,
+        "yMin": -14.2927,
+        "yMax": 9.7073
+      },
+      "review_status": "not_human_accepted",
+      "unity_verified": true,
+      "human_accepted": false,
+      "release_candidate": false
+    },
+    {
+      "stem": "poc-corner-225",
+      "name": "Thanh L giữ biên trên–trái",
+      "reference_ids": [
+        "ref_019",
+        "ref_052"
+      ],
+      "visual_relations": [
+        "boundary_of",
+        "continues_axis"
+      ],
+      "proof": {
+        "found": true,
+        "drags": 5,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 420,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 420,
+            "to": 510,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.8,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0.8,
+            "to": 5.4,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 1
+          },
+          {
+            "step": 5,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 5.4,
+            "to": 7.2,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 0
+          }
+        ],
+        "moves": [
+          {
+            "part": "ring_4",
+            "target": 420
+          },
+          {
+            "part": "ring_4",
+            "target": 510.00000000000136
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999
+          }
+        ],
+        "log": "found with 5 drags after 29 explorations",
+        "nodes": 29,
+        "seconds": 0.191,
+        "limits": {
+          "nodes": 600,
+          "seconds": 4
+        },
+        "explodeBombs": false
+      },
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "ring_4",
+            "target": 420,
+            "pose": 416.25000000000165,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 510.00000000000136,
+            "pose": 504.00000000000307,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 0.7999999999999999,
+            "pose": 0.7999999999999999,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 5.399999999999997,
+            "pose": 5.399999999999997,
+            "remaining": 1,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": 7.19999999999999,
+            "pose": 7.19999999999999,
+            "remaining": 0,
+            "removed": 1
+          }
+        ]
+      },
+      "ablations": [
+        {
+          "special": "S1",
+          "type": "stick",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 414,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 2,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 414,
+              "to": 504,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "ring_4",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_2"
+              ],
+              "baseSolvedParts": [
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        },
+        {
+          "special": "S1/guide0",
+          "type": "guide",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 414,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 414,
+              "to": 504,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 3
+            },
+            {
+              "step": 3,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 0.8,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 4,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0.8,
+              "to": 5.4,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "ring_4",
+              "remaining": 4,
+              "solvedParts": [
+                "ring_2"
+              ],
+              "baseSolvedParts": [
+                "ring_2"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 3,
+              "solvedParts": [
+                "ring_2",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": true
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        }
+      ],
+      "view": {
+        "xMin": -6.7073,
+        "xMax": 11.2927,
+        "yMin": -14.2927,
+        "yMax": 9.7073
+      },
+      "review_status": "not_human_accepted",
+      "unity_verified": true,
+      "human_accepted": false,
+      "release_candidate": false
+    },
+    {
+      "stem": "poc-frame-45",
+      "name": "Thanh U bao hai tầng vòng",
+      "reference_ids": [
+        "ref_018",
+        "ref_041"
+      ],
+      "visual_relations": [
+        "frames",
+        "boundary_of"
+      ],
+      "proof": {
+        "found": true,
+        "drags": 4,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.8,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": -0.8,
+            "to": -5.4,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": -5.4,
+            "to": -6.6,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 120,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ],
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994
+          },
+          {
+            "part": "ring_4",
+            "target": 120
+          }
+        ],
+        "log": "found with 4 drags after 26 explorations",
+        "nodes": 26,
+        "seconds": 0.562,
+        "limits": {
+          "nodes": 600,
+          "seconds": 4
+        },
+        "explodeBombs": false
+      },
+      "feel_replay": {
+        "solved": true,
+        "remaining": 0,
+        "steps": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.7999999999999999,
+            "pose": -0.8000000000000007,
+            "remaining": 4,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -5.399999999999998,
+            "pose": -5.399999999999999,
+            "remaining": 3,
+            "removed": 1
+          },
+          {
+            "part": "slide_bar_1",
+            "target": -6.599999999999994,
+            "pose": -6.499999999999995,
+            "remaining": 2,
+            "removed": 1
+          },
+          {
+            "part": "ring_4",
+            "target": 120,
+            "pose": 125.99999999999878,
+            "remaining": 0,
+            "removed": 2
+          }
+        ]
+      },
+      "ablations": [
+        {
+          "special": "S1",
+          "type": "stick",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 126,
+              "direction": "CW",
+              "removedNow": 4,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": true,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        },
+        {
+          "special": "S1/guide0",
+          "type": "guide",
+          "solver": "solved",
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": -0.8,
+              "direction": "-",
+              "removedNow": 1,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": -0.8,
+              "to": -5.4,
+              "direction": "-",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 3,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 126,
+              "direction": "CW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ],
+          "releaseSequenceChanged": true,
+          "originalRouteReplay": [
+            {
+              "part": "slide_bar_1",
+              "remaining": 4,
+              "solvedParts": [
+                "ring_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": true
+            },
+            {
+              "part": "slide_bar_1",
+              "remaining": 2,
+              "solvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            },
+            {
+              "part": "ring_4",
+              "remaining": 0,
+              "solvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "baseSolvedParts": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "commonRingReleaseChanged": false,
+              "stickReleaseChanged": false
+            }
+          ],
+          "originalRouteStillFinishes": true
+        }
+      ],
+      "view": {
+        "xMin": -6.7073,
+        "xMax": 11.2927,
+        "yMin": -14.2927,
+        "yMax": 9.7073
+      },
+      "review_status": "not_human_accepted",
+      "unity_verified": true,
+      "human_accepted": false,
+      "release_candidate": false
+    }
+  ],
+  "limits": [
+    "Small PoC, not a generator quality benchmark.",
+    "No v0-v6 baseline files available.",
+    "Visual acceptance requires human comparison."
+  ]
+}

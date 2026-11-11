@@ -1,0 +1,178 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SDB-01 | Hạ thanh, giữ nguồn qua nhả rồi chạm lại để gặp hai Bom",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp9 vòng/1U default/fullGuide/10pin/2Bom.8 vòng radius1,75 và C3,8 có mục đích span hai nguồn theo thanh default và hai cửa T/V. Hai Bom tâm gắn vào vật liệu Q/U,ban đầu không chạm. U-1 chuyển Bom trên U ra khỏi đường thân Q trước;V-120 mở outgoing Q nhưng C->Q còn giữ nguồn để có lượt quay thật. Q kéo sâu tới-180: incoming giữ Q tắt rồi chạm lại trong cùng gesture;BomQ(radius0,5/orbit1,9/world30) gặp BomU(radius0,3/cap phải),phá Q/U và ngàm. Bỏ riêng từng Bom tại prefix đã hạ U thì Q bị chặn ở6,393 không nổ,U còn. Bỏ Guide: U-1 tháo host trước,Bom free,pair chỉ phá Q. Bỏ C->Q: Q tự tháo sauV,không còn carrier. Thả Q120 sớm tháo Q/detach Bom,ordinary tiếp tục thắng không nổ;Q60 thả sau incoming chạm lại vẫn giữQ và có thể kéo mới tới pair. Không hạ U: thân Q chạm BomU trước,phá cùng hai part nhưng BomQ còn sống/free. Mỗi Bom có vai trò contact-pair thật,không coi số Bom/drag là khó hoặc bắt buộc toàn cục. Hai bán kính Bom có mục đích:BomU nhỏ tránh chạm đầu,BomQ0,5 giữ pair riêng;radius0,75 tại cùng điểmQ làm single-Bom contactU thay thế,giữ đối chứng. Radius1,75/bar default,lockCount0,noStop/Booster. Phụ thuộc sharedA/Q,C,T/V/D/F còn có các lượt quay/return thật,không ghép cụm độc lập. Quét hữu hạn/đảo hướng/kéo lặp/recovery/readback,không sửa engine/tolerance hoặc Unity replay. Art/GD review sizeBom/largeC/portrait/readability còn chờ.",
+  "rings": [
+    {
+      "id": "A",
+      "x": -4.458333254999999,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 117.57215074170242,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.458333254999999,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 62.427849258297584,
+          "target": "V"
+        }
+      ],
+      "bomb": {
+        "x": 6.103781522190433,
+        "y": 0.95,
+        "radius": 0.5
+      }
+    },
+    {
+      "id": "T",
+      "x": -6.5807554860888295,
+      "y": 4.06462999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "V",
+      "x": 6.5807554860888295,
+      "y": 4.06462999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.914447857833177,
+      "radius": 3.8,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": -132.21397082932685,
+          "target": "A"
+        },
+        {
+          "angle": -47.78602917067316,
+          "target": "Q"
+        },
+        {
+          "angle": -172.64172768726837,
+          "target": "T"
+        },
+        {
+          "angle": -7.358272312731655,
+          "target": "V"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": -6.5807554860888295,
+      "y": 8.65002999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 179.9,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "x": 6.5807554860888295,
+      "y": 8.65002999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0.1,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "V"
+        }
+      ]
+    },
+    {
+      "id": "DG",
+      "x": -6.5807554860888295,
+      "y": 13.23542999951778,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "FG",
+      "x": 6.5807554860888295,
+      "y": 13.23542999951778,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "F"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 0,
+      "y": -2.9,
+      "angle": 0,
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -2.708333255,
+          "y": -2,
+          "angle": 90
+        }
+      ],
+      "bomb": {
+        "x": 2.708333255,
+        "y": -0.95,
+        "radius": 0.3
+      }
+    }
+  ]
+}

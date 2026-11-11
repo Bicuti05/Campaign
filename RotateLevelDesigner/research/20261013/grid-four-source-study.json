@@ -1,0 +1,1965 @@
+{
+  "format": "rotate-grid-four-source-study",
+  "version": 1,
+  "candidates": [
+    {
+      "stem": "study-20261014-v41-grid-four-source",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Bốn nguồn cùng giữ cửa giữa",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Cụm 3×3 gồm 9 vòng radius 1,75. Bốn nguồn nằm giữa các cạnh, mỗi nguồn giữ hai vòng góc và vòng giữa. Mở một góc hoặc cửa giữa riêng lẻ chưa nhả nguồn: cần phối hợp các cửa đang cùng giữ nguồn. Sau một nguồn rời, lựa chọn của các cửa lân cận đổi, rồi quay lại cửa giữa để xử lý nguồn khác. Không thanh/ngàm/chốt/bom/Booster/Chain; quy mô là sketch nghiên cứu, chưa chốt vị trí campaign hoặc độ khó.",
+        "rings": [
+          {
+            "id": "BL",
+            "x": 0,
+            "y": 0,
+            "gapDir": 225,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "SB",
+            "x": 4.5854,
+            "y": 0,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "BL"
+              },
+              {
+                "angle": 0,
+                "target": "BR"
+              },
+              {
+                "angle": 90,
+                "target": "M"
+              }
+            ]
+          },
+          {
+            "id": "BR",
+            "x": 9.1708,
+            "y": 0,
+            "gapDir": 315,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "SL",
+            "x": 0,
+            "y": 4.5854,
+            "gapDir": 180,
+            "color": "red",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 270,
+                "target": "BL"
+              },
+              {
+                "angle": 90,
+                "target": "TL"
+              },
+              {
+                "angle": 0,
+                "target": "M"
+              }
+            ]
+          },
+          {
+            "id": "M",
+            "x": 4.5854,
+            "y": 4.5854,
+            "gapDir": 45,
+            "color": "sky",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "SR",
+            "x": 9.1708,
+            "y": 4.5854,
+            "gapDir": 0,
+            "color": "green",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 270,
+                "target": "BR"
+              },
+              {
+                "angle": 90,
+                "target": "TR"
+              },
+              {
+                "angle": 180,
+                "target": "M"
+              }
+            ]
+          },
+          {
+            "id": "TL",
+            "x": 0,
+            "y": 9.1708,
+            "gapDir": 135,
+            "color": "teal",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "ST",
+            "x": 4.5854,
+            "y": 9.1708,
+            "gapDir": 90,
+            "color": "navy",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "TL"
+              },
+              {
+                "angle": 0,
+                "target": "TR"
+              },
+              {
+                "angle": 270,
+                "target": "M"
+              }
+            ]
+          },
+          {
+            "id": "TR",
+            "x": 9.1708,
+            "y": 9.1708,
+            "gapDir": 45,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      },
+      "authorMoves": [
+        {
+          "part": "TL",
+          "target": 0
+        },
+        {
+          "part": "TR",
+          "target": 180
+        },
+        {
+          "part": "M",
+          "target": 90
+        },
+        {
+          "part": "BR",
+          "target": 450
+        },
+        {
+          "part": "TR",
+          "target": 270
+        },
+        {
+          "part": "M",
+          "target": 0
+        },
+        {
+          "part": "BL",
+          "target": 90
+        },
+        {
+          "part": "TL",
+          "target": -90
+        },
+        {
+          "part": "M",
+          "target": 180
+        },
+        {
+          "part": "BL",
+          "target": 0
+        },
+        {
+          "part": "BR",
+          "target": 540
+        },
+        {
+          "part": "M",
+          "target": 270
+        }
+      ],
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 9,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 12,
+            "pins": 12,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 8,
+              "target": 144
+            },
+            {
+              "obj": 6,
+              "target": 234
+            },
+            {
+              "obj": 4,
+              "target": 54.00000000000001
+            },
+            {
+              "obj": 2,
+              "target": 414
+            },
+            {
+              "obj": 0,
+              "target": 324
+            },
+            {
+              "obj": 6,
+              "target": 309.0000000000004
+            },
+            {
+              "obj": 6,
+              "target": 324.00000000000034
+            },
+            {
+              "obj": 8,
+              "target": 234.00000000000054
+            },
+            {
+              "obj": 6,
+              "target": 594.0000000000005
+            },
+            {
+              "obj": 4,
+              "target": 36.000000000000014
+            },
+            {
+              "obj": 2,
+              "target": 504.00000000000097
+            },
+            {
+              "obj": 4,
+              "target": -54.00000000000012
+            },
+            {
+              "obj": 4,
+              "target": 144.00000000000148
+            },
+            {
+              "obj": 0,
+              "target": 413.99999999999926
+            }
+          ],
+          "log": "found with 14 drags after 393 explorations",
+          "nodes": 393,
+          "seconds": 3.153,
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_9",
+              "label": "R9",
+              "kind": "ring",
+              "from": 45,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 9
+            },
+            {
+              "step": 2,
+              "part": "ring_7",
+              "label": "R7",
+              "kind": "ring",
+              "from": 135,
+              "to": 234,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 9
+            },
+            {
+              "step": 3,
+              "part": "ring_5",
+              "label": "R5",
+              "kind": "ring",
+              "from": 45,
+              "to": 54,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 9
+            },
+            {
+              "step": 4,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 315,
+              "to": 414,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 9
+            },
+            {
+              "step": 5,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 225,
+              "to": 324,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 9
+            },
+            {
+              "step": 6,
+              "part": "ring_7",
+              "label": "R7",
+              "kind": "ring",
+              "from": 234,
+              "to": 309,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 9
+            },
+            {
+              "step": 7,
+              "part": "ring_7",
+              "label": "R7",
+              "kind": "ring",
+              "from": 309,
+              "to": 324,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 8
+            },
+            {
+              "step": 8,
+              "part": "ring_9",
+              "label": "R9",
+              "kind": "ring",
+              "from": 144,
+              "to": 234,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 7
+            },
+            {
+              "step": 9,
+              "part": "ring_7",
+              "label": "R7",
+              "kind": "ring",
+              "from": 324,
+              "to": 594,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 6
+            },
+            {
+              "step": 10,
+              "part": "ring_5",
+              "label": "R5",
+              "kind": "ring",
+              "from": 54,
+              "to": 36,
+              "direction": "CW",
+              "removedNow": 1,
+              "remaining": 5
+            },
+            {
+              "step": 11,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 414,
+              "to": 504,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 4
+            },
+            {
+              "step": 12,
+              "part": "ring_5",
+              "label": "R5",
+              "kind": "ring",
+              "from": 36,
+              "to": -54,
+              "direction": "CW",
+              "removedNow": 1,
+              "remaining": 3
+            },
+            {
+              "step": 13,
+              "part": "ring_5",
+              "label": "R5",
+              "kind": "ring",
+              "from": -54,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 14,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 324,
+              "to": 414,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "initialSources": [
+          {
+            "part": "SB",
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "SB",
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "SL",
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "SL",
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "SR",
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": 0,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "SR",
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "ST",
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "ST",
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 9,
+            "links": 12
+          }
+        ],
+        "oneReceiverOnly": [
+          {
+            "part": "BL",
+            "direction": -1,
+            "removed": false,
+            "from": 225.00000000000003,
+            "to": -38.9999999999991,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "BL",
+            "direction": 1,
+            "removed": false,
+            "from": 225.00000000000003,
+            "to": 489.00000000000125,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "BR",
+            "direction": -1,
+            "removed": false,
+            "from": 315,
+            "to": 51.00000000000033,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "BR",
+            "direction": 1,
+            "removed": false,
+            "from": 315,
+            "to": 579.0000000000006,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "M",
+            "direction": -1,
+            "removed": false,
+            "from": 45.00000000000001,
+            "to": -128.99999999999847,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "M",
+            "direction": 1,
+            "removed": false,
+            "from": 45.00000000000001,
+            "to": 218.9999999999999,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "TL",
+            "direction": -1,
+            "removed": false,
+            "from": 135,
+            "to": -128.9999999999998,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "TL",
+            "direction": 1,
+            "removed": false,
+            "from": 135,
+            "to": 399.0000000000002,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "TR",
+            "direction": -1,
+            "removed": false,
+            "from": 45.00000000000001,
+            "to": -219.00000000000108,
+            "remaining": 9,
+            "links": 12
+          },
+          {
+            "part": "TR",
+            "direction": 1,
+            "removed": false,
+            "from": 45.00000000000001,
+            "to": 309.0000000000018,
+            "remaining": 9,
+            "links": 12
+          }
+        ],
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "TL",
+              "pointer": 0,
+              "pose": -7.900347043232614e-13,
+              "remaining": 9,
+              "links": 11,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "TR",
+              "pointer": 180,
+              "pose": 180.0000000000012,
+              "remaining": 9,
+              "links": 10,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 90,
+              "pose": 90.00000000000018,
+              "remaining": 8,
+              "links": 9,
+              "bindings": 0,
+              "solved": [
+                "ring_8"
+              ],
+              "events": []
+            },
+            {
+              "part": "BR",
+              "pointer": 450,
+              "pose": 450.00000000000074,
+              "remaining": 8,
+              "links": 8,
+              "bindings": 0,
+              "solved": [
+                "ring_8"
+              ],
+              "events": []
+            },
+            {
+              "part": "TR",
+              "pointer": 270,
+              "pose": 234.00000000000122,
+              "remaining": 7,
+              "links": 7,
+              "bindings": 0,
+              "solved": [
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 0,
+              "pose": 1.1710632463746151e-12,
+              "remaining": 6,
+              "links": 6,
+              "bindings": 0,
+              "solved": [
+                "ring_6",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "BL",
+              "pointer": 90,
+              "pose": 90.00000000000061,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [
+                "ring_6",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "TL",
+              "pointer": -90,
+              "pose": -54.000000000000966,
+              "remaining": 5,
+              "links": 4,
+              "bindings": 0,
+              "solved": [
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 180,
+              "pose": 179.99999999999886,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_4",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "BL",
+              "pointer": 0,
+              "pose": 36.000000000000064,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_4",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "BR",
+              "pointer": 540,
+              "pose": 504.00000000000085,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_3",
+                "ring_4",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 270,
+              "pose": 233.99999999999898,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feel": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "TL",
+              "pointer": 0,
+              "pose": 11.249999999999329,
+              "remaining": 9,
+              "links": 11,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "TR",
+              "pointer": 180,
+              "pose": 168.75000000000108,
+              "remaining": 9,
+              "links": 10,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 90,
+              "pose": 78.75000000000014,
+              "remaining": 8,
+              "links": 9,
+              "bindings": 0,
+              "solved": [
+                "ring_8"
+              ],
+              "events": []
+            },
+            {
+              "part": "BR",
+              "pointer": 450,
+              "pose": 438.75000000000074,
+              "remaining": 8,
+              "links": 8,
+              "bindings": 0,
+              "solved": [
+                "ring_8"
+              ],
+              "events": []
+            },
+            {
+              "part": "TR",
+              "pointer": 270,
+              "pose": 234.75000000000122,
+              "remaining": 7,
+              "links": 7,
+              "bindings": 0,
+              "solved": [
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 0,
+              "pose": 11.250000000000213,
+              "remaining": 6,
+              "links": 6,
+              "bindings": 0,
+              "solved": [
+                "ring_6",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "BL",
+              "pointer": 90,
+              "pose": 101.2500000000006,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [
+                "ring_6",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "TL",
+              "pointer": -90,
+              "pose": -54.75000000000074,
+              "remaining": 5,
+              "links": 4,
+              "bindings": 0,
+              "solved": [
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 180,
+              "pose": 168.74999999999878,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_4",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "BL",
+              "pointer": 0,
+              "pose": 35.25000000000058,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_4",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "BR",
+              "pointer": 540,
+              "pose": 504.75000000000034,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_3",
+                "ring_4",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            },
+            {
+              "part": "M",
+              "pointer": 270,
+              "pose": 234.74999999999932,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6",
+                "ring_7",
+                "ring_8",
+                "ring_9"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "releaseInput": {
+          "ok": true,
+          "solved": true,
+          "trace": [
+            {
+              "part": "ring_7",
+              "target": 0,
+              "grab": {
+                "x": -1.5155444566227676,
+                "y": 8.2958
+              },
+              "selectableBodySamples": 73,
+              "began": true,
+              "events": [],
+              "removed": [],
+              "pose": 11.250000000000522,
+              "remaining": 9,
+              "links": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "part": "ring_9",
+              "target": 180,
+              "grab": {
+                "x": 7.87029655541456,
+                "y": 7.999821438871998
+              },
+              "selectableBodySamples": 73,
+              "began": true,
+              "events": [],
+              "removed": [],
+              "pose": 168.75000000000176,
+              "remaining": 9,
+              "links": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false,
+                true
+              ]
+            },
+            {
+              "part": "ring_5",
+              "target": 90,
+              "grab": {
+                "x": 3.3479631329235415,
+                "y": 3.347963132923542
+              },
+              "selectableBodySamples": 63,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_8"
+              ],
+              "pose": 78.74999999999977,
+              "remaining": 8,
+              "links": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_3",
+              "target": 450,
+              "grab": {
+                "x": 7.933363132923542,
+                "y": 1.2374368670764582
+              },
+              "selectableBodySamples": 73,
+              "began": true,
+              "events": [],
+              "removed": [],
+              "pose": 438.7500000000009,
+              "remaining": 8,
+              "links": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                true,
+                true,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_9",
+              "target": 270,
+              "grab": {
+                "x": 8.2958,
+                "y": 10.686344456622768
+              },
+              "selectableBodySamples": 81,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_9"
+              ],
+              "pose": 258.93750000000114,
+              "remaining": 7,
+              "links": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_5",
+              "target": 0,
+              "grab": {
+                "x": 3.3479631329235415,
+                "y": 3.347963132923542
+              },
+              "selectableBodySamples": 63,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_6"
+              ],
+              "pose": 11.250000000000032,
+              "remaining": 6,
+              "links": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_1",
+              "target": 90,
+              "grab": {
+                "x": -1.5155444566227678,
+                "y": 0.8749999999999999
+              },
+              "selectableBodySamples": 73,
+              "began": true,
+              "events": [],
+              "removed": [],
+              "pose": 101.2500000000019,
+              "remaining": 6,
+              "links": [
+                true,
+                true,
+                true,
+                false,
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_7",
+              "target": -90,
+              "grab": {
+                "x": -1.7476016858205041,
+                "y": 9.262387923425152
+              },
+              "selectableBodySamples": 81,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_7"
+              ],
+              "pose": -78.93750000000024,
+              "remaining": 5,
+              "links": [
+                true,
+                true,
+                true,
+                false,
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_5",
+              "target": 180,
+              "grab": {
+                "x": 2.8950298039941305,
+                "y": 5.038333328929411
+              },
+              "selectableBodySamples": 72,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_4"
+              ],
+              "pose": 168.74999999999832,
+              "remaining": 4,
+              "links": [
+                true,
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_1",
+              "target": 0,
+              "grab": {
+                "x": -1.2374368670764584,
+                "y": -1.237436867076458
+              },
+              "selectableBodySamples": 81,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_1"
+              ],
+              "pose": 11.062500000001556,
+              "remaining": 3,
+              "links": [
+                false,
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_3",
+              "target": 540,
+              "grab": {
+                "x": 8.217681688723703,
+                "y": -1.467673493904492
+              },
+              "selectableBodySamples": 81,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_3"
+              ],
+              "pose": 528.937500000001,
+              "remaining": 2,
+              "links": [
+                false,
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            },
+            {
+              "part": "ring_5",
+              "target": 270,
+              "grab": {
+                "x": 3.7104000000000004,
+                "y": 6.100944456622768
+              },
+              "selectableBodySamples": 81,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_5",
+                "ring_2"
+              ],
+              "pose": 258.9374999999996,
+              "remaining": 0,
+              "links": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            }
+          ],
+          "bombs": []
+        },
+        "centerRoles": [
+          {
+            "source": "ST",
+            "twoCorners": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "threeWindows": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": true,
+                  "locked": false
+                }
+              }
+            },
+            "withoutCenterPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": true,
+                  "locked": false
+                }
+              }
+            }
+          },
+          {
+            "source": "SR",
+            "twoCorners": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "threeWindows": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": true,
+                  "locked": false
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCenterPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": true,
+                  "locked": false
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          },
+          {
+            "source": "SL",
+            "twoCorners": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "threeWindows": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCenterPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          },
+          {
+            "source": "SB",
+            "twoCorners": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "threeWindows": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCenterPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          }
+        ],
+        "cornerRoles": [
+          {
+            "source": "ST",
+            "corner": "TL",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": true,
+                  "locked": false
+                }
+              }
+            }
+          },
+          {
+            "source": "ST",
+            "corner": "TR",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": true,
+                  "locked": false
+                }
+              }
+            }
+          },
+          {
+            "source": "SR",
+            "corner": "BR",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": true,
+                  "locked": false
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          },
+          {
+            "source": "SR",
+            "corner": "TR",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": true,
+                  "locked": false
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          },
+          {
+            "source": "SL",
+            "corner": "BL",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          },
+          {
+            "source": "SL",
+            "corner": "TL",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          },
+          {
+            "source": "SB",
+            "corner": "BL",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          },
+          {
+            "source": "SB",
+            "corner": "BR",
+            "withoutCornerPreparation": {
+              "remaining": 9,
+              "sources": {
+                "SB": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            },
+            "withoutCornerPin": {
+              "remaining": 8,
+              "sources": {
+                "SB": {
+                  "solved": true,
+                  "locked": false
+                },
+                "SL": {
+                  "solved": false,
+                  "locked": true
+                },
+                "SR": {
+                  "solved": false,
+                  "locked": true
+                },
+                "ST": {
+                  "solved": false,
+                  "locked": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      "holdout": false
+    }
+  ]
+}

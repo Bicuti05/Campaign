@@ -1,0 +1,370 @@
+{
+  "stem": "batch01-003",
+  "slot": 3,
+  "name": "B01-003 | Bốn cửa quanh lõi kín",
+  "ok": true,
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 5,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 4,
+        "pins": 4,
+        "stops": 0,
+        "closedRings": 1
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [],
+    "guides": [],
+    "bodyAccess": [
+      {
+        "label": "C",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "E",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "N",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "W",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "S",
+        "visibleBodyPoints": 82
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "proof": {
+    "moves": [
+      {
+        "part": "ring_2",
+        "target": 180
+      },
+      {
+        "part": "ring_3",
+        "target": 270
+      },
+      {
+        "part": "ring_4",
+        "target": 0
+      },
+      {
+        "part": "ring_5",
+        "target": 90
+      }
+    ],
+    "analytic": true,
+    "feel": true,
+    "release": {
+      "ok": true,
+      "solved": true,
+      "trace": [
+        {
+          "part": "ring_2",
+          "target": 180,
+          "grab": {
+            "x": 2.8950298039941305,
+            "y": -0.4529333289294114
+          },
+          "selectableBodySamples": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_2"
+          ],
+          "pose": 168.74999999999892,
+          "remaining": 4,
+          "links": [
+            false,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 270,
+          "grab": {
+            "x": -1.5155444566227676,
+            "y": 3.7104
+          },
+          "selectableBodySamples": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_3"
+          ],
+          "pose": 258.74999999999807,
+          "remaining": 3,
+          "links": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 0,
+          "grab": {
+            "x": -5.822836867076458,
+            "y": -1.237436867076458
+          },
+          "selectableBodySamples": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_4"
+          ],
+          "pose": 11.250000000000117,
+          "remaining": 2,
+          "links": [
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "part": "ring_5",
+          "target": 90,
+          "grab": {
+            "x": -1.5155444566227678,
+            "y": -3.7104
+          },
+          "selectableBodySamples": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_5",
+            "ring_1"
+          ],
+          "pose": 101.25000000000038,
+          "remaining": 0,
+          "links": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "bombs": []
+    }
+  },
+  "roles": {
+    "ok": true,
+    "rows": [
+      {
+        "kind": "pin",
+        "label": "C -> E",
+        "ok": true,
+        "moves": [
+          {
+            "part": "N",
+            "target": 270
+          }
+        ],
+        "counterMoves": [
+          {
+            "part": "N",
+            "target": 270
+          }
+        ],
+        "changes": [
+          {
+            "part": "E",
+            "original": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            },
+            "counterfactual": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            }
+          }
+        ],
+        "originalRemaining": 4,
+        "counterRemaining": 3,
+        "originalEvents": [],
+        "counterEvents": []
+      },
+      {
+        "kind": "pin",
+        "label": "C -> N",
+        "ok": true,
+        "moves": [
+          {
+            "part": "E",
+            "target": 180
+          }
+        ],
+        "counterMoves": [
+          {
+            "part": "E",
+            "target": 180
+          }
+        ],
+        "changes": [
+          {
+            "part": "N",
+            "original": {
+              "pose": 90,
+              "solved": false,
+              "locked": false
+            },
+            "counterfactual": {
+              "pose": 90,
+              "solved": true,
+              "locked": false
+            }
+          }
+        ],
+        "originalRemaining": 4,
+        "counterRemaining": 3,
+        "originalEvents": [],
+        "counterEvents": []
+      },
+      {
+        "kind": "pin",
+        "label": "C -> W",
+        "ok": true,
+        "moves": [
+          {
+            "part": "E",
+            "target": 180
+          }
+        ],
+        "counterMoves": [
+          {
+            "part": "E",
+            "target": 180
+          }
+        ],
+        "changes": [
+          {
+            "part": "W",
+            "original": {
+              "pose": 180,
+              "solved": false,
+              "locked": false
+            },
+            "counterfactual": {
+              "pose": 180,
+              "solved": true,
+              "locked": false
+            }
+          }
+        ],
+        "originalRemaining": 4,
+        "counterRemaining": 3,
+        "originalEvents": [],
+        "counterEvents": []
+      },
+      {
+        "kind": "pin",
+        "label": "C -> S",
+        "ok": true,
+        "moves": [
+          {
+            "part": "E",
+            "target": 180
+          }
+        ],
+        "counterMoves": [
+          {
+            "part": "E",
+            "target": 180
+          }
+        ],
+        "changes": [
+          {
+            "part": "S",
+            "original": {
+              "pose": 270,
+              "solved": false,
+              "locked": false
+            },
+            "counterfactual": {
+              "pose": 270,
+              "solved": true,
+              "locked": false
+            }
+          }
+        ],
+        "originalRemaining": 4,
+        "counterRemaining": 3,
+        "originalEvents": [],
+        "counterEvents": []
+      }
+    ],
+    "scope": "One attachment removed at a time using supplied bake/writer. Reachable full-release body gestures compare source input, retention or motion; target-motion omission is tried for pin roles. These are local role witnesses, not proof of unique solution or difficulty."
+  },
+  "cli": {
+    "found": true,
+    "drags": 4,
+    "log": "found with 4 drags after 25 explorations",
+    "nodes": 25,
+    "seconds": 0.152,
+    "route": [
+      {
+        "step": 1,
+        "part": "ring_5",
+        "label": "R5",
+        "kind": "ring",
+        "from": 270,
+        "to": 414,
+        "direction": "CCW",
+        "removedNow": 1,
+        "remaining": 4
+      },
+      {
+        "step": 2,
+        "part": "ring_4",
+        "label": "R4",
+        "kind": "ring",
+        "from": 180,
+        "to": 324,
+        "direction": "CCW",
+        "removedNow": 1,
+        "remaining": 3
+      },
+      {
+        "step": 3,
+        "part": "ring_3",
+        "label": "R3",
+        "kind": "ring",
+        "from": 90,
+        "to": 234,
+        "direction": "CCW",
+        "removedNow": 1,
+        "remaining": 2
+      },
+      {
+        "step": 4,
+        "part": "ring_2",
+        "label": "R2",
+        "kind": "ring",
+        "from": 0,
+        "to": 144,
+        "direction": "CCW",
+        "removedNow": 2,
+        "remaining": 0
+      }
+    ]
+  }
+}

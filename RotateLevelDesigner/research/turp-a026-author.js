@@ -1,0 +1,14 @@
+"use strict";
+const fs=require('fs'),path=require('path'),{api,RR}=require('./turp-continue'),{color}=require('./turp-feedback-author');const OUT=path.join(__dirname,'20261015-turp-a026-01');fs.mkdirSync(OUT,{recursive:true});const save=(n,v)=>fs.writeFileSync(path.join(OUT,n),JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+function author(rev='01'){
+ const d={format:'turp-design',version:1,levelId:'draft',name:'A026 — Cửa trái chung và ba receiver nhiều nguồn / TURP r'+rev,author:'Codex / TURP continuation',notes:'Remake60005:20 vòng trên hàng/cột dọc4.9, bỏ hai receiver rìa R10/R18. Retarget R9 tới R7, đổi pin R1→R7 sang receiver chung R4, thay R17→R10 bằng L S3 nhận pin. U S1 ở trái xuyên khe R7/R12, hai chân bằng nhau và hai Guide, nối nhánh đáy với nguồn bên trái. R3 nhận ba nguồn R6/R15/R19; R21 nhận R5/R8/R20; R2 còn giữ R6/R1 để quay lại sau mở đầu ra. Các nhánh liên hệ qua nguồn/cửa chung, không ghép cụm độc lập để đủ vật. Không Bom/Booster/Chain, chưa GD duyệt.',rings:[],sticks:[]};
+ const specs=[['R1',1,1,1.75,270],['R2',0,2,1.75,180],['R3',1,3,2.15,270],['R4',0,1,1.75,270],['R5',2,1,1.75,0],['R6',0,3,1.75,135],['R7',-1,2,1.75,180],['R8',2,0,1.75,90],['R9',-1,1,1.75,180],['R11',2,4,1.75,0],['R12',-1,3,2.15,180],['R13',0,4,1.75,45],['R14',-1,4,1.75,180],['R15',1,4,1.75,135],['R16',2,2,1.75,0],['R17',0,5,1.75,90],['R19',2,3,1.75,45],['R20',0,0,1.75,270],['R21',1,0,2.15,270],['R22',1,5,1.75,90]];
+ for(const[id,x,y,radius,gapDir]of specs)d.rings.push({id,x:x*4.9,y:y*4.9,radius,gapDir,gap:90,lockCount:0,pins:[],color:'blue'});const r=id=>d.rings.find(r=>r.id===id);
+ function link(a,b){a=r(a);b=r(b);const dx=b.x-a.x,dy=b.y-a.y;a.pins.push({id:'to'+b.id,target:b.id,angle:(Math.atan2(dy,dx)*180/Math.PI+360)%360,length:Math.hypot(dx,dy)-a.radius-.25-b.radius});}
+ for(const[a,b]of [['R1','R2'],['R1','R4'],['R1','R5'],['R2','R4'],['R5','R21'],['R6','R3'],['R6','R2'],['R8','R21'],['R9','R7'],['R13','R12'],['R14','R12'],['R15','R3'],['R15','R11'],['R17','R14'],['R17','R22'],['R19','R3'],['R19','R16'],['R20','R21'],['R22','R11']])link(a,b);
+ d.sticks.push({id:'S1',x:-8.5,y:9.8,angle:0,path:[[4.2,0],[0,0],[0,4.9],[4.2,4.9]],slideAxis:[1,0],guides:[{x:-7.55,y:9.8,angle:0},{x:-7.05,y:14.7,angle:0}],color:'red'});
+ d.sticks.push({id:'S2',x:4.9,y:14.7,angle:0,path:[[0,0],[0,-3.8],[1.3,-3.8]],slideAxis:[0,1],guides:[{x:4.9,y:12.05,angle:90}],color:'red'});
+ d.sticks.push({id:'S3',x:-2.8354,y:24.5,angle:0,path:[[0,-1.4],[0,1.4],[-1.3,1.4]],slideAxis:[0,1],color:'red'});r('R17').pins.push({id:'topBar',angle:180,target:'S3'});
+ color(d);const stem='turp-A026-60005-shared-receivers-r'+rev;save(stem+'.rrdesign.json',d);const geometry={analysis:RR.analyze(RR.Design.toLevel(d).level),strict:api.OVL.check(d)};save(stem+'-geometry.json',geometry);console.log(JSON.stringify({stem,...geometry}));return{stem,d};
+}
+if(require.main===module)author(process.argv[2]||'01');module.exports={OUT,save,author};

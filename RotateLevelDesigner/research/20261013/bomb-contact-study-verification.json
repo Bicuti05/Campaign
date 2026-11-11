@@ -1,0 +1,436 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v25-hosted-bombs-contact",
+      "name": "Hai bom chạm nhau — điểm tiếp xúc trên vùng đang khóa",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Hai bom chạm nhau — điểm tiếp xúc trên vùng đang khóa",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Một vòng kín giữ pin vào vòng kín dưới nên không được xoay; nó mang bom ở phía trên. Vòng hở trên mang bom thứ hai, còn nhận pin từ nguồn trên cùng. Quay vòng hở CW để hai bom chạm nhau trước khi bất kỳ bom nào chạm thân vòng đối diện. Hai host bị phá, ba nguồn/đích còn lại được nhả. Bỏ một trong hai bom giữ lại vùng pin vào vòng kín: bom di chuyển không đủ gần thân để phá trực tiếp, bom cố định không thể được quay do host còn link đi ra. CCW nhả vật mang sớm và để bom tự do ở vị trí khác, chưa mở vùng kín. Đây là hành vi tiếp xúc bom/bom của engine Designer, không cơ chế Xích hoặc Booster; chưa nghiệm thu đẹp/khó và chưa đối chiếu độc lập với video gốc.",
+        "rings": [
+          {
+            "id": "C",
+            "x": 0,
+            "y": 0,
+            "gapDir": 90,
+            "color": "red",
+            "radius": 1.75,
+            "gap": 0,
+            "pins": [
+              {
+                "angle": 270,
+                "target": "X"
+              }
+            ],
+            "bomb": {
+              "x": 0,
+              "y": 2.2,
+              "radius": 0.3
+            }
+          },
+          {
+            "id": "X",
+            "x": 0,
+            "y": -4.5854,
+            "gapDir": 90,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 0,
+            "pins": []
+          },
+          {
+            "id": "E",
+            "x": 4.5854,
+            "y": 0,
+            "gapDir": 0,
+            "color": "green",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "C"
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "x": 0,
+            "y": 4.5854,
+            "gapDir": 0,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [],
+            "bomb": {
+              "x": 2.2,
+              "y": 4.5854,
+              "radius": 0.3
+            }
+          },
+          {
+            "id": "G",
+            "x": 0,
+            "y": 9.1708,
+            "gapDir": 90,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 270,
+                "target": "R"
+              }
+            ]
+          }
+        ],
+        "sticks": []
+      },
+      "bombs": true,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 2,
+          "links": 3,
+          "pins": 3,
+          "stops": 0,
+          "closedRings": 2
+        }
+      },
+      "solverLog": "found with 1 drags after 4 explorations",
+      "moves": [
+        {
+          "part": "ring_4",
+          "target": -100
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_4",
+          "label": "R4",
+          "kind": "ring",
+          "from": 0,
+          "to": -100,
+          "direction": "CW",
+          "removedNow": 5,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 0,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_4",
+            "pointer": -100,
+            "pose": -75.69045111697014,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": [
+              {
+                "target": null,
+                "otherBomb": "bomb_2",
+                "pose": -75.69045111697014
+              }
+            ]
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_4",
+            "pointer": -100,
+            "pose": -75.69045111697014,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": [
+              {
+                "target": null,
+                "otherBomb": "bomb_2",
+                "pose": -75.69045111697014
+              }
+            ]
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "E",
+          "angle": 180,
+          "logicMargin": 135
+        },
+        {
+          "owner": "G",
+          "angle": 270,
+          "logicMargin": 135
+        }
+      ],
+      "witness": {
+        "initialBombHosts": [
+          "ring_1",
+          "ring_4"
+        ],
+        "initialContacts": [],
+        "closedSourceMotion": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "correct": {
+          "solved": true,
+          "remaining": 0,
+          "events": [
+            {
+              "contact": {
+                "bomb": 0,
+                "target": -1,
+                "otherBomb": 1,
+                "colliderId": "bomb_1/bomb/bomb_2",
+                "pose": -75.69045111697014
+              },
+              "movingBombToFixedBody": 0.21318426063765533,
+              "fixedBombToMovingBody": 0.9509741482866314
+            }
+          ],
+          "explosions": [
+            {
+              "contact": {
+                "bomb": 0,
+                "target": -1,
+                "otherBomb": 1,
+                "colliderId": "bomb_1/bomb/bomb_2",
+                "pose": -75.69045111697014
+              },
+              "explosions": [
+                {
+                  "bombId": "bomb_1",
+                  "hostId": "ring_1",
+                  "position": {
+                    "x": 0,
+                    "y": 2.2
+                  }
+                },
+                {
+                  "bombId": "bomb_2",
+                  "hostId": "ring_4",
+                  "position": {
+                    "x": 0.5437531108226483,
+                    "y": 2.4536559828931868
+                  }
+                }
+              ],
+              "removedParts": [
+                "ring_1",
+                "ring_4"
+              ]
+            }
+          ],
+          "bombs": [
+            {
+              "id": "bomb_1",
+              "host": 0,
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 2.2
+              }
+            },
+            {
+              "id": "bomb_2",
+              "host": 3,
+              "active": false,
+              "position": {
+                "x": 0.5437531108226483,
+                "y": 2.4536559828931868
+              }
+            }
+          ],
+          "cMovementLocked": false
+        },
+        "wrong": {
+          "solved": false,
+          "remaining": 3,
+          "events": [],
+          "explosions": [],
+          "bombs": [
+            {
+              "id": "bomb_1",
+              "host": 0,
+              "active": true,
+              "position": {
+                "x": 0,
+                "y": 2.2
+              }
+            },
+            {
+              "id": "bomb_2",
+              "host": -1,
+              "active": true,
+              "position": {
+                "x": 1.293127555043443,
+                "y": 6.365237387624883
+              }
+            }
+          ],
+          "cMovementLocked": true
+        },
+        "withoutFixedBomb": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 5,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 1,
+              "links": 3,
+              "pins": 3,
+              "stops": 0,
+              "closedRings": 2
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 178,
+            "seconds": 2.113,
+            "log": "NOT FOUND after 178 explorations, 2 s (limits 400 nodes / 2 s, open 4)",
+            "route": []
+          }
+        },
+        "withoutMovingBomb": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 5,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 1,
+              "links": 3,
+              "pins": 3,
+              "stops": 0,
+              "closedRings": 2
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 160,
+            "seconds": 2,
+            "log": "NOT FOUND after 160 explorations, 2 s (limits 400 nodes / 2 s, open 4)",
+            "route": []
+          }
+        },
+        "fixedBombInside": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 5,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 2,
+              "links": 3,
+              "pins": 3,
+              "stops": 0,
+              "closedRings": 2
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 166,
+            "seconds": 2.064,
+            "log": "NOT FOUND after 166 explorations, 2 s (limits 400 nodes / 2 s, open 4)",
+            "route": []
+          }
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R",
+              "pointer": -100,
+              "pose": -75.69045111697014,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5"
+              ],
+              "events": [
+                {
+                  "bomb": 0,
+                  "target": null,
+                  "otherBomb": "bomb_2",
+                  "pose": -75.69045111697014
+                }
+              ]
+            }
+          ]
+        },
+        "feel": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R",
+              "pointer": -100,
+              "pose": -75.69045111697014,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5"
+              ],
+              "events": [
+                {
+                  "bomb": 0,
+                  "target": null,
+                  "otherBomb": "bomb_2",
+                  "pose": -75.69045111697014
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

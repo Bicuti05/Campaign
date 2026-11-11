@@ -1,0 +1,230 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "010",
+  "name": "Level 10 — Trực thăng, cánh L mở bom",
+  "author": "Codex / report_20Level remake",
+  "notes": "New L + Bom theo report_20Level §4/L10, giữ hình trực thăng của bản ingame, xoay toàn view90° để bố cục dọc. Hai L đều ngang/dọc, mọi đoạn >1.5. L đuôi S7 luồn qua khe khoang; pin gắn trong của khoang R1 giữ chính thanh này. Cánh L chạm Bom trên R3 để phá R3/S7, giải vòng kín R4 và mở input khoang R1; sau đó xoay khoang giải cửa sổ. R3 giữ pin vào R4 kín nên Bom có vai trò mở cụm đuôi, không chỉ là trang trí. L chân S3 bổ sung bài đọc cánh và đường thoát. Không xích/Booster; nhãn đề xuất chờ GD, không nhập campaign/ingame. Bản giao r04: tham số authoring native ở dạng serialize ổn định; tọa độ bom gọn để rebuild chính xác, không sửa serializer hoặc engine.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 1.25,
+      "y": -1.25,
+      "gapDir": 115,
+      "gap": 40,
+      "radius": 5.3125,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "tailGate",
+          "angle": 180,
+          "inner": true,
+          "length": 2.5625,
+          "target": "S7"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 1.25,
+      "y": -3.1021,
+      "gapDir": 90,
+      "gap": 180,
+      "radius": 2.375,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": -4.94,
+      "y": 14,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "tailBar",
+          "angle": 0,
+          "length": 1.94,
+          "target": "S7"
+        },
+        {
+          "id": "closedTail",
+          "angle": 90,
+          "length": 2.95,
+          "target": "R4"
+        }
+      ],
+      "bomb": {
+        "x": -4.125,
+        "y": 15.5,
+        "radius": 0.45
+      }
+    },
+    {
+      "id": "R4",
+      "x": -4.94,
+      "y": 20.2,
+      "radius": 1.5,
+      "gap": 0,
+      "gapDir": 90,
+      "color": "purple"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -8.75,
+      "y": -7.2812,
+      "angle": 75,
+      "color": "red",
+      "shape": "straight",
+      "length": 9.8125,
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -8.75,
+          "y": -7.2812,
+          "angle": 75
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "x": -8.75,
+      "y": 4.84,
+      "angle": 105,
+      "color": "red",
+      "shape": "straight",
+      "length": 9.8125,
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -8.75,
+          "y": 4.84,
+          "angle": 105
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "x": 10.05,
+      "y": -1.25,
+      "angle": 90,
+      "color": "teal",
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 10.05,
+          "y": -1.25,
+          "angle": 90
+        }
+      ],
+      "path": [
+        [
+          -6.875,
+          2.6
+        ],
+        [
+          -6.875,
+          0
+        ],
+        [
+          6.875,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "S4",
+      "x": -6.28,
+      "y": -1.25,
+      "angle": 0,
+      "color": "purple",
+      "shape": "straight",
+      "length": 3,
+      "guides": [
+        {
+          "x": -5.5,
+          "y": -1.25,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "x": 7.8802,
+      "y": -4.97,
+      "angle": 205,
+      "color": "purple",
+      "shape": "straight",
+      "length": 3,
+      "guides": [
+        {
+          "x": 8.52,
+          "y": -4.62,
+          "angle": 205
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "x": 7.8802,
+      "y": 2.27,
+      "angle": 325,
+      "color": "purple",
+      "shape": "straight",
+      "length": 3,
+      "guides": [
+        {
+          "x": 8.52,
+          "y": 1.84,
+          "angle": 325
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "x": 0,
+      "y": 0,
+      "angle": 90,
+      "color": "blue",
+      "path": [
+        [
+          -1.6,
+          1.25
+        ],
+        [
+          17.2,
+          1.25
+        ],
+        [
+          17.2,
+          4.25
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ]
+    }
+  ]
+}

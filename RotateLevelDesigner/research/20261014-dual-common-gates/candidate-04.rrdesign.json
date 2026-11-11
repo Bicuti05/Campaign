@@ -1,0 +1,99 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "DCG-04 | Hai cửa cùng nguồn, mở lệch rồi quay lại",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp 6 vòng radius1,75, 6 pin, 2 nguồn kín C/D giữ A/B. T/R cùng nhận pin từ A/B: chỉ mở một cửa hoặc mở lệch nguồn thì A/B vẫn khóa; cùng mở cửa A mới mở input A, C còn giữ để A quay thật. Sau A tháo, T/R còn B giữ rồi phục vụ B. Recipe mở lệch T cho A/R cho B, đổi T sang B, quay B0, sau đó quay lại T/R phục vụ A cũng hoàn thành. Pin diagonal và khoảng T/R có mục đích hai cửa dùng chung, không chốt visual/difficulty hoặc tăng count để nhận khó. Các prototype H/Bom mặc định đầu pin đối nhau overlap0,05 hoặc H với pin chéo overlap0,101 giữ research; bỏ cấu trúc chưa đủ geometry proof để hoàn thiện quan hệ cửa, không dùng nó làm bàn giao. Không Stick/Guide/Stop/Bom/Chain/Booster, không engine/tolerance/Unity/browser/device thay đổi. Revision04 tăng khoảng cách khe owner A/B thêm0,1° ở hai phía, giữ nguyên pin/center/radius/recipe, để margin>=45° thật sau writer f32. Bản03 CLI validate/solve qua nhưng pack margin A→T44,999997° không đạt; giữ research, không nới engine/tolerance hoặc ghi đè mẫu.",
+  "rings": [
+    {
+      "id": "A",
+      "x": -2.8354,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 141.90397264721972,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 51.80397264721974,
+          "target": "T"
+        },
+        {
+          "angle": 308.1960273527803,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 2.8354,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 38.09602735278026,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 128.19602735278028,
+          "target": "T"
+        },
+        {
+          "angle": 231.80397264721972,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 3.6036648012821613,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "R",
+      "x": 0,
+      "y": -3.6036648012821613,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": -7.4208,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 7.4208,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "B"
+        }
+      ]
+    }
+  ],
+  "sticks": []
+}

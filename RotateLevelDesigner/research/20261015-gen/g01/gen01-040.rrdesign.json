@@ -1,0 +1,220 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R3"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R2",
+      "x": 13.7562,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "teal"
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R3"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R5",
+      "x": 9.1708,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R6",
+      "x": 13.7562,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R5"
+        },
+        {
+          "angle": 90,
+          "target": "R2"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R7",
+      "x": 0,
+      "y": -9.1708,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R11"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R8",
+      "x": 4.5854,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R12"
+        },
+        {
+          "angle": 0,
+          "target": "R9"
+        },
+        {
+          "angle": 90,
+          "target": "R4"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R9",
+      "x": 9.1708,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R10"
+        },
+        {
+          "angle": 90,
+          "target": "R5"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R10",
+      "x": 13.7562,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [],
+      "color": "teal",
+      "stops": [
+        {
+          "angle": 240,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "x": 0,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R12"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R12",
+      "x": 4.5854,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R13"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R13",
+      "x": 9.1708,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R14",
+      "x": 13.7562,
+      "y": -13.7562,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R13"
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "x": 0.75,
+      "y": -6.5,
+      "angle": 0,
+      "color": "navy",
+      "guides": [
+        {
+          "x": 0.75,
+          "y": -6.5,
+          "angle": 0
+        }
+      ]
+    }
+  ],
+  "name": "G01-040 | Nghỉ",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 40 (relief). Ý tưởng: R3 bị 2 vòng (R1, R4) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; vòng kín R7, R14 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R10 chặn một chiều quay: chọn chiều hoặc dọn đường trước; thanh S1 chặn đường quay của vòng bên cạnh: rút thanh đúng lúc. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 2.5 lần kéo/vật, mục tiêu 2–3.5). Không Booster/Chain/bom; lockCount 0."
+}

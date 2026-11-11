@@ -1,0 +1,80 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Một thanh nhả, một thanh giữ — mở vòng nhận rồi quay lại",
+  "author": "Codex ongoing research 20261013",
+  "notes": "A giữ hai thanh đứng và vòng B trên. Thanh trái L còn nhận pin từ B: hạ L một đoạn nhả riêng pin B, pin A vẫn giữ L; B khi đó mới hết link đi ra và được xoay. Chốt A chặn hạ L hết, chốt B chặn nâng L hết và còn bị thanh phải R chặn trên đường CW, nên phải rút R trước khi mở B. Sau B rời, A vẫn giữ L; đường nâng đã mở, đổi hướng kéo L lên để nhả A. Không ngàm vì các pin giữ thật, không bom/Chain/Booster. Chỉ một chốt B 135 độ trên đường CW đã kiểm; mẫu hai chốt trên B trước đó va thân A trước cửa nhả, giữ riêng trong research. Chưa GD nghiệm thu bố cục/độ khó.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "gapDir": 270,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R"
+        },
+        {
+          "angle": 90,
+          "target": "B"
+        },
+        {
+          "angle": 180,
+          "target": "L"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 225,
+          "length": 2
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 135,
+          "length": 2
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "R",
+      "shape": "straight",
+      "x": 2.8354,
+      "y": 2.2927,
+      "length": 5.6,
+      "angle": 90,
+      "color": "blue"
+    },
+    {
+      "id": "L",
+      "shape": "straight",
+      "x": -2.8354,
+      "y": 2.2927,
+      "length": 5.6,
+      "angle": 90,
+      "color": "green"
+    }
+  ]
+}

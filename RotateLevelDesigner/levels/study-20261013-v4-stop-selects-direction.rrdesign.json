@@ -1,0 +1,71 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Chốt chặn chọn hướng quay",
+  "author": "Codex reference study 20261013",
+  "notes": "Chốt trên vòng trên phải chặn hướng CCW vào phía vòng nguồn, nhưng để mở hướng CW. Nhận ra hướng quay còn lại thay vì kéo mãi vào phía bị chặn. Bỏ riêng chốt phải mở lại hướng CCW. Cặp dưới tạo nhánh độc lập có liên kết cùng cụm, không dùng ngàm/bom/Chain/Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 135,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R2"
+        },
+        {
+          "angle": 270,
+          "target": "R3"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [],
+      "stops": [
+        {
+          "angle": 90,
+          "length": 0.8
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 270,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

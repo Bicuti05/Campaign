@@ -1,0 +1,233 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "A016 — Hai khung L và cửa trung tâm / TURP r01",
+  "rings": [
+    {
+      "id": "R1",
+      "x": -3.9226,
+      "y": -0.125,
+      "gapDir": 200,
+      "gap": 90,
+      "radius": 2.3688,
+      "color": "green",
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "centralDoor",
+          "angle": 29.967399652192285,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": -3.9113,
+      "y": -5.0574,
+      "gapDir": 180,
+      "gap": 80,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "target": "S2"
+        },
+        {
+          "id": "p2",
+          "angle": 90.13126290969666,
+          "target": "R1"
+        }
+      ],
+      "radius": 1.4805,
+      "color": "orange",
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": -3.9528,
+      "y": 4.8072,
+      "gapDir": 180,
+      "gap": 80,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270.3508192931231,
+          "target": "R1"
+        },
+        {
+          "id": "p2",
+          "angle": 90,
+          "target": "S1"
+        }
+      ],
+      "radius": 1.4805,
+      "color": "navy",
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": 0.35237874941926733,
+      "y": 2.339918007158388,
+      "gapDir": 270,
+      "gap": 80,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 36.540662450107334,
+          "target": "R5"
+        }
+      ],
+      "radius": 1.4805,
+      "color": "orange",
+      "lockCount": 0
+    },
+    {
+      "id": "R5",
+      "x": 4.158278749419267,
+      "y": 5.160318007158388,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 162.93769623090884,
+          "target": "R8"
+        }
+      ],
+      "radius": 2.1714,
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": 0.8663577035296348,
+      "y": -3.264652483936904,
+      "gapDir": 215,
+      "gap": 90,
+      "radius": 1.4805,
+      "color": "navy",
+      "lockCount": 0
+    },
+    {
+      "id": "R7",
+      "x": 0.0606,
+      "y": -7.4592,
+      "gapDir": 135,
+      "gap": 90,
+      "radius": 2.1714,
+      "pins": [
+        {
+          "id": "q1",
+          "angle": 26.95890686719622,
+          "target": "R9"
+        }
+      ],
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R8",
+      "x": -0.24482125058073273,
+      "y": 6.511718007158388,
+      "gapDir": 225,
+      "gap": 90,
+      "radius": 1.3489,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R9",
+      "x": 4.1662,
+      "y": -5.371,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 147.44919216237855,
+          "target": "R6"
+        }
+      ],
+      "radius": 1.3489,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R10",
+      "x": 4.1987,
+      "y": -0.1332,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 147.2596839184847,
+          "target": "R4"
+        },
+        {
+          "id": "lowerDoor",
+          "angle": 223.2198638742763,
+          "target": "R6"
+        }
+      ],
+      "radius": 2.0069,
+      "color": "purple",
+      "lockCount": 0
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -3.9528,
+      "y": 7.3731,
+      "angle": 0,
+      "path": [
+        [
+          1.8,
+          0
+        ],
+        [
+          -2.1,
+          0
+        ],
+        [
+          -2.1,
+          1.3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "S2",
+      "x": -3.9113,
+      "y": -7.6233,
+      "angle": 0,
+      "path": [
+        [
+          1,
+          0
+        ],
+        [
+          -2.1,
+          0
+        ],
+        [
+          -2.1,
+          -1.5
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "color": "purple"
+    }
+  ],
+  "author": "Codex / TURP continuation",
+  "notes": "Tiếp nối nguồn70002 và feedback khe/màu trong TURPLevel. Thay hai L xiên thành ngang/dọc; thêm pin R1→R4 và R10→R6 nối các vùng, căn khoảng pin native. Các khe điều chỉnh phục vụ junction và owner margin45°. Cỡ khác nhau có mục đích đổi silhouette, không Chain/Booster/Bom. Chưa GD duyệt."
+}

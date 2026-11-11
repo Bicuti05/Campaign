@@ -1,0 +1,462 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "A026 — Cửa trái chung và ba receiver nhiều nguồn / TURP r01 — sửa tương phản pin dài",
+  "author": "Codex / TURP continuation",
+  "notes": "Remake60005:20 vòng trên hàng/cột dọc4.9, bỏ hai receiver rìa R10/R18. Retarget R9 tới R7, đổi pin R1→R7 sang receiver chung R4, thay R17→R10 bằng L S3 nhận pin. U S1 ở trái xuyên khe R7/R12, hai chân bằng nhau và hai Guide, nối nhánh đáy với nguồn bên trái. R3 nhận ba nguồn R6/R15/R19; R21 nhận R5/R8/R20; R2 còn giữ R6/R1 để quay lại sau mở đầu ra. Các nhánh liên hệ qua nguồn/cửa chung, không ghép cụm độc lập để đủ vật. Không Bom/Booster/Chain, chưa GD duyệt. Revision sửa lỗi tương phản khai báo pin: R1→R2, R17→R14. Thay turp-A026-60005-shared-receivers-r01 về đề xuất sau khi kiểm đủ. Chỉ đổi palette/name/notes, không đổi geometry/gameplay/route, không phải level mới. Không ghi đè bản cũ hoặc tự duyệt GD.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 270,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR2",
+          "target": "R2",
+          "angle": 135,
+          "length": 3.1796464556281663
+        },
+        {
+          "id": "toR4",
+          "target": "R4",
+          "angle": 180,
+          "length": 1.1500000000000004
+        },
+        {
+          "id": "toR5",
+          "target": "R5",
+          "angle": 0,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR4",
+          "target": "R4",
+          "angle": 270,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R3",
+      "x": 4.9,
+      "y": 14.700000000000001,
+      "radius": 2.15,
+      "gapDir": 270,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 270,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "teal"
+    },
+    {
+      "id": "R5",
+      "x": 9.8,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR21",
+          "target": "R21",
+          "angle": 225,
+          "length": 2.7796464556281664
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": 14.700000000000001,
+      "radius": 1.75,
+      "gapDir": 135,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR3",
+          "target": "R3",
+          "angle": 0,
+          "length": 0.7500000000000004
+        },
+        {
+          "id": "toR2",
+          "target": "R2",
+          "angle": 270,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R7",
+      "x": -4.9,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R8",
+      "x": 9.8,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR21",
+          "target": "R21",
+          "angle": 180,
+          "length": 0.7500000000000004
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R9",
+      "x": -4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR7",
+          "target": "R7",
+          "angle": 90,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R11",
+      "x": 9.8,
+      "y": 19.6,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R12",
+      "x": -4.9,
+      "y": 14.700000000000001,
+      "radius": 2.15,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "R13",
+      "x": 0,
+      "y": 19.6,
+      "radius": 1.75,
+      "gapDir": 45,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR12",
+          "target": "R12",
+          "angle": 225,
+          "length": 2.7796464556281664
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R14",
+      "x": -4.9,
+      "y": 19.6,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR12",
+          "target": "R12",
+          "angle": 270,
+          "length": 0.7500000000000004
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R15",
+      "x": 4.9,
+      "y": 19.6,
+      "radius": 1.75,
+      "gapDir": 135,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR3",
+          "target": "R3",
+          "angle": 270,
+          "length": 0.7500000000000004
+        },
+        {
+          "id": "toR11",
+          "target": "R11",
+          "angle": 0,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R16",
+      "x": 9.8,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R17",
+      "x": 0,
+      "y": 24.5,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR14",
+          "target": "R14",
+          "angle": 225,
+          "length": 3.1796464556281654
+        },
+        {
+          "id": "toR22",
+          "target": "R22",
+          "angle": 0,
+          "length": 1.1500000000000004
+        },
+        {
+          "id": "topBar",
+          "angle": 180,
+          "target": "S3"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R19",
+      "x": 9.8,
+      "y": 14.700000000000001,
+      "radius": 1.75,
+      "gapDir": 45,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR3",
+          "target": "R3",
+          "angle": 180,
+          "length": 0.7500000000000004
+        },
+        {
+          "id": "toR16",
+          "target": "R16",
+          "angle": 270,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R20",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 270,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR21",
+          "target": "R21",
+          "angle": 0,
+          "length": 0.7500000000000004
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R21",
+      "x": 4.9,
+      "y": 0,
+      "radius": 2.15,
+      "gapDir": 270,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "R22",
+      "x": 4.9,
+      "y": 24.5,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR11",
+          "target": "R11",
+          "angle": 315,
+          "length": 3.1796464556281654
+        }
+      ],
+      "color": "navy"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -8.5,
+      "y": 9.8,
+      "angle": 0,
+      "path": [
+        [
+          4.2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4.9
+        ],
+        [
+          4.2,
+          4.9
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.55,
+          "y": 9.8,
+          "angle": 0
+        },
+        {
+          "x": -7.05,
+          "y": 14.7,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S2",
+      "x": 4.9,
+      "y": 14.7,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -3.8
+        ],
+        [
+          1.3,
+          -3.8
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 4.9,
+          "y": 12.05,
+          "angle": 90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S3",
+      "x": -2.8354,
+      "y": 24.5,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -1.4
+        ],
+        [
+          0,
+          1.4
+        ],
+        [
+          -1.3,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "blue"
+    }
+  ]
+}

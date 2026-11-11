@@ -1,0 +1,108 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Nhả hai thanh chung nguồn — giữ cửa dưới qua bước mở nguồn",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Một nguồn giữ hai thanh khác trục: thanh đứng chỉ có pin, thanh ngang có pin và ngàm. Rút thanh đứng và dịch thanh ngang một đoạn thì nguồn mới hết link đi ra, nhưng thanh ngang còn giữ cửa của cặp dưới. Hai chốt chặn hai lối rút hết thanh ngang; xoay nguồn để nhả nguồn còn lại và dọn hai chốt, rồi mới rút thanh ngang để mở cặp dưới. Ngàm cần giữ thanh qua thao tác trên nguồn khác; bỏ từng chốt phải mở một lối tắt. Không bom/Chain/Booster. Bản nghiên cứu, chưa GD nghiệm thu bố cục/độ khó.",
+  "rings": [
+    {
+      "id": "R",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "V"
+        },
+        {
+          "angle": 270,
+          "target": "H"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 315,
+          "length": 2
+        }
+      ]
+    },
+    {
+      "id": "N",
+      "x": -4.5854,
+      "y": 0,
+      "gapDir": 90,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 225,
+          "length": 2
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "x": -6.9354,
+      "y": -4.5854,
+      "gapDir": 90,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "B"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": -2.35,
+      "y": -4.5854,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "V",
+      "shape": "straight",
+      "x": 2.8354,
+      "y": 2.2927,
+      "length": 5.6,
+      "angle": 90,
+      "color": "teal"
+    },
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": -2.2927,
+      "y": -2.8354,
+      "length": 5.6,
+      "angle": 0,
+      "color": "red",
+      "guides": [
+        {
+          "x": -4.1,
+          "y": -2.8354,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

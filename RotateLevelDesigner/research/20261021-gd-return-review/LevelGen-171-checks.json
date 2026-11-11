@@ -1,0 +1,146 @@
+{
+  "file": "Tools/LevelGen/Tools/RotateLevelDesigner/levels/A171_20261021_r01.rrpack.json",
+  "source": "Tools/LevelGen/Tools/RotateLevelDesigner/levels/A151_20261021_r01.rrdesign.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 8,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 9,
+        "pins": 9,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "R2",
+        "pin": "toR1",
+        "margin": 64.86577
+      },
+      {
+        "ring": "R3",
+        "pin": "nR1",
+        "margin": 62.137490000000014
+      },
+      {
+        "ring": "R4",
+        "pin": "p1",
+        "margin": 118.87837999999999
+      },
+      {
+        "ring": "R4",
+        "pin": "zZ1",
+        "margin": 45.53342999999995
+      },
+      {
+        "ring": "N1",
+        "pin": "nR3",
+        "margin": 45.482680000000016
+      },
+      {
+        "ring": "N1",
+        "pin": "nN2",
+        "margin": 97.87510999999995
+      },
+      {
+        "ring": "N2",
+        "pin": "zR4",
+        "margin": 71.58213999999998
+      },
+      {
+        "ring": "Z1",
+        "pin": "zZ2",
+        "margin": 50.573920000000044
+      },
+      {
+        "ring": "Z2",
+        "pin": "zR2",
+        "margin": 46.13519999999994
+      }
+    ],
+    "guides": [],
+    "links": [
+      {
+        "source": "ring_2",
+        "target": "ring_1",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_1",
+        "pin": "attachment.pin_2",
+        "active": true
+      },
+      {
+        "source": "ring_4",
+        "target": "ring_2",
+        "pin": "attachment.pin_3",
+        "active": true
+      },
+      {
+        "source": "ring_4",
+        "target": "ring_7",
+        "pin": "attachment.pin_4",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "ring_3",
+        "pin": "attachment.pin_5",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "ring_6",
+        "pin": "attachment.pin_6",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_4",
+        "pin": "attachment.pin_7",
+        "active": true
+      },
+      {
+        "source": "ring_7",
+        "target": "ring_8",
+        "pin": "attachment.pin_8",
+        "active": true
+      },
+      {
+        "source": "ring_8",
+        "target": "ring_2",
+        "pin": "attachment.pin_9",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [],
+      "current": [],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

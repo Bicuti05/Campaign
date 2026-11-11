@@ -1,0 +1,766 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v26-opposed-pin-u",
+      "name": "Hai phía giữ U — nhả một bên, quay đúng phía rồi rút tiếp",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Hai phía giữ U — nhả một bên, quay đúng phía rồi rút tiếp",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Hai pin ngược hướng giữ hai nhánh đứng của cùng U ở hai độ cao, không ngàm; passage đều theo local Y. Hạ U một đoạn nhả pin trái, pin phải vẫn giữ cả khung. Chốt của nguồn dưới trái chặn đường hạ dài; đáy gập U và pin phải đã chặn nâng lên. Quay nguồn trái CCW để nhả nguồn mang chốt, rồi hạ U tiếp để nhả nguồn phải. Quay nguồn trái CW sau chuẩn bị có thể làm pin chạm lại U và khóa nguồn ở trạng thái sau thả tay. Đưa U về vị trí đầu cũng phục hồi pin trái. Chốt phụ phía trên đã bỏ vì không mở thêm lối tháo hoặc đổi recipe đang kiểm. Không bom/Chain/Booster, không thêm ngàm trùng vai trò hai pin; chưa nghiệm thu bố cục/độ khó.",
+        "rings": [
+          {
+            "id": "A",
+            "x": -3.9354,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "U"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 3.9354,
+            "y": -4.5854,
+            "gapDir": 0,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "U"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": -3.9354,
+            "y": -4.5854,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ],
+            "stops": [
+              {
+                "angle": 300,
+                "length": 4.3
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "U",
+            "shape": "U",
+            "x": 0,
+            "y": -7.1854,
+            "length": 2.2,
+            "arm": 8.8,
+            "angle": 0,
+            "color": "green",
+            "slideAxis": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 1,
+          "guides": 0,
+          "bombs": 0,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 3 drags after 18 explorations",
+      "moves": [
+        {
+          "part": "slide_bar_1",
+          "target": -1.9
+        },
+        {
+          "part": "ring_1",
+          "target": 270
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -7
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": -1.9,
+          "direction": "-",
+          "removedNow": 0,
+          "remaining": 4
+        },
+        {
+          "step": 2,
+          "part": "ring_1",
+          "label": "R1",
+          "kind": "ring",
+          "from": 180,
+          "to": 270,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": -1.72,
+          "to": -7,
+          "direction": "-",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 0,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -1.9,
+            "pose": -1.717077636718751,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 270,
+            "pose": 234.0000000000002,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -7,
+            "pose": -6.217077636718746,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -1.9,
+            "pose": -1.717077636718751,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 270,
+            "pose": 234.00000000000023,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -7,
+            "pose": -6.217077636718746,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "A",
+          "angle": 0,
+          "logicMargin": 135
+        },
+        {
+          "owner": "B",
+          "angle": 180,
+          "logicMargin": 135
+        },
+        {
+          "owner": "C",
+          "angle": 90,
+          "logicMargin": 135
+        }
+      ],
+      "witness": {
+        "initialBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.8344482421875015,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.0388793945312504,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "sourceBefore": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 180,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "partial": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -1.9,
+              "pose": -1.717077636718751,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "afterPartialBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": -1.717077636718751,
+            "to": -1.8973022460937514,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": -1.717077636718751,
+            "to": 2.0171752929687488,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "afterGateBar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": -1.717077636718751,
+            "to": -6.217077636718746,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": -1.717077636718751,
+            "to": 2.0388793945312496,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "withoutStop": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -6.299999999999995,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.0388793945312504,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "withoutRightPin": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -1.9,
+              "pose": -1.700000000000001,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutLeftPin": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 180,
+            "to": -53.99999999999881,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 180,
+            "to": 234.0000000000002,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "sameHeight": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -1.9,
+              "pose": -1.700000000000001,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "splitParts": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "UL",
+              "pointer": -1.9,
+              "pose": -1.7000000000000002,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "splitAnalysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 2,
+            "guides": 0,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "wrongSource": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -1.9,
+              "pose": -1.717077636718751,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 0,
+              "pose": 168.05493164062494,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -7,
+              "pose": -1.7587402343750012,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "sourceAfterPartial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 176.99999999999994,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 180,
+            "to": 234.0000000000002,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "undo": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -1.9,
+              "pose": -1.717077636718751,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": 0,
+              "pose": -6.661338147750939e-16,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 180,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -1.9,
+              "pose": -1.717077636718751,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 234.0000000000002,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -7,
+              "pose": -6.217077636718746,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feel": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -1.9,
+              "pose": -1.717077636718751,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 234.00000000000023,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -7,
+              "pose": -6.217077636718746,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "rejectedUpperStop": {
+          "design": {
+            "format": "turp-design",
+            "version": 1,
+            "levelId": "draft",
+            "name": "Hai phía giữ U — nhả một bên, quay đúng phía rồi rút tiếp",
+            "author": "Codex ongoing research 20261013",
+            "notes": "Hai pin ngược hướng giữ hai nhánh đứng của cùng U ở hai độ cao, không ngàm; passage đều theo local Y. Hạ U một đoạn nhả pin trái, pin phải vẫn giữ cả khung. Chốt của nguồn dưới trái chặn đường hạ dài; đáy gập U và pin phải đã chặn nâng lên. Quay nguồn trái CCW để nhả nguồn mang chốt, rồi hạ U tiếp để nhả nguồn phải. Quay nguồn trái CW sau chuẩn bị có thể làm pin chạm lại U và khóa nguồn ở trạng thái sau thả tay. Đưa U về vị trí đầu cũng phục hồi pin trái. Chốt phụ phía trên đã bỏ vì không mở thêm lối tháo hoặc đổi recipe đang kiểm. Không bom/Chain/Booster, không thêm ngàm trùng vai trò hai pin; chưa nghiệm thu bố cục/độ khó.",
+            "rings": [
+              {
+                "id": "A",
+                "x": -3.9354,
+                "y": 0,
+                "gapDir": 180,
+                "color": "orange",
+                "radius": 1.75,
+                "gap": 90,
+                "pins": [
+                  {
+                    "angle": 0,
+                    "target": "U"
+                  }
+                ],
+                "stops": [
+                  {
+                    "angle": 45,
+                    "length": 2
+                  }
+                ]
+              },
+              {
+                "id": "B",
+                "x": 3.9354,
+                "y": -4.5854,
+                "gapDir": 0,
+                "color": "blue",
+                "radius": 1.75,
+                "gap": 90,
+                "pins": [
+                  {
+                    "angle": 180,
+                    "target": "U"
+                  }
+                ]
+              },
+              {
+                "id": "C",
+                "x": -3.9354,
+                "y": -4.5854,
+                "gapDir": 270,
+                "color": "purple",
+                "radius": 1.75,
+                "gap": 90,
+                "pins": [
+                  {
+                    "angle": 90,
+                    "target": "A"
+                  }
+                ],
+                "stops": [
+                  {
+                    "angle": 300,
+                    "length": 4.3
+                  }
+                ]
+              }
+            ],
+            "sticks": [
+              {
+                "id": "U",
+                "shape": "U",
+                "x": 0,
+                "y": -7.1854,
+                "length": 2.2,
+                "arm": 8.8,
+                "angle": 0,
+                "color": "green",
+                "slideAxis": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          "initialBar": [
+            {
+              "direction": -1,
+              "removed": false,
+              "from": 0,
+              "to": -1.8344482421875015,
+              "remaining": 4,
+              "links": 2
+            },
+            {
+              "direction": 1,
+              "removed": false,
+              "from": 0,
+              "to": 1.1311279296875003,
+              "remaining": 4,
+              "links": 3
+            }
+          ],
+          "sourceAfterPartial": [
+            {
+              "direction": -1,
+              "removed": false,
+              "from": 180,
+              "to": 176.99999999999994,
+              "remaining": 4,
+              "links": 3
+            },
+            {
+              "direction": 1,
+              "removed": true,
+              "from": 180,
+              "to": 234.0000000000002,
+              "remaining": 2,
+              "links": 1
+            }
+          ],
+          "trace": {
+            "solved": true,
+            "trace": [
+              {
+                "part": "U",
+                "pointer": -1.9,
+                "pose": -1.717077636718751,
+                "remaining": 4,
+                "links": 2,
+                "bindings": 0,
+                "solved": [],
+                "events": []
+              },
+              {
+                "part": "A",
+                "pointer": 270,
+                "pose": 234.0000000000002,
+                "remaining": 2,
+                "links": 1,
+                "bindings": 0,
+                "solved": [
+                  "ring_1",
+                  "ring_3"
+                ],
+                "events": []
+              },
+              {
+                "part": "U",
+                "pointer": -7,
+                "pose": -6.217077636718746,
+                "remaining": 0,
+                "links": 0,
+                "bindings": 0,
+                "solved": [
+                  "ring_1",
+                  "ring_2",
+                  "ring_3",
+                  "slide_bar_1"
+                ],
+                "events": []
+              }
+            ]
+          },
+          "decision": "Removed in the delivered draft: only shortened an already blocked upward bar travel in these tested states; source direction and intended recipe unchanged."
+        }
+      }
+    }
+  ]
+}

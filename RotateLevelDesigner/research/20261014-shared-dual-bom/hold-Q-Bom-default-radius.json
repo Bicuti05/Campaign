@@ -1,0 +1,423 @@
+{
+  "status": "held_pair_relation_redundant_at_default_Q_Bom_radius",
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 9,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 2,
+        "links": 10,
+        "pins": 10,
+        "stops": 0,
+        "closedRings": 3
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "A",
+        "target": "T",
+        "margin": 72.57215074170244
+      },
+      {
+        "owner": "Q",
+        "target": "V",
+        "margin": 72.57215074170244
+      },
+      {
+        "owner": "D",
+        "target": "T",
+        "margin": 45.10000000000002
+      },
+      {
+        "owner": "F",
+        "target": "V",
+        "margin": 45.10000000000002
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "walls": 2,
+        "engaged": true
+      }
+    ],
+    "bodyAccess": [
+      {
+        "label": "A",
+        "visibleBodyPoints": 86
+      },
+      {
+        "label": "Q",
+        "visibleBodyPoints": 86
+      },
+      {
+        "label": "T",
+        "visibleBodyPoints": 66
+      },
+      {
+        "label": "V",
+        "visibleBodyPoints": 66
+      },
+      {
+        "label": "C",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "F",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "DG",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "FG",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "U",
+        "visibleBodyPoints": 46
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "pair": {
+    "moves": [
+      {
+        "part": "U",
+        "target": -1
+      },
+      {
+        "part": "V",
+        "target": -120
+      },
+      {
+        "part": "Q",
+        "target": -180
+      }
+    ],
+    "data": {
+      "solved": false,
+      "remaining": 8,
+      "initialContacts": [],
+      "trace": [
+        {
+          "part": "U",
+          "target": -1,
+          "pose": -1,
+          "remaining": 10,
+          "began": true,
+          "events": [],
+          "removed": []
+        },
+        {
+          "part": "V",
+          "target": -120,
+          "pose": -108.74999999999945,
+          "remaining": 10,
+          "began": true,
+          "events": [],
+          "removed": []
+        },
+        {
+          "part": "Q",
+          "target": -180,
+          "pose": 37.81472227707223,
+          "remaining": 8,
+          "began": true,
+          "events": [
+            {
+              "bomb": 0,
+              "target": -1,
+              "otherBomb": 1,
+              "colliderId": "bomb_1/bomb/bomb_2",
+              "pose": 37.81472227707223
+            }
+          ],
+          "explosion": {
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_2",
+                "position": {
+                  "x": 3.7408878924532254,
+                  "y": -1.7593384833460126
+                }
+              },
+              {
+                "bombId": "bomb_2",
+                "hostId": "slide_bar_1",
+                "position": {
+                  "x": 2.7083333,
+                  "y": -1.95
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_2",
+              "slide_bar_1"
+            ]
+          }
+        }
+      ],
+      "links": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "bindings": [
+        false
+      ],
+      "guides": [
+        {
+          "active": false,
+          "engaged": false
+        }
+      ],
+      "poses": {
+        "A": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "Q": {
+          "pose": 37.81472227707223,
+          "solved": true,
+          "locked": false
+        },
+        "T": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "V": {
+          "pose": -108.74999999999945,
+          "solved": false,
+          "locked": false
+        },
+        "C": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "D": {
+          "pose": 179.900000001823,
+          "solved": false,
+          "locked": true
+        },
+        "F": {
+          "pose": 0.09999999817700608,
+          "solved": false,
+          "locked": true
+        },
+        "DG": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "FG": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "U": {
+          "pose": -1,
+          "solved": true,
+          "locked": false
+        }
+      }
+    },
+    "bombs": [
+      {
+        "active": false,
+        "host": 1,
+        "center": {
+          "x": 3.7408878924532254,
+          "y": -1.7593384833460126
+        }
+      },
+      {
+        "active": false,
+        "host": 9,
+        "center": {
+          "x": 2.7083333,
+          "y": -1.95
+        }
+      }
+    ]
+  },
+  "withoutUBom": {
+    "moves": [
+      {
+        "part": "U",
+        "target": -1
+      },
+      {
+        "part": "V",
+        "target": -120
+      },
+      {
+        "part": "Q",
+        "target": -180
+      }
+    ],
+    "data": {
+      "solved": false,
+      "remaining": 8,
+      "initialContacts": [],
+      "trace": [
+        {
+          "part": "U",
+          "target": -1,
+          "pose": -1,
+          "remaining": 10,
+          "began": true,
+          "events": [],
+          "removed": []
+        },
+        {
+          "part": "V",
+          "target": -120,
+          "pose": -108.74999999999945,
+          "remaining": 10,
+          "began": true,
+          "events": [],
+          "removed": []
+        },
+        {
+          "part": "Q",
+          "target": -180,
+          "pose": 31.987854294590104,
+          "remaining": 8,
+          "began": true,
+          "events": [
+            {
+              "bomb": 0,
+              "target": 9,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000009",
+              "pose": 31.987854294590104
+            }
+          ],
+          "explosion": {
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_2",
+                "position": {
+                  "x": 3.5659817772425293,
+                  "y": -1.677411270864909
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_2",
+              "slide_bar_1"
+            ]
+          }
+        }
+      ],
+      "links": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "bindings": [
+        false
+      ],
+      "guides": [
+        {
+          "active": false,
+          "engaged": false
+        }
+      ],
+      "poses": {
+        "A": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "Q": {
+          "pose": 31.987854294590104,
+          "solved": true,
+          "locked": false
+        },
+        "T": {
+          "pose": 180,
+          "solved": false,
+          "locked": false
+        },
+        "V": {
+          "pose": -108.74999999999945,
+          "solved": false,
+          "locked": false
+        },
+        "C": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "D": {
+          "pose": 179.900000001823,
+          "solved": false,
+          "locked": true
+        },
+        "F": {
+          "pose": 0.09999999817700608,
+          "solved": false,
+          "locked": true
+        },
+        "DG": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "FG": {
+          "pose": 0,
+          "solved": false,
+          "locked": true
+        },
+        "U": {
+          "pose": -1,
+          "solved": true,
+          "locked": false
+        }
+      }
+    },
+    "bombs": [
+      {
+        "active": false,
+        "host": 1,
+        "center": {
+          "x": 3.5659817772425293,
+          "y": -1.677411270864909
+        }
+      }
+    ]
+  },
+  "scope": "Initiallysafe,has solution,butsingle BomQ contactsU and removes same hosts without UBom.0.5 chosen for causal pair study;no engine/tolerance changes or universal size rule.",
+  "supersededProposal": "study-20261014-shared-dual-bom-01"
+}

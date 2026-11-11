@@ -1,0 +1,887 @@
+{
+  "format": "turp-pack",
+  "version": 1,
+  "tool": {
+    "name": "RotateLevelDesigner CLI",
+    "version": "1.0.0",
+    "constants": "2026-10-13 08:28:41"
+  },
+  "createdAt": "2026-10-15T04:45:43.489Z",
+  "name": "Claude G01-001 review | Hai vòng, kéo đủ qua cửa",
+  "author": "Claude research / Codex integration review",
+  "notes": "Bản nháp tự sinh, slot 1 (intro). Ý tưởng: . Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 0.5 lần kéo/vật, mục tiêu 0–1). Không Booster/Chain/bom; lockCount 0. Revision tích hợp: route tác giả kéo R2 tới180° qua đủ cửa ở cả analytic/default feel thay target solver144° quá sát mép nhả. Cùng geometry nguồn,không sửa core/tolerance. Bản review nhập nghiên cứu,chưa campaign hoặc nghiệm thu visual/progression.",
+  "levelId": "draft",
+  "runtime": {
+    "version": 1,
+    "levelId": "draft",
+    "sourceSha256": null,
+    "transforms": [
+      {
+        "transformId": "root",
+        "parentId": null,
+        "localPosition": [
+          0,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "camera",
+        "parentId": "root",
+        "localPosition": [
+          0,
+          0,
+          -10
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "content",
+        "parentId": "root",
+        "localPosition": [
+          0,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed4",
+        "parentId": "content",
+        "localPosition": [
+          0,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          -0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed5",
+        "parentId": "ed4",
+        "localPosition": [
+          -5.2085453e-16,
+          2.8354,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          -0.70710678,
+          -0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed6",
+        "parentId": "content",
+        "localPosition": [
+          4.5854,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.38268343,
+          0.9238795
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "parts": [
+      {
+        "partId": "ring_1",
+        "kind": "ring",
+        "transformId": "ed4",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 73.57358,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.306,
+          0.467,
+          0.867,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [
+          {
+            "featureId": "attachment.pin_1",
+            "transformId": "ed5",
+            "hardBlockPoints": [
+              [
+                0.208333,
+                2
+              ],
+              [
+                0.208333,
+                2.5
+              ],
+              [
+                -0.208333,
+                2.5
+              ],
+              [
+                -0.208333,
+                2
+              ]
+            ],
+            "angleDegrees": -270,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          }
+        ],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              1.7536248,
+              1.7536248
+            ],
+            [
+              1.4945339,
+              1.9790827
+            ],
+            [
+              1.2067791,
+              2.1665835
+            ],
+            [
+              0.8958793,
+              2.31253113
+            ],
+            [
+              0.56779736,
+              2.4141264
+            ],
+            [
+              0.22882553,
+              2.46942076
+            ],
+            [
+              -0.114534977,
+              2.4773538
+            ],
+            [
+              -0.455698804,
+              2.4377733
+            ],
+            [
+              -0.7881227,
+              2.35143841
+            ],
+            [
+              -1.1054311,
+              2.220005
+            ],
+            [
+              -1.4015383,
+              2.0459937
+            ],
+            [
+              -1.6707652,
+              1.8327421
+            ],
+            [
+              -1.9079482,
+              1.5843401
+            ],
+            [
+              -2.1085385,
+              1.3055518
+            ],
+            [
+              -2.26868879,
+              1.0017241
+            ],
+            [
+              -2.3853276,
+              0.67868422
+            ],
+            [
+              -2.45621787,
+              0.34262776
+            ],
+            [
+              -2.48,
+              3.037124e-16
+            ],
+            [
+              -2.45621787,
+              -0.34262776
+            ],
+            [
+              -2.3853276,
+              -0.67868422
+            ],
+            [
+              -2.26868879,
+              -1.0017241
+            ],
+            [
+              -2.1085385,
+              -1.3055518
+            ],
+            [
+              -1.9079482,
+              -1.5843401
+            ],
+            [
+              -1.6707652,
+              -1.8327421
+            ],
+            [
+              -1.4015383,
+              -2.0459937
+            ],
+            [
+              -1.1054311,
+              -2.220005
+            ],
+            [
+              -0.7881227,
+              -2.35143841
+            ],
+            [
+              -0.455698804,
+              -2.4377733
+            ],
+            [
+              -0.114534977,
+              -2.4773538
+            ],
+            [
+              0.22882553,
+              -2.46942076
+            ],
+            [
+              0.56779736,
+              -2.4141264
+            ],
+            [
+              0.8958793,
+              -2.31253113
+            ],
+            [
+              1.2067791,
+              -2.1665835
+            ],
+            [
+              1.4945339,
+              -1.9790827
+            ],
+            [
+              1.7536248,
+              -1.7536248
+            ],
+            [
+              0.7212489,
+              -0.7212489
+            ],
+            [
+              0.6146873,
+              -0.8139776
+            ],
+            [
+              0.49633657,
+              -0.89109484
+            ],
+            [
+              0.3684665,
+              -0.9511217
+            ],
+            [
+              0.233529561,
+              -0.9929068
+            ],
+            [
+              0.09411373,
+              -1.0156489
+            ],
+            [
+              -0.047107128,
+              -1.0189116
+            ],
+            [
+              -0.18742451,
+              -1.0026326
+            ],
+            [
+              -0.32414725,
+              -0.96712386
+            ],
+            [
+              -0.4546531,
+              -0.91306656
+            ],
+            [
+              -0.57643914,
+              -0.8414974
+            ],
+            [
+              -0.68716956,
+              -0.753789096
+            ],
+            [
+              -0.78472065,
+              -0.6516237
+            ],
+            [
+              -0.8672215,
+              -0.5369608
+            ],
+            [
+              -0.93308975,
+              -0.41199942
+            ],
+            [
+              -0.9810622,
+              -0.27913625
+            ],
+            [
+              -1.0102186,
+              -0.14091948
+            ],
+            [
+              -1.02,
+              1.2491397e-16
+            ],
+            [
+              -1.0102186,
+              0.14091948
+            ],
+            [
+              -0.9810622,
+              0.27913625
+            ],
+            [
+              -0.93308975,
+              0.41199942
+            ],
+            [
+              -0.8672215,
+              0.5369608
+            ],
+            [
+              -0.78472065,
+              0.6516237
+            ],
+            [
+              -0.68716956,
+              0.753789096
+            ],
+            [
+              -0.57643914,
+              0.8414974
+            ],
+            [
+              -0.4546531,
+              0.91306656
+            ],
+            [
+              -0.32414725,
+              0.96712386
+            ],
+            [
+              -0.18742451,
+              1.0026326
+            ],
+            [
+              -0.047107128,
+              1.0189116
+            ],
+            [
+              0.09411373,
+              1.0156489
+            ],
+            [
+              0.233529561,
+              0.9929068
+            ],
+            [
+              0.3684665,
+              0.9511217
+            ],
+            [
+              0.49633657,
+              0.89109484
+            ],
+            [
+              0.6146873,
+              0.8139776
+            ],
+            [
+              0.7212489,
+              0.7212489
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_2",
+        "kind": "ring",
+        "transformId": "ed6",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 73.57358,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.137,
+          0.643,
+          0.408,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              1.7536248,
+              1.7536248
+            ],
+            [
+              1.4945339,
+              1.9790827
+            ],
+            [
+              1.2067791,
+              2.1665835
+            ],
+            [
+              0.8958793,
+              2.31253113
+            ],
+            [
+              0.56779736,
+              2.4141264
+            ],
+            [
+              0.22882553,
+              2.46942076
+            ],
+            [
+              -0.114534977,
+              2.4773538
+            ],
+            [
+              -0.455698804,
+              2.4377733
+            ],
+            [
+              -0.7881227,
+              2.35143841
+            ],
+            [
+              -1.1054311,
+              2.220005
+            ],
+            [
+              -1.4015383,
+              2.0459937
+            ],
+            [
+              -1.6707652,
+              1.8327421
+            ],
+            [
+              -1.9079482,
+              1.5843401
+            ],
+            [
+              -2.1085385,
+              1.3055518
+            ],
+            [
+              -2.26868879,
+              1.0017241
+            ],
+            [
+              -2.3853276,
+              0.67868422
+            ],
+            [
+              -2.45621787,
+              0.34262776
+            ],
+            [
+              -2.48,
+              3.037124e-16
+            ],
+            [
+              -2.45621787,
+              -0.34262776
+            ],
+            [
+              -2.3853276,
+              -0.67868422
+            ],
+            [
+              -2.26868879,
+              -1.0017241
+            ],
+            [
+              -2.1085385,
+              -1.3055518
+            ],
+            [
+              -1.9079482,
+              -1.5843401
+            ],
+            [
+              -1.6707652,
+              -1.8327421
+            ],
+            [
+              -1.4015383,
+              -2.0459937
+            ],
+            [
+              -1.1054311,
+              -2.220005
+            ],
+            [
+              -0.7881227,
+              -2.35143841
+            ],
+            [
+              -0.455698804,
+              -2.4377733
+            ],
+            [
+              -0.114534977,
+              -2.4773538
+            ],
+            [
+              0.22882553,
+              -2.46942076
+            ],
+            [
+              0.56779736,
+              -2.4141264
+            ],
+            [
+              0.8958793,
+              -2.31253113
+            ],
+            [
+              1.2067791,
+              -2.1665835
+            ],
+            [
+              1.4945339,
+              -1.9790827
+            ],
+            [
+              1.7536248,
+              -1.7536248
+            ],
+            [
+              0.7212489,
+              -0.7212489
+            ],
+            [
+              0.6146873,
+              -0.8139776
+            ],
+            [
+              0.49633657,
+              -0.89109484
+            ],
+            [
+              0.3684665,
+              -0.9511217
+            ],
+            [
+              0.233529561,
+              -0.9929068
+            ],
+            [
+              0.09411373,
+              -1.0156489
+            ],
+            [
+              -0.047107128,
+              -1.0189116
+            ],
+            [
+              -0.18742451,
+              -1.0026326
+            ],
+            [
+              -0.32414725,
+              -0.96712386
+            ],
+            [
+              -0.4546531,
+              -0.91306656
+            ],
+            [
+              -0.57643914,
+              -0.8414974
+            ],
+            [
+              -0.68716956,
+              -0.753789096
+            ],
+            [
+              -0.78472065,
+              -0.6516237
+            ],
+            [
+              -0.8672215,
+              -0.5369608
+            ],
+            [
+              -0.93308975,
+              -0.41199942
+            ],
+            [
+              -0.9810622,
+              -0.27913625
+            ],
+            [
+              -1.0102186,
+              -0.14091948
+            ],
+            [
+              -1.02,
+              1.2491397e-16
+            ],
+            [
+              -1.0102186,
+              0.14091948
+            ],
+            [
+              -0.9810622,
+              0.27913625
+            ],
+            [
+              -0.93308975,
+              0.41199942
+            ],
+            [
+              -0.8672215,
+              0.5369608
+            ],
+            [
+              -0.78472065,
+              0.6516237
+            ],
+            [
+              -0.68716956,
+              0.753789096
+            ],
+            [
+              -0.57643914,
+              0.8414974
+            ],
+            [
+              -0.4546531,
+              0.91306656
+            ],
+            [
+              -0.32414725,
+              0.96712386
+            ],
+            [
+              -0.18742451,
+              1.0026326
+            ],
+            [
+              -0.047107128,
+              1.0189116
+            ],
+            [
+              0.09411373,
+              1.0156489
+            ],
+            [
+              0.233529561,
+              0.9929068
+            ],
+            [
+              0.3684665,
+              0.9511217
+            ],
+            [
+              0.49633657,
+              0.89109484
+            ],
+            [
+              0.6146873,
+              0.8139776
+            ],
+            [
+              0.7212489,
+              0.7212489
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      }
+    ],
+    "links": [
+      {
+        "sourcePartId": "ring_1",
+        "sourceFeatureId": "attachment.pin_1",
+        "targetPartId": "ring_2",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      }
+    ],
+    "guideLinks": null
+  },
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "rings": [
+      {
+        "id": "R1",
+        "x": 0,
+        "y": 0,
+        "gap": 90,
+        "gapDir": 270,
+        "pins": [
+          {
+            "angle": 0,
+            "target": "R2"
+          }
+        ],
+        "color": "navy"
+      },
+      {
+        "id": "R2",
+        "x": 4.5854,
+        "y": 0,
+        "gap": 90,
+        "gapDir": 45,
+        "pins": [],
+        "color": "teal"
+      }
+    ],
+    "sticks": [],
+    "name": "Claude G01-001 review | Hai vòng, kéo đủ qua cửa",
+    "author": "rr-gen research 2026-10-15",
+    "notes": "Bản nháp tự sinh, slot 1 (intro). Ý tưởng: . Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 0.5 lần kéo/vật, mục tiêu 0–1). Không Booster/Chain/bom; lockCount 0. Revision tích hợp: route tác giả kéo R2 tới180° qua đủ cửa ở cả analytic/default feel thay target solver144° quá sát mép nhả. Cùng geometry nguồn,không sửa core/tolerance. Bản review nhập nghiên cứu,chưa campaign hoặc nghiệm thu visual/progression."
+  },
+  "proof": null,
+  "analysis": {
+    "warnings": [],
+    "info": {
+      "rings": 2,
+      "sticks": 0,
+      "guides": 0,
+      "bombs": 0,
+      "links": 1,
+      "pins": 1,
+      "stops": 0,
+      "closedRings": 0
+    }
+  }
+}

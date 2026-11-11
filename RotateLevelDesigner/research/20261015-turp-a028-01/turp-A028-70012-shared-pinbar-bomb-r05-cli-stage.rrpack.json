@@ -1,0 +1,7380 @@
+{
+  "format": "turp-pack",
+  "version": 1,
+  "tool": {
+    "name": "RotateLevelDesigner CLI",
+    "version": "1.0.0",
+    "constants": "2026-10-13 08:28:41"
+  },
+  "createdAt": "2026-10-15T15:17:07.498Z",
+  "name": "A028 — Thanh hai nguồn và Bom mở receiver kín / TURP r05",
+  "author": "Codex",
+  "notes": "Remake70012: bỏ R8/R10 rìa, dựng lại dọc; Bom chuyển từ receiver kín sang thanh riêng phía trên để mở R1 chung cho R3/R4. R3 và R6 cùng giữ thanh L S2 bằng hai pin song song khác cao độ, liên hệ phần trên và dưới; đo từng pin còn giữ ở pha trượt. R4 kín vẫn giữ R5 và L S6 sau khi R1 bị phá, chưa tự hoàn thành. R7 nhận cả R6/R9, thêm cửa L có ngàm qua khe, các nguồn cần quay lại khi mở đầu ra. Không Guide dư trên thanh nhận pin; thanh mới cardinal. Có Bom, không Booster/Xích, chưa GD duyệt. r02+ thay r01 về đề xuất: chuyển vòng lớn từ R4 sang receiver Bom R1 để không ép pin tối thiểu giữa hai vòng lớn; gập S6 lên tránh thân R9. Giữ nguyên r01 lỗi. r03 đưa Guide S4 ra xa góc gập để đủ ngàm, thay r02 về đề xuất. r04 thêm R3→R6 để R6 còn nhận pin khi đã mở R7 và S2, cần quay R6 thật qua cửa S4; nối vòng phụ thuộc giữa hai nguồn của thanh chung. Thay r03 về đề xuất, không ghi đè. r05 bỏ R3→R1 vì đối chứng r04 cho thấy pin này không tạo thay đổi trên tập prefix thực: R3 đã bị S2/R6 giữ, R1 vẫn nhận R4. Bom mở liên kết R4→R1; R4 tiếp tục bị giữ ở R5/S6. Thay r04 về đề xuất, giữ counterexample.",
+  "levelId": "draft",
+  "runtime": {
+    "version": 1,
+    "levelId": "draft",
+    "sourceSha256": null,
+    "transforms": [
+      {
+        "transformId": "root",
+        "parentId": null,
+        "localPosition": [
+          0,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "camera",
+        "parentId": "root",
+        "localPosition": [
+          0,
+          0,
+          -10
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "content",
+        "parentId": "root",
+        "localPosition": [
+          0,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed4",
+        "parentId": "content",
+        "localPosition": [
+          3.25,
+          9.8,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed5",
+        "parentId": "content",
+        "localPosition": [
+          8.15,
+          9.8,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          1,
+          6.123234e-17
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed6",
+        "parentId": "ed5",
+        "localPosition": [
+          1.6838893e-16,
+          2.75,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed7",
+        "parentId": "ed5",
+        "localPosition": [
+          -2.8354,
+          -3.47236353e-16,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          -1,
+          6.123234e-17
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed8",
+        "parentId": "content",
+        "localPosition": [
+          -2.45,
+          9.8,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed9",
+        "parentId": "ed8",
+        "localPosition": [
+          1.7361818e-16,
+          2.8354,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed10",
+        "parentId": "ed8",
+        "localPosition": [
+          -3.15,
+          3.8576374e-16,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          1,
+          6.123234e-17
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed11",
+        "parentId": "content",
+        "localPosition": [
+          3.25,
+          4.9,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed12",
+        "parentId": "ed11",
+        "localPosition": [
+          2.75,
+          0,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed13",
+        "parentId": "ed11",
+        "localPosition": [
+          1.6838893e-16,
+          -2.75,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          -0.70710678,
+          0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed14",
+        "parentId": "ed11",
+        "localPosition": [
+          -3.6354,
+          4.452081e-16,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          1,
+          6.123234e-17
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed15",
+        "parentId": "content",
+        "localPosition": [
+          8.15,
+          4.9,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed16",
+        "parentId": "content",
+        "localPosition": [
+          -2.45,
+          4.9,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed17",
+        "parentId": "ed16",
+        "localPosition": [
+          -5.7864561e-16,
+          -3.15,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          -0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed18",
+        "parentId": "ed16",
+        "localPosition": [
+          -2.8354,
+          3.47236353e-16,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          1,
+          6.123234e-17
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed19",
+        "parentId": "content",
+        "localPosition": [
+          -2.45,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          1,
+          6.123234e-17
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed20",
+        "parentId": "content",
+        "localPosition": [
+          3.25,
+          -1.5,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed21",
+        "parentId": "ed20",
+        "localPosition": [
+          -4.0076196,
+          1.0546367,
+          -0.1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.99173447,
+          0.12830718
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed22",
+        "parentId": "content",
+        "localPosition": [
+          10.9854,
+          9.8,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed23",
+        "parentId": "content",
+        "localPosition": [
+          -5.2854,
+          4.9,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed24",
+        "parentId": "content",
+        "localPosition": [
+          3.25,
+          15.3,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed25",
+        "parentId": "content",
+        "localPosition": [
+          3.25,
+          15.8,
+          -1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0.70710678,
+          0.70710678
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed26",
+        "parentId": "content",
+        "localPosition": [
+          -2.45,
+          4.9,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed27",
+        "parentId": "content",
+        "localPosition": [
+          -0.5,
+          4.9,
+          -1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed28",
+        "parentId": "content",
+        "localPosition": [
+          -2.45,
+          0,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed29",
+        "parentId": "content",
+        "localPosition": [
+          -5.1,
+          0,
+          -1
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed30",
+        "parentId": "content",
+        "localPosition": [
+          3.25,
+          1.2646,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "transformId": "ed31",
+        "parentId": "ed24",
+        "localPosition": [
+          0,
+          -2.0833,
+          0
+        ],
+        "localRotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "localScale": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "parts": [
+      {
+        "partId": "ring_1",
+        "kind": "ring",
+        "transformId": "ed4",
+        "logicGapDegrees": 0,
+        "meshGapDegrees": 0,
+        "meshGapDirection": 0,
+        "radius": 2.15,
+        "width": 1,
+        "color": [
+          0.925,
+          0.561,
+          0.18,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [],
+        "stopPins": null,
+        "colliderInnerRadius": 1.9,
+        "colliderOuterRadius": 2.4,
+        "dragAreaInnerRadius": 1.42,
+        "dragAreaOuterRadius": 2.88,
+        "dragAreaPaths": [
+          [
+            [
+              2.88,
+              0
+            ],
+            [
+              2.851972,
+              0.40081853
+            ],
+            [
+              2.76843368,
+              0.7938356
+            ],
+            [
+              2.631011,
+              1.1714015
+            ],
+            [
+              2.4423785,
+              1.5261675
+            ],
+            [
+              2.206208,
+              1.8512283
+            ],
+            [
+              1.9270961,
+              2.1402571
+            ],
+            [
+              1.61047556,
+              2.3876282
+            ],
+            [
+              1.2625089,
+              2.588527
+            ],
+            [
+              0.88996894,
+              2.7390428
+            ],
+            [
+              0.50010675,
+              2.8362463
+            ],
+            [
+              0.10051055,
+              2.8782456
+            ],
+            [
+              -0.30104197,
+              2.864223
+            ],
+            [
+              -0.6967351,
+              2.7944517
+            ],
+            [
+              -1.078867,
+              2.6702895
+            ],
+            [
+              -1.44,
+              2.4941532
+            ],
+            [
+              -1.773105,
+              2.269471
+            ],
+            [
+              -2.0716986,
+              2.000616
+            ],
+            [
+              -2.329969,
+              1.6928215
+            ],
+            [
+              -2.542889,
+              1.3520781
+            ],
+            [
+              -2.7063147,
+              0.985018
+            ],
+            [
+              -2.817065,
+              0.5987857
+            ],
+            [
+              -2.8729845,
+              0.20089864
+            ],
+            [
+              -2.8729845,
+              -0.20089864
+            ],
+            [
+              -2.817065,
+              -0.5987857
+            ],
+            [
+              -2.7063147,
+              -0.985018
+            ],
+            [
+              -2.542889,
+              -1.3520781
+            ],
+            [
+              -2.329969,
+              -1.6928215
+            ],
+            [
+              -2.0716986,
+              -2.000616
+            ],
+            [
+              -1.773105,
+              -2.269471
+            ],
+            [
+              -1.44,
+              -2.4941532
+            ],
+            [
+              -1.078867,
+              -2.6702895
+            ],
+            [
+              -0.6967351,
+              -2.7944517
+            ],
+            [
+              -0.30104197,
+              -2.864223
+            ],
+            [
+              0.10051055,
+              -2.8782456
+            ],
+            [
+              0.50010675,
+              -2.8362463
+            ],
+            [
+              0.88996894,
+              -2.7390428
+            ],
+            [
+              1.2625089,
+              -2.588527
+            ],
+            [
+              1.61047556,
+              -2.3876282
+            ],
+            [
+              1.9270961,
+              -2.1402571
+            ],
+            [
+              2.206208,
+              -1.8512283
+            ],
+            [
+              2.4423785,
+              -1.5261675
+            ],
+            [
+              2.631011,
+              -1.1714015
+            ],
+            [
+              2.76843368,
+              -0.7938356
+            ],
+            [
+              2.851972,
+              -0.40081853
+            ]
+          ],
+          [
+            [
+              1.42,
+              0
+            ],
+            [
+              1.40618066,
+              0.1976258
+            ],
+            [
+              1.36499161,
+              0.39140505
+            ],
+            [
+              1.2972345,
+              0.577566
+            ],
+            [
+              1.2042283,
+              0.75248536
+            ],
+            [
+              1.0877831,
+              0.9127584
+            ],
+            [
+              0.95016546,
+              1.0552657
+            ],
+            [
+              0.7940539,
+              1.17723335
+            ],
+            [
+              0.622487,
+              1.2762875
+            ],
+            [
+              0.43880413,
+              1.35050025
+            ],
+            [
+              0.2465804,
+              1.398427
+            ],
+            [
+              0.049557285,
+              1.419135
+            ],
+            [
+              -0.14843042,
+              1.4122211
+            ],
+            [
+              -0.3435291,
+              1.3778199
+            ],
+            [
+              -0.53194136,
+              1.316601
+            ],
+            [
+              -0.71,
+              1.2297561
+            ],
+            [
+              -0.87423929,
+              1.1189753
+            ],
+            [
+              -1.02146252,
+              0.9864149
+            ],
+            [
+              -1.14880413,
+              0.83465506
+            ],
+            [
+              -1.2537856,
+              0.66664962
+            ],
+            [
+              -1.33436358,
+              0.4856686
+            ],
+            [
+              -1.3889696,
+              0.2952346
+            ],
+            [
+              -1.416541,
+              0.099054193
+            ],
+            [
+              -1.416541,
+              -0.099054193
+            ],
+            [
+              -1.3889696,
+              -0.2952346
+            ],
+            [
+              -1.33436358,
+              -0.4856686
+            ],
+            [
+              -1.2537856,
+              -0.66664962
+            ],
+            [
+              -1.14880413,
+              -0.83465506
+            ],
+            [
+              -1.02146252,
+              -0.9864149
+            ],
+            [
+              -0.87423929,
+              -1.1189753
+            ],
+            [
+              -0.71,
+              -1.2297561
+            ],
+            [
+              -0.53194136,
+              -1.316601
+            ],
+            [
+              -0.3435291,
+              -1.3778199
+            ],
+            [
+              -0.14843042,
+              -1.4122211
+            ],
+            [
+              0.049557285,
+              -1.419135
+            ],
+            [
+              0.2465804,
+              -1.398427
+            ],
+            [
+              0.43880413,
+              -1.35050025
+            ],
+            [
+              0.622487,
+              -1.2762875
+            ],
+            [
+              0.7940539,
+              -1.17723335
+            ],
+            [
+              0.95016546,
+              -1.0552657
+            ],
+            [
+              1.0877831,
+              -0.9127584
+            ],
+            [
+              1.2042283,
+              -0.75248536
+            ],
+            [
+              1.2972345,
+              -0.577566
+            ],
+            [
+              1.36499161,
+              -0.39140505
+            ],
+            [
+              1.40618066,
+              -0.1976258
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_2",
+        "kind": "ring",
+        "transformId": "ed5",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 73.57358,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.416,
+          0.773,
+          0.243,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [
+          {
+            "featureId": "attachment.pin_1",
+            "transformId": "ed6",
+            "hardBlockPoints": [
+              [
+                0.208333,
+                2
+              ],
+              [
+                0.208333,
+                2.4146
+              ],
+              [
+                -0.208333,
+                2.4146
+              ],
+              [
+                -0.208333,
+                2
+              ]
+            ],
+            "angleDegrees": 90,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          },
+          {
+            "featureId": "attachment.pin_2",
+            "transformId": "ed7",
+            "hardBlockPoints": [
+              [
+                -2,
+                0.208333
+              ],
+              [
+                -2.5,
+                0.208333
+              ],
+              [
+                -2.5,
+                -0.208333
+              ],
+              [
+                -2,
+                -0.208333
+              ]
+            ],
+            "angleDegrees": -180,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          }
+        ],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              1.7536248,
+              1.7536248
+            ],
+            [
+              1.4945339,
+              1.9790827
+            ],
+            [
+              1.2067791,
+              2.1665835
+            ],
+            [
+              0.8958793,
+              2.31253113
+            ],
+            [
+              0.56779736,
+              2.4141264
+            ],
+            [
+              0.22882553,
+              2.46942076
+            ],
+            [
+              -0.114534977,
+              2.4773538
+            ],
+            [
+              -0.455698804,
+              2.4377733
+            ],
+            [
+              -0.7881227,
+              2.35143841
+            ],
+            [
+              -1.1054311,
+              2.220005
+            ],
+            [
+              -1.4015383,
+              2.0459937
+            ],
+            [
+              -1.6707652,
+              1.8327421
+            ],
+            [
+              -1.9079482,
+              1.5843401
+            ],
+            [
+              -2.1085385,
+              1.3055518
+            ],
+            [
+              -2.26868879,
+              1.0017241
+            ],
+            [
+              -2.3853276,
+              0.67868422
+            ],
+            [
+              -2.45621787,
+              0.34262776
+            ],
+            [
+              -2.48,
+              3.037124e-16
+            ],
+            [
+              -2.45621787,
+              -0.34262776
+            ],
+            [
+              -2.3853276,
+              -0.67868422
+            ],
+            [
+              -2.26868879,
+              -1.0017241
+            ],
+            [
+              -2.1085385,
+              -1.3055518
+            ],
+            [
+              -1.9079482,
+              -1.5843401
+            ],
+            [
+              -1.6707652,
+              -1.8327421
+            ],
+            [
+              -1.4015383,
+              -2.0459937
+            ],
+            [
+              -1.1054311,
+              -2.220005
+            ],
+            [
+              -0.7881227,
+              -2.35143841
+            ],
+            [
+              -0.455698804,
+              -2.4377733
+            ],
+            [
+              -0.114534977,
+              -2.4773538
+            ],
+            [
+              0.22882553,
+              -2.46942076
+            ],
+            [
+              0.56779736,
+              -2.4141264
+            ],
+            [
+              0.8958793,
+              -2.31253113
+            ],
+            [
+              1.2067791,
+              -2.1665835
+            ],
+            [
+              1.4945339,
+              -1.9790827
+            ],
+            [
+              1.7536248,
+              -1.7536248
+            ],
+            [
+              0.7212489,
+              -0.7212489
+            ],
+            [
+              0.6146873,
+              -0.8139776
+            ],
+            [
+              0.49633657,
+              -0.89109484
+            ],
+            [
+              0.3684665,
+              -0.9511217
+            ],
+            [
+              0.233529561,
+              -0.9929068
+            ],
+            [
+              0.09411373,
+              -1.0156489
+            ],
+            [
+              -0.047107128,
+              -1.0189116
+            ],
+            [
+              -0.18742451,
+              -1.0026326
+            ],
+            [
+              -0.32414725,
+              -0.96712386
+            ],
+            [
+              -0.4546531,
+              -0.91306656
+            ],
+            [
+              -0.57643914,
+              -0.8414974
+            ],
+            [
+              -0.68716956,
+              -0.753789096
+            ],
+            [
+              -0.78472065,
+              -0.6516237
+            ],
+            [
+              -0.8672215,
+              -0.5369608
+            ],
+            [
+              -0.93308975,
+              -0.41199942
+            ],
+            [
+              -0.9810622,
+              -0.27913625
+            ],
+            [
+              -1.0102186,
+              -0.14091948
+            ],
+            [
+              -1.02,
+              1.2491397e-16
+            ],
+            [
+              -1.0102186,
+              0.14091948
+            ],
+            [
+              -0.9810622,
+              0.27913625
+            ],
+            [
+              -0.93308975,
+              0.41199942
+            ],
+            [
+              -0.8672215,
+              0.5369608
+            ],
+            [
+              -0.78472065,
+              0.6516237
+            ],
+            [
+              -0.68716956,
+              0.753789096
+            ],
+            [
+              -0.57643914,
+              0.8414974
+            ],
+            [
+              -0.4546531,
+              0.91306656
+            ],
+            [
+              -0.32414725,
+              0.96712386
+            ],
+            [
+              -0.18742451,
+              1.0026326
+            ],
+            [
+              -0.047107128,
+              1.0189116
+            ],
+            [
+              0.09411373,
+              1.0156489
+            ],
+            [
+              0.233529561,
+              0.9929068
+            ],
+            [
+              0.3684665,
+              0.9511217
+            ],
+            [
+              0.49633657,
+              0.89109484
+            ],
+            [
+              0.6146873,
+              0.8139776
+            ],
+            [
+              0.7212489,
+              0.7212489
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_3",
+        "kind": "ring",
+        "transformId": "ed8",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 73.57358,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.137,
+          0.643,
+          0.408,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [
+          {
+            "featureId": "attachment.pin_3",
+            "transformId": "ed9",
+            "hardBlockPoints": [
+              [
+                0.208333,
+                2
+              ],
+              [
+                0.208333,
+                2.5
+              ],
+              [
+                -0.208333,
+                2.5
+              ],
+              [
+                -0.208333,
+                2
+              ]
+            ],
+            "angleDegrees": 90,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          },
+          {
+            "featureId": "attachment.pin_4",
+            "transformId": "ed10",
+            "hardBlockPoints": [
+              [
+                -2,
+                0.208333
+              ],
+              [
+                -2.8146,
+                0.208333
+              ],
+              [
+                -2.8146,
+                -0.208333
+              ],
+              [
+                -2,
+                -0.208333
+              ]
+            ],
+            "angleDegrees": 180,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          }
+        ],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              1.7536248,
+              1.7536248
+            ],
+            [
+              1.4945339,
+              1.9790827
+            ],
+            [
+              1.2067791,
+              2.1665835
+            ],
+            [
+              0.8958793,
+              2.31253113
+            ],
+            [
+              0.56779736,
+              2.4141264
+            ],
+            [
+              0.22882553,
+              2.46942076
+            ],
+            [
+              -0.114534977,
+              2.4773538
+            ],
+            [
+              -0.455698804,
+              2.4377733
+            ],
+            [
+              -0.7881227,
+              2.35143841
+            ],
+            [
+              -1.1054311,
+              2.220005
+            ],
+            [
+              -1.4015383,
+              2.0459937
+            ],
+            [
+              -1.6707652,
+              1.8327421
+            ],
+            [
+              -1.9079482,
+              1.5843401
+            ],
+            [
+              -2.1085385,
+              1.3055518
+            ],
+            [
+              -2.26868879,
+              1.0017241
+            ],
+            [
+              -2.3853276,
+              0.67868422
+            ],
+            [
+              -2.45621787,
+              0.34262776
+            ],
+            [
+              -2.48,
+              3.037124e-16
+            ],
+            [
+              -2.45621787,
+              -0.34262776
+            ],
+            [
+              -2.3853276,
+              -0.67868422
+            ],
+            [
+              -2.26868879,
+              -1.0017241
+            ],
+            [
+              -2.1085385,
+              -1.3055518
+            ],
+            [
+              -1.9079482,
+              -1.5843401
+            ],
+            [
+              -1.6707652,
+              -1.8327421
+            ],
+            [
+              -1.4015383,
+              -2.0459937
+            ],
+            [
+              -1.1054311,
+              -2.220005
+            ],
+            [
+              -0.7881227,
+              -2.35143841
+            ],
+            [
+              -0.455698804,
+              -2.4377733
+            ],
+            [
+              -0.114534977,
+              -2.4773538
+            ],
+            [
+              0.22882553,
+              -2.46942076
+            ],
+            [
+              0.56779736,
+              -2.4141264
+            ],
+            [
+              0.8958793,
+              -2.31253113
+            ],
+            [
+              1.2067791,
+              -2.1665835
+            ],
+            [
+              1.4945339,
+              -1.9790827
+            ],
+            [
+              1.7536248,
+              -1.7536248
+            ],
+            [
+              0.7212489,
+              -0.7212489
+            ],
+            [
+              0.6146873,
+              -0.8139776
+            ],
+            [
+              0.49633657,
+              -0.89109484
+            ],
+            [
+              0.3684665,
+              -0.9511217
+            ],
+            [
+              0.233529561,
+              -0.9929068
+            ],
+            [
+              0.09411373,
+              -1.0156489
+            ],
+            [
+              -0.047107128,
+              -1.0189116
+            ],
+            [
+              -0.18742451,
+              -1.0026326
+            ],
+            [
+              -0.32414725,
+              -0.96712386
+            ],
+            [
+              -0.4546531,
+              -0.91306656
+            ],
+            [
+              -0.57643914,
+              -0.8414974
+            ],
+            [
+              -0.68716956,
+              -0.753789096
+            ],
+            [
+              -0.78472065,
+              -0.6516237
+            ],
+            [
+              -0.8672215,
+              -0.5369608
+            ],
+            [
+              -0.93308975,
+              -0.41199942
+            ],
+            [
+              -0.9810622,
+              -0.27913625
+            ],
+            [
+              -1.0102186,
+              -0.14091948
+            ],
+            [
+              -1.02,
+              1.2491397e-16
+            ],
+            [
+              -1.0102186,
+              0.14091948
+            ],
+            [
+              -0.9810622,
+              0.27913625
+            ],
+            [
+              -0.93308975,
+              0.41199942
+            ],
+            [
+              -0.8672215,
+              0.5369608
+            ],
+            [
+              -0.78472065,
+              0.6516237
+            ],
+            [
+              -0.68716956,
+              0.753789096
+            ],
+            [
+              -0.57643914,
+              0.8414974
+            ],
+            [
+              -0.4546531,
+              0.91306656
+            ],
+            [
+              -0.32414725,
+              0.96712386
+            ],
+            [
+              -0.18742451,
+              1.0026326
+            ],
+            [
+              -0.047107128,
+              1.0189116
+            ],
+            [
+              0.09411373,
+              1.0156489
+            ],
+            [
+              0.233529561,
+              0.9929068
+            ],
+            [
+              0.3684665,
+              0.9511217
+            ],
+            [
+              0.49633657,
+              0.89109484
+            ],
+            [
+              0.6146873,
+              0.8139776
+            ],
+            [
+              0.7212489,
+              0.7212489
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_4",
+        "kind": "ring",
+        "transformId": "ed11",
+        "logicGapDegrees": 0,
+        "meshGapDegrees": 0,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.596,
+          0.294,
+          0.878,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [
+          {
+            "featureId": "attachment.pin_5",
+            "transformId": "ed12",
+            "hardBlockPoints": [
+              [
+                2,
+                -0.208333
+              ],
+              [
+                2.4146,
+                -0.208333
+              ],
+              [
+                2.4146,
+                0.208333
+              ],
+              [
+                2,
+                0.208333
+              ]
+            ],
+            "angleDegrees": 0,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          },
+          {
+            "featureId": "attachment.pin_6",
+            "transformId": "ed13",
+            "hardBlockPoints": [
+              [
+                -0.208333,
+                -2
+              ],
+              [
+                -0.208333,
+                -2.4146
+              ],
+              [
+                0.208333,
+                -2.4146
+              ],
+              [
+                0.208333,
+                -2
+              ]
+            ],
+            "angleDegrees": -90,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          },
+          {
+            "featureId": "attachment.pin_7",
+            "transformId": "ed14",
+            "hardBlockPoints": [
+              [
+                -2,
+                0.208333
+              ],
+              [
+                -3.3,
+                0.208333
+              ],
+              [
+                -3.3,
+                -0.208333
+              ],
+              [
+                -2,
+                -0.208333
+              ]
+            ],
+            "angleDegrees": 180,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          }
+        ],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              2.48,
+              0
+            ],
+            [
+              2.455865,
+              0.34514929
+            ],
+            [
+              2.383929,
+              0.68358064
+            ],
+            [
+              2.2655927,
+              1.0087069
+            ],
+            [
+              2.1031593,
+              1.3141998
+            ],
+            [
+              1.8997902,
+              1.59411327
+            ],
+            [
+              1.6594439,
+              1.8429992
+            ],
+            [
+              1.3867984,
+              2.056013
+            ],
+            [
+              1.08716044,
+              2.2290092
+            ],
+            [
+              0.76636215,
+              2.3586202
+            ],
+            [
+              0.4306475,
+              2.4423232
+            ],
+            [
+              0.08655075,
+              2.47848925
+            ],
+            [
+              -0.25923059,
+              2.4664143
+            ],
+            [
+              -0.5999663,
+              2.4063334
+            ],
+            [
+              -0.92902435,
+              2.299416
+            ],
+            [
+              -1.24,
+              2.147743
+            ],
+            [
+              -1.5268405,
+              1.9542667
+            ],
+            [
+              -1.7839627,
+              1.7227528
+            ],
+            [
+              -2.0063621,
+              1.4577074
+            ],
+            [
+              -2.18971003,
+              1.1642895
+            ],
+            [
+              -2.3304377,
+              0.84821
+            ],
+            [
+              -2.425806,
+              0.515621
+            ],
+            [
+              -2.4739588,
+              0.172996055
+            ],
+            [
+              -2.4739588,
+              -0.172996055
+            ],
+            [
+              -2.425806,
+              -0.515621
+            ],
+            [
+              -2.3304377,
+              -0.84821
+            ],
+            [
+              -2.18971003,
+              -1.1642895
+            ],
+            [
+              -2.0063621,
+              -1.4577074
+            ],
+            [
+              -1.7839627,
+              -1.7227528
+            ],
+            [
+              -1.5268405,
+              -1.9542667
+            ],
+            [
+              -1.24,
+              -2.147743
+            ],
+            [
+              -0.92902435,
+              -2.299416
+            ],
+            [
+              -0.5999663,
+              -2.4063334
+            ],
+            [
+              -0.25923059,
+              -2.4664143
+            ],
+            [
+              0.08655075,
+              -2.47848925
+            ],
+            [
+              0.4306475,
+              -2.4423232
+            ],
+            [
+              0.76636215,
+              -2.3586202
+            ],
+            [
+              1.08716044,
+              -2.2290092
+            ],
+            [
+              1.3867984,
+              -2.056013
+            ],
+            [
+              1.6594439,
+              -1.8429992
+            ],
+            [
+              1.8997902,
+              -1.59411327
+            ],
+            [
+              2.1031593,
+              -1.3141998
+            ],
+            [
+              2.2655927,
+              -1.0087069
+            ],
+            [
+              2.383929,
+              -0.68358064
+            ],
+            [
+              2.455865,
+              -0.34514929
+            ]
+          ],
+          [
+            [
+              1.02,
+              0
+            ],
+            [
+              1.0100734,
+              0.141956563
+            ],
+            [
+              0.9804869,
+              0.2811501
+            ],
+            [
+              0.931816367,
+              0.414871376
+            ],
+            [
+              0.86500906,
+              0.5405176
+            ],
+            [
+              0.78136533,
+              0.65564336
+            ],
+            [
+              0.68251322,
+              0.7580077
+            ],
+            [
+              0.57037676,
+              0.8456183
+            ],
+            [
+              0.44713857,
+              0.9167699
+            ],
+            [
+              0.315197334,
+              0.97007765
+            ],
+            [
+              0.177121141,
+              1.004504
+            ],
+            [
+              0.03559749,
+              1.01937864
+            ],
+            [
+              -0.10661903,
+              1.0144123
+            ],
+            [
+              -0.246760334,
+              0.9897016
+            ],
+            [
+              -0.38209873,
+              0.9457275
+            ],
+            [
+              -0.51,
+              0.8833459
+            ],
+            [
+              -0.6279747,
+              0.80377097
+            ],
+            [
+              -0.7337266,
+              0.7085515
+            ],
+            [
+              -0.82519733,
+              0.59954096
+            ],
+            [
+              -0.900606545,
+              0.478861
+            ],
+            [
+              -0.9584865,
+              0.348860546
+            ],
+            [
+              -0.99771055,
+              0.212069925
+            ],
+            [
+              -1.0175153,
+              0.0711516032
+            ],
+            [
+              -1.0175153,
+              -0.0711516032
+            ],
+            [
+              -0.99771055,
+              -0.212069925
+            ],
+            [
+              -0.9584865,
+              -0.348860546
+            ],
+            [
+              -0.900606545,
+              -0.478861
+            ],
+            [
+              -0.82519733,
+              -0.59954096
+            ],
+            [
+              -0.7337266,
+              -0.7085515
+            ],
+            [
+              -0.6279747,
+              -0.80377097
+            ],
+            [
+              -0.51,
+              -0.8833459
+            ],
+            [
+              -0.38209873,
+              -0.9457275
+            ],
+            [
+              -0.246760334,
+              -0.9897016
+            ],
+            [
+              -0.10661903,
+              -1.0144123
+            ],
+            [
+              0.03559749,
+              -1.01937864
+            ],
+            [
+              0.177121141,
+              -1.004504
+            ],
+            [
+              0.315197334,
+              -0.97007765
+            ],
+            [
+              0.44713857,
+              -0.9167699
+            ],
+            [
+              0.57037676,
+              -0.8456183
+            ],
+            [
+              0.68251322,
+              -0.7580077
+            ],
+            [
+              0.78136533,
+              -0.65564336
+            ],
+            [
+              0.86500906,
+              -0.5405176
+            ],
+            [
+              0.931816367,
+              -0.414871376
+            ],
+            [
+              0.9804869,
+              -0.2811501
+            ],
+            [
+              1.0100734,
+              -0.141956563
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_5",
+        "kind": "ring",
+        "transformId": "ed15",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 76.64519,
+        "meshGapDirection": 0,
+        "radius": 2.15,
+        "width": 1,
+        "color": [
+          0.867,
+          0.263,
+          0.243,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [],
+        "stopPins": null,
+        "colliderInnerRadius": 1.9,
+        "colliderOuterRadius": 2.4,
+        "dragAreaInnerRadius": 1.42,
+        "dragAreaOuterRadius": 2.88,
+        "dragAreaPaths": [
+          [
+            [
+              2.0364675,
+              2.0364675
+            ],
+            [
+              1.73558775,
+              2.2982896
+            ],
+            [
+              1.401421,
+              2.5160325
+            ],
+            [
+              1.040376,
+              2.68552
+            ],
+            [
+              0.6593776,
+              2.8035016
+            ],
+            [
+              0.26573288,
+              2.8677144
+            ],
+            [
+              -0.13300836,
+              2.876927
+            ],
+            [
+              -0.5291986,
+              2.8309625
+            ],
+            [
+              -0.9152393,
+              2.7307027
+            ],
+            [
+              -1.2837265,
+              2.57807028
+            ],
+            [
+              -1.6275929,
+              2.3759927
+            ],
+            [
+              -1.9402435,
+              2.1283457
+            ],
+            [
+              -2.2156818,
+              1.8398788
+            ],
+            [
+              -2.4486254,
+              1.5161246
+            ],
+            [
+              -2.6346063,
+              1.1632925
+            ],
+            [
+              -2.770058,
+              0.7881494
+            ],
+            [
+              -2.852382,
+              0.3978903
+            ],
+            [
+              -2.88,
+              3.5269828e-16
+            ],
+            [
+              -2.852382,
+              -0.3978903
+            ],
+            [
+              -2.770058,
+              -0.7881494
+            ],
+            [
+              -2.6346063,
+              -1.1632925
+            ],
+            [
+              -2.4486254,
+              -1.5161246
+            ],
+            [
+              -2.2156818,
+              -1.8398788
+            ],
+            [
+              -1.9402435,
+              -2.1283457
+            ],
+            [
+              -1.6275929,
+              -2.3759927
+            ],
+            [
+              -1.2837265,
+              -2.57807028
+            ],
+            [
+              -0.9152393,
+              -2.7307027
+            ],
+            [
+              -0.5291986,
+              -2.8309625
+            ],
+            [
+              -0.13300836,
+              -2.876927
+            ],
+            [
+              0.26573288,
+              -2.8677144
+            ],
+            [
+              0.6593776,
+              -2.8035016
+            ],
+            [
+              1.040376,
+              -2.68552
+            ],
+            [
+              1.401421,
+              -2.5160325
+            ],
+            [
+              1.73558775,
+              -2.2982896
+            ],
+            [
+              2.0364675,
+              -2.0364675
+            ],
+            [
+              1.0040916,
+              -1.0040916
+            ],
+            [
+              0.8557412,
+              -1.13318446
+            ],
+            [
+              0.69097836,
+              -1.2405438
+            ],
+            [
+              0.5129632,
+              -1.32411051
+            ],
+            [
+              0.32510978,
+              -1.382282
+            ],
+            [
+              0.13102107,
+              -1.41394253
+            ],
+            [
+              -0.06558051,
+              -1.4184848
+            ],
+            [
+              -0.2609243,
+              -1.3958218
+            ],
+            [
+              -0.45126382,
+              -1.3463881
+            ],
+            [
+              -0.63294847,
+              -1.2711319
+            ],
+            [
+              -0.8024937,
+              -1.1714964
+            ],
+            [
+              -0.9566478,
+              -1.0493927
+            ],
+            [
+              -1.0924542,
+              -0.9071625
+            ],
+            [
+              -1.2073083,
+              -0.7475337
+            ],
+            [
+              -1.2990073,
+              -0.5735678
+            ],
+            [
+              -1.3657924,
+              -0.38860145
+            ],
+            [
+              -1.4063828,
+              -0.196182024
+            ],
+            [
+              -1.42,
+              1.7389985e-16
+            ],
+            [
+              -1.4063828,
+              0.196182024
+            ],
+            [
+              -1.3657924,
+              0.38860145
+            ],
+            [
+              -1.2990073,
+              0.5735678
+            ],
+            [
+              -1.2073083,
+              0.7475337
+            ],
+            [
+              -1.0924542,
+              0.9071625
+            ],
+            [
+              -0.9566478,
+              1.0493927
+            ],
+            [
+              -0.8024937,
+              1.1714964
+            ],
+            [
+              -0.63294847,
+              1.2711319
+            ],
+            [
+              -0.45126382,
+              1.3463881
+            ],
+            [
+              -0.2609243,
+              1.3958218
+            ],
+            [
+              -0.06558051,
+              1.4184848
+            ],
+            [
+              0.13102107,
+              1.41394253
+            ],
+            [
+              0.32510978,
+              1.382282
+            ],
+            [
+              0.5129632,
+              1.32411051
+            ],
+            [
+              0.69097836,
+              1.2405438
+            ],
+            [
+              0.8557412,
+              1.13318446
+            ],
+            [
+              1.0040916,
+              1.0040916
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_6",
+        "kind": "ring",
+        "transformId": "ed16",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 73.57358,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.306,
+          0.467,
+          0.867,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [
+          {
+            "featureId": "attachment.pin_8",
+            "transformId": "ed17",
+            "hardBlockPoints": [
+              [
+                -0.208333,
+                -2
+              ],
+              [
+                -0.208333,
+                -2.8146
+              ],
+              [
+                0.208333,
+                -2.8146
+              ],
+              [
+                0.208333,
+                -2
+              ]
+            ],
+            "angleDegrees": 270,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          },
+          {
+            "featureId": "attachment.pin_9",
+            "transformId": "ed18",
+            "hardBlockPoints": [
+              [
+                -2,
+                0.208333
+              ],
+              [
+                -2.5,
+                0.208333
+              ],
+              [
+                -2.5,
+                -0.208333
+              ],
+              [
+                -2,
+                -0.208333
+              ]
+            ],
+            "angleDegrees": 180,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          }
+        ],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              1.7536248,
+              1.7536248
+            ],
+            [
+              1.4945339,
+              1.9790827
+            ],
+            [
+              1.2067791,
+              2.1665835
+            ],
+            [
+              0.8958793,
+              2.31253113
+            ],
+            [
+              0.56779736,
+              2.4141264
+            ],
+            [
+              0.22882553,
+              2.46942076
+            ],
+            [
+              -0.114534977,
+              2.4773538
+            ],
+            [
+              -0.455698804,
+              2.4377733
+            ],
+            [
+              -0.7881227,
+              2.35143841
+            ],
+            [
+              -1.1054311,
+              2.220005
+            ],
+            [
+              -1.4015383,
+              2.0459937
+            ],
+            [
+              -1.6707652,
+              1.8327421
+            ],
+            [
+              -1.9079482,
+              1.5843401
+            ],
+            [
+              -2.1085385,
+              1.3055518
+            ],
+            [
+              -2.26868879,
+              1.0017241
+            ],
+            [
+              -2.3853276,
+              0.67868422
+            ],
+            [
+              -2.45621787,
+              0.34262776
+            ],
+            [
+              -2.48,
+              3.037124e-16
+            ],
+            [
+              -2.45621787,
+              -0.34262776
+            ],
+            [
+              -2.3853276,
+              -0.67868422
+            ],
+            [
+              -2.26868879,
+              -1.0017241
+            ],
+            [
+              -2.1085385,
+              -1.3055518
+            ],
+            [
+              -1.9079482,
+              -1.5843401
+            ],
+            [
+              -1.6707652,
+              -1.8327421
+            ],
+            [
+              -1.4015383,
+              -2.0459937
+            ],
+            [
+              -1.1054311,
+              -2.220005
+            ],
+            [
+              -0.7881227,
+              -2.35143841
+            ],
+            [
+              -0.455698804,
+              -2.4377733
+            ],
+            [
+              -0.114534977,
+              -2.4773538
+            ],
+            [
+              0.22882553,
+              -2.46942076
+            ],
+            [
+              0.56779736,
+              -2.4141264
+            ],
+            [
+              0.8958793,
+              -2.31253113
+            ],
+            [
+              1.2067791,
+              -2.1665835
+            ],
+            [
+              1.4945339,
+              -1.9790827
+            ],
+            [
+              1.7536248,
+              -1.7536248
+            ],
+            [
+              0.7212489,
+              -0.7212489
+            ],
+            [
+              0.6146873,
+              -0.8139776
+            ],
+            [
+              0.49633657,
+              -0.89109484
+            ],
+            [
+              0.3684665,
+              -0.9511217
+            ],
+            [
+              0.233529561,
+              -0.9929068
+            ],
+            [
+              0.09411373,
+              -1.0156489
+            ],
+            [
+              -0.047107128,
+              -1.0189116
+            ],
+            [
+              -0.18742451,
+              -1.0026326
+            ],
+            [
+              -0.32414725,
+              -0.96712386
+            ],
+            [
+              -0.4546531,
+              -0.91306656
+            ],
+            [
+              -0.57643914,
+              -0.8414974
+            ],
+            [
+              -0.68716956,
+              -0.753789096
+            ],
+            [
+              -0.78472065,
+              -0.6516237
+            ],
+            [
+              -0.8672215,
+              -0.5369608
+            ],
+            [
+              -0.93308975,
+              -0.41199942
+            ],
+            [
+              -0.9810622,
+              -0.27913625
+            ],
+            [
+              -1.0102186,
+              -0.14091948
+            ],
+            [
+              -1.02,
+              1.2491397e-16
+            ],
+            [
+              -1.0102186,
+              0.14091948
+            ],
+            [
+              -0.9810622,
+              0.27913625
+            ],
+            [
+              -0.93308975,
+              0.41199942
+            ],
+            [
+              -0.8672215,
+              0.5369608
+            ],
+            [
+              -0.78472065,
+              0.6516237
+            ],
+            [
+              -0.68716956,
+              0.753789096
+            ],
+            [
+              -0.57643914,
+              0.8414974
+            ],
+            [
+              -0.4546531,
+              0.91306656
+            ],
+            [
+              -0.32414725,
+              0.96712386
+            ],
+            [
+              -0.18742451,
+              1.0026326
+            ],
+            [
+              -0.047107128,
+              1.0189116
+            ],
+            [
+              0.09411373,
+              1.0156489
+            ],
+            [
+              0.233529561,
+              0.9929068
+            ],
+            [
+              0.3684665,
+              0.9511217
+            ],
+            [
+              0.49633657,
+              0.89109484
+            ],
+            [
+              0.6146873,
+              0.8139776
+            ],
+            [
+              0.7212489,
+              0.7212489
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_7",
+        "kind": "ring",
+        "transformId": "ed19",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 73.57358,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.596,
+          0.294,
+          0.878,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              1.7536248,
+              1.7536248
+            ],
+            [
+              1.4945339,
+              1.9790827
+            ],
+            [
+              1.2067791,
+              2.1665835
+            ],
+            [
+              0.8958793,
+              2.31253113
+            ],
+            [
+              0.56779736,
+              2.4141264
+            ],
+            [
+              0.22882553,
+              2.46942076
+            ],
+            [
+              -0.114534977,
+              2.4773538
+            ],
+            [
+              -0.455698804,
+              2.4377733
+            ],
+            [
+              -0.7881227,
+              2.35143841
+            ],
+            [
+              -1.1054311,
+              2.220005
+            ],
+            [
+              -1.4015383,
+              2.0459937
+            ],
+            [
+              -1.6707652,
+              1.8327421
+            ],
+            [
+              -1.9079482,
+              1.5843401
+            ],
+            [
+              -2.1085385,
+              1.3055518
+            ],
+            [
+              -2.26868879,
+              1.0017241
+            ],
+            [
+              -2.3853276,
+              0.67868422
+            ],
+            [
+              -2.45621787,
+              0.34262776
+            ],
+            [
+              -2.48,
+              3.037124e-16
+            ],
+            [
+              -2.45621787,
+              -0.34262776
+            ],
+            [
+              -2.3853276,
+              -0.67868422
+            ],
+            [
+              -2.26868879,
+              -1.0017241
+            ],
+            [
+              -2.1085385,
+              -1.3055518
+            ],
+            [
+              -1.9079482,
+              -1.5843401
+            ],
+            [
+              -1.6707652,
+              -1.8327421
+            ],
+            [
+              -1.4015383,
+              -2.0459937
+            ],
+            [
+              -1.1054311,
+              -2.220005
+            ],
+            [
+              -0.7881227,
+              -2.35143841
+            ],
+            [
+              -0.455698804,
+              -2.4377733
+            ],
+            [
+              -0.114534977,
+              -2.4773538
+            ],
+            [
+              0.22882553,
+              -2.46942076
+            ],
+            [
+              0.56779736,
+              -2.4141264
+            ],
+            [
+              0.8958793,
+              -2.31253113
+            ],
+            [
+              1.2067791,
+              -2.1665835
+            ],
+            [
+              1.4945339,
+              -1.9790827
+            ],
+            [
+              1.7536248,
+              -1.7536248
+            ],
+            [
+              0.7212489,
+              -0.7212489
+            ],
+            [
+              0.6146873,
+              -0.8139776
+            ],
+            [
+              0.49633657,
+              -0.89109484
+            ],
+            [
+              0.3684665,
+              -0.9511217
+            ],
+            [
+              0.233529561,
+              -0.9929068
+            ],
+            [
+              0.09411373,
+              -1.0156489
+            ],
+            [
+              -0.047107128,
+              -1.0189116
+            ],
+            [
+              -0.18742451,
+              -1.0026326
+            ],
+            [
+              -0.32414725,
+              -0.96712386
+            ],
+            [
+              -0.4546531,
+              -0.91306656
+            ],
+            [
+              -0.57643914,
+              -0.8414974
+            ],
+            [
+              -0.68716956,
+              -0.753789096
+            ],
+            [
+              -0.78472065,
+              -0.6516237
+            ],
+            [
+              -0.8672215,
+              -0.5369608
+            ],
+            [
+              -0.93308975,
+              -0.41199942
+            ],
+            [
+              -0.9810622,
+              -0.27913625
+            ],
+            [
+              -1.0102186,
+              -0.14091948
+            ],
+            [
+              -1.02,
+              1.2491397e-16
+            ],
+            [
+              -1.0102186,
+              0.14091948
+            ],
+            [
+              -0.9810622,
+              0.27913625
+            ],
+            [
+              -0.93308975,
+              0.41199942
+            ],
+            [
+              -0.8672215,
+              0.5369608
+            ],
+            [
+              -0.78472065,
+              0.6516237
+            ],
+            [
+              -0.68716956,
+              0.753789096
+            ],
+            [
+              -0.57643914,
+              0.8414974
+            ],
+            [
+              -0.4546531,
+              0.91306656
+            ],
+            [
+              -0.32414725,
+              0.96712386
+            ],
+            [
+              -0.18742451,
+              1.0026326
+            ],
+            [
+              -0.047107128,
+              1.0189116
+            ],
+            [
+              0.09411373,
+              1.0156489
+            ],
+            [
+              0.233529561,
+              0.9929068
+            ],
+            [
+              0.3684665,
+              0.9511217
+            ],
+            [
+              0.49633657,
+              0.89109484
+            ],
+            [
+              0.6146873,
+              0.8139776
+            ],
+            [
+              0.7212489,
+              0.7212489
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "ring_8",
+        "kind": "ring",
+        "transformId": "ed20",
+        "logicGapDegrees": 90,
+        "meshGapDegrees": 73.57358,
+        "meshGapDirection": 0,
+        "radius": 1.75,
+        "width": 1,
+        "color": [
+          0.416,
+          0.773,
+          0.243,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": [
+          {
+            "featureId": "attachment.pin_10",
+            "transformId": "ed21",
+            "hardBlockPoints": [
+              [
+                -1.8811297,
+                0.7104601
+              ],
+              [
+                -3.6302434,
+                1.1707532
+              ],
+              [
+                -3.736282,
+                0.7678061
+              ],
+              [
+                -1.9871684,
+                0.30751306
+              ]
+            ],
+            "angleDegrees": 165.25644,
+            "isInnerMount": false,
+            "stemWidth": 0.8333334,
+            "stemLength": 0.5854192,
+            "stemInsertOffset": 0.5,
+            "crossWidth": 1.3416767,
+            "crossLength": 0.8333334,
+            "sensorSize": [
+              0.67083836,
+              0.8333334
+            ],
+            "wallSize": [
+              0.05,
+              0.73333335
+            ],
+            "wallOffsetX": 0.40041918
+          }
+        ],
+        "stopPins": null,
+        "colliderInnerRadius": 1.5,
+        "colliderOuterRadius": 2,
+        "dragAreaInnerRadius": 1.02,
+        "dragAreaOuterRadius": 2.48,
+        "dragAreaPaths": [
+          [
+            [
+              1.7536248,
+              1.7536248
+            ],
+            [
+              1.4945339,
+              1.9790827
+            ],
+            [
+              1.2067791,
+              2.1665835
+            ],
+            [
+              0.8958793,
+              2.31253113
+            ],
+            [
+              0.56779736,
+              2.4141264
+            ],
+            [
+              0.22882553,
+              2.46942076
+            ],
+            [
+              -0.114534977,
+              2.4773538
+            ],
+            [
+              -0.455698804,
+              2.4377733
+            ],
+            [
+              -0.7881227,
+              2.35143841
+            ],
+            [
+              -1.1054311,
+              2.220005
+            ],
+            [
+              -1.4015383,
+              2.0459937
+            ],
+            [
+              -1.6707652,
+              1.8327421
+            ],
+            [
+              -1.9079482,
+              1.5843401
+            ],
+            [
+              -2.1085385,
+              1.3055518
+            ],
+            [
+              -2.26868879,
+              1.0017241
+            ],
+            [
+              -2.3853276,
+              0.67868422
+            ],
+            [
+              -2.45621787,
+              0.34262776
+            ],
+            [
+              -2.48,
+              3.037124e-16
+            ],
+            [
+              -2.45621787,
+              -0.34262776
+            ],
+            [
+              -2.3853276,
+              -0.67868422
+            ],
+            [
+              -2.26868879,
+              -1.0017241
+            ],
+            [
+              -2.1085385,
+              -1.3055518
+            ],
+            [
+              -1.9079482,
+              -1.5843401
+            ],
+            [
+              -1.6707652,
+              -1.8327421
+            ],
+            [
+              -1.4015383,
+              -2.0459937
+            ],
+            [
+              -1.1054311,
+              -2.220005
+            ],
+            [
+              -0.7881227,
+              -2.35143841
+            ],
+            [
+              -0.455698804,
+              -2.4377733
+            ],
+            [
+              -0.114534977,
+              -2.4773538
+            ],
+            [
+              0.22882553,
+              -2.46942076
+            ],
+            [
+              0.56779736,
+              -2.4141264
+            ],
+            [
+              0.8958793,
+              -2.31253113
+            ],
+            [
+              1.2067791,
+              -2.1665835
+            ],
+            [
+              1.4945339,
+              -1.9790827
+            ],
+            [
+              1.7536248,
+              -1.7536248
+            ],
+            [
+              0.7212489,
+              -0.7212489
+            ],
+            [
+              0.6146873,
+              -0.8139776
+            ],
+            [
+              0.49633657,
+              -0.89109484
+            ],
+            [
+              0.3684665,
+              -0.9511217
+            ],
+            [
+              0.233529561,
+              -0.9929068
+            ],
+            [
+              0.09411373,
+              -1.0156489
+            ],
+            [
+              -0.047107128,
+              -1.0189116
+            ],
+            [
+              -0.18742451,
+              -1.0026326
+            ],
+            [
+              -0.32414725,
+              -0.96712386
+            ],
+            [
+              -0.4546531,
+              -0.91306656
+            ],
+            [
+              -0.57643914,
+              -0.8414974
+            ],
+            [
+              -0.68716956,
+              -0.753789096
+            ],
+            [
+              -0.78472065,
+              -0.6516237
+            ],
+            [
+              -0.8672215,
+              -0.5369608
+            ],
+            [
+              -0.93308975,
+              -0.41199942
+            ],
+            [
+              -0.9810622,
+              -0.27913625
+            ],
+            [
+              -1.0102186,
+              -0.14091948
+            ],
+            [
+              -1.02,
+              1.2491397e-16
+            ],
+            [
+              -1.0102186,
+              0.14091948
+            ],
+            [
+              -0.9810622,
+              0.27913625
+            ],
+            [
+              -0.93308975,
+              0.41199942
+            ],
+            [
+              -0.8672215,
+              0.5369608
+            ],
+            [
+              -0.78472065,
+              0.6516237
+            ],
+            [
+              -0.68716956,
+              0.753789096
+            ],
+            [
+              -0.57643914,
+              0.8414974
+            ],
+            [
+              -0.4546531,
+              0.91306656
+            ],
+            [
+              -0.32414725,
+              0.96712386
+            ],
+            [
+              -0.18742451,
+              1.0026326
+            ],
+            [
+              -0.047107128,
+              1.0189116
+            ],
+            [
+              0.09411373,
+              1.0156489
+            ],
+            [
+              0.233529561,
+              0.9929068
+            ],
+            [
+              0.3684665,
+              0.9511217
+            ],
+            [
+              0.49633657,
+              0.89109484
+            ],
+            [
+              0.6146873,
+              0.8139776
+            ],
+            [
+              0.7212489,
+              0.7212489
+            ]
+          ]
+        ],
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "slide_bar_1",
+        "kind": "stick",
+        "transformId": "ed22",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": 1,
+        "color": [
+          0.196,
+          0.686,
+          0.867,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": [
+          [
+            0,
+            -1.4
+          ],
+          [
+            0,
+            1.4
+          ],
+          [
+            1.3,
+            1.4
+          ]
+        ],
+        "localSlideAxis": [
+          0,
+          1
+        ],
+        "cornerRadius": 0.5,
+        "lockDirectionType": 0,
+        "colliderHalfWidth": 0.25,
+        "colliderEndInset": 0.5,
+        "colliderPoints": [
+          [
+            -0.25,
+            -0.9
+          ],
+          [
+            -0.25,
+            -0.675
+          ],
+          [
+            -0.25,
+            -0.45
+          ],
+          [
+            -0.25,
+            -0.225
+          ],
+          [
+            -0.25,
+            0
+          ],
+          [
+            -0.25,
+            0.225
+          ],
+          [
+            -0.25,
+            0.45
+          ],
+          [
+            -0.25,
+            0.675
+          ],
+          [
+            -0.2489619,
+            0.92275906
+          ],
+          [
+            -0.19290965,
+            1.1870126
+          ],
+          [
+            -0.030330086,
+            1.43033
+          ],
+          [
+            0.21298743,
+            1.59290965
+          ],
+          [
+            0.4722962,
+            1.6484603
+          ],
+          [
+            0.65,
+            1.65
+          ],
+          [
+            0.8,
+            1.65
+          ],
+          [
+            0.89567086,
+            1.6309699
+          ],
+          [
+            0.9767767,
+            1.5767767
+          ],
+          [
+            1.0309699,
+            1.4956709
+          ],
+          [
+            1.05,
+            1.4
+          ],
+          [
+            1.0309699,
+            1.3043291
+          ],
+          [
+            0.9767767,
+            1.2232233
+          ],
+          [
+            0.89567086,
+            1.1690301
+          ],
+          [
+            0.8,
+            1.15
+          ],
+          [
+            0.65,
+            1.15
+          ],
+          [
+            0.52770378,
+            1.1515397
+          ],
+          [
+            0.40432914,
+            1.1309699
+          ],
+          [
+            0.3232233,
+            1.0767767
+          ],
+          [
+            0.26903012,
+            0.99567086
+          ],
+          [
+            0.2489619,
+            0.87724094
+          ],
+          [
+            0.25,
+            0.675
+          ],
+          [
+            0.25,
+            0.45
+          ],
+          [
+            0.25,
+            0.225
+          ],
+          [
+            0.25,
+            0
+          ],
+          [
+            0.25,
+            -0.225
+          ],
+          [
+            0.25,
+            -0.45
+          ],
+          [
+            0.25,
+            -0.675
+          ],
+          [
+            0.25,
+            -0.9
+          ],
+          [
+            0.23096988,
+            -0.99567086
+          ],
+          [
+            0.176776695,
+            -1.0767767
+          ],
+          [
+            0.09567086,
+            -1.1309699
+          ],
+          [
+            1.5308085e-17,
+            -1.15
+          ],
+          [
+            -0.09567086,
+            -1.1309699
+          ],
+          [
+            -0.176776695,
+            -1.0767767
+          ],
+          [
+            -0.23096988,
+            -0.99567086
+          ]
+        ],
+        "dragAreaPoints": [
+          [
+            -0.475,
+            -1.2
+          ],
+          [
+            -0.475,
+            -0.966666667
+          ],
+          [
+            -0.475,
+            -0.73333333
+          ],
+          [
+            -0.475,
+            -0.5
+          ],
+          [
+            -0.475,
+            -0.26666667
+          ],
+          [
+            -0.475,
+            -0.0333333333
+          ],
+          [
+            -0.475,
+            0.2
+          ],
+          [
+            -0.475,
+            0.43333333
+          ],
+          [
+            -0.475,
+            0.6666667
+          ],
+          [
+            -0.4731038,
+            0.9424005
+          ],
+          [
+            -0.400782544,
+            1.2731163
+          ],
+          [
+            -0.1894291,
+            1.5894291
+          ],
+          [
+            0.12688365,
+            1.80078254
+          ],
+          [
+            0.45402046,
+            1.8727694
+          ],
+          [
+            0.7,
+            1.875
+          ],
+          [
+            0.9,
+            1.875
+          ],
+          [
+            1.1,
+            1.875
+          ],
+          [
+            1.2817746,
+            1.8388428
+          ],
+          [
+            1.43587572,
+            1.7358757
+          ],
+          [
+            1.5388428,
+            1.5817746
+          ],
+          [
+            1.575,
+            1.4
+          ],
+          [
+            1.5388428,
+            1.2182254
+          ],
+          [
+            1.43587572,
+            1.06412428
+          ],
+          [
+            1.2817746,
+            0.9611572
+          ],
+          [
+            1.1,
+            0.925
+          ],
+          [
+            0.9,
+            0.925
+          ],
+          [
+            0.7,
+            0.925
+          ],
+          [
+            0.54597954,
+            0.9272306
+          ],
+          [
+            0.49043291,
+            0.923097
+          ],
+          [
+            0.48232233,
+            0.91767767
+          ],
+          [
+            0.47690301,
+            0.909567086
+          ],
+          [
+            0.4731038,
+            0.8575995
+          ],
+          [
+            0.475,
+            0.6666667
+          ],
+          [
+            0.475,
+            0.43333333
+          ],
+          [
+            0.475,
+            0.2
+          ],
+          [
+            0.475,
+            -0.0333333333
+          ],
+          [
+            0.475,
+            -0.26666667
+          ],
+          [
+            0.475,
+            -0.5
+          ],
+          [
+            0.475,
+            -0.73333333
+          ],
+          [
+            0.475,
+            -0.966666667
+          ],
+          [
+            0.475,
+            -1.2
+          ],
+          [
+            0.43884278,
+            -1.38177463
+          ],
+          [
+            0.33587572,
+            -1.5358757
+          ],
+          [
+            0.18177463,
+            -1.6388428
+          ],
+          [
+            2.908536e-17,
+            -1.675
+          ],
+          [
+            -0.18177463,
+            -1.6388428
+          ],
+          [
+            -0.33587572,
+            -1.5358757
+          ],
+          [
+            -0.43884278,
+            -1.38177463
+          ]
+        ],
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "slide_bar_2",
+        "kind": "stick",
+        "transformId": "ed23",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": 1,
+        "color": [
+          0.925,
+          0.561,
+          0.18,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": [
+          [
+            0,
+            -0.9
+          ],
+          [
+            0,
+            6.3
+          ],
+          [
+            -1.3,
+            6.3
+          ]
+        ],
+        "localSlideAxis": [
+          0,
+          1
+        ],
+        "cornerRadius": 0.5,
+        "lockDirectionType": 0,
+        "colliderHalfWidth": 0.25,
+        "colliderEndInset": 0.5,
+        "colliderPoints": [
+          [
+            -0.25,
+            -0.4
+          ],
+          [
+            -0.25,
+            -0.152
+          ],
+          [
+            -0.25,
+            0.096
+          ],
+          [
+            -0.25,
+            0.344
+          ],
+          [
+            -0.25,
+            0.592
+          ],
+          [
+            -0.25,
+            0.84
+          ],
+          [
+            -0.25,
+            1.088
+          ],
+          [
+            -0.25,
+            1.336
+          ],
+          [
+            -0.25,
+            1.584
+          ],
+          [
+            -0.25,
+            1.832
+          ],
+          [
+            -0.25,
+            2.08
+          ],
+          [
+            -0.25,
+            2.328
+          ],
+          [
+            -0.25,
+            2.576
+          ],
+          [
+            -0.25,
+            2.824
+          ],
+          [
+            -0.25,
+            3.072
+          ],
+          [
+            -0.25,
+            3.32
+          ],
+          [
+            -0.25,
+            3.568
+          ],
+          [
+            -0.25,
+            3.816
+          ],
+          [
+            -0.25,
+            4.064
+          ],
+          [
+            -0.25,
+            4.312
+          ],
+          [
+            -0.25,
+            4.56
+          ],
+          [
+            -0.25,
+            4.808
+          ],
+          [
+            -0.25,
+            5.056
+          ],
+          [
+            -0.25,
+            5.304
+          ],
+          [
+            -0.25,
+            5.552
+          ],
+          [
+            -0.24906715,
+            5.7784233
+          ],
+          [
+            -0.26903012,
+            5.895671
+          ],
+          [
+            -0.3232233,
+            5.9767767
+          ],
+          [
+            -0.40432914,
+            6.03097
+          ],
+          [
+            -0.52770378,
+            6.05154
+          ],
+          [
+            -0.65,
+            6.05
+          ],
+          [
+            -0.8,
+            6.05
+          ],
+          [
+            -0.89567086,
+            6.0690301
+          ],
+          [
+            -0.9767767,
+            6.1232233
+          ],
+          [
+            -1.0309699,
+            6.204329
+          ],
+          [
+            -1.05,
+            6.3
+          ],
+          [
+            -1.0309699,
+            6.395671
+          ],
+          [
+            -0.9767767,
+            6.4767767
+          ],
+          [
+            -0.89567086,
+            6.53097
+          ],
+          [
+            -0.8,
+            6.55
+          ],
+          [
+            -0.65,
+            6.55
+          ],
+          [
+            -0.4722962,
+            6.5484603
+          ],
+          [
+            -0.21298743,
+            6.4929096
+          ],
+          [
+            0.030330086,
+            6.33033
+          ],
+          [
+            0.19290965,
+            6.087013
+          ],
+          [
+            0.24906715,
+            5.8215767
+          ],
+          [
+            0.25,
+            5.552
+          ],
+          [
+            0.25,
+            5.304
+          ],
+          [
+            0.25,
+            5.056
+          ],
+          [
+            0.25,
+            4.808
+          ],
+          [
+            0.25,
+            4.56
+          ],
+          [
+            0.25,
+            4.312
+          ],
+          [
+            0.25,
+            4.064
+          ],
+          [
+            0.25,
+            3.816
+          ],
+          [
+            0.25,
+            3.568
+          ],
+          [
+            0.25,
+            3.32
+          ],
+          [
+            0.25,
+            3.072
+          ],
+          [
+            0.25,
+            2.824
+          ],
+          [
+            0.25,
+            2.576
+          ],
+          [
+            0.25,
+            2.328
+          ],
+          [
+            0.25,
+            2.08
+          ],
+          [
+            0.25,
+            1.832
+          ],
+          [
+            0.25,
+            1.584
+          ],
+          [
+            0.25,
+            1.336
+          ],
+          [
+            0.25,
+            1.088
+          ],
+          [
+            0.25,
+            0.84
+          ],
+          [
+            0.25,
+            0.592
+          ],
+          [
+            0.25,
+            0.344
+          ],
+          [
+            0.25,
+            0.096
+          ],
+          [
+            0.25,
+            -0.152
+          ],
+          [
+            0.25,
+            -0.4
+          ],
+          [
+            0.23096988,
+            -0.49567086
+          ],
+          [
+            0.176776695,
+            -0.5767767
+          ],
+          [
+            0.09567086,
+            -0.6309699
+          ],
+          [
+            1.5308085e-17,
+            -0.65
+          ],
+          [
+            -0.09567086,
+            -0.6309699
+          ],
+          [
+            -0.176776695,
+            -0.5767767
+          ],
+          [
+            -0.23096988,
+            -0.49567086
+          ]
+        ],
+        "dragAreaPoints": [
+          [
+            -0.475,
+            -0.7
+          ],
+          [
+            -0.475,
+            -0.45
+          ],
+          [
+            -0.475,
+            -0.2
+          ],
+          [
+            -0.475,
+            0.05
+          ],
+          [
+            -0.475,
+            0.3
+          ],
+          [
+            -0.475,
+            0.55
+          ],
+          [
+            -0.475,
+            0.8
+          ],
+          [
+            -0.475,
+            1.05
+          ],
+          [
+            -0.475,
+            1.3
+          ],
+          [
+            -0.475,
+            1.55
+          ],
+          [
+            -0.475,
+            1.8
+          ],
+          [
+            -0.475,
+            2.05
+          ],
+          [
+            -0.475,
+            2.3
+          ],
+          [
+            -0.475,
+            2.55
+          ],
+          [
+            -0.475,
+            2.8
+          ],
+          [
+            -0.475,
+            3.05
+          ],
+          [
+            -0.475,
+            3.3
+          ],
+          [
+            -0.475,
+            3.55
+          ],
+          [
+            -0.475,
+            3.8
+          ],
+          [
+            -0.475,
+            4.05
+          ],
+          [
+            -0.475,
+            4.3
+          ],
+          [
+            -0.475,
+            4.55
+          ],
+          [
+            -0.475,
+            4.8
+          ],
+          [
+            -0.475,
+            5.05
+          ],
+          [
+            -0.475,
+            5.3
+          ],
+          [
+            -0.475,
+            5.55
+          ],
+          [
+            -0.47324352,
+            5.7591886
+          ],
+          [
+            -0.47690301,
+            5.809567
+          ],
+          [
+            -0.48232233,
+            5.8176777
+          ],
+          [
+            -0.49043291,
+            5.82309699
+          ],
+          [
+            -0.54597954,
+            5.8272306
+          ],
+          [
+            -0.7,
+            5.825
+          ],
+          [
+            -0.9,
+            5.825
+          ],
+          [
+            -1.1,
+            5.825
+          ],
+          [
+            -1.2817746,
+            5.8611572
+          ],
+          [
+            -1.43587572,
+            5.964124
+          ],
+          [
+            -1.5388428,
+            6.1182254
+          ],
+          [
+            -1.575,
+            6.3
+          ],
+          [
+            -1.5388428,
+            6.481775
+          ],
+          [
+            -1.43587572,
+            6.6358757
+          ],
+          [
+            -1.2817746,
+            6.738843
+          ],
+          [
+            -1.1,
+            6.775
+          ],
+          [
+            -0.9,
+            6.775
+          ],
+          [
+            -0.7,
+            6.775
+          ],
+          [
+            -0.45402046,
+            6.7727694
+          ],
+          [
+            -0.12688365,
+            6.700783
+          ],
+          [
+            0.1894291,
+            6.489429
+          ],
+          [
+            0.400782544,
+            6.173116
+          ],
+          [
+            0.47324352,
+            5.8408114
+          ],
+          [
+            0.475,
+            5.55
+          ],
+          [
+            0.475,
+            5.3
+          ],
+          [
+            0.475,
+            5.05
+          ],
+          [
+            0.475,
+            4.8
+          ],
+          [
+            0.475,
+            4.55
+          ],
+          [
+            0.475,
+            4.3
+          ],
+          [
+            0.475,
+            4.05
+          ],
+          [
+            0.475,
+            3.8
+          ],
+          [
+            0.475,
+            3.55
+          ],
+          [
+            0.475,
+            3.3
+          ],
+          [
+            0.475,
+            3.05
+          ],
+          [
+            0.475,
+            2.8
+          ],
+          [
+            0.475,
+            2.55
+          ],
+          [
+            0.475,
+            2.3
+          ],
+          [
+            0.475,
+            2.05
+          ],
+          [
+            0.475,
+            1.8
+          ],
+          [
+            0.475,
+            1.55
+          ],
+          [
+            0.475,
+            1.3
+          ],
+          [
+            0.475,
+            1.05
+          ],
+          [
+            0.475,
+            0.8
+          ],
+          [
+            0.475,
+            0.55
+          ],
+          [
+            0.475,
+            0.3
+          ],
+          [
+            0.475,
+            0.05
+          ],
+          [
+            0.475,
+            -0.2
+          ],
+          [
+            0.475,
+            -0.45
+          ],
+          [
+            0.475,
+            -0.7
+          ],
+          [
+            0.43884278,
+            -0.8817746
+          ],
+          [
+            0.33587572,
+            -1.0358757
+          ],
+          [
+            0.18177463,
+            -1.1388428
+          ],
+          [
+            2.908536e-17,
+            -1.175
+          ],
+          [
+            -0.18177463,
+            -1.1388428
+          ],
+          [
+            -0.33587572,
+            -1.0358757
+          ],
+          [
+            -0.43884278,
+            -0.8817746
+          ]
+        ],
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "slide_bar_3",
+        "kind": "stick",
+        "transformId": "ed24",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": 1,
+        "color": [
+          0.306,
+          0.467,
+          0.867,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": true,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": [
+          [
+            0,
+            -2.6
+          ],
+          [
+            0,
+            2.6
+          ]
+        ],
+        "localSlideAxis": [
+          0,
+          1
+        ],
+        "cornerRadius": 0.5,
+        "lockDirectionType": 0,
+        "colliderHalfWidth": 0.25,
+        "colliderEndInset": 0.5,
+        "colliderPoints": [
+          [
+            -0.25,
+            -2.1
+          ],
+          [
+            -0.25,
+            -1.8529412
+          ],
+          [
+            -0.25,
+            -1.6058824
+          ],
+          [
+            -0.25,
+            -1.3588235
+          ],
+          [
+            -0.25,
+            -1.1117647
+          ],
+          [
+            -0.25,
+            -0.86470588
+          ],
+          [
+            -0.25,
+            -0.61764706
+          ],
+          [
+            -0.25,
+            -0.37058824
+          ],
+          [
+            -0.25,
+            -0.12352941
+          ],
+          [
+            -0.25,
+            0.12352941
+          ],
+          [
+            -0.25,
+            0.37058824
+          ],
+          [
+            -0.25,
+            0.61764706
+          ],
+          [
+            -0.25,
+            0.86470588
+          ],
+          [
+            -0.25,
+            1.1117647
+          ],
+          [
+            -0.25,
+            1.3588235
+          ],
+          [
+            -0.25,
+            1.6058824
+          ],
+          [
+            -0.25,
+            1.8529412
+          ],
+          [
+            -0.25,
+            2.1
+          ],
+          [
+            -0.23096988,
+            2.1956709
+          ],
+          [
+            -0.176776695,
+            2.2767767
+          ],
+          [
+            -0.09567086,
+            2.3309699
+          ],
+          [
+            1.5308085e-17,
+            2.35
+          ],
+          [
+            0.09567086,
+            2.3309699
+          ],
+          [
+            0.176776695,
+            2.2767767
+          ],
+          [
+            0.23096988,
+            2.1956709
+          ],
+          [
+            0.25,
+            2.1
+          ],
+          [
+            0.25,
+            1.8529412
+          ],
+          [
+            0.25,
+            1.6058824
+          ],
+          [
+            0.25,
+            1.3588235
+          ],
+          [
+            0.25,
+            1.1117647
+          ],
+          [
+            0.25,
+            0.86470588
+          ],
+          [
+            0.25,
+            0.61764706
+          ],
+          [
+            0.25,
+            0.37058824
+          ],
+          [
+            0.25,
+            0.12352941
+          ],
+          [
+            0.25,
+            -0.12352941
+          ],
+          [
+            0.25,
+            -0.37058824
+          ],
+          [
+            0.25,
+            -0.61764706
+          ],
+          [
+            0.25,
+            -0.86470588
+          ],
+          [
+            0.25,
+            -1.1117647
+          ],
+          [
+            0.25,
+            -1.3588235
+          ],
+          [
+            0.25,
+            -1.6058824
+          ],
+          [
+            0.25,
+            -1.8529412
+          ],
+          [
+            0.25,
+            -2.1
+          ],
+          [
+            0.23096988,
+            -2.1956709
+          ],
+          [
+            0.176776695,
+            -2.2767767
+          ],
+          [
+            0.09567086,
+            -2.3309699
+          ],
+          [
+            1.5308085e-17,
+            -2.35
+          ],
+          [
+            -0.09567086,
+            -2.3309699
+          ],
+          [
+            -0.176776695,
+            -2.2767767
+          ],
+          [
+            -0.23096988,
+            -2.1956709
+          ]
+        ],
+        "dragAreaPoints": [
+          [
+            -0.475,
+            -2.4
+          ],
+          [
+            -0.475,
+            -2.16
+          ],
+          [
+            -0.475,
+            -1.92
+          ],
+          [
+            -0.475,
+            -1.68
+          ],
+          [
+            -0.475,
+            -1.44
+          ],
+          [
+            -0.475,
+            -1.2
+          ],
+          [
+            -0.475,
+            -0.96
+          ],
+          [
+            -0.475,
+            -0.72
+          ],
+          [
+            -0.475,
+            -0.48
+          ],
+          [
+            -0.475,
+            -0.24
+          ],
+          [
+            -0.475,
+            0
+          ],
+          [
+            -0.475,
+            0.24
+          ],
+          [
+            -0.475,
+            0.48
+          ],
+          [
+            -0.475,
+            0.72
+          ],
+          [
+            -0.475,
+            0.96
+          ],
+          [
+            -0.475,
+            1.2
+          ],
+          [
+            -0.475,
+            1.44
+          ],
+          [
+            -0.475,
+            1.68
+          ],
+          [
+            -0.475,
+            1.92
+          ],
+          [
+            -0.475,
+            2.16
+          ],
+          [
+            -0.475,
+            2.4
+          ],
+          [
+            -0.43884278,
+            2.5817746
+          ],
+          [
+            -0.33587572,
+            2.7358757
+          ],
+          [
+            -0.18177463,
+            2.8388428
+          ],
+          [
+            2.908536e-17,
+            2.875
+          ],
+          [
+            0.18177463,
+            2.8388428
+          ],
+          [
+            0.33587572,
+            2.7358757
+          ],
+          [
+            0.43884278,
+            2.5817746
+          ],
+          [
+            0.475,
+            2.4
+          ],
+          [
+            0.475,
+            2.16
+          ],
+          [
+            0.475,
+            1.92
+          ],
+          [
+            0.475,
+            1.68
+          ],
+          [
+            0.475,
+            1.44
+          ],
+          [
+            0.475,
+            1.2
+          ],
+          [
+            0.475,
+            0.96
+          ],
+          [
+            0.475,
+            0.72
+          ],
+          [
+            0.475,
+            0.48
+          ],
+          [
+            0.475,
+            0.24
+          ],
+          [
+            0.475,
+            0
+          ],
+          [
+            0.475,
+            -0.24
+          ],
+          [
+            0.475,
+            -0.48
+          ],
+          [
+            0.475,
+            -0.72
+          ],
+          [
+            0.475,
+            -0.96
+          ],
+          [
+            0.475,
+            -1.2
+          ],
+          [
+            0.475,
+            -1.44
+          ],
+          [
+            0.475,
+            -1.68
+          ],
+          [
+            0.475,
+            -1.92
+          ],
+          [
+            0.475,
+            -2.16
+          ],
+          [
+            0.475,
+            -2.4
+          ],
+          [
+            0.43884278,
+            -2.5817746
+          ],
+          [
+            0.33587572,
+            -2.7358757
+          ],
+          [
+            0.18177463,
+            -2.8388428
+          ],
+          [
+            2.908536e-17,
+            -2.875
+          ],
+          [
+            -0.18177463,
+            -2.8388428
+          ],
+          [
+            -0.33587572,
+            -2.7358757
+          ],
+          [
+            -0.43884278,
+            -2.5817746
+          ]
+        ],
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "guide_1",
+        "kind": "guide",
+        "transformId": "ed25",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": null,
+        "color": null,
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": {
+          "center": [
+            0,
+            0
+          ],
+          "size": [
+            0.625,
+            0.625
+          ]
+        },
+        "guideWalls": [
+          {
+            "center": [
+              0,
+              -0.4075
+            ],
+            "size": [
+              0.9,
+              0.07
+            ]
+          },
+          {
+            "center": [
+              0,
+              0.4075
+            ],
+            "size": [
+              0.9,
+              0.07
+            ]
+          }
+        ],
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "slide_bar_4",
+        "kind": "stick",
+        "transformId": "ed26",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": 1,
+        "color": [
+          0.196,
+          0.686,
+          0.867,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": [
+          [
+            0,
+            0
+          ],
+          [
+            2.9,
+            0
+          ],
+          [
+            2.9,
+            -1.1
+          ]
+        ],
+        "localSlideAxis": [
+          1,
+          0
+        ],
+        "cornerRadius": 0.5,
+        "lockDirectionType": 0,
+        "colliderHalfWidth": 0.25,
+        "colliderEndInset": 0.5,
+        "colliderPoints": [
+          [
+            0.5,
+            0.25
+          ],
+          [
+            0.7375,
+            0.25
+          ],
+          [
+            0.975,
+            0.25
+          ],
+          [
+            1.2125,
+            0.25
+          ],
+          [
+            1.45,
+            0.25
+          ],
+          [
+            1.6875,
+            0.25
+          ],
+          [
+            1.925,
+            0.25
+          ],
+          [
+            2.1625,
+            0.25
+          ],
+          [
+            2.422101,
+            0.24902118
+          ],
+          [
+            2.6870126,
+            0.19290965
+          ],
+          [
+            2.93033,
+            0.030330086
+          ],
+          [
+            3.0929096,
+            -0.21298743
+          ],
+          [
+            3.1478936,
+            -0.46761573
+          ],
+          [
+            3.15,
+            -0.6
+          ],
+          [
+            3.13097,
+            -0.69567086
+          ],
+          [
+            3.0767767,
+            -0.7767767
+          ],
+          [
+            2.9956709,
+            -0.83096988
+          ],
+          [
+            2.9,
+            -0.85
+          ],
+          [
+            2.8043291,
+            -0.83096988
+          ],
+          [
+            2.7232233,
+            -0.7767767
+          ],
+          [
+            2.6690301,
+            -0.69567086
+          ],
+          [
+            2.65,
+            -0.6
+          ],
+          [
+            2.6521064,
+            -0.5323843
+          ],
+          [
+            2.63097,
+            -0.40432914
+          ],
+          [
+            2.5767767,
+            -0.3232233
+          ],
+          [
+            2.4956709,
+            -0.26903012
+          ],
+          [
+            2.3778991,
+            -0.24902118
+          ],
+          [
+            2.1625,
+            -0.25
+          ],
+          [
+            1.925,
+            -0.25
+          ],
+          [
+            1.6875,
+            -0.25
+          ],
+          [
+            1.45,
+            -0.25
+          ],
+          [
+            1.2125,
+            -0.25
+          ],
+          [
+            0.975,
+            -0.25
+          ],
+          [
+            0.7375,
+            -0.25
+          ],
+          [
+            0.5,
+            -0.25
+          ],
+          [
+            0.40432914,
+            -0.23096988
+          ],
+          [
+            0.3232233,
+            -0.176776695
+          ],
+          [
+            0.26903012,
+            -0.09567086
+          ],
+          [
+            0.25,
+            -3.061617e-17
+          ],
+          [
+            0.26903012,
+            0.09567086
+          ],
+          [
+            0.3232233,
+            0.176776695
+          ],
+          [
+            0.40432914,
+            0.23096988
+          ]
+        ],
+        "dragAreaPoints": [
+          [
+            0.2,
+            0.475
+          ],
+          [
+            0.44444444,
+            0.475
+          ],
+          [
+            0.6888889,
+            0.475
+          ],
+          [
+            0.93333333,
+            0.475
+          ],
+          [
+            1.1777778,
+            0.475
+          ],
+          [
+            1.4222222,
+            0.475
+          ],
+          [
+            1.66666667,
+            0.475
+          ],
+          [
+            1.9111111,
+            0.475
+          ],
+          [
+            2.1555556,
+            0.475
+          ],
+          [
+            2.4413277,
+            0.4731987
+          ],
+          [
+            2.7731163,
+            0.400782544
+          ],
+          [
+            3.0894291,
+            0.1894291
+          ],
+          [
+            3.3007825,
+            -0.12688365
+          ],
+          [
+            3.3727694,
+            -0.45402046
+          ],
+          [
+            3.375,
+            -0.7
+          ],
+          [
+            3.375,
+            -0.9
+          ],
+          [
+            3.3388428,
+            -1.0817746
+          ],
+          [
+            3.2358757,
+            -1.2358757
+          ],
+          [
+            3.0817746,
+            -1.3388428
+          ],
+          [
+            2.9,
+            -1.375
+          ],
+          [
+            2.7182254,
+            -1.3388428
+          ],
+          [
+            2.5641243,
+            -1.2358757
+          ],
+          [
+            2.46115722,
+            -1.0817746
+          ],
+          [
+            2.425,
+            -0.9
+          ],
+          [
+            2.425,
+            -0.7
+          ],
+          [
+            2.4272306,
+            -0.54597954
+          ],
+          [
+            2.423097,
+            -0.49043291
+          ],
+          [
+            2.4176777,
+            -0.48232233
+          ],
+          [
+            2.409567,
+            -0.47690301
+          ],
+          [
+            2.3586723,
+            -0.4731987
+          ],
+          [
+            2.1555556,
+            -0.475
+          ],
+          [
+            1.9111111,
+            -0.475
+          ],
+          [
+            1.66666667,
+            -0.475
+          ],
+          [
+            1.4222222,
+            -0.475
+          ],
+          [
+            1.1777778,
+            -0.475
+          ],
+          [
+            0.93333333,
+            -0.475
+          ],
+          [
+            0.6888889,
+            -0.475
+          ],
+          [
+            0.44444444,
+            -0.475
+          ],
+          [
+            0.2,
+            -0.475
+          ],
+          [
+            0.01822537,
+            -0.43884278
+          ],
+          [
+            -0.13587572,
+            -0.33587572
+          ],
+          [
+            -0.23884278,
+            -0.18177463
+          ],
+          [
+            -0.275,
+            -5.817072e-17
+          ],
+          [
+            -0.23884278,
+            0.18177463
+          ],
+          [
+            -0.13587572,
+            0.33587572
+          ],
+          [
+            0.01822537,
+            0.43884278
+          ]
+        ],
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "guide_2",
+        "kind": "guide",
+        "transformId": "ed27",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": null,
+        "color": null,
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": {
+          "center": [
+            0,
+            0
+          ],
+          "size": [
+            0.625,
+            0.625
+          ]
+        },
+        "guideWalls": [
+          {
+            "center": [
+              0,
+              -0.4075
+            ],
+            "size": [
+              0.9,
+              0.07
+            ]
+          },
+          {
+            "center": [
+              0,
+              0.4075
+            ],
+            "size": [
+              0.9,
+              0.07
+            ]
+          }
+        ],
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "slide_bar_5",
+        "kind": "stick",
+        "transformId": "ed28",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": 1,
+        "color": [
+          0.137,
+          0.643,
+          0.408,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": [
+          [
+            0,
+            0
+          ],
+          [
+            -3.8,
+            0
+          ],
+          [
+            -3.8,
+            -1.3
+          ]
+        ],
+        "localSlideAxis": [
+          1,
+          0
+        ],
+        "cornerRadius": 0.5,
+        "lockDirectionType": 0,
+        "colliderHalfWidth": 0.25,
+        "colliderEndInset": 0.5,
+        "colliderPoints": [
+          [
+            -0.5,
+            -0.25
+          ],
+          [
+            -0.73333333,
+            -0.25
+          ],
+          [
+            -0.966666667,
+            -0.25
+          ],
+          [
+            -1.2,
+            -0.25
+          ],
+          [
+            -1.4333333,
+            -0.25
+          ],
+          [
+            -1.66666667,
+            -0.25
+          ],
+          [
+            -1.9,
+            -0.25
+          ],
+          [
+            -2.13333333,
+            -0.25
+          ],
+          [
+            -2.36666667,
+            -0.25
+          ],
+          [
+            -2.6,
+            -0.25
+          ],
+          [
+            -2.8333333,
+            -0.25
+          ],
+          [
+            -3.0666667,
+            -0.25
+          ],
+          [
+            -3.277684,
+            -0.249002
+          ],
+          [
+            -3.395671,
+            -0.26903012
+          ],
+          [
+            -3.4767767,
+            -0.3232233
+          ],
+          [
+            -3.5309699,
+            -0.40432914
+          ],
+          [
+            -3.5515397,
+            -0.52770378
+          ],
+          [
+            -3.55,
+            -0.65
+          ],
+          [
+            -3.55,
+            -0.8
+          ],
+          [
+            -3.56903,
+            -0.89567086
+          ],
+          [
+            -3.6232233,
+            -0.9767767
+          ],
+          [
+            -3.70432914,
+            -1.0309699
+          ],
+          [
+            -3.8,
+            -1.05
+          ],
+          [
+            -3.895671,
+            -1.0309699
+          ],
+          [
+            -3.9767767,
+            -0.9767767
+          ],
+          [
+            -4.03097,
+            -0.89567086
+          ],
+          [
+            -4.05,
+            -0.8
+          ],
+          [
+            -4.05,
+            -0.65
+          ],
+          [
+            -4.0484603,
+            -0.4722962
+          ],
+          [
+            -3.9929096,
+            -0.21298743
+          ],
+          [
+            -3.8303301,
+            0.030330086
+          ],
+          [
+            -3.5870126,
+            0.19290965
+          ],
+          [
+            -3.3223161,
+            0.249002
+          ],
+          [
+            -3.0666667,
+            0.25
+          ],
+          [
+            -2.8333333,
+            0.25
+          ],
+          [
+            -2.6,
+            0.25
+          ],
+          [
+            -2.36666667,
+            0.25
+          ],
+          [
+            -2.13333333,
+            0.25
+          ],
+          [
+            -1.9,
+            0.25
+          ],
+          [
+            -1.66666667,
+            0.25
+          ],
+          [
+            -1.4333333,
+            0.25
+          ],
+          [
+            -1.2,
+            0.25
+          ],
+          [
+            -0.966666667,
+            0.25
+          ],
+          [
+            -0.73333333,
+            0.25
+          ],
+          [
+            -0.5,
+            0.25
+          ],
+          [
+            -0.40432914,
+            0.23096988
+          ],
+          [
+            -0.3232233,
+            0.176776695
+          ],
+          [
+            -0.26903012,
+            0.09567086
+          ],
+          [
+            -0.25,
+            0
+          ],
+          [
+            -0.26903012,
+            -0.09567086
+          ],
+          [
+            -0.3232233,
+            -0.176776695
+          ],
+          [
+            -0.40432914,
+            -0.23096988
+          ]
+        ],
+        "dragAreaPoints": [
+          [
+            -0.2,
+            -0.475
+          ],
+          [
+            -0.43846154,
+            -0.475
+          ],
+          [
+            -0.6769231,
+            -0.475
+          ],
+          [
+            -0.9153846,
+            -0.475
+          ],
+          [
+            -1.1538462,
+            -0.475
+          ],
+          [
+            -1.39230769,
+            -0.475
+          ],
+          [
+            -1.6307692,
+            -0.475
+          ],
+          [
+            -1.8692308,
+            -0.475
+          ],
+          [
+            -2.1076923,
+            -0.475
+          ],
+          [
+            -2.3461538,
+            -0.475
+          ],
+          [
+            -2.5846154,
+            -0.475
+          ],
+          [
+            -2.823077,
+            -0.475
+          ],
+          [
+            -3.0615385,
+            -0.475
+          ],
+          [
+            -3.2581014,
+            -0.4731485
+          ],
+          [
+            -3.309567,
+            -0.47690301
+          ],
+          [
+            -3.3176777,
+            -0.48232233
+          ],
+          [
+            -3.323097,
+            -0.49043291
+          ],
+          [
+            -3.3272306,
+            -0.54597954
+          ],
+          [
+            -3.325,
+            -0.7
+          ],
+          [
+            -3.325,
+            -0.9
+          ],
+          [
+            -3.325,
+            -1.1
+          ],
+          [
+            -3.3611572,
+            -1.2817746
+          ],
+          [
+            -3.4641243,
+            -1.43587572
+          ],
+          [
+            -3.6182254,
+            -1.5388428
+          ],
+          [
+            -3.8,
+            -1.575
+          ],
+          [
+            -3.9817746,
+            -1.5388428
+          ],
+          [
+            -4.1358757,
+            -1.43587572
+          ],
+          [
+            -4.238843,
+            -1.2817746
+          ],
+          [
+            -4.275,
+            -1.1
+          ],
+          [
+            -4.275,
+            -0.9
+          ],
+          [
+            -4.275,
+            -0.7
+          ],
+          [
+            -4.2727694,
+            -0.45402046
+          ],
+          [
+            -4.200783,
+            -0.12688365
+          ],
+          [
+            -3.989429,
+            0.1894291
+          ],
+          [
+            -3.67311635,
+            0.400782544
+          ],
+          [
+            -3.3418986,
+            0.4731485
+          ],
+          [
+            -3.0615385,
+            0.475
+          ],
+          [
+            -2.823077,
+            0.475
+          ],
+          [
+            -2.5846154,
+            0.475
+          ],
+          [
+            -2.3461538,
+            0.475
+          ],
+          [
+            -2.1076923,
+            0.475
+          ],
+          [
+            -1.8692308,
+            0.475
+          ],
+          [
+            -1.6307692,
+            0.475
+          ],
+          [
+            -1.39230769,
+            0.475
+          ],
+          [
+            -1.1538462,
+            0.475
+          ],
+          [
+            -0.9153846,
+            0.475
+          ],
+          [
+            -0.6769231,
+            0.475
+          ],
+          [
+            -0.43846154,
+            0.475
+          ],
+          [
+            -0.2,
+            0.475
+          ],
+          [
+            -0.01822537,
+            0.43884278
+          ],
+          [
+            0.13587572,
+            0.33587572
+          ],
+          [
+            0.23884278,
+            0.18177463
+          ],
+          [
+            0.275,
+            0
+          ],
+          [
+            0.23884278,
+            -0.18177463
+          ],
+          [
+            0.13587572,
+            -0.33587572
+          ],
+          [
+            -0.01822537,
+            -0.43884278
+          ]
+        ],
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "guide_3",
+        "kind": "guide",
+        "transformId": "ed29",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": null,
+        "color": null,
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": {
+          "center": [
+            0,
+            0
+          ],
+          "size": [
+            0.625,
+            0.625
+          ]
+        },
+        "guideWalls": [
+          {
+            "center": [
+              0,
+              -0.4075
+            ],
+            "size": [
+              0.9,
+              0.07
+            ]
+          },
+          {
+            "center": [
+              0,
+              0.4075
+            ],
+            "size": [
+              0.9,
+              0.07
+            ]
+          }
+        ],
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "slide_bar_6",
+        "kind": "stick",
+        "transformId": "ed30",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": 1,
+        "color": [
+          0.867,
+          0.263,
+          0.243,
+          1
+        ],
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": [
+          [
+            -1.4,
+            0
+          ],
+          [
+            1.4,
+            0
+          ],
+          [
+            1.4,
+            1.3
+          ]
+        ],
+        "localSlideAxis": [
+          1,
+          0
+        ],
+        "cornerRadius": 0.5,
+        "lockDirectionType": 0,
+        "colliderHalfWidth": 0.25,
+        "colliderEndInset": 0.5,
+        "colliderPoints": [
+          [
+            -0.9,
+            0.25
+          ],
+          [
+            -0.675,
+            0.25
+          ],
+          [
+            -0.45,
+            0.25
+          ],
+          [
+            -0.225,
+            0.25
+          ],
+          [
+            0,
+            0.25
+          ],
+          [
+            0.225,
+            0.25
+          ],
+          [
+            0.45,
+            0.25
+          ],
+          [
+            0.675,
+            0.25
+          ],
+          [
+            0.87724094,
+            0.2489619
+          ],
+          [
+            0.99567086,
+            0.26903012
+          ],
+          [
+            1.0767767,
+            0.3232233
+          ],
+          [
+            1.1309699,
+            0.40432914
+          ],
+          [
+            1.1515397,
+            0.52770378
+          ],
+          [
+            1.15,
+            0.65
+          ],
+          [
+            1.15,
+            0.8
+          ],
+          [
+            1.1690301,
+            0.89567086
+          ],
+          [
+            1.2232233,
+            0.9767767
+          ],
+          [
+            1.3043291,
+            1.0309699
+          ],
+          [
+            1.4,
+            1.05
+          ],
+          [
+            1.4956709,
+            1.0309699
+          ],
+          [
+            1.5767767,
+            0.9767767
+          ],
+          [
+            1.6309699,
+            0.89567086
+          ],
+          [
+            1.65,
+            0.8
+          ],
+          [
+            1.65,
+            0.65
+          ],
+          [
+            1.6484603,
+            0.4722962
+          ],
+          [
+            1.59290965,
+            0.21298743
+          ],
+          [
+            1.43033,
+            -0.030330086
+          ],
+          [
+            1.1870126,
+            -0.19290965
+          ],
+          [
+            0.92275906,
+            -0.2489619
+          ],
+          [
+            0.675,
+            -0.25
+          ],
+          [
+            0.45,
+            -0.25
+          ],
+          [
+            0.225,
+            -0.25
+          ],
+          [
+            0,
+            -0.25
+          ],
+          [
+            -0.225,
+            -0.25
+          ],
+          [
+            -0.45,
+            -0.25
+          ],
+          [
+            -0.675,
+            -0.25
+          ],
+          [
+            -0.9,
+            -0.25
+          ],
+          [
+            -0.99567086,
+            -0.23096988
+          ],
+          [
+            -1.0767767,
+            -0.176776695
+          ],
+          [
+            -1.1309699,
+            -0.09567086
+          ],
+          [
+            -1.15,
+            -3.061617e-17
+          ],
+          [
+            -1.1309699,
+            0.09567086
+          ],
+          [
+            -1.0767767,
+            0.176776695
+          ],
+          [
+            -0.99567086,
+            0.23096988
+          ]
+        ],
+        "dragAreaPoints": [
+          [
+            -1.2,
+            0.475
+          ],
+          [
+            -0.966666667,
+            0.475
+          ],
+          [
+            -0.73333333,
+            0.475
+          ],
+          [
+            -0.5,
+            0.475
+          ],
+          [
+            -0.26666667,
+            0.475
+          ],
+          [
+            -0.0333333333,
+            0.475
+          ],
+          [
+            0.2,
+            0.475
+          ],
+          [
+            0.43333333,
+            0.475
+          ],
+          [
+            0.6666667,
+            0.475
+          ],
+          [
+            0.8575995,
+            0.4731038
+          ],
+          [
+            0.909567086,
+            0.47690301
+          ],
+          [
+            0.91767767,
+            0.48232233
+          ],
+          [
+            0.923097,
+            0.49043291
+          ],
+          [
+            0.9272306,
+            0.54597954
+          ],
+          [
+            0.925,
+            0.7
+          ],
+          [
+            0.925,
+            0.9
+          ],
+          [
+            0.925,
+            1.1
+          ],
+          [
+            0.9611572,
+            1.2817746
+          ],
+          [
+            1.06412428,
+            1.43587572
+          ],
+          [
+            1.2182254,
+            1.5388428
+          ],
+          [
+            1.4,
+            1.575
+          ],
+          [
+            1.5817746,
+            1.5388428
+          ],
+          [
+            1.7358757,
+            1.43587572
+          ],
+          [
+            1.8388428,
+            1.2817746
+          ],
+          [
+            1.875,
+            1.1
+          ],
+          [
+            1.875,
+            0.9
+          ],
+          [
+            1.875,
+            0.7
+          ],
+          [
+            1.8727694,
+            0.45402046
+          ],
+          [
+            1.80078254,
+            0.12688365
+          ],
+          [
+            1.5894291,
+            -0.1894291
+          ],
+          [
+            1.2731163,
+            -0.400782544
+          ],
+          [
+            0.9424005,
+            -0.4731038
+          ],
+          [
+            0.6666667,
+            -0.475
+          ],
+          [
+            0.43333333,
+            -0.475
+          ],
+          [
+            0.2,
+            -0.475
+          ],
+          [
+            -0.0333333333,
+            -0.475
+          ],
+          [
+            -0.26666667,
+            -0.475
+          ],
+          [
+            -0.5,
+            -0.475
+          ],
+          [
+            -0.73333333,
+            -0.475
+          ],
+          [
+            -0.966666667,
+            -0.475
+          ],
+          [
+            -1.2,
+            -0.475
+          ],
+          [
+            -1.38177463,
+            -0.43884278
+          ],
+          [
+            -1.5358757,
+            -0.33587572
+          ],
+          [
+            -1.6388428,
+            -0.18177463
+          ],
+          [
+            -1.675,
+            -5.817072e-17
+          ],
+          [
+            -1.6388428,
+            0.18177463
+          ],
+          [
+            -1.5358757,
+            0.33587572
+          ],
+          [
+            -1.38177463,
+            0.43884278
+          ]
+        ],
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": null,
+        "bombRadius": null,
+        "bombOffset": null,
+        "sourcePartData": null,
+        "sourceAttachments": null
+      },
+      {
+        "partId": "bomb_1",
+        "kind": "bomb",
+        "transformId": "ed31",
+        "logicGapDegrees": null,
+        "meshGapDegrees": null,
+        "meshGapDirection": null,
+        "radius": null,
+        "width": null,
+        "color": null,
+        "lockCount": 0,
+        "hasBomb": false,
+        "pins": null,
+        "stopPins": null,
+        "colliderInnerRadius": null,
+        "colliderOuterRadius": null,
+        "dragAreaInnerRadius": null,
+        "dragAreaOuterRadius": null,
+        "dragAreaPaths": null,
+        "pathPoints": null,
+        "localSlideAxis": null,
+        "cornerRadius": null,
+        "lockDirectionType": null,
+        "colliderHalfWidth": null,
+        "colliderEndInset": null,
+        "colliderPoints": null,
+        "dragAreaPoints": null,
+        "guideTrigger": null,
+        "guideWalls": null,
+        "hostPartId": "slide_bar_3",
+        "bombRadius": 0.75,
+        "bombOffset": [
+          0,
+          0
+        ],
+        "sourcePartData": null,
+        "sourceAttachments": null
+      }
+    ],
+    "links": [
+      {
+        "sourcePartId": "ring_2",
+        "sourceFeatureId": "attachment.pin_1",
+        "targetPartId": "ring_5",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_2",
+        "sourceFeatureId": "attachment.pin_2",
+        "targetPartId": "slide_bar_1",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_3",
+        "sourceFeatureId": "attachment.pin_3",
+        "targetPartId": "slide_bar_2",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_3",
+        "sourceFeatureId": "attachment.pin_4",
+        "targetPartId": "ring_6",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_4",
+        "sourceFeatureId": "attachment.pin_5",
+        "targetPartId": "ring_1",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_4",
+        "sourceFeatureId": "attachment.pin_6",
+        "targetPartId": "ring_5",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_4",
+        "sourceFeatureId": "attachment.pin_7",
+        "targetPartId": "slide_bar_6",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_6",
+        "sourceFeatureId": "attachment.pin_8",
+        "targetPartId": "ring_7",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_6",
+        "sourceFeatureId": "attachment.pin_9",
+        "targetPartId": "slide_bar_2",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_8",
+        "sourceFeatureId": "attachment.pin_10",
+        "targetPartId": "ring_7",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      }
+    ],
+    "guideLinks": [
+      {
+        "guidePartId": "guide_1",
+        "stickPartId": "slide_bar_3"
+      },
+      {
+        "guidePartId": "guide_2",
+        "stickPartId": "slide_bar_4"
+      },
+      {
+        "guidePartId": "guide_3",
+        "stickPartId": "slide_bar_5"
+      }
+    ]
+  },
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "A028 — Thanh hai nguồn và Bom mở receiver kín / TURP r05",
+    "author": "Codex / TURP continuation",
+    "notes": "Remake70012: bỏ R8/R10 rìa, dựng lại dọc; Bom chuyển từ receiver kín sang thanh riêng phía trên để mở R1 chung cho R3/R4. R3 và R6 cùng giữ thanh L S2 bằng hai pin song song khác cao độ, liên hệ phần trên và dưới; đo từng pin còn giữ ở pha trượt. R4 kín vẫn giữ R5 và L S6 sau khi R1 bị phá, chưa tự hoàn thành. R7 nhận cả R6/R9, thêm cửa L có ngàm qua khe, các nguồn cần quay lại khi mở đầu ra. Không Guide dư trên thanh nhận pin; thanh mới cardinal. Có Bom, không Booster/Xích, chưa GD duyệt. r02+ thay r01 về đề xuất: chuyển vòng lớn từ R4 sang receiver Bom R1 để không ép pin tối thiểu giữa hai vòng lớn; gập S6 lên tránh thân R9. Giữ nguyên r01 lỗi. r03 đưa Guide S4 ra xa góc gập để đủ ngàm, thay r02 về đề xuất. r04 thêm R3→R6 để R6 còn nhận pin khi đã mở R7 và S2, cần quay R6 thật qua cửa S4; nối vòng phụ thuộc giữa hai nguồn của thanh chung. Thay r03 về đề xuất, không ghi đè. r05 bỏ R3→R1 vì đối chứng r04 cho thấy pin này không tạo thay đổi trên tập prefix thực: R3 đã bị S2/R6 giữ, R1 vẫn nhận R4. Bom mở liên kết R4→R1; R4 tiếp tục bị giữ ở R5/S6. Thay r04 về đề xuất, giữ counterexample.",
+    "rings": [
+      {
+        "id": "R1",
+        "x": 3.25,
+        "y": 9.8,
+        "radius": 2.15,
+        "gapDir": 90,
+        "gap": 0,
+        "lockCount": 0,
+        "pins": [],
+        "color": "orange"
+      },
+      {
+        "id": "R2",
+        "x": 8.15,
+        "y": 9.8,
+        "radius": 1.75,
+        "gapDir": 180,
+        "gap": 90,
+        "lockCount": 0,
+        "pins": [
+          {
+            "id": "toR5",
+            "target": "R5",
+            "angle": 270,
+            "length": 0.75
+          },
+          {
+            "id": "rightBar",
+            "angle": 0,
+            "target": "S1"
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "id": "R3",
+        "x": -2.45,
+        "y": 9.8,
+        "radius": 1.75,
+        "gapDir": 90,
+        "gap": 90,
+        "lockCount": 0,
+        "pins": [
+          {
+            "id": "sharedLeftBar",
+            "angle": 180,
+            "target": "S2"
+          },
+          {
+            "id": "toR6",
+            "target": "R6",
+            "angle": 270,
+            "length": 1.15
+          }
+        ],
+        "color": "teal"
+      },
+      {
+        "id": "R4",
+        "x": 3.25,
+        "y": 4.9,
+        "radius": 1.75,
+        "gapDir": 90,
+        "gap": 0,
+        "lockCount": 0,
+        "pins": [
+          {
+            "id": "toR1",
+            "target": "R1",
+            "angle": 90,
+            "length": 0.75
+          },
+          {
+            "id": "toR5",
+            "target": "R5",
+            "angle": 0,
+            "length": 0.75
+          },
+          {
+            "id": "bottomBar",
+            "angle": 270,
+            "target": "S6",
+            "length": 1.6354
+          }
+        ],
+        "color": "purple"
+      },
+      {
+        "id": "R5",
+        "x": 8.15,
+        "y": 4.9,
+        "radius": 2.15,
+        "gapDir": 0,
+        "gap": 90,
+        "lockCount": 0,
+        "pins": [],
+        "color": "red"
+      },
+      {
+        "id": "R6",
+        "x": -2.45,
+        "y": 4.9,
+        "radius": 1.75,
+        "gapDir": 0,
+        "gap": 90,
+        "lockCount": 0,
+        "pins": [
+          {
+            "id": "toR7",
+            "target": "R7",
+            "angle": 270,
+            "length": 1.15
+          },
+          {
+            "id": "sharedLeftBar",
+            "angle": 180,
+            "target": "S2"
+          }
+        ],
+        "color": "navy"
+      },
+      {
+        "id": "R7",
+        "x": -2.45,
+        "y": 0,
+        "radius": 1.75,
+        "gapDir": 180,
+        "gap": 90,
+        "lockCount": 0,
+        "pins": [],
+        "color": "purple"
+      },
+      {
+        "id": "R9",
+        "x": 3.25,
+        "y": -1.5,
+        "radius": 1.75,
+        "gapDir": 0,
+        "gap": 90,
+        "lockCount": 0,
+        "pins": [
+          {
+            "id": "toR7",
+            "target": "R7",
+            "angle": 165.25644,
+            "length": 2.144065
+          }
+        ],
+        "color": "green"
+      }
+    ],
+    "sticks": [
+      {
+        "id": "S1",
+        "x": 10.9854,
+        "y": 9.8,
+        "angle": 0,
+        "path": [
+          [
+            0,
+            -1.4
+          ],
+          [
+            0,
+            1.4
+          ],
+          [
+            1.3,
+            1.4
+          ]
+        ],
+        "slideAxis": [
+          0,
+          1
+        ],
+        "color": "blue"
+      },
+      {
+        "id": "S2",
+        "x": -5.2854,
+        "y": 4.9,
+        "angle": 0,
+        "path": [
+          [
+            0,
+            -0.9
+          ],
+          [
+            0,
+            6.3
+          ],
+          [
+            -1.3,
+            6.3
+          ]
+        ],
+        "slideAxis": [
+          0,
+          1
+        ],
+        "color": "orange"
+      },
+      {
+        "id": "S3",
+        "x": 3.25,
+        "y": 15.3,
+        "angle": 0,
+        "path": [
+          [
+            0,
+            -2.6
+          ],
+          [
+            0,
+            2.6
+          ]
+        ],
+        "slideAxis": [
+          0,
+          1
+        ],
+        "guides": [
+          {
+            "x": 3.25,
+            "y": 15.8,
+            "angle": 90
+          }
+        ],
+        "bomb": {
+          "x": 3.25,
+          "y": 13.2167
+        },
+        "color": "navy"
+      },
+      {
+        "id": "S4",
+        "x": -2.45,
+        "y": 4.9,
+        "angle": 0,
+        "path": [
+          [
+            0,
+            0
+          ],
+          [
+            2.9,
+            0
+          ],
+          [
+            2.9,
+            -1.1
+          ]
+        ],
+        "slideAxis": [
+          1,
+          0
+        ],
+        "guides": [
+          {
+            "x": -0.5,
+            "y": 4.9,
+            "angle": 0
+          }
+        ],
+        "color": "blue"
+      },
+      {
+        "id": "S5",
+        "x": -2.45,
+        "y": 0,
+        "angle": 0,
+        "path": [
+          [
+            0,
+            0
+          ],
+          [
+            -3.8,
+            0
+          ],
+          [
+            -3.8,
+            -1.3
+          ]
+        ],
+        "slideAxis": [
+          1,
+          0
+        ],
+        "guides": [
+          {
+            "x": -5.1,
+            "y": 0,
+            "angle": 0
+          }
+        ],
+        "color": "teal"
+      },
+      {
+        "id": "S6",
+        "x": 3.25,
+        "y": 1.2646,
+        "angle": 0,
+        "path": [
+          [
+            -1.4,
+            0
+          ],
+          [
+            1.4,
+            0
+          ],
+          [
+            1.4,
+            1.3
+          ]
+        ],
+        "slideAxis": [
+          1,
+          0
+        ],
+        "color": "red"
+      }
+    ]
+  },
+  "proof": null,
+  "analysis": {
+    "warnings": [],
+    "info": {
+      "rings": 8,
+      "sticks": 6,
+      "guides": 3,
+      "bombs": 1,
+      "links": 10,
+      "pins": 10,
+      "stops": 0,
+      "closedRings": 2
+    }
+  }
+}

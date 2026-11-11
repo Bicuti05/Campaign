@@ -1,0 +1,1363 @@
+{
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "BSG-01 research | Khuỷu L, ngàm còn chặn và hai cửa dùng chung",
+    "author": "Codex + GD / research",
+    "notes": "Tổ hợp L default có pin/Guide ở các đoạn giữ khác nhau, H default dưới khuỷu có pin riêng R. Ngàm L đã mất binding vẫn còn geometry vì pin A còn giữ L; H phải chọn dọn J bên trái hoặc dọn L/nguồn A bên phải. A đồng thời giữ L và cửa AT, C giữ A cho lượt quay thực; AT nhận A/D, R nhận K sau khi H nhả. Không Guide dư trên H, không nửa ngàm, chốt/Bom/Chain/Booster.9Ring radius1,75 +2Stick default (L/H); cần proof riêng các đường/guide/elbow/retention, không dùng số mảnh hoặc drag làm độ khó. Chưa bàn giao.",
+    "rings": [
+      {
+        "id": "J",
+        "x": -4.9854,
+        "y": -0.1,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "sky",
+        "pins": []
+      },
+      {
+        "id": "K",
+        "x": -4.9854,
+        "y": -4.6854,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "red",
+        "pins": [
+          {
+            "angle": 90,
+            "target": "J"
+          },
+          {
+            "angle": 0,
+            "target": "R"
+          }
+        ]
+      },
+      {
+        "id": "R",
+        "x": -0.4,
+        "y": -4.6854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "purple",
+        "pins": [
+          {
+            "angle": 90,
+            "target": "H"
+          }
+        ]
+      },
+      {
+        "id": "A",
+        "x": 5.543733254999999,
+        "y": -0.1,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 180,
+            "target": "L"
+          },
+          {
+            "angle": 90,
+            "target": "AT"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "x": 5.543733254999999,
+        "y": -4.6854,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "green",
+        "pins": [
+          {
+            "angle": 90,
+            "target": "A"
+          }
+        ]
+      },
+      {
+        "id": "AT",
+        "x": 5.543733254999999,
+        "y": 4.4854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 90,
+        "color": "teal",
+        "pins": []
+      },
+      {
+        "id": "D",
+        "x": 0.9583332549999994,
+        "y": 4.4854,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "purple",
+        "pins": [
+          {
+            "angle": 0,
+            "target": "AT"
+          },
+          {
+            "angle": 90,
+            "target": "DT"
+          },
+          {
+            "angle": 180,
+            "target": "DL"
+          }
+        ]
+      },
+      {
+        "id": "DT",
+        "x": 0.9583332549999994,
+        "y": 9.0708,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 90,
+        "color": "blue",
+        "pins": []
+      },
+      {
+        "id": "DL",
+        "x": -3.6270667450000005,
+        "y": 4.4854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "navy",
+        "pins": []
+      }
+    ],
+    "sticks": [
+      {
+        "id": "L",
+        "shape": "L",
+        "x": 0,
+        "y": 0,
+        "angle": 0,
+        "color": "green",
+        "guides": [
+          {
+            "x": 2.708333255,
+            "y": -1.85,
+            "angle": 90
+          }
+        ]
+      },
+      {
+        "id": "H",
+        "shape": "straight",
+        "x": -0.4,
+        "y": -1.85,
+        "angle": 0,
+        "color": "red"
+      }
+    ]
+  },
+  "geometry": {
+    "ok": false,
+    "analysis": {
+      "error": null,
+      "warnings": [
+        {
+          "code": "overlap",
+          "part": "ring_4",
+          "text": "R4 chồng lên vật khác lúc bắt đầu (độ xuyên 0.213)"
+        },
+        {
+          "code": "overlap",
+          "part": "slide_bar_1",
+          "text": "S1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.213)"
+        }
+      ],
+      "info": {
+        "rings": 9,
+        "sticks": 2,
+        "guides": 1,
+        "bombs": 0,
+        "links": 9,
+        "pins": 9,
+        "stops": 0,
+        "closedRings": 3
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "R",
+        "target": "H",
+        "margin": 45
+      },
+      {
+        "owner": "A",
+        "target": "L",
+        "margin": 135
+      },
+      {
+        "owner": "A",
+        "target": "AT",
+        "margin": 45
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "walls": 2,
+        "engaged": true
+      }
+    ],
+    "bodyAccess": [
+      {
+        "label": "J",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "K",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "R",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "A",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "C",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "AT",
+        "visibleBodyPoints": 73
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "DT",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "DL",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "L",
+        "visibleBodyPoints": 32
+      },
+      {
+        "label": "H",
+        "visibleBodyPoints": 20
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "rightRoute": [
+    {
+      "part": "L",
+      "target": 3
+    },
+    {
+      "part": "AT",
+      "target": 270
+    },
+    {
+      "part": "A",
+      "target": -90
+    },
+    {
+      "part": "H",
+      "target": 4
+    },
+    {
+      "part": "J",
+      "target": 270
+    },
+    {
+      "part": "R",
+      "target": -180
+    },
+    {
+      "part": "DT",
+      "target": 270
+    },
+    {
+      "part": "DL",
+      "target": 0
+    },
+    {
+      "part": "AT",
+      "target": 180
+    }
+  ],
+  "right": {
+    "solved": false,
+    "remaining": 7,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "L",
+        "target": 3,
+        "pose": 0.025817871093750003,
+        "remaining": 11,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "AT",
+        "target": 270,
+        "pose": 236.25000000000088,
+        "remaining": 11,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "A",
+        "target": -90,
+        "locked": true,
+        "selectable": 82,
+        "began": false
+      },
+      {
+        "part": "H",
+        "target": 4,
+        "pose": 0.22749023437499993,
+        "remaining": 11,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "J",
+        "target": 270,
+        "pose": 258.75000000000017,
+        "remaining": 10,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ]
+      },
+      {
+        "part": "R",
+        "target": -180,
+        "locked": true,
+        "selectable": 82,
+        "began": false
+      },
+      {
+        "part": "DT",
+        "target": 270,
+        "pose": 258.75000000000006,
+        "remaining": 9,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_8"
+        ]
+      },
+      {
+        "part": "DL",
+        "target": 0,
+        "pose": 11.249999999999627,
+        "remaining": 8,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_9"
+        ]
+      },
+      {
+        "part": "AT",
+        "target": 180,
+        "pose": 194.06250000000048,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_7"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "bindings": [
+      true
+    ],
+    "guides": [
+      {
+        "active": true,
+        "engaged": true
+      }
+    ],
+    "poses": {
+      "J": {
+        "pose": 258.75000000000017,
+        "solved": true,
+        "locked": false
+      },
+      "K": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "R": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "A": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "C": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "AT": {
+        "pose": 194.06250000000048,
+        "solved": false,
+        "locked": false
+      },
+      "D": {
+        "pose": 0,
+        "solved": true,
+        "locked": false
+      },
+      "DT": {
+        "pose": 258.75000000000006,
+        "solved": true,
+        "locked": false
+      },
+      "DL": {
+        "pose": 11.249999999999627,
+        "solved": true,
+        "locked": false
+      },
+      "L": {
+        "pose": 0.025817871093750003,
+        "solved": false,
+        "locked": false
+      },
+      "H": {
+        "pose": 0.22749023437499993,
+        "solved": false,
+        "locked": false
+      }
+    }
+  },
+  "leftRoute": [
+    {
+      "part": "J",
+      "target": 270
+    },
+    {
+      "part": "H",
+      "target": -4
+    },
+    {
+      "part": "R",
+      "target": -180
+    },
+    {
+      "part": "L",
+      "target": 3
+    },
+    {
+      "part": "AT",
+      "target": 270
+    },
+    {
+      "part": "A",
+      "target": -90
+    },
+    {
+      "part": "DT",
+      "target": 270
+    },
+    {
+      "part": "DL",
+      "target": 0
+    },
+    {
+      "part": "AT",
+      "target": 180
+    }
+  ],
+  "left": {
+    "solved": false,
+    "remaining": 4,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "J",
+        "target": 270,
+        "pose": 258.75000000000017,
+        "remaining": 10,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ]
+      },
+      {
+        "part": "H",
+        "target": -4,
+        "pose": -4,
+        "remaining": 9,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_2"
+        ]
+      },
+      {
+        "part": "R",
+        "target": -180,
+        "pose": -168.7499999999984,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3",
+          "ring_2"
+        ]
+      },
+      {
+        "part": "L",
+        "target": 3,
+        "pose": 0.025817871093750003,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "AT",
+        "target": 270,
+        "pose": 236.25000000000088,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "A",
+        "target": -90,
+        "locked": true,
+        "selectable": 82,
+        "began": false
+      },
+      {
+        "part": "DT",
+        "target": 270,
+        "pose": 258.75000000000006,
+        "remaining": 6,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_8"
+        ]
+      },
+      {
+        "part": "DL",
+        "target": 0,
+        "pose": 11.249999999999627,
+        "remaining": 5,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_9"
+        ]
+      },
+      {
+        "part": "AT",
+        "target": 180,
+        "pose": 194.06250000000048,
+        "remaining": 4,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_7"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "bindings": [
+      true
+    ],
+    "guides": [
+      {
+        "active": true,
+        "engaged": true
+      }
+    ],
+    "poses": {
+      "J": {
+        "pose": 258.75000000000017,
+        "solved": true,
+        "locked": false
+      },
+      "K": {
+        "pose": 0,
+        "solved": true,
+        "locked": false
+      },
+      "R": {
+        "pose": -168.7499999999984,
+        "solved": true,
+        "locked": false
+      },
+      "A": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "C": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "AT": {
+        "pose": 194.06250000000048,
+        "solved": false,
+        "locked": false
+      },
+      "D": {
+        "pose": 0,
+        "solved": true,
+        "locked": false
+      },
+      "DT": {
+        "pose": 258.75000000000006,
+        "solved": true,
+        "locked": false
+      },
+      "DL": {
+        "pose": 11.249999999999627,
+        "solved": true,
+        "locked": false
+      },
+      "L": {
+        "pose": 0.025817871093750003,
+        "solved": false,
+        "locked": false
+      },
+      "H": {
+        "pose": -4,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "phases": [
+    {
+      "value": 0.3,
+      "data": {
+        "solved": false,
+        "remaining": 11,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "L",
+            "target": 0.3,
+            "pose": 0.025817871093750003,
+            "remaining": 11,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "J": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "K": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "R": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "C": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "DT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "DL": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "L": {
+            "pose": 0.025817871093750003,
+            "solved": false,
+            "locked": false
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    {
+      "value": 0.6,
+      "data": {
+        "solved": false,
+        "remaining": 11,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "L",
+            "target": 0.6,
+            "pose": 0.025817871093750003,
+            "remaining": 11,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "J": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "K": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "R": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "C": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "DT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "DL": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "L": {
+            "pose": 0.025817871093750003,
+            "solved": false,
+            "locked": false
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    {
+      "value": 1,
+      "data": {
+        "solved": false,
+        "remaining": 11,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "L",
+            "target": 1,
+            "pose": 0.025817871093750003,
+            "remaining": 11,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "J": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "K": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "R": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "C": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "DT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "DL": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "L": {
+            "pose": 0.025817871093750003,
+            "solved": false,
+            "locked": false
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    {
+      "value": 2,
+      "data": {
+        "solved": false,
+        "remaining": 11,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "L",
+            "target": 2,
+            "pose": 0.025817871093750003,
+            "remaining": 11,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "J": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "K": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "R": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "C": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "DT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "DL": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "L": {
+            "pose": 0.025817871093750003,
+            "solved": false,
+            "locked": false
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    {
+      "value": 3,
+      "data": {
+        "solved": false,
+        "remaining": 11,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "L",
+            "target": 3,
+            "pose": 0.025817871093750003,
+            "remaining": 11,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "J": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "K": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "R": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "C": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "DT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "DL": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "L": {
+            "pose": 0.025817871093750003,
+            "solved": false,
+            "locked": false
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    {
+      "value": -1,
+      "data": {
+        "solved": false,
+        "remaining": 11,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "L",
+            "target": -1,
+            "pose": -0.0207275390625,
+            "remaining": 11,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "J": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "K": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "R": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "C": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "DT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "DL": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "L": {
+            "pose": -0.0207275390625,
+            "solved": false,
+            "locked": false
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    {
+      "value": -3,
+      "data": {
+        "solved": false,
+        "remaining": 11,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "L",
+            "target": -3,
+            "pose": -0.0207275390625,
+            "remaining": 11,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "J": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "K": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "R": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "C": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "DT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "DL": {
+            "pose": 180,
+            "solved": false,
+            "locked": false
+          },
+          "L": {
+            "pose": -0.0207275390625,
+            "solved": false,
+            "locked": false
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    }
+  ]
+}

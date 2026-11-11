@@ -1,0 +1,124 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "B01-010 | Rút khung để mở nhánh trên",
+  "author": "Codex + GD / batch 01",
+  "notes": "Bộ 15 level đầu, vị trí đề xuất 10/15. U cản thanh ngang HU; HU giữ pin của L, L giữ T và T giữ R. Nhánh vòng bắt đầu sau khi thanh được mở đường. Rút U rồi trượt HU nhả pin L; ngàm giữ HU và vách cho tới khi HU rút đủ sâu, lúc đó pin của L mới có đường quay. N giữ T lại để cần quay về cửa trên sau khi dọn R. Các thanh tham gia cùng nhánh khóa. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. Có thể chọn rút U/HU sâu trước; không ép chia thao tác thành các bước cố định. Cản thân theo gesture, thao tác lặp có thể tăng xuyên trong Designer hiện tại.",
+  "rings": [
+    {
+      "id": "R",
+      "x": 4.6354,
+      "y": 3,
+      "gapDir": 0,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 4.6354,
+      "y": -1.5854,
+      "gapDir": 180,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 4.6354,
+      "y": 7.5854,
+      "gapDir": 0,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "x": 0.05,
+      "y": 7.5854,
+      "gapDir": 90,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "HU"
+        }
+      ]
+    },
+    {
+      "id": "N",
+      "x": 4.6354,
+      "y": 12.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 0,
+      "y": 0,
+      "length": 3.6,
+      "arm": 5.4,
+      "angle": 0,
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -1.8,
+          "y": 0.8,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "HU",
+      "shape": "straight",
+      "x": 0,
+      "y": 4.75,
+      "length": 3,
+      "angle": 0,
+      "color": "blue",
+      "guides": [
+        {
+          "x": -0.8,
+          "y": 4.75,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

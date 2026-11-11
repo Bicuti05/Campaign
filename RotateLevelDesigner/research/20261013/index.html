@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TURP — Nghiên cứu bố cục</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f0e6;color:#283b36;font:16px/1.5 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:28px}h1{font-size:28px;margin:0 0 8px}h2{font-size:20px;margin:20px 0 8px}p{margin:8px 0 16px}a{color:#17624e}header{margin-bottom:24px}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}button,select{font:inherit;padding:9px 12px;border:1px solid #b6c5b8;border-radius:7px;background:#fffdf8;color:#283b36}select{max-width:100%}button:disabled{opacity:.45}.columns{display:grid;grid-template-columns:minmax(300px,540px) minmax(260px,1fr);gap:28px}.columns>section{min-width:0}#board{max-width:540px;aspect-ratio:3/4;background:#fbf1e0}#board svg{display:block;width:100%;height:100%}.status{color:#17624e}.muted{color:#59665e}.refs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.refs img{max-width:100%;max-height:300px;object-fit:contain;display:block;background:#fbf1e0}.refs figure{margin:0}.refs figcaption{font-size:13px;overflow-wrap:anywhere}.panel{border-top:1px solid #bdc9bd;padding-top:12px}#steps li{margin:8px 0}#steps li.current{color:#a44f2c;font-weight:600}input[type=range]{width:100%}code{overflow-wrap:anywhere}details{margin:16px 0}footer{margin-top:24px;border-top:1px solid #bdc9bd;padding-top:12px}@media(max-width:750px){main{padding:16px}.columns{grid-template-columns:1fr}.refs img{max-height:250px}h1{font-size:24px}}
+</style></head>
+<body><main>
+<header><h1>Ba cấu trúc Ring–Stick để đánh giá</h1><p class="muted">Bản thử nghiệm nhỏ • 13/10/2026 • bố cục trong khung 3:4, cùng scale • chưa nghiệm thu thẩm mỹ/độ khó.</p>
+<label for="level">Chọn cấu trúc</label> <select id="level"></select></header>
+<div class="columns"><section aria-label="Board và phát lại"><div id="board"></div>
+<div class="toolbar"><button id="previous">← Lùi bước</button><button id="next">Bước tiếp →</button><button id="start">Ban đầu</button><label><input id="links" type="checkbox"> Liên kết cơ học</label></div>
+<label for="step" id="stepLabel">Trạng thái ban đầu</label><input id="step" type="range" min="0" max="0" value="0"><div id="state" aria-live="polite"></div>
+<p class="muted">Phát lại dùng probe giải tích và feel hiện tại. Kết quả Physics2D được kiểm riêng trong Unity Editor.</p></section>
+<section><h2 id="title"></h2><p id="idea"></p><p id="verification" class="status"></p><div class="toolbar"><a id="pack" download>Gói level</a><a id="design" download>File thiết kế</a><a href="../../index.html" target="_blank">Mở Designer để chơi thử</a></div>
+<p class="muted">Trong Designer: “Level của tôi” → chọn thư mục <code>Tools/RotateLevelDesigner/levels</code>. Ba file mới có tiền tố <code>study-20261013</code>.</p>
+<ol id="steps"></ol><div class="panel"><h2>Đối chứng</h2><div id="ablation"></div></div>
+<div class="panel"><h2>Quan hệ tham khảo</h2><p id="relations"></p><div id="refs" class="refs"></div><p class="muted">Ảnh nguồn giữ UI và scale riêng; đây là dẫn chứng định tính, chưa phải so sánh mù ở cùng scale.</p></div></section></div>
+<details><summary>Kiểm kê và giới hạn nghiên cứu</summary><p>59 ảnh gameplay, 5 ảnh mới được giữ riêng; 0 nhóm trùng chính xác. Review thủ công nhận diện 9 nhóm cùng bố cục/trạng thái, còn 49 nhóm hình tạm thời. Không ánh xạ thứ tự ảnh sang ID prefab/campaign.</p><p>9 ảnh có nhãn quan hệ định tính; chưa có tọa độ/graph cơ học gán nhãn từ screenshot. Không có gói baseline v0–v6 trong workspace; chưa kiểm định mô hình thẩm mỹ, độ khó hoặc chất lượng generator trên batch lớn.</p><p>Video 48,414 giây chưa đọc được hình bằng decoder hiện có; không dùng làm bằng chứng gameplay. Các level không có Chain/bom/Booster; chưa thử touch/thiết bị. 3 bản là ứng viên nghiên cứu, chưa phải release.</p><p><a href="reference-audit.json">Audit dữ liệu</a> · <a href="reference-annotations.json">Nhãn tham khảo</a> · <a href="poc-manifest.json">Ứng viên, lời giải và ablation</a> · <a href="unity-verification.json">Đối chứng Unity</a> · <a href="causal-probes.json">Probe hai hướng</a></p></details>
+<footer>Seed 131026 • Không thay campaign/save • Các lựa chọn bố cục là giả thuyết cần GD đánh giá.</footer>
+</main>
+<script src="../../rr-constants.js"></script><script src="../../core/rr-math.js"></script><script src="../../core/rr-world.js"></script><script src="../../core/rr-sim.js"></script><script src="../../core/rr-level.js"></script><script src="../../core/rr-solver.js"></script><script src="../../core/rr-render.js"></script><script src="review-data.js"></script>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);let chosen=0,step=0;
+const items=RR_REVIEW.items;
+items.forEach((item,i)=>{const o=document.createElement('option');o.value=i;o.textContent=item.pack.name;$('level').append(o);});
+function text(id,value){$(id).textContent=value;}
+function update(){
+ const item=items[chosen],p=item.pack,m=item.manifest,t=RR.Tuning.defaults(),s=new RR.Simulation(p.runtime,t);
+ for(const move of p.proof.moves.slice(0,step))RR.Solver.apply(s,{obj:s.indexOf(move.part),target:move.target});
+ $('board').innerHTML=RR.Render.render({world:s.world,level:p.runtime,view:m.view,labels:true,links:$('links').checked?s.snapshot().links:null,title:p.name});
+ text('title',p.name);text('idea',p.notes);text('stepLabel',step===0?'Trạng thái ban đầu':`Sau bước ${step} / ${p.proof.moves.length}`);
+ text('state',s.allSolved()?'Hoàn thành':`Còn ${s.remaining()} / ${s.objectCount()} vật có thể tháo`);
+ text('verification',item.unity.physicsFeelVerified?'Validate OK · Solver + replay JS OK · C# re-bake + Physics2D/feel OK':'Chưa xác minh Physics2D');
+ $('previous').disabled=step===0;$('next').disabled=step===p.proof.moves.length;$('step').max=p.proof.moves.length;$('step').value=step;
+ $('pack').href=item.deliveredPack;$('design').href=item.deliveredDesign;
+ $('steps').replaceChildren(...p.proof.route.map((move,i)=>{const li=document.createElement('li');li.className=i===step-1?'current':'';li.textContent=`${move.label}: ${move.kind==='stick'?'trượt':'xoay'} ${move.direction} đến ${move.to}${move.kind==='stick'?'':'°'} → còn ${move.remaining}`;return li;}));
+ $('ablation').replaceChildren(...m.ablations.map(a=>{const el=document.createElement('p');el.textContent=`Bỏ ${a.type==='guide'?'ngàm':'thanh'}: ${a.releaseSequenceChanged?'chuỗi tháo thay đổi':'chưa thấy khác biệt'} trong đối chứng JS. ${a.originalRouteStillFinishes?'Route cũ vẫn kết thúc được; vai trò được xét qua transition.':''}`;return el;}));
+ text('relations',m.reference_ids.join(', ')+' · '+m.visual_relations.join(' / '));
+ $('refs').replaceChildren(...item.references.map(r=>{const fig=document.createElement('figure'),im=document.createElement('img'),cap=document.createElement('figcaption');im.src=r.url;im.alt=r.id;cap.textContent=r.id+' · '+r.name;fig.append(im,cap);return fig;}));
+}
+$('level').onchange=()=>{chosen=+$('level').value;step=0;update();};$('step').oninput=()=>{step=+$('step').value;update();};$('next').onclick=()=>{step++;update();};$('previous').onclick=()=>{step--;update();};$('start').onclick=()=>{step=0;update();};$('links').onchange=update;update();
+window.RR_REVIEW_STATE=()=>({chosen,step,remaining:$('state').textContent});
+</script></body></html>

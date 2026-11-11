@@ -1,0 +1,89 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Chốt gắn cung thật — thanh vào bom ở tâm",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Revision V34: G/D đều radius1.75; G(2.6,1.4), D cách dưới4.5854. Khe G hướng phải0 độ, chốt180 độ dài0.7 gắn phần cung trái có vật liệu, chặn S xuống. C radius6.5 chứa bộ nguồn/nhận chuẩn; N ở X-3.6646 giữ pin180 vào C. Mở D dọn G/chốt; ngàm chuẩn giữ S qua thao tác đó; S xuống chạm bom đứng C rồi nhả N. Không Booster/Chain. Bản sửa năm Ring/Stick, chưa GD nghiệm thu bố cục/độ khó; radius lớn có mục đích chứa vòng chuẩn, không chốt ratio cứng. Đối chứng gesture lặp trong Designer có đường đánh bom trước bước dọn nguồn; đây là bản sửa size/chân gắn và route có lời giải, không chứng nhận thứ tự chuẩn bị bắt buộc hay độ khó.",
+  "rings": [
+    {
+      "id": "C",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 6.5,
+      "gap": 0,
+      "pins": [],
+      "bomb": {
+        "x": 0,
+        "y": 0,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "N",
+      "x": -3.6646,
+      "y": 0,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "C"
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "x": 2.6,
+      "y": 1.4,
+      "gapDir": 0,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 180,
+          "length": 0.7
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 2.6,
+      "y": -3.1854,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 0,
+      "y": 3,
+      "length": 2.6,
+      "angle": 90,
+      "color": "red",
+      "guides": [
+        {
+          "x": 0,
+          "y": 2.3,
+          "angle": 90
+        }
+      ]
+    }
+  ]
+}

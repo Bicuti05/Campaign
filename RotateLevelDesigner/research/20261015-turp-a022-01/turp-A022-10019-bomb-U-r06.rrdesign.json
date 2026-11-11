@@ -1,0 +1,361 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "A022 — Bom trên thanh L và cửa U trên / TURP r06",
+  "author": "Codex / TURP continuation",
+  "notes": "Remake10019: bố cục dọc9 vòng/6 thanh. S1 mang Bom ở đầu trái; kéo trái phá R3 kín, thay đổi vật cản và nhánh giữ receiver R5. R4 giữ pin dọc vào R6, liên hệ cửa giữa với ngàm S3 và receiver R5; bỏ pin R4→R3 không có chứng cứ vai trò trong các prefix thử. U S6 hai chân bằng nhau qua R1/R8, hai Guide có vai trò riêng. Route giao dùng Bom; hướng phải/đường không nổ phải kiểm và ghi đúng giới hạn. Không Booster/Chain; chưa GD duyệt.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "bombBar",
+          "angle": 270,
+          "target": "S1"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R2",
+      "x": 4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 315,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR4",
+          "angle": 193.76078511179125,
+          "length": 0.894799302251776,
+          "target": "R4"
+        },
+        {
+          "id": "toR8",
+          "angle": 90,
+          "length": 1.1500000000000004,
+          "target": "R8"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R3",
+      "x": -4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR5",
+          "angle": 270,
+          "length": 1.1500000000000004,
+          "target": "R5"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": 3.7,
+      "radius": 2.15,
+      "gapDir": 70,
+      "gap": 60,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR6",
+          "angle": 270,
+          "length": 4.450000000000001,
+          "target": "R6"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R5",
+      "x": -4.9,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "sideGate",
+          "angle": 0,
+          "target": "S2"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": -4.9,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR5",
+          "angle": 135,
+          "length": 3.1796464556281663,
+          "target": "R5"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R7",
+      "x": -4.9,
+      "y": 9.8,
+      "radius": 2.15,
+      "gapDir": 225,
+      "gap": 60,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "angle": 0,
+          "length": 0.7500000000000004,
+          "target": "R1"
+        },
+        {
+          "id": "toR9",
+          "angle": 90,
+          "length": 0.7500000000000004,
+          "target": "R9"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R8",
+      "x": 4.9,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R9",
+      "x": -4.9,
+      "y": 14.700000000000001,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "green"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 0,
+      "y": 6.964600000000001,
+      "angle": 0,
+      "path": [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1.2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "bomb": {
+        "x": -2.2,
+        "y": 6.964600000000001
+      },
+      "color": "orange"
+    },
+    {
+      "id": "S2",
+      "x": -2.0646000000000004,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0.6
+        ],
+        [
+          0,
+          -1.4
+        ],
+        [
+          1.3,
+          -1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S3",
+      "x": 0,
+      "y": -4.9,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          -1.3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 2.65,
+          "y": -4.9,
+          "angle": 0
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "S4",
+      "x": -4.9,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          -3.8,
+          0
+        ],
+        [
+          -3.8,
+          1.3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.550000000000001,
+          "y": 0,
+          "angle": 0
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "S5",
+      "x": -4.9,
+      "y": 14.700000000000001,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3.8
+        ],
+        [
+          -1.3,
+          3.8
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -4.9,
+          "y": 17.35,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "S6",
+      "x": 0,
+      "y": 13.4,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -4.2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4.9,
+          0
+        ],
+        [
+          4.9,
+          -4.2
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 12.4,
+          "angle": 90
+        },
+        {
+          "x": 4.9,
+          "y": 11.9,
+          "angle": 90
+        }
+      ],
+      "color": "red"
+    }
+  ]
+}

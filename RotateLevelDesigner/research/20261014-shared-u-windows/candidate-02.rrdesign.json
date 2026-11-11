@@ -1,0 +1,138 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SUW-02 | Hai cửa chung và ngàm giữ U sau nhả pin",
+  "author": "Codex + GD / research",
+  "notes": "Revision vị trí ngàm củaSUW01, giữ mọi kích thước: ngàm-.9 cách base đủ để tránh own-wall overlap; prototype ngàm-1.2 giữ research. U default mở input A/B cùng lúc, ngàm có thể giữ cả U qua release; C/D kín giữ A/B và cùng nhận cửa T lớn. T radius2,70833325 khớp span U default và vị trí hai cột;6 vòng khác1,75. T còn nhận E để có cửa quay lại sau các nguồn dưới. Không Bom/Stop/Chain/Booster; chưa đủ proof để giao.",
+  "rings": [
+    {
+      "id": "A",
+      "x": -5.543733254999999,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 5.543733254999999,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": -5.543733254999999,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "A"
+        },
+        {
+          "angle": 0,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 5.543733254999999,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "B"
+        },
+        {
+          "angle": 180,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 2.708333255,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "red",
+      "pins": []
+    },
+    {
+      "id": "E",
+      "x": 0,
+      "y": 10.129133255,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "ER"
+        }
+      ]
+    },
+    {
+      "id": "ER",
+      "x": 4.5854,
+      "y": 10.129133255,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 0,
+      "y": -1.8,
+      "angle": 0,
+      "color": "teal",
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 2.708333255,
+          "y": -0.9,
+          "angle": 90
+        }
+      ]
+    }
+  ]
+}

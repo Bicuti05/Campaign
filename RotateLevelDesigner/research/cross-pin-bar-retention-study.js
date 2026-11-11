@@ -1,0 +1,16 @@
+"use strict";
+const fs=require("fs"),path=require("path"),h=require("./ongoing-study.js");
+const {RR,P,D,OUT,clone,ring,pin,design,build,inspect,probe,replay}=h;
+function make(length=1.9,y=.45,otherY=1.1){return design("Pin sang vòng quay lại giữ thanh", "Thanh đứng nhận pin từ A và B, không thêm ngàm. Nâng thanh nhả pin chính của A, B giữ thanh; mở vòng trên để nhả pin còn lại của A. Khi A quay dời chốt, chính pin vốn khai báo sang vòng trên có thể chạm thanh và phục hồi link A–thanh theo scope Ring. Cần kiểm va chạm rắn, trạng thái input, vai trò từng chốt và đường giải cả analytic/feel trước khi xuất.",[
+ ring("C",0,-P,180,"orange",[pin(90,"A")]),
+ ring("A",0,0,180,"purple",[pin(0,"S"),pin(90,"R")],{stops:[{angle:45,length:2.5},{angle:345,length:1.75}]}),
+ ring("R",0,P,0,"green"),
+ ring("B",2*D,otherY,0,"blue",[pin(180,"S")])
+ ],[{id:"S",shape:"straight",x:D,y,length,angle:90,color:"red"}]);}
+function state(d,moves=[],feel=false){const b=build(d),s=feel?new RR.Simulation(b.level,RR.Tuning.defaults()):RR.Solver.newSim(b.level,false);for(const m of moves)RR.Solver.apply(s,{obj:s.indexOf(b.ids[m.part]),target:m.target});return {remaining:s.remaining(),solved:s.allSolved(),links:s.links.map((l,i)=>({source:s.idOf(l.source),target:s.idOf(l.target),pin:s.world.rings[l.source].pinFeatures[l.pin],active:s.graph.active[i]})),poses:Object.fromEntries(Object.entries(b.ids).filter(([,id])=>s.indexOf(id)>=0).map(([label,id])=>{const i=s.indexOf(id);return [label,{pose:s.isStick(i)?s.offsetOf(i):s.angleOf(i),solved:s.isSolved(i),locked:s.isMovementLocked(i)}];}))};}
+const d=make(),first=[{part:"S",target:.6}],prep=[...first,{part:"R",target:-90}],turn=[...prep,{part:"A",target:90}],pull=[...turn,{part:"S",target:3}],route=[...pull,{part:"A",target:270}];
+const noUpper=clone(d);noUpper.rings[1].stops.shift();const noLower=clone(d);noLower.rings[1].stops.pop();const noB=clone(d);noB.rings.pop();const noC=clone(d);noC.rings.shift();const noCrossPin=clone(d);noCrossPin.rings[1].pins.pop();noCrossPin.rings=noCrossPin.rings.filter(r=>r.id!=="R");
+const w={initial:state(d),first:state(d,first),prepared:state(d,prep),turned:state(d,turn),pulled:state(d,pull),trace:replay(d,route),feel:replay(d,route,false,true),initialBar:[-1,1].map(dir=>probe(d,"S",dir)),initialA:[-1,1].map(dir=>probe(d,"A",dir)),onlyBarA:[-1,1].map(dir=>probe(d,"A",dir,first)),onlyReceiverA:[-1,1].map(dir=>probe(d,"A",dir,[{part:"R",target:-90}])),preparedA:[-1,1].map(dir=>probe(d,"A",dir,prep)),afterTurnA:[-1,1].map(dir=>probe(d,"A",dir,turn)),afterTurnBar:[-1,1].map(dir=>probe(d,"S",dir,turn)),withoutUpper:[-1,1].map(dir=>probe(noUpper,"S",dir)),withoutLower:[-1,1].map(dir=>probe(noLower,"S",dir)),withoutB:state(noB,first),withoutC:state(noC,prep),withoutCrossPin:state(noCrossPin,[...first,{part:"A",target:90}]),turnFeel:state(d,turn,true)};
+const c={stem:"study-20261014-v38-cross-pin-bar-retention",design:d,authorMoves:route,inspection:inspect(d,false,6,1000),witness:w,holdout:true};
+if(require.main===module){fs.writeFileSync(path.join(OUT,"cross-pin-bar-retention-study.json"),JSON.stringify({format:"rotate-cross-pin-bar-retention-study",version:1,candidates:[c]},null,2));console.log(JSON.stringify({inspection:c.inspection,witness:w}));}
+module.exports={make,state,d,first,prep,turn,pull,route,c};

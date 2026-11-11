@@ -1,0 +1,455 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "331",
+  "name": "Level331 – Hai cá và rong",
+  "notes": "Dựng trực tiếp ảnh GD; cho phép thanh nghiêng riêng6màn. GD tự giải; no solve/proof:null. ID provisional; chưa Unity/GD approved.",
+  "rings": [
+    {
+      "id": "FishATop",
+      "x": -1.25,
+      "y": 1.575,
+      "radius": 6.8,
+      "gap": 240,
+      "gapDir": 270,
+      "pins": [
+        {
+          "id": "toFinATop",
+          "angle": 83.29016,
+          "length": 0.80611338,
+          "inner": false,
+          "targets": [
+            "FinATop"
+          ]
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "FishABottom",
+      "x": -1.25,
+      "y": 6.925,
+      "radius": 6.8,
+      "gap": 232,
+      "gapDir": 90,
+      "pins": [
+        {
+          "id": "toFinABottom",
+          "angle": -108.43495,
+          "length": 0.626429,
+          "inner": false,
+          "targets": [
+            "FinABottom"
+          ]
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "FishBTop",
+      "x": 3.875,
+      "y": -8.475,
+      "radius": 6.8,
+      "gap": 256,
+      "gapDir": 270,
+      "pins": [
+        {
+          "id": "toFinBTop",
+          "angle": 90,
+          "length": 0.8,
+          "targets": [
+            "FinBTop"
+          ]
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "FishBBottom",
+      "x": 3.875,
+      "y": -2.15,
+      "radius": 6.8,
+      "gap": 256,
+      "gapDir": 90,
+      "pins": [
+        {
+          "id": "toFinBBottom",
+          "angle": 270,
+          "length": 0.8,
+          "targets": [
+            "FinBBottom"
+          ]
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "EyeA",
+      "x": -4.875,
+      "y": 4.3,
+      "radius": 1.425,
+      "gap": 70,
+      "gapDir": 320,
+      "pins": [
+        {
+          "id": "toFishATop",
+          "angle": 143.06693,
+          "length": 0.58999724,
+          "inner": false,
+          "targets": [
+            "FishATop"
+          ]
+        }
+      ],
+      "bomb": {
+        "x": -4.875,
+        "y": 4.3,
+        "radius": 0.4
+      },
+      "color": "blue"
+    },
+    {
+      "id": "EyeB",
+      "x": 6.8,
+      "y": -5.25,
+      "radius": 1.425,
+      "gap": 70,
+      "gapDir": 220,
+      "pins": [
+        {
+          "id": "toFishBBottom",
+          "angle": -46.663725,
+          "length": 0.86288491,
+          "inner": false,
+          "targets": [
+            "FishBBottom"
+          ]
+        }
+      ],
+      "bomb": {
+        "x": 6.8,
+        "y": -5.25,
+        "radius": 0.4
+      },
+      "color": "blue"
+    },
+    {
+      "id": "Bubble1",
+      "x": -7.8,
+      "y": 13.975,
+      "radius": 1.125,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "id": "toBubble2",
+          "angle": -93.54868,
+          "length": 0.7311956,
+          "inner": false,
+          "targets": [
+            "Bubble2"
+          ]
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Bubble2",
+      "x": -8,
+      "y": 10.75,
+      "radius": 1.125,
+      "gap": 70,
+      "gapDir": 0,
+      "pins": [
+        {
+          "id": "toBubble3",
+          "angle": -84.289407,
+          "length": 0.5149627,
+          "inner": false,
+          "targets": [
+            "Bubble3"
+          ]
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Bubble3",
+      "x": -7.7,
+      "y": 7.75,
+      "radius": 1.125,
+      "gap": 70,
+      "gapDir": 45,
+      "pins": [
+        {
+          "id": "toFishATop",
+          "angle": -43.75217,
+          "length": 0.7543407,
+          "inner": false,
+          "targets": [
+            "FishATop"
+          ]
+        }
+      ],
+      "color": "green"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "FinATop",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -1.375,
+          9.5
+        ],
+        [
+          0.75,
+          9.25
+        ],
+        [
+          2.45,
+          10.425
+        ]
+      ],
+      "slideAxis": [
+        0.9931506,
+        -0.11684125
+      ],
+      "guides": [],
+      "color": "teal"
+    },
+    {
+      "id": "FinABottom",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -4.75,
+          0
+        ],
+        [
+          -3.25,
+          -0.5
+        ],
+        [
+          -2.125,
+          -1.5
+        ]
+      ],
+      "slideAxis": [
+        0.9486833,
+        -0.31622777
+      ],
+      "guides": [],
+      "color": "teal"
+    },
+    {
+      "id": "FinBTop",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          2.625,
+          -0.625
+        ],
+        [
+          5.25,
+          -0.625
+        ],
+        [
+          6.25,
+          -1.125
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "teal"
+    },
+    {
+      "id": "FinBBottom",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          2.625,
+          -10
+        ],
+        [
+          5.25,
+          -10
+        ],
+        [
+          6.25,
+          -9.5
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "teal"
+    },
+    {
+      "id": "TailA",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          7.625,
+          6.525
+        ],
+        [
+          5.65,
+          4.375
+        ],
+        [
+          7.75,
+          2.1
+        ]
+      ],
+      "slideAxis": [
+        -0.6764998,
+        -0.7364428
+      ],
+      "guides": [
+        {
+          "x": 7.1905,
+          "y": 6.052,
+          "angle": -132.57073
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "TailB",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -4.125,
+          -2.975
+        ],
+        [
+          -2.125,
+          -5
+        ],
+        [
+          -4.125,
+          -7.25
+        ]
+      ],
+      "slideAxis": [
+        0.7027013,
+        -0.711485
+      ],
+      "guides": [
+        {
+          "x": -3.685,
+          "y": -3.4205,
+          "angle": -45.35587
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "WeedL",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -6.625,
+          -8.125
+        ],
+        [
+          -5.75,
+          -9
+        ],
+        [
+          -6.575,
+          -9.95
+        ],
+        [
+          -5.75,
+          -10.875
+        ],
+        [
+          -6.5,
+          -12
+        ],
+        [
+          -6.125,
+          -13.5
+        ],
+        [
+          -6.125,
+          -14.75
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "guides": [
+        {
+          "x": -6.125,
+          "y": -14.3125,
+          "angle": -90
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "WeedR",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -3.75,
+          -10.675
+        ],
+        [
+          -4.55,
+          -11.5
+        ],
+        [
+          -3.575,
+          -12.425
+        ],
+        [
+          -4.05,
+          -13.625
+        ],
+        [
+          -4.1,
+          -14.75
+        ]
+      ],
+      "slideAxis": [
+        -0.044400614,
+        -0.9990138
+      ],
+      "guides": [
+        {
+          "x": -4.0825,
+          "y": -14.35625,
+          "angle": -92.544804
+        }
+      ],
+      "color": "navy"
+    }
+  ]
+}

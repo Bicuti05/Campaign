@@ -1,0 +1,140 @@
+{
+  "lockScope": "Ring",
+  "blockerMask": 55,
+  "kinds": {
+    "BODY": 1,
+    "HARD": 2,
+    "WALL": 4,
+    "SENSOR": 8,
+    "STOP": 16,
+    "GUIDE": 32,
+    "BLOCKERS": 55,
+    "BLOCKERS_NO_WALL": 51,
+    "PIN_PARTS": 14
+  },
+  "startPenetrationTolerance": 0.02,
+  "rows": [
+    {
+      "angle": 26.682861328124673,
+      "allBlockerPenetration": 0.01997627114412226,
+      "excludingStopPenetration": 0
+    },
+    {
+      "angle": 26.782861328124675,
+      "allBlockerPenetration": 0.02382395990670294,
+      "excludingStopPenetration": 0
+    },
+    {
+      "angle": 30,
+      "allBlockerPenetration": 0.1405248903796552,
+      "excludingStopPenetration": 0
+    },
+    {
+      "angle": 45,
+      "allBlockerPenetration": 0.4166659517896356,
+      "excludingStopPenetration": 0
+    },
+    {
+      "angle": 60,
+      "allBlockerPenetration": 0.14052489037965565,
+      "excludingStopPenetration": 0
+    }
+  ],
+  "detail": [
+    {
+      "at": 26.682861328124673,
+      "ring": "ring_2",
+      "author": "R2",
+      "stopVsBodyDepth": 0.01997627114412226,
+      "stopVsAttachment": [
+        {
+          "kind": 8,
+          "pin": 0,
+          "depth": 0.10401587349658392,
+          "isBlocker": false
+        }
+      ]
+    },
+    {
+      "at": 26.782861328124675,
+      "ring": "ring_2",
+      "author": "R2",
+      "stopVsBodyDepth": 0.02382395990670294,
+      "stopVsAttachment": [
+        {
+          "kind": 8,
+          "pin": 0,
+          "depth": 0.10705304518826164,
+          "isBlocker": false
+        }
+      ]
+    },
+    {
+      "at": 30,
+      "ring": "ring_2",
+      "author": "R2",
+      "stopVsBodyDepth": 0.1405248903796552,
+      "stopVsAttachment": [
+        {
+          "kind": 4,
+          "pin": 0,
+          "depth": 0.04999999999999982,
+          "isBlocker": true
+        },
+        {
+          "kind": 8,
+          "pin": 0,
+          "depth": 0.20521489240525437,
+          "isBlocker": false
+        }
+      ]
+    },
+    {
+      "at": 45,
+      "ring": "ring_2",
+      "author": "R2",
+      "stopVsBodyDepth": 0.2465465576482022,
+      "stopVsAttachment": [
+        {
+          "kind": 2,
+          "pin": 0,
+          "depth": 0.4166659517896356,
+          "isBlocker": true
+        },
+        {
+          "kind": 4,
+          "pin": 0,
+          "depth": 0.04999999999999982,
+          "isBlocker": true
+        },
+        {
+          "kind": 8,
+          "pin": 0,
+          "depth": 0.3354191376676443,
+          "isBlocker": false
+        }
+      ]
+    },
+    {
+      "at": 60,
+      "ring": "ring_2",
+      "author": "R2",
+      "stopVsBodyDepth": 0.14052489037965565,
+      "stopVsAttachment": [
+        {
+          "kind": 4,
+          "pin": 0,
+          "depth": 0.04999999999999982,
+          "isBlocker": true
+        },
+        {
+          "kind": 8,
+          "pin": 0,
+          "depth": 0.20521476359010293,
+          "isBlocker": false
+        }
+      ]
+    }
+  ],
+  "interpretation": "At the actual Stop witness prefix R2 remains because S1 was kept. R9 Stop collides with R2 ring BODY. Sensor SAT contacts are reported separately and are not blockers. Stop never adds a lock; it constrains R9 motion, leaving the R1->R9 contact engaged under Ring scope. Hypothetical contact samples are diagnostic only."
+}

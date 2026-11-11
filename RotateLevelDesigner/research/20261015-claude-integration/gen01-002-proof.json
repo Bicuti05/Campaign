@@ -1,0 +1,193 @@
+{
+  "ok": false,
+  "status": "held_full_material_gesture",
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 3,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 2,
+        "pins": 2,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "R1",
+        "target": "R2",
+        "margin": 60
+      },
+      {
+        "owner": "R3",
+        "target": "R1",
+        "margin": 45.00019999999995
+      }
+    ],
+    "guides": [],
+    "bodyAccess": [
+      {
+        "label": "R1",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "R2",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "R3",
+        "visibleBodyPoints": 91
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "bakedMargins": {
+    "ok": true,
+    "rows": [
+      {
+        "owner": "ring_1",
+        "pin": 0,
+        "margin": 60.00000045006999,
+        "ok": true
+      },
+      {
+        "owner": "ring_3",
+        "pin": 0,
+        "margin": 45.00019999999756,
+        "ok": true
+      }
+    ]
+  },
+  "body": [
+    {
+      "label": "R1",
+      "points": 82,
+      "locked": true,
+      "began": false,
+      "ok": true
+    },
+    {
+      "label": "R2",
+      "points": 82,
+      "locked": false,
+      "began": true,
+      "ok": true
+    },
+    {
+      "label": "R3",
+      "points": 91,
+      "locked": true,
+      "began": false,
+      "ok": true
+    }
+  ],
+  "runtimeMoves": [
+    {
+      "part": "ring_2",
+      "target": 219
+    },
+    {
+      "part": "ring_1",
+      "target": 294
+    }
+  ],
+  "moves": [
+    {
+      "part": "R2",
+      "target": 219
+    },
+    {
+      "part": "R1",
+      "target": 294
+    }
+  ],
+  "analytic": {
+    "ok": true,
+    "solved": true,
+    "trace": [
+      {
+        "part": "ring_2",
+        "target": 219,
+        "grab": {
+          "x": -0.3287444566227675,
+          "y": 3.5542
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ],
+        "pose": 218.99999999999955,
+        "remaining": 2,
+        "links": [
+          false,
+          true
+        ]
+      },
+      {
+        "part": "ring_1",
+        "target": 294,
+        "grab": {
+          "x": -0.9531183112762974,
+          "y": 1.467673493904492
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3",
+          "ring_1"
+        ],
+        "pose": 293.999999999999,
+        "remaining": 0,
+        "links": [
+          false,
+          false
+        ]
+      }
+    ],
+    "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+  },
+  "default": {
+    "ok": false,
+    "solved": false,
+    "trace": [
+      {
+        "part": "ring_2",
+        "target": 219,
+        "grab": {
+          "x": -0.3287444566227675,
+          "y": 3.5542
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 82,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 216.74999999999952,
+        "remaining": 3,
+        "links": [
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_1",
+        "target": 294,
+        "began": false,
+        "locked": true,
+        "selectable": 82
+      }
+    ],
+    "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "226",
+  "name": "Level226 – Hai cửa giữ L trái",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 7.7166806,
+      "y": -7.9226125,
+      "gapDir": -228,
+      "gap": 60,
+      "radius": 1.5,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R2",
+      "x": 7.7166806,
+      "y": -12.506013,
+      "gapDir": -54,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "R1"
+          ],
+          "length": 1.0834
+        },
+        {
+          "id": "p2",
+          "angle": -180,
+          "targets": [
+            "R4"
+          ],
+          "length": 0.8333998
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R3",
+      "x": 12.299982,
+      "y": -12.506013,
+      "gapDir": -88,
+      "gap": 60,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "toBridge",
+          "angle": 360,
+          "length": 1.049998,
+          "targets": [
+            "Bridge"
+          ]
+        },
+        {
+          "id": "returnR2",
+          "angle": -180,
+          "length": 0.8333014,
+          "targets": [
+            "R2"
+          ]
+        }
+      ],
+      "color": "red",
+      "bomb": {
+        "x": 14.049982,
+        "y": -12.506013
+      }
+    },
+    {
+      "id": "R4",
+      "x": 3.1332808,
+      "y": -12.506013,
+      "gapDir": -112,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "returnR5",
+          "angle": 90,
+          "targets": [
+            "R5"
+          ],
+          "length": 0.8334
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R5",
+      "x": 3.1332808,
+      "y": -7.9226125,
+      "gapDir": -327,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "zS2",
+          "angle": 180,
+          "targets": [
+            "S2"
+          ],
+          "length": 3.6166322
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 12.299982,
+      "y": -7.9226125,
+      "gapDir": -216,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -90,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.8334
+        },
+        {
+          "id": "toBridge",
+          "angle": 360,
+          "length": 1.049998,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R7",
+      "x": 7.299946,
+      "y": -19.040813,
+      "gapDir": -91,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 52.578956,
+          "targets": [
+            "R3"
+          ],
+          "length": 4.2282423
+        },
+        {
+          "id": "p2",
+          "angle": 122.522063,
+          "targets": [
+            "R4"
+          ],
+          "length": 3.7501426
+        },
+        {
+          "id": "nBridge",
+          "angle": 0,
+          "targets": [
+            "Bridge"
+          ],
+          "length": 5.800034
+        }
+      ],
+      "radius": 2,
+      "color": "orange"
+    },
+    {
+      "id": "R12",
+      "x": 12.299982,
+      "y": -3.3393125,
+      "gapDir": -345,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -90,
+          "targets": [
+            "R6"
+          ],
+          "length": 0.8333
+        },
+        {
+          "id": "p2",
+          "angle": -135.00001,
+          "targets": [
+            "R1"
+          ],
+          "length": 2.981766
+        },
+        {
+          "id": "zU1",
+          "angle": 105.57744,
+          "targets": [
+            "U1"
+          ],
+          "length": 2.9528309
+        }
+      ],
+      "radius": 1.75,
+      "color": "red"
+    },
+    {
+      "id": "U1",
+      "x": 10.5,
+      "y": 3.1173125,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -20,
+      "pins": [
+        {
+          "id": "zU2",
+          "angle": -164.054604,
+          "targets": [
+            "U2"
+          ],
+          "length": 3.78011
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "U2",
+      "x": 3.5,
+      "y": 1.1173125,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": -290,
+      "pins": [
+        {
+          "id": "zR5",
+          "angle": -92.32302,
+          "targets": [
+            "R5"
+          ],
+          "length": 5.5473602
+        },
+        {
+          "id": "zS2",
+          "angle": -180,
+          "targets": [
+            "S2"
+          ],
+          "length": 4.233351
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Bridge",
+      "x": 15.34998,
+      "y": -10.214313,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          3.9917
+        ],
+        [
+          0,
+          -11
+        ],
+        [
+          -3,
+          -11
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "color": "green"
+    },
+    {
+      "id": "S2",
+      "x": -2.4833514,
+      "y": -5.2040625,
+      "path": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          -10
+        ],
+        [
+          -3,
+          -10
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "angle": 0,
+      "color": "green"
+    }
+  ],
+  "author": "Codex / GD repair",
+  "notes": "Sửa khóa cứng 21/10/2026 theo yêu cầu GD. Giữ toàn bộ vòng/thanh và bố cục nguồn; add_bomb R3. Ý tưởng: mở đường bằng cửa chuyển động hiện có, Bom phá vật chặn khi cần rồi quay lại nguồn pin. Có route full-body/default-feel không Booster được lưu riêng; pack --no-solve, chưa Unity/device hoặc duyệt độ khó. Ghi chú nguồn lịch sử: R12 qua U1/U2; U2 giữ R5 và S2, S2 dùng chung R5. Thay Z1/Z2; đổi S2/Bridge và R1/R6. Bản v02 sửa pin và bố trí để tránh overlap/idle; 222 dùng nhánh trái chung S5; 223/225/230 đảo chiều pin cửa mới; 229 bảo toàn nguyên trạng R1–R5 từ nguồn độc lập. Quan hệ cuối thêm: R12→U1, U1→U2, U2→R5, U2→S2; bỏ: R12→Z1, Z1→Z2, Z2→R5, Z2→S2 Phản chiếu cứng y và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest."
+}

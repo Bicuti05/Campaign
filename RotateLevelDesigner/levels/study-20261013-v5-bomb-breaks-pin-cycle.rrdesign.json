@@ -1,0 +1,122 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Dọn hành lang rồi phá vòng pin",
+  "author": "Codex reference study 20261013",
+  "notes": "Bốn vòng phía trên tạo vòng phụ thuộc pin có hướng; các vòng đang giữ pin không xoay được. Tháo vòng dưới phải để dọn hành lang, giữ thanh mang bom bằng một ngàm, rồi đẩy bom lên phá vòng giữa phải. Sau đó nhả các pin còn lại để dọn cụm trên. Đưa bom trước làm nổ vòng chắn đường và mất thanh mang bom. Bom gameplay bắt buộc, không dùng Booster hoặc Chain. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 135,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R2"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 45,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R1"
+        },
+        {
+          "angle": 270,
+          "target": "R5"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 315,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R3"
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": 0,
+      "y": -9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R6"
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": 4.5854,
+      "y": -9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "length": 6.5,
+      "x": 4.5854,
+      "y": -15.4354,
+      "angle": 90,
+      "color": "red",
+      "guides": [
+        {
+          "x": 4.5854,
+          "y": -13.0854,
+          "angle": 90
+        }
+      ],
+      "bomb": {
+        "x": 4.5854,
+        "y": -12.1854,
+        "radius": 0.45
+      }
+    }
+  ]
+}

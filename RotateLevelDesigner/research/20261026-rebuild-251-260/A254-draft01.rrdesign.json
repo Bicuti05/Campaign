@@ -1,0 +1,182 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "254",
+  "name": "A254 | Khuỷu thấp, cửa cao",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 2,
+      "y": 3,
+      "gapDir": 0,
+      "gap": 90,
+      "stops": [
+        {
+          "angle": -55,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.5,
+      "pins": [],
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R2",
+      "x": 4,
+      "y": 7,
+      "gapDir": 89,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 243.4349,
+          "targets": [
+            "R1"
+          ],
+          "length": 0.9721
+        },
+        {
+          "id": "p3",
+          "angle": 315,
+          "targets": [
+            "R5"
+          ],
+          "length": 1.9069
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": 4,
+      "y": -2,
+      "gapDir": 90,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 206.5651,
+          "targets": [
+            "R6"
+          ],
+          "length": 0.9721
+        }
+      ],
+      "radius": 1.75,
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": 8,
+      "y": -2,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "returnR3",
+          "angle": 180,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.25
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R5",
+      "x": 8,
+      "y": 3,
+      "gapDir": 283,
+      "gap": 90,
+      "pins": [],
+      "radius": 1.75,
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": -4,
+      "gapDir": 336,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [
+        {
+          "id": "toBridge",
+          "angle": -180,
+          "length": 3.05,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R8",
+      "x": -2,
+      "y": 3,
+      "gapDir": 90,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "targets": [
+            "R1"
+          ],
+          "length": 0.5
+        },
+        {
+          "id": "toBridge",
+          "angle": -180,
+          "length": 0.8,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Bridge",
+      "x": -4.8,
+      "y": -0.35,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          5.5
+        ],
+        [
+          0,
+          -5.5
+        ],
+        [
+          -2,
+          -5.5
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "color": "orange",
+      "guides": []
+    }
+  ],
+  "author": "Codex / Designer review batch01",
+  "notes": "Practice + định hướng. R1 là receiver dùng chung có chốt; bar bên trái nối R8/R6, khoảng cách được rút gọn để đọc liên hệ giữa tầng trên và dưới. Tham chiếu A104; bố cục và vai trò được dựng lại, không tự GD-approved. Kiểm Designer, không Unity/device. Chi tiết kiểm/giới hạn nằm trong delivery manifest."
+}

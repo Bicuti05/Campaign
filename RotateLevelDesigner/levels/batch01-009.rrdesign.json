@@ -1,0 +1,118 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "B01-009 | Nguồn kín giữ lượt quay",
+  "author": "Codex + GD / batch 01",
+  "notes": "Bộ 15 level đầu, vị trí đề xuất 9/15. Lõi kín trên trái giữ vòng nguồn khi pin ra đã nhả, rồi rời cùng nguồn. Nguồn dưới còn được nhánh trái giữ. Thanh dùng chung cần chừa đường cho pin đang quay; M được dùng lại ở nhiều pha. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. Có thể rút thanh sâu trước. Va chạm theo gesture; thao tác lặp có thể tăng xuyên và đổi khóa theo scope Ring, không dùng làm bước bắt buộc.",
+  "rings": [
+    {
+      "id": "BL",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "SB"
+        }
+      ]
+    },
+    {
+      "id": "SB",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "M"
+        },
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "SL",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "BL"
+        },
+        {
+          "angle": 0,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 45,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "TL",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 135,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "ST"
+        }
+      ]
+    },
+    {
+      "id": "ST",
+      "x": 4.5854,
+      "y": 9.1708,
+      "gapDir": 90,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "M"
+        },
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 7.4208,
+      "y": 4.5854,
+      "length": 11.4,
+      "angle": 90,
+      "color": "green"
+    }
+  ]
+}

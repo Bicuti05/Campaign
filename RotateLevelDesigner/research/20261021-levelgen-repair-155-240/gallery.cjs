@@ -1,0 +1,5 @@
+const fs=require('fs'),path=require('path'),sharp=require('C:/Users/ADMIN/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+async function main(){const deliveries=fs.readdirSync(__dirname).filter(f=>f.endsWith('-delivery.json')).map(f=>JSON.parse(fs.readFileSync(path.join(__dirname,f)))).sort((a,b)=>a.slot-b.slot),pageSize=9;
+for(let i=0;i<deliveries.length;i+=pageSize){const page=deliveries.slice(i,i+pageSize),items=[];for(let k=0;k<page.length;k++)for(let j=0;j<3;j++){const prefix=fs.existsSync(path.join(__dirname,page[k].stem+'-after.png'))?page[k].stem:'A'+page[k].slot;const name=prefix+'-'+['before','after','mono'][j]+'.png',buffer=await sharp(path.join(__dirname,name)).resize({width:155,height:330,fit:'contain',background:'#fff'}).png().toBuffer();items.push({input:buffer,left:(k%3)*465+j*155,top:Math.floor(k/3)*330});}
+await sharp({create:{width:1395,height:Math.ceil(page.length/3)*330,channels:3,background:'#fff'}}).composite(items).png().toFile(path.join(__dirname,'gallery-'+page[0].slot+'-'+page.at(-1).slot+'-'+Date.now()+'.png'));}
+console.log(deliveries.map(x=>x.slot));}main();

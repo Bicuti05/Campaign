@@ -1,0 +1,427 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Level 55",
+  "author": "Codex / TURP",
+  "notes": "Board A level55 (ref index (6).html: 13 vòng/14 pin, 5 thanh/5 ngàm, 1 Bom, vòng kín5/7/11; nguồn khớp TURP 70013: dáng tam giác, Bom gắn trên vòng kín nhận pin, có vòng tự do lúc nạp). Bản mới dựng thẳng lưới3 cột×5 hàng: 13 vòng (3 kín) + 5 thanh ngang/dọc + 1 Bom, không vật tự do, lockCount0, không Stop/Xích. Vòng kín R1 (radius1,75, vai trò khác nguồn) ở tâm mang Bom ở góc45°, nhận pin từ bốn phía R4/R5/R6/R7 nên không thể tự tháo — **level chỉ giải được khi Bom nổ** (theo luật Designer: vòng kín không có khe để nhả pin). Quay R1 ngược chiều ~45° Bom chạm pin R6, xuôi chiều ~45° chạm pin R5: người chơi chọn vật hy sinh cùng R1. Hai nguồn kín R2 (đỉnh) và R3 (đáy) radius2,15: R2→R10/R11/R6/R9, R3→R12/R13/R7/R8; R4→R8, R5→R9. Thanh: U trái S1 xuyên khe R8/R4, U phải S2 xuyên khe R5/R9 (lệch một hàng), hai chân bằng nhau, mỗi chân một Guide; S3 L từ trên vào khe R10; S4 L từ trái vào khe R12; S5 L từ dưới vào khe R13. Lời giải do GD tìm (quyết định người dùng16/10/2026), Codex không chạy solve/proof; GD xác nhận lựa chọn hướng nổ.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [],
+      "bomb": {
+        "x": 1.2374,
+        "y": 11.0374
+      },
+      "color": "purple"
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 19.6,
+      "radius": 2.15,
+      "gapDir": 0,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR10",
+          "target": "R10",
+          "angle": 180,
+          "length": 0.75
+        },
+        {
+          "id": "toR11",
+          "target": "R11",
+          "angle": 0,
+          "length": 0.75
+        },
+        {
+          "id": "toR6",
+          "target": "R6",
+          "angle": 270,
+          "length": 0.75
+        },
+        {
+          "id": "toR9",
+          "target": "R9",
+          "angle": 315,
+          "length": 2.7796
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": 0,
+      "radius": 2.15,
+      "gapDir": 0,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR12",
+          "target": "R12",
+          "angle": 180,
+          "length": 0.75
+        },
+        {
+          "id": "toR13",
+          "target": "R13",
+          "angle": 0,
+          "length": 0.75
+        },
+        {
+          "id": "toR7",
+          "target": "R7",
+          "angle": 90,
+          "length": 0.75
+        },
+        {
+          "id": "toR8",
+          "target": "R8",
+          "angle": 135,
+          "length": 2.7796
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R4",
+      "x": -4.9,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "target": "R1",
+          "angle": 0,
+          "length": 1.15
+        },
+        {
+          "id": "toR8",
+          "target": "R8",
+          "angle": 270,
+          "length": 1.15
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R5",
+      "x": 4.9,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "target": "R1",
+          "angle": 180,
+          "length": 1.15
+        },
+        {
+          "id": "toR9",
+          "target": "R9",
+          "angle": 90,
+          "length": 1.15
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": 14.700000000000001,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "target": "R1",
+          "angle": 270,
+          "length": 1.15
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R7",
+      "x": 0,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "target": "R1",
+          "angle": 90,
+          "length": 1.15
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R8",
+      "x": -4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R9",
+      "x": 4.9,
+      "y": 14.700000000000001,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R10",
+      "x": -4.9,
+      "y": 19.6,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R11",
+      "x": 4.9,
+      "y": 19.6,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R12",
+      "x": -4.9,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R13",
+      "x": 4.9,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 270,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "navy"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -9,
+      "y": 7.3500000000000005,
+      "angle": 0,
+      "path": [
+        [
+          4.1,
+          2.45
+        ],
+        [
+          0,
+          2.45
+        ],
+        [
+          0,
+          -2.45
+        ],
+        [
+          4.1,
+          -2.45
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.5,
+          "y": 9.8,
+          "angle": 0
+        },
+        {
+          "x": -7.5,
+          "y": 4.9,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S2",
+      "x": 9,
+      "y": 12.25,
+      "angle": 0,
+      "path": [
+        [
+          -4.1,
+          2.45
+        ],
+        [
+          0,
+          2.45
+        ],
+        [
+          0,
+          -2.45
+        ],
+        [
+          -4.1,
+          -2.45
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 7.5,
+          "y": 14.700000000000001,
+          "angle": 0
+        },
+        {
+          "x": 7.5,
+          "y": 9.8,
+          "angle": 0
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "S3",
+      "x": -4.9,
+      "y": 22.200000000000003,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -2.6
+        ],
+        [
+          0,
+          1.4
+        ],
+        [
+          -2,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -4.9,
+          "y": 22.200000000000003,
+          "angle": 90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S4",
+      "x": -7.5,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          2.6,
+          0
+        ],
+        [
+          -1.1,
+          0
+        ],
+        [
+          -1.1,
+          -2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.5,
+          "y": 0,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S5",
+      "x": 4.9,
+      "y": -2.6,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          2.6
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          2.6,
+          -1
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 4.9,
+          "y": -2.6,
+          "angle": 90
+        }
+      ],
+      "color": "orange"
+    }
+  ]
+}

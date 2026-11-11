@@ -1,0 +1,2367 @@
+{
+  "format": "turp-lab-sketch-audit",
+  "version": 1,
+  "scope": "Ten provided GD sketches inspected through current Designer builder. Research only; not copied into gallery.",
+  "limits": [
+    "Rebuilt geometry changes source pin sizes/anchor and uses Designer rounded mesh gap. Results are not a validation of original colliders.",
+    "Pin angles were recovered from authored world feature positions and owners, not assumed from link endpoints.",
+    "Authored 4.55 pitch and 2.8 pin distance differ from Designer 4.5854/2.8354 defaults.",
+    "Bounded NOT FOUND does not prove every continuous route impossible. A nonempty active directed cycle of only rings has an invariant outgoing lock at each vertex here: no member can rotate; without a bomb/Booster or externally movable member the internal contacts cannot change.",
+    "No interpretation of GD sketch numbers as campaign order or aesthetic/difficulty labels."
+  ],
+  "summary": {
+    "count": 10,
+    "rebuiltZeroWarnings": 10,
+    "allRingsMovementLocked": [],
+    "activeDirectedCycleDrafts": [
+      "GD08"
+    ],
+    "closeOwnerPinMargins": [
+      "GD01",
+      "GD02",
+      "GD03",
+      "GD04",
+      "GD05",
+      "GD06",
+      "GD07",
+      "GD08",
+      "GD09",
+      "GD10"
+    ]
+  },
+  "results": [
+    {
+      "id": "GD01",
+      "name": "Một mối nối",
+      "goal": "Nhìn thấy khe và một quan hệ chốt–vòng.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 2,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 1,
+          "pins": 1,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 1 drags after 1 explorations",
+        "nodes": 1,
+        "seconds": 0,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 45,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD01 Một mối nối",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD02",
+      "name": "Chuỗi ba",
+      "goal": "Tăng số quan hệ cần theo dõi; giữ hình học đồng nhất.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 2,
+          "pins": 2,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 144
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 2 drags after 7 explorations",
+        "nodes": 7,
+        "seconds": 0.005,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 45,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 45,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD02 Chuỗi ba",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 0,
+                "target": "new_ring_3"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD03",
+      "name": "Góc rẽ",
+      "goal": "Đổi hướng liên kết nhưng giữ cấu trúc chuỗi.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 4,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 3,
+          "pins": 3,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_3",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_3"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 3,
+            "target": 144
+          },
+          {
+            "obj": 2,
+            "target": 234
+          },
+          {
+            "obj": 1,
+            "target": -144
+          }
+        ],
+        "log": "found with 3 drags after 16 explorations",
+        "nodes": 16,
+        "seconds": 0.019,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 45,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 2,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 45,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 3,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 45,
+            "to": -144,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD03 Góc rẽ",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 90,
+                "target": "new_ring_3"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 4.55,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 0,
+                "target": "new_ring_4"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_4",
+            "x": 9.1,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD04",
+      "name": "Hai nhánh",
+      "goal": "Giới thiệu nút phân nhánh bậc ba.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 4,
+          "pins": 4,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_4",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_4"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": false,
+        "moves": [],
+        "nodes": 64,
+        "seconds": 0.159,
+        "log": "NOT FOUND after 64 explorations, 0 s (limits 500 nodes / 1 s, open 0)",
+        "route": []
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD04 Hai nhánh",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 0,
+                "target": "new_ring_3"
+              },
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 90,
+                "target": "new_ring_4"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "new_ring_4",
+            "x": 4.55,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_4",
+                "angle": 90,
+                "target": "new_ring_5"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_5",
+            "x": 4.55,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD05",
+      "name": "Cây cân bằng",
+      "goal": "Hai nút bậc ba và nhiều lựa chọn mục tiêu.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 6,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 5,
+          "pins": 5,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        },
+        {
+          "owner": "new_ring_4",
+          "angle": 180,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 90
+        },
+        {
+          "owner": "new_ring_4",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 0
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_4"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": false,
+        "moves": [],
+        "nodes": 100,
+        "seconds": 0.275,
+        "log": "NOT FOUND after 100 explorations, 0 s (limits 500 nodes / 1 s, open 0)",
+        "route": []
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD05 Cây cân bằng",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 0,
+                "target": "new_ring_3"
+              },
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 90,
+                "target": "new_ring_4"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "new_ring_4",
+            "x": 4.55,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "id": "attachment.new_pin_4",
+                "angle": 180,
+                "target": "new_ring_5"
+              },
+              {
+                "id": "attachment.new_pin_5",
+                "angle": 0,
+                "target": "new_ring_6"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_5",
+            "x": 0,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "new_ring_6",
+            "x": 9.1,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD06",
+      "name": "Khe hẹp hơn",
+      "goal": "Thu khe có kiểm soát; tránh thêm loại vật thể.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 7,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 6,
+          "pins": 6,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_3",
+          "angle": 0,
+          "authoredDistance": 2.8000000000000007,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_5",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_6",
+          "angle": 0,
+          "authoredDistance": 2.8000000000000007,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_3",
+        "new_ring_5",
+        "new_ring_6"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": false,
+        "moves": [],
+        "nodes": 234,
+        "seconds": 1.044,
+        "log": "NOT FOUND after 234 explorations, 1 s (limits 500 nodes / 1 s, open 9)",
+        "route": []
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD06 Khe hẹp hơn",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 0,
+                "target": "new_ring_3"
+              },
+              {
+                "id": "attachment.new_pin_4",
+                "angle": 90,
+                "target": "new_ring_5"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 0,
+                "target": "new_ring_4"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_4",
+            "x": 13.65,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": []
+          },
+          {
+            "id": "new_ring_5",
+            "x": 4.55,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_5",
+                "angle": 0,
+                "target": "new_ring_6"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_6",
+            "x": 9.1,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_6",
+                "angle": 0,
+                "target": "new_ring_7"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_7",
+            "x": 13.65,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD07",
+      "name": "Hai cụm độc lập",
+      "goal": "Thử cách chia nhỏ mục tiêu; 8 vòng, 2 thành phần graph.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 8,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 6,
+          "pins": 6,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_3",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_5",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_6",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_7",
+          "angle": 90,
+          "authoredDistance": 2.799999999999999,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_3",
+        "new_ring_5",
+        "new_ring_6",
+        "new_ring_7"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 7,
+            "target": 246
+          },
+          {
+            "obj": 6,
+            "target": -156
+          },
+          {
+            "obj": 5,
+            "target": 156
+          },
+          {
+            "obj": 3,
+            "target": 246
+          },
+          {
+            "obj": 2,
+            "target": -156
+          },
+          {
+            "obj": 1,
+            "target": 156
+          }
+        ],
+        "log": "found with 6 drags after 57 explorations",
+        "nodes": 57,
+        "seconds": 0.121,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_8",
+            "label": "R8",
+            "kind": "ring",
+            "from": 45,
+            "to": 246,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 7
+          },
+          {
+            "step": 2,
+            "part": "ring_7",
+            "label": "R7",
+            "kind": "ring",
+            "from": 45,
+            "to": -156,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 6
+          },
+          {
+            "step": 3,
+            "part": "ring_6",
+            "label": "R6",
+            "kind": "ring",
+            "from": 45,
+            "to": 156,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 4
+          },
+          {
+            "step": 4,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 45,
+            "to": 246,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 5,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 45,
+            "to": -156,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 6,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 45,
+            "to": 156,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD07 Hai cụm độc lập",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 0,
+                "target": "new_ring_3"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 90,
+                "target": "new_ring_4"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_4",
+            "x": 9.1,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": []
+          },
+          {
+            "id": "new_ring_5",
+            "x": 0,
+            "y": 13.65,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_4",
+                "angle": 0,
+                "target": "new_ring_6"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_6",
+            "x": 4.55,
+            "y": 13.65,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_5",
+                "angle": 0,
+                "target": "new_ring_7"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_7",
+            "x": 9.1,
+            "y": 13.65,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_6",
+                "angle": 90,
+                "target": "new_ring_8"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_8",
+            "x": 9.1,
+            "y": 18.2,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD08",
+      "name": "Lưới có chu trình",
+      "goal": "Đưa chu trình vào để phát hiện nguy cơ bế tắc; cần kiểm chứng engine.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 9,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 9,
+          "pins": 9,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_3",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_4",
+          "angle": -90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 100
+        },
+        {
+          "owner": "new_ring_5",
+          "angle": 180,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 100
+        },
+        {
+          "owner": "new_ring_6",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 10
+        },
+        {
+          "owner": "new_ring_8",
+          "angle": 180,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 100
+        },
+        {
+          "owner": "new_ring_9",
+          "angle": 180,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 100
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_3",
+        "new_ring_4",
+        "new_ring_5",
+        "new_ring_6",
+        "new_ring_8",
+        "new_ring_9"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [
+        [
+          "ring_4",
+          "ring_5",
+          "ring_2",
+          "ring_1"
+        ]
+      ],
+      "solver": {
+        "found": false,
+        "moves": [],
+        "nodes": 130,
+        "seconds": 0.391,
+        "log": "NOT FOUND after 130 explorations, 0 s (limits 500 nodes / 1 s, open 0)",
+        "route": []
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD08 Lưới có chu trình",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 90,
+                "target": "new_ring_5"
+              },
+              {
+                "id": "attachment.new_pin_5",
+                "angle": 0,
+                "target": "new_ring_3"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_6",
+                "angle": 90,
+                "target": "new_ring_6"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_4",
+            "x": 0,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_4",
+                "angle": -90,
+                "target": "new_ring_1"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_5",
+            "x": 4.55,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 180,
+                "target": "new_ring_4"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_6",
+            "x": 9.1,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_7",
+                "angle": 90,
+                "target": "new_ring_9"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_7",
+            "x": 0,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": []
+          },
+          {
+            "id": "new_ring_8",
+            "x": 4.55,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_9",
+                "angle": 180,
+                "target": "new_ring_7"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_9",
+            "x": 9.1,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 70,
+            "pins": [
+              {
+                "id": "attachment.new_pin_8",
+                "angle": 180,
+                "target": "new_ring_8"
+              }
+            ]
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD09",
+      "name": "Ba nhánh dài",
+      "goal": "Tăng chiều sâu và giảm khe; giữ khoảng cách tâm.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 10,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 9,
+          "pins": 9,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_3",
+          "angle": 0,
+          "authoredDistance": 2.8000000000000007,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_4",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_5",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_6",
+          "angle": 90,
+          "authoredDistance": 2.8000000000000007,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_8",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_9",
+          "angle": 90,
+          "authoredDistance": 2.8000000000000007,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_3",
+        "new_ring_4",
+        "new_ring_5",
+        "new_ring_6",
+        "new_ring_8",
+        "new_ring_9"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": false,
+        "moves": [],
+        "nodes": 210,
+        "seconds": 1.043,
+        "log": "NOT FOUND after 210 explorations, 1 s (limits 500 nodes / 1 s, open 13)",
+        "route": []
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD09 Ba nhánh dài",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 0,
+                "target": "new_ring_3"
+              },
+              {
+                "id": "attachment.new_pin_4",
+                "angle": 90,
+                "target": "new_ring_5"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 0,
+                "target": "new_ring_4"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_4",
+            "x": 13.65,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_7",
+                "angle": 90,
+                "target": "new_ring_8"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_5",
+            "x": 4.55,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_5",
+                "angle": 90,
+                "target": "new_ring_6"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_6",
+            "x": 4.55,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_6",
+                "angle": 90,
+                "target": "new_ring_7"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_7",
+            "x": 4.55,
+            "y": 13.65,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          },
+          {
+            "id": "new_ring_8",
+            "x": 13.65,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_8",
+                "angle": 90,
+                "target": "new_ring_9"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_9",
+            "x": 13.65,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_9",
+                "angle": 90,
+                "target": "new_ring_10"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_10",
+            "x": 13.65,
+            "y": 13.65,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    },
+    {
+      "id": "GD10",
+      "name": "Bài tổng hợp",
+      "goal": "12 vòng, cây nhiều nhánh; ứng viên tổng hợp cuối đợt thử.",
+      "originalStatus": "structure-only; solvability unknown",
+      "rebuiltInitialAnalysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 12,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 11,
+          "pins": 11,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "pins": [
+        {
+          "owner": "new_ring_1",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 0,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_2",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_3",
+          "angle": 0,
+          "authoredDistance": 2.8000000000000007,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_3",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_5",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_6",
+          "angle": 180,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 105
+        },
+        {
+          "owner": "new_ring_6",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_7",
+          "angle": 0,
+          "authoredDistance": 2.8000000000000007,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_7",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        },
+        {
+          "owner": "new_ring_8",
+          "angle": 90,
+          "authoredDistance": 2.8,
+          "rebuiltDistance": 2.8354,
+          "logicMargin": 15
+        }
+      ],
+      "movementLocked": [
+        "new_ring_1",
+        "new_ring_2",
+        "new_ring_3",
+        "new_ring_5",
+        "new_ring_6",
+        "new_ring_7",
+        "new_ring_8"
+      ],
+      "allRingsMovementLocked": false,
+      "activeDirectedCycles": [],
+      "solver": {
+        "found": false,
+        "moves": [],
+        "nodes": 196,
+        "seconds": 1.098,
+        "log": "NOT FOUND after 196 explorations, 1 s (limits 500 nodes / 1 s, open 35)",
+        "route": []
+      },
+      "designReconstruction": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Audit GD10 Bài tổng hợp",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Research translation of Ring Lab sketch: rebuilt using Designer defaults, not imported original colliders. Not a delivered level or campaign.",
+        "rings": [
+          {
+            "id": "new_ring_1",
+            "x": 0,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_1",
+                "angle": 0,
+                "target": "new_ring_2"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_2",
+            "x": 4.55,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_2",
+                "angle": 0,
+                "target": "new_ring_3"
+              },
+              {
+                "id": "attachment.new_pin_4",
+                "angle": 90,
+                "target": "new_ring_6"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_3",
+            "x": 9.1,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_3",
+                "angle": 0,
+                "target": "new_ring_4"
+              },
+              {
+                "id": "attachment.new_pin_8",
+                "angle": 90,
+                "target": "new_ring_7"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_4",
+            "x": 13.65,
+            "y": 0,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          },
+          {
+            "id": "new_ring_5",
+            "x": 0,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_6",
+                "angle": 90,
+                "target": "new_ring_9"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_6",
+            "x": 4.55,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_5",
+                "angle": 180,
+                "target": "new_ring_5"
+              },
+              {
+                "id": "attachment.new_pin_7",
+                "angle": 90,
+                "target": "new_ring_10"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_7",
+            "x": 9.1,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_9",
+                "angle": 0,
+                "target": "new_ring_8"
+              },
+              {
+                "id": "attachment.new_pin_11",
+                "angle": 90,
+                "target": "new_ring_11"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_8",
+            "x": 13.65,
+            "y": 4.55,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": [
+              {
+                "id": "attachment.new_pin_10",
+                "angle": 90,
+                "target": "new_ring_12"
+              }
+            ]
+          },
+          {
+            "id": "new_ring_9",
+            "x": 0,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.12,
+              0.63,
+              0.76
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          },
+          {
+            "id": "new_ring_10",
+            "x": 4.55,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.96,
+              0.51,
+              0.14
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          },
+          {
+            "id": "new_ring_11",
+            "x": 9.1,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.29,
+              0.67,
+              0.42
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          },
+          {
+            "id": "new_ring_12",
+            "x": 13.65,
+            "y": 9.1,
+            "gapDir": 45,
+            "color": [
+              0.6,
+              0.42,
+              0.74
+            ],
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      }
+    }
+  ]
+}

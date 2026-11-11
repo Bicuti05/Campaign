@@ -1,0 +1,207 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "256",
+  "name": "A256 | Vòng hồi quanh tâm",
+  "author": "Codex / Designer review batch01",
+  "notes": "Practice + Recovery về loại thao tác. Chỉ vòng và một Stop: ba nhánh hội tụ ở receiver R1, có phản hồi trực tiếp và quay lại; giảm tải thao tác trượt sau năm màn có thanh. Tham chiếu A106; bố cục và vai trò được dựng lại, không tự GD-approved. Kiểm Designer, không Unity/device. Chi tiết kiểm/giới hạn nằm trong delivery manifest.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 250,
+      "gap": 90,
+      "color": "green",
+      "radius": 1.75,
+      "lockCount": 0,
+      "pins": []
+    },
+    {
+      "id": "R2",
+      "x": 4.6,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 180,
+          "length": 0.85,
+          "targets": [
+            "R1"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "angle": 250,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": 4.6,
+      "y": 4.6,
+      "gapDir": 132.1319,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 0.85,
+          "targets": [
+            "R2"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": -4.6,
+      "gapDir": 280,
+      "gap": 90,
+      "color": "red",
+      "radius": 1.75,
+      "lockCount": 0,
+      "pins": []
+    },
+    {
+      "id": "R5",
+      "x": -4.6,
+      "y": -4.6,
+      "gapDir": 190,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 1.1,
+          "targets": [
+            "R4"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 90,
+          "length": 1.1,
+          "targets": [
+            "R6"
+          ]
+        }
+      ],
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": -4.6,
+      "y": 0,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 0.85,
+          "targets": [
+            "R1"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R7",
+      "x": 0,
+      "y": 4.6,
+      "gapDir": 16,
+      "gap": 90,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 180,
+          "length": 0.85,
+          "targets": [
+            "R10"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R8",
+      "x": 4.6,
+      "y": 9.2,
+      "gapDir": 270,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "blue",
+      "stops": [],
+      "lockCount": 0,
+      "pins": []
+    },
+    {
+      "id": "R9",
+      "x": 0,
+      "y": 9.2,
+      "gapDir": 270,
+      "gap": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 1.1,
+          "targets": [
+            "R8"
+          ]
+        },
+        {
+          "id": "new-R7",
+          "targets": [
+            "R7"
+          ],
+          "angle": 270,
+          "length": 0.85
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R10",
+      "x": -4.6,
+      "y": 4.6,
+      "gapDir": 59,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 0.85,
+          "targets": [
+            "R6"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    }
+  ],
+  "sticks": []
+}

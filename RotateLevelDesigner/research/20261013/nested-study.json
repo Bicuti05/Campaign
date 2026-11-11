@@ -1,0 +1,547 @@
+{
+  "format": "rotate-nested-study",
+  "version": 1,
+  "scope": "Designer only; GD authorized separate large/small research group",
+  "candidates": [
+    {
+      "stem": "study-20261013-v9-nested-source-relay",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Vòng lồng — nhả nguồn ngoài trước",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Nhóm nghiên cứu lớn/nhỏ được GD mở riêng ngày 13/10. Vòng nhỏ giữ pin vào vành vòng lớn đồng tâm; vòng lớn còn giữ pin vào vòng phía trên nên chưa được xoay. Nhả vòng phía trên rồi xoay vòng lớn để nhả nguồn bên trong. Radius vòng nhỏ 1,75, vòng lớn 2,8354; không special, Chain hoặc Booster. Bản nghiên cứu chưa nghiệm thu bố cục/độ khó.",
+        "rings": [
+          {
+            "id": "I",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "O"
+              }
+            ]
+          },
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 2.8354,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "T"
+              }
+            ]
+          },
+          {
+            "id": "T",
+            "x": 0,
+            "y": 5.6708,
+            "gapDir": 90,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      },
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 2,
+              "target": 234
+            },
+            {
+              "obj": 1,
+              "target": 321
+            }
+          ],
+          "log": "found with 2 drags after 7 explorations",
+          "nodes": 7,
+          "seconds": 0.007,
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 90,
+              "to": 234,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 2,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 270,
+              "to": 321,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "outerBefore": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "outerAfter": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 270,
+            "to": 39.50170898437519,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 270,
+            "to": 320.9999999999996,
+            "remaining": 0,
+            "links": 0
+          }
+        ]
+      }
+    },
+    {
+      "stem": "study-20261013-v9-nested-bar-gate",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Vòng lồng — rút thanh khỏi khe ngoài",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Nhóm lớn/nhỏ được GD mở riêng. Vòng nhỏ gửi một pin tới vành vòng lớn đồng tâm. Thanh ngang đi qua khe dưới của vòng lớn, cản cả hai đường quay. Một ngàm giữ thanh không nhận pin; rút thanh rồi xoay vòng ngoài để nhả vòng nhỏ. Không bom/Chain/Booster. Radius 1,75 và 2,8354; bản nghiên cứu chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "I",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "O"
+              }
+            ]
+          },
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 2.8354,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S1",
+            "shape": "straight",
+            "length": 5,
+            "x": 0,
+            "y": -2.8354,
+            "angle": 0,
+            "color": "red",
+            "guides": [
+              {
+                "x": 0,
+                "y": -2.8354,
+                "angle": 0
+              }
+            ]
+          }
+        ]
+      },
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 2,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 1,
+            "pins": 1,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 2,
+              "target": 2.600000000000001
+            },
+            {
+              "obj": 1,
+              "target": 321
+            }
+          ],
+          "log": "found with 2 drags after 7 explorations",
+          "nodes": 7,
+          "seconds": 0.019,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 2.6,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 2,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 270,
+              "to": 321,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 251.53417968750028,
+            "remaining": 3,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 288.4658203124998,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "afterPull": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 270,
+            "to": 39.0000000000002,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 270,
+            "to": 320.9999999999996,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "withoutBar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 270,
+            "to": 39.0000000000002,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 270,
+            "to": 320.9999999999996,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "withoutGuideFirstAttempt": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "O",
+              "pointer": 330,
+              "pose": 286.22314453124966,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withGuideFirstAttempt": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "O",
+              "pointer": 330,
+              "pose": 286.22314453124966,
+              "remaining": 3,
+              "links": 1,
+              "bindings": 1,
+              "solved": [],
+              "events": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "stem": "study-20261013-v9-nested-closed-bomb",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Vòng lồng kín — chốt đi qua khe vòng nhỏ",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Vòng lớn kín nhận pin từ vòng nhỏ bên trong và giữ pin tới vòng phía trên. Sau khi nhả vòng phía trên, quay vòng lớn một đoạn: chốt hướng vào trong đi qua khe trái của vòng nhỏ để chạm bom. Phá vòng lớn rồi nguồn nhỏ tự rời. Khe vòng nhỏ là hành lang của chốt, không phải quan hệ pin suy từ hình. Bỏ bom hoặc chốt không còn đường phá vòng kín. Bom gameplay cần thiết, không Booster/Chain. Nhóm lớn/nhỏ đã được GD mở riêng; chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "I",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "O"
+              }
+            ]
+          },
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 2.8354,
+            "gap": 0,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "T"
+              }
+            ],
+            "stops": [
+              {
+                "angle": 180,
+                "length": -1.5
+              }
+            ]
+          },
+          {
+            "id": "T",
+            "x": 0,
+            "y": 5.6708,
+            "gapDir": 90,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": [],
+        "bombs": [
+          {
+            "x": -1.0825317547305484,
+            "y": 0.6249999999999999,
+            "radius": 0.25
+          }
+        ]
+      },
+      "bombs": true,
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 2,
+              "target": 234
+            },
+            {
+              "obj": 1,
+              "target": 261
+            }
+          ],
+          "log": "found with 2 drags after 8 explorations",
+          "nodes": 8,
+          "seconds": 0.01,
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 90,
+              "to": 234,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 2,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 270,
+              "to": 261,
+              "direction": "CW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "withoutStop": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 3,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 1,
+              "links": 2,
+              "pins": 2,
+              "stops": 0,
+              "closedRings": 1
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 18,
+            "seconds": 0.045,
+            "log": "NOT FOUND after 18 explorations, 0 s (limits 500 nodes / 2 s, open 0)",
+            "route": []
+          }
+        },
+        "withoutBomb": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 3,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 0,
+              "links": 2,
+              "pins": 2,
+              "stops": 1,
+              "closedRings": 1
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 18,
+            "seconds": 0.067,
+            "log": "NOT FOUND after 18 explorations, 0 s (limits 500 nodes / 2 s, open 0)",
+            "route": []
+          }
+        }
+      }
+    }
+  ]
+}

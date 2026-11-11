@@ -1,0 +1,274 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "191",
+  "name": "Level191 – Hai L và cửa nối ngang",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 1.3019,
+      "y": -13.0144,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "bridgeR4",
+          "angle": 30.48318,
+          "targets": [
+            "R4"
+          ],
+          "length": 2.2496237
+        }
+      ],
+      "color": "orange",
+      "bomb": {
+        "x": 3.0519,
+        "y": -13.0144
+      }
+    },
+    {
+      "id": "R2",
+      "x": 1.2985,
+      "y": -18.431,
+      "gapDir": -89,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 89.964035,
+          "targets": [
+            "R1"
+          ],
+          "length": 1.6666011
+        },
+        {
+          "id": "toS2",
+          "angle": 180,
+          "targets": [
+            "S2"
+          ],
+          "length": 1.3682
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R3",
+      "x": 1.3019,
+      "y": -7.5977,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R1"
+          ],
+          "length": 1.6667
+        },
+        {
+          "id": "toS1",
+          "angle": 180,
+          "targets": [
+            "S1"
+          ],
+          "length": 1.3716
+        },
+        {
+          "id": "zS3",
+          "angle": 90,
+          "targets": [
+            "S3"
+          ],
+          "length": 6.4727
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R4",
+      "x": 6.2568,
+      "y": -10.0977,
+      "gapDir": 156,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "toR6",
+          "angle": 270,
+          "targets": [
+            "R6"
+          ],
+          "length": 2.5833
+        },
+        {
+          "id": "zZ1",
+          "angle": 57.8135,
+          "targets": [
+            "Z1"
+          ],
+          "length": 4.9888588
+        }
+      ],
+      "radius": 1.5,
+      "color": "blue"
+    },
+    {
+      "id": "R6",
+      "x": 6.2568,
+      "y": -15.931,
+      "gapDir": -165,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R9",
+      "x": 9.6318,
+      "y": -18.8477,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 139.16618,
+          "targets": [
+            "R6"
+          ],
+          "length": 0.960691
+        }
+      ],
+      "radius": 1.75,
+      "color": "orange"
+    },
+    {
+      "id": "R10",
+      "x": 11.9303,
+      "y": -13.0144,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 152.792674,
+          "targets": [
+            "R4"
+          ],
+          "length": 2.8793214
+        },
+        {
+          "id": "toR9",
+          "angle": 248.49403,
+          "targets": [
+            "R9"
+          ],
+          "length": 2.5198079
+        }
+      ],
+      "radius": 1.75,
+      "color": "orange"
+    },
+    {
+      "id": "Z1",
+      "x": 10.64545,
+      "y": -3.125,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": -1,
+      "pins": [
+        {
+          "id": "zS3",
+          "angle": 90,
+          "targets": [
+            "S3"
+          ],
+          "length": 2.25
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -2.0697,
+      "y": -7.875,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          -2.5
+        ],
+        [
+          -2,
+          -2.5
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "green"
+    },
+    {
+      "id": "S2",
+      "x": -2.0697,
+      "y": -18.375,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          2.5
+        ],
+        [
+          0,
+          -3
+        ],
+        [
+          -2,
+          -3
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "green"
+    },
+    {
+      "id": "S3",
+      "x": 6.64545,
+      "y": 0.875,
+      "path": [
+        [
+          7,
+          0
+        ],
+        [
+          -8,
+          0
+        ],
+        [
+          -8,
+          2
+        ]
+      ],
+      "slideAxis": [
+        -1,
+        0
+      ],
+      "angle": 0,
+      "color": "green"
+    }
+  ],
+  "notes": "Sửa khóa cứng 21/10/2026 theo yêu cầu GD. Giữ toàn bộ vòng/thanh và bố cục nguồn; add_bomb R1. Ý tưởng: mở đường bằng cửa chuyển động hiện có, Bom phá vật chặn khi cần rồi quay lại nguồn pin. Có route full-body/default-feel không Booster được lưu riêng; pack --no-solve, chưa Unity/device hoặc duyệt độ khó. Ghi chú nguồn lịch sử: R4 giữ Z1, Z1 và R3 cùng giữ L ngang mới; R3 còn giữ L bên, nối lại nguồn giữa. Bỏ N1/N2, thêm Z1 và L S3; rút S1; thu R1/R6. Khe R3 quay trái để ba pin cardinal có margin tối thiểu45°. Quan hệ cuối thêm: R3→S3, R4→Z1, Z1→S3; bỏ: R4→N1, N1→N2, N2→R3, N2→S1 Phản chiếu cứng x và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest.",
+  "author": "Codex / GD repair"
+}

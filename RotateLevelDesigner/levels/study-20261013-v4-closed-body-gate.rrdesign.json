@@ -1,0 +1,64 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Vòng kín làm vách cho chốt quay",
+  "author": "Codex reference study 20261013",
+  "notes": "Vòng kín trên trái giữ vòng dưới trái và làm vật cản cho chốt trên vòng trên phải. Hai cặp pin dọc được nối bằng quan hệ chặn hình học. Đổi riêng vòng kín sang vòng hở hoặc bỏ chốt phải mở thêm hướng quay. Tháo vòng dưới trái cũng gỡ vách kín, cho phép xử lý cặp bên phải. Không ngàm, bom, Chain hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R3"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 45,
+      "color": "orange",
+      "stops": [
+        {
+          "angle": 240,
+          "length": 1
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "green"
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R2"
+        }
+      ]
+    }
+  ]
+}

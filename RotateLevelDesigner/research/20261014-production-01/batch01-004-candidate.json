@@ -1,0 +1,514 @@
+{
+  "slot": 4,
+  "stem": "batch01-004",
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "B01-004 | Cửa giữa đổi hướng",
+    "author": "Codex + GD / batch 01",
+    "notes": "Bộ 15 level đầu, vị trí đề xuất 4/15. Một receiver bên trái được ba nguồn dùng lại; hai receiver còn lại cùng giữ hai nguồn lân cận. Hai cột ba hàng liên kết chéo. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. ",
+    "rings": [
+      {
+        "id": "S00",
+        "x": 0,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 225,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 0,
+            "target": "R10"
+          },
+          {
+            "angle": 90,
+            "target": "R01"
+          }
+        ]
+      },
+      {
+        "id": "R10",
+        "x": 4.5854,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 315,
+        "color": "blue",
+        "pins": []
+      },
+      {
+        "id": "R01",
+        "x": 0,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "purple",
+        "pins": []
+      },
+      {
+        "id": "S11",
+        "x": 4.5854,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "red",
+        "pins": [
+          {
+            "angle": 180,
+            "target": "R01"
+          },
+          {
+            "angle": 270,
+            "target": "R10"
+          },
+          {
+            "angle": 90,
+            "target": "R12"
+          }
+        ]
+      },
+      {
+        "id": "S02",
+        "x": 0,
+        "y": 9.1708,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 135,
+        "color": "green",
+        "pins": [
+          {
+            "angle": 0,
+            "target": "R12"
+          },
+          {
+            "angle": 270,
+            "target": "R01"
+          }
+        ]
+      },
+      {
+        "id": "R12",
+        "x": 4.5854,
+        "y": 9.1708,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 45,
+        "color": "navy",
+        "pins": []
+      }
+    ],
+    "sticks": []
+  },
+  "authorMoves": [
+    {
+      "part": "R10",
+      "target": 180
+    },
+    {
+      "part": "R01",
+      "target": 270
+    },
+    {
+      "part": "R12",
+      "target": 180
+    },
+    {
+      "part": "R01",
+      "target": 90
+    },
+    {
+      "part": "R10",
+      "target": 90
+    },
+    {
+      "part": "R12",
+      "target": 270
+    },
+    {
+      "part": "R01",
+      "target": 0
+    }
+  ],
+  "bombs": false,
+  "idea": "Một receiver bên trái được ba nguồn dùng lại; hai receiver còn lại cùng giữ hai nguồn lân cận. Hai cột ba hàng liên kết chéo.",
+  "sourceStudy": null,
+  "probes": [],
+  "analysis": {
+    "error": null,
+    "warnings": [],
+    "info": {
+      "rings": 6,
+      "sticks": 0,
+      "guides": 0,
+      "bombs": 0,
+      "links": 7,
+      "pins": 7,
+      "stops": 0,
+      "closedRings": 0
+    }
+  },
+  "initial": {
+    "solved": false,
+    "remaining": 6,
+    "initialContacts": [],
+    "trace": [],
+    "links": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "S00": {
+        "pose": 225.00000000000003,
+        "solved": false,
+        "locked": true
+      },
+      "R10": {
+        "pose": 315,
+        "solved": false,
+        "locked": false
+      },
+      "R01": {
+        "pose": 180,
+        "solved": false,
+        "locked": false
+      },
+      "S11": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "S02": {
+        "pose": 135,
+        "solved": false,
+        "locked": true
+      },
+      "R12": {
+        "pose": 45.00000000000001,
+        "solved": false,
+        "locked": false
+      }
+    }
+  },
+  "full": {
+    "solved": true,
+    "remaining": 0,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "R10",
+        "target": 180,
+        "pose": 191.2499999999999,
+        "remaining": 6,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "R01",
+        "target": 270,
+        "pose": 258.749999999999,
+        "remaining": 5,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ]
+      },
+      {
+        "part": "R12",
+        "target": 180,
+        "pose": 168.7500000000002,
+        "remaining": 5,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "R01",
+        "target": 90,
+        "pose": 101.249999999999,
+        "remaining": 4,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_5"
+        ]
+      },
+      {
+        "part": "R10",
+        "target": 90,
+        "pose": 101.06249999999963,
+        "remaining": 3,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ]
+      },
+      {
+        "part": "R12",
+        "target": 270,
+        "pose": 258.93750000000074,
+        "remaining": 2,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_6"
+        ]
+      },
+      {
+        "part": "R01",
+        "target": 0,
+        "pose": 11.062500000000458,
+        "remaining": 0,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4",
+          "ring_3"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "S00": {
+        "pose": 225.00000000000003,
+        "solved": true,
+        "locked": false
+      },
+      "R10": {
+        "pose": 101.06249999999963,
+        "solved": true,
+        "locked": false
+      },
+      "R01": {
+        "pose": 11.062500000000458,
+        "solved": true,
+        "locked": false
+      },
+      "S11": {
+        "pose": 0,
+        "solved": true,
+        "locked": false
+      },
+      "S02": {
+        "pose": 135,
+        "solved": true,
+        "locked": false
+      },
+      "R12": {
+        "pose": 258.93750000000074,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "release": {
+    "ok": true,
+    "solved": true,
+    "trace": [
+      {
+        "part": "ring_2",
+        "target": 180,
+        "grab": {
+          "x": 3.347963132923542,
+          "y": 1.2374368670764582
+        },
+        "selectableBodySamples": 73,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 191.2499999999999,
+        "remaining": 6,
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_3",
+        "target": 270,
+        "grab": {
+          "x": -1.2374368670764584,
+          "y": 3.347963132923542
+        },
+        "selectableBodySamples": 64,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ],
+        "pose": 258.749999999999,
+        "remaining": 5,
+        "links": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_6",
+        "target": 180,
+        "grab": {
+          "x": 3.28489655541456,
+          "y": 7.999821438871998
+        },
+        "selectableBodySamples": 73,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 168.7500000000002,
+        "remaining": 5,
+        "links": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "part": "ring_3",
+        "target": 90,
+        "grab": {
+          "x": -1.5155444566227678,
+          "y": 5.4604
+        },
+        "selectableBodySamples": 72,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_5"
+        ],
+        "pose": 101.249999999999,
+        "remaining": 4,
+        "links": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "part": "ring_2",
+        "target": 90,
+        "grab": {
+          "x": 3.632281688723703,
+          "y": -1.467673493904492
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ],
+        "pose": 101.06249999999963,
+        "remaining": 3,
+        "links": [
+          false,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "part": "ring_6",
+        "target": 270,
+        "grab": {
+          "x": 3.7104000000000004,
+          "y": 10.686344456622768
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_6"
+        ],
+        "pose": 258.93750000000074,
+        "remaining": 2,
+        "links": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "part": "ring_3",
+        "target": 0,
+        "grab": {
+          "x": -1.2374368670764584,
+          "y": 3.347963132923542
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4",
+          "ring_3"
+        ],
+        "pose": 11.062500000000458,
+        "remaining": 0,
+        "links": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    ],
+    "bombs": []
+  },
+  "analytic": {
+    "solved": true,
+    "remaining": 0
+  },
+  "feel": {
+    "solved": true,
+    "remaining": 0
+  }
+}

@@ -1,0 +1,1955 @@
+{
+  "slot": 196,
+  "source": "Tools/RotateLevelDesigner/levels/A196_20261021_r01.rrpack.json",
+  "sourceSha256": "4d7c575226c1e016fc13851a0079ce17ee8f33624f389b453c3ea322d262808b",
+  "status": "verified_candidate",
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "196",
+    "name": "Level196 – Thanh trái trở lại cửa",
+    "rings": [
+      {
+        "id": "R1",
+        "x": 7.2166806,
+        "y": -8.960075,
+        "gapDir": -132,
+        "gap": 60,
+        "radius": 1.75,
+        "pins": [],
+        "color": "red"
+      },
+      {
+        "id": "R2",
+        "x": 7.2166806,
+        "y": -4.376675,
+        "gapDir": -306,
+        "gap": 90,
+        "pins": [
+          {
+            "id": "p1",
+            "angle": -90,
+            "targets": [
+              "R1"
+            ],
+            "length": 0.8334
+          },
+          {
+            "id": "p2",
+            "angle": -180,
+            "targets": [
+              "R4"
+            ],
+            "length": 0.8333998
+          }
+        ],
+        "radius": 1.75,
+        "color": "purple"
+      },
+      {
+        "id": "R3",
+        "x": 11.799982,
+        "y": -4.376675,
+        "gapDir": -272,
+        "gap": 60,
+        "radius": 1.75,
+        "pins": [
+          {
+            "id": "toBridge",
+            "angle": -360,
+            "length": 1.049999,
+            "targets": [
+              "Bridge"
+            ]
+          },
+          {
+            "id": "returnR2",
+            "angle": -180,
+            "length": 0.833301,
+            "targets": [
+              "R2"
+            ]
+          }
+        ],
+        "color": "red",
+        "bomb": {
+          "x": 13.549982,
+          "y": -4.376675
+        }
+      },
+      {
+        "id": "R4",
+        "x": 2.6332808,
+        "y": -4.376675,
+        "gapDir": -248,
+        "gap": 90,
+        "radius": 1.75,
+        "pins": [
+          {
+            "id": "returnR5",
+            "angle": -90,
+            "targets": [
+              "R5"
+            ],
+            "length": 0.8334
+          }
+        ],
+        "color": "red"
+      },
+      {
+        "id": "R5",
+        "x": 2.6332808,
+        "y": -8.960075,
+        "gapDir": -51,
+        "gap": 90,
+        "pins": [
+          {
+            "id": "zS2",
+            "angle": -180,
+            "targets": [
+              "S2"
+            ],
+            "length": 3.6166322
+          }
+        ],
+        "radius": 1.75,
+        "color": "purple"
+      },
+      {
+        "id": "R6",
+        "x": 11.799982,
+        "y": -8.960075,
+        "gapDir": -144,
+        "gap": 90,
+        "pins": [
+          {
+            "id": "p1",
+            "angle": 90,
+            "targets": [
+              "R3"
+            ],
+            "length": 1.0834
+          },
+          {
+            "id": "toBridge",
+            "angle": -360,
+            "length": 1.299999,
+            "targets": [
+              "Bridge"
+            ]
+          }
+        ],
+        "radius": 1.5,
+        "color": "blue"
+      },
+      {
+        "id": "R7",
+        "x": 6.799946,
+        "y": 2.158125,
+        "gapDir": -269,
+        "gap": 90,
+        "pins": [
+          {
+            "id": "p1",
+            "angle": -52.578958,
+            "targets": [
+              "R3"
+            ],
+            "length": 4.2282422
+          },
+          {
+            "id": "p2",
+            "angle": -122.522061,
+            "targets": [
+              "R4"
+            ],
+            "length": 3.7501424
+          },
+          {
+            "id": "nBridge",
+            "angle": 0,
+            "targets": [
+              "Bridge"
+            ],
+            "length": 5.800035
+          }
+        ],
+        "radius": 2,
+        "color": "orange"
+      },
+      {
+        "id": "R12",
+        "x": 11.799982,
+        "y": -13.543375,
+        "gapDir": -38,
+        "gap": 90,
+        "pins": [
+          {
+            "id": "p1",
+            "angle": 90,
+            "targets": [
+              "R6"
+            ],
+            "length": 1.0833
+          },
+          {
+            "id": "p2",
+            "angle": 135,
+            "targets": [
+              "R1"
+            ],
+            "length": 2.7317657
+          },
+          {
+            "id": "zZ1",
+            "angle": -132.96797,
+            "targets": [
+              "Z1"
+            ],
+            "length": 3.2679105
+          }
+        ],
+        "radius": 1.75,
+        "color": "purple"
+      },
+      {
+        "id": "Z1",
+        "x": 7.016649,
+        "y": -18.678625,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": -90,
+        "pins": [
+          {
+            "id": "zZ2",
+            "angle": 146.30993,
+            "targets": [
+              "Z2"
+            ],
+            "length": 3.7111026
+          }
+        ],
+        "color": "purple"
+      },
+      {
+        "id": "Z2",
+        "x": 1.0166486,
+        "y": -14.678625,
+        "radius": 1.5,
+        "gap": 90,
+        "gapDir": -89,
+        "pins": [
+          {
+            "id": "zR5",
+            "angle": 74.21442,
+            "targets": [
+              "R5"
+            ],
+            "length": 2.442669
+          },
+          {
+            "id": "zS2",
+            "angle": -180,
+            "targets": [
+              "S2"
+            ],
+            "length": 2.25
+          }
+        ],
+        "color": "blue"
+      }
+    ],
+    "sticks": [
+      {
+        "id": "Bridge",
+        "x": 14.84998,
+        "y": -6.668375,
+        "angle": 0,
+        "path": [
+          [
+            0,
+            -3.9917
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            -2,
+            11
+          ]
+        ],
+        "slideAxis": [
+          0,
+          1
+        ],
+        "color": "green"
+      },
+      {
+        "id": "S2",
+        "x": -2.9833514,
+        "y": -11.678625,
+        "path": [
+          [
+            0,
+            -9
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            -2,
+            10
+          ]
+        ],
+        "slideAxis": [
+          0,
+          -1
+        ],
+        "angle": 0,
+        "color": "green"
+      }
+    ],
+    "author": "Codex / GD authoring",
+    "notes": "R12 qua Z1/Z2 về R5; Z2/R5 cùng giữ L trái, nối các nguồn qua cửa cũ. Bỏ N1/N2, thêm hai cửa và L S2 bên trái; đổi cỡ R6/R1, đảo cánh Bridge. Quan hệ cuối thêm: R5→S2, R12→Z1, Z1→Z2, Z2→R5, Z2→S2; bỏ: R12→N2, N1→R5, N2→N1, N2→R1 Phản chiếu cứng y và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest."
+  },
+  "log": [
+    {
+      "kind": "add_bomb",
+      "host": "R3",
+      "from": null,
+      "to": {
+        "x": 13.549982,
+        "y": -4.376675
+      },
+      "materialAngle": 0
+    }
+  ],
+  "proof": {
+    "found": true,
+    "verified": true,
+    "seconds": 0.584,
+    "nodes": 43,
+    "bestRemaining": 0,
+    "moves": [
+      {
+        "part": "slide_bar_1",
+        "target": 1.8000000000000005
+      },
+      {
+        "part": "slide_bar_1",
+        "target": 6.399999999999994
+      },
+      {
+        "part": "ring_1",
+        "target": 297
+      },
+      {
+        "part": "slide_bar_2",
+        "target": 5.999999999999995
+      },
+      {
+        "part": "slide_bar_2",
+        "target": 6.099999999999994
+      },
+      {
+        "part": "slide_bar_2",
+        "target": 11.799999999999974
+      },
+      {
+        "part": "ring_5",
+        "target": 288
+      },
+      {
+        "part": "slide_bar_1",
+        "target": 12.399999999999974
+      },
+      {
+        "part": "slide_bar_1",
+        "target": 12.899999999999972
+      },
+      {
+        "part": "ring_5",
+        "target": 221.2499999999996
+      },
+      {
+        "part": "ring_10",
+        "target": 295
+      },
+      {
+        "part": "ring_9",
+        "target": 375
+      },
+      {
+        "part": "ring_5",
+        "target": 418.393981933593
+      },
+      {
+        "part": "ring_4",
+        "target": 91
+      },
+      {
+        "part": "ring_4",
+        "target": 15.250000000000142
+      },
+      {
+        "part": "ring_1",
+        "target": 351.00000000000017
+      },
+      {
+        "part": "ring_1",
+        "target": 432.7500000000003
+      },
+      {
+        "part": "ring_2",
+        "target": 126
+      },
+      {
+        "part": "ring_1",
+        "target": 657.7500000000011
+      },
+      {
+        "part": "ring_2",
+        "target": 31.421630859374943
+      },
+      {
+        "part": "ring_3",
+        "target": 112
+      },
+      {
+        "part": "ring_3",
+        "target": 36.25000000000014
+      }
+    ],
+    "bombsEnabled": true,
+    "defaultFeel": {
+      "ok": true,
+      "solved": true,
+      "trace": [
+        {
+          "part": "slide_bar_1",
+          "target": 1.8000000000000005,
+          "grab": {
+            "x": 14.84998,
+            "y": -1.964936428571428
+          },
+          "grabBodySdf": -0.24999999999999822,
+          "selectable": 70,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 1.8000000000000007,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 6.399999999999994,
+          "grab": {
+            "x": 14.84998,
+            "y": -0.5646992857142852
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 73,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 6.399999999999994,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 297,
+          "grab": {
+            "x": 5.701136143377232,
+            "y": -8.085075
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 83,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 294.00000000000017,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 5.999999999999995,
+          "grab": {
+            "x": -2.9833514,
+            "y": -10.178625
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 93,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 5.999999999999995,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 6.099999999999994,
+          "grab": {
+            "x": -2.9833514,
+            "y": -3.9786250000000063
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 97,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 6.099999999999994,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 11.799999999999974,
+          "grab": {
+            "x": -2.9833514,
+            "y": -3.6786250000000074
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 96,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_2"
+          ],
+          "pose": 11.799999999999974,
+          "remaining": 11,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "part": "ring_5",
+          "target": 288,
+          "grab": {
+            "x": 1.3327773554145603,
+            "y": -7.789096438871997
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 74,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 290.25000000000006,
+          "remaining": 11,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 12.399999999999974,
+          "grab": {
+            "x": 14.84998,
+            "y": 4.634944999999993
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 76,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 12.399999999999977,
+          "remaining": 11,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 12.899999999999972,
+          "grab": {
+            "x": 14.84998,
+            "y": 10.43506357142855
+          },
+          "grabBodySdf": -0.2499999999999991,
+          "selectable": 78,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_1"
+          ],
+          "pose": 12.89999999999997,
+          "remaining": 10,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_5",
+          "target": 221.2499999999996,
+          "grab": {
+            "x": 1.1656073060955081,
+            "y": -8.006956688723703
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 80,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 247.39398193359352,
+          "remaining": 10,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_10",
+          "target": 295,
+          "grab": {
+            "x": 0.19969004747745922,
+            "y": -13.420619148081864
+          },
+          "grabBodySdf": -0.24999999999999933,
+          "selectable": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_10"
+          ],
+          "pose": 292.00000000000074,
+          "remaining": 9,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_9",
+          "target": 375,
+          "grab": {
+            "x": 5.548975506095508,
+            "y": -17.7255066887237
+          },
+          "grabBodySdf": -0.24999999999999933,
+          "selectable": 83,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_9"
+          ],
+          "pose": 371.99999999999983,
+          "remaining": 8,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_5",
+          "target": 418.393981933593,
+          "grab": {
+            "x": 1.1656073060955081,
+            "y": -8.006956688723703
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 81,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_5"
+          ],
+          "pose": 415.3939819335948,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 91,
+          "grab": {
+            "x": 1.680162488723703,
+            "y": -5.844348493904492
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 74,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 93.25000000000017,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 15.250000000000142,
+          "grab": {
+            "x": 1.4623022388719984,
+            "y": -5.67717844458544
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 80,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_4"
+          ],
+          "pose": 34.75000000000031,
+          "remaining": 6,
+          "links": [
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 351.00000000000017,
+          "grab": {
+            "x": 5.552331696483481,
+            "y": -8.419295259843842
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 90,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 336.75000000000136,
+          "remaining": 6,
+          "links": [
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 432.7500000000003,
+          "grab": {
+            "x": 5.50492229871584,
+            "y": -8.59622954106892
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 89,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 429.7500000000015,
+          "remaining": 6,
+          "links": [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_2",
+          "target": 126,
+          "grab": {
+            "x": 5.916177155414561,
+            "y": -5.547653561128001
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 83,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 115.42163085937494,
+          "remaining": 6,
+          "links": [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 657.7500000000011,
+          "grab": {
+            "x": 5.526310403994131,
+            "y": -9.413008328929411
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 91,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_1"
+          ],
+          "pose": 654.7500000000024,
+          "remaining": 5,
+          "links": [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_2",
+          "target": 31.421630859374943,
+          "grab": {
+            "x": 5.979243732923542,
+            "y": -5.614111867076458
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 81,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_2"
+          ],
+          "pose": 34.42163085937469,
+          "remaining": 4,
+          "links": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 112,
+          "grab": {
+            "x": 10.240720582670356,
+            "y": -5.1711583745442065
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 84,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_7"
+          ],
+          "pose": 108.25000000000014,
+          "remaining": 3,
+          "links": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 36.25000000000014,
+          "grab": {
+            "x": 10.109611803994131,
+            "y": -4.829608328929411
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 91,
+          "began": true,
+          "events": [
+            {
+              "bomb": 0,
+              "target": 5,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000005",
+              "pose": 37.650303209632085
+            }
+          ],
+          "explosion": {
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_3",
+                "position": {
+                  "x": 12.916657387113895,
+                  "y": -5.724093301721492
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_3",
+              "ring_6"
+            ]
+          },
+          "pose": 37.650303209632085,
+          "remaining": 0,
+          "links": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+    },
+    "analytic": {
+      "ok": false,
+      "solved": false,
+      "trace": [
+        {
+          "part": "slide_bar_1",
+          "target": 1.8000000000000005,
+          "grab": {
+            "x": 14.84998,
+            "y": -1.964936428571428
+          },
+          "grabBodySdf": -0.24999999999999822,
+          "selectable": 70,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 1.8000000000000007,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 6.399999999999994,
+          "grab": {
+            "x": 14.84998,
+            "y": -0.5646992857142852
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 73,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 6.399999999999994,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 297,
+          "grab": {
+            "x": 5.701136143377232,
+            "y": -8.085075
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 83,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 297.00000000000017,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 5.999999999999995,
+          "grab": {
+            "x": -2.9833514,
+            "y": -10.178625
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 93,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 5.999999999999995,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 6.099999999999994,
+          "grab": {
+            "x": -2.9833514,
+            "y": -3.9786250000000063
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 97,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 6.099999999999994,
+          "remaining": 12,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 11.799999999999974,
+          "grab": {
+            "x": -2.9833514,
+            "y": -3.6786250000000074
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 96,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_2"
+          ],
+          "pose": 11.799999999999974,
+          "remaining": 11,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "part": "ring_5",
+          "target": 288,
+          "grab": {
+            "x": 1.3327773554145603,
+            "y": -7.789096438871997
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 74,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 288.00000000000006,
+          "remaining": 11,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 12.399999999999974,
+          "grab": {
+            "x": 14.84998,
+            "y": 4.634944999999993
+          },
+          "grabBodySdf": -0.25,
+          "selectable": 76,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 12.399999999999977,
+          "remaining": 11,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 12.899999999999972,
+          "grab": {
+            "x": 14.84998,
+            "y": 10.43506357142855
+          },
+          "grabBodySdf": -0.2499999999999991,
+          "selectable": 78,
+          "began": true,
+          "events": [],
+          "removed": [
+            "slide_bar_1"
+          ],
+          "pose": 12.89999999999997,
+          "remaining": 10,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_5",
+          "target": 221.2499999999996,
+          "grab": {
+            "x": 1.1656073060955081,
+            "y": -8.006956688723703
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 81,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 247.39453124999983,
+          "remaining": 10,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_10",
+          "target": 295,
+          "grab": {
+            "x": 0.19969004747745922,
+            "y": -13.420619148081864
+          },
+          "grabBodySdf": -0.24999999999999933,
+          "selectable": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_10"
+          ],
+          "pose": 295.0000000000009,
+          "remaining": 9,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_9",
+          "target": 375,
+          "grab": {
+            "x": 5.548975506095508,
+            "y": -17.7255066887237
+          },
+          "grabBodySdf": -0.24999999999999933,
+          "selectable": 83,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_9"
+          ],
+          "pose": 374.99999999999983,
+          "remaining": 8,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_5",
+          "target": 418.393981933593,
+          "grab": {
+            "x": 1.1656073060955081,
+            "y": -8.006956688723703
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 81,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_5"
+          ],
+          "pose": 418.3939819335948,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 91,
+          "grab": {
+            "x": 1.680162488723703,
+            "y": -5.844348493904492
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 74,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 91.00000000000016,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 15.250000000000142,
+          "grab": {
+            "x": 1.3958439329235417,
+            "y": -5.614111867076458
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 81,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 16.000000000000263,
+          "remaining": 7,
+          "links": [
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 351.00000000000017,
+          "grab": {
+            "x": 5.552331696483481,
+            "y": -8.419295259843842
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 91,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 351.00000000000153,
+          "remaining": 7,
+          "links": [
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 432.7500000000003,
+          "grab": {
+            "x": 5.476267283105522,
+            "y": -8.777150189281606
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 85,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 432.0000000000026,
+          "remaining": 7,
+          "links": [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_2",
+          "target": 126,
+          "grab": {
+            "x": 5.916177155414561,
+            "y": -5.547653561128001
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 83,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 62.20898437499987,
+          "remaining": 7,
+          "links": [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_1",
+          "target": 657.7500000000011,
+          "grab": {
+            "x": 5.526310403994131,
+            "y": -9.413008328929411
+          },
+          "grabBodySdf": -0.24999999999999956,
+          "selectable": 92,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 451.00122070312784,
+          "remaining": 7,
+          "links": [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_2",
+          "target": 31.421630859374943,
+          "grab": {
+            "x": 5.979243732923542,
+            "y": -5.614111867076458
+          },
+          "grabBodySdf": -0.24999999999999978,
+          "selectable": 81,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 44.735595703124744,
+          "remaining": 7,
+          "links": [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 112,
+          "began": false,
+          "locked": true,
+          "selectable": 84
+        }
+      ],
+      "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+    },
+    "analyticAlsoVerified": false,
+    "log": "Full-body gesture search completed under default feel; analytic comparison recorded."
+  },
+  "history": [
+    {
+      "edit": "original_diagnostic",
+      "remaining": 3,
+      "verified": false
+    },
+    {
+      "round": 0,
+      "op": {
+        "kind": "add_bomb",
+        "host": "R3",
+        "from": null,
+        "to": {
+          "x": 13.549982,
+          "y": -4.376675
+        },
+        "materialAngle": 0
+      },
+      "remaining": 0,
+      "verified": true,
+      "nodes": 43,
+      "seconds": 0.584
+    }
+  ],
+  "totalSamples": 28062,
+  "seconds": 3.286
+}

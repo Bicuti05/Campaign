@@ -1,0 +1,299 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "206",
+  "name": "Level206 – L bên nối hai nguồn",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 2.3345164,
+      "y": -11.916288,
+      "gapDir": 179.9371,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 236.41278,
+          "targets": [
+            "R2"
+          ],
+          "length": 1.1921295
+        },
+        {
+          "id": "newN1",
+          "angle": 52.431408,
+          "targets": [
+            "N1"
+          ],
+          "length": 4.4506097
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R2",
+      "x": -0.26119625,
+      "y": -15.825042,
+      "gapDir": -210,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -30.0007,
+          "targets": [
+            "R4"
+          ],
+          "length": 1.3059032
+        }
+      ],
+      "radius": 1.5,
+      "color": "blue"
+    },
+    {
+      "id": "R4",
+      "x": 3.6843038,
+      "y": -18.103042,
+      "gapDir": 90,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [
+        {
+          "id": "toBridge",
+          "angle": 270,
+          "length": 1.05,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R6",
+      "x": 7.8484033,
+      "y": -13.547141,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 227.57264,
+          "targets": [
+            "R4"
+          ],
+          "length": 2.6721919
+        },
+        {
+          "id": "newN1",
+          "angle": 93.6164,
+          "targets": [
+            "N1"
+          ],
+          "length": 4.397076
+        }
+      ],
+      "radius": 1.75,
+      "color": "red"
+    },
+    {
+      "id": "R7",
+      "x": 10.461503,
+      "y": -9.81514125,
+      "gapDir": -217,
+      "gap": 90,
+      "stops": [
+        {
+          "angle": 255,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.5,
+      "pins": [],
+      "color": "blue",
+      "bomb": {
+        "x": 11.760541,
+        "y": -9.06514125
+      }
+    },
+    {
+      "id": "R8",
+      "x": 10.461503,
+      "y": -17.279142,
+      "gapDir": -190,
+      "gap": 90,
+      "stops": [
+        {
+          "angle": 105,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "returnR9",
+          "angle": 56.722164,
+          "targets": [
+            "R9"
+          ],
+          "length": 0.71401023
+        },
+        {
+          "id": "toBridge",
+          "angle": 270,
+          "length": 1.6239,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R9",
+      "x": 12.910903,
+      "y": -13.547141,
+      "gapDir": -57,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 123.27784,
+          "targets": [
+            "R7"
+          ],
+          "length": 0.9640099
+        }
+      ],
+      "radius": 1.75,
+      "color": "red"
+    },
+    {
+      "id": "N1",
+      "x": 7.3345167,
+      "y": -5.416289,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -32,
+      "pins": [
+        {
+          "id": "zU1",
+          "angle": 118.0356,
+          "targets": [
+            "U1"
+          ],
+          "length": 1.7319278
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "U1",
+      "x": 4.7579007,
+      "y": -0.5776327,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -116,
+      "pins": [
+        {
+          "id": "zU2",
+          "angle": 18.43495,
+          "targets": [
+            "U2"
+          ],
+          "length": 2.8245553
+        },
+        {
+          "id": "zS2",
+          "angle": 90,
+          "targets": [
+            "S2"
+          ],
+          "length": 4
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "U2",
+      "x": 10.7579,
+      "y": 1.4223672,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": -1,
+      "pins": [
+        {
+          "id": "zR7",
+          "angle": 268.48913,
+          "targets": [
+            "R7"
+          ],
+          "length": 7.991416
+        },
+        {
+          "id": "zS2",
+          "angle": 90,
+          "targets": [
+            "S2"
+          ],
+          "length": 2.25
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Bridge",
+      "x": 7.072903,
+      "y": -20.903042,
+      "angle": 0,
+      "path": [
+        [
+          8,
+          0
+        ],
+        [
+          -5.0886,
+          0
+        ],
+        [
+          -5.0886,
+          -3.5
+        ]
+      ],
+      "slideAxis": [
+        -1,
+        0
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "S2",
+      "x": 7.7579,
+      "y": 5.422367,
+      "path": [
+        [
+          7,
+          0
+        ],
+        [
+          -7,
+          0
+        ],
+        [
+          -7,
+          2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "angle": 0,
+      "color": "orange"
+    }
+  ],
+  "author": "Codex / GD repair",
+  "notes": "Sửa khóa cứng 21/10/2026 theo yêu cầu GD. Giữ toàn bộ vòng/thanh và bố cục nguồn; add_bomb R7. Ý tưởng: mở đường bằng cửa chuyển động hiện có, Bom phá vật chặn khi cần rồi quay lại nguồn pin. Có route full-body/default-feel không Booster được lưu riêng; pack --no-solve, chưa Unity/device hoặc duyệt độ khó. Ghi chú nguồn lịch sử: N1 nhận hai nguồn R1/R6 rồi nối U1/U2 về R7; hai cửa mới dùng chung L S2. Thay Z1/Z2 cao bằng nhánh bên phải thấp, thêm S2; thu R2/R4 và kéo cánh Bridge. Quan hệ cuối thêm: N1→U1, U1→U2, U1→S2, U2→R7, U2→S2; bỏ: R9→Z2, N1→Z1, Z1→Z2, Z2→R7 Phản chiếu cứng y và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest. Xoay90° sau visualQA để bố cục dọc."
+}

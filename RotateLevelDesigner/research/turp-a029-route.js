@@ -1,0 +1,2 @@
+"use strict";
+const fs=require('fs'),path=require('path');let code=fs.readFileSync(path.join(__dirname,'turp-a024-route.js'),'utf8').replace("require('./turp-a024-author')","require('./turp-a029-author')");code=code.replace('Q.qualify(d,{moves,probes})','Q.qualify(d,{moves,probes:probes.concat([[{part:"S1",target:-1.6}]])})');new Function('require','__dirname','process',code)(require,__dirname,process);

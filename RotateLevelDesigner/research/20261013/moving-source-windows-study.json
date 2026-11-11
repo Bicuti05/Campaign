@@ -1,0 +1,4899 @@
+{
+  "format": "rotate-moving-source-windows-study",
+  "version": 1,
+  "exported": false,
+  "candidates": [
+    {
+      "stem": "study-20261014-v37-moving-source-windows",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Xoay nguồn qua hai cửa còn sống",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Hai cột vòng đều, nguồn A/B mỗi nguồn có hai target chung và một nguồn phụ giữ mình sống. Sau khi mở pin đi ra, A/B được phép xoay nhưng khe 60 độ của hai vòng nhận cần căn cho cả quỹ đạo pin di động. Có thể căn sẵn cửa trước hoặc thử xoay rồi chỉnh hai cửa; khóa input và vật cản rắn là hai điều khác nhau. Không thanh/ngàm/chốt/bom/Chain/Booster; chưa GD nghiệm thu bố cục/độ khó.",
+        "rings": [
+          {
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "R1"
+              },
+              {
+                "angle": 0,
+                "target": "R2"
+              }
+            ]
+          },
+          {
+            "id": "R1",
+            "x": 0,
+            "y": 4.5854,
+            "gapDir": 135,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          },
+          {
+            "id": "R2",
+            "x": 4.5854,
+            "y": 0,
+            "gapDir": 315,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 60,
+            "pins": []
+          },
+          {
+            "id": "B",
+            "x": 4.5854,
+            "y": 4.5854,
+            "gapDir": 0,
+            "color": "green",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "R1"
+              },
+              {
+                "angle": 270,
+                "target": "R2"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": 0,
+            "y": -4.5854,
+            "gapDir": 180,
+            "color": "teal",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "D",
+            "x": 4.5854,
+            "y": 9.1708,
+            "gapDir": 180,
+            "color": "navy",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 270,
+                "target": "B"
+              }
+            ]
+          }
+        ],
+        "sticks": []
+      },
+      "bombs": false,
+      "holdout": true,
+      "holdoutReason": "Receivers gate a single source drag but repeated source drags exploit per-gesture starting penetration tolerance and can bypass the claimed two-window adjustment. No delivery or core changes; preaim and B-first pointer recipes also lack default-feel proof.",
+      "authorMoves": [
+        {
+          "part": "R1",
+          "target": 270
+        },
+        {
+          "part": "R2",
+          "target": 180
+        },
+        {
+          "part": "A",
+          "target": 270
+        },
+        {
+          "part": "R1",
+          "target": 250
+        },
+        {
+          "part": "R2",
+          "target": 160
+        },
+        {
+          "part": "A",
+          "target": 270
+        },
+        {
+          "part": "R1",
+          "target": 380
+        },
+        {
+          "part": "R2",
+          "target": 70
+        },
+        {
+          "part": "B",
+          "target": 90
+        }
+      ],
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 6,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 6,
+            "pins": 6,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 2,
+              "target": 429
+            },
+            {
+              "obj": 1,
+              "target": 249
+            },
+            {
+              "obj": 2,
+              "target": 474.0000000000015
+            },
+            {
+              "obj": 2,
+              "target": 519.0000000000018
+            },
+            {
+              "obj": 0,
+              "target": 234
+            },
+            {
+              "obj": 2,
+              "target": 789.0000000000015
+            },
+            {
+              "obj": 1,
+              "target": 338.99999999999943
+            },
+            {
+              "obj": 3,
+              "target": 54
+            }
+          ],
+          "log": "found with 8 drags after 149 explorations",
+          "nodes": 149,
+          "seconds": 0.56,
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 315,
+              "to": 429,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 6
+            },
+            {
+              "step": 2,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 135,
+              "to": 249,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 6
+            },
+            {
+              "step": 3,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 429,
+              "to": 474,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 6
+            },
+            {
+              "step": 4,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 474,
+              "to": 519,
+              "direction": "CCW",
+              "removedNow": 0,
+              "remaining": 6
+            },
+            {
+              "step": 5,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 180,
+              "to": 234,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 4
+            },
+            {
+              "step": 6,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 519,
+              "to": 789,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 3
+            },
+            {
+              "step": 7,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 249,
+              "to": 339,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 8,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 0,
+              "to": 54,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "initial": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 135,
+            "R2": 315,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "prepared": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 269.99999999999983,
+            "R2": 179.99999999999997,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "first": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 188.7004394531249,
+            "R1": 269.99999999999983,
+            "R2": 179.99999999999997,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "follow": {
+          "remaining": 4,
+          "solved": false,
+          "angles": {
+            "A": 236.7004394531248,
+            "R1": 249.99999999999977,
+            "R2": 159.99999999999983,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": false,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": false
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": [
+            "ring_1",
+            "ring_5"
+          ]
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 270,
+              "pose": 269.99999999999983,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 180,
+              "pose": 179.99999999999997,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 188.7004394531249,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 249.99999999999977,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 159.99999999999983,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 236.7004394531248,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 380,
+              "pose": 340.00000000000034,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 109.00000000000026,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 53.999999999999936,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feel": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 270,
+              "pose": 262.4999999999997,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 180,
+              "pose": 187.50000000000003,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 185.58178710937494,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 253.49999999999972,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 167.2500000000001,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 235.83178710937474,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 380,
+              "pose": 340.4999999999996,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 110.25000000000051,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 54.00000000000001,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "preaim": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 250.00000000000009,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 159.99999999999974,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 234.0000000000001,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 380,
+              "pose": 340.0000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 108.99999999999932,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_5"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 53.999999999999936,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "preaimFeel": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 247.49999999999991,
+              "remaining": 6,
+              "links": 6,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 172.49999999999986,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 180,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 380,
+              "pose": 357.3000000000004,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 85.20000000000047,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 10.416503906249975,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "preparedB": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 359.99999999999926,
+            "R2": 90.00000000000051,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": false,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "firstB": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 359.99999999999926,
+            "R2": 90.00000000000051,
+            "B": 8.700439453125021,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": false,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "followB": {
+          "remaining": 4,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 340.0000000000003,
+            "R2": 69.99999999999957,
+            "B": 56.70043945312523,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": false,
+            "C": true,
+            "D": false
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": false
+            }
+          ],
+          "solvedParts": [
+            "ring_4",
+            "ring_6"
+          ]
+        },
+        "preaimB": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 340,
+              "pose": 339.9999999999997,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 70.00000000000077,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 53.999999999999936,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 289.0000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 159.99999999999997,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 234.0000000000001,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "preaimBFeel": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 340,
+              "pose": 323.54999999999956,
+              "remaining": 6,
+              "links": 6,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 94.20000000000094,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 0,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 262.3874999999994,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 154.3500000000002,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 180,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "withoutIncomingRoot": {
+          "remaining": 4,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 269.99999999999983,
+            "R2": 179.99999999999997,
+            "B": 0,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": [
+            "ring_1"
+          ]
+        },
+        "withoutSecondRoot": {
+          "remaining": 4,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 359.99999999999926,
+            "R2": 90.00000000000051,
+            "B": 0,
+            "C": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": false,
+            "C": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            }
+          ],
+          "solvedParts": [
+            "ring_4"
+          ]
+        },
+        "withoutBR1": {
+          "remaining": 5,
+          "solved": false,
+          "angles": {
+            "A": 188.7004394531249,
+            "R1": 248.99999999999946,
+            "R2": 179.99999999999997,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": [
+            "ring_2"
+          ]
+        },
+        "withoutBR2": {
+          "remaining": 5,
+          "solved": false,
+          "angles": {
+            "A": 188.7004394531249,
+            "R1": 269.99999999999983,
+            "R2": 200.99999999999994,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": [
+            "ring_3"
+          ]
+        },
+        "wideFirst": {
+          "remaining": 4,
+          "solved": false,
+          "angles": {
+            "A": 234.0000000000001,
+            "R1": 269.99999999999983,
+            "R2": 179.99999999999997,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": false,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": false
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": [
+            "ring_1",
+            "ring_5"
+          ]
+        },
+        "wideFirstB": {
+          "remaining": 4,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 359.99999999999926,
+            "R2": 90.00000000000051,
+            "B": 53.999999999999936,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": false,
+            "C": true,
+            "D": false
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": false
+            }
+          ],
+          "solvedParts": [
+            "ring_4",
+            "ring_6"
+          ]
+        },
+        "partialSourceAngles": [
+          {
+            "target": 195,
+            "result": {
+              "remaining": 6,
+              "solved": false,
+              "angles": {
+                "A": 188.7004394531249,
+                "R1": 269.99999999999983,
+                "R2": 179.99999999999997,
+                "B": 0,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": false,
+                "R1": false,
+                "R2": false,
+                "B": true,
+                "C": true,
+                "D": true
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": true
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": true
+                }
+              ],
+              "solvedParts": []
+            }
+          },
+          {
+            "target": 205,
+            "result": {
+              "remaining": 6,
+              "solved": false,
+              "angles": {
+                "A": 188.7006835937499,
+                "R1": 269.99999999999983,
+                "R2": 179.99999999999997,
+                "B": 0,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": false,
+                "R1": false,
+                "R2": false,
+                "B": true,
+                "C": true,
+                "D": true
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": true
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": true
+                }
+              ],
+              "solvedParts": []
+            }
+          },
+          {
+            "target": 215,
+            "result": {
+              "remaining": 6,
+              "solved": false,
+              "angles": {
+                "A": 188.7004394531249,
+                "R1": 269.99999999999983,
+                "R2": 179.99999999999997,
+                "B": 0,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": false,
+                "R1": false,
+                "R2": false,
+                "B": true,
+                "C": true,
+                "D": true
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": true
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": true
+                }
+              ],
+              "solvedParts": []
+            }
+          }
+        ],
+        "onlyAdjustR1": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 189.0922851562499,
+            "R1": 249.99999999999977,
+            "R2": 179.99999999999997,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "onlyAdjustR2": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 189.0922851562499,
+            "R1": 269.99999999999983,
+            "R2": 159.99999999999983,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": false,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "onlyPrepareR1": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 269.99999999999983,
+            "R2": 315,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": false
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "onlyPrepareR2": {
+          "remaining": 6,
+          "solved": false,
+          "angles": {
+            "A": 180,
+            "R1": 135,
+            "R2": 179.99999999999997,
+            "B": 0,
+            "C": 180,
+            "D": 180
+          },
+          "locked": {
+            "A": true,
+            "R1": false,
+            "R2": false,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "links": [
+            {
+              "source": "ring_1",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_1",
+              "target": "ring_3",
+              "active": false
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_2",
+              "active": true
+            },
+            {
+              "source": "ring_4",
+              "target": "ring_3",
+              "active": true
+            },
+            {
+              "source": "ring_5",
+              "target": "ring_1",
+              "active": true
+            },
+            {
+              "source": "ring_6",
+              "target": "ring_4",
+              "active": true
+            }
+          ],
+          "solvedParts": []
+        },
+        "otherRoute": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 360,
+              "pose": 359.99999999999926,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 90,
+              "pose": 90.00000000000051,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 8.700439453125021,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 340,
+              "pose": 340.0000000000003,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 69.99999999999957,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 56.70043945312523,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 289.00000000000034,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 159.99999999999943,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 234.0000000000001,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "otherRouteFeel": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "R1",
+              "pointer": 360,
+              "pose": 340.79999999999905,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 90,
+              "pose": 109.20000000000073,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 3.787353515625056,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 340,
+              "pose": 340.79999999999905,
+              "remaining": 6,
+              "links": 5,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 70,
+              "pose": 79.95000000000077,
+              "remaining": 6,
+              "links": 4,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 90,
+              "pose": 54.7873535156248,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "R1",
+              "pointer": 250,
+              "pose": 289.7999999999985,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "R2",
+              "pointer": 160,
+              "pose": 157.9875000000007,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 180,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "ring_4",
+                "ring_6"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "contactA": {
+          "source": "A",
+          "angle": 188.7004394531249,
+          "inputLocked": false,
+          "receivers": [
+            {
+              "label": "R1",
+              "bodyBodyDepth": 0,
+              "quads": [
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_1",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_1",
+                  "depth": 0.019974972664492135
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_1",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_1",
+                  "depth": 0.014564070503878812
+                },
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_2",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_2",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_2",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_2",
+                  "depth": 0
+                }
+              ],
+              "declaredLinkActive": false
+            },
+            {
+              "label": "R2",
+              "bodyBodyDepth": 0,
+              "quads": [
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_1",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_1",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_1",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_1",
+                  "depth": 0
+                },
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_2",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_2",
+                  "depth": 0.01997497266449791
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_2",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_2",
+                  "depth": 0.014564070503885196
+                }
+              ],
+              "declaredLinkActive": false
+            }
+          ]
+        },
+        "contactB": {
+          "source": "B",
+          "angle": 8.700439453125021,
+          "inputLocked": false,
+          "receivers": [
+            {
+              "label": "R1",
+              "bodyBodyDepth": 0,
+              "quads": [
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_3",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_3",
+                  "depth": 0.01997497266448786
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_3",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_3",
+                  "depth": 0.014564070503870985
+                },
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_4",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_4",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_4",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_4",
+                  "depth": 0
+                }
+              ],
+              "declaredLinkActive": false
+            },
+            {
+              "label": "R2",
+              "bodyBodyDepth": 0,
+              "quads": [
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_3",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_3",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_3",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_3",
+                  "depth": 0
+                },
+                {
+                  "kind": 2,
+                  "feature": "attachment.pin_4",
+                  "depth": 0
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_4",
+                  "depth": 0.019974972664520557
+                },
+                {
+                  "kind": 4,
+                  "feature": "attachment.pin_4",
+                  "depth": 0
+                },
+                {
+                  "kind": 8,
+                  "feature": "attachment.pin_4",
+                  "depth": 0.014564070503907928
+                }
+              ],
+              "declaredLinkActive": false
+            }
+          ]
+        },
+        "repeatedSourceDrags": [
+          {
+            "adjust": [],
+            "states": [
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 188.7004394531249,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.0922851562499,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.4973144531249,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.9228515624999,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 190.3820800781249,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 190.9112836718558,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 4,
+                "solved": false,
+                "angles": {
+                  "A": 235.9112836718555,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": false,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": [
+                  "ring_1",
+                  "ring_5"
+                ]
+              },
+              {
+                "remaining": 4,
+                "solved": false,
+                "angles": {
+                  "A": 235.9112836718555,
+                  "R1": 269.99999999999983,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": false,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": [
+                  "ring_1",
+                  "ring_5"
+                ]
+              }
+            ]
+          },
+          {
+            "adjust": [
+              {
+                "part": "R1",
+                "target": 250
+              }
+            ],
+            "states": [
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 188.7004394531249,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.0922851562499,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.4973144531249,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.9228515624999,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 190.3820800781249,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 190.9112836718558,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 4,
+                "solved": false,
+                "angles": {
+                  "A": 235.9112836718555,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": false,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": [
+                  "ring_1",
+                  "ring_5"
+                ]
+              },
+              {
+                "remaining": 4,
+                "solved": false,
+                "angles": {
+                  "A": 235.9112836718555,
+                  "R1": 249.99999999999977,
+                  "R2": 179.99999999999997,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": false,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": [
+                  "ring_1",
+                  "ring_5"
+                ]
+              }
+            ]
+          },
+          {
+            "adjust": [
+              {
+                "part": "R2",
+                "target": 160
+              }
+            ],
+            "states": [
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 188.7004394531249,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.0922851562499,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.4973144531249,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 189.9228515624999,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 190.3820800781249,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 6,
+                "solved": false,
+                "angles": {
+                  "A": 190.9112836718558,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": true,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": []
+              },
+              {
+                "remaining": 4,
+                "solved": false,
+                "angles": {
+                  "A": 235.9112836718555,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": false,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": [
+                  "ring_1",
+                  "ring_5"
+                ]
+              },
+              {
+                "remaining": 4,
+                "solved": false,
+                "angles": {
+                  "A": 235.9112836718555,
+                  "R1": 269.99999999999983,
+                  "R2": 159.99999999999983,
+                  "B": 0,
+                  "C": 180,
+                  "D": 180
+                },
+                "locked": {
+                  "A": false,
+                  "R1": false,
+                  "R2": false,
+                  "B": true,
+                  "C": false,
+                  "D": true
+                },
+                "links": [
+                  {
+                    "source": "ring_1",
+                    "target": "ring_2",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_1",
+                    "target": "ring_3",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_2",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_4",
+                    "target": "ring_3",
+                    "active": true
+                  },
+                  {
+                    "source": "ring_5",
+                    "target": "ring_1",
+                    "active": false
+                  },
+                  {
+                    "source": "ring_6",
+                    "target": "ring_4",
+                    "active": true
+                  }
+                ],
+                "solvedParts": [
+                  "ring_1",
+                  "ring_5"
+                ]
+              }
+            ]
+          }
+        ],
+        "repeatBypass": {
+          "analytic": {
+            "feel": false,
+            "moves": [
+              {
+                "part": "R1",
+                "target": 270
+              },
+              {
+                "part": "R2",
+                "target": 180
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "R1",
+                "target": 380
+              },
+              {
+                "part": "R2",
+                "target": 70
+              },
+              {
+                "part": "B",
+                "target": 90
+              }
+            ],
+            "samples": [
+              {
+                "angle": 188.7004394531249,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 189.0922851562499,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 189.4973144531249,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 189.9228515624999,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 190.3820800781249,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 190.9112836718558,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 235.9112836718555,
+                "locked": false,
+                "removed": true,
+                "remaining": 4
+              }
+            ],
+            "solved": true,
+            "remaining": 0
+          },
+          "defaultFeel": {
+            "feel": true,
+            "moves": [
+              {
+                "part": "R1",
+                "target": 270
+              },
+              {
+                "part": "R2",
+                "target": 180
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "A",
+                "target": 270
+              },
+              {
+                "part": "R1",
+                "target": 380
+              },
+              {
+                "part": "R2",
+                "target": 70
+              },
+              {
+                "part": "B",
+                "target": 90
+              }
+            ],
+            "samples": [
+              {
+                "angle": 185.58178710937494,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 185.93994140624994,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 186.29809570312494,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 186.65698242187494,
+                "locked": false,
+                "removed": false,
+                "remaining": 6
+              },
+              {
+                "angle": 187.01717358827585,
+                "locked": true,
+                "removed": false,
+                "remaining": 6
+              }
+            ],
+            "solved": false,
+            "remaining": 6
+          }
+        },
+        "gapCases": [
+          {
+            "gap": 60,
+            "analysis": {
+              "error": null,
+              "warnings": [],
+              "info": {
+                "rings": 6,
+                "sticks": 0,
+                "guides": 0,
+                "bombs": 0,
+                "links": 6,
+                "pins": 6,
+                "stops": 0,
+                "closedRings": 0
+              }
+            },
+            "first": {
+              "remaining": 6,
+              "solved": false,
+              "angles": {
+                "A": 188.7004394531249,
+                "R1": 269.99999999999983,
+                "R2": 179.99999999999997,
+                "B": 0,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": false,
+                "R1": false,
+                "R2": false,
+                "B": true,
+                "C": true,
+                "D": true
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": true
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": true
+                }
+              ],
+              "solvedParts": []
+            },
+            "firstB": {
+              "remaining": 6,
+              "solved": false,
+              "angles": {
+                "A": 180,
+                "R1": 359.99999999999926,
+                "R2": 90.00000000000051,
+                "B": 8.700439453125021,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": true,
+                "R1": false,
+                "R2": false,
+                "B": false,
+                "C": true,
+                "D": true
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": true
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": true
+                }
+              ],
+              "solvedParts": []
+            },
+            "route": {
+              "solved": true,
+              "trace": [
+                {
+                  "part": "R1",
+                  "pointer": 270,
+                  "pose": 269.99999999999983,
+                  "remaining": 6,
+                  "links": 5,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 180,
+                  "pose": 179.99999999999997,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 188.7004394531249,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 250,
+                  "pose": 249.99999999999977,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 160,
+                  "pose": 159.99999999999983,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 236.7004394531248,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 380,
+                  "pose": 340.00000000000034,
+                  "remaining": 3,
+                  "links": 2,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 70,
+                  "pose": 109.00000000000026,
+                  "remaining": 2,
+                  "links": 1,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "B",
+                  "pointer": 90,
+                  "pose": 53.999999999999936,
+                  "remaining": 0,
+                  "links": 0,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_4",
+                    "ring_5",
+                    "ring_6"
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            "feel": {
+              "solved": true,
+              "trace": [
+                {
+                  "part": "R1",
+                  "pointer": 270,
+                  "pose": 262.4999999999997,
+                  "remaining": 6,
+                  "links": 5,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 180,
+                  "pose": 187.50000000000003,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 185.58178710937494,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 250,
+                  "pose": 253.49999999999972,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 160,
+                  "pose": 167.2500000000001,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 235.83178710937474,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 380,
+                  "pose": 340.4999999999996,
+                  "remaining": 3,
+                  "links": 2,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 70,
+                  "pose": 110.25000000000051,
+                  "remaining": 2,
+                  "links": 1,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "B",
+                  "pointer": 90,
+                  "pose": 54.00000000000001,
+                  "remaining": 0,
+                  "links": 0,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_4",
+                    "ring_5",
+                    "ring_6"
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          },
+          {
+            "gap": 75,
+            "analysis": {
+              "error": null,
+              "warnings": [],
+              "info": {
+                "rings": 6,
+                "sticks": 0,
+                "guides": 0,
+                "bombs": 0,
+                "links": 6,
+                "pins": 6,
+                "stops": 0,
+                "closedRings": 0
+              }
+            },
+            "first": {
+              "remaining": 4,
+              "solved": false,
+              "angles": {
+                "A": 234.0000000000001,
+                "R1": 269.99999999999983,
+                "R2": 179.99999999999997,
+                "B": 0,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": false,
+                "R1": false,
+                "R2": false,
+                "B": true,
+                "C": false,
+                "D": true
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": false
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": true
+                }
+              ],
+              "solvedParts": [
+                "ring_1",
+                "ring_5"
+              ]
+            },
+            "firstB": {
+              "remaining": 4,
+              "solved": false,
+              "angles": {
+                "A": 180,
+                "R1": 359.99999999999926,
+                "R2": 90.00000000000051,
+                "B": 53.999999999999936,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": true,
+                "R1": false,
+                "R2": false,
+                "B": false,
+                "C": true,
+                "D": false
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": true
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": false
+                }
+              ],
+              "solvedParts": [
+                "ring_4",
+                "ring_6"
+              ]
+            },
+            "route": {
+              "solved": true,
+              "trace": [
+                {
+                  "part": "R1",
+                  "pointer": 270,
+                  "pose": 269.99999999999983,
+                  "remaining": 6,
+                  "links": 5,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 180,
+                  "pose": 179.99999999999997,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 234.0000000000001,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 250,
+                  "pose": 249.99999999999977,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 160,
+                  "pose": 159.99999999999983,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 234.0000000000001,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 380,
+                  "pose": 334.0000000000002,
+                  "remaining": 3,
+                  "links": 2,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 70,
+                  "pose": 118.0000000000004,
+                  "remaining": 2,
+                  "links": 1,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "B",
+                  "pointer": 90,
+                  "pose": 53.999999999999936,
+                  "remaining": 0,
+                  "links": 0,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_4",
+                    "ring_5",
+                    "ring_6"
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            "feel": {
+              "solved": true,
+              "trace": [
+                {
+                  "part": "R1",
+                  "pointer": 270,
+                  "pose": 260.9999999999997,
+                  "remaining": 6,
+                  "links": 5,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 180,
+                  "pose": 189.00000000000003,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 187.97387695312494,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 250,
+                  "pose": 252.74999999999974,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 160,
+                  "pose": 167.2500000000002,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 235.9738769531248,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 380,
+                  "pose": 331.4999999999998,
+                  "remaining": 3,
+                  "links": 2,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 70,
+                  "pose": 118.50000000000013,
+                  "remaining": 2,
+                  "links": 1,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "B",
+                  "pointer": 90,
+                  "pose": 54.00000000000001,
+                  "remaining": 0,
+                  "links": 0,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_4",
+                    "ring_5",
+                    "ring_6"
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          },
+          {
+            "gap": 90,
+            "analysis": {
+              "error": null,
+              "warnings": [],
+              "info": {
+                "rings": 6,
+                "sticks": 0,
+                "guides": 0,
+                "bombs": 0,
+                "links": 6,
+                "pins": 6,
+                "stops": 0,
+                "closedRings": 0
+              }
+            },
+            "first": {
+              "remaining": 4,
+              "solved": false,
+              "angles": {
+                "A": 234.0000000000001,
+                "R1": 269.99999999999983,
+                "R2": 179.99999999999997,
+                "B": 0,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": false,
+                "R1": false,
+                "R2": false,
+                "B": true,
+                "C": false,
+                "D": true
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": false
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": true
+                }
+              ],
+              "solvedParts": [
+                "ring_1",
+                "ring_5"
+              ]
+            },
+            "firstB": {
+              "remaining": 4,
+              "solved": false,
+              "angles": {
+                "A": 180,
+                "R1": 359.99999999999926,
+                "R2": 90.00000000000051,
+                "B": 53.999999999999936,
+                "C": 180,
+                "D": 180
+              },
+              "locked": {
+                "A": true,
+                "R1": false,
+                "R2": false,
+                "B": false,
+                "C": true,
+                "D": false
+              },
+              "links": [
+                {
+                  "source": "ring_1",
+                  "target": "ring_2",
+                  "active": true
+                },
+                {
+                  "source": "ring_1",
+                  "target": "ring_3",
+                  "active": true
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_2",
+                  "active": false
+                },
+                {
+                  "source": "ring_4",
+                  "target": "ring_3",
+                  "active": false
+                },
+                {
+                  "source": "ring_5",
+                  "target": "ring_1",
+                  "active": true
+                },
+                {
+                  "source": "ring_6",
+                  "target": "ring_4",
+                  "active": false
+                }
+              ],
+              "solvedParts": [
+                "ring_4",
+                "ring_6"
+              ]
+            },
+            "route": {
+              "solved": true,
+              "trace": [
+                {
+                  "part": "R1",
+                  "pointer": 270,
+                  "pose": 269.99999999999983,
+                  "remaining": 6,
+                  "links": 5,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 180,
+                  "pose": 179.99999999999997,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 234.0000000000001,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 250,
+                  "pose": 249.99999999999977,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 160,
+                  "pose": 159.99999999999983,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 234.0000000000001,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 380,
+                  "pose": 325.00000000000017,
+                  "remaining": 3,
+                  "links": 2,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 70,
+                  "pose": 124.00000000000037,
+                  "remaining": 2,
+                  "links": 1,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "B",
+                  "pointer": 90,
+                  "pose": 53.999999999999936,
+                  "remaining": 0,
+                  "links": 0,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_4",
+                    "ring_5",
+                    "ring_6"
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            "feel": {
+              "solved": true,
+              "trace": [
+                {
+                  "part": "R1",
+                  "pointer": 270,
+                  "pose": 258.7499999999997,
+                  "remaining": 6,
+                  "links": 5,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 180,
+                  "pose": 191.2500000000001,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 191.39648437499983,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 250,
+                  "pose": 252.18750000000003,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 160,
+                  "pose": 167.81249999999983,
+                  "remaining": 6,
+                  "links": 4,
+                  "bindings": 0,
+                  "solved": [],
+                  "events": []
+                },
+                {
+                  "part": "A",
+                  "pointer": 270,
+                  "pose": 234.14648437499972,
+                  "remaining": 4,
+                  "links": 3,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R1",
+                  "pointer": 380,
+                  "pose": 324.18750000000074,
+                  "remaining": 3,
+                  "links": 2,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "R2",
+                  "pointer": 70,
+                  "pose": 125.8125000000004,
+                  "remaining": 2,
+                  "links": 1,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_5"
+                  ],
+                  "events": []
+                },
+                {
+                  "part": "B",
+                  "pointer": 90,
+                  "pose": 54.00000000000001,
+                  "remaining": 0,
+                  "links": 0,
+                  "bindings": 0,
+                  "solved": [
+                    "ring_1",
+                    "ring_2",
+                    "ring_3",
+                    "ring_4",
+                    "ring_5",
+                    "ring_6"
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

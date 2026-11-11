@@ -1,0 +1,1492 @@
+{
+  "candidate": {
+    "stem": "study-20261014-dual-common-gates-02",
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "DCG-02 | Hai cửa chọn cùng nguồn sau bom thanh giữa",
+      "author": "Codex + GD / research",
+      "notes": "Revision vị trí từDCG01: pin A/B tới H đặt y±1 để không đối đầu/chồng vách, H/default và vòng1,75 giữ nguyên. T/R là giao hai circle-distance4,5854 từA/B, bố cục đối xứng tâm có góc/chênh hàng phục vụ shared gates và pin đúng trục. Free Bom radius0,3 tại(0,-Ty) trong lòngR/đườngH, cần kiểm không contact load và nổ chỉH. A/B nhận C/D kín nên còn lượt quay thật sau hai cửa và H nhả. Chưa đủ proof để giao, không chốt difficulty/mandatoryBom hoặc tự gán feedback ảnh.",
+      "rings": [
+        {
+          "id": "A",
+          "x": -2.8354,
+          "y": 1,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 119.60151211148775,
+          "color": "orange",
+          "pins": [
+            {
+              "angle": 29.601512111487743,
+              "target": "T"
+            },
+            {
+              "angle": 291.54463388011135,
+              "target": "R"
+            },
+            {
+              "angle": 0,
+              "target": "H"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "x": 2.8354,
+          "y": -1,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 299.60151211148775,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 111.54463388011133,
+              "target": "T"
+            },
+            {
+              "angle": 209.60151211148775,
+              "target": "R"
+            },
+            {
+              "angle": 180,
+              "target": "H"
+            }
+          ]
+        },
+        {
+          "id": "T",
+          "x": 1.1515222740996292,
+          "y": 3.265026255982088,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 250.57307299579952,
+          "color": "purple",
+          "pins": []
+        },
+        {
+          "id": "R",
+          "x": -1.1515222740996292,
+          "y": -3.265026255982088,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 70.57307299579952,
+          "color": "teal",
+          "pins": []
+        },
+        {
+          "id": "C",
+          "x": -7.4208,
+          "y": 1,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "green",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 7.4208,
+          "y": -1,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "navy",
+          "pins": [
+            {
+              "angle": 180,
+              "target": "B"
+            }
+          ]
+        }
+      ],
+      "sticks": [
+        {
+          "id": "H",
+          "shape": "straight",
+          "x": 0,
+          "y": 0,
+          "angle": 90,
+          "color": "red"
+        }
+      ],
+      "bombs": [
+        {
+          "x": 0,
+          "y": -3.265026255982088,
+          "radius": 0.3
+        }
+      ]
+    },
+    "bombs": true,
+    "authorMoves": [
+      {
+        "part": "H",
+        "target": -1
+      },
+      {
+        "part": "T",
+        "target": 209.60151211148775
+      },
+      {
+        "part": "R",
+        "target": 111.54463388011133
+      },
+      {
+        "part": "A",
+        "target": 180
+      },
+      {
+        "part": "T",
+        "target": 291.54463388011135
+      },
+      {
+        "part": "R",
+        "target": 29.601512111487743
+      },
+      {
+        "part": "B",
+        "target": 0
+      }
+    ],
+    "probes": [
+      [
+        {
+          "part": "H",
+          "target": 1
+        }
+      ],
+      [
+        {
+          "part": "T",
+          "target": 209.60151211148775
+        }
+      ],
+      [
+        {
+          "part": "H",
+          "target": -1
+        },
+        {
+          "part": "T",
+          "target": 209.60151211148775
+        },
+        {
+          "part": "R",
+          "target": 29.601512111487743
+        }
+      ]
+    ]
+  },
+  "selected": {
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "DCG-02 | Hai cửa chọn cùng nguồn sau bom thanh giữa",
+      "author": "Codex + GD / research",
+      "notes": "Revision vị trí từDCG01: pin A/B tới H đặt y±1 để không đối đầu/chồng vách, H/default và vòng1,75 giữ nguyên. T/R là giao hai circle-distance4,5854 từA/B, bố cục đối xứng tâm có góc/chênh hàng phục vụ shared gates và pin đúng trục. Free Bom radius0,3 tại(0,-Ty) trong lòngR/đườngH, cần kiểm không contact load và nổ chỉH. A/B nhận C/D kín nên còn lượt quay thật sau hai cửa và H nhả. Chưa đủ proof để giao, không chốt difficulty/mandatoryBom hoặc tự gán feedback ảnh.",
+      "rings": [
+        {
+          "id": "A",
+          "x": -2.8354,
+          "y": 1,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 119.60151211148775,
+          "color": "orange",
+          "pins": [
+            {
+              "angle": 29.601512111487743,
+              "target": "T"
+            },
+            {
+              "angle": 291.54463388011135,
+              "target": "R"
+            },
+            {
+              "angle": 0,
+              "target": "H"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "x": 2.8354,
+          "y": -1,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 299.60151211148775,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 111.54463388011133,
+              "target": "T"
+            },
+            {
+              "angle": 209.60151211148775,
+              "target": "R"
+            },
+            {
+              "angle": 180,
+              "target": "H"
+            }
+          ]
+        },
+        {
+          "id": "T",
+          "x": 1.1515222740996292,
+          "y": 3.265026255982088,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 250.57307299579952,
+          "color": "purple",
+          "pins": []
+        },
+        {
+          "id": "R",
+          "x": -1.1515222740996292,
+          "y": -3.265026255982088,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 70.57307299579952,
+          "color": "teal",
+          "pins": []
+        },
+        {
+          "id": "C",
+          "x": -7.4208,
+          "y": 1,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "green",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 7.4208,
+          "y": -1,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "navy",
+          "pins": [
+            {
+              "angle": 180,
+              "target": "B"
+            }
+          ]
+        }
+      ],
+      "sticks": [
+        {
+          "id": "H",
+          "shape": "straight",
+          "x": 0,
+          "y": 0,
+          "angle": 90,
+          "color": "red"
+        }
+      ],
+      "bombs": [
+        {
+          "x": 0,
+          "y": -3.265026255982088,
+          "radius": 0.3
+        }
+      ]
+    },
+    "tx": 1.1515222740996292,
+    "ty": 3.265026255982088,
+    "alpha": 29.601512111487743,
+    "beta": 111.54463388011133,
+    "mid": 250.57307299579952,
+    "a": 1,
+    "route": [
+      {
+        "part": "H",
+        "target": -1
+      },
+      {
+        "part": "T",
+        "target": 209.60151211148775
+      },
+      {
+        "part": "R",
+        "target": 111.54463388011133
+      },
+      {
+        "part": "A",
+        "target": 180
+      },
+      {
+        "part": "T",
+        "target": 291.54463388011135
+      },
+      {
+        "part": "R",
+        "target": 29.601512111487743
+      },
+      {
+        "part": "B",
+        "target": 0
+      }
+    ]
+  },
+  "geometry": {
+    "ok": false,
+    "analysis": {
+      "error": null,
+      "warnings": [
+        {
+          "code": "overlap",
+          "part": "ring_1",
+          "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.101)"
+        },
+        {
+          "code": "overlap",
+          "part": "ring_2",
+          "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.101)"
+        },
+        {
+          "code": "overlap",
+          "part": "slide_bar_1",
+          "text": "S1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.101)"
+        }
+      ],
+      "info": {
+        "rings": 6,
+        "sticks": 1,
+        "guides": 0,
+        "bombs": 1,
+        "links": 8,
+        "pins": 8,
+        "stops": 0,
+        "closedRings": 2
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "A",
+        "target": "T",
+        "margin": 45
+      },
+      {
+        "owner": "A",
+        "target": "R",
+        "margin": 126.94312176862354
+      },
+      {
+        "owner": "A",
+        "target": "H",
+        "margin": 74.60151211148775
+      },
+      {
+        "owner": "B",
+        "target": "T",
+        "margin": 126.9431217686236
+      },
+      {
+        "owner": "B",
+        "target": "R",
+        "margin": 45
+      },
+      {
+        "owner": "B",
+        "target": "H",
+        "margin": 74.60151211148775
+      }
+    ],
+    "guides": [],
+    "bodyAccess": [
+      {
+        "label": "A",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "B",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "T",
+        "visibleBodyPoints": 84
+      },
+      {
+        "label": "R",
+        "visibleBodyPoints": 84
+      },
+      {
+        "label": "C",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "H",
+        "visibleBodyPoints": 14
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "proof": {
+    "moves": [
+      {
+        "part": "slide_bar_1",
+        "target": -1
+      },
+      {
+        "part": "ring_3",
+        "target": 209.60151211148775
+      },
+      {
+        "part": "ring_4",
+        "target": 111.54463388011133
+      },
+      {
+        "part": "ring_1",
+        "target": 180
+      },
+      {
+        "part": "ring_3",
+        "target": 291.54463388011135
+      },
+      {
+        "part": "ring_4",
+        "target": 29.601512111487743
+      },
+      {
+        "part": "ring_2",
+        "target": 0
+      }
+    ],
+    "analytic": false,
+    "feel": false,
+    "release": {
+      "ok": false,
+      "solved": false,
+      "trace": [
+        {
+          "part": "slide_bar_1",
+          "target": -1,
+          "grab": {
+            "x": 5.879191972381539e-18,
+            "y": 0.0960144913043477
+          },
+          "selectableBodySamples": 14,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": -0.04051513671875001,
+          "remaining": 7,
+          "links": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 209.60151211148775,
+          "grab": {
+            "x": 0.1228981084881724,
+            "y": 4.680806040156158
+          },
+          "selectableBodySamples": 84,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 219.84440168622945,
+          "remaining": 7,
+          "links": [
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_4",
+          "target": 111.54463388011133,
+          "grab": {
+            "x": -2.1801464915118283,
+            "y": -4.680806040156158
+          },
+          "selectableBodySamples": 84,
+          "began": true,
+          "events": [],
+          "removed": [],
+          "pose": 79.55659091826718,
+          "remaining": 7,
+          "links": [
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "part": "ring_1",
+          "locked": true,
+          "bodySamples": 90,
+          "selectableBodySamples": 81
+        }
+      ],
+      "bombs": [
+        {
+          "active": true,
+          "host": -1,
+          "center": {
+            "x": 0,
+            "y": -3.2650263
+          }
+        }
+      ]
+    }
+  },
+  "data": {
+    "solved": false,
+    "remaining": 7,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "H",
+        "target": -1,
+        "pose": -0.04051513671875001,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "T",
+        "target": 209.60151211148775,
+        "pose": 219.84440168622945,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "R",
+        "target": 111.54463388011133,
+        "pose": 79.55659091826718,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "A",
+        "target": 180,
+        "locked": true,
+        "selectable": 81,
+        "began": false
+      },
+      {
+        "part": "T",
+        "target": 291.54463388011135,
+        "pose": 261.2046311784168,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "R",
+        "target": 29.601512111487743,
+        "pose": 42.09028181318314,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "B",
+        "target": 0,
+        "locked": true,
+        "selectable": 81,
+        "began": false
+      }
+    ],
+    "links": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 119.60151002023615,
+        "solved": false,
+        "locked": true
+      },
+      "B": {
+        "pose": 299.60151002023616,
+        "solved": false,
+        "locked": true
+      },
+      "T": {
+        "pose": 261.2046311784168,
+        "solved": false,
+        "locked": false
+      },
+      "R": {
+        "pose": 42.09028181318314,
+        "solved": false,
+        "locked": false
+      },
+      "C": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "D": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "H": {
+        "pose": -0.04051513671875001,
+        "solved": false,
+        "locked": false
+      }
+    }
+  },
+  "placements": [
+    {
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "DCG-02 | Hai cửa chọn cùng nguồn sau bom thanh giữa",
+        "author": "Codex + GD / research",
+        "notes": "Revision vị trí từDCG01: pin A/B tới H đặt y±1 để không đối đầu/chồng vách, H/default và vòng1,75 giữ nguyên. T/R là giao hai circle-distance4,5854 từA/B, bố cục đối xứng tâm có góc/chênh hàng phục vụ shared gates và pin đúng trục. Free Bom radius0,3 tại(0,-Ty) trong lòngR/đườngH, cần kiểm không contact load và nổ chỉH. A/B nhận C/D kín nên còn lượt quay thật sau hai cửa và H nhả. Chưa đủ proof để giao, không chốt difficulty/mandatoryBom hoặc tự gán feedback ảnh.",
+        "rings": [
+          {
+            "id": "A",
+            "x": -2.8354,
+            "y": 0.9,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 121.94181234423692,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 31.941812344236915,
+                "target": "T"
+              },
+              {
+                "angle": 292.83769418595193,
+                "target": "R"
+              },
+              {
+                "angle": 0,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 2.8354,
+            "y": -0.9,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 301.9418123442369,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 112.83769418595195,
+                "target": "T"
+              },
+              {
+                "angle": 211.94181234423692,
+                "target": "R"
+              },
+              {
+                "angle": 180,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "T",
+            "x": 1.0557054502895897,
+            "y": 3.325941370834558,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 252.38975326509444,
+            "color": "purple",
+            "pins": []
+          },
+          {
+            "id": "R",
+            "x": -1.0557054502895897,
+            "y": -3.325941370834558,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 72.38975326509444,
+            "color": "teal",
+            "pins": []
+          },
+          {
+            "id": "C",
+            "x": -7.4208,
+            "y": 0.9,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "D",
+            "x": 7.4208,
+            "y": -0.9,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "navy",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "B"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": 0,
+            "y": 0,
+            "angle": 90,
+            "color": "red"
+          }
+        ],
+        "bombs": [
+          {
+            "x": 0,
+            "y": -3.325941370834558,
+            "radius": 0.3
+          }
+        ]
+      },
+      "tx": 1.0557054502895897,
+      "ty": 3.325941370834558,
+      "alpha": 31.941812344236915,
+      "beta": 112.83769418595195,
+      "mid": 252.38975326509444,
+      "a": 0.9,
+      "route": [
+        {
+          "part": "H",
+          "target": -1
+        },
+        {
+          "part": "T",
+          "target": 211.94181234423692
+        },
+        {
+          "part": "R",
+          "target": 112.83769418595195
+        },
+        {
+          "part": "A",
+          "target": 180
+        },
+        {
+          "part": "T",
+          "target": 292.83769418595193
+        },
+        {
+          "part": "R",
+          "target": 31.941812344236915
+        },
+        {
+          "part": "B",
+          "target": 0
+        }
+      ],
+      "geometry": {
+        "ok": false,
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_1",
+              "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.135)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_2",
+              "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.135)"
+            },
+            {
+              "code": "overlap",
+              "part": "slide_bar_1",
+              "text": "S1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.135)"
+            }
+          ],
+          "info": {
+            "rings": 6,
+            "sticks": 1,
+            "guides": 0,
+            "bombs": 1,
+            "links": 8,
+            "pins": 8,
+            "stops": 0,
+            "closedRings": 2
+          }
+        },
+        "stopFeet": [],
+        "pinMargins": [
+          {
+            "owner": "A",
+            "target": "T",
+            "margin": 45
+          },
+          {
+            "owner": "A",
+            "target": "R",
+            "margin": 125.89588184171498
+          },
+          {
+            "owner": "A",
+            "target": "H",
+            "margin": 76.94181234423695
+          },
+          {
+            "owner": "B",
+            "target": "T",
+            "margin": 125.89588184171504
+          },
+          {
+            "owner": "B",
+            "target": "R",
+            "margin": 45
+          },
+          {
+            "owner": "B",
+            "target": "H",
+            "margin": 76.9418123442369
+          }
+        ],
+        "guides": [],
+        "bodyAccess": [
+          {
+            "label": "A",
+            "visibleBodyPoints": 81
+          },
+          {
+            "label": "B",
+            "visibleBodyPoints": 81
+          },
+          {
+            "label": "T",
+            "visibleBodyPoints": 85
+          },
+          {
+            "label": "R",
+            "visibleBodyPoints": 85
+          },
+          {
+            "label": "C",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "D",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "H",
+            "visibleBodyPoints": 16
+          }
+        ],
+        "initialBombContacts": []
+      },
+      "main": false
+    },
+    {
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "DCG-02 | Hai cửa chọn cùng nguồn sau bom thanh giữa",
+        "author": "Codex + GD / research",
+        "notes": "Revision vị trí từDCG01: pin A/B tới H đặt y±1 để không đối đầu/chồng vách, H/default và vòng1,75 giữ nguyên. T/R là giao hai circle-distance4,5854 từA/B, bố cục đối xứng tâm có góc/chênh hàng phục vụ shared gates và pin đúng trục. Free Bom radius0,3 tại(0,-Ty) trong lòngR/đườngH, cần kiểm không contact load và nổ chỉH. A/B nhận C/D kín nên còn lượt quay thật sau hai cửa và H nhả. Chưa đủ proof để giao, không chốt difficulty/mandatoryBom hoặc tự gán feedback ảnh.",
+        "rings": [
+          {
+            "id": "A",
+            "x": -2.8354,
+            "y": 1,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 119.60151211148775,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 29.601512111487743,
+                "target": "T"
+              },
+              {
+                "angle": 291.54463388011135,
+                "target": "R"
+              },
+              {
+                "angle": 0,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 2.8354,
+            "y": -1,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 299.60151211148775,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 111.54463388011133,
+                "target": "T"
+              },
+              {
+                "angle": 209.60151211148775,
+                "target": "R"
+              },
+              {
+                "angle": 180,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "T",
+            "x": 1.1515222740996292,
+            "y": 3.265026255982088,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 250.57307299579952,
+            "color": "purple",
+            "pins": []
+          },
+          {
+            "id": "R",
+            "x": -1.1515222740996292,
+            "y": -3.265026255982088,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 70.57307299579952,
+            "color": "teal",
+            "pins": []
+          },
+          {
+            "id": "C",
+            "x": -7.4208,
+            "y": 1,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "D",
+            "x": 7.4208,
+            "y": -1,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "navy",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "B"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": 0,
+            "y": 0,
+            "angle": 90,
+            "color": "red"
+          }
+        ],
+        "bombs": [
+          {
+            "x": 0,
+            "y": -3.265026255982088,
+            "radius": 0.3
+          }
+        ]
+      },
+      "tx": 1.1515222740996292,
+      "ty": 3.265026255982088,
+      "alpha": 29.601512111487743,
+      "beta": 111.54463388011133,
+      "mid": 250.57307299579952,
+      "a": 1,
+      "route": [
+        {
+          "part": "H",
+          "target": -1
+        },
+        {
+          "part": "T",
+          "target": 209.60151211148775
+        },
+        {
+          "part": "R",
+          "target": 111.54463388011133
+        },
+        {
+          "part": "A",
+          "target": 180
+        },
+        {
+          "part": "T",
+          "target": 291.54463388011135
+        },
+        {
+          "part": "R",
+          "target": 29.601512111487743
+        },
+        {
+          "part": "B",
+          "target": 0
+        }
+      ],
+      "geometry": {
+        "ok": false,
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_1",
+              "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.101)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_2",
+              "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.101)"
+            },
+            {
+              "code": "overlap",
+              "part": "slide_bar_1",
+              "text": "S1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.101)"
+            }
+          ],
+          "info": {
+            "rings": 6,
+            "sticks": 1,
+            "guides": 0,
+            "bombs": 1,
+            "links": 8,
+            "pins": 8,
+            "stops": 0,
+            "closedRings": 2
+          }
+        },
+        "stopFeet": [],
+        "pinMargins": [
+          {
+            "owner": "A",
+            "target": "T",
+            "margin": 45
+          },
+          {
+            "owner": "A",
+            "target": "R",
+            "margin": 126.94312176862354
+          },
+          {
+            "owner": "A",
+            "target": "H",
+            "margin": 74.60151211148775
+          },
+          {
+            "owner": "B",
+            "target": "T",
+            "margin": 126.9431217686236
+          },
+          {
+            "owner": "B",
+            "target": "R",
+            "margin": 45
+          },
+          {
+            "owner": "B",
+            "target": "H",
+            "margin": 74.60151211148775
+          }
+        ],
+        "guides": [],
+        "bodyAccess": [
+          {
+            "label": "A",
+            "visibleBodyPoints": 81
+          },
+          {
+            "label": "B",
+            "visibleBodyPoints": 81
+          },
+          {
+            "label": "T",
+            "visibleBodyPoints": 84
+          },
+          {
+            "label": "R",
+            "visibleBodyPoints": 84
+          },
+          {
+            "label": "C",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "D",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "H",
+            "visibleBodyPoints": 14
+          }
+        ],
+        "initialBombContacts": []
+      },
+      "main": false
+    },
+    {
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "DCG-02 | Hai cửa chọn cùng nguồn sau bom thanh giữa",
+        "author": "Codex + GD / research",
+        "notes": "Revision vị trí từDCG01: pin A/B tới H đặt y±1 để không đối đầu/chồng vách, H/default và vòng1,75 giữ nguyên. T/R là giao hai circle-distance4,5854 từA/B, bố cục đối xứng tâm có góc/chênh hàng phục vụ shared gates và pin đúng trục. Free Bom radius0,3 tại(0,-Ty) trong lòngR/đườngH, cần kiểm không contact load và nổ chỉH. A/B nhận C/D kín nên còn lượt quay thật sau hai cửa và H nhả. Chưa đủ proof để giao, không chốt difficulty/mandatoryBom hoặc tự gán feedback ảnh.",
+        "rings": [
+          {
+            "id": "A",
+            "x": -2.8354,
+            "y": 1.1,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 117.2473875498878,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 27.247387549887797,
+                "target": "T"
+              },
+              {
+                "angle": 290.3448553756365,
+                "target": "R"
+              },
+              {
+                "angle": 0,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 2.8354,
+            "y": -1.1,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 297.2473875498878,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 110.34485537563648,
+                "target": "T"
+              },
+              {
+                "angle": 207.2473875498878,
+                "target": "R"
+              },
+              {
+                "angle": 180,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "T",
+            "x": 1.2411949264290068,
+            "y": 3.1993491767243682,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 248.79612146276213,
+            "color": "purple",
+            "pins": []
+          },
+          {
+            "id": "R",
+            "x": -1.2411949264290068,
+            "y": -3.1993491767243682,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 68.79612146276213,
+            "color": "teal",
+            "pins": []
+          },
+          {
+            "id": "C",
+            "x": -7.4208,
+            "y": 1.1,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "D",
+            "x": 7.4208,
+            "y": -1.1,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "navy",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "B"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": 0,
+            "y": 0,
+            "angle": 90,
+            "color": "red"
+          }
+        ],
+        "bombs": [
+          {
+            "x": 0,
+            "y": -3.1993491767243682,
+            "radius": 0.3
+          }
+        ]
+      },
+      "tx": 1.2411949264290068,
+      "ty": 3.1993491767243682,
+      "alpha": 27.247387549887797,
+      "beta": 110.34485537563648,
+      "mid": 248.79612146276213,
+      "a": 1.1,
+      "route": [
+        {
+          "part": "H",
+          "target": -1
+        },
+        {
+          "part": "T",
+          "target": 207.2473875498878
+        },
+        {
+          "part": "R",
+          "target": 110.34485537563648
+        },
+        {
+          "part": "A",
+          "target": 180
+        },
+        {
+          "part": "T",
+          "target": 290.3448553756365
+        },
+        {
+          "part": "R",
+          "target": 27.247387549887797
+        },
+        {
+          "part": "B",
+          "target": 0
+        }
+      ],
+      "geometry": {
+        "ok": false,
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_1",
+              "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.067)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_2",
+              "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.067)"
+            },
+            {
+              "code": "overlap",
+              "part": "slide_bar_1",
+              "text": "S1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.067)"
+            }
+          ],
+          "info": {
+            "rings": 6,
+            "sticks": 1,
+            "guides": 0,
+            "bombs": 1,
+            "links": 8,
+            "pins": 8,
+            "stops": 0,
+            "closedRings": 2
+          }
+        },
+        "stopFeet": [],
+        "pinMargins": [
+          {
+            "owner": "A",
+            "target": "T",
+            "margin": 45
+          },
+          {
+            "owner": "A",
+            "target": "R",
+            "margin": 128.0974678257487
+          },
+          {
+            "owner": "A",
+            "target": "H",
+            "margin": 72.24738754988778
+          },
+          {
+            "owner": "B",
+            "target": "T",
+            "margin": 128.0974678257487
+          },
+          {
+            "owner": "B",
+            "target": "R",
+            "margin": 45
+          },
+          {
+            "owner": "B",
+            "target": "H",
+            "margin": 72.24738754988778
+          }
+        ],
+        "guides": [],
+        "bodyAccess": [
+          {
+            "label": "A",
+            "visibleBodyPoints": 81
+          },
+          {
+            "label": "B",
+            "visibleBodyPoints": 81
+          },
+          {
+            "label": "T",
+            "visibleBodyPoints": 85
+          },
+          {
+            "label": "R",
+            "visibleBodyPoints": 85
+          },
+          {
+            "label": "C",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "D",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "H",
+            "visibleBodyPoints": 14
+          }
+        ],
+        "initialBombContacts": [
+          {
+            "moving": "ring_2",
+            "contact": {
+              "bomb": 0,
+              "target": 1,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000001",
+              "pose": 297.2473901999378
+            }
+          },
+          {
+            "moving": "ring_4",
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 68.79612504802739
+            }
+          }
+        ]
+      },
+      "main": false
+    }
+  ]
+}

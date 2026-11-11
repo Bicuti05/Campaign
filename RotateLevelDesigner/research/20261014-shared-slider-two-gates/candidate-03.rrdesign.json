@@ -1,0 +1,105 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "STG-03 research | Thanh chung, cửa quay lại và nguồn giữ đôi",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp mới5 vòng radius1,75 +1 straight default/8pin. Hàng trên T/C/U đều pitch4,5854; A/Q ở hàng dưới giữ S chung, có pin chéo120/60 lên T/U. C kín giữ cả A/Q bằng pin240/300 và cùng giữ T/U bằng180/0. T/U mở cửa cho A/Q thì S vẫn phải nhả; A/Q mở input vẫn nhận C nên còn lượt quay ngắn thực. T/U mở cửa cho C sớm chưa làm C tháo vì C vẫn nhận retention qua A/Q, cần quay lại T/U phục vụ A/Q. Đối chứng từng mối nối và retention trước bàn giao. Revision02 thay cấu trúc đề xuất01: bỏ3 root ngoài và chuyển góc pin tránh opposed-source caging; giữ01 geometry/proof thất bại, không ghi đè. Không Guide/Stop/Bom/Chain/Booster, chưa GD chốt đẹp/khó. Revision03 khe A0/Q180 giữ pin incoming C thật lúc nạp;02 outgoing qua và có đường thắng nhưng incoming C idle trong khe30/150 nên không đạt retention, giữ02 research. Không hạ tiêu chuẩn link/giãn tolerance.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 120,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 60,
+          "target": "U"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": -2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "U",
+      "x": 6.8781,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "U"
+        },
+        {
+          "angle": 240,
+          "target": "A"
+        },
+        {
+          "angle": 300,
+          "target": "Q"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "orange",
+      "stops": [
+        {
+          "angle": 75,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R1"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R3",
+      "x": 9.1708,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R6"
+        },
+        {
+          "angle": 180,
+          "target": "R2"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R5",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R6"
+        },
+        {
+          "angle": 180,
+          "target": "R4"
+        },
+        {
+          "angle": 90,
+          "target": "R2"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R6",
+      "x": 9.1708,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R7",
+      "x": 0,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R4"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R8",
+      "x": 4.5854,
+      "y": -9.1708,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R9"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R9",
+      "x": 9.1708,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R6"
+        }
+      ],
+      "color": "orange"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "x": -2.25,
+      "y": 0.75,
+      "angle": 0,
+      "color": "orange",
+      "guides": [
+        {
+          "x": -2.25,
+          "y": 0.75,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "shape": "L",
+      "x": 11.25,
+      "y": -6,
+      "angle": 90,
+      "color": "purple",
+      "guides": [
+        {
+          "x": 11.25,
+          "y": -6,
+          "angle": 90
+        }
+      ]
+    }
+  ],
+  "name": "sqG #3",
+  "author": "rr-gen research 2026-10-15",
+  "notes": " [auto: square, 9R/2S, closed 1, stop 1, multiSrc 3, relock 3; route 11 drags, prep 1]"
+}

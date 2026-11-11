@@ -1,0 +1,1047 @@
+{
+  "format": "rotate-bent-geometry-holdouts",
+  "version": 1,
+  "scope": "Reconstruct read-only finite placement probes from this run; no saved level/pack overwritten. These are rejected prototypes, not extra outputs.",
+  "rows": [
+    {
+      "parameters": {
+        "ay": -1.1,
+        "hy": -1.7,
+        "dl": true
+      },
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "BSG-01 research | Khuỷu L, ngàm còn chặn và hai cửa dùng chung",
+        "author": "Codex + GD / research",
+        "notes": "Tổ hợp L default có pin/Guide ở các đoạn giữ khác nhau, H default dưới khuỷu có pin riêng R. Ngàm L đã mất binding vẫn còn geometry vì pin A còn giữ L; H phải chọn dọn J bên trái hoặc dọn L/nguồn A bên phải. A đồng thời giữ L và cửa AT, C giữ A cho lượt quay thực; AT nhận A/D, R nhận K sau khi H nhả. Không Guide dư trên H, không nửa ngàm, chốt/Bom/Chain/Booster.9Ring radius1,75 +2Stick default (L/H); cần proof riêng các đường/guide/elbow/retention, không dùng số mảnh hoặc drag làm độ khó. Chưa bàn giao.",
+        "rings": [
+          {
+            "id": "J",
+            "x": -4.9854,
+            "y": 0.04999999999999982,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "sky",
+            "pins": []
+          },
+          {
+            "id": "K",
+            "x": -4.9854,
+            "y": -4.5354,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "red",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "J"
+              },
+              {
+                "angle": 0,
+                "target": "R"
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "x": -0.4,
+            "y": -4.5354,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "A",
+            "x": 5.543733254999999,
+            "y": -1.1,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "L"
+              },
+              {
+                "angle": 90,
+                "target": "AT"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": 5.543733254999999,
+            "y": -5.6854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "AT",
+            "x": 5.543733254999999,
+            "y": 3.4854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "teal",
+            "pins": []
+          },
+          {
+            "id": "D",
+            "x": 0.9583332549999994,
+            "y": 3.4854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "AT"
+              },
+              {
+                "angle": 90,
+                "target": "DT"
+              },
+              {
+                "angle": 180,
+                "target": "DL"
+              }
+            ]
+          },
+          {
+            "id": "DT",
+            "x": 0.9583332549999994,
+            "y": 8.0708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "blue",
+            "pins": []
+          },
+          {
+            "id": "DL",
+            "x": -3.6270667450000005,
+            "y": 3.4854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "navy",
+            "pins": []
+          }
+        ],
+        "sticks": [
+          {
+            "id": "L",
+            "shape": "L",
+            "x": 0,
+            "y": 0,
+            "angle": 0,
+            "color": "green",
+            "guides": [
+              {
+                "x": 2.708333255,
+                "y": -1.7,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": -0.4,
+            "y": -1.7,
+            "angle": 0,
+            "color": "red"
+          }
+        ]
+      },
+      "geometry": {
+        "ok": false,
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_1",
+              "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.306)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_4",
+              "text": "R4 chồng lên vật khác lúc bắt đầu (độ xuyên 0.058)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_9",
+              "text": "R9 chồng lên vật khác lúc bắt đầu (độ xuyên 0.306)"
+            }
+          ],
+          "info": {
+            "rings": 9,
+            "sticks": 2,
+            "guides": 1,
+            "bombs": 0,
+            "links": 9,
+            "pins": 9,
+            "stops": 0,
+            "closedRings": 3
+          }
+        },
+        "stopFeet": [],
+        "pinMargins": [
+          {
+            "owner": "R",
+            "target": "H",
+            "margin": 45
+          },
+          {
+            "owner": "A",
+            "target": "L",
+            "margin": 135
+          },
+          {
+            "owner": "A",
+            "target": "AT",
+            "margin": 45
+          }
+        ],
+        "guides": [
+          {
+            "id": "guide_1",
+            "walls": 2,
+            "engaged": true
+          }
+        ],
+        "bodyAccess": [
+          {
+            "label": "J",
+            "visibleBodyPoints": 75
+          },
+          {
+            "label": "K",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "R",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "A",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "C",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "AT",
+            "visibleBodyPoints": 73
+          },
+          {
+            "label": "D",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "DT",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "DL",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "L",
+            "visibleBodyPoints": 31
+          },
+          {
+            "label": "H",
+            "visibleBodyPoints": 20
+          }
+        ],
+        "initialBombContacts": []
+      },
+      "status": "held_placement_warning_not_a_delivery"
+    },
+    {
+      "parameters": {
+        "ay": -1.3,
+        "hy": -1.7,
+        "diagonal": true
+      },
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "BSG-01 research | Khuỷu L, ngàm còn chặn và hai cửa dùng chung",
+        "author": "Codex + GD / research",
+        "notes": "Tổ hợp L default có pin/Guide ở các đoạn giữ khác nhau, H default dưới khuỷu có pin riêng R. Ngàm L đã mất binding vẫn còn geometry vì pin A còn giữ L; H phải chọn dọn J bên trái hoặc dọn L/nguồn A bên phải. A đồng thời giữ L và cửa AT, C giữ A cho lượt quay thực; AT nhận A/D, R nhận K sau khi H nhả. Không Guide dư trên H, không nửa ngàm, chốt/Bom/Chain/Booster.9Ring radius1,75 +2Stick default (L/H); cần proof riêng các đường/guide/elbow/retention, không dùng số mảnh hoặc drag làm độ khó. Chưa bàn giao.",
+        "rings": [
+          {
+            "id": "J",
+            "x": -4.9854,
+            "y": -1.3,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "sky",
+            "pins": []
+          },
+          {
+            "id": "K",
+            "x": -4.9854,
+            "y": -5.8854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "red",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "J"
+              },
+              {
+                "angle": 16.405098479155804,
+                "target": "R"
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "x": -0.4,
+            "y": -4.5354,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "A",
+            "x": 5.543733254999999,
+            "y": -1.3,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "L"
+              },
+              {
+                "angle": 90,
+                "target": "AT"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": 5.543733254999999,
+            "y": -5.8854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "AT",
+            "x": 5.543733254999999,
+            "y": 3.2854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "teal",
+            "pins": []
+          },
+          {
+            "id": "D",
+            "x": 0.9583332549999994,
+            "y": 3.2854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "AT"
+              },
+              {
+                "angle": 90,
+                "target": "DT"
+              }
+            ]
+          },
+          {
+            "id": "DT",
+            "x": 0.9583332549999994,
+            "y": 7.8708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "blue",
+            "pins": []
+          }
+        ],
+        "sticks": [
+          {
+            "id": "L",
+            "shape": "L",
+            "x": 0,
+            "y": 0,
+            "angle": 0,
+            "color": "green",
+            "guides": [
+              {
+                "x": 2.708333255,
+                "y": -1.7,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": -0.4,
+            "y": -1.7,
+            "angle": 0,
+            "color": "red"
+          }
+        ]
+      },
+      "geometry": {
+        "ok": false,
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_2",
+              "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.111)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_3",
+              "text": "R3 chồng lên vật khác lúc bắt đầu (độ xuyên 0.111)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_4",
+              "text": "R4 chồng lên vật khác lúc bắt đầu (độ xuyên 0.070)"
+            }
+          ],
+          "info": {
+            "rings": 8,
+            "sticks": 2,
+            "guides": 1,
+            "bombs": 0,
+            "links": 8,
+            "pins": 8,
+            "stops": 0,
+            "closedRings": 3
+          }
+        },
+        "stopFeet": [],
+        "pinMargins": [
+          {
+            "owner": "R",
+            "target": "H",
+            "margin": 45
+          },
+          {
+            "owner": "A",
+            "target": "L",
+            "margin": 135
+          },
+          {
+            "owner": "A",
+            "target": "AT",
+            "margin": 45
+          }
+        ],
+        "guides": [
+          {
+            "id": "guide_1",
+            "walls": 2,
+            "engaged": true
+          }
+        ],
+        "bodyAccess": [
+          {
+            "label": "J",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "K",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "R",
+            "visibleBodyPoints": 83
+          },
+          {
+            "label": "A",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "C",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "AT",
+            "visibleBodyPoints": 73
+          },
+          {
+            "label": "D",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "DT",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "L",
+            "visibleBodyPoints": 31
+          },
+          {
+            "label": "H",
+            "visibleBodyPoints": 20
+          }
+        ],
+        "initialBombContacts": []
+      },
+      "status": "held_placement_warning_not_a_delivery"
+    },
+    {
+      "parameters": {
+        "ay": -1.5,
+        "hy": -0.7
+      },
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "BSG-01 research | Khuỷu L, ngàm còn chặn và hai cửa dùng chung",
+        "author": "Codex + GD / research",
+        "notes": "Tổ hợp L default có pin/Guide ở các đoạn giữ khác nhau, H default dưới khuỷu có pin riêng R. Ngàm L đã mất binding vẫn còn geometry vì pin A còn giữ L; H phải chọn dọn J bên trái hoặc dọn L/nguồn A bên phải. A đồng thời giữ L và cửa AT, C giữ A cho lượt quay thực; AT nhận A/D, R nhận K sau khi H nhả. Không Guide dư trên H, không nửa ngàm, chốt/Bom/Chain/Booster.9Ring radius1,75 +2Stick default (L/H); cần proof riêng các đường/guide/elbow/retention, không dùng số mảnh hoặc drag làm độ khó. Chưa bàn giao.",
+        "rings": [
+          {
+            "id": "J",
+            "x": -4.9854,
+            "y": 1.0499999999999998,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "sky",
+            "pins": []
+          },
+          {
+            "id": "K",
+            "x": -4.9854,
+            "y": -3.5354,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "red",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "J"
+              },
+              {
+                "angle": 0,
+                "target": "R"
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "x": -0.4,
+            "y": -3.5354,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "A",
+            "x": 5.543733254999999,
+            "y": -1.5,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "L"
+              },
+              {
+                "angle": 90,
+                "target": "AT"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": 5.543733254999999,
+            "y": -6.0854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "AT",
+            "x": 5.543733254999999,
+            "y": 3.0854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "teal",
+            "pins": []
+          },
+          {
+            "id": "D",
+            "x": 0.9583332549999994,
+            "y": 3.0854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "AT"
+              },
+              {
+                "angle": 90,
+                "target": "DT"
+              }
+            ]
+          },
+          {
+            "id": "DT",
+            "x": 0.9583332549999994,
+            "y": 7.6708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "blue",
+            "pins": []
+          }
+        ],
+        "sticks": [
+          {
+            "id": "L",
+            "shape": "L",
+            "x": 0,
+            "y": 0,
+            "angle": 0,
+            "color": "green",
+            "guides": [
+              {
+                "x": 2.708333255,
+                "y": -0.7,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": -0.4,
+            "y": -0.7,
+            "angle": 0,
+            "color": "red"
+          }
+        ]
+      },
+      "geometry": {
+        "ok": false,
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "slide_bar_1",
+              "text": "S1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.031)"
+            }
+          ],
+          "info": {
+            "rings": 8,
+            "sticks": 2,
+            "guides": 1,
+            "bombs": 0,
+            "links": 8,
+            "pins": 8,
+            "stops": 0,
+            "closedRings": 3
+          }
+        },
+        "stopFeet": [],
+        "pinMargins": [
+          {
+            "owner": "R",
+            "target": "H",
+            "margin": 45
+          },
+          {
+            "owner": "A",
+            "target": "L",
+            "margin": 135
+          },
+          {
+            "owner": "A",
+            "target": "AT",
+            "margin": 45
+          }
+        ],
+        "guides": [
+          {
+            "id": "guide_1",
+            "walls": 2,
+            "engaged": true
+          }
+        ],
+        "bodyAccess": [
+          {
+            "label": "J",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "K",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "R",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "A",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "C",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "AT",
+            "visibleBodyPoints": 73
+          },
+          {
+            "label": "D",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "DT",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "L",
+            "visibleBodyPoints": 31
+          },
+          {
+            "label": "H",
+            "visibleBodyPoints": 20
+          }
+        ],
+        "initialBombContacts": []
+      },
+      "status": "held_placement_warning_not_a_delivery"
+    },
+    {
+      "parameters": {
+        "ay": -1.5,
+        "hy": -0.85
+      },
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "BSG-01 research | Khuỷu L, ngàm còn chặn và hai cửa dùng chung",
+        "author": "Codex + GD / research",
+        "notes": "Tổ hợp L default có pin/Guide ở các đoạn giữ khác nhau, H default dưới khuỷu có pin riêng R. Ngàm L đã mất binding vẫn còn geometry vì pin A còn giữ L; H phải chọn dọn J bên trái hoặc dọn L/nguồn A bên phải. A đồng thời giữ L và cửa AT, C giữ A cho lượt quay thực; AT nhận A/D, R nhận K sau khi H nhả. Không Guide dư trên H, không nửa ngàm, chốt/Bom/Chain/Booster.9Ring radius1,75 +2Stick default (L/H); cần proof riêng các đường/guide/elbow/retention, không dùng số mảnh hoặc drag làm độ khó. Chưa bàn giao.",
+        "rings": [
+          {
+            "id": "J",
+            "x": -4.9854,
+            "y": 0.8999999999999999,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "sky",
+            "pins": []
+          },
+          {
+            "id": "K",
+            "x": -4.9854,
+            "y": -3.6854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "red",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "J"
+              },
+              {
+                "angle": 0,
+                "target": "R"
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "x": -0.4,
+            "y": -3.6854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "H"
+              }
+            ]
+          },
+          {
+            "id": "A",
+            "x": 5.543733254999999,
+            "y": -1.5,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "L"
+              },
+              {
+                "angle": 90,
+                "target": "AT"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": 5.543733254999999,
+            "y": -6.0854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "AT",
+            "x": 5.543733254999999,
+            "y": 3.0854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "teal",
+            "pins": []
+          },
+          {
+            "id": "D",
+            "x": 0.9583332549999994,
+            "y": 3.0854,
+            "radius": 1.75,
+            "gap": 0,
+            "gapDir": 0,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "AT"
+              },
+              {
+                "angle": 90,
+                "target": "DT"
+              }
+            ]
+          },
+          {
+            "id": "DT",
+            "x": 0.9583332549999994,
+            "y": 7.6708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "blue",
+            "pins": []
+          }
+        ],
+        "sticks": [
+          {
+            "id": "L",
+            "shape": "L",
+            "x": 0,
+            "y": 0,
+            "angle": 0,
+            "color": "green",
+            "guides": [
+              {
+                "x": 2.708333255,
+                "y": -0.85,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": -0.4,
+            "y": -0.85,
+            "angle": 0,
+            "color": "red"
+          }
+        ]
+      },
+      "geometry": {
+        "ok": false,
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_4",
+              "text": "R4 chồng lên vật khác lúc bắt đầu (độ xuyên 0.050)"
+            }
+          ],
+          "info": {
+            "rings": 8,
+            "sticks": 2,
+            "guides": 1,
+            "bombs": 0,
+            "links": 8,
+            "pins": 8,
+            "stops": 0,
+            "closedRings": 3
+          }
+        },
+        "stopFeet": [],
+        "pinMargins": [
+          {
+            "owner": "R",
+            "target": "H",
+            "margin": 45
+          },
+          {
+            "owner": "A",
+            "target": "L",
+            "margin": 135
+          },
+          {
+            "owner": "A",
+            "target": "AT",
+            "margin": 45
+          }
+        ],
+        "guides": [
+          {
+            "id": "guide_1",
+            "walls": 2,
+            "engaged": true
+          }
+        ],
+        "bodyAccess": [
+          {
+            "label": "J",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "K",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "R",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "A",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "C",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "AT",
+            "visibleBodyPoints": 73
+          },
+          {
+            "label": "D",
+            "visibleBodyPoints": 120
+          },
+          {
+            "label": "DT",
+            "visibleBodyPoints": 82
+          },
+          {
+            "label": "L",
+            "visibleBodyPoints": 31
+          },
+          {
+            "label": "H",
+            "visibleBodyPoints": 20
+          }
+        ],
+        "initialBombContacts": []
+      },
+      "status": "held_placement_warning_not_a_delivery"
+    }
+  ]
+}

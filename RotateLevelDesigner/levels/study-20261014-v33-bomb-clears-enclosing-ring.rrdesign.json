@@ -1,0 +1,92 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Phá vỏ lớn — mở đường bom trong lòng",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Vòng lớn kín M bao quanh hai vòng nhỏ kín K/J. K không có pin đi ra nên được xoay từ đầu, nhưng chốt K bị vỏ M chặn đường tới bom J. R bên trên mang bom phá pin/vỏ M; N giữ M sống khi R nhả nhầm khe. Sau khi M biến mất, K quay bom phá J. Hai lần nổ gameplay riêng, không Booster/Chain. Nhóm nghiên cứu vòng lớn/nhỏ; chưa GD nghiệm thu bố cục/độ khó.",
+  "rings": [
+    {
+      "id": "K",
+      "x": -2.2927,
+      "y": 0,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [],
+      "stops": [
+        {
+          "angle": 270,
+          "length": 2
+        }
+      ],
+      "bomb": {
+        "x": -2.2927,
+        "y": 2.2,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "M",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 5.3354,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": 0,
+      "y": 8.1708,
+      "gapDir": 180,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [],
+      "bomb": {
+        "x": 2.2,
+        "y": 8.1708,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "J",
+      "x": 2.2927,
+      "y": 0,
+      "gapDir": 90,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "K"
+        }
+      ]
+    },
+    {
+      "id": "N",
+      "x": 0,
+      "y": -8.1708,
+      "gapDir": 90,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "M"
+        }
+      ]
+    }
+  ],
+  "sticks": []
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "turp-design.v1",
+  "title": "TURP design file (.rrdesign.json)",
+  "description": "Compact, hand/Codex-writable level description. `node rr-cli.js build` turns it into the runtime level (schema v1) with the same builder the Unity Level Editor uses. World units; angles in degrees, counter-clockwise from +X. All angles are WORLD angles at the start of the level.",
+  "type": "object",
+  "required": ["format", "version", "rings"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "turp-design" },
+    "version": { "const": 1 },
+    "levelId": { "type": "string", "description": "Leave \"draft\": Dev assigns 90001–99999 on import." },
+    "name": { "type": "string" },
+    "author": { "type": "string" },
+    "notes": { "type": "string" },
+    "rings": { "type": "array", "items": { "$ref": "#/$defs/ring" } },
+    "sticks": { "type": "array", "items": { "$ref": "#/$defs/stick" } },
+    "bombs": { "type": "array", "description": "Free bombs (no host).", "items": { "$ref": "#/$defs/freeBomb" } },
+    "_notes": { "type": "array", "items": { "type": "string" }, "description": "Written by `describe`: parts of the source level whose sizes differ from the defaults (rebuilt with defaults)." }
+  },
+  "$defs": {
+    "color": {
+      "description": "Palette name, #rrggbb or [r,g,b] in 0..1.",
+      "oneOf": [
+        { "enum": ["orange", "red", "blue", "sky", "purple", "green", "navy", "teal"] },
+        { "type": "string", "pattern": "^#?[0-9a-fA-F]{6}$" },
+        { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 }
+      ]
+    },
+    "ring": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "description": "Your label, e.g. R1. Targets refer to it." },
+        "x": { "type": "number" }, "y": { "type": "number" },
+        "gapDir": { "type": "number", "default": 0, "description": "World direction of the gap centre." },
+        "gap": { "type": "number", "default": 90, "minimum": 0, "maximum": 360, "description": "Logic gap in degrees; 0 = closed ring." },
+        "radius": { "type": "number", "default": 1.75, "minimum": 0.8, "maximum": 8 },
+        "color": { "$ref": "#/$defs/color" },
+        "pins": { "type": "array", "items": { "$ref": "#/$defs/pin" } },
+        "stops": { "type": "array", "items": { "$ref": "#/$defs/stop" } },
+        "collect": { "type": "boolean", "default": false, "description": "Challenge: the ring may carry a Fish (runtime canCollect). The game picks up to 3 marked rings per play." },
+        "bomb": { "$ref": "#/$defs/hostedBomb" }
+      }
+    },
+    "pin": {
+      "type": "object",
+      "required": ["angle"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "angle": { "type": "number", "description": "World direction from the owner's centre." },
+        "length": { "type": "number", "default": 0.8354, "minimum": 0.2, "maximum": 8, "description": "Outer pin: outer edge of the owner -> pin head centre (0.45..8, default 0.8354 = head 2.8354 from the centre of a standard ring). Inner pin: inner edge of the owner -> pin head centre, inwards (0.2 .. inner radius - 0.05)." },
+        "inner": { "type": "boolean", "default": false, "description": "Inner-mounted pin: rooted on the owner's inner edge and pointing inwards into a ring/bar that lies inside the owner (runtime isInnerMount, like Unity RotateCompactLayout.ConfigureInnerPin). angle is still the world direction from the owner's centre to the head." },
+        "targets": { "type": "array", "items": { "type": "string" }, "description": "Ids of the rings/sticks this pin locks. Empty = pin only blocks." },
+        "target": { "type": "string", "description": "Shorthand for one target." }
+      }
+    },
+    "stop": {
+      "type": "object",
+      "required": ["angle"],
+      "additionalProperties": false,
+      "properties": { "angle": { "type": "number" }, "length": { "type": "number", "default": 0.6, "description": "Positive: how far it sticks out beyond the ring's outer edge (min 0.2). Negative: it points INTO the ring, |length| beyond the inner edge (min 0.2, stops 0.05 before the centre)." } }
+    },
+    "stick": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "x": { "type": "number" }, "y": { "type": "number" },
+        "angle": { "type": "number", "default": 0 },
+        "shape": { "enum": ["straight", "L", "U"], "default": "straight" },
+        "length": { "type": "number", "default": 5.4167, "description": "Base length along stick-local X." },
+        "arm": { "type": "number", "default": 2.2083, "description": "L: arm down (-Y) at +X end; U: both arms up (+Y)." },
+        "path": { "type": "array", "items": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 }, "minItems": 2, "description": "Explicit stick-local polyline instead of shape/length/arm." },
+        "slideAxis": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2, "description": "Stick-local slide direction. Needed for a bent stick that has no guide and no pin along a straight segment." },
+        "color": { "$ref": "#/$defs/color" },
+        "guides": { "type": "array", "items": { "$ref": "#/$defs/guide" } },
+        "bomb": { "$ref": "#/$defs/hostedBomb" }
+      }
+    },
+    "guide": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": { "x": { "type": "number" }, "y": { "type": "number" }, "angle": { "type": "number", "description": "World direction of the passage (= slide direction). Default: the stick angle." } }
+    },
+    "hostedBomb": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "x": { "type": "number", "description": "World position at start; default = host centre." }, "y": { "type": "number" }, "radius": { "type": "number", "default": 0.75 } }
+    },
+    "freeBomb": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": { "x": { "type": "number" }, "y": { "type": "number" }, "radius": { "type": "number", "default": 0.75 } }
+    }
+  }
+}

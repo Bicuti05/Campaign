@@ -1,0 +1,2423 @@
+{
+  "candidate": {
+    "stem": "study-20261014-dual-guide-sliders-01",
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "DGS-01 | Hai thanh ngoài đường pin, ngàm còn giữ và hai cửa vòng dùng chung",
+      "author": "Codex + GD / research",
+      "notes": "Research mới7 vòng radius1,75/2thanh thẳng default/2Guide đầy đủ/7pin. Nguồn kín B cùng giữ Q/A; T nhận Q/A, AT nhận A/D, DG giữ D. Hai thanh H/V không pin,ngàm có vai trò retention. Q input mở sau T-90 nhưng vách pin Q->T còn đi qua hai thanh;hạ V-5 chỉ mở đoạn đầu,H1 mở đoạn sau nhưng ngàm V còn tồn tại trong khe thânQ. RútV-7 gỡ V/Guide rồi H1 mở đườngQ180;H vẫn giữ qua Guide để có thể trả H0 đóng đườngpinQ. Cửa T/AT phục vụ nhiều nguồn/return thật. Không thêm Guide vào thanh pin,không nửa ngàm,không radius khác/Stop/Bom/Chain/Booster. Thử hữu hạn hai hướng/deep/repeated/reinsert/relock/ablation và full target-until-release;không giả định thứ tự bắt buộc hoặc khó từ count. T270 partial thử đầu chưa cho đường pinQra đúng phía,savedhold;T-90 là prefix đúng được đo. Chưa bàn giao,chờ proof/CLI/finalreadback/preview/GD visual.",
+      "rings": [
+        {
+          "id": "Q",
+          "x": 0,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": -0.1,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 90,
+              "target": "T"
+            }
+          ]
+        },
+        {
+          "id": "A",
+          "x": -4.5854,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 180.1,
+          "color": "orange",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "T"
+            },
+            {
+              "angle": 90,
+              "target": "AT"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "x": -4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "red",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "Q"
+            },
+            {
+              "angle": 90,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "T",
+          "x": 0,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 90,
+          "color": "teal",
+          "pins": []
+        },
+        {
+          "id": "AT",
+          "x": -4.5854,
+          "y": 9.1708,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 90,
+          "color": "purple",
+          "pins": []
+        },
+        {
+          "id": "D",
+          "x": -9.1708,
+          "y": 9.1708,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 180,
+          "color": "green",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "AT"
+            }
+          ]
+        },
+        {
+          "id": "DG",
+          "x": -9.1708,
+          "y": 13.7562,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "navy",
+          "pins": [
+            {
+              "angle": 270,
+              "target": "D"
+            }
+          ]
+        }
+      ],
+      "sticks": [
+        {
+          "id": "H",
+          "shape": "straight",
+          "x": 5.5,
+          "y": 0.9,
+          "angle": 0,
+          "color": "green",
+          "guides": [
+            {
+              "x": 5.5,
+              "y": 0.9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "V",
+          "shape": "straight",
+          "x": 2.2,
+          "y": 1.3,
+          "angle": 90,
+          "color": "purple",
+          "guides": [
+            {
+              "x": 2.2,
+              "y": -1.2,
+              "angle": 90
+            }
+          ]
+        }
+      ]
+    },
+    "bombs": false,
+    "authorMoves": [
+      {
+        "part": "V",
+        "target": -7
+      },
+      {
+        "part": "H",
+        "target": 1
+      },
+      {
+        "part": "T",
+        "target": -90
+      },
+      {
+        "part": "Q",
+        "target": 180
+      },
+      {
+        "part": "AT",
+        "target": -90
+      },
+      {
+        "part": "T",
+        "target": 180
+      },
+      {
+        "part": "A",
+        "target": 300
+      },
+      {
+        "part": "AT",
+        "target": 180
+      },
+      {
+        "part": "D",
+        "target": 90
+      },
+      {
+        "part": "H",
+        "target": 4
+      }
+    ],
+    "probes": [
+      [
+        {
+          "part": "H",
+          "target": 1
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -5
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -5
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      [
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        },
+        {
+          "part": "AT",
+          "target": -90
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        },
+        {
+          "part": "AT",
+          "target": -90
+        },
+        {
+          "part": "T",
+          "target": 180
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        },
+        {
+          "part": "AT",
+          "target": -90
+        },
+        {
+          "part": "T",
+          "target": 180
+        },
+        {
+          "part": "A",
+          "target": 300
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        },
+        {
+          "part": "AT",
+          "target": -90
+        },
+        {
+          "part": "T",
+          "target": 180
+        },
+        {
+          "part": "A",
+          "target": 300
+        },
+        {
+          "part": "AT",
+          "target": 180
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        },
+        {
+          "part": "AT",
+          "target": -90
+        },
+        {
+          "part": "T",
+          "target": 180
+        },
+        {
+          "part": "A",
+          "target": 300
+        },
+        {
+          "part": "AT",
+          "target": 180
+        },
+        {
+          "part": "D",
+          "target": 90
+        }
+      ],
+      [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        },
+        {
+          "part": "AT",
+          "target": -90
+        },
+        {
+          "part": "T",
+          "target": 180
+        },
+        {
+          "part": "A",
+          "target": 300
+        },
+        {
+          "part": "AT",
+          "target": 180
+        },
+        {
+          "part": "D",
+          "target": 90
+        },
+        {
+          "part": "H",
+          "target": 4
+        }
+      ]
+    ]
+  },
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 7,
+        "sticks": 2,
+        "guides": 2,
+        "bombs": 0,
+        "links": 7,
+        "pins": 7,
+        "stops": 0,
+        "closedRings": 2
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "Q",
+        "target": "T",
+        "margin": 45.10000000000002
+      },
+      {
+        "owner": "A",
+        "target": "T",
+        "margin": 134.89999999999998
+      },
+      {
+        "owner": "A",
+        "target": "AT",
+        "margin": 45.10000000000002
+      },
+      {
+        "owner": "D",
+        "target": "AT",
+        "margin": 135
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "walls": 2,
+        "engaged": true
+      },
+      {
+        "id": "guide_2",
+        "walls": 2,
+        "engaged": true
+      }
+    ],
+    "bodyAccess": [
+      {
+        "label": "Q",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "A",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "B",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "T",
+        "visibleBodyPoints": 73
+      },
+      {
+        "label": "AT",
+        "visibleBodyPoints": 73
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "DG",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "H",
+        "visibleBodyPoints": 24
+      },
+      {
+        "label": "V",
+        "visibleBodyPoints": 24
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "actual": {
+    "ok": false,
+    "solved": false,
+    "trace": [
+      {
+        "part": "slide_bar_2",
+        "target": -7,
+        "grab": {
+          "x": 2.2,
+          "y": 1.3960144913043477
+        },
+        "selectableBodySamples": 24,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_2"
+        ],
+        "pose": -6.999999999999991,
+        "remaining": 8,
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "slide_bar_1",
+        "target": 1,
+        "grab": {
+          "x": 5.596014491304348,
+          "y": 0.9
+        },
+        "selectableBodySamples": 24,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 1,
+        "remaining": 8,
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_4",
+        "target": -90,
+        "grab": {
+          "x": -1.30050344458544,
+          "y": 3.4144214388719982
+        },
+        "selectableBodySamples": 73,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -78.74999999999939,
+        "remaining": 8,
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_1",
+        "target": 180,
+        "grab": {
+          "x": -1.6903701960058695,
+          "y": 0.4529333289294118
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ],
+        "pose": 191.22500000045622,
+        "remaining": 7,
+        "links": [
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_5",
+        "target": -90,
+        "grab": {
+          "x": -5.8859034445854395,
+          "y": 7.999821438871998
+        },
+        "selectableBodySamples": 73,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -78.75000000000144,
+        "remaining": 7,
+        "links": [
+          false,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_4",
+        "target": 180,
+        "grab": {
+          "x": -0.8749999999999996,
+          "y": 6.100944456622768
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4"
+        ],
+        "pose": 168.74999999999955,
+        "remaining": 6,
+        "links": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_2",
+        "target": 300,
+        "grab": {
+          "x": -5.4604,
+          "y": 6.100944456622768
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 191.49648437317722,
+        "remaining": 6,
+        "links": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_5",
+        "target": 180,
+        "grab": {
+          "x": -5.4604,
+          "y": 10.686344456622768
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -78.0946655273452,
+        "remaining": 6,
+        "links": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_6",
+        "locked": true,
+        "bodySamples": 91,
+        "selectableBodySamples": 82
+      }
+    ],
+    "bombs": []
+  },
+  "analytic": {
+    "moves": [
+      {
+        "part": "V",
+        "target": -7
+      },
+      {
+        "part": "H",
+        "target": 1
+      },
+      {
+        "part": "T",
+        "target": -90
+      },
+      {
+        "part": "Q",
+        "target": 180
+      },
+      {
+        "part": "AT",
+        "target": -90
+      },
+      {
+        "part": "T",
+        "target": 180
+      },
+      {
+        "part": "A",
+        "target": 300
+      },
+      {
+        "part": "AT",
+        "target": 180
+      },
+      {
+        "part": "D",
+        "target": 90
+      },
+      {
+        "part": "H",
+        "target": 4
+      }
+    ],
+    "solved": true,
+    "trace": [
+      {
+        "part": "V",
+        "target": -7,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_2"
+        ],
+        "pose": -6.999999999999991
+      },
+      {
+        "part": "H",
+        "target": 1,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 1
+      },
+      {
+        "part": "T",
+        "target": -90,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -89.9999999999995
+      },
+      {
+        "part": "Q",
+        "target": 180,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ],
+        "pose": 180.0000000000006
+      },
+      {
+        "part": "AT",
+        "target": -90,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -90.00000000000136
+      },
+      {
+        "part": "T",
+        "target": 180,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4"
+        ],
+        "pose": 180.00000000000023
+      },
+      {
+        "part": "A",
+        "target": 300,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3",
+          "ring_2"
+        ],
+        "pose": 300.00000000000045
+      },
+      {
+        "part": "AT",
+        "target": 180,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_5"
+        ],
+        "pose": 179.99999999999957
+      },
+      {
+        "part": "D",
+        "target": 90,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_7",
+          "ring_6"
+        ],
+        "pose": 89.99999999999962
+      },
+      {
+        "part": "H",
+        "target": 4,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_1"
+        ],
+        "pose": 3.999999999999999
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "guides": [
+      {
+        "active": false,
+        "engaged": false
+      },
+      {
+        "active": false,
+        "engaged": false
+      }
+    ],
+    "poses": {
+      "Q": {
+        "pose": 180.0000000000006,
+        "solved": true,
+        "locked": false
+      },
+      "A": {
+        "pose": 300.00000000000045,
+        "solved": true,
+        "locked": false
+      },
+      "B": {
+        "pose": 0,
+        "solved": true,
+        "locked": false
+      },
+      "T": {
+        "pose": 180.00000000000023,
+        "solved": true,
+        "locked": false
+      },
+      "AT": {
+        "pose": 179.99999999999957,
+        "solved": true,
+        "locked": false
+      },
+      "D": {
+        "pose": 89.99999999999962,
+        "solved": true,
+        "locked": false
+      },
+      "DG": {
+        "pose": 0,
+        "solved": true,
+        "locked": false
+      },
+      "H": {
+        "pose": 3.999999999999999,
+        "solved": true,
+        "locked": false
+      },
+      "V": {
+        "pose": -6.999999999999991,
+        "solved": true,
+        "locked": false
+      }
+    },
+    "scope": "Actual material-body pointertarget until release,default contacts/Ring lock scope;feeloff/on locally. No earlySolver.apply release or engine/tuning changes. Rejected/missing recovery attempts logged/skipped;strictprimary replay separate."
+  },
+  "feel": {
+    "moves": [
+      {
+        "part": "V",
+        "target": -7
+      },
+      {
+        "part": "H",
+        "target": 1
+      },
+      {
+        "part": "T",
+        "target": -90
+      },
+      {
+        "part": "Q",
+        "target": 180
+      },
+      {
+        "part": "AT",
+        "target": -90
+      },
+      {
+        "part": "T",
+        "target": 180
+      },
+      {
+        "part": "A",
+        "target": 300
+      },
+      {
+        "part": "AT",
+        "target": 180
+      },
+      {
+        "part": "D",
+        "target": 90
+      },
+      {
+        "part": "H",
+        "target": 4
+      }
+    ],
+    "solved": false,
+    "trace": [
+      {
+        "part": "V",
+        "target": -7,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_2"
+        ],
+        "pose": -6.999999999999991
+      },
+      {
+        "part": "H",
+        "target": 1,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 1
+      },
+      {
+        "part": "T",
+        "target": -90,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -78.74999999999939
+      },
+      {
+        "part": "Q",
+        "target": 180,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ],
+        "pose": 191.22500000045622
+      },
+      {
+        "part": "AT",
+        "target": -90,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -78.75000000000144
+      },
+      {
+        "part": "T",
+        "target": 180,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4"
+        ],
+        "pose": 168.74999999999955
+      },
+      {
+        "part": "A",
+        "target": 300,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 191.49648437317722
+      },
+      {
+        "part": "AT",
+        "target": 180,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": -78.0946655273452
+      },
+      {
+        "part": "D",
+        "target": 90,
+        "began": false,
+        "locked": true,
+        "selectable": 82
+      },
+      {
+        "part": "H",
+        "target": 4,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_1"
+        ],
+        "pose": 3.999999999999999
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "guides": [
+      {
+        "active": false,
+        "engaged": false
+      },
+      {
+        "active": false,
+        "engaged": false
+      }
+    ],
+    "poses": {
+      "Q": {
+        "pose": 191.22500000045622,
+        "solved": true,
+        "locked": false
+      },
+      "A": {
+        "pose": 191.49648437317722,
+        "solved": false,
+        "locked": false
+      },
+      "B": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "T": {
+        "pose": 168.74999999999955,
+        "solved": true,
+        "locked": false
+      },
+      "AT": {
+        "pose": -78.0946655273452,
+        "solved": false,
+        "locked": false
+      },
+      "D": {
+        "pose": 180,
+        "solved": false,
+        "locked": true
+      },
+      "DG": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "H": {
+        "pose": 3.999999999999999,
+        "solved": true,
+        "locked": false
+      },
+      "V": {
+        "pose": -6.999999999999991,
+        "solved": true,
+        "locked": false
+      }
+    },
+    "scope": "Actual material-body pointertarget until release,default contacts/Ring lock scope;feeloff/on locally. No earlySolver.apply release or engine/tuning changes. Rejected/missing recovery attempts logged/skipped;strictprimary replay separate."
+  },
+  "phases": {
+    "none": {
+      "moves": [
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 9,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "T",
+            "target": -90,
+            "pose": -78.74999999999939,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "Q",
+            "target": 180,
+            "pose": 329.4202636736977,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 329.4202636736977,
+            "solved": false,
+            "locked": false
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": -78.74999999999939,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    "Vonly": {
+      "moves": [
+        {
+          "part": "V",
+          "target": -5
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 9,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "V",
+            "target": -5,
+            "pose": -4.999999999999998,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "T",
+            "target": -90,
+            "pose": -78.74999999999939,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "Q",
+            "target": 180,
+            "pose": 294.8440917986976,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 294.8440917986976,
+            "solved": false,
+            "locked": false
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": -78.74999999999939,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": -4.999999999999998,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    "Honly": {
+      "moves": [
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 9,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "H",
+            "target": 1,
+            "pose": 1,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "T",
+            "target": -90,
+            "pose": -78.74999999999939,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "Q",
+            "target": 180,
+            "pose": 329.4202636736977,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 329.4202636736977,
+            "solved": false,
+            "locked": false
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": -78.74999999999939,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 1,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    "partialBoth": {
+      "moves": [
+        {
+          "part": "V",
+          "target": -5
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 9,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "V",
+            "target": -5,
+            "pose": -4.999999999999998,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "H",
+            "target": 1,
+            "pose": 1,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "T",
+            "target": -90,
+            "pose": -78.74999999999939,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "Q",
+            "target": 180,
+            "pose": 288.8580078143227,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 288.8580078143227,
+            "solved": false,
+            "locked": false
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": -78.74999999999939,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 1,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": -4.999999999999998,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    "unlockedPrefix": {
+      "moves": [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 8,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "V",
+            "target": -7,
+            "pose": -6.999999999999991,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": [
+              "slide_bar_2"
+            ]
+          },
+          {
+            "part": "H",
+            "target": 1,
+            "pose": 1,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "T",
+            "target": -90,
+            "pose": -78.74999999999939,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          false
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": false,
+            "engaged": false
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 359.900000001823,
+            "solved": false,
+            "locked": false
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": -78.74999999999939,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 1,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": -6.999999999999991,
+            "solved": true,
+            "locked": false
+          }
+        }
+      }
+    },
+    "qTurn": {
+      "moves": [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 7,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "V",
+            "target": -7,
+            "pose": -6.999999999999991,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": [
+              "slide_bar_2"
+            ]
+          },
+          {
+            "part": "H",
+            "target": 1,
+            "pose": 1,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "T",
+            "target": -90,
+            "pose": -78.74999999999939,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "Q",
+            "target": 180,
+            "pose": 191.22500000045622,
+            "remaining": 7,
+            "began": true,
+            "events": [],
+            "removed": [
+              "ring_1"
+            ]
+          }
+        ],
+        "links": [
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          false
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": false,
+            "engaged": false
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 191.22500000045622,
+            "solved": true,
+            "locked": false
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": -78.74999999999939,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 1,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": -6.999999999999991,
+            "solved": true,
+            "locked": false
+          }
+        }
+      }
+    },
+    "main": {
+      "moves": [
+        {
+          "part": "V",
+          "target": -7
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        },
+        {
+          "part": "AT",
+          "target": -90
+        },
+        {
+          "part": "T",
+          "target": 180
+        },
+        {
+          "part": "A",
+          "target": 300
+        },
+        {
+          "part": "AT",
+          "target": 180
+        },
+        {
+          "part": "D",
+          "target": 90
+        },
+        {
+          "part": "H",
+          "target": 4
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 5,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "V",
+            "target": -7,
+            "pose": -6.999999999999991,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": [
+              "slide_bar_2"
+            ]
+          },
+          {
+            "part": "H",
+            "target": 1,
+            "pose": 1,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "T",
+            "target": -90,
+            "pose": -78.74999999999939,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "Q",
+            "target": 180,
+            "pose": 191.22500000045622,
+            "remaining": 7,
+            "began": true,
+            "events": [],
+            "removed": [
+              "ring_1"
+            ]
+          },
+          {
+            "part": "AT",
+            "target": -90,
+            "pose": -78.75000000000144,
+            "remaining": 7,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "T",
+            "target": 180,
+            "pose": 168.74999999999955,
+            "remaining": 6,
+            "began": true,
+            "events": [],
+            "removed": [
+              "ring_4"
+            ]
+          },
+          {
+            "part": "A",
+            "target": 300,
+            "pose": 191.49648437317722,
+            "remaining": 6,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "AT",
+            "target": 180,
+            "pose": -78.0946655273452,
+            "remaining": 6,
+            "began": true,
+            "events": [],
+            "removed": []
+          },
+          {
+            "part": "D",
+            "target": 90,
+            "locked": true,
+            "selectable": 82,
+            "began": false
+          },
+          {
+            "part": "H",
+            "target": 4,
+            "pose": 3.999999999999999,
+            "remaining": 5,
+            "began": true,
+            "events": [],
+            "removed": [
+              "slide_bar_1"
+            ]
+          }
+        ],
+        "links": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          false,
+          false
+        ],
+        "guides": [
+          {
+            "active": false,
+            "engaged": false
+          },
+          {
+            "active": false,
+            "engaged": false
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 191.22500000045622,
+            "solved": true,
+            "locked": false
+          },
+          "A": {
+            "pose": 191.49648437317722,
+            "solved": false,
+            "locked": false
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": 168.74999999999955,
+            "solved": true,
+            "locked": false
+          },
+          "AT": {
+            "pose": -78.0946655273452,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 3.999999999999999,
+            "solved": true,
+            "locked": false
+          },
+          "V": {
+            "pose": -6.999999999999991,
+            "solved": true,
+            "locked": false
+          }
+        }
+      }
+    },
+    "Hleft": {
+      "moves": [
+        {
+          "part": "H",
+          "target": -5
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 9,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "H",
+            "target": -5,
+            "pose": -0.6116577148437496,
+            "remaining": 9,
+            "began": true,
+            "events": [],
+            "removed": []
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          true
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": true,
+            "engaged": true
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 359.900000001823,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": -0.6116577148437496,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          }
+        }
+      }
+    },
+    "Vup": {
+      "moves": [
+        {
+          "part": "V",
+          "target": 5
+        }
+      ],
+      "data": {
+        "solved": false,
+        "remaining": 8,
+        "initialContacts": [],
+        "trace": [
+          {
+            "part": "V",
+            "target": 5,
+            "pose": 0.7124999999999999,
+            "remaining": 8,
+            "began": true,
+            "events": [],
+            "removed": [
+              "slide_bar_2"
+            ]
+          }
+        ],
+        "links": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "bindings": [
+          true,
+          false
+        ],
+        "guides": [
+          {
+            "active": true,
+            "engaged": true
+          },
+          {
+            "active": false,
+            "engaged": false
+          }
+        ],
+        "poses": {
+          "Q": {
+            "pose": 359.900000001823,
+            "solved": false,
+            "locked": true
+          },
+          "A": {
+            "pose": 180.09999999817703,
+            "solved": false,
+            "locked": true
+          },
+          "B": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "T": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "AT": {
+            "pose": 90,
+            "solved": false,
+            "locked": false
+          },
+          "D": {
+            "pose": 180,
+            "solved": false,
+            "locked": true
+          },
+          "DG": {
+            "pose": 0,
+            "solved": false,
+            "locked": true
+          },
+          "H": {
+            "pose": 0,
+            "solved": false,
+            "locked": false
+          },
+          "V": {
+            "pose": 0.7124999999999999,
+            "solved": true,
+            "locked": false
+          }
+        }
+      }
+    }
+  },
+  "contacts": {
+    "none": {
+      "moves": [
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "pose": {
+        "pose": 329.4202636736977,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "against": "V",
+          "feature": "source-quad-vs-stick",
+          "index": 1,
+          "kind": 4,
+          "pin": 0,
+          "depth": 0.019993547970833886
+        }
+      ],
+      "scope": "Active object bodies plus source/foreign non-sensor quads and full Guide walls. Supplied analytic chains/arcs/SAT under Ring scope; no modified tolerance or inference from input freedom."
+    },
+    "Vonly": {
+      "moves": [
+        {
+          "part": "V",
+          "target": -5
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "pose": {
+        "pose": 294.8440917986976,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "against": "H",
+          "feature": "source-quad-vs-stick",
+          "index": 1,
+          "kind": 4,
+          "pin": 0,
+          "depth": 0.019977262007020907
+        }
+      ],
+      "scope": "Active object bodies plus source/foreign non-sensor quads and full Guide walls. Supplied analytic chains/arcs/SAT under Ring scope; no modified tolerance or inference from input freedom."
+    },
+    "Honly": {
+      "moves": [
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "pose": {
+        "pose": 329.4202636736977,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "against": "V",
+          "feature": "source-quad-vs-stick",
+          "index": 1,
+          "kind": 4,
+          "pin": 0,
+          "depth": 0.019993547970833886
+        }
+      ],
+      "scope": "Active object bodies plus source/foreign non-sensor quads and full Guide walls. Supplied analytic chains/arcs/SAT under Ring scope; no modified tolerance or inference from input freedom."
+    },
+    "partialBoth": {
+      "moves": [
+        {
+          "part": "V",
+          "target": -5
+        },
+        {
+          "part": "H",
+          "target": 1
+        },
+        {
+          "part": "T",
+          "target": -90
+        },
+        {
+          "part": "Q",
+          "target": 180
+        }
+      ],
+      "pose": {
+        "pose": 288.8580078143227,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "against": "guide_2",
+          "feature": "body-vs-guide-wall",
+          "host": "slide_bar_2",
+          "index": 1,
+          "depth": 0.019999078284597405
+        }
+      ],
+      "scope": "Active object bodies plus source/foreign non-sensor quads and full Guide walls. Supplied analytic chains/arcs/SAT under Ring scope; no modified tolerance or inference from input freedom."
+    }
+  }
+}

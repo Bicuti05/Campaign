@@ -1,0 +1,13 @@
+"use strict";
+const fs=require('fs'),path=require('path'),g=require('./pose-body-gesture-query'),{RR}=require('./turp-continue'),dir=path.join(__dirname,'20261015-turp-a029-delivery'),stem='turp-A029-60008-three-shared-pinbars-r10',p=JSON.parse(fs.readFileSync(path.join(__dirname,'../levels',stem+'.rrpack.json'))),f=JSON.parse(fs.readFileSync(path.join(dir,stem+'-final-proof.json'))),m=f.finalProof.moves,rows=[];
+for(const feel of [false,true]){
+ function run(kind,prefix,suffix){const q=g.query(p,prefix.concat(suffix),false,feel).data;rows.push({kind,feel,prefix,suffix,solved:q.solved,remaining:q.remaining,poses:q.poses,trace:q.trace.slice(prefix.length)});}
+ for(const target of [-6,-1.6,0,.8,1,5.9])run('S1_two_ends',m.slice(0,12),[{part:'S1',target},{part:'R5',target:69}]);
+ for(const target of [0,.5,.7,1,5.6])run('S3_partial_input_vs_path',m.slice(0,7),[{part:'S3',target},{part:'R2',target:156}]);
+ run('S3_full_path',m.slice(0,16),[{part:'R2',target:156}]);
+ for(const[bar,ring,prefix]of [['S7','R5',m.slice(0,15)],['S10','R12',m.slice(0,7)]])for(const target of [-360,90,270,540])run('kept_'+bar+'_repeat',prefix.filter(x=>x.part!==bar),Array.from({length:3},()=>({part:ring,target})));
+}
+const alternatives={skipOptionalPartial:m.filter((_,i)=>![7,8,12].includes(i)),S1_reverseOrder:m.slice(0,12).concat([{part:'S1',target:-1.6},{part:'R5',target:69},{part:'S3',target:5.6},{part:'R5',target:24},{part:'R2',target:156},{part:'S1',target:-6.2}])},rebuilt={design:p.design,runtime:JSON.parse(RR.json.stringify(RR.Design.toLevel(p.design).level))},profiles={};
+for(const[key,moves]of Object.entries(alternatives)){profiles[key]={};for(const[name,pack]of [['saved',p],['rebuilt',rebuilt]])for(const feel of [false,true]){const q=g.query(pack,moves,false,feel).data;profiles[key][name+(feel?'Default':'Analytic')]={solved:q.solved,remaining:q.remaining,trace:q.trace};}}
+fs.writeFileSync(path.join(dir,'shared-pinbar-alternatives-and-deep-gestures.json'),JSON.stringify({createdAtUtc:new Date().toISOString(),scope:'Finite actual current-pose material-body gestures, full pointer target then release. Optional partial offsets not claimed mandatory. Finite failed deep/repeated inputs not a global impossibility proof.',rows,alternatives,profiles},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({cases:rows.length,profiles:Object.fromEntries(Object.entries(profiles).map(([k,v])=>[k,Object.fromEntries(Object.entries(v).map(([k,x])=>[k,x.solved]))])),S1:rows.filter(r=>r.feel&&r.kind==='S1_two_ends').map(r=>({target:r.suffix[0].target,S1:r.poses.S1,R5:r.poses.R5,R4:r.poses.R4})),S3:rows.filter(r=>r.feel&&r.kind.startsWith('S3')).map(r=>({kind:r.kind,target:r.suffix[0].target,S3:r.poses.S3,R2:r.poses.R2}))}));

@@ -1,0 +1,82 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Rút thanh khỏi lòng vòng",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Thanh dọc đi qua khe dưới của vòng nhận pin, chặn cả hai cửa quay. Rút thanh xuống để đưa đầu thanh ra khỏi lòng vòng rồi mới xoay vòng nhận. Ngàm giữ thanh không nhận pin. Không bom/Chain/Booster; bản nghiên cứu chưa nghiệm thu bố cục hoặc độ khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 135,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R2"
+        },
+        {
+          "angle": 270,
+          "target": "R3"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 90,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 270,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "x": 4.5854,
+      "y": -6.6354,
+      "length": 3.3,
+      "angle": 90,
+      "color": "red",
+      "guides": [
+        {
+          "x": 4.5854,
+          "y": -5.9854,
+          "angle": 90
+        }
+      ]
+    }
+  ]
+}

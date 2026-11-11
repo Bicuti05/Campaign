@@ -1,0 +1,419 @@
+{
+  "slot": 8,
+  "stem": "batch01-008",
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "B01-008 | Hai thanh và một cửa nối",
+    "author": "Codex + GD / batch 01",
+    "notes": "Bộ 15 level đầu, vị trí đề xuất 8/15. Hai thanh có trục riêng, nhưng hai nhánh vòng cùng đi qua receiver B. D cần nhả pin vào B rồi mới quay để mở C; các thanh phối hợp với cửa vòng. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. ",
+    "rings": [
+      {
+        "id": "A",
+        "x": 0,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "L"
+          },
+          {
+            "angle": 0,
+            "target": "B"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "x": 4.5854,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 315,
+        "color": "blue",
+        "pins": []
+      },
+      {
+        "id": "C",
+        "x": 0,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "purple",
+        "pins": [
+          {
+            "angle": 90,
+            "target": "H"
+          },
+          {
+            "angle": 0,
+            "target": "D"
+          }
+        ]
+      },
+      {
+        "id": "D",
+        "x": 4.5854,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "navy",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "B"
+          }
+        ]
+      }
+    ],
+    "sticks": [
+      {
+        "id": "L",
+        "shape": "straight",
+        "x": 2.2927,
+        "y": -2.8354,
+        "length": 6.5854,
+        "angle": 0,
+        "color": "green"
+      },
+      {
+        "id": "H",
+        "shape": "straight",
+        "x": 2.2927,
+        "y": 7.4208,
+        "length": 6.5854,
+        "angle": 0,
+        "color": "red"
+      }
+    ]
+  },
+  "authorMoves": [
+    {
+      "part": "L",
+      "target": 2
+    },
+    {
+      "part": "B",
+      "target": 180
+    },
+    {
+      "part": "B",
+      "target": 90
+    },
+    {
+      "part": "D",
+      "target": 180
+    },
+    {
+      "part": "H",
+      "target": 2
+    }
+  ],
+  "bombs": false,
+  "idea": "Hai thanh có trục riêng, nhưng hai nhánh vòng cùng đi qua receiver B. D cần nhả pin vào B rồi mới quay để mở C; các thanh phối hợp với cửa vòng.",
+  "sourceStudy": null,
+  "probes": [],
+  "analysis": {
+    "error": null,
+    "warnings": [],
+    "info": {
+      "rings": 4,
+      "sticks": 2,
+      "guides": 0,
+      "bombs": 0,
+      "links": 5,
+      "pins": 5,
+      "stops": 0,
+      "closedRings": 0
+    }
+  },
+  "initial": {
+    "solved": false,
+    "remaining": 6,
+    "initialContacts": [],
+    "trace": [],
+    "links": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 180,
+        "solved": false,
+        "locked": true
+      },
+      "B": {
+        "pose": 315,
+        "solved": false,
+        "locked": false
+      },
+      "C": {
+        "pose": 180,
+        "solved": false,
+        "locked": true
+      },
+      "D": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "L": {
+        "pose": 0,
+        "solved": false,
+        "locked": false
+      },
+      "H": {
+        "pose": 0,
+        "solved": false,
+        "locked": false
+      }
+    }
+  },
+  "full": {
+    "solved": true,
+    "remaining": 0,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "L",
+        "target": 2,
+        "pose": 1.9999999999999996,
+        "remaining": 5,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_1"
+        ]
+      },
+      {
+        "part": "B",
+        "target": 180,
+        "pose": 191.2499999999999,
+        "remaining": 4,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ]
+      },
+      {
+        "part": "B",
+        "target": 90,
+        "pose": 101.06249999999963,
+        "remaining": 3,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ]
+      },
+      {
+        "part": "D",
+        "target": 180,
+        "pose": 168.74999999999974,
+        "remaining": 2,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4"
+        ]
+      },
+      {
+        "part": "H",
+        "target": 2,
+        "pose": 1.9999999999999996,
+        "remaining": 0,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_2",
+          "ring_3"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 180,
+        "solved": true,
+        "locked": false
+      },
+      "B": {
+        "pose": 101.06249999999963,
+        "solved": true,
+        "locked": false
+      },
+      "C": {
+        "pose": 180,
+        "solved": true,
+        "locked": false
+      },
+      "D": {
+        "pose": 168.74999999999974,
+        "solved": true,
+        "locked": false
+      },
+      "L": {
+        "pose": 1.9999999999999996,
+        "solved": true,
+        "locked": false
+      },
+      "H": {
+        "pose": 1.9999999999999996,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "release": {
+    "ok": true,
+    "solved": true,
+    "trace": [
+      {
+        "part": "slide_bar_1",
+        "target": 2,
+        "grab": {
+          "x": 2.6916571428571427,
+          "y": -2.8354
+        },
+        "selectableBodySamples": 25,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_1"
+        ],
+        "pose": 1.9999999999999996,
+        "remaining": 5,
+        "links": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_2",
+        "target": 180,
+        "grab": {
+          "x": 3.347963132923542,
+          "y": 1.2374368670764582
+        },
+        "selectableBodySamples": 73,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ],
+        "pose": 191.2499999999999,
+        "remaining": 4,
+        "links": [
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "part": "ring_2",
+        "target": 90,
+        "grab": {
+          "x": 3.632281688723703,
+          "y": -1.467673493904492
+        },
+        "selectableBodySamples": 81,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ],
+        "pose": 101.06249999999963,
+        "remaining": 3,
+        "links": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "part": "ring_4",
+        "target": 180,
+        "grab": {
+          "x": 2.8950298039941305,
+          "y": 4.132466671070588
+        },
+        "selectableBodySamples": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4"
+        ],
+        "pose": 168.74999999999974,
+        "remaining": 2,
+        "links": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "part": "slide_bar_2",
+        "target": 2,
+        "grab": {
+          "x": 2.6916571428571427,
+          "y": 7.4208
+        },
+        "selectableBodySamples": 25,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_2",
+          "ring_3"
+        ],
+        "pose": 1.9999999999999996,
+        "remaining": 0,
+        "links": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    ],
+    "bombs": []
+  },
+  "analytic": {
+    "solved": true,
+    "remaining": 0
+  },
+  "feel": {
+    "solved": true,
+    "remaining": 0
+  }
+}

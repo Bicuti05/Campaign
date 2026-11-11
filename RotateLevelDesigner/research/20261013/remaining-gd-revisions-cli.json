@@ -1,0 +1,149 @@
+{
+  "scope": "Observed direct CLI commands in heartbeat11. Full-release author proof is separate from Finder boundary routes.",
+  "results": [
+    {
+      "stem": "study-20261014-v47-l-near-source-short-stop",
+      "validate": {
+        "designCommand": "node rr-cli.js validate levels/study-20261014-v47-l-near-source-short-stop.rrdesign.json",
+        "packCommand": "node rr-cli.js validate levels/study-20261014-v47-l-near-source-short-stop.rrpack.json",
+        "observedExitCode": 0,
+        "status": "OK",
+        "warnings": 0
+      },
+      "solve": {
+        "command": "node rr-cli.js solve levels/study-20261014-v47-l-near-source-short-stop.rrdesign.json --time 6 --nodes 1500 --no-bombs --json",
+        "observedExitCode": 0,
+        "result": {
+          "found": true,
+          "drags": 3,
+          "log": "found with 3 drags after 17 explorations",
+          "nodes": 17,
+          "seconds": 0.18,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 0.7,
+              "direction": "+",
+              "removedNow": 0,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 270,
+              "to": 126,
+              "direction": "CW",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 3,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0.66,
+              "to": 4.46,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "pack": {
+        "command": "node rr-cli.js pack levels/study-20261014-v47-l-near-source-short-stop.rrdesign.json -o levels/study-20261014-v47-l-near-source-short-stop.rrpack.json --no-solve",
+        "observedExitCode": 0,
+        "proofAttachedBy": "research/export-ongoing.js --proof"
+      }
+    },
+    {
+      "stem": "study-20261014-v48-u-standard-core-nesting",
+      "validate": {
+        "designCommand": "node rr-cli.js validate levels/study-20261014-v48-u-standard-core-nesting.rrdesign.json",
+        "packCommand": "node rr-cli.js validate levels/study-20261014-v48-u-standard-core-nesting.rrpack.json",
+        "observedExitCode": 0,
+        "status": "OK",
+        "warnings": 0
+      },
+      "solve": {
+        "command": "node rr-cli.js solve levels/study-20261014-v48-u-standard-core-nesting.rrdesign.json --time 6 --nodes 1500 --no-bombs --json",
+        "observedExitCode": 0,
+        "result": {
+          "found": true,
+          "drags": 5,
+          "log": "found with 5 drags after 45 explorations",
+          "nodes": 45,
+          "seconds": 0.979,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": -4.1,
+              "direction": "-",
+              "removedNow": 1,
+              "remaining": 6
+            },
+            {
+              "step": 2,
+              "part": "ring_5",
+              "label": "R5",
+              "kind": "ring",
+              "from": 90,
+              "to": 126,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 5
+            },
+            {
+              "step": 3,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 270,
+              "to": 321,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 3
+            },
+            {
+              "step": 4,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 90,
+              "to": 141,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 5,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 270,
+              "to": 321,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "pack": {
+        "command": "node rr-cli.js pack levels/study-20261014-v48-u-standard-core-nesting.rrdesign.json -o levels/study-20261014-v48-u-standard-core-nesting.rrpack.json --no-solve",
+        "observedExitCode": 0,
+        "proofAttachedBy": "research/export-ongoing.js --proof"
+      }
+    }
+  ]
+}

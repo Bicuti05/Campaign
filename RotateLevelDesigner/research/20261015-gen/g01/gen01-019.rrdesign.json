@@ -1,0 +1,227 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R2"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "purple",
+      "stops": [
+        {
+          "angle": 90,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 9.1708,
+      "y": 0,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R2"
+        },
+        {
+          "angle": 0,
+          "target": "R4"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R4",
+      "x": 13.7562,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R5",
+      "x": 0,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R1"
+        },
+        {
+          "angle": 270,
+          "target": "R7"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R6",
+      "x": 13.7562,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R4"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R7",
+      "x": 0,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R11"
+        },
+        {
+          "angle": 0,
+          "target": "R8"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R8",
+      "x": 4.5854,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R9"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R9",
+      "x": 9.1708,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "R10",
+      "x": 13.7562,
+      "y": -9.1708,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R6"
+        },
+        {
+          "angle": 180,
+          "target": "R9"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R11",
+      "x": 0,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "green",
+      "stops": [
+        {
+          "angle": 135,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "x": 4.5854,
+      "y": -13.7562,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R8"
+        },
+        {
+          "angle": 0,
+          "target": "R13"
+        },
+        {
+          "angle": 180,
+          "target": "R11"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R13",
+      "x": 9.1708,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R9"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R14",
+      "x": 13.7562,
+      "y": -13.7562,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R13"
+        },
+        {
+          "angle": 90,
+          "target": "R10"
+        }
+      ],
+      "color": "red"
+    }
+  ],
+  "sticks": [],
+  "name": "G01-019 | KHÓ: lưới đối xứng",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 19 (peak). Ý tưởng: R9 bị 3 vòng (R8, R10, R13) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R10 còn giữ R6: nếu chưa nhả hết nơi khác thì quay R9 tiếp sẽ bị khóa lại; vòng kín R3, R12 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R11 chặn một chiều quay: chọn chiều hoặc dọn đường trước. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 8.0 lần kéo/vật, mục tiêu 7–12). Không Booster/Chain/bom; lockCount 0."
+}

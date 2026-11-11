@@ -1,0 +1,173 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "251",
+  "name": "A251 | Hai cửa dưới một mái",
+  "author": "Codex / Designer review batch01",
+  "notes": "Recovery + Practice. Rút L theo cửa còn thoáng, mở hai receiver của nguồn kín và hoàn tất nhánh dưới; phản hồi sớm sau màn100 lớn. Nguồn A101; ID mới, proposal chờ GD. Vai trò đã đối chứng ở prefix tới được, không chứng minh mọi lời giải bắt buộc. CLI validate/solve và full-pointer replay Designer/analytic/default feel; không Booster/Bom/Chain. Không Unity/device. Proof thực nằm trong research/20261026-rebuild-251-260/A251_20261026_review-r01-delivery.json; pack no-solve tránh nhúng route solver nhả sớm.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 3.5,
+      "y": 3.6,
+      "gapDir": 276,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 1.05,
+          "targets": [
+            "S1"
+          ]
+        }
+      ],
+      "lockCount": 0
+    },
+    {
+      "id": "R2",
+      "x": -3.5,
+      "y": 3.6,
+      "gapDir": 264,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 0.8,
+          "targets": [
+            "S1"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "gap": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 45.8069,
+          "length": 1.521,
+          "targets": [
+            "R1"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 134.1931,
+          "length": 1.271,
+          "targets": [
+            "R2"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 314.1931,
+          "length": 1.271,
+          "targets": [
+            "R4"
+          ]
+        },
+        {
+          "id": "p4",
+          "angle": 225.8069,
+          "length": 1.271,
+          "targets": [
+            "R5"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": 3.5,
+      "y": -3.6,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "green",
+      "radius": 1.75,
+      "lockCount": 0,
+      "pins": []
+    },
+    {
+      "id": "R5",
+      "x": -3.5,
+      "y": -3.6,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 322.3524,
+          "length": 0.9204,
+          "targets": [
+            "R6"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": -6.3,
+      "gapDir": 270,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 37.6476,
+          "length": 0.9204,
+          "targets": [
+            "R4"
+          ]
+        }
+      ],
+      "lockCount": 0
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 0,
+      "y": 6.4,
+      "angle": 0,
+      "color": "blue",
+      "path": [
+        [
+          -5.6,
+          0
+        ],
+        [
+          5.6,
+          0
+        ],
+        [
+          5.6,
+          -2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": []
+    }
+  ]
+}

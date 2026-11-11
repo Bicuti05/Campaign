@@ -1,0 +1,4 @@
+"use strict";
+// Use the established current-pose material-body query and role qualification pipeline.
+const fs=require('fs'),path=require('path');let code=fs.readFileSync(path.join(__dirname,'turp-a018-route.js'),'utf8');if(!code.includes("require('./turp-a018-author')"))throw Error('Pipeline changed');code=code.replace("require('./turp-a018-author')","require('./turp-a019-author')");
+const needle='const q=Q.qualify(d,{moves,probes});';if(!code.includes(needle))throw Error('Qualification changed');code=code.replace(needle,"const extra=[];for(const offset of [-2.3,-2.7,-2.9,-3.1,-3.3])for(const part of ['R1','R7'])for(const target of [0,90,270,360])extra.push([{part:'S5',target:offset},{part,target}]);save(stem+'-extra-probes.json',extra);const q=Q.qualify(d,{moves,probes:probes.concat(extra)});");new Function('require','__dirname','process',code)(require,__dirname,process);

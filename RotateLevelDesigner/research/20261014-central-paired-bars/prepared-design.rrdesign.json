@@ -1,0 +1,163 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "CPB-01 | Hai thanh giữa cụm giữ chung lõi",
+  "author": "Codex + GD / research",
+  "notes": "Hai thanh thẳng nằm giữa ba cột so le; cùng giữ nguồn kín C và giữ nguồn ở mỗi phía. Pin đi vào giữ SL/SR sau khi pin đi ra đã nhả, để còn lượt xoay thực. Phân biệt mở input và chừa đường cho attachment khi quay. Vòng radius1,75, thanh kích thước mặc định; không Guide/Stop/Bom/Chain/Booster. Chờ GD chơi thử/chỉnh bố cục và đánh giá thử thách; không tích hợp campaign. Bản nghiên cứu CPB-01: thanh trái rút lên cho SL quay; thanh phải rút xuống nhả pin gốc nhưng SR còn bị attachment khác cản, cần chừa đường trước lượt quay tiếp. Hai thanh còn được C giữ trong pha giữa. Có route rút sâu trước và chưa chứng nhận thứ tự bắt buộc/duy nhất; gesture lặp phải được báo riêng. Không suy độ khó từ số lần kéo.",
+  "rings": [
+    {
+      "id": "BL",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "SL",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "L"
+        },
+        {
+          "angle": 270,
+          "target": "BL"
+        }
+      ]
+    },
+    {
+      "id": "TL",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "SL"
+        }
+      ]
+    },
+    {
+      "id": "BC",
+      "x": 5.6708,
+      "y": -2.2927,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 5.6708,
+      "y": 2.2927,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        },
+        {
+          "angle": 0,
+          "target": "R"
+        },
+        {
+          "angle": 90,
+          "target": "TC"
+        },
+        {
+          "angle": 270,
+          "target": "BC"
+        }
+      ]
+    },
+    {
+      "id": "TC",
+      "x": 5.6708,
+      "y": 6.8781,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "navy",
+      "pins": []
+    },
+    {
+      "id": "BR",
+      "x": 11.3416,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "SR",
+      "x": 11.3416,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R"
+        },
+        {
+          "angle": 270,
+          "target": "BR"
+        }
+      ]
+    },
+    {
+      "id": "TR",
+      "x": 11.3416,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "SR"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "L",
+      "shape": "straight",
+      "x": 2.8354,
+      "y": 2.2927,
+      "angle": 90,
+      "color": "green"
+    },
+    {
+      "id": "R",
+      "shape": "straight",
+      "x": 8.5062,
+      "y": 2.2927,
+      "angle": 90,
+      "color": "blue"
+    }
+  ]
+}

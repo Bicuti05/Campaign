@@ -1,0 +1,964 @@
+[
+  {
+    "length": 1.4,
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "SWH-03 | Mở khe đỡ chốt rồi quay lại nguồn giữ",
+      "author": "Codex + GD / research",
+      "notes": "Tổ hợp8 vòng radius1,75/pitch4,5854,7pin/1StopA0 dài1,6 có chân trên vật liệu A90. A input mở nhưng hai hướng trực tiếp bị Stop chạm thân R180. DB120/RT180 mở inputR, RR phía trên giữR; R150 chỉ đổi khe để StopA thoát, A180 rồi270 phục vụC/D. DB dùng chungD/R; sauA rời quayDB180, rồi R90 phục vụRR và Q180 dọn cuối. R dùng hai pin vuông góc để còn lượt quaycleanup thật; prototype02 pin đối diện/retainer phải kẹt vách cũ cả hai hướng giữresearch. Không Stick/Guide/Bom/Chain/Booster. Chưa đủ proof để giao; không coi một lần cản là chuẩn bị bắt buộc, visual/difficulty chờGD.",
+      "rings": [
+        {
+          "id": "A",
+          "x": 0,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 90,
+          "color": "orange",
+          "pins": [],
+          "stops": [
+            {
+              "angle": 0,
+              "length": 1.4
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "x": -4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "purple",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 0,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "navy",
+          "pins": [
+            {
+              "angle": 90,
+              "target": "A"
+            },
+            {
+              "angle": 0,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "DB",
+          "x": 4.5854,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "teal",
+          "pins": []
+        },
+        {
+          "id": "R",
+          "x": 4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 180,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "RT"
+            },
+            {
+              "angle": 270,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "RT",
+          "x": 9.1708,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "sky",
+          "pins": []
+        },
+        {
+          "id": "RR",
+          "x": 4.5854,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "green",
+          "pins": [
+            {
+              "angle": 270,
+              "target": "R"
+            },
+            {
+              "angle": 0,
+              "target": "Q"
+            }
+          ]
+        },
+        {
+          "id": "Q",
+          "x": 9.1708,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "red",
+          "pins": []
+        }
+      ],
+      "sticks": []
+    },
+    "geometry": {
+      "ok": true,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 8,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 7,
+          "pins": 7,
+          "stops": 1,
+          "closedRings": 3
+        }
+      },
+      "stopFeet": [
+        {
+          "owner": "A",
+          "angle": 0,
+          "length": 1.4,
+          "foot": {
+            "x": 1.75,
+            "y": -1.1102230246251565e-16
+          },
+          "footSdf": -0.25,
+          "wholeSdf": -0.25,
+          "ok": true
+        }
+      ],
+      "pinMargins": [
+        {
+          "owner": "R",
+          "target": "RT",
+          "margin": 135
+        },
+        {
+          "owner": "R",
+          "target": "DB",
+          "margin": 45
+        }
+      ],
+      "guides": [],
+      "bodyAccess": [
+        {
+          "label": "A",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "C",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "D",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "DB",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "R",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RT",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RR",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "Q",
+          "visibleBodyPoints": 82
+        }
+      ],
+      "initialBombContacts": []
+    },
+    "plus": {
+      "pose": {
+        "pose": 168.74999999999957,
+        "solved": false,
+        "locked": false
+      },
+      "rows": []
+    },
+    "minus": {
+      "pose": {
+        "pose": 25.935791015625163,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "source": "A",
+          "index": 0,
+          "kind": 16,
+          "pin": -1,
+          "against": "D",
+          "feature": "body",
+          "depth": 0.019964409922498483
+        }
+      ]
+    },
+    "main": true
+  },
+  {
+    "length": 1.5,
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "SWH-03 | Mở khe đỡ chốt rồi quay lại nguồn giữ",
+      "author": "Codex + GD / research",
+      "notes": "Tổ hợp8 vòng radius1,75/pitch4,5854,7pin/1StopA0 dài1,6 có chân trên vật liệu A90. A input mở nhưng hai hướng trực tiếp bị Stop chạm thân R180. DB120/RT180 mở inputR, RR phía trên giữR; R150 chỉ đổi khe để StopA thoát, A180 rồi270 phục vụC/D. DB dùng chungD/R; sauA rời quayDB180, rồi R90 phục vụRR và Q180 dọn cuối. R dùng hai pin vuông góc để còn lượt quaycleanup thật; prototype02 pin đối diện/retainer phải kẹt vách cũ cả hai hướng giữresearch. Không Stick/Guide/Bom/Chain/Booster. Chưa đủ proof để giao; không coi một lần cản là chuẩn bị bắt buộc, visual/difficulty chờGD.",
+      "rings": [
+        {
+          "id": "A",
+          "x": 0,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 90,
+          "color": "orange",
+          "pins": [],
+          "stops": [
+            {
+              "angle": 0,
+              "length": 1.5
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "x": -4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "purple",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 0,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "navy",
+          "pins": [
+            {
+              "angle": 90,
+              "target": "A"
+            },
+            {
+              "angle": 0,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "DB",
+          "x": 4.5854,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "teal",
+          "pins": []
+        },
+        {
+          "id": "R",
+          "x": 4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 180,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "RT"
+            },
+            {
+              "angle": 270,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "RT",
+          "x": 9.1708,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "sky",
+          "pins": []
+        },
+        {
+          "id": "RR",
+          "x": 4.5854,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "green",
+          "pins": [
+            {
+              "angle": 270,
+              "target": "R"
+            },
+            {
+              "angle": 0,
+              "target": "Q"
+            }
+          ]
+        },
+        {
+          "id": "Q",
+          "x": 9.1708,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "red",
+          "pins": []
+        }
+      ],
+      "sticks": []
+    },
+    "geometry": {
+      "ok": true,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 8,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 7,
+          "pins": 7,
+          "stops": 1,
+          "closedRings": 3
+        }
+      },
+      "stopFeet": [
+        {
+          "owner": "A",
+          "angle": 0,
+          "length": 1.5,
+          "foot": {
+            "x": 1.75,
+            "y": -1.1102230246251565e-16
+          },
+          "footSdf": -0.25,
+          "wholeSdf": -0.25,
+          "ok": true
+        }
+      ],
+      "pinMargins": [
+        {
+          "owner": "R",
+          "target": "RT",
+          "margin": 135
+        },
+        {
+          "owner": "R",
+          "target": "DB",
+          "margin": 45
+        }
+      ],
+      "guides": [],
+      "bodyAccess": [
+        {
+          "label": "A",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "C",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "D",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "DB",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "R",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RT",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RR",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "Q",
+          "visibleBodyPoints": 82
+        }
+      ],
+      "initialBombContacts": []
+    },
+    "plus": {
+      "pose": {
+        "pose": 168.74999999999957,
+        "solved": false,
+        "locked": false
+      },
+      "rows": []
+    },
+    "minus": {
+      "pose": {
+        "pose": 26.70190429687517,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "source": "A",
+          "index": 0,
+          "kind": 16,
+          "pin": -1,
+          "against": "D",
+          "feature": "body",
+          "depth": 0.019970369051903747
+        }
+      ]
+    },
+    "main": true
+  },
+  {
+    "length": 1.55,
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "SWH-03 | Mở khe đỡ chốt rồi quay lại nguồn giữ",
+      "author": "Codex + GD / research",
+      "notes": "Tổ hợp8 vòng radius1,75/pitch4,5854,7pin/1StopA0 dài1,6 có chân trên vật liệu A90. A input mở nhưng hai hướng trực tiếp bị Stop chạm thân R180. DB120/RT180 mở inputR, RR phía trên giữR; R150 chỉ đổi khe để StopA thoát, A180 rồi270 phục vụC/D. DB dùng chungD/R; sauA rời quayDB180, rồi R90 phục vụRR và Q180 dọn cuối. R dùng hai pin vuông góc để còn lượt quaycleanup thật; prototype02 pin đối diện/retainer phải kẹt vách cũ cả hai hướng giữresearch. Không Stick/Guide/Bom/Chain/Booster. Chưa đủ proof để giao; không coi một lần cản là chuẩn bị bắt buộc, visual/difficulty chờGD.",
+      "rings": [
+        {
+          "id": "A",
+          "x": 0,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 90,
+          "color": "orange",
+          "pins": [],
+          "stops": [
+            {
+              "angle": 0,
+              "length": 1.55
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "x": -4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "purple",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 0,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "navy",
+          "pins": [
+            {
+              "angle": 90,
+              "target": "A"
+            },
+            {
+              "angle": 0,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "DB",
+          "x": 4.5854,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "teal",
+          "pins": []
+        },
+        {
+          "id": "R",
+          "x": 4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 180,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "RT"
+            },
+            {
+              "angle": 270,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "RT",
+          "x": 9.1708,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "sky",
+          "pins": []
+        },
+        {
+          "id": "RR",
+          "x": 4.5854,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "green",
+          "pins": [
+            {
+              "angle": 270,
+              "target": "R"
+            },
+            {
+              "angle": 0,
+              "target": "Q"
+            }
+          ]
+        },
+        {
+          "id": "Q",
+          "x": 9.1708,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "red",
+          "pins": []
+        }
+      ],
+      "sticks": []
+    },
+    "geometry": {
+      "ok": true,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 8,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 7,
+          "pins": 7,
+          "stops": 1,
+          "closedRings": 3
+        }
+      },
+      "stopFeet": [
+        {
+          "owner": "A",
+          "angle": 0,
+          "length": 1.55,
+          "foot": {
+            "x": 1.75,
+            "y": -1.1102230246251565e-16
+          },
+          "footSdf": -0.25,
+          "wholeSdf": -0.25,
+          "ok": true
+        }
+      ],
+      "pinMargins": [
+        {
+          "owner": "R",
+          "target": "RT",
+          "margin": 135
+        },
+        {
+          "owner": "R",
+          "target": "DB",
+          "margin": 45
+        }
+      ],
+      "guides": [],
+      "bodyAccess": [
+        {
+          "label": "A",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "C",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "D",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "DB",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "R",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RT",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RR",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "Q",
+          "visibleBodyPoints": 82
+        }
+      ],
+      "initialBombContacts": []
+    },
+    "plus": {
+      "pose": {
+        "pose": 168.74999999999957,
+        "solved": false,
+        "locked": false
+      },
+      "rows": []
+    },
+    "minus": {
+      "pose": {
+        "pose": 27.022705078125178,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "source": "A",
+          "index": 0,
+          "kind": 16,
+          "pin": -1,
+          "against": "D",
+          "feature": "body",
+          "depth": 0.01999380468996681
+        }
+      ]
+    },
+    "main": true
+  },
+  {
+    "length": 1.6,
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "SWH-03 | Mở khe đỡ chốt rồi quay lại nguồn giữ",
+      "author": "Codex + GD / research",
+      "notes": "Tổ hợp8 vòng radius1,75/pitch4,5854,7pin/1StopA0 dài1,6 có chân trên vật liệu A90. A input mở nhưng hai hướng trực tiếp bị Stop chạm thân R180. DB120/RT180 mở inputR, RR phía trên giữR; R150 chỉ đổi khe để StopA thoát, A180 rồi270 phục vụC/D. DB dùng chungD/R; sauA rời quayDB180, rồi R90 phục vụRR và Q180 dọn cuối. R dùng hai pin vuông góc để còn lượt quaycleanup thật; prototype02 pin đối diện/retainer phải kẹt vách cũ cả hai hướng giữresearch. Không Stick/Guide/Bom/Chain/Booster. Chưa đủ proof để giao; không coi một lần cản là chuẩn bị bắt buộc, visual/difficulty chờGD.",
+      "rings": [
+        {
+          "id": "A",
+          "x": 0,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 90,
+          "color": "orange",
+          "pins": [],
+          "stops": [
+            {
+              "angle": 0,
+              "length": 1.6
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "x": -4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "purple",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 0,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "navy",
+          "pins": [
+            {
+              "angle": 90,
+              "target": "A"
+            },
+            {
+              "angle": 0,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "DB",
+          "x": 4.5854,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "teal",
+          "pins": []
+        },
+        {
+          "id": "R",
+          "x": 4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 180,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 0,
+              "target": "RT"
+            },
+            {
+              "angle": 270,
+              "target": "DB"
+            }
+          ]
+        },
+        {
+          "id": "RT",
+          "x": 9.1708,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "sky",
+          "pins": []
+        },
+        {
+          "id": "RR",
+          "x": 4.5854,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "green",
+          "pins": [
+            {
+              "angle": 270,
+              "target": "R"
+            },
+            {
+              "angle": 0,
+              "target": "Q"
+            }
+          ]
+        },
+        {
+          "id": "Q",
+          "x": 9.1708,
+          "y": 4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 0,
+          "color": "red",
+          "pins": []
+        }
+      ],
+      "sticks": []
+    },
+    "geometry": {
+      "ok": true,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 8,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 7,
+          "pins": 7,
+          "stops": 1,
+          "closedRings": 3
+        }
+      },
+      "stopFeet": [
+        {
+          "owner": "A",
+          "angle": 0,
+          "length": 1.6,
+          "foot": {
+            "x": 1.75,
+            "y": -1.1102230246251565e-16
+          },
+          "footSdf": -0.25,
+          "wholeSdf": -0.25,
+          "ok": true
+        }
+      ],
+      "pinMargins": [
+        {
+          "owner": "R",
+          "target": "RT",
+          "margin": 135
+        },
+        {
+          "owner": "R",
+          "target": "DB",
+          "margin": 45
+        }
+      ],
+      "guides": [],
+      "bodyAccess": [
+        {
+          "label": "A",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "C",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "D",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "DB",
+          "visibleBodyPoints": 73
+        },
+        {
+          "label": "R",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RT",
+          "visibleBodyPoints": 82
+        },
+        {
+          "label": "RR",
+          "visibleBodyPoints": 120
+        },
+        {
+          "label": "Q",
+          "visibleBodyPoints": 82
+        }
+      ],
+      "initialBombContacts": []
+    },
+    "plus": {
+      "pose": {
+        "pose": 109.5673828125,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "source": "A",
+          "index": 0,
+          "kind": 16,
+          "pin": -1,
+          "against": "R",
+          "feature": "body",
+          "depth": 0.01999294906492008
+        }
+      ]
+    },
+    "minus": {
+      "pose": {
+        "pose": 70.43261718749966,
+        "solved": false,
+        "locked": false
+      },
+      "rows": [
+        {
+          "source": "A",
+          "index": 0,
+          "kind": 16,
+          "pin": -1,
+          "against": "R",
+          "feature": "body",
+          "depth": 0.019992949064926074
+        }
+      ]
+    },
+    "main": true
+  }
+]

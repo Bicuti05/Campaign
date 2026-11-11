@@ -1,0 +1,181 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "B01-015 | Hai nguồn cần bốn mục tiêu",
+  "author": "Codex + GD / batch 01",
+  "notes": "Bộ 15 level đầu, vị trí đề xuất 15/15. Nguồn C giữa cần bốn receiver vòng; nguồn kín bên phải cần ba receiver vòng và một thanh trượt. Các cửa R11/R22 dùng chung giữa hai nguồn và các nhánh dưới. Thay hai nhánh đỉnh bằng một fork vòng–thanh có vai trò mới. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. ",
+  "rings": [
+    {
+      "id": "R00",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S10",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R20"
+        },
+        {
+          "angle": 90,
+          "target": "R11"
+        },
+        {
+          "angle": 180,
+          "target": "R00"
+        }
+      ]
+    },
+    {
+      "id": "R20",
+      "x": 9.1708,
+      "y": 0,
+      "gapDir": 315,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S01",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R11"
+        },
+        {
+          "angle": 90,
+          "target": "R02"
+        },
+        {
+          "angle": 270,
+          "target": "R00"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 45,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S21",
+      "x": 9.1708,
+      "y": 4.5854,
+      "gapDir": 0,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R22"
+        },
+        {
+          "angle": 180,
+          "target": "R11"
+        },
+        {
+          "angle": 270,
+          "target": "R20"
+        },
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 135,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 4.5854,
+      "y": 9.1708,
+      "gapDir": 0,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R22"
+        },
+        {
+          "angle": 90,
+          "target": "R13"
+        },
+        {
+          "angle": 180,
+          "target": "R02"
+        },
+        {
+          "angle": 270,
+          "target": "R11"
+        }
+      ]
+    },
+    {
+      "id": "R22",
+      "x": 9.1708,
+      "y": 9.1708,
+      "gapDir": 315,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "R13",
+      "x": 4.5854,
+      "y": 13.7562,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 12.0062,
+      "y": 4.5854,
+      "length": 3,
+      "angle": 90,
+      "color": "green"
+    }
+  ]
+}

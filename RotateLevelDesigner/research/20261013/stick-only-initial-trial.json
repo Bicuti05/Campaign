@@ -1,0 +1,185 @@
+{
+  "scope": "Rejected initial geometry; not exported",
+  "candidate": {
+    "stem": "study-20261013-v15-stick-only-u-gate",
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "U mở hai lối cho thanh — không vòng",
+      "author": "Codex ongoing research 20261013",
+      "notes": "U quay xuống tạo hai thành ở hai phía thanh ngang. Ngàm trên chân trái định trục dọc và giữ U; ngàm ngang giữ thanh thẳng. Nâng U để mở cả hai lối ngang; hạ U bị thân thanh chắn. Bỏ riêng U mở hai lối, bỏ riêng ngàm U làm U tự tháo sau lần thử ngang. Không thêm vòng để lấp bố cục; đây là family chỉ có thanh theo ref_037, chưa nghiệm thu đẹp/khó. Không pin/bom/Chain/Booster.",
+      "rings": [],
+      "sticks": [
+        {
+          "id": "U",
+          "shape": "U",
+          "x": 0,
+          "y": 0,
+          "length": 4,
+          "arm": 3,
+          "angle": 180,
+          "color": "green",
+          "slideAxis": [
+            0,
+            1
+          ],
+          "guides": [
+            {
+              "x": 2,
+              "y": -1.5,
+              "angle": 90
+            }
+          ]
+        },
+        {
+          "id": "H",
+          "shape": "straight",
+          "x": 0,
+          "y": -1,
+          "length": 3.8,
+          "angle": 0,
+          "color": "purple",
+          "guides": [
+            {
+              "x": 0,
+              "y": -1,
+              "angle": 0
+            }
+          ]
+        }
+      ]
+    },
+    "inspection": {
+      "analysis": {
+        "error": null,
+        "warnings": [
+          {
+            "code": "overlap",
+            "part": "slide_bar_2",
+            "text": "S2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.085)"
+          }
+        ],
+        "info": {
+          "rings": 0,
+          "sticks": 2,
+          "guides": 2,
+          "bombs": 0,
+          "links": 0,
+          "pins": 0,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solution": null
+    },
+    "witness": {
+      "initialH": [
+        {
+          "direction": -1,
+          "removed": false,
+          "from": 0,
+          "to": -0.2647338867187501,
+          "remaining": 2,
+          "links": 0
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 0,
+          "to": 0.08843994140625003,
+          "remaining": 2,
+          "links": 0
+        }
+      ],
+      "afterLift": [
+        {
+          "direction": -1,
+          "removed": true,
+          "from": 0,
+          "to": -2.0000000000000004,
+          "remaining": 0,
+          "links": 0
+        },
+        {
+          "direction": 1,
+          "removed": true,
+          "from": 0,
+          "to": 2.0000000000000004,
+          "remaining": 0,
+          "links": 0
+        }
+      ],
+      "withoutU": [
+        {
+          "direction": -1,
+          "removed": true,
+          "from": 0,
+          "to": -2.0000000000000004,
+          "remaining": 0,
+          "links": 0
+        },
+        {
+          "direction": 1,
+          "removed": true,
+          "from": 0,
+          "to": 2.0000000000000004,
+          "remaining": 0,
+          "links": 0
+        }
+      ],
+      "uDirections": [
+        {
+          "direction": -1,
+          "removed": true,
+          "from": 0,
+          "to": -1.6000000000000003,
+          "remaining": 1,
+          "links": 0
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 0,
+          "to": 0.3874755859375004,
+          "remaining": 2,
+          "links": 0
+        }
+      ],
+      "withGuideFirst": {
+        "solved": false,
+        "trace": [
+          {
+            "part": "H",
+            "pointer": 3,
+            "pose": 0.021130371093750003,
+            "remaining": 2,
+            "links": 0,
+            "bindings": 2,
+            "solved": [],
+            "events": []
+          }
+        ]
+      },
+      "withoutGuideFirst": {
+        "solved": false,
+        "trace": [
+          {
+            "part": "H",
+            "pointer": 3,
+            "pose": 0.11999511718749997,
+            "remaining": 1,
+            "links": 0,
+            "bindings": 1,
+            "solved": [
+              "slide_bar_1"
+            ],
+            "events": []
+          }
+        ]
+      },
+      "trace": null
+    }
+  },
+  "reason": "The U guide wall at x=1.5925 overlaps the inner horizontal bar cap. Increase whole U width, preserving actual guide placement on its leg."
+}

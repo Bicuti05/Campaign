@@ -1,0 +1,173 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SGB-02 | Ngàm giữ thanh mang Bom, hai nguồn cùng đổi đường",
+  "author": "Codex + GD / research",
+  "notes": "9 vòng/1 U default/1ngàm đầy đủ/10pin/1Bom trên cap nhánh phải U.8 vòng1,75,nguồn C3,8 có mục đích nối hai nguồn theo span U và hai cửa T/V như GSU02. U không pin,ngàm giữ Bom carrier; C giữ Q sau V mở outgoing nên Q còn lượt quay thật. V−120/Q120: thân Q chạm Bom U,phá U/Q và ngàm theo host,mở đường thân A nhưng A còn input khóa T. Bỏ ngàm: U tự tháo sau V,Bom free,Q contact chỉ phá Q. Bỏ Bom: cùng prefix Q bị thân U chặn,không nổ. Hạ U−1 trước đưa Bom tránh quỹ đạo Q,ngàm vẫn giữ U; ordinary với Bom bật thắng không nổ và detach Bom sau rút sâu cuối. Kéo U lên lặp13 lần đưa Bom vào vách pin C→Q,phá U/C. Lượt cuối ngàm nhả giữa gesture nhưng U/Bom còn host tới contact: early Solver.apply thả sớm không tái hiện C victim. Thả thực tạiU1,55 sau12 lượt lên detach Bom tại y0,6; Q120 có thể tháo không nổ, Q90 tiếp tục sau incoming lock off tới Bom free và chỉ phá Q. Giữ các đường khác/repeated/finite/recovery và feature/host thật,không chứng nhận Bom/ngàm bắt buộc toàn cục hoặc khó/đẹp từ số mảnh/kéo. Bom0,3 tâm gắn trong cap U có mục đích an toàn/đường tránh; radius mặc định0,75 tại cùng điểm chạm Q lúc nạp giữ hold. Không Stop/Chain/Booster,không engine/Unity/browser/device/campaign proof; Art/GD review Bom nhỏ,nguồn lớn và bố cục rộng còn chờ. Prototype01 main/modes/roles qua nhưng recovery up-first còn thiếu: U lên0,188 đổi quỹ đạo Bom,Q body bị chặn,upper attempts có thể bị từ chối. Revision02 giữ geometry,thêm recovery trả U0 chạm Q rồi quay lại upper và cleanup. Trace01 không ghi đè/không kết luận vô nghiệm.",
+  "rings": [
+    {
+      "id": "A",
+      "x": -4.458333254999999,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 117.57215074170242,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.458333254999999,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 62.427849258297584,
+          "target": "V"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": -6.5807554860888295,
+      "y": 4.06462999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "V",
+      "x": 6.5807554860888295,
+      "y": 4.06462999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.914447857833177,
+      "radius": 3.8,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": -132.21397082932685,
+          "target": "A"
+        },
+        {
+          "angle": -47.78602917067316,
+          "target": "Q"
+        },
+        {
+          "angle": -172.64172768726837,
+          "target": "T"
+        },
+        {
+          "angle": -7.358272312731655,
+          "target": "V"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": -6.5807554860888295,
+      "y": 8.65002999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 179.9,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "x": 6.5807554860888295,
+      "y": 8.65002999951778,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0.1,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "V"
+        }
+      ]
+    },
+    {
+      "id": "DG",
+      "x": -6.5807554860888295,
+      "y": 13.23542999951778,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "FG",
+      "x": 6.5807554860888295,
+      "y": 13.23542999951778,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "F"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 0,
+      "y": -2.9,
+      "angle": 0,
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -2.708333255,
+          "y": -2,
+          "angle": 90
+        }
+      ],
+      "bomb": {
+        "x": 2.708333255,
+        "y": -0.95,
+        "radius": 0.3
+      }
+    }
+  ]
+}

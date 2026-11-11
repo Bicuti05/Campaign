@@ -1,0 +1,79 @@
+{
+  "mechanical": {
+    "nodes": [
+      {
+        "id": "ring_1",
+        "kind": "ring"
+      },
+      {
+        "id": "ring_2",
+        "kind": "ring"
+      },
+      {
+        "id": "ring_3",
+        "kind": "ring"
+      },
+      {
+        "id": "ring_4",
+        "kind": "ring"
+      },
+      {
+        "id": "slide_bar_1",
+        "kind": "stick"
+      },
+      {
+        "id": "guide_1",
+        "kind": "guide"
+      }
+    ],
+    "pinLinks": [
+      {
+        "sourcePartId": "ring_1",
+        "sourceFeatureId": "attachment.pin_1",
+        "targetPartId": "slide_bar_1",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_2",
+        "sourceFeatureId": "attachment.pin_2",
+        "targetPartId": "slide_bar_1",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      },
+      {
+        "sourcePartId": "ring_3",
+        "sourceFeatureId": "attachment.pin_3",
+        "targetPartId": "ring_4",
+        "targetFeatureId": "body",
+        "relationKind": 0,
+        "activityKind": 0
+      }
+    ],
+    "guideLinks": [
+      {
+        "guidePartId": "guide_1",
+        "stickPartId": "slide_bar_1"
+      }
+    ]
+  },
+  "visual": {
+    "relations": [
+      {
+        "source": "S1",
+        "target": "ring_region",
+        "relation": "between_rows",
+        "confidence": "planned"
+      },
+      {
+        "source": "S1",
+        "target": "ring_region",
+        "relation": "separates_regions",
+        "confidence": "planned"
+      }
+    ],
+    "confidence": "intent_hypothesis_not_human_accepted"
+  }
+}

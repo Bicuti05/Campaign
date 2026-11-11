@@ -1,0 +1,347 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "020",
+  "name": "Level 20 — Hai L giữ miệng, quay lại sau khi mở mặt",
+  "notes": "Proposal theo report_20Level L20: giữ silhouette đầu/tai/mắt/râu của ingame.4 L gồm2 tai và2 nửa miệng; thêm pin gắn trong thật trên vòng mặt vào hai L miệng. Dịch tạm L trái/phải để mở input mặt, Guide vẫn giữ L; mở các mắt/mũi, quay mặt rồi quay lại rút hai L. Các thanh mới ngang/dọc, không Bom/vòng kín/Chain/Booster. Draft02 kéo dài chân miệng để sửa lối tắt rút ngay của draft01. Người dùng yêu cầu xuất ngay, không test thêm: pack --no-solve; chưa kiểm lại ablation đầy đủ, jitter và roundtrip trên pack cuối. Research geometry draft02 đã có native FOUND và một route full pointer-target/release hoàn tất analytic/default; không coi đó là kiểm chứng toàn bộ file xuất. Proposal chưa GD duyệt, không nhập ingame/campaign.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": -2.9935,
+      "gapDir": 75,
+      "gap": 30,
+      "radius": 7.5,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "leftMouth",
+          "angle": 180,
+          "inner": true,
+          "length": 4.85,
+          "targets": [
+            "S8"
+          ]
+        },
+        {
+          "id": "rightMouth",
+          "angle": 0,
+          "inner": true,
+          "length": 4.85,
+          "targets": [
+            "S9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": -1.9177,
+      "y": 1.5355,
+      "gapDir": 200,
+      "gap": 70,
+      "radius": 1.375,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "targets": [
+            "R3"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 305.0964,
+          "targets": [
+            "R4"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 112.3663,
+          "targets": [
+            "R1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 1.9177,
+      "y": 1.5355,
+      "gapDir": 90,
+      "gap": 70,
+      "radius": 1.375,
+      "color": "orange"
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": -1.1935,
+      "gapDir": 270,
+      "gap": 90,
+      "radius": 0.875,
+      "color": "red"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -3.8125,
+      "y": 10.25,
+      "angle": 0,
+      "color": "purple",
+      "path": [
+        [
+          0,
+          -4.75
+        ],
+        [
+          0,
+          4.75
+        ],
+        [
+          1.8,
+          4.75
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -3.8125,
+          "y": 10.25,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "x": 3.8125,
+      "y": 10.25,
+      "angle": 0,
+      "color": "purple",
+      "path": [
+        [
+          0,
+          -4.75
+        ],
+        [
+          0,
+          4.75
+        ],
+        [
+          -1.8,
+          4.75
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 3.8125,
+          "y": 10.25,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "x": -10.5312,
+      "y": -3.8437,
+      "angle": 0,
+      "color": "orange",
+      "path": [
+        [
+          -1.7,
+          0
+        ],
+        [
+          1.7,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -10.5312,
+          "y": -3.8437,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "x": -10.4687,
+      "y": -6.25,
+      "angle": 0,
+      "color": "green",
+      "path": [
+        [
+          -1.7,
+          0
+        ],
+        [
+          1.7,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -10.4687,
+          "y": -6.25,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "x": 10.5313,
+      "y": -3.8437,
+      "angle": 0,
+      "color": "orange",
+      "path": [
+        [
+          -1.7,
+          0
+        ],
+        [
+          1.7,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 10.5313,
+          "y": -3.8437,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "x": 10.4688,
+      "y": -6.25,
+      "angle": 0,
+      "color": "green",
+      "path": [
+        [
+          -1.7,
+          0
+        ],
+        [
+          1.7,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 10.4688,
+          "y": -6.25,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "x": 0,
+      "y": -3.8437,
+      "angle": 270,
+      "color": "green",
+      "shape": "straight",
+      "length": 4,
+      "guides": [
+        {
+          "x": 0,
+          "y": -3.8179,
+          "angle": 270
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "color": "teal",
+      "guides": [
+        {
+          "x": -2.4,
+          "y": -5.3,
+          "angle": 90
+        }
+      ],
+      "path": [
+        [
+          -0.35,
+          -6.4
+        ],
+        [
+          -2.4,
+          -6.4
+        ],
+        [
+          -2.4,
+          -1.5
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S9",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "color": "purple",
+      "path": [
+        [
+          0.35,
+          -6.4
+        ],
+        [
+          2.4,
+          -6.4
+        ],
+        [
+          2.4,
+          -1.5
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 2.4,
+          "y": -5.3,
+          "angle": 90
+        }
+      ]
+    }
+  ],
+  "author": "Codex / report_20Level remake"
+}

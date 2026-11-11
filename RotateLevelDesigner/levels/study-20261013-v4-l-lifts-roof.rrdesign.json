@@ -1,0 +1,84 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Thanh L nhấc mái để mở cửa xoay",
+  "author": "Codex reference study 20261013",
+  "notes": "Nhận ra nhánh ngang của L chặn cửa xoay vòng trên phải. Nhấc L một đoạn để mở cửa, dù L vẫn còn được pin giữ; sau đó xoay vòng nhận pin và tiếp tục tháo các liên kết. Đối chứng bỏ riêng nhánh ngang phải mở được cửa ngay. Không ngàm, bom, Chain hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "S1"
+        },
+        {
+          "angle": 0,
+          "target": "R2"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 90,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "S1"
+        },
+        {
+          "angle": 0,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gapDir": 270,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "L",
+      "length": 7.0354,
+      "arm": 9.6208,
+      "x": -2.8354,
+      "y": -1.7677,
+      "angle": 90,
+      "color": "red",
+      "slideAxis": [
+        1,
+        0
+      ]
+    }
+  ]
+}

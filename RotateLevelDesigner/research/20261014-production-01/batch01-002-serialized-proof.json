@@ -1,0 +1,296 @@
+{
+  "stem": "batch01-002",
+  "slot": 2,
+  "name": "B01-002 | Quay lại góc dưới",
+  "ok": true,
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 3,
+        "pins": 3,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "A",
+        "target": "B",
+        "margin": 90
+      },
+      {
+        "owner": "A",
+        "target": "C",
+        "margin": 90
+      },
+      {
+        "owner": "B",
+        "target": "D",
+        "margin": 45
+      }
+    ],
+    "guides": [],
+    "bodyAccess": [
+      {
+        "label": "A",
+        "visibleBodyPoints": 91
+      },
+      {
+        "label": "B",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "C",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 82
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "proof": {
+    "moves": [
+      {
+        "part": "ring_4",
+        "target": 270
+      },
+      {
+        "part": "ring_2",
+        "target": -180
+      },
+      {
+        "part": "ring_3",
+        "target": 270
+      }
+    ],
+    "analytic": true,
+    "feel": true,
+    "release": {
+      "ok": true,
+      "solved": true,
+      "trace": [
+        {
+          "part": "ring_4",
+          "target": 270,
+          "grab": {
+            "x": 3.0698555433772325,
+            "y": 3.7104
+          },
+          "selectableBodySamples": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_4"
+          ],
+          "pose": 258.7500002938275,
+          "remaining": 3,
+          "links": [
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "part": "ring_2",
+          "target": -180,
+          "grab": {
+            "x": 2.8950298039941305,
+            "y": -0.4529333289294114
+          },
+          "selectableBodySamples": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_2"
+          ],
+          "pose": -168.74999999999838,
+          "remaining": 2,
+          "links": [
+            false,
+            true,
+            false
+          ]
+        },
+        {
+          "part": "ring_3",
+          "target": 270,
+          "grab": {
+            "x": -1.5155444566227676,
+            "y": 3.7104
+          },
+          "selectableBodySamples": 82,
+          "began": true,
+          "events": [],
+          "removed": [
+            "ring_3",
+            "ring_1"
+          ],
+          "pose": 258.7499988246935,
+          "remaining": 0,
+          "links": [
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "bombs": []
+    }
+  },
+  "roles": {
+    "ok": true,
+    "rows": [
+      {
+        "kind": "pin",
+        "label": "A -> B",
+        "ok": true,
+        "moves": [
+          {
+            "part": "D",
+            "target": 270
+          }
+        ],
+        "counterMoves": [
+          {
+            "part": "D",
+            "target": 270
+          }
+        ],
+        "changes": [
+          {
+            "part": "B",
+            "original": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            },
+            "counterfactual": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            }
+          }
+        ],
+        "originalRemaining": 3,
+        "counterRemaining": 2,
+        "originalEvents": [],
+        "counterEvents": []
+      },
+      {
+        "kind": "pin",
+        "label": "A -> C",
+        "ok": true,
+        "moves": [
+          {
+            "part": "D",
+            "target": 270
+          }
+        ],
+        "counterMoves": [
+          {
+            "part": "D",
+            "target": 270
+          }
+        ],
+        "changes": [
+          {
+            "part": "C",
+            "original": {
+              "pose": 134.99999882469476,
+              "solved": false,
+              "locked": false
+            },
+            "counterfactual": {
+              "pose": 134.99999882469476,
+              "solved": true,
+              "locked": false
+            }
+          }
+        ],
+        "originalRemaining": 3,
+        "counterRemaining": 2,
+        "originalEvents": [],
+        "counterEvents": []
+      },
+      {
+        "kind": "pin",
+        "label": "B -> D",
+        "ok": true,
+        "moves": [],
+        "counterMoves": [],
+        "changes": [
+          {
+            "part": "B",
+            "original": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "counterfactual": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            }
+          }
+        ],
+        "originalRemaining": 4,
+        "counterRemaining": 4,
+        "originalEvents": [],
+        "counterEvents": []
+      }
+    ],
+    "scope": "One attachment removed at a time using supplied bake/writer. Reachable full-release body gestures compare source input, retention or motion; target-motion omission is tried for pin roles. These are local role witnesses, not proof of unique solution or difficulty."
+  },
+  "cli": {
+    "found": true,
+    "drags": 3,
+    "log": "found with 3 drags after 16 explorations",
+    "nodes": 16,
+    "seconds": 0.103,
+    "route": [
+      {
+        "step": 1,
+        "part": "ring_4",
+        "label": "R4",
+        "kind": "ring",
+        "from": 45,
+        "to": 234,
+        "direction": "CCW",
+        "removedNow": 1,
+        "remaining": 3
+      },
+      {
+        "step": 2,
+        "part": "ring_3",
+        "label": "R3",
+        "kind": "ring",
+        "from": 135,
+        "to": 234,
+        "direction": "CCW",
+        "removedNow": 1,
+        "remaining": 2
+      },
+      {
+        "step": 3,
+        "part": "ring_2",
+        "label": "R2",
+        "kind": "ring",
+        "from": 0,
+        "to": -144,
+        "direction": "CW",
+        "removedNow": 2,
+        "remaining": 0
+      }
+    ]
+  }
+}

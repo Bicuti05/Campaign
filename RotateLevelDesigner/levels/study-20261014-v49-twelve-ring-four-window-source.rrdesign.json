@@ -1,0 +1,205 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Bốn cửa cùng nhả nguồn kín — lưới mười hai vòng",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Lưới3×4, mọi radius1.75. Nguồn C kín ở hàng giữa có4 pin, cần bốn receiver cùng nhả; không cần xoay chính nguồn C. Các receiver biên giữa dùng chung cho cụm trên/dưới; R13 phối hợp hai nguồn trên, R11 phối hợp ba nguồn dưới. Mở riêng một cửa không tháo được nguồn. Từng pin phải thay đổi chuẩn bị trong đối chứng full gesture. Không Stop/Stick/Guide/Bom/Booster/Chain; nguồn kín và12 vòng là đề xuất nghiên cứu, chưa GD đẹp/khó/campaign.",
+  "rings": [
+    {
+      "id": "R00",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S10",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R20"
+        },
+        {
+          "angle": 90,
+          "target": "R11"
+        },
+        {
+          "angle": 180,
+          "target": "R00"
+        }
+      ]
+    },
+    {
+      "id": "R20",
+      "x": 9.1708,
+      "y": 0,
+      "gapDir": 315,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S01",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R11"
+        },
+        {
+          "angle": 90,
+          "target": "R02"
+        },
+        {
+          "angle": 270,
+          "target": "R00"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 45,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S21",
+      "x": 9.1708,
+      "y": 4.5854,
+      "gapDir": 0,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R22"
+        },
+        {
+          "angle": 180,
+          "target": "R11"
+        },
+        {
+          "angle": 270,
+          "target": "R20"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 135,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 4.5854,
+      "y": 9.1708,
+      "gapDir": 0,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R22"
+        },
+        {
+          "angle": 90,
+          "target": "R13"
+        },
+        {
+          "angle": 180,
+          "target": "R02"
+        },
+        {
+          "angle": 270,
+          "target": "R11"
+        }
+      ]
+    },
+    {
+      "id": "R22",
+      "x": 9.1708,
+      "y": 9.1708,
+      "gapDir": 315,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S03",
+      "x": 0,
+      "y": 13.7562,
+      "gapDir": 135,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R13"
+        },
+        {
+          "angle": 270,
+          "target": "R02"
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "x": 4.5854,
+      "y": 13.7562,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S23",
+      "x": 9.1708,
+      "y": 13.7562,
+      "gapDir": 45,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R13"
+        },
+        {
+          "angle": 270,
+          "target": "R22"
+        }
+      ]
+    }
+  ],
+  "sticks": []
+}

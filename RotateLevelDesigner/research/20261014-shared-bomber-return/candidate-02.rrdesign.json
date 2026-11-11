@@ -1,0 +1,179 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SBR-02 | Mở chung input, dọn đường quay bom và quay lại nguồn",
+  "author": "Codex + GD / research",
+  "notes": "Revision đề xuất từ SBR01: D giữ Q/U ở hai phía vuông góc và khe ban đầu90 để có lượt quay180 thật khi hai receiver nhả; D còn được C giữ. S mở đồng thời A/Q; Bom A cắt B, còn có phương án chuẩn bị Q/D/T/C trước khi quay lại A. T nhận B/C/E, cần các cửa khác nhau. Các pin vẫn là vật cản sau khi target rời; không coi mở input là mở quỹ đạo. Vòng radius1,75, S mặc định; không Guide/Stop/Chain/Booster. Chưa đủ proof để giao; prototype01 và clamp giữ research.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ],
+      "bomb": {
+        "x": -1.5556349186104046,
+        "y": -1.5556349186104046,
+        "radius": 0.5
+      }
+    },
+    {
+      "id": "B",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        },
+        {
+          "angle": 90,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "BL"
+        }
+      ]
+    },
+    {
+      "id": "BL",
+      "x": -4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "T",
+      "x": -4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "A"
+        },
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "Q"
+        },
+        {
+          "angle": 0,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "U",
+      "x": 9.1708,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "E",
+      "x": -4.5854,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "CT"
+        }
+      ]
+    },
+    {
+      "id": "CT",
+      "x": 0,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "red"
+    }
+  ]
+}

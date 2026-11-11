@@ -1,0 +1,188 @@
+{
+  "file": "Tools/RotateLevelDesigner/levels/A184_20261021_fix-r01.rrpack.json",
+  "source": "Tools/LevelGen/Tools/RotateLevelDesigner/levels/A184_20261021_r01.rrpack.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 8,
+        "sticks": 1,
+        "guides": 2,
+        "bombs": 0,
+        "links": 11,
+        "pins": 11,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "R1",
+        "pin": "p1",
+        "margin": 46.00135799999998
+      },
+      {
+        "ring": "R1",
+        "pin": "p2",
+        "margin": 125.99959999999999
+      },
+      {
+        "ring": "R2",
+        "pin": "toS1",
+        "margin": 131
+      },
+      {
+        "ring": "R5",
+        "pin": "p1",
+        "margin": 64.52909999999997
+      },
+      {
+        "ring": "R6",
+        "pin": "toR1",
+        "margin": 83.99863600000003
+      },
+      {
+        "ring": "R6",
+        "pin": "toS1",
+        "margin": 46
+      },
+      {
+        "ring": "N1",
+        "pin": "nS1",
+        "margin": 46
+      },
+      {
+        "ring": "N1",
+        "pin": "zZ1",
+        "margin": 73.89018699999997
+      },
+      {
+        "ring": "Z1",
+        "pin": "zZ2",
+        "margin": 129
+      },
+      {
+        "ring": "Z1",
+        "pin": "zS1",
+        "margin": 51
+      },
+      {
+        "ring": "Z2",
+        "pin": "zR5",
+        "margin": 45.62083000000001
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "engaged": true
+      },
+      {
+        "id": "guide_2",
+        "engaged": true
+      }
+    ],
+    "links": [
+      {
+        "source": "ring_1",
+        "target": "ring_2",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_1",
+        "target": "ring_3",
+        "pin": "attachment.pin_2",
+        "active": true
+      },
+      {
+        "source": "ring_2",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_3",
+        "active": true
+      },
+      {
+        "source": "ring_4",
+        "target": "ring_3",
+        "pin": "attachment.pin_4",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "ring_1",
+        "pin": "attachment.pin_5",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_6",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_7",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_7",
+        "pin": "attachment.pin_8",
+        "active": true
+      },
+      {
+        "source": "ring_7",
+        "target": "ring_8",
+        "pin": "attachment.pin_9",
+        "active": true
+      },
+      {
+        "source": "ring_7",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_10",
+        "active": true
+      },
+      {
+        "source": "ring_8",
+        "target": "ring_4",
+        "pin": "attachment.pin_11",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [],
+      "current": [],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [
+      {
+        "id": "S1",
+        "lengths": [
+          24,
+          12,
+          24
+        ],
+        "isU": true,
+        "guides": 2
+      }
+    ],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

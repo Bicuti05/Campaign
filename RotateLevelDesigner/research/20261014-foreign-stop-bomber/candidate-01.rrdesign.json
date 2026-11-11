@@ -1,0 +1,194 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "FSB-01 research | Chốt nguồn đang giữ chạm Bom của nguồn còn khóa",
+  "author": "Codex + GD / research",
+  "notes": "Quan hệ mới trong tổ hợp nhiều pha của STG: Q còn root C giữ nhưng input mở sau S/U; StopQ240 length0,6 quay vào BomA330 orbit2,4/radius0,75 khi A vẫn input khóa T. Contact phá A/Q, C vẫn giữ T/U nên phải quay các cửa trên rồi cleanup C. Hướng khác: chuẩn bị S/T, kéo A tới90 liên tục, Bom carrier phá A/C sau lúc link giữ A có thể nhả trong gesture; không thả sớm như Solver.apply. Bỏ riêng Stop hoặc Bom phải đổi contact tại prefix thực; cần deep/repeated/recovery và no-explosion control, không chứng nhận special bắt buộc toàn cục. Radius các vòng1,75 và thanh straight default, Stop gọn nối vật liệu; không Guide/Chain/Booster. Chưa bàn giao. STG05 giữ nguyên, không sinh lại hay ghi đè.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 120,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ],
+      "bomb": {
+        "x": 2.078460969082652,
+        "y": -1.200000000000001,
+        "radius": 0.75
+      }
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 60,
+          "target": "U"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 240,
+          "length": 0.6
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": -2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "U",
+      "x": 6.8781,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "U"
+        },
+        {
+          "angle": 240,
+          "target": "A"
+        },
+        {
+          "angle": 300,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": -2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 150,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "x": 6.8781,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 30,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "U"
+        },
+        {
+          "angle": 180,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "Z",
+      "x": 2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "DG",
+      "x": -2.2927,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "EG",
+      "x": 6.8781,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "E"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "green"
+    }
+  ]
+}

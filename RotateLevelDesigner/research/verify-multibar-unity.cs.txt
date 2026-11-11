@@ -1,0 +1,66 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Reflection;
+using UnityEngine;
+using UnityEditor;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using IEC;
+public static class MultibarResearchVerification {
+ static Type sessionType=typeof(RotateGenerationSearch).GetNestedType("PhysicsSession",BindingFlags.NonPublic);
+ static MethodInfo moveMethod=typeof(RotateGenerationSearch).GetMethod("Move",BindingFlags.NonPublic|BindingFlags.Static);
+ static void Move(RotateSimulation sim,object physics,int obj,float target,ref float now) {
+  object[] args={sim,new RotateGenerationMove{obj=obj,target=target,poseTarget=false},now,false,physics,null,null};
+  moveMethod.Invoke(null,args);now=(float)args[2];
+ }
+ static JObject Probe(RotateLevelData level,RotateTuning tuning,JArray prep,string part,int dir,float travel) {
+  var sim=new RotateSimulation(level,tuning);float now=0;
+  var physics=Activator.CreateInstance(sessionType,new object[]{sim,tuning});
+  try {
+   foreach(JObject m in prep)Move(sim,physics,sim.IndexOf((string)m["part"]),(float)m["target"],ref now);
+   int obj=sim.IndexOf(part);
+   for(int attempt=0;attempt<2&&!sim.IsSolved(obj);attempt++){
+    float start=sim.IsStick(obj)?sim.OffsetOf(obj):sim.AngleOf(obj);
+    Move(sim,physics,obj,start+dir*travel,ref now);
+   }
+   return new JObject{{"direction",dir},{"removed",sim.IsSolved(obj)},{"value",sim.IsStick(obj)?sim.OffsetOf(obj):sim.AngleOf(obj)},{"remaining",sim.remaining}};
+  } finally { ((IDisposable)physics).Dispose(); }
+ }
+ public static string Run() {
+  string root="C:/Project Folder/intern-iec-game-2026";
+  if(Application.dataPath.Replace('\\','/')!=root+"/Assets")throw new Exception("Unexpected project");
+  if(EditorApplication.isPlaying||EditorApplication.isCompiling||EditorUtility.scriptCompilationFailed)throw new Exception("Editor not ready");
+  var input=JArray.Parse(File.ReadAllText(root+"/Tools/RotateLevelDesigner/research/20261013/multibar-unity-inputs.json"));
+  var results=new JArray();var tuning=RotateGenerationSearch.CurrentTuning();
+  foreach(JObject item in input){
+   string file=(string)item["pack"];
+   var pack=JObject.Parse(File.ReadAllText(file));
+   var imported=RotateDesignerBridge.Import(file,false);
+   if(imported.level==null)throw new Exception("Import failed "+item["stem"]);
+   var map=new RotateSimulation(imported.level,tuning);
+   var proof=(JArray)pack["proof"]["moves"];
+   var moves=proof.OfType<JObject>().Select(m=>new RotateGenerationMove{obj=map.IndexOf((string)m["part"]),target=(float)m["target"],poseTarget=false}).ToList();
+   string error=RotateGenerationSearch.Verify(imported.level,moves,tuning);
+   var empty=new JArray();
+   var gate=new JArray(proof.OfType<JObject>().Where(m=>(string)m["part"]=="slide_bar_1").Select(m=>m.DeepClone()));
+   var bars=new JArray(proof.OfType<JObject>().Where(m=>((string)m["part"]).StartsWith("slide_bar")).Select(m=>m.DeepClone()));
+   var counter=RotateDesignerBridge.Import((string)item["counterfactualFile"],false);
+   var initial=new JArray();var opened=new JArray();var without=new JArray();var lowerBefore=new JArray();var lowerAfter=new JArray();
+   string lower=map.IdOf(map.ringCount-1);
+   foreach(int dir in new[]{-1,1}){
+    initial.Add(Probe(imported.level,tuning,empty,"slide_bar_2",dir,18));
+    opened.Add(Probe(imported.level,tuning,gate,"slide_bar_2",dir,18));
+    without.Add(Probe(counter.level,tuning,empty,(string)item["counterfactualBar"],dir,18));
+    lowerBefore.Add(Probe(imported.level,tuning,gate,lower,dir,60));
+    lowerAfter.Add(Probe(imported.level,tuning,bars,lower,dir,60));
+   }
+   bool roleOk=initial.OfType<JObject>().All(p=>!(bool)p["removed"])&&opened.OfType<JObject>().All(p=>(bool)p["removed"])&&without.OfType<JObject>().All(p=>(bool)p["removed"])&&lowerBefore.OfType<JObject>().All(p=>!(bool)p["removed"])&&lowerAfter.OfType<JObject>().Any(p=>(bool)p["removed"]);
+   results.Add(new JObject{{"stem",item["stem"]},{"importVerdict",imported.verdict.ToString()},{"importLines",JArray.FromObject(imported.lines)},{"physicsFeelVerified",error==null},{"physicsFeelError",error==null?JValue.CreateNull():new JValue(error)},{"mechanicWitnessesPassed",roleOk},{"initialBarProbes",initial},{"afterGateBarProbes",opened},{"counterfactualBarProbes",without},{"lowerBeforeDivider",lowerBefore},{"lowerAfterDivider",lowerAfter}});
+  }
+  var report=new JObject{{"project",Application.dataPath},{"compileFailed",EditorUtility.scriptCompilationFailed},{"results",results},{"limits","Report-only temporary simulation. Lower-ring probes release at 60-degree pointer travel (the compiled route window); a full turn can re-engage a previously released pin. No campaign/save changes; no device or GD aesthetic acceptance."}};
+  File.WriteAllText(root+"/Tools/RotateLevelDesigner/research/20261013/unity-multibar-verification.json",report.ToString(Formatting.Indented));
+  return report.ToString(Formatting.None);
+ }
+}

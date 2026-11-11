@@ -1,0 +1,85 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Thanh L giữ biên trên–trái — pin xa khe",
+  "author": "Codex reference study 20261013",
+  "notes": "Bỏ ngàm thừa. Pin bên trái được giữ trên thân vòng, xa mép khe: R1 hướng khe 0°, R2 hướng khe 90°. Giữ hình học và liên kết ban đầu. Vòng dưới phải nhận hai pin từ hai hướng; lần lượt nhả pin để mở nguồn rồi trượt L lên. Bản nghiên cứu theo feedback GD, không Chain/bom/Booster; chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "S1"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 90,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 270,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "S1"
+        },
+        {
+          "angle": 0,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gapDir": 270,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "green",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "L",
+      "length": 8.1208,
+      "arm": 8.2208,
+      "x": -2.8354,
+      "y": -1.225,
+      "angle": 90,
+      "color": "red",
+      "slideAxis": [
+        1,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "format": "rotate-direct-cli-evidence",
+  "version": 1,
+  "results": [
+    {
+      "stem": "study-20261014-v42-prepared-l-standard-size",
+      "kind": "validate",
+      "cmd": "node rr-cli.js validate levels/study-20261014-v42-prepared-l-standard-size.rrdesign.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "b9d573",
+          "wall_time_seconds": 0.3230589,
+          "exit_code": 0,
+          "original_token_count": 39,
+          "output": "OK   levels/study-20261014-v42-prepared-l-standard-size.rrdesign.json (design) rings 4 (closed 1), pins 3, links 3, stops 1, sticks 1, guides 1, bombs 1\n"
+        }
+      }
+    },
+    {
+      "stem": "study-20261014-v42-prepared-l-standard-size",
+      "kind": "solve",
+      "cmd": "node rr-cli.js solve levels/study-20261014-v42-prepared-l-standard-size.rrdesign.json --time 6 --nodes 1000 --json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "6f7b2c",
+          "wall_time_seconds": 0.6146357,
+          "exit_code": 0,
+          "original_token_count": 189,
+          "output": "{\n  \"found\": true,\n  \"drags\": 3,\n  \"log\": \"found with 3 drags after 21 explorations\",\n  \"nodes\": 21,\n  \"seconds\": 0.218,\n  \"route\": [\n    {\n      \"step\": 1,\n      \"part\": \"slide_bar_1\",\n      \"label\": \"S1\",\n      \"kind\": \"stick\",\n      \"from\": 0,\n      \"to\": 0.6,\n      \"direction\": \"+\",\n      \"removedNow\": 0,\n      \"remaining\": 5\n    },\n    {\n      \"step\": 2,\n      \"part\": \"ring_1\",\n      \"label\": \"R1\",\n      \"kind\": \"ring\",\n      \"from\": 180,\n      \"to\": 126,\n      \"direction\": \"CW\",\n      \"removedNow\": 2,\n      \"remaining\": 3\n    },\n    {\n      \"step\": 3,\n      \"part\": \"slide_bar_1\",\n      \"label\": \"S1\",\n      \"kind\": \"stick\",\n      \"from\": 0.6,\n      \"to\": 2.7,\n      \"direction\": \"+\",\n      \"removedNow\": 3,\n      \"remaining\": 0\n    }\n  ]\n}\n"
+        }
+      }
+    },
+    {
+      "stem": "study-20261014-v43-stationary-bomb-attached-stop",
+      "kind": "validate",
+      "cmd": "node rr-cli.js validate levels/study-20261014-v43-stationary-bomb-attached-stop.rrdesign.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "0777cb",
+          "wall_time_seconds": 0.5081518,
+          "exit_code": 0,
+          "original_token_count": 40,
+          "output": "OK   levels/study-20261014-v43-stationary-bomb-attached-stop.rrdesign.json (design) rings 4 (closed 2), pins 2, links 2, stops 1, sticks 1, guides 1, bombs 1\n"
+        }
+      }
+    },
+    {
+      "stem": "study-20261014-v43-stationary-bomb-attached-stop",
+      "kind": "solve",
+      "cmd": "node rr-cli.js solve levels/study-20261014-v43-stationary-bomb-attached-stop.rrdesign.json --time 6 --nodes 1000 --json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "662beb",
+          "wall_time_seconds": 0.6853431,
+          "exit_code": 0,
+          "original_token_count": 137,
+          "output": "{\n  \"found\": true,\n  \"drags\": 2,\n  \"log\": \"found with 2 drags after 12 explorations\",\n  \"nodes\": 12,\n  \"seconds\": 0.096,\n  \"route\": [\n    {\n      \"step\": 1,\n      \"part\": \"ring_4\",\n      \"label\": \"R4\",\n      \"kind\": \"ring\",\n      \"from\": 270,\n      \"to\": 414,\n      \"direction\": \"CCW\",\n      \"removedNow\": 2,\n      \"remaining\": 3\n    },\n    {\n      \"step\": 2,\n      \"part\": \"slide_bar_1\",\n      \"label\": \"S1\",\n      \"kind\": \"stick\",\n      \"from\": 0,\n      \"to\": -1.7,\n      \"direction\": \"-\",\n      \"removedNow\": 3,\n      \"remaining\": 0\n    }\n  ]\n}\n"
+        }
+      }
+    },
+    {
+      "stem": "study-20261014-v44-opposed-u-attached-stop",
+      "kind": "validate",
+      "cmd": "node rr-cli.js validate levels/study-20261014-v44-opposed-u-attached-stop.rrdesign.json",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "3b5f81",
+          "wall_time_seconds": 0.6165984,
+          "exit_code": 0,
+          "original_token_count": 38,
+          "output": "OK   levels/study-20261014-v44-opposed-u-attached-stop.rrdesign.json (design) rings 3 (closed 0), pins 3, links 3, stops 1, sticks 1, guides 0, bombs 0\n"
+        }
+      }
+    },
+    {
+      "stem": "study-20261014-v44-opposed-u-attached-stop",
+      "kind": "solve",
+      "cmd": "node rr-cli.js solve levels/study-20261014-v44-opposed-u-attached-stop.rrdesign.json --time 6 --nodes 1000 --json --no-bombs",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "ca70e9",
+          "wall_time_seconds": 0.8302609,
+          "exit_code": 0,
+          "original_token_count": 190,
+          "output": "{\n  \"found\": true,\n  \"drags\": 3,\n  \"log\": \"found with 3 drags after 18 explorations\",\n  \"nodes\": 18,\n  \"seconds\": 0.184,\n  \"route\": [\n    {\n      \"step\": 1,\n      \"part\": \"slide_bar_1\",\n      \"label\": \"S1\",\n      \"kind\": \"stick\",\n      \"from\": 0,\n      \"to\": -0.9,\n      \"direction\": \"-\",\n      \"removedNow\": 0,\n      \"remaining\": 4\n    },\n    {\n      \"step\": 2,\n      \"part\": \"ring_1\",\n      \"label\": \"R1\",\n      \"kind\": \"ring\",\n      \"from\": 180,\n      \"to\": 234,\n      \"direction\": \"CCW\",\n      \"removedNow\": 2,\n      \"remaining\": 2\n    },\n    {\n      \"step\": 3,\n      \"part\": \"slide_bar_1\",\n      \"label\": \"S1\",\n      \"kind\": \"stick\",\n      \"from\": -0.9,\n      \"to\": -5.5,\n      \"direction\": \"-\",\n      \"removedNow\": 2,\n      \"remaining\": 0\n    }\n  ]\n}\n"
+        }
+      }
+    }
+  ]
+}

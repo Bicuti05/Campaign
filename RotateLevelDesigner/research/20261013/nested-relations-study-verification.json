@@ -1,0 +1,706 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v10-three-nested-layers",
+      "name": "Ba tầng vòng lồng — nhả từ ngoài vào",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Ba tầng vòng lồng — nhả từ ngoài vào",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Nhóm lớn/nhỏ đã được GD mở riêng. Ba vòng đồng tâm radius 1,75/2,8354/3,9208. Vòng nhỏ gửi pin sang vành giữa, vành giữa gửi pin sang vành ngoài. Nhả vành ngoài để vành giữa được xoay, rồi nhả pin bên trong. Các tầng cùng một vùng, không thêm vật để phủ nền, không Chain/Booster. Bản nghiên cứu chưa nghiệm thu độ đọc hoặc độ khó.",
+        "rings": [
+          {
+            "id": "I",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "M"
+              }
+            ]
+          },
+          {
+            "id": "M",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 2.8354,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "O"
+              }
+            ]
+          },
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "blue",
+            "radius": 3.9208,
+            "gap": 90,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 2,
+          "pins": 2,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 2 drags after 7 explorations",
+      "moves": [
+        {
+          "part": "ring_3",
+          "target": 417
+        },
+        {
+          "part": "ring_2",
+          "target": 327
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_3",
+          "label": "R3",
+          "kind": "ring",
+          "from": 180,
+          "to": 417,
+          "direction": "CCW",
+          "removedNow": 1,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 270,
+          "to": 327,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 6,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 417,
+            "pose": 410.999999999999,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 327,
+            "pose": 320.9999999999996,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 417,
+            "pose": 409.4999999999989,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 327,
+            "pose": 321.74999999999966,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "I",
+          "angle": 0,
+          "logicMargin": 135
+        },
+        {
+          "owner": "M",
+          "angle": 90,
+          "logicMargin": 135
+        }
+      ],
+      "witness": {
+        "middleBefore": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "ring_3",
+              "pointer": 411,
+              "pose": 410.999999999999,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "ring_2",
+              "pointer": 321,
+              "pose": 320.9999999999996,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "stem": "study-20261013-v10-inside-outside-junction",
+      "name": "Vòng lớn nhận pin từ trong và ngoài",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Vòng lớn nhận pin từ trong và ngoài",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Vòng lớn nhận một pin của vòng nhỏ đồng tâm và một pin từ nguồn ở phía trên. Xoay vành lớn qua từng cửa: một nguồn rời trước, vành lớn còn được nguồn kia giữ, rồi tiếp tục tới cửa còn lại. Radius 1,75 và 2,8354, nguồn trên cách 5,6708 theo hình học pin vào vòng lớn. Không thanh/ngàm/bom/Chain/Booster. Nhóm lớn/nhỏ đã được GD mở riêng; chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "I",
+            "x": 0,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "O"
+              }
+            ]
+          },
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "gapDir": 225,
+            "color": "purple",
+            "radius": 2.8354,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "T",
+            "x": 0,
+            "y": 5.6708,
+            "gapDir": 90,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 270,
+                "target": "O"
+              }
+            ]
+          }
+        ],
+        "sticks": []
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 2,
+          "pins": 2,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 2 drags after 9 explorations",
+      "moves": [
+        {
+          "part": "ring_2",
+          "target": 327
+        },
+        {
+          "part": "ring_2",
+          "target": 417
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 225,
+          "to": 327,
+          "direction": "CCW",
+          "removedNow": 1,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 327,
+          "to": 417,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 6,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_2",
+            "pointer": 327,
+            "pose": 326.9999999999992,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 417,
+            "pose": 411.0000000000001,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_2",
+            "pointer": 327,
+            "pose": 323.9999999999992,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 417,
+            "pose": 411.7500000000001,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "I",
+          "angle": 0,
+          "logicMargin": 135
+        },
+        {
+          "owner": "T",
+          "angle": 270,
+          "logicMargin": 135
+        }
+      ],
+      "witness": {
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "ring_2",
+              "pointer": 321,
+              "pose": 320.9999999999992,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "ring_2",
+              "pointer": 411,
+              "pose": 411,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "stem": "study-20261013-v10-wide-two-pin-window",
+      "name": "Hai pin cùng nguồn — cần cửa nhả rộng",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Hai pin cùng nguồn — cần cửa nhả rộng",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Vành giữa gửi hai pin cách nhau 90 độ vào cùng vành ngoài. Khóa ở mức vòng: nhả riêng một pin vẫn chưa làm nguồn rời, khe phải bao cả hai pin cùng lúc. Vành ngoài dùng khe logic 120 độ để mở cửa đồng thời; sau khi nó rời, xoay vành giữa để nhả pin nhỏ bên trong. Đối chứng khe 90 độ không có cửa nhả cả hai; bỏ một pin thì khe 90 độ giải được. Nhóm lớn/nhỏ đã được GD mở riêng; chỉ đây dùng khe 120 độ, không đổi tuning/rule/campaign, không Chain/Booster. Bản nghiên cứu chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "I",
+            "x": 0,
+            "y": 0,
+            "gapDir": 0,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "M"
+              }
+            ]
+          },
+          {
+            "id": "M",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 2.8354,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "O"
+              },
+              {
+                "angle": 90,
+                "target": "O"
+              }
+            ]
+          },
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "blue",
+            "radius": 3.9208,
+            "gap": 120,
+            "pins": []
+          }
+        ],
+        "sticks": []
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 0,
+          "links": 3,
+          "pins": 3,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 2 drags after 8 explorations",
+      "moves": [
+        {
+          "part": "ring_3",
+          "target": 426
+        },
+        {
+          "part": "ring_2",
+          "target": 189
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_3",
+          "label": "R3",
+          "kind": "ring",
+          "from": 270,
+          "to": 426,
+          "direction": "CCW",
+          "removedNow": 1,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 270,
+          "to": 189,
+          "direction": "CW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 30,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 426,
+            "pose": 395.9999999999991,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 189,
+            "pose": 219.0000000000005,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 426,
+            "pose": 394.49999999999955,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 189,
+            "pose": 218.25000000000054,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "I",
+          "angle": 180,
+          "logicMargin": 135
+        },
+        {
+          "owner": "M",
+          "angle": 0,
+          "logicMargin": 45
+        },
+        {
+          "owner": "M",
+          "angle": 90,
+          "logicMargin": 135
+        }
+      ],
+      "witness": {
+        "initialLinkCount": 3,
+        "narrowGap": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 3,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 0,
+              "links": 3,
+              "pins": 3,
+              "stops": 0,
+              "closedRings": 0
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 78,
+            "seconds": 2.198,
+            "log": "NOT FOUND after 78 explorations, 2 s (limits 500 nodes / 2 s, open 2)",
+            "route": []
+          }
+        },
+        "singlePinNarrowGap": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 3,
+              "sticks": 0,
+              "guides": 0,
+              "bombs": 0,
+              "links": 2,
+              "pins": 2,
+              "stops": 0,
+              "closedRings": 0
+            }
+          },
+          "solution": {
+            "found": true,
+            "moves": [
+              {
+                "obj": 2,
+                "target": 321
+              },
+              {
+                "obj": 1,
+                "target": 219
+              }
+            ],
+            "log": "found with 2 drags after 8 explorations",
+            "nodes": 8,
+            "seconds": 0.006,
+            "route": [
+              {
+                "step": 1,
+                "part": "ring_3",
+                "label": "R3",
+                "kind": "ring",
+                "from": 270,
+                "to": 321,
+                "direction": "CCW",
+                "removedNow": 1,
+                "remaining": 2
+              },
+              {
+                "step": 2,
+                "part": "ring_2",
+                "label": "R2",
+                "kind": "ring",
+                "from": 270,
+                "to": 219,
+                "direction": "CW",
+                "removedNow": 2,
+                "remaining": 0
+              }
+            ]
+          }
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "ring_3",
+              "pointer": 396,
+              "pose": 395.9999999999991,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "ring_2",
+              "pointer": 219,
+              "pose": 219.0000000000005,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

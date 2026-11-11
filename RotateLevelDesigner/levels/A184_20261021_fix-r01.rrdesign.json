@@ -1,0 +1,228 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "184",
+  "name": "Level184 – Vòng hồi trong U",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 6.2208998,
+      "y": -15.871395,
+      "gapDir": -41,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 50.001358,
+          "targets": [
+            "R2"
+          ],
+          "length": 1.0559107
+        },
+        {
+          "id": "p2",
+          "angle": 129.9996,
+          "targets": [
+            "R4"
+          ],
+          "length": 1.3059747
+        }
+      ],
+      "radius": 1.5,
+      "color": "blue"
+    },
+    {
+      "id": "R2",
+      "x": 9.1493,
+      "y": -12.3812955,
+      "gapDir": -184,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "toS1",
+          "angle": 0,
+          "targets": [
+            "S1"
+          ],
+          "length": 0.6657998
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R4",
+      "x": 3.2924,
+      "y": -12.3812955,
+      "gapDir": -185,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R5",
+      "x": 2.2150998,
+      "y": -8.2243955,
+      "gapDir": -185,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -75.4709,
+          "targets": [
+            "R4"
+          ],
+          "length": 0.7942279
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 2.73079979,
+      "y": -18.799795,
+      "gapDir": -89,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "toR1",
+          "angle": 39.998636,
+          "targets": [
+            "R1"
+          ],
+          "length": 1.055911
+        },
+        {
+          "id": "toS1",
+          "angle": -180,
+          "targets": [
+            "S1"
+          ],
+          "length": 0.9157
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "N1",
+      "x": 3,
+      "y": 0.125,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -271,
+      "pins": [
+        {
+          "id": "nS1",
+          "angle": 180,
+          "targets": [
+            "S1"
+          ],
+          "length": 1.1849002
+        },
+        {
+          "id": "zZ1",
+          "angle": -29.890187,
+          "targets": [
+            "Z1"
+          ],
+          "length": 0.86370534
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Z1",
+      "x": 7,
+      "y": -2.1741905,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -264,
+      "pins": [
+        {
+          "id": "zZ2",
+          "angle": -90,
+          "targets": [
+            "Z2"
+          ],
+          "length": 1.5
+        },
+        {
+          "id": "zS1",
+          "angle": 0,
+          "targets": [
+            "S1"
+          ],
+          "length": 2.8150998
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Z2",
+      "x": 7,
+      "y": -7.1741905,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": -77,
+      "pins": [
+        {
+          "id": "zR5",
+          "angle": -167.62083,
+          "targets": [
+            "R5"
+          ],
+          "length": 1.3987958
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 5.5650998,
+      "y": -12.1243955,
+      "angle": 0,
+      "path": [
+        [
+          -5.75,
+          -7
+        ],
+        [
+          -5.75,
+          17
+        ],
+        [
+          6.25,
+          17
+        ],
+        [
+          6.25,
+          -7
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "guides": [
+        {
+          "x": -0.18490021,
+          "y": -14.124395,
+          "angle": -90
+        },
+        {
+          "x": 11.8151,
+          "y": -14.124395,
+          "angle": -90
+        }
+      ],
+      "color": "orange"
+    }
+  ],
+  "notes": "Sửa khóa cứng 21/10/2026 theo yêu cầu GD. Giữ toàn bộ vòng/thanh và bố cục nguồn; remove_deadlocking_pin R5. Ý tưởng: mở đường bằng cửa chuyển động hiện có, Bom phá vật chặn khi cần rồi quay lại nguồn pin. Có route full-body/default-feel không Booster được lưu riêng; pack --no-solve, chưa Unity/device hoặc duyệt độ khó. Ghi chú nguồn lịch sử: N1 mở nhánh Z1/Z2 về R5; Z1 cùng N1 giữ U, phải đọc lại các cửa trong cùng khung. Thay N2 bằng hai cửa giữa U; đáy U kéo xuống, hai chân bằng nhau; đổi cỡ R1/R4. Sau xem ảnh: rút hai chân U bằng nhau, đáy localy-17 thay vì-24; bỏ khoảng trống thừa phía trên, vẫn chừa hành trình đọc rõ quanh N1. Hai Guide giữ nguyên engaged. Quan hệ cuối thêm: N1→Z1, Z1→Z2, Z1→S1, Z2→R5; bỏ: N2→S1, N2→N1 Phản chiếu cứng y và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest.",
+  "author": "Codex / GD repair"
+}

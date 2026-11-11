@@ -1,0 +1,129 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R2",
+      "x": 3.2424,
+      "y": 3.2424,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "R1"
+        },
+        {
+          "angle": 314.9991,
+          "target": "R5"
+        },
+        {
+          "angle": 45,
+          "target": "R3"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R3",
+      "x": 6.4847,
+      "y": 6.4847,
+      "gap": 90,
+      "gapDir": 135,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "R4",
+      "x": 3.2424,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R1"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R5",
+      "x": 6.4847,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 9.7271,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "R5"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R7",
+      "x": 6.4847,
+      "y": -6.4847,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R4"
+        },
+        {
+          "angle": 44.9991,
+          "target": "R8"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R8",
+      "x": 9.7271,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 315,
+      "pins": [
+        {
+          "angle": 45,
+          "target": "R9"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R9",
+      "x": 12.9695,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "sky"
+    }
+  ],
+  "sticks": [],
+  "name": "G01-020 | Nghỉ: hình thoi",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 20 (relief). Ý tưởng: R1 bị 2 vòng (R2, R4) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R2 còn giữ R5, R3: nếu chưa nhả hết nơi khác thì quay R1 tiếp sẽ bị khóa lại; vòng kín R2 không tự quay để thoát: phải nhả hết các vòng nó giữ. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 1.5 lần kéo/vật, mục tiêu 1.5–3). Không Booster/Chain/bom; lockCount 0."
+}

@@ -1,0 +1,90 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Vòng bom ở đầu cụm — giữ đúng quỹ đạo trước khi nhả",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Bốn vòng theo ô 2x2 giữ nhau bằng chu trình pin thường, một vòng nhận phía trên phải mang bom và nhận thêm pin từ nguồn của chu trình. Quay vòng bom CW để bom quét vào nguồn đó trước cửa tự nhả; phá nguồn mở chu trình. Quay CCW làm vật mang tự tháo và để bom ở phía trên, bốn vòng còn lại vẫn giữ nhau và không còn vật di chuyển để đưa bom vào cụm. Cụm hai cột/ba hàng, một ô trên trái để trống; không thêm thanh bom xa phía dưới hoặc vòng lấp ô. Bom gameplay cần thiết, không Chain/Booster; chưa nghiệm thu đẹp/khó. Mẫu mới cùng hướng mục tiêu bom V7 nhưng giảm cụm chuẩn bị và kiểm riêng nhánh tự nhả mất phương tiện.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "B"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        },
+        {
+          "angle": 90,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 180,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "C"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 90,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [],
+      "bomb": {
+        "x": 6.7854,
+        "y": 4.5854,
+        "radius": 0.45
+      }
+    }
+  ],
+  "sticks": []
+}

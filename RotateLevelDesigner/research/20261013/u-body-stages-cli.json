@@ -1,0 +1,182 @@
+{
+  "scope": "Actual direct CLI commands executed in heartbeat10; author route proof separately verifies full release.",
+  "results": [
+    {
+      "stem": "study-20261014-v45-u-body-middle-guide",
+      "validate": {
+        "designCommand": "node rr-cli.js validate levels/study-20261014-v45-u-body-middle-guide.rrdesign.json",
+        "packCommand": "node rr-cli.js validate levels/study-20261014-v45-u-body-middle-guide.rrpack.json",
+        "observedExitCode": 0,
+        "status": "OK",
+        "warnings": 0
+      },
+      "solve": {
+        "command": "node rr-cli.js solve levels/study-20261014-v45-u-body-middle-guide.rrdesign.json --time 6 --nodes 1500 --no-bombs --json",
+        "observedExitCode": 0,
+        "result": {
+          "found": true,
+          "drags": 4,
+          "log": "found with 4 drags after 21 explorations",
+          "nodes": 21,
+          "seconds": 0.237,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": -0.7,
+              "direction": "-",
+              "removedNow": 0,
+              "remaining": 4
+            },
+            {
+              "step": 2,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 0,
+              "to": -54,
+              "direction": "CW",
+              "removedNow": 2,
+              "remaining": 2
+            },
+            {
+              "step": 3,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": -0.7,
+              "to": -2.3,
+              "direction": "-",
+              "removedNow": 1,
+              "remaining": 1
+            },
+            {
+              "step": 4,
+              "part": "slide_bar_2",
+              "label": "S2",
+              "kind": "stick",
+              "from": 0,
+              "to": 1.8,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "pack": {
+        "command": "node rr-cli.js pack levels/study-20261014-v45-u-body-middle-guide.rrdesign.json -o levels/study-20261014-v45-u-body-middle-guide.rrpack.json --no-solve",
+        "observedExitCode": 0,
+        "proofAttachedBy": "research/export-ongoing.js --proof"
+      }
+    },
+    {
+      "stem": "study-20261014-v46-u-two-rows-joint-source",
+      "validate": {
+        "designCommand": "node rr-cli.js validate levels/study-20261014-v46-u-two-rows-joint-source.rrdesign.json",
+        "packCommand": "node rr-cli.js validate levels/study-20261014-v46-u-two-rows-joint-source.rrpack.json",
+        "observedExitCode": 0,
+        "status": "OK",
+        "warnings": 0
+      },
+      "solve": {
+        "command": "node rr-cli.js solve levels/study-20261014-v46-u-two-rows-joint-source.rrdesign.json --time 6 --nodes 1500 --no-bombs --json",
+        "observedExitCode": 0,
+        "result": {
+          "found": true,
+          "drags": 7,
+          "log": "found with 7 drags after 57 explorations",
+          "nodes": 57,
+          "seconds": 0.641,
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_4",
+              "label": "R4",
+              "kind": "ring",
+              "from": 90,
+              "to": 324,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 6
+            },
+            {
+              "step": 2,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 0,
+              "to": -54,
+              "direction": "CW",
+              "removedNow": 1,
+              "remaining": 5
+            },
+            {
+              "step": 3,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": -0.7,
+              "direction": "-",
+              "removedNow": 0,
+              "remaining": 5
+            },
+            {
+              "step": 4,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 0,
+              "to": -54,
+              "direction": "CW",
+              "removedNow": 2,
+              "remaining": 3
+            },
+            {
+              "step": 5,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": -0.7,
+              "to": -2.9,
+              "direction": "-",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 6,
+              "part": "slide_bar_3",
+              "label": "S3",
+              "kind": "stick",
+              "from": 0,
+              "to": 1.8,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 1
+            },
+            {
+              "step": 7,
+              "part": "slide_bar_2",
+              "label": "S2",
+              "kind": "stick",
+              "from": 0,
+              "to": 1.8,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "pack": {
+        "command": "node rr-cli.js pack levels/study-20261014-v46-u-two-rows-joint-source.rrdesign.json -o levels/study-20261014-v46-u-two-rows-joint-source.rrpack.json --no-solve",
+        "observedExitCode": 0,
+        "proofAttachedBy": "research/export-ongoing.js --proof"
+      }
+    }
+  ]
+}

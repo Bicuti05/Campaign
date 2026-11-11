@@ -1,0 +1,285 @@
+{
+  "slot": 2,
+  "stem": "batch01-002",
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "B01-002 | Quay lại góc dưới",
+    "author": "Codex + GD / batch 01",
+    "notes": "Bộ 15 level đầu, vị trí đề xuất 2/15. Cửa trên mở input vòng bên dưới; vòng dưới còn nhận pin từ nguồn ở góc nên cần quay tiếp. Nhánh trái cùng tham gia nhả nguồn cuối. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. ",
+    "rings": [
+      {
+        "id": "A",
+        "x": 0,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 225,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 0,
+            "target": "B"
+          },
+          {
+            "angle": 90,
+            "target": "C"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "x": 4.5854,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "blue",
+        "pins": [
+          {
+            "angle": 90,
+            "target": "D"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "x": 0,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 135,
+        "color": "green",
+        "pins": []
+      },
+      {
+        "id": "D",
+        "x": 4.5854,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 45,
+        "color": "purple",
+        "pins": []
+      }
+    ],
+    "sticks": []
+  },
+  "authorMoves": [
+    {
+      "part": "D",
+      "target": 270
+    },
+    {
+      "part": "B",
+      "target": -180
+    },
+    {
+      "part": "C",
+      "target": 270
+    }
+  ],
+  "bombs": false,
+  "idea": "Cửa trên mở input vòng bên dưới; vòng dưới còn nhận pin từ nguồn ở góc nên cần quay tiếp. Nhánh trái cùng tham gia nhả nguồn cuối.",
+  "sourceStudy": null,
+  "probes": [],
+  "analysis": {
+    "error": null,
+    "warnings": [],
+    "info": {
+      "rings": 4,
+      "sticks": 0,
+      "guides": 0,
+      "bombs": 0,
+      "links": 3,
+      "pins": 3,
+      "stops": 0,
+      "closedRings": 0
+    }
+  },
+  "initial": {
+    "solved": false,
+    "remaining": 4,
+    "initialContacts": [],
+    "trace": [],
+    "links": [
+      true,
+      true,
+      true
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 225.00000000000003,
+        "solved": false,
+        "locked": true
+      },
+      "B": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "C": {
+        "pose": 135,
+        "solved": false,
+        "locked": false
+      },
+      "D": {
+        "pose": 45.00000000000001,
+        "solved": false,
+        "locked": false
+      }
+    }
+  },
+  "full": {
+    "solved": true,
+    "remaining": 0,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "D",
+        "target": 270,
+        "pose": 258.7500000000018,
+        "remaining": 3,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4"
+        ]
+      },
+      {
+        "part": "B",
+        "target": -180,
+        "pose": -168.74999999999838,
+        "remaining": 2,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ]
+      },
+      {
+        "part": "C",
+        "target": 270,
+        "pose": 258.7499999999987,
+        "remaining": 0,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3",
+          "ring_1"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false
+    ],
+    "bindings": [],
+    "guides": [],
+    "poses": {
+      "A": {
+        "pose": 225.00000000000003,
+        "solved": true,
+        "locked": false
+      },
+      "B": {
+        "pose": -168.74999999999838,
+        "solved": true,
+        "locked": false
+      },
+      "C": {
+        "pose": 258.7499999999987,
+        "solved": true,
+        "locked": false
+      },
+      "D": {
+        "pose": 258.7500000000018,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "release": {
+    "ok": true,
+    "solved": true,
+    "trace": [
+      {
+        "part": "ring_4",
+        "target": 270,
+        "grab": {
+          "x": 3.0698555433772325,
+          "y": 3.7104
+        },
+        "selectableBodySamples": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_4"
+        ],
+        "pose": 258.7500000000018,
+        "remaining": 3,
+        "links": [
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "part": "ring_2",
+        "target": -180,
+        "grab": {
+          "x": 2.8950298039941305,
+          "y": -0.4529333289294114
+        },
+        "selectableBodySamples": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2"
+        ],
+        "pose": -168.74999999999838,
+        "remaining": 2,
+        "links": [
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "part": "ring_3",
+        "target": 270,
+        "grab": {
+          "x": -1.5155444566227676,
+          "y": 3.7104
+        },
+        "selectableBodySamples": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_3",
+          "ring_1"
+        ],
+        "pose": 258.7499999999987,
+        "remaining": 0,
+        "links": [
+          false,
+          false,
+          false
+        ]
+      }
+    ],
+    "bombs": []
+  },
+  "analytic": {
+    "solved": true,
+    "remaining": 0
+  },
+  "feel": {
+    "solved": true,
+    "remaining": 0
+  }
+}

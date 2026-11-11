@@ -1,0 +1,422 @@
+{
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "GWR-01 research | Ngàm thấp nhả trước vách C",
+    "author": "Codex + GD / research",
+    "notes": "Geometry hợp lệ nhưng thử L4 nhả Guide trước vách C. Không chứng minh vai trò quay lại C để rút L; giữ research, đề xuất thay bởi02 với Guide−4,4. Kích thước vẫn default.",
+    "rings": [
+      {
+        "id": "A",
+        "x": 0,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 120,
+            "target": "T"
+          }
+        ]
+      },
+      {
+        "id": "Q",
+        "x": 4.5854,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "blue",
+        "pins": [
+          {
+            "angle": 60,
+            "target": "U"
+          }
+        ]
+      },
+      {
+        "id": "T",
+        "x": -2.2927,
+        "y": 3.9710728865131646,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "purple",
+        "pins": []
+      },
+      {
+        "id": "U",
+        "x": 6.8781,
+        "y": 3.9710728865131646,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "teal",
+        "pins": []
+      },
+      {
+        "id": "C",
+        "x": 2.2927,
+        "y": 3.9710728865131646,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "red",
+        "pins": [
+          {
+            "angle": 180,
+            "target": "T"
+          },
+          {
+            "angle": 0,
+            "target": "U"
+          },
+          {
+            "angle": 240,
+            "target": "A"
+          },
+          {
+            "angle": 300,
+            "target": "Q"
+          }
+        ]
+      },
+      {
+        "id": "D",
+        "x": -2.2927,
+        "y": 8.556472886513165,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 150,
+        "color": "green",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "T"
+          },
+          {
+            "angle": 0,
+            "target": "Z"
+          }
+        ]
+      },
+      {
+        "id": "E",
+        "x": 6.8781,
+        "y": 8.556472886513165,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 30,
+        "color": "sky",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "U"
+          },
+          {
+            "angle": 180,
+            "target": "Z"
+          }
+        ]
+      },
+      {
+        "id": "Z",
+        "x": 2.2927,
+        "y": 8.556472886513165,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 270,
+        "color": "purple",
+        "pins": []
+      },
+      {
+        "id": "DG",
+        "x": -2.2927,
+        "y": 13.141872886513164,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "navy",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "D"
+          }
+        ]
+      },
+      {
+        "id": "EG",
+        "x": 6.8781,
+        "y": 13.141872886513164,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "teal",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "E"
+          }
+        ]
+      }
+    ],
+    "sticks": [
+      {
+        "id": "L",
+        "shape": "L",
+        "x": 2.2927,
+        "y": -3.4083332549999996,
+        "angle": 90,
+        "color": "green",
+        "slideAxis": [
+          1,
+          0
+        ],
+        "guides": [
+          {
+            "x": 2.2927,
+            "y": -4.8,
+            "angle": 90
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 10,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 12,
+        "pins": 12,
+        "stops": 0,
+        "closedRings": 3
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "A",
+        "target": "T",
+        "margin": 75
+      },
+      {
+        "owner": "Q",
+        "target": "U",
+        "margin": 75
+      },
+      {
+        "owner": "D",
+        "target": "T",
+        "margin": 75
+      },
+      {
+        "owner": "D",
+        "target": "Z",
+        "margin": 105
+      },
+      {
+        "owner": "E",
+        "target": "U",
+        "margin": 75
+      },
+      {
+        "owner": "E",
+        "target": "Z",
+        "margin": 105
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "walls": 2,
+        "engaged": true
+      }
+    ],
+    "bodyAccess": [
+      {
+        "label": "A",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "Q",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "T",
+        "visibleBodyPoints": 64
+      },
+      {
+        "label": "U",
+        "visibleBodyPoints": 64
+      },
+      {
+        "label": "C",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "E",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "Z",
+        "visibleBodyPoints": 73
+      },
+      {
+        "label": "DG",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "EG",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "L",
+        "visibleBodyPoints": 35
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "moves": [
+    {
+      "part": "L",
+      "target": 4
+    }
+  ],
+  "data": {
+    "solved": false,
+    "remaining": 10,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "L",
+        "target": 4,
+        "pose": 1.43377685546875,
+        "remaining": 10,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_1"
+        ]
+      }
+    ],
+    "links": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "bindings": [
+      false
+    ],
+    "guides": [
+      {
+        "active": false,
+        "engaged": false
+      }
+    ],
+    "poses": {
+      "A": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "Q": {
+        "pose": 180,
+        "solved": false,
+        "locked": true
+      },
+      "T": {
+        "pose": 180,
+        "solved": false,
+        "locked": false
+      },
+      "U": {
+        "pose": 0,
+        "solved": false,
+        "locked": false
+      },
+      "C": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "D": {
+        "pose": 149.9999986782192,
+        "solved": false,
+        "locked": true
+      },
+      "E": {
+        "pose": 30.000001321780804,
+        "solved": false,
+        "locked": true
+      },
+      "Z": {
+        "pose": 270,
+        "solved": false,
+        "locked": false
+      },
+      "DG": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "EG": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "L": {
+        "pose": 1.43377685546875,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "contact": {
+    "moves": [
+      {
+        "part": "L",
+        "target": 4
+      }
+    ],
+    "pose": {
+      "pose": 1.43377685546875,
+      "solved": true,
+      "locked": false
+    },
+    "rows": [
+      {
+        "against": "C",
+        "feature": "source-pin-wall",
+        "index": 13,
+        "kind": 4,
+        "pin": 3,
+        "depth": 0.019989409709160633
+      }
+    ],
+    "scope": "Active parts, supplied analytic stick chain/ring arc or non-sensor pin walls. Input freedom and path contact measured separately; no engine/tolerance changes."
+  },
+  "status": "held_proposed_retention_not_met",
+  "supersededProposal": "study-20261014-guided-window-return-02"
+}

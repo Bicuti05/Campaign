@@ -1,0 +1,19 @@
+"use strict";
+const fs=require('fs'),path=require('path'),{api,RR}=require('./turp-continue'),{linkedColors}=require('./turp-a032-author'),OUT=path.join(__dirname,'20261016-turp-a034-image-01');fs.mkdirSync(OUT,{recursive:true});
+const save=(n,v)=>fs.writeFileSync(path.join(OUT,n),JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+function author(rev='01'){
+ const d={format:'turp-design',version:1,levelId:'draft',name:'TURP A034 — Hai nhánh và thanh giữa dùng chung / r'+rev,author:'Codex / TURP image continuation',notes:'Người dùng cung cấp ảnh lv34 ngày16/10/2026, bổ sung hai thanh L S1/S2 mà nguồn70004 chưa khôi phục. ID R trong bản này theo nhãn ảnh do đối chiếu vị trí/pin, không suy ordinal file: ảnh1=sourceR8,2=R2,3=R5,4=R10,5=R4,6=R3,7=R6,8=R1,9=R7,10=R9. Biến thể theo report: bỏ vòng rìa ảnh4/10, chuyển thành8 vòng/6 thanh cardinal; nguồn kín ảnh9 radius2.15, vòng mở1.75, lockCount0. Hai cột lệch cao1.2 có mục đích để pin ngang từ R2/R8 giữ hai điểm khác nhau trên S3, tránh hai đầu pin chồng nhau. U trái dùng chung R3/R2, U phải dùng chung R8/R7, chân bằng nhau và mỗi chân một Guide. Receiver R5 nhận R1/R7; R6 nhận R3/nguồn kín R9; phải kiểm quay lại thật. Không Bom/Stop/Booster/Chain. Ảnh không chứng minh kích thước/feel/lời giải Unity; source JSON vẫn thiếu path/custom pin mapping, không coi native proxy là baseline gốc chính xác. Proposal chờ GD visual/difficulty.',rings:[],sticks:[]};
+ for(const[id,x,y,radius,gapDir,gap]of [['R1',-4.9,4.9,1.75,180,90],['R2',-4.9,9.8,1.75,180,90],['R3',-4.9,14.7,1.75,180,90],['R5',0,0,1.75,270,90],['R6',0,14.7,1.75,270,90],['R7',4.9,3.7,1.75,0,90],['R8',4.9,8.6,1.75,0,90],['R9',4.9,13.5,2.15,90,0]])d.rings.push({id,x,y,radius,gapDir,gap,lockCount:0,pins:[],color:'blue'});
+ const r=id=>d.rings.find(r=>r.id===id);for(const[a,b]of [['R3','R6'],['R9','R6'],['R3','R2'],['R9','R8'],['R2','R1'],['R8','R7'],['R1','R5'],['R7','R5']]){const o=r(a),t=r(b),dx=t.x-o.x,dy=t.y-o.y;o.pins.push({id:'to'+b,target:b,angle:(Math.atan2(dy,dx)*180/Math.PI+360)%360,length:Math.hypot(dx,dy)-o.radius-.25-t.radius});}
+ const bar=(id,x,y,p,axis,guides)=>d.sticks.push({id,x,y,angle:0,path:p,slideAxis:axis,...(guides?{guides}:{}),color:'red'});
+ bar('S1',0,0,[[0,0],[0,-3.8],[-1.3,-3.8]],[0,1],[{x:0,y:-2.65,angle:90}]);
+ bar('S2',0,14.7,[[0,0],[0,-3.3],[-1.3,-3.3]],[0,1],[{x:0,y:12.45,angle:90}]);
+ bar('S3',0,9.2,[[0,-1.7],[0,1.7]],[0,1]);for(const owner of ['R2','R8'])r(owner).pins.push({id:'toS3',target:'S3',angle:owner==='R2'?0:180,length:2.9});
+ bar('S4',4.9,16.7354,[[-1.4,0],[1.4,0],[1.4,1.3]],[1,0]);r('R9').pins.push({id:'toS4',target:'S4',angle:90,length:.8354});
+ bar('S5',-8.7,9.8,[[4.2,0],[0,0],[0,4.9],[4.2,4.9]],[1,0],[{x:-7.25,y:9.8,angle:0},{x:-7.75,y:14.7,angle:0}]);
+ bar('S6',8.7,3.7,[[-4.2,0],[0,0],[0,4.9],[-4.2,4.9]],[1,0],[{x:7.75,y:3.7,angle:0},{x:7.25,y:8.6,angle:0}]);
+ if(+rev>=2){r('R6').gapDir=90;const s=d.sticks.find(s=>s.id==='S2');s.path=[[0,0],[0,3.8],[-1.3,3.8]];s.guides=[{x:0,y:17.35,angle:90}];d.notes+=' r01 S2 rút xuống bị đầu pin R2->S3 còn tồn tại chặn dù S3 đã tháo. r02 lật riêng L S2 và khe R6 lên trên để có đường rút thật trước khi mở receiver; không sửa tolerance/collider/runtime. r01 được giữ research.';}
+ if(+rev>=3){const u=d.sticks.find(s=>s.id==='S6');u.guides[0].x=7.25;u.guides[1].x=7.75;d.notes+=' r02 ngàm trên U phải chưa có witness riêng; r03 đổi vị trí dọc hai ngàm để ngàm trên giữ muộn khi U trượt phải. Hai chân4.2 không đổi; kiểm thêm pha trung gian và hướng ngược.';}
+ linkedColors(d);const stem='turp-A034-70004-image-shared-sliders-r'+rev;save(stem+'.rrdesign.json',d);const geometry={analysis:RR.analyze(RR.Design.toLevel(d).level),strict:api.OVL.check(d)};save(stem+'-geometry.json',geometry);console.log(JSON.stringify({stem,...geometry}));return{stem,d};
+}
+if(require.main===module)author(process.argv[2]||'01');module.exports={OUT,save,author};

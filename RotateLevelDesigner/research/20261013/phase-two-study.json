@@ -1,0 +1,1206 @@
+{
+  "format": "rotate-phase-two-study",
+  "version": 1,
+  "scope": "Designer engine only; no Unity or new HTML",
+  "incomingSourceAudit": {
+    "ringTargets": 5514,
+    "incomingSourceCounts": {
+      "0": 1993,
+      "1": 2298,
+      "2": 959,
+      "3": 200,
+      "4": 57,
+      "5": 6,
+      "8": 1
+    },
+    "threeOrMoreExamples": [
+      {
+        "asset": "10013",
+        "ring": "ring_1",
+        "sources": 4
+      },
+      {
+        "asset": "10020",
+        "ring": "ring_1",
+        "sources": 3
+      },
+      {
+        "asset": "10021",
+        "ring": "ring_4",
+        "sources": 3
+      },
+      {
+        "asset": "10036",
+        "ring": "ring_2",
+        "sources": 3
+      },
+      {
+        "asset": "10037",
+        "ring": "ring_2",
+        "sources": 3
+      },
+      {
+        "asset": "10037",
+        "ring": "ring_6",
+        "sources": 3
+      },
+      {
+        "asset": "10037",
+        "ring": "ring_10",
+        "sources": 3
+      },
+      {
+        "asset": "10039",
+        "ring": "ring_8",
+        "sources": 3
+      }
+    ],
+    "limits": "Counts authored distinct source owners, not live lock states, player difficulty or deduplicated campaign levels."
+  },
+  "candidates": [
+    {
+      "stem": "study-20261013-v5-two-l-choice",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Hai thanh L — chọn cửa trái hoặc phải",
+        "author": "Codex reference study 20261013",
+        "notes": "Hai thanh L tạo hai biên và chặn hai lối trượt của thanh ngang. Mở L trái thì thanh ngang ra trái; mở L phải thì ra phải. Chỉ cần mở một cửa để giải phóng thanh ngang, cửa còn lại xử lý khi dọn hết bàn. Các nhánh ngang hạn chế hướng trượt của mỗi L. Không ngàm, bom, Chain hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "R1",
+            "x": 0,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 270,
+                "target": "S3"
+              }
+            ]
+          },
+          {
+            "id": "R2",
+            "x": 4.5854,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 270,
+                "target": "S3"
+              }
+            ]
+          },
+          {
+            "id": "R3",
+            "x": 0,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "S1"
+              }
+            ]
+          },
+          {
+            "id": "R4",
+            "x": 4.5854,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "S2"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S1",
+            "shape": "L",
+            "length": 7.0354,
+            "arm": 9.456199999999999,
+            "x": -2.8354,
+            "y": -1.7677,
+            "angle": 90,
+            "color": "teal",
+            "slideAxis": [
+              1,
+              0
+            ]
+          },
+          {
+            "id": "S2",
+            "shape": "L",
+            "length": 8.6208,
+            "arm": 9.456199999999999,
+            "x": 7.4208,
+            "y": -3.6104,
+            "angle": 270,
+            "color": "red",
+            "slideAxis": [
+              1,
+              0
+            ]
+          },
+          {
+            "id": "S3",
+            "shape": "straight",
+            "length": 8.1854,
+            "x": 2.2927,
+            "y": -2.8354,
+            "angle": 0,
+            "color": "navy"
+          }
+        ]
+      },
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 3,
+            "guides": 0,
+            "bombs": 0,
+            "links": 4,
+            "pins": 4,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 5,
+              "target": 5.399999999999997
+            },
+            {
+              "obj": 4,
+              "target": 0.7999999999999999
+            },
+            {
+              "obj": 6,
+              "target": 1.9000000000000006
+            },
+            {
+              "obj": 6,
+              "target": 6.499999999999993
+            }
+          ],
+          "log": "found with 4 drags after 31 explorations",
+          "nodes": 31,
+          "seconds": 0.535,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_2",
+              "label": "S2",
+              "kind": "stick",
+              "from": 0,
+              "to": 5.4,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 5
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 0.8,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 3
+            },
+            {
+              "step": 3,
+              "part": "slide_bar_3",
+              "label": "S3",
+              "kind": "stick",
+              "from": 0,
+              "to": 1.9,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 4,
+              "part": "slide_bar_3",
+              "label": "S3",
+              "kind": "stick",
+              "from": 1.9,
+              "to": 6.5,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "initialBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "pointerReached": -1.4753906249999997,
+            "remaining": 7
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "pointerReached": 1.4753906249999997,
+            "remaining": 7
+          }
+        ],
+        "afterLeft": [
+          {
+            "direction": -1,
+            "removed": true,
+            "pointerReached": -6.499999999999993,
+            "remaining": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "pointerReached": 1.4753906249999997,
+            "remaining": 5
+          }
+        ],
+        "afterRight": [
+          {
+            "direction": -1,
+            "removed": false,
+            "pointerReached": -1.4753906249999997,
+            "remaining": 5
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "pointerReached": 6.499999999999993,
+            "remaining": 2
+          }
+        ],
+        "leftRoute": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "S1",
+              "target": 1,
+              "remaining": 5,
+              "activeLinks": [
+                0,
+                1,
+                3
+              ],
+              "solved": [
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "S3",
+              "target": -1.9,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                3
+              ],
+              "solved": [
+                "ring_2",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "S3",
+              "target": -6.5,
+              "remaining": 2,
+              "activeLinks": [
+                3
+              ],
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "slide_bar_1",
+                "slide_bar_3"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "S2",
+              "target": 5.4,
+              "remaining": 0,
+              "activeLinks": [],
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1",
+                "slide_bar_2",
+                "slide_bar_3"
+              ],
+              "contacts": []
+            }
+          ]
+        },
+        "rightRoute": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "S2",
+              "target": 5.4,
+              "remaining": 5,
+              "activeLinks": [
+                0,
+                1,
+                2
+              ],
+              "solved": [
+                "ring_4",
+                "slide_bar_2"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "S3",
+              "target": 1.9,
+              "remaining": 4,
+              "activeLinks": [
+                1,
+                2
+              ],
+              "solved": [
+                "ring_1",
+                "ring_4",
+                "slide_bar_2"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "S3",
+              "target": 6.5,
+              "remaining": 2,
+              "activeLinks": [
+                2
+              ],
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_4",
+                "slide_bar_2",
+                "slide_bar_3"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "S1",
+              "target": 1,
+              "remaining": 0,
+              "activeLinks": [],
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1",
+                "slide_bar_2",
+                "slide_bar_3"
+              ],
+              "contacts": []
+            }
+          ]
+        },
+        "leftWrongDirection": {
+          "direction": -1,
+          "removed": false,
+          "pointerReached": -0.6413330078124998,
+          "remaining": 7
+        },
+        "leftWithoutArm": {
+          "direction": -1,
+          "removed": true,
+          "pointerReached": -6.399999999999993,
+          "remaining": 5
+        },
+        "rightWrongDirection": {
+          "direction": -1,
+          "removed": false,
+          "pointerReached": -1.525390625,
+          "remaining": 7
+        },
+        "rightWithoutArm": {
+          "direction": -1,
+          "removed": true,
+          "pointerReached": -3.4000000000000017,
+          "remaining": 5
+        }
+      }
+    },
+    {
+      "stem": "study-20261013-v5-three-pin-junction",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Ba pin hội tụ — mở từng nguồn",
+        "author": "Codex reference study 20261013",
+        "notes": "Ba nguồn trái, phải, trên giữ cùng một vòng nhận pin. Khe 90 độ không nhả ba hướng cùng lúc; xoay vòng nhận để nhả từng nguồn, quan sát pin nguồn biến mất rồi tiếp tục quay. Cụm T nhỏ gọn, giữ khoảng trống phía dưới. Không thanh, ngàm, bom, chốt, Chain hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "C",
+            "x": 0,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 270,
+            "color": "purple",
+            "pins": []
+          },
+          {
+            "id": "L",
+            "x": -4.5854,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "C"
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "x": 4.5854,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 0,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "C"
+              }
+            ]
+          },
+          {
+            "id": "T",
+            "x": 0,
+            "y": 4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 270,
+                "target": "C"
+              }
+            ]
+          }
+        ],
+        "sticks": []
+      },
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 0,
+              "target": 324
+            },
+            {
+              "obj": 0,
+              "target": 413.99999999999966
+            },
+            {
+              "obj": 0,
+              "target": 503.99999999999943
+            }
+          ],
+          "log": "found with 3 drags after 17 explorations",
+          "nodes": 17,
+          "seconds": 0.044,
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 270,
+              "to": 324,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 3
+            },
+            {
+              "step": 2,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 324,
+              "to": 414,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 3,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 414,
+              "to": 504,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "routeTrace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "ring_1",
+              "target": 324,
+              "remaining": 3,
+              "activeLinks": [
+                0,
+                2
+              ],
+              "solved": [
+                "ring_3"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_1",
+              "target": 414,
+              "remaining": 2,
+              "activeLinks": [
+                0
+              ],
+              "solved": [
+                "ring_3",
+                "ring_4"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_1",
+              "target": 504,
+              "remaining": 0,
+              "activeLinks": [],
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4"
+              ],
+              "contacts": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "stem": "study-20261013-v5-bomb-breaks-pin-cycle",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Dọn hành lang rồi phá vòng pin",
+        "author": "Codex reference study 20261013",
+        "notes": "Bốn vòng phía trên tạo vòng phụ thuộc pin có hướng; các vòng đang giữ pin không xoay được. Tháo vòng dưới phải để dọn hành lang, giữ thanh mang bom bằng một ngàm, rồi đẩy bom lên phá vòng giữa phải. Sau đó nhả các pin còn lại để dọn cụm trên. Đưa bom trước làm nổ vòng chắn đường và mất thanh mang bom. Bom gameplay bắt buộc, không dùng Booster hoặc Chain. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "R1",
+            "x": 0,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 135,
+            "color": "orange",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "R2"
+              }
+            ]
+          },
+          {
+            "id": "R2",
+            "x": 4.5854,
+            "y": 0,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 45,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 270,
+                "target": "R4"
+              }
+            ]
+          },
+          {
+            "id": "R3",
+            "x": 0,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "purple",
+            "pins": [
+              {
+                "angle": 90,
+                "target": "R1"
+              },
+              {
+                "angle": 270,
+                "target": "R5"
+              }
+            ]
+          },
+          {
+            "id": "R4",
+            "x": 4.5854,
+            "y": -4.5854,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 315,
+            "color": "green",
+            "pins": [
+              {
+                "angle": 180,
+                "target": "R3"
+              }
+            ]
+          },
+          {
+            "id": "R5",
+            "x": 0,
+            "y": -9.1708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 180,
+            "color": "blue",
+            "pins": [
+              {
+                "angle": 0,
+                "target": "R6"
+              }
+            ]
+          },
+          {
+            "id": "R6",
+            "x": 4.5854,
+            "y": -9.1708,
+            "radius": 1.75,
+            "gap": 90,
+            "gapDir": 90,
+            "color": "orange",
+            "pins": []
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S1",
+            "shape": "straight",
+            "length": 6.5,
+            "x": 4.5854,
+            "y": -15.4354,
+            "angle": 90,
+            "color": "red",
+            "guides": [
+              {
+                "x": 4.5854,
+                "y": -13.0854,
+                "angle": 90
+              }
+            ],
+            "bomb": {
+              "x": 4.5854,
+              "y": -12.1854,
+              "radius": 0.45
+            }
+          }
+        ]
+      },
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 6,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 1,
+            "links": 6,
+            "pins": 6,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 5,
+              "target": 144
+            },
+            {
+              "obj": 6,
+              "target": 5.299999999999997
+            },
+            {
+              "obj": 4,
+              "target": 126
+            },
+            {
+              "obj": 1,
+              "target": 144
+            },
+            {
+              "obj": 0,
+              "target": 234
+            }
+          ],
+          "log": "found with 5 drags after 83 explorations",
+          "nodes": 83,
+          "seconds": 0.201,
+          "route": [
+            {
+              "step": 1,
+              "part": "ring_6",
+              "label": "R6",
+              "kind": "ring",
+              "from": 90,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 6
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 5.3,
+              "direction": "+",
+              "removedNow": 2,
+              "remaining": 4
+            },
+            {
+              "step": 3,
+              "part": "ring_5",
+              "label": "R5",
+              "kind": "ring",
+              "from": 180,
+              "to": 126,
+              "direction": "CW",
+              "removedNow": 1,
+              "remaining": 3
+            },
+            {
+              "step": 4,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 45,
+              "to": 144,
+              "direction": "CCW",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 5,
+              "part": "ring_1",
+              "label": "R1",
+              "kind": "ring",
+              "from": 135,
+              "to": 234,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "bombs": true,
+      "witness": {
+        "withoutBomb": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 6,
+              "sticks": 1,
+              "guides": 1,
+              "bombs": 0,
+              "links": 6,
+              "pins": 6,
+              "stops": 0,
+              "closedRings": 0
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 136,
+            "seconds": 0.244,
+            "log": "NOT FOUND after 136 explorations, 0 s (limits 1000 nodes / 6 s, open 0)",
+            "route": []
+          }
+        },
+        "withoutGuide": {
+          "analysis": {
+            "error": null,
+            "warnings": [
+              {
+                "code": "free",
+                "part": "slide_bar_1",
+                "text": "S1 không bị khóa từ đầu: sẽ tự tháo ở lần thả tay đầu tiên"
+              }
+            ],
+            "info": {
+              "rings": 6,
+              "sticks": 1,
+              "guides": 0,
+              "bombs": 1,
+              "links": 6,
+              "pins": 6,
+              "stops": 0,
+              "closedRings": 0
+            }
+          },
+          "solution": {
+            "found": false,
+            "moves": [],
+            "nodes": 54,
+            "seconds": 0.063,
+            "log": "NOT FOUND after 54 explorations, 0 s (limits 1000 nodes / 6 s, open 0)",
+            "route": []
+          }
+        },
+        "correctTrace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "ring_6",
+              "target": 144,
+              "remaining": 6,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "solved": [
+                "ring_6"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "slide_bar_1",
+              "target": 5.3,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                2,
+                3
+              ],
+              "solved": [
+                "ring_4",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": [
+                {
+                  "target": "ring_4",
+                  "pose": 5.213661217186401
+                }
+              ]
+            },
+            {
+              "part": "ring_5",
+              "target": 126,
+              "remaining": 3,
+              "activeLinks": [
+                0,
+                2
+              ],
+              "solved": [
+                "ring_4",
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_2",
+              "target": 144,
+              "remaining": 2,
+              "activeLinks": [
+                2
+              ],
+              "solved": [
+                "ring_2",
+                "ring_4",
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_1",
+              "target": 234,
+              "remaining": 0,
+              "activeLinks": [],
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            }
+          ]
+        },
+        "wrongFirstBomb": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "S1",
+              "target": 5.3,
+              "remaining": 5,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "solved": [
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": [
+                {
+                  "target": "ring_6",
+                  "pose": 0.56459176482447
+                }
+              ]
+            },
+            {
+              "part": "ring_6",
+              "target": 144,
+              "remaining": 5,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "solved": [
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_5",
+              "target": 126,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "solved": [
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_2",
+              "target": 144,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "solved": [
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_1",
+              "target": 234,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "solved": [
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            }
+          ]
+        },
+        "guideRemovedSameRoute": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "ring_6",
+              "target": 144,
+              "remaining": 5,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "solved": [
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "slide_bar_1",
+              "target": 5.3,
+              "remaining": 5,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "solved": [
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_5",
+              "target": 126,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "solved": [
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_2",
+              "target": 144,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "solved": [
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            },
+            {
+              "part": "ring_1",
+              "target": 234,
+              "remaining": 4,
+              "activeLinks": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "solved": [
+                "ring_5",
+                "ring_6",
+                "slide_bar_1"
+              ],
+              "contacts": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

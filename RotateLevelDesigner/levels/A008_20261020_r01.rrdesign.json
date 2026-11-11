@@ -1,0 +1,163 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "008",
+  "name": "Level 8 — Vòng kín giữ cửa quay",
+  "author": "Codex / report_20Level remake",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0.3408,
+      "y": -6.9661,
+      "gapDir": 332.1206,
+      "gap": 0,
+      "radius": 1.8424,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 137.3401,
+          "targets": [
+            "R2"
+          ],
+          "length": 0.837931
+        },
+        {
+          "id": "p2",
+          "angle": 54.2932,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.834943
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": -2.8061,
+      "y": -4.0663,
+      "gapDir": 187.1206,
+      "gap": 90,
+      "radius": 1.3489,
+      "color": "blue"
+    },
+    {
+      "id": "R3",
+      "x": 3.1246,
+      "y": -3.093,
+      "gapDir": 72.55,
+      "gap": 90,
+      "radius": 1.8424,
+      "color": "teal"
+    },
+    {
+      "id": "R4",
+      "x": -0.4811,
+      "y": 0.5127,
+      "gapDir": 127.1206,
+      "gap": 90,
+      "radius": 2.1714,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 316.1852,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.83543
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": 4.3968,
+      "y": 6,
+      "gapDir": 30,
+      "gap": 90,
+      "radius": 1.3489,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 169.8307,
+          "length": 0.752568,
+          "targets": [
+            "R7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": 4.6,
+      "y": 1.6,
+      "gapDir": 332.1206,
+      "gap": 0,
+      "radius": 1.8424,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 92.6445,
+          "length": 0.96339,
+          "targets": [
+            "R5"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "angle": -107.4522677125161,
+          "length": 1.1
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": 0.1069,
+      "y": 6.7695,
+      "gapDir": 135,
+      "gap": 90,
+      "radius": 2.0069,
+      "color": "green"
+    },
+    {
+      "id": "R8",
+      "x": -4.7399,
+      "y": -0.81,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 1.3489,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 80.8735,
+          "length": 0.894453,
+          "targets": [
+            "R9"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 300.7046,
+          "length": 0.839425,
+          "targets": [
+            "R2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R9",
+      "x": -4,
+      "y": 3.7957,
+      "gapDir": 12.1206,
+      "gap": 90,
+      "radius": 2.1714,
+      "color": "purple"
+    }
+  ],
+  "notes": "Revision mới theo report_20Level §4/L8: phối hợp vòng kín và stop-pin. Stop trên R6 kín nằm trong khe R3, cản đường quay R3 khi nguồn R6 còn trên board. Mở nhánh R7/R5 để R6 rời và mang Stop đi, rồi quay lại cụm R3/R1. Giữ9 vòng và ý tưởng nhiều nhánh của bản ingame, đổi khe và phối màu theo lớp cỡ. Không thanh/Bom/Xích/Booster; chưa GD duyệt. Không thay ingame/campaign."
+}

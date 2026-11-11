@@ -1,0 +1,256 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Cửa chung nối ba hàng — lưới mười lăm vòng",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Lưới3×5, mọi radius1.75. Mở rộng cụm12 vòng bằng hai receiver góc và một nguồn trên; hai nguồn trên cũ mỗi nguồn nhận thêm một mục tiêu, R13 nay là cửa chung cho bốn nguồn. Nguồn C kín vẫn cần4 receiver cùng chuẩn bị. Thêm ba mảnh tạo5 link dùng chung với cụm cũ, không nối một cụm độc lập để đủ15. Cửa giữa được quay lại ở những trạng thái khác nhau khi các nguồn lân cận còn giữ. Không Stop/Stick/Guide/Bom/Booster/Chain; tiến trình12→15 là đề xuất family, không tự chốt campaign hoặc nhận khó từ số mảnh.",
+  "rings": [
+    {
+      "id": "R00",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S10",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R20"
+        },
+        {
+          "angle": 90,
+          "target": "R11"
+        },
+        {
+          "angle": 180,
+          "target": "R00"
+        }
+      ]
+    },
+    {
+      "id": "R20",
+      "x": 9.1708,
+      "y": 0,
+      "gapDir": 315,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S01",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R11"
+        },
+        {
+          "angle": 90,
+          "target": "R02"
+        },
+        {
+          "angle": 270,
+          "target": "R00"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 45,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S21",
+      "x": 9.1708,
+      "y": 4.5854,
+      "gapDir": 0,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R22"
+        },
+        {
+          "angle": 180,
+          "target": "R11"
+        },
+        {
+          "angle": 270,
+          "target": "R20"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 135,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 4.5854,
+      "y": 9.1708,
+      "gapDir": 0,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R22"
+        },
+        {
+          "angle": 90,
+          "target": "R13"
+        },
+        {
+          "angle": 180,
+          "target": "R02"
+        },
+        {
+          "angle": 270,
+          "target": "R11"
+        }
+      ]
+    },
+    {
+      "id": "R22",
+      "x": 9.1708,
+      "y": 9.1708,
+      "gapDir": 315,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S03",
+      "x": 0,
+      "y": 13.7562,
+      "gapDir": 180,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R13"
+        },
+        {
+          "angle": 90,
+          "target": "R04"
+        },
+        {
+          "angle": 270,
+          "target": "R02"
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "x": 4.5854,
+      "y": 13.7562,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S23",
+      "x": 9.1708,
+      "y": 13.7562,
+      "gapDir": 0,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R24"
+        },
+        {
+          "angle": 180,
+          "target": "R13"
+        },
+        {
+          "angle": 270,
+          "target": "R22"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "x": 0,
+      "y": 18.3416,
+      "gapDir": 135,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "S14",
+      "x": 4.5854,
+      "y": 18.3416,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R24"
+        },
+        {
+          "angle": 180,
+          "target": "R04"
+        },
+        {
+          "angle": 270,
+          "target": "R13"
+        }
+      ]
+    },
+    {
+      "id": "R24",
+      "x": 9.1708,
+      "y": 18.3416,
+      "gapDir": 45,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

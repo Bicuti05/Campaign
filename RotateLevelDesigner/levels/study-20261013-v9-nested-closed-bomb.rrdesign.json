@@ -1,0 +1,64 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Vòng lồng kín — chốt đi qua khe vòng nhỏ",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Vòng lớn kín nhận pin từ vòng nhỏ bên trong và giữ pin tới vòng phía trên. Sau khi nhả vòng phía trên, quay vòng lớn một đoạn: chốt hướng vào trong đi qua khe trái của vòng nhỏ để chạm bom. Phá vòng lớn rồi nguồn nhỏ tự rời. Khe vòng nhỏ là hành lang của chốt, không phải quan hệ pin suy từ hình. Bỏ bom hoặc chốt không còn đường phá vòng kín. Bom gameplay cần thiết, không Booster/Chain. Nhóm lớn/nhỏ đã được GD mở riêng; chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "I",
+      "x": 0,
+      "y": 0,
+      "gapDir": 180,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "x": 0,
+      "y": 0,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 2.8354,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "T"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 180,
+          "length": -1.5
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 5.6708,
+      "gapDir": 90,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [],
+  "bombs": [
+    {
+      "x": -1.0825317547305484,
+      "y": 0.6249999999999999,
+      "radius": 0.25
+    }
+  ]
+}

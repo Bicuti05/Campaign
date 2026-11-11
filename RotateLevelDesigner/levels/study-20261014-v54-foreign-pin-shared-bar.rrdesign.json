@@ -1,0 +1,122 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Nhả pin chưa đủ — chừa đường cho pin di động",
+  "author": "Codex ongoing research 20261014",
+  "notes": "Sáu vòng radius1.75, hai cột ba hàng và một thanh dọc dùng chung; tổng7 Ring+Stick. Nhả pin gốc vào thanh và mở M chỉ mở input ST. TL giữ ST còn trên board cho lượt quay thực. Pin khác của ST, khai báo tới M, va vào thanh S vẫn được SB giữ: ở lần kéo đầu chỉ chặn collider, chưa cắm lại link. Rút thanh thêm rồi xoay tiếp. Quan sát thêm: gesture lặp có thể tăng xuyên tới khi scope Ring khôi phục link ST→S bằng pin khai báo tới M; đây là hành vi dung sai hiện tại, không là bước bắt buộc của ý tưởng. Có thể rút S sâu từ đầu; không khẳng định một thứ tự chuẩn bị duy nhất. M được dùng lại ở nhánh dưới và nguồn trái; hai vòng trái giữ nguồn sau khi nhả các pin ra. Không Guide/Stop/Bom/Booster/Chain; chưa GD nghiệm thu đẹp/khó hoặc chốt campaign.",
+  "rings": [
+    {
+      "id": "BL",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "SB"
+        }
+      ]
+    },
+    {
+      "id": "SB",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "M"
+        },
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "SL",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "BL"
+        },
+        {
+          "angle": 90,
+          "target": "TL"
+        },
+        {
+          "angle": 0,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 45,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "TL",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 135,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "ST"
+        }
+      ]
+    },
+    {
+      "id": "ST",
+      "x": 4.5854,
+      "y": 9.1708,
+      "gapDir": 90,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "M"
+        },
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 7.4208,
+      "y": 4.5854,
+      "length": 11.4,
+      "angle": 90,
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+"use strict";
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),g=require('./pose-body-gesture-query');
+const OUT=path.join(__dirname,'20261015-turp-a019-delivery'),p=JSON.parse(fs.readFileSync(path.join(__dirname,'../levels/turp-A019-10017-left-U-r02.rrpack.json'))),proof=JSON.parse(fs.readFileSync(path.join(OUT,'turp-A019-10017-left-U-r02-final-proof.json'))),moves=proof.finalProof.moves,rows=[];
+for(const feel of [false,true]){
+ for(const target of [-180,0,90,270,360,540]){const q=g.query(p,Array.from({length:3},()=>({part:'R7',target})),false,feel);rows.push({feel,kind:'R7_U_intact',target,repeats:3,result:q.data.poses.R7,remaining:q.data.remaining,trace:q.data.trace});}
+ for(const target of [-2.8,-3.3,-5,-8,2,5]){const prefix=moves.slice(0,8),q=g.query(p,prefix.concat(Array.from({length:3},()=>({part:'S5',target}))),false,feel);rows.push({feel,kind:'U_slide_after_shared_receiver',target,repeats:3,result:q.data.poses.S5,remaining:q.data.remaining,trace:q.data.trace.slice(8)});}
+ const omitted=moves.filter(m=>m.part!=='S5'),q=g.query(p,omitted,false,feel);rows.push({feel,kind:'omit_all_U_moves_from_route',remaining:q.data.remaining,solved:q.data.solved,trace:q.data.trace});
+}
+const inv=JSON.parse(fs.readFileSync(path.join(__dirname,'20261015-turplevel-approved-read/approval-inventory.json'))),hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex'),approved=inv.entries.map(e=>({stem:e.stem,packUnchanged:hash(e.packSource)===e.packSha256,designUnchanged:hash(e.designSource)===e.designSha256}));if(approved.some(a=>!a.packUnchanged||!a.designUnchanged))throw Error('Approved source changed');
+fs.writeFileSync(path.join(OUT,'alternative-gestures-and-source-audit.json'),JSON.stringify({createdAt:new Date().toISOString(),scope:'Finite reachable full current-body gestures, both profiles. No exhaustive bypass/mandatory sequence claim.',rows,approved},null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({cases:rows.length,approvedPairs:approved.length,rows:rows.map(r=>({feel:r.feel,kind:r.kind,target:r.target,result:r.result,remaining:r.remaining,solved:r.solved}))}));

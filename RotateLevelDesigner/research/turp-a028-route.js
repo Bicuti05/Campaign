@@ -1,0 +1,2 @@
+"use strict";
+const fs=require('fs'),path=require('path');let code=fs.readFileSync(path.join(__dirname,'turp-a022-route.js'),'utf8').replace("require('./turp-a022-author')","require('./turp-a028-author')");code=code.replace("for(const target of [2.3,2.7,2.9,3.1,3.3])for(const part of ['R1','R8'])for(const angle of [0,180,270,450])extra.push([{part:'S6',target},{part,target:angle}]);","");new Function('require','__dirname','process',code)(require,__dirname,process);

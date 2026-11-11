@@ -1,0 +1,55 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Hai pin cùng nguồn — cần cửa nhả rộng",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Vành giữa gửi hai pin cách nhau 90 độ vào cùng vành ngoài. Khóa ở mức vòng: nhả riêng một pin vẫn chưa làm nguồn rời, khe phải bao cả hai pin cùng lúc. Vành ngoài dùng khe logic 120 độ để mở cửa đồng thời; sau khi nó rời, xoay vành giữa để nhả pin nhỏ bên trong. Đối chứng khe 90 độ không có cửa nhả cả hai; bỏ một pin thì khe 90 độ giải được. Nhóm lớn/nhỏ đã được GD mở riêng; chỉ đây dùng khe 120 độ, không đổi tuning/rule/campaign, không Chain/Booster. Bản nghiên cứu chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "I",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "x": 0,
+      "y": 0,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 2.8354,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "O"
+        },
+        {
+          "angle": 90,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "x": 0,
+      "y": 0,
+      "gapDir": 270,
+      "color": "blue",
+      "radius": 3.9208,
+      "gap": 120,
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

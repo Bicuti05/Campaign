@@ -1,0 +1,166 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "BSG-01 research | Khuỷu L, ngàm còn chặn và hai cửa dùng chung",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp L default có pin/Guide ở các đoạn giữ khác nhau, H default dưới khuỷu có pin riêng R. Ngàm L đã mất binding vẫn còn geometry vì pin A còn giữ L; H phải chọn dọn J bên trái hoặc dọn L/nguồn A bên phải. A đồng thời giữ L và cửa AT, C giữ A cho lượt quay thực; AT nhận A/D, R nhận K sau khi H nhả. Không Guide dư trên H, không nửa ngàm, chốt/Bom/Chain/Booster.9Ring radius1,75 +2Stick default (L/H); cần proof riêng các đường/guide/elbow/retention, không dùng số mảnh hoặc drag làm độ khó. Chưa bàn giao.",
+  "rings": [
+    {
+      "id": "J",
+      "x": -4.9854,
+      "y": -0.1,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "K",
+      "x": -4.9854,
+      "y": -4.6854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "J"
+        },
+        {
+          "angle": 0,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": -0.4,
+      "y": -4.6854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "H"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "x": 5.543733254999999,
+      "y": -0.1,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        },
+        {
+          "angle": 90,
+          "target": "AT"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 5.543733254999999,
+      "y": -4.6854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "x": 5.543733254999999,
+      "y": 4.4854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "D",
+      "x": 0.9583332549999994,
+      "y": 4.4854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "AT"
+        },
+        {
+          "angle": 90,
+          "target": "DT"
+        },
+        {
+          "angle": 180,
+          "target": "DL"
+        }
+      ]
+    },
+    {
+      "id": "DT",
+      "x": 0.9583332549999994,
+      "y": 9.0708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "DL",
+      "x": -3.6270667450000005,
+      "y": 4.4854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "navy",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "L",
+      "shape": "L",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "color": "green",
+      "guides": [
+        {
+          "x": 2.708333255,
+          "y": -1.85,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": -0.4,
+      "y": -1.85,
+      "angle": 0,
+      "color": "red"
+    }
+  ]
+}

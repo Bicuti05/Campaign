@@ -1,0 +1,369 @@
+{
+  "status": "held_initial_overlap_owner_margin_and_retention",
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "GSU-01 hold | Hai pin vào cửa chưa khớp và ngàm nhả sớm",
+    "author": "Codex + GD / research",
+    "notes": "C-T/V overlap≈0,098; D owner margin44,9; ngàm−1,5 nhả U−1 trước retention đề xuất. Giữ research;02 khớp giao hai vòng khoảng cách, gapD179,9,ngàm−2, không sửa engine.",
+    "rings": [
+      {
+        "id": "A",
+        "x": -4.458333254999999,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 120,
+            "target": "T"
+          }
+        ]
+      },
+      {
+        "id": "Q",
+        "x": 4.458333254999999,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "blue",
+        "pins": [
+          {
+            "angle": 60,
+            "target": "V"
+          }
+        ]
+      },
+      {
+        "id": "T",
+        "x": -6.7510332549999985,
+        "y": 3.971072886513165,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "purple",
+        "pins": []
+      },
+      {
+        "id": "V",
+        "x": 6.7510332549999985,
+        "y": 3.971072886513165,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "teal",
+        "pins": []
+      },
+      {
+        "id": "C",
+        "x": 0,
+        "y": 4.914447857833177,
+        "radius": 3.8,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "red",
+        "pins": [
+          {
+            "angle": -132.21397082932685,
+            "target": "A"
+          },
+          {
+            "angle": -47.78602917067316,
+            "target": "Q"
+          },
+          {
+            "angle": -172.0451206656794,
+            "target": "T"
+          },
+          {
+            "angle": -7.954879334320599,
+            "target": "V"
+          }
+        ]
+      },
+      {
+        "id": "D",
+        "x": -6.7510332549999985,
+        "y": 8.556472886513165,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180.1,
+        "color": "green",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "T"
+          }
+        ]
+      },
+      {
+        "id": "F",
+        "x": 6.7510332549999985,
+        "y": 8.556472886513165,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0.1,
+        "color": "sky",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "V"
+          }
+        ]
+      },
+      {
+        "id": "DG",
+        "x": -6.7510332549999985,
+        "y": 13.141872886513164,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "navy",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "D"
+          }
+        ]
+      },
+      {
+        "id": "FG",
+        "x": 6.7510332549999985,
+        "y": 13.141872886513164,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "green",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "F"
+          }
+        ]
+      }
+    ],
+    "sticks": [
+      {
+        "id": "U",
+        "shape": "U",
+        "x": 0,
+        "y": -2.9,
+        "angle": 0,
+        "color": "green",
+        "slideAxis": [
+          0,
+          1
+        ],
+        "guides": [
+          {
+            "x": -2.708333255,
+            "y": -1.5,
+            "angle": 90
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "ok": false,
+    "analysis": {
+      "error": null,
+      "warnings": [
+        {
+          "code": "overlap",
+          "part": "ring_3",
+          "text": "R3 chồng lên vật khác lúc bắt đầu (độ xuyên 0.098)"
+        },
+        {
+          "code": "overlap",
+          "part": "ring_4",
+          "text": "R4 chồng lên vật khác lúc bắt đầu (độ xuyên 0.098)"
+        },
+        {
+          "code": "overlap",
+          "part": "ring_5",
+          "text": "R5 chồng lên vật khác lúc bắt đầu (độ xuyên 0.098)"
+        }
+      ],
+      "info": {
+        "rings": 9,
+        "sticks": 1,
+        "guides": 1,
+        "bombs": 0,
+        "links": 10,
+        "pins": 10,
+        "stops": 0,
+        "closedRings": 3
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "A",
+        "target": "T",
+        "margin": 75
+      },
+      {
+        "owner": "Q",
+        "target": "V",
+        "margin": 75
+      },
+      {
+        "owner": "D",
+        "target": "T",
+        "margin": 44.89999999999998
+      },
+      {
+        "owner": "F",
+        "target": "V",
+        "margin": 45.10000000000002
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "walls": 2,
+        "engaged": true
+      }
+    ],
+    "bodyAccess": [
+      {
+        "label": "A",
+        "visibleBodyPoints": 86
+      },
+      {
+        "label": "Q",
+        "visibleBodyPoints": 86
+      },
+      {
+        "label": "T",
+        "visibleBodyPoints": 65
+      },
+      {
+        "label": "V",
+        "visibleBodyPoints": 65
+      },
+      {
+        "label": "C",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "F",
+        "visibleBodyPoints": 81
+      },
+      {
+        "label": "DG",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "FG",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "U",
+        "visibleBodyPoints": 46
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "partial": {
+    "solved": false,
+    "remaining": 9,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "U",
+        "target": -1,
+        "pose": -1,
+        "remaining": 9,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_1"
+        ]
+      }
+    ],
+    "links": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "bindings": [
+      false
+    ],
+    "guides": [
+      {
+        "active": false,
+        "engaged": false
+      }
+    ],
+    "poses": {
+      "A": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "Q": {
+        "pose": 180,
+        "solved": false,
+        "locked": true
+      },
+      "T": {
+        "pose": 180,
+        "solved": false,
+        "locked": false
+      },
+      "V": {
+        "pose": 0,
+        "solved": false,
+        "locked": false
+      },
+      "C": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "D": {
+        "pose": 180.09999999817703,
+        "solved": false,
+        "locked": true
+      },
+      "F": {
+        "pose": 0.09999999817700608,
+        "solved": false,
+        "locked": true
+      },
+      "DG": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "FG": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "U": {
+        "pose": -1,
+        "solved": true,
+        "locked": false
+      }
+    }
+  },
+  "supersededProposal": "study-20261014-guide-shared-u-reinsert-02"
+}

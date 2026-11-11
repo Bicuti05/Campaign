@@ -1,0 +1,204 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "255",
+  "name": "A255 | Hai nguồn, một cửa đáy",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 3.5,
+      "y": 5.8,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R2"
+          ],
+          "length": 1.1
+        },
+        {
+          "id": "p2",
+          "angle": 190.7843,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.5255
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R2",
+      "x": 3.5,
+      "y": 1.2,
+      "gapDir": 140,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [],
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": -0.7,
+      "y": 5,
+      "gapDir": 130,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [],
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": -0.7,
+      "y": 0.4,
+      "gapDir": 261,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.85
+        },
+        {
+          "id": "new-R5",
+          "targets": [
+            "R5"
+          ],
+          "angle": 170.3401,
+          "length": 1.0176
+        }
+      ],
+      "stops": [],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R5",
+      "x": -5.4,
+      "y": 1.2,
+      "gapDir": 300,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [],
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": -5.4,
+      "y": 5.8,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R5"
+          ],
+          "length": 0.85
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R8",
+      "x": 3.5,
+      "y": -3.4,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 90,
+          "targets": [
+            "R2"
+          ],
+          "length": 1.1
+        },
+        {
+          "id": "new-R9",
+          "targets": [
+            "R9"
+          ],
+          "angle": 190.7843,
+          "length": 0.7755
+        },
+        {
+          "id": "new-Bridge",
+          "targets": [
+            "Bridge"
+          ],
+          "angle": 270,
+          "length": 1.6
+        }
+      ],
+      "radius": 1.75,
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R9",
+      "x": -0.7,
+      "y": -4.2,
+      "gapDir": 135,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [
+        {
+          "id": "toBridge",
+          "angle": -90,
+          "length": 1.05,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "color": "blue",
+      "lockCount": 0
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Bridge",
+      "x": 0.65,
+      "y": -7,
+      "angle": 0,
+      "path": [
+        [
+          -4.1,
+          0
+        ],
+        [
+          5.1,
+          0
+        ],
+        [
+          5.1,
+          -2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "color": "orange",
+      "guides": []
+    }
+  ],
+  "author": "Codex / Designer review batch01",
+  "notes": "Combine + Challenge dự kiến. Hai nguồn kín chia sẻ receiver; then đáy nhận R8/R9 thay vì kéo một pin xuyên suốt chiều cao từ R2. Giải nhánh vòng rồi quay về nguồn. Nguồn A105; ID mới, proposal chờ GD. Vai trò đã đối chứng ở prefix tới được, không chứng minh mọi lời giải bắt buộc. CLI validate/solve và full-pointer replay Designer/analytic/default feel; không Booster/Bom/Chain. Không Unity/device. Proof thực nằm trong research/20261026-rebuild-251-260/A255_20261026_review-r01-delivery.json; pack no-solve tránh nhúng route solver nhả sớm."
+}

@@ -1,0 +1,271 @@
+{
+  "scope": "Rejected initial trial, not exported",
+  "candidate": {
+    "stem": "study-20261013-v18-compact-bomb-corridor",
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "Mở chốt giữa ô rồi đưa bom vào cụm pin",
+      "author": "Codex ongoing research 20261013",
+      "notes": "Bốn vòng theo ô 2x2 giữ nhau bằng chu trình pin thường. Thanh bom ngắn đặt ở khoảng giữa hàng/cột, ngàm giữ nó qua bước chuẩn bị. Thanh đứng ngắn chặn đường bom; rút thanh đứng xuống trước, rồi đẩy thanh bom sang phải để phá một nguồn của chu trình. Đi bom trước nổ vào thanh đứng, mất phương tiện phá cụm vòng. Bỏ ngàm thanh bom làm host tự tháo khi dọn thanh đứng, bom còn tại chỗ và cụm vòng không có vật nào được xoay. Ngàm thanh đứng làm hướng rút lên bị giữ/chặn; bỏ nó cho phép một lần thử lên tự tháo thanh. Bom gameplay cần thiết; không Chain/Booster. Mẫu mới nghiên cứu bố cục cùng vùng, không sửa bản bom V5 người dùng đã xem; chưa nghiệm thu đẹp/khó.",
+      "rings": [
+        {
+          "id": "A",
+          "x": 0,
+          "y": 0,
+          "gapDir": 90,
+          "color": "orange",
+          "radius": 1.75,
+          "gap": 90,
+          "pins": [
+            {
+              "angle": 0,
+              "target": "B"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "x": 4.5854,
+          "y": 0,
+          "gapDir": 90,
+          "color": "blue",
+          "radius": 1.75,
+          "gap": 90,
+          "pins": [
+            {
+              "angle": 270,
+              "target": "D"
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "x": 0,
+          "y": -4.5854,
+          "gapDir": 180,
+          "color": "green",
+          "radius": 1.75,
+          "gap": 90,
+          "pins": [
+            {
+              "angle": 90,
+              "target": "A"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 4.5854,
+          "y": -4.5854,
+          "gapDir": 90,
+          "color": "purple",
+          "radius": 1.75,
+          "gap": 90,
+          "pins": [
+            {
+              "angle": 180,
+              "target": "C"
+            }
+          ]
+        }
+      ],
+      "sticks": [
+        {
+          "id": "BombBar",
+          "shape": "straight",
+          "x": 2.2927,
+          "y": -2.2927,
+          "length": 1.6,
+          "angle": 0,
+          "color": "red",
+          "guides": [
+            {
+              "x": 2.2927,
+              "y": -2.2927,
+              "angle": 0
+            }
+          ],
+          "bomb": {
+            "x": 3.0927,
+            "y": -2.2927,
+            "radius": 0.25
+          }
+        },
+        {
+          "id": "Key",
+          "shape": "straight",
+          "x": 3.65,
+          "y": -2.7,
+          "length": 1.8,
+          "angle": 90,
+          "color": "teal",
+          "guides": [
+            {
+              "x": 3.65,
+              "y": -2.5,
+              "angle": 90
+            }
+          ]
+        }
+      ]
+    },
+    "bombs": true,
+    "inspection": {
+      "analysis": {
+        "error": null,
+        "warnings": [
+          {
+            "code": "link-idle",
+            "part": "ring_2",
+            "text": "Liên kết R2 → R4 không chạm lúc bắt đầu (chưa khóa)"
+          }
+        ],
+        "info": {
+          "rings": 4,
+          "sticks": 2,
+          "guides": 2,
+          "bombs": 1,
+          "links": 4,
+          "pins": 4,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solution": null
+    },
+    "witness": {
+      "keyDirections": [
+        {
+          "direction": -1,
+          "removed": true,
+          "from": 0,
+          "to": -0.8200805664062498,
+          "remaining": 5,
+          "links": 3
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 0,
+          "to": 0.34193115234375016,
+          "remaining": 6,
+          "links": 3
+        }
+      ],
+      "withoutKeyGuide": [
+        {
+          "direction": -1,
+          "removed": true,
+          "from": 0,
+          "to": -0.3200805664062499,
+          "remaining": 5,
+          "links": 3
+        },
+        {
+          "direction": 1,
+          "removed": true,
+          "from": 0,
+          "to": 0.2756591796875001,
+          "remaining": 5,
+          "links": 3
+        }
+      ],
+      "correct": null,
+      "wrongFirst": {
+        "solved": false,
+        "trace": [
+          {
+            "part": "BombBar",
+            "pointer": 2,
+            "pose": 0,
+            "remaining": 4,
+            "links": 3,
+            "bindings": 0,
+            "solved": [
+              "slide_bar_1",
+              "slide_bar_2"
+            ],
+            "events": [
+              {
+                "bomb": 0,
+                "target": "slide_bar_2",
+                "pose": 0
+              }
+            ]
+          }
+        ]
+      },
+      "withoutBomberGuide": {
+        "solved": false,
+        "trace": [
+          {
+            "part": "Key",
+            "pointer": -2,
+            "pose": -0.3200805664062499,
+            "remaining": 5,
+            "links": 3,
+            "bindings": 1,
+            "solved": [
+              "slide_bar_1"
+            ],
+            "events": []
+          }
+        ]
+      },
+      "withoutBomb": {
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "link-idle",
+              "part": "ring_2",
+              "text": "Liên kết R2 → R4 không chạm lúc bắt đầu (chưa khóa)"
+            }
+          ],
+          "info": {
+            "rings": 4,
+            "sticks": 2,
+            "guides": 2,
+            "bombs": 0,
+            "links": 4,
+            "pins": 4,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": null
+      },
+      "withoutBomberGuideSearch": {
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "link-idle",
+              "part": "ring_2",
+              "text": "Liên kết R2 → R4 không chạm lúc bắt đầu (chưa khóa)"
+            },
+            {
+              "code": "free",
+              "part": "slide_bar_1",
+              "text": "S1 không bị khóa từ đầu: sẽ tự tháo ở lần thả tay đầu tiên"
+            }
+          ],
+          "info": {
+            "rings": 4,
+            "sticks": 2,
+            "guides": 1,
+            "bombs": 1,
+            "links": 4,
+            "pins": 4,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": null
+      }
+    }
+  },
+  "reason": "Top gap on lower-right receiver makes cycle edge idle; key/guide and bomb have an initial contact. The source cycle and placement must be solved jointly."
+}

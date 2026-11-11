@@ -1,0 +1,109 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Vòng mang bom — chọn đúng phía phá",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Cụm trên có vòng phụ thuộc pin thường. Vòng dưới phải nhận pin từ trên và trái, mang bom ngoài vành bên phải. Quay CCW để bom phá vòng trên; quay CW nổ vào nguồn trái và mất bom, để lại cụm trên khóa. Bom nằm cạnh vòng mang nó trong cùng vùng 2 cột/3 hàng, không thanh kéo dài, ngàm, Chain hoặc Booster. Bom gameplay cần thiết; bản nghiên cứu chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 135,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R2"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 45,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 180,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R1"
+        },
+        {
+          "angle": 270,
+          "target": "R5"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gapDir": 45,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "R3"
+        },
+        {
+          "angle": 270,
+          "target": "R6"
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": 0,
+      "y": -9.1708,
+      "gapDir": 180,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R6"
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": 4.5854,
+      "y": -9.1708,
+      "gapDir": 270,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [],
+      "bomb": {
+        "x": 6.7854,
+        "y": -9.1708,
+        "radius": 0.45
+      }
+    }
+  ],
+  "sticks": []
+}

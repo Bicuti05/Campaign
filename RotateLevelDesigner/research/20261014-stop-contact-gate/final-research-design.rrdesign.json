@@ -1,0 +1,147 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SCG-05 research | Chốt mở nguồn, hold vì đường thả bom xa",
+  "author": "Codex + GD / research",
+  "notes": "Nghiên cứu, không bàn giao/campaign. Chốt0,5 trên B kín bắt bom0,3 gắn mép cung A để phá A/B; route S-4,A180,CT180,T0,AF180 hoàn thành. Bỏ chốt, kéo lặp CW13 gesture phá A/C, để cặp F→B kín còn giữ. Bản đủ chốt CCW19 gesture không nổ, A tự tháo ở448,075807°, bom tách host=-1 active tại(1,606992;1,502524). Dọn L/AF/CT/T còn B/F; Bom ngoài mọi solid reach của hai vòng, không cứu được cặp này. Đây là bằng chứng dead-end theo Designer, không chứng nhận Physics2D/Unity. Không sửa engine/tolerance hoặc sinh hàng loạt. Radius vòng1,75, thanh default,8pin/1Stop/1Bom, lockCount0. Supersedes SCG04 notes which incorrectly said the full reverse branch exploded C; old files preserved as research.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ],
+      "bomb": {
+        "x": -1.5556349186104046,
+        "y": -1.5556349186104046,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "B",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "T"
+        },
+        {
+          "angle": 180,
+          "target": "L"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 0,
+          "length": 0.5
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "x": -9.1708,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "T",
+      "x": -4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "A"
+        },
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "CT"
+        }
+      ]
+    },
+    {
+      "id": "CT",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "F",
+      "x": -4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "B"
+        },
+        {
+          "angle": 0,
+          "target": "AF"
+        }
+      ]
+    },
+    {
+      "id": "AF",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.8354,
+      "y": 0,
+      "angle": 90,
+      "color": "red"
+    }
+  ]
+}

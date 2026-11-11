@@ -1,0 +1,201 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "255",
+  "name": "A255 | Hai nguồn, một cửa đáy",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 3.5,
+      "y": 5.8,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R2"
+          ],
+          "length": 1.1
+        },
+        {
+          "id": "p2",
+          "angle": 190.7843,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.5255
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R2",
+      "x": 3.5,
+      "y": 1.2,
+      "gapDir": 140,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [],
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": -0.7,
+      "y": 5,
+      "gapDir": 130,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [],
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": -0.7,
+      "y": 0.4,
+      "gapDir": 245,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "R3"
+          ],
+          "length": 0.85
+        }
+      ],
+      "stops": [
+        {
+          "angle": 135,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R5",
+      "x": -5.4,
+      "y": 1.2,
+      "gapDir": -25,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [],
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": -5.4,
+      "y": 5.8,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R5"
+          ],
+          "length": 0.85
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R8",
+      "x": 3.5,
+      "y": -3.4,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 90,
+          "targets": [
+            "R2"
+          ],
+          "length": 1.1
+        },
+        {
+          "id": "new-Bridge",
+          "targets": [
+            "Bridge"
+          ],
+          "angle": 270,
+          "length": 1.6
+        }
+      ],
+      "radius": 1.75,
+      "color": "green",
+      "lockCount": 0
+    },
+    {
+      "id": "R9",
+      "x": -0.7,
+      "y": -4.2,
+      "gapDir": 135,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [
+        {
+          "id": "returnR8",
+          "angle": 10.7843,
+          "targets": [
+            "R8"
+          ],
+          "length": 0.7755
+        },
+        {
+          "id": "toBridge",
+          "angle": -90,
+          "length": 1.05,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "color": "blue",
+      "lockCount": 0
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Bridge",
+      "x": 0.65,
+      "y": -7,
+      "angle": 0,
+      "path": [
+        [
+          -4.1,
+          0
+        ],
+        [
+          5.1,
+          0
+        ],
+        [
+          5.1,
+          -2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "color": "orange",
+      "guides": []
+    }
+  ],
+  "author": "Codex / Designer review batch01",
+  "notes": "Combine + Challenge dự kiến. Hai nguồn kín chia sẻ receiver; then đáy nhận R8/R9 thay vì kéo một pin xuyên suốt chiều cao từ R2. Giải nhánh vòng rồi quay về nguồn. Tham chiếu A105; bố cục và vai trò được dựng lại, không tự GD-approved. Kiểm Designer, không Unity/device. Chi tiết kiểm/giới hạn nằm trong delivery manifest."
+}

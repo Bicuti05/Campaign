@@ -1,0 +1,136 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "OPB-01 | Hai trục mở cùng một nguồn",
+  "author": "Codex + GD / research",
+  "notes": "Hai thanh giữa các nhánh trượt theo trục vuông góc. B chỉ mở input sau khi cả V và H nhả pin đi ra; pin từ BB giữ B để còn lượt xoay về dưới. V/H tiếp tục giữ nguồn A/T ở các vị trí khác nhau. Mọi vòng radius1.75, thanh default length; không Guide/Stop/Bom/Chain/Booster. Đối chứng input và retention riêng với cản đường quay; chưa chứng nhận thứ tự duy nhất hoặc độ khó. Hai pin B→V/H cùng khóa input nguồn B; bỏ một chuẩn bị vẫn không beginDrag được B tại pose đã kiểm. Sau mở input, hai nguồn B/T còn có pin cản nhau nên một route xen kẽ B–T–B hoàn thành. Tuy nhiên kéo lặp sau rút sâu đã cho B hoặc T rời trước nguồn kia (3 gesture hướng ngắn hoặc19 hướng vòng), và cả các đường tránh đều hoàn thành. Không chứng nhận xen kẽ là bắt buộc.",
+  "rings": [
+    {
+      "id": "AL",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "V"
+        },
+        {
+          "angle": 270,
+          "target": "AL"
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "BB",
+      "x": 5.6708,
+      "y": -2.2927,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "teal",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "B"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 5.6708,
+      "y": 2.2927,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "V"
+        },
+        {
+          "angle": 90,
+          "target": "H"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 7.9635,
+      "y": 7.9635,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "H"
+        }
+      ]
+    },
+    {
+      "id": "TR",
+      "x": 12.5489,
+      "y": 7.9635,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "T"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "V",
+      "shape": "straight",
+      "x": 2.8354,
+      "y": 1.14635,
+      "angle": 90,
+      "color": "green"
+    },
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": 6.81715,
+      "y": 5.1281,
+      "angle": 0,
+      "color": "blue"
+    }
+  ]
+}

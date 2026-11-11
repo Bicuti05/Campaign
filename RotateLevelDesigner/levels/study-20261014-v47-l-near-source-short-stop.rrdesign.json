@@ -1,0 +1,77 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "L hai pin — chốt gọn ở nguồn gần đầu thanh",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Revision V23: C chuyển từ nguồn chéo xa sang nguồn chuẩn phía trên A, pin270 tới A; khe C0 cho nhánh L đi bên phải, chốt45 length2 ở đầu cung thật gần đầu L, thay chốt chéo6.5. B chuyển sang bên phải thanh tạiY3.8, pin180 giữ nhánh L; A pin0 giữ phần dưới. Hạ đầu L vềY5.4, arm6 để chốt ngắn cản sau khi pin dưới đã nhả; thân C không đóng vai trò cùng cản với chốt. Nâng L một đoạn nhả A, B còn giữ; quay A để C/chốt rời rồi nâng L tiếp. Không ngàm trùng hai pin; mọi ring chuẩn1.75. Không Bom/Booster/Chain, chưa GD nghiệm thu visual/khó. Cản drag đầu không tự chứng minh thứ tự chuẩn bị toàn cục. Kéo S lặp có thể đi qua chốt trước quay A trong Designer hiện tại; bỏ chốt cũng mở đường kéo dài ngay một gesture. Không nhận thứ tự chuẩn bị bắt buộc trên mọi đường chơi.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "gapDir": 270,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 5.6708,
+      "y": 3.8,
+      "gapDir": 0,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 0,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "A"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 45,
+          "length": 2
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "L",
+      "x": 2.2354,
+      "y": 5.4,
+      "length": 1.2,
+      "arm": 6,
+      "angle": 0,
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ]
+    }
+  ]
+}

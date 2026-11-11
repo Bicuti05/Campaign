@@ -1,0 +1,123 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "DCG-01 | Hai cửa cùng chọn nguồn, bom tháo thanh giữa",
+  "author": "Codex + GD / research",
+  "notes": "Nghiên cứu tổ hợp: T/R là hai vòng nhận chung pin A/B, cần mở cửa cùng một nguồn; cửa lệch mở input của không nguồn nào. A/B còn giữ thanh H thẳng đứng default, nhận C/D kín bên ngoài nên có lượt quay thật sau khi outgoing nhả. Bom tự do ở lòng R được H chạm, cần kiểm chỉ phá H và mở retention thanh; không giả nó phá R. Bố cục đối xứng, radius1,75; D/pitch pin tạo Y và góc diagonal có mục đích để H/pin thẳng đúng trục. Không Guide/Stop/Chain/Booster. Chưa đủ proof để giao, chưa khẳng định Bom bắt buộc/độ khó.",
+  "rings": [
+    {
+      "id": "A",
+      "x": -2.8354,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 141.80397264721972,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 51.80397264721974,
+          "target": "T"
+        },
+        {
+          "angle": 308.1960273527803,
+          "target": "R"
+        },
+        {
+          "angle": 0,
+          "target": "H"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 2.8354,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 38.19602735278026,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 128.19602735278028,
+          "target": "T"
+        },
+        {
+          "angle": 231.80397264721972,
+          "target": "R"
+        },
+        {
+          "angle": 180,
+          "target": "H"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 3.6036648012821613,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "R",
+      "x": 0,
+      "y": -3.6036648012821613,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": -7.4208,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 7.4208,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "B"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": 0,
+      "y": 0,
+      "angle": 90,
+      "color": "red"
+    }
+  ],
+  "bombs": [
+    {
+      "x": 0,
+      "y": -3.6036648012821613,
+      "radius": 0.5
+    }
+  ]
+}

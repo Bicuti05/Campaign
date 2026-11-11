@@ -1,0 +1,199 @@
+{
+  "format": "rotate-phase-two-cli",
+  "version": 1,
+  "scope": "Designer only",
+  "checks": [
+    {
+      "stem": "study-20261013-v5-two-l-choice",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js validate Tools/RotateLevelDesigner/levels/study-20261013-v5-two-l-choice.rrdesign.json",
+      "exitCode": 0,
+      "output": "OK   Tools/RotateLevelDesigner/levels/study-20261013-v5-two-l-choice.rrdesign.json (design) rings 4 (closed 0), pins 4, links 4, stops 0, sticks 3, guides 0, bombs 0"
+    },
+    {
+      "stem": "study-20261013-v5-two-l-choice",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js solve Tools/RotateLevelDesigner/levels/study-20261013-v5-two-l-choice.rrdesign.json --time 6 --nodes 1000 --json --no-bombs",
+      "exitCode": 0,
+      "output": {
+        "found": true,
+        "drags": 4,
+        "log": "found with 4 drags after 31 explorations",
+        "nodes": 31,
+        "seconds": 0.587,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_2",
+            "label": "S2",
+            "kind": "stick",
+            "from": 0,
+            "to": 5.4,
+            "direction": "+",
+            "removedNow": 2,
+            "remaining": 5
+          },
+          {
+            "step": 2,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.8,
+            "direction": "+",
+            "removedNow": 2,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "slide_bar_3",
+            "label": "S3",
+            "kind": "stick",
+            "from": 0,
+            "to": 1.9,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "slide_bar_3",
+            "label": "S3",
+            "kind": "stick",
+            "from": 1.9,
+            "to": 6.5,
+            "direction": "+",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      }
+    },
+    {
+      "stem": "study-20261013-v5-three-pin-junction",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js validate Tools/RotateLevelDesigner/levels/study-20261013-v5-three-pin-junction.rrdesign.json",
+      "exitCode": 0,
+      "output": "OK   Tools/RotateLevelDesigner/levels/study-20261013-v5-three-pin-junction.rrdesign.json (design) rings 4 (closed 0), pins 3, links 3, stops 0, sticks 0, guides 0, bombs 0"
+    },
+    {
+      "stem": "study-20261013-v5-three-pin-junction",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js solve Tools/RotateLevelDesigner/levels/study-20261013-v5-three-pin-junction.rrdesign.json --time 6 --nodes 1000 --json --no-bombs",
+      "exitCode": 0,
+      "output": {
+        "found": true,
+        "drags": 3,
+        "log": "found with 3 drags after 17 explorations",
+        "nodes": 17,
+        "seconds": 0.072,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 270,
+            "to": 324,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 324,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 3,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 414,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      }
+    },
+    {
+      "stem": "study-20261013-v5-bomb-breaks-pin-cycle",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js validate Tools/RotateLevelDesigner/levels/study-20261013-v5-bomb-breaks-pin-cycle.rrdesign.json",
+      "exitCode": 0,
+      "output": "OK   Tools/RotateLevelDesigner/levels/study-20261013-v5-bomb-breaks-pin-cycle.rrdesign.json (design) rings 6 (closed 0), pins 6, links 6, stops 0, sticks 1, guides 1, bombs 1"
+    },
+    {
+      "stem": "study-20261013-v5-bomb-breaks-pin-cycle",
+      "command": "node Tools/RotateLevelDesigner/rr-cli.js solve Tools/RotateLevelDesigner/levels/study-20261013-v5-bomb-breaks-pin-cycle.rrdesign.json --time 6 --nodes 1000 --json",
+      "exitCode": 0,
+      "output": {
+        "found": true,
+        "drags": 5,
+        "log": "found with 5 drags after 83 explorations",
+        "nodes": 83,
+        "seconds": 0.32,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_6",
+            "label": "R6",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 6
+          },
+          {
+            "step": 2,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 5.3,
+            "direction": "+",
+            "removedNow": 2,
+            "remaining": 4
+          },
+          {
+            "step": 3,
+            "part": "ring_5",
+            "label": "R5",
+            "kind": "ring",
+            "from": 180,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 45,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 5,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 135,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      }
+    }
+  ]
+}

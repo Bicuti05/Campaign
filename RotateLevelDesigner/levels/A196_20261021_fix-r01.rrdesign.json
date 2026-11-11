@@ -1,0 +1,311 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "196",
+  "name": "Level196 – Thanh trái trở lại cửa",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 7.2166806,
+      "y": -8.960075,
+      "gapDir": -132,
+      "gap": 60,
+      "radius": 1.75,
+      "pins": [],
+      "color": "red"
+    },
+    {
+      "id": "R2",
+      "x": 7.2166806,
+      "y": -4.376675,
+      "gapDir": -306,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -90,
+          "targets": [
+            "R1"
+          ],
+          "length": 0.8334
+        },
+        {
+          "id": "p2",
+          "angle": -180,
+          "targets": [
+            "R4"
+          ],
+          "length": 0.8333998
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R3",
+      "x": 11.799982,
+      "y": -4.376675,
+      "gapDir": -272,
+      "gap": 60,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "toBridge",
+          "angle": -360,
+          "length": 1.049999,
+          "targets": [
+            "Bridge"
+          ]
+        },
+        {
+          "id": "returnR2",
+          "angle": -180,
+          "length": 0.833301,
+          "targets": [
+            "R2"
+          ]
+        }
+      ],
+      "color": "red",
+      "bomb": {
+        "x": 13.549982,
+        "y": -4.376675
+      }
+    },
+    {
+      "id": "R4",
+      "x": 2.6332808,
+      "y": -4.376675,
+      "gapDir": -248,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "returnR5",
+          "angle": -90,
+          "targets": [
+            "R5"
+          ],
+          "length": 0.8334
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R5",
+      "x": 2.6332808,
+      "y": -8.960075,
+      "gapDir": -51,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "zS2",
+          "angle": -180,
+          "targets": [
+            "S2"
+          ],
+          "length": 3.6166322
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 11.799982,
+      "y": -8.960075,
+      "gapDir": -144,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "R3"
+          ],
+          "length": 1.0834
+        },
+        {
+          "id": "toBridge",
+          "angle": -360,
+          "length": 1.299999,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "radius": 1.5,
+      "color": "blue"
+    },
+    {
+      "id": "R7",
+      "x": 6.799946,
+      "y": 2.158125,
+      "gapDir": -269,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -52.578958,
+          "targets": [
+            "R3"
+          ],
+          "length": 4.2282422
+        },
+        {
+          "id": "p2",
+          "angle": -122.522061,
+          "targets": [
+            "R4"
+          ],
+          "length": 3.7501424
+        },
+        {
+          "id": "nBridge",
+          "angle": 0,
+          "targets": [
+            "Bridge"
+          ],
+          "length": 5.800035
+        }
+      ],
+      "radius": 2,
+      "color": "orange"
+    },
+    {
+      "id": "R12",
+      "x": 11.799982,
+      "y": -13.543375,
+      "gapDir": -38,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "R6"
+          ],
+          "length": 1.0833
+        },
+        {
+          "id": "p2",
+          "angle": 135,
+          "targets": [
+            "R1"
+          ],
+          "length": 2.7317657
+        },
+        {
+          "id": "zZ1",
+          "angle": -132.96797,
+          "targets": [
+            "Z1"
+          ],
+          "length": 3.2679105
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "Z1",
+      "x": 7.016649,
+      "y": -18.678625,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -90,
+      "pins": [
+        {
+          "id": "zZ2",
+          "angle": 146.30993,
+          "targets": [
+            "Z2"
+          ],
+          "length": 3.7111026
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Z2",
+      "x": 1.0166486,
+      "y": -14.678625,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": -89,
+      "pins": [
+        {
+          "id": "zR5",
+          "angle": 74.21442,
+          "targets": [
+            "R5"
+          ],
+          "length": 2.442669
+        },
+        {
+          "id": "zS2",
+          "angle": -180,
+          "targets": [
+            "S2"
+          ],
+          "length": 2.25
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Bridge",
+      "x": 14.84998,
+      "y": -6.668375,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -3.9917
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          -2,
+          11
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "green"
+    },
+    {
+      "id": "S2",
+      "x": -2.9833514,
+      "y": -11.678625,
+      "path": [
+        [
+          0,
+          -9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          -2,
+          10
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "angle": 0,
+      "color": "green"
+    }
+  ],
+  "author": "Codex / GD repair",
+  "notes": "Sửa khóa cứng 21/10/2026 theo yêu cầu GD. Giữ toàn bộ vòng/thanh và bố cục nguồn; add_bomb R3. Ý tưởng: mở đường bằng cửa chuyển động hiện có, Bom phá vật chặn khi cần rồi quay lại nguồn pin. Có route full-body/default-feel không Booster được lưu riêng; pack --no-solve, chưa Unity/device hoặc duyệt độ khó. Ghi chú nguồn lịch sử: R12 qua Z1/Z2 về R5; Z2/R5 cùng giữ L trái, nối các nguồn qua cửa cũ. Bỏ N1/N2, thêm hai cửa và L S2 bên trái; đổi cỡ R6/R1, đảo cánh Bridge. Quan hệ cuối thêm: R5→S2, R12→Z1, Z1→Z2, Z2→R5, Z2→S2; bỏ: R12→N2, N1→R5, N2→N1, N2→R1 Phản chiếu cứng y và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest."
+}

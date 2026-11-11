@@ -1,0 +1,179 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SBR-03 | Thanh chung, bom cắt nguồn và các cửa quay lại",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp10 vòng radius1,75 +1thanh straight default,12pin,1Bom radius0,5; không Guide/Stop/Chain/Booster. S mở riêng A/Q khi trượt±1 hoặc mở cả hai khi trượt sâu sang phải. A mang bom được B/C giữ; Q được D giữ. Q/U nhả outgoing của D, C giữ D để có lượt quay thật nhả C. T nhận B/C/E và cần đổi cửa theo nguồn còn lại. Bom A phá A/B qua pin của B trong recipe chính, thay đường dọn B/BL; có recipe khác hoàn thành không nổ bom và bom tách sau A tự tháo. Pin A→S vẫn cản với thân Q/C sau khi S rời: input mở chưa bảo đảm đường quay. Kéo lặp19 lần sau S/Q cho nổ A/C, nhánh đó vẫn hoàn thành; count chỉ mô tả, không chứng nhận khó hoặc chuẩn bị bắt buộc. Các trạng thái kéo nông tái khóa, kéo S trái bị cản và A sâu sai cửa đều có recovery đã kiểm. Prototype01 pin D ở hai phía đối diện kẹt source-motion,02 recipe CCW thiếu backtrack giữ research;03 thay notes/recipe đề xuất đủ proof, không ghi đè mẫu cũ. Visual/difficulty chờ GD, chỉ Designer analytic/default feel/full-release, chưa Unity/browser/device.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ],
+      "bomb": {
+        "x": -1.5556349186104046,
+        "y": -1.5556349186104046,
+        "radius": 0.5
+      }
+    },
+    {
+      "id": "B",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        },
+        {
+          "angle": 90,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "BL"
+        }
+      ]
+    },
+    {
+      "id": "BL",
+      "x": -4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "T",
+      "x": -4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "A"
+        },
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "Q"
+        },
+        {
+          "angle": 0,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "U",
+      "x": 9.1708,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "E",
+      "x": -4.5854,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "CT"
+        }
+      ]
+    },
+    {
+      "id": "CT",
+      "x": 0,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "red"
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "019",
+  "name": "Level 19 — Nhận lại bom và mở nguồn kín",
+  "author": "Codex / report_20Level remake",
+  "notes": "Proposal theo report_20Level L19/§10.3: giữ bố cục vòng và U bên trái, tăng hai cánh L từ1.5 lên1.9; sửa màu vòng R11 theo lớp cỡ. Kiểm riêng vai trò bom/Stop và đường tháo. Không Chain/Booster, chưa GD duyệt, không nhập ingame/campaign. Thêm pin R3→R10 ở góc59° để R10 còn khóa qua miền quay kích Bom; bỏ Bom đứng riêng và Stop trong R11 vì route chính phá R3 làm R11 tự rời, không cần hai feature này. Giữ11 vòng,5 thanh; dùng1 Bom gắn R10.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": -4.9,
+      "y": 0,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "green"
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 60,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 180,
+          "length": 1.15,
+          "targets": [
+            "R1"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": 4.9,
+      "gapDir": 90,
+      "gap": 0,
+      "radius": 2.15,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 0.75,
+          "targets": [
+            "R2"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 225,
+          "length": 2.7796,
+          "targets": [
+            "R1"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 45,
+          "length": 2.7796,
+          "targets": [
+            "R10"
+          ]
+        },
+        {
+          "id": "p4",
+          "angle": 135,
+          "length": 2.3796,
+          "targets": [
+            "R5"
+          ]
+        },
+        {
+          "id": "p5",
+          "angle": 315,
+          "length": 2.7796,
+          "targets": [
+            "R8"
+          ]
+        },
+        {
+          "id": "p6",
+          "angle": 181.1612,
+          "length": 2.9215,
+          "targets": [
+            "R11"
+          ]
+        },
+        {
+          "id": "bombGuard",
+          "angle": 59,
+          "length": 3.8217,
+          "targets": [
+            "R10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": 9.8,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "S8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": -4.9,
+      "y": 9.8,
+      "gapDir": 90,
+      "gap": 0,
+      "radius": 2.15,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 0.75,
+          "targets": [
+            "R4"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 90,
+          "targets": [
+            "S7"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 180,
+          "length": 0.74,
+          "targets": [
+            "S6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": -4.9,
+      "gapDir": 315,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 180,
+          "length": 1.15,
+          "targets": [
+            "R7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": -4.9,
+      "y": -4.9,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple"
+    },
+    {
+      "id": "R8",
+      "x": 4.9,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "teal"
+    },
+    {
+      "id": "R9",
+      "x": 4.9,
+      "y": 4.9,
+      "gapDir": 90,
+      "gap": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R8"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 90,
+          "length": 1.15,
+          "targets": [
+            "R10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "x": 4.9,
+      "y": 9.8,
+      "gapDir": 91,
+      "gap": 90,
+      "color": "teal",
+      "bomb": {
+        "x": 6.52,
+        "y": 8.95,
+        "radius": 0.565
+      }
+    },
+    {
+      "id": "R11",
+      "x": -7.4,
+      "y": 4.75,
+      "gapDir": 0,
+      "gap": 0,
+      "radius": 2.08,
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S4",
+      "x": 4.9,
+      "y": 0,
+      "angle": 0,
+      "color": "red",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1.9
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 7.55,
+          "y": 0,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "x": -8.5,
+      "y": 0,
+      "angle": 0,
+      "color": "blue",
+      "path": [
+        [
+          4.2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -4.9
+        ],
+        [
+          4.2,
+          -4.9
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.5,
+          "y": 0,
+          "angle": 0
+        },
+        {
+          "x": -7,
+          "y": -4.9,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "x": -9.04,
+      "y": 11.55,
+      "angle": 0,
+      "color": "teal",
+      "shape": "L",
+      "length": 2,
+      "arm": 4,
+      "slideAxis": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S7",
+      "x": -5.54,
+      "y": 13.06,
+      "angle": 0,
+      "color": "orange",
+      "shape": "straight",
+      "length": 4.37
+    },
+    {
+      "id": "S8",
+      "x": 0.05,
+      "y": 12.65,
+      "angle": 0,
+      "color": "orange",
+      "shape": "L",
+      "length": 4.63,
+      "arm": 1.9,
+      "slideAxis": [
+        1,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "211",
+  "name": "Level211 – Hai L nối vòng ngoài",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 12.996598,
+      "y": -12.731514,
+      "gapDir": 20,
+      "gap": 90,
+      "pins": [],
+      "radius": 1.5,
+      "color": "red"
+    },
+    {
+      "id": "R2",
+      "x": 12.017398,
+      "y": -17.294014,
+      "gapDir": 258,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 437.887,
+          "targets": [
+            "R1"
+          ],
+          "length": 1.1663946
+        }
+      ],
+      "stops": [
+        {
+          "angle": 380,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.75,
+      "color": "green"
+    },
+    {
+      "id": "R3",
+      "x": 7.504398,
+      "y": -17.917714,
+      "gapDir": 128,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 367.86848,
+          "targets": [
+            "R2"
+          ],
+          "length": 0.8058941
+        },
+        {
+          "id": "zS1",
+          "angle": 270,
+          "targets": [
+            "S1"
+          ],
+          "length": 3.21405
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 15.853998,
+      "y": -10.177914,
+      "gapDir": -14,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "revisedToR7",
+          "angle": 171.98021,
+          "length": 2.2142305,
+          "targets": [
+            "R7"
+          ]
+        },
+        {
+          "id": "zU1",
+          "angle": 130.12572,
+          "targets": [
+            "U1"
+          ],
+          "length": 5.1424036
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R7",
+      "x": 9.948098,
+      "y": -9.345814,
+      "gapDir": 64,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "returnR1",
+          "angle": 312.00002,
+          "targets": [
+            "R1"
+          ],
+          "length": 1.0559103
+        },
+        {
+          "id": "newR8",
+          "angle": 254.37229,
+          "targets": [
+            "R8"
+          ],
+          "length": 1.0559219
+        }
+      ],
+      "color": "green",
+      "bomb": {
+        "x": 8.432553,
+        "y": -8.470814
+      }
+    },
+    {
+      "id": "R8",
+      "x": 8.720798,
+      "y": -13.733314,
+      "gapDir": 254,
+      "gap": 90,
+      "pins": [],
+      "radius": 1.5,
+      "color": "blue"
+    },
+    {
+      "id": "R9",
+      "x": 5.312898,
+      "y": -15.838514,
+      "gapDir": 0,
+      "gap": 90,
+      "stops": [
+        {
+          "angle": 505,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.5,
+      "pins": [],
+      "color": "red"
+    },
+    {
+      "id": "R10",
+      "x": -0.967332,
+      "y": -18.253496,
+      "gapDir": 360,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 381.0336,
+          "targets": [
+            "R9"
+          ],
+          "length": 3.478553
+        },
+        {
+          "id": "zR3",
+          "angle": 362.26976,
+          "targets": [
+            "R3"
+          ],
+          "length": 4.9783818
+        },
+        {
+          "id": "zS1",
+          "angle": 270,
+          "targets": [
+            "S1"
+          ],
+          "length": 3.128268
+        }
+      ],
+      "radius": 1.5,
+      "color": "blue"
+    },
+    {
+      "id": "R11",
+      "x": 4.723498,
+      "y": -11.547414,
+      "gapDir": 211,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 331.32822,
+          "targets": [
+            "R8"
+          ],
+          "length": 1.30593746
+        },
+        {
+          "id": "revisedToR7",
+          "angle": 382.85013,
+          "length": 2.1695228,
+          "targets": [
+            "R7"
+          ]
+        },
+        {
+          "id": "zU2",
+          "angle": 93.07684,
+          "targets": [
+            "U2"
+          ],
+          "length": 7.935042
+        }
+      ],
+      "radius": 1.5,
+      "color": "teal"
+    },
+    {
+      "id": "U1",
+      "x": 10.123138,
+      "y": -3.378496,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 244,
+      "pins": [
+        {
+          "id": "zU2",
+          "angle": 153.43495,
+          "targets": [
+            "U2"
+          ],
+          "length": 3.208204
+        },
+        {
+          "id": "zS2",
+          "angle": 90,
+          "targets": [
+            "S2"
+          ],
+          "length": 5
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "U2",
+      "x": 4.123138,
+      "y": -0.378496,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": 181,
+      "pins": [
+        {
+          "id": "zS2",
+          "angle": 90,
+          "targets": [
+            "S2"
+          ],
+          "length": 2.25
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 2.152538,
+      "y": -23.131764,
+      "path": [
+        [
+          -5,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          -2
+        ]
+      ],
+      "slideAxis": [
+        -1,
+        0
+      ],
+      "angle": 0,
+      "color": "orange"
+    },
+    {
+      "id": "S2",
+      "x": 6.123138,
+      "y": 3.621504,
+      "path": [
+        [
+          -7,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "slideAxis": [
+        -1,
+        0
+      ],
+      "angle": 0,
+      "color": "orange"
+    }
+  ],
+  "author": "Codex / GD repair",
+  "notes": "Sửa khóa cứng 21/10/2026 theo yêu cầu GD. Giữ toàn bộ vòng/thanh và bố cục nguồn; add_bomb R7. Ý tưởng: mở đường bằng cửa chuyển động hiện có, Bom phá vật chặn khi cần rồi quay lại nguồn pin. Có route full-body/default-feel không Booster được lưu riêng; pack --no-solve, chưa Unity/device hoặc duyệt độ khó. Ghi chú nguồn lịch sử: R6/R11 qua U1/U2 dùng chung L trái; nguồn R10/R3 giữ L phải. Thay Z1 bằng hai cửa lệch và S2; đổi R1/R10, rút S1. Giữ R1 cỡ1.5 để không tăng OVL; thu R8 thay thế. Quan hệ cuối thêm: R6→U1, R11→U2, U1→U2, U1→S2, U2→S2; bỏ: R6→Z1, R11→Z1, Z1→R7 Phản chiếu cứng x và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest. Xoay90° sau visualQA để bố cục dọc."
+}

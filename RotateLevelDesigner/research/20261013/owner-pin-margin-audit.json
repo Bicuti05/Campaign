@@ -1,0 +1,169 @@
+{
+  "format": "rotate-owner-pin-margin-audit",
+  "version": 1,
+  "scope": "Authored local pin angle versus owner logic/mesh gap, independent of screenshots or target pin release",
+  "assets": 384,
+  "counts": {
+    "allPins": 5760,
+    "closedLogicOwners": 1444,
+    "openLogicOwners": 4316,
+    "innerMountPins": 104
+  },
+  "openLogicBins": {
+    "insideLogicGap": 0,
+    "zeroTo15": 64,
+    "from15To30": 215,
+    "from30To45": 277,
+    "from45To90": 2020,
+    "atLeast90": 1740
+  },
+  "openMeshBins": {
+    "insideMeshGap": 0,
+    "zeroTo15": 4,
+    "from15To30": 173,
+    "from30To45": 252,
+    "from45To90": 1985,
+    "atLeast90": 1902
+  },
+  "nearGapExamples": [
+    {
+      "asset": "10007",
+      "owner": "ring_2",
+      "radius": 1.75,
+      "angle": 65,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 20,
+      "meshMargin": 28.185111999999997,
+      "innerMount": false
+    },
+    {
+      "asset": "10012",
+      "owner": "ring_1",
+      "radius": 1.75,
+      "angle": 290,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 25,
+      "meshMargin": 33.185112,
+      "innerMount": false
+    },
+    {
+      "asset": "10012",
+      "owner": "ring_1",
+      "radius": 1.75,
+      "angle": 65,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 20,
+      "meshMargin": 28.185111999999997,
+      "innerMount": false
+    },
+    {
+      "asset": "10015",
+      "owner": "ring_7",
+      "radius": 1.75,
+      "angle": 290.7311,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 24.26890000000003,
+      "meshMargin": 32.45401200000003,
+      "innerMount": false
+    },
+    {
+      "asset": "10021",
+      "owner": "ring_2",
+      "radius": 1.75,
+      "angle": 70.76538,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 25.76538000000005,
+      "meshMargin": 33.95049200000005,
+      "innerMount": false
+    },
+    {
+      "asset": "10021",
+      "owner": "ring_3",
+      "radius": 1.75,
+      "angle": 289.23462,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 25.76538000000005,
+      "meshMargin": 33.95049200000005,
+      "innerMount": false
+    },
+    {
+      "asset": "10024",
+      "owner": "ring_5",
+      "radius": 1.75,
+      "angle": 72.50659,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 27.50658999999996,
+      "meshMargin": 35.69170199999996,
+      "innerMount": false
+    },
+    {
+      "asset": "10034",
+      "owner": "ring_6",
+      "radius": 1.75,
+      "angle": 70,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 25,
+      "meshMargin": 33.185112,
+      "innerMount": false
+    },
+    {
+      "asset": "10035",
+      "owner": "ring_11",
+      "radius": 1.75,
+      "angle": 71.34161,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 26.341609999999946,
+      "meshMargin": 34.52672199999994,
+      "innerMount": false
+    },
+    {
+      "asset": "10043",
+      "owner": "ring_8",
+      "radius": 1.75,
+      "angle": 295,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 20,
+      "meshMargin": 28.185111999999997,
+      "innerMount": false
+    },
+    {
+      "asset": "10046",
+      "owner": "ring_12",
+      "radius": 1.75,
+      "angle": 70,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 25,
+      "meshMargin": 33.185112,
+      "innerMount": false
+    },
+    {
+      "asset": "10046",
+      "owner": "ring_12",
+      "radius": 1.75,
+      "angle": 289.8401,
+      "logicGap": 90,
+      "meshGap": 73.629776,
+      "logicMargin": 25.159899999999993,
+      "meshMargin": 33.34501199999999,
+      "innerMount": false
+    }
+  ],
+  "limits": [
+    "Angle margin is angular distance from gap centre minus half gap, not physical Euclidean pin/band clearance.",
+    "PartData.GapAngleDeg is the logical gap; ring.gapAngle is serialized mesh geometry. They can differ. Closed logic owners have no logical gap edge and are counted separately.",
+    "Pin angleDeg and ring.gapDirection are in owner-local coordinates, so world rotation cancels. No pin ownership inferred from pixels or target positions.",
+    "Counts are authored asset occurrences, not deduplicated campaign layouts or active runtime locks.",
+    "This audit does not choose an aesthetic threshold or override GD's review; new research pin margin >=45 is a design guard, not a discovered law of the original game."
+  ]
+}

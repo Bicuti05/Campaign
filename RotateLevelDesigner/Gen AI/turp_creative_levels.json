@@ -1,0 +1,4810 @@
+{
+ "game": "TURP",
+ "version": 1,
+ "conventions": {
+  "units": "px on 600x600 canvas",
+  "angles": "degrees, 0=right, 90=down (screen/SVG coords, clockwise)",
+  "ring.gapAngle": "centre direction of the opening",
+  "ring.gapSize": "opening width in degrees",
+  "stick.points": "polyline vertices",
+  "stick.guide": "rail/clamp position; stick slides along slideAxis",
+  "links": "rigid tab joining two rings (p1 on 'from', p2 on 'to')",
+  "bombs": "bomb attached to a ring by an arm; moves with that ring"
+ },
+ "levels": [
+  {
+   "id": 1,
+   "name_vi": "Ốc sên",
+   "name_en": "Snail",
+   "idea": "Vỏ ốc là 3 vòng lồng xoắn ốc, thân và 2 râu là thanh.",
+   "bomb_note": "",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 320,
+     "cy": 300,
+     "r": 110,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 45,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 340,
+     "cy": 310,
+     "r": 62,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 200,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 352,
+     "cy": 316,
+     "r": 26,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 10,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       120,
+       440
+      ],
+      [
+       490,
+       440
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 305.0,
+      "y": 440.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       150,
+       425
+      ],
+      [
+       120,
+       320
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 135.0,
+      "y": 372.5,
+      "angle": -105.9
+     },
+     "slideAxis": -105.9
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       175,
+       425
+      ],
+      [
+       215,
+       320
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 195.0,
+      "y": 372.5,
+      "angle": -69.1
+     },
+     "slideAxis": -69.1
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 225,
+     "p1": [
+      246.5,
+      226.5
+     ],
+     "p2": [
+      291.9,
+      261.9
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 30,
+     "p1": [
+      388.5,
+      338.0
+     ],
+     "p2": [
+      379.7,
+      332.0
+     ]
+    }
+   ],
+   "bombs": [],
+   "objectCount": 6,
+   "difficulty": "easy"
+  },
+  {
+   "id": 2,
+   "name_vi": "Con cá",
+   "name_en": "Fish",
+   "idea": "Thân cá là vòng lớn hở ở miệng, đuôi và vây là thanh, bong bóng là vòng nhỏ.",
+   "bomb_note": "Con cá 'nuốt' quả bom: bom gắn trong bụng R1, xoay R1 kéo bom đi theo.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 270,
+     "cy": 300,
+     "r": 120,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 180,
+     "gapSize": 45,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 205,
+     "cy": 265,
+     "r": 24,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 150,
+     "cy": 165,
+     "r": 26,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 115,
+     "cy": 95,
+     "r": 18,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 70,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       400,
+       300
+      ],
+      [
+       510,
+       210
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 455.0,
+      "y": 255.0,
+      "angle": -39.3
+     },
+     "slideAxis": -39.3
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       400,
+       300
+      ],
+      [
+       510,
+       390
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 455.0,
+      "y": 345.0,
+      "angle": 39.3
+     },
+     "slideAxis": 39.3
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       515,
+       215
+      ],
+      [
+       515,
+       385
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 515.0,
+      "y": 300.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       230,
+       175
+      ],
+      [
+       300,
+       110
+      ],
+      [
+       330,
+       185
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 265.0,
+      "y": 142.5,
+      "angle": -42.9
+     },
+     "slideAxis": -42.9
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 215,
+     "p1": [
+      176.6,
+      234.6
+     ],
+     "p2": [
+      180.4,
+      247.8
+     ]
+    },
+    {
+     "from": "R3",
+     "to": "R4",
+     "angle": -116.6,
+     "p1": [
+      135.7,
+      136.4
+     ],
+     "p2": [
+      125.7,
+      116.5
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R1",
+     "angle": 90,
+     "armLength": 40,
+     "armStart": [
+      270.0,
+      414.0
+     ],
+     "cx": 270.0,
+     "cy": 374.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 9,
+   "difficulty": "easy"
+  },
+  {
+   "id": 3,
+   "name_vi": "Người tuyết",
+   "name_en": "Snowman",
+   "idea": "Hai vòng chồng nhau làm thân và đầu, mũ và tay là thanh.",
+   "bomb_note": "Bom là 'cúc áo' giữa bụng, gắn trên R1.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 420,
+     "r": 105,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 90,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 240,
+     "r": 68,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 270,
+     "gapSize": 40,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       235,
+       168
+      ],
+      [
+       365,
+       168
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 300.0,
+      "y": 168.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       262,
+       160
+      ],
+      [
+       262,
+       110
+      ],
+      [
+       338,
+       110
+      ],
+      [
+       338,
+       160
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 300.0,
+      "y": 110.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       205,
+       370
+      ],
+      [
+       110,
+       290
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 157.5,
+      "y": 330.0,
+      "angle": -139.9
+     },
+     "slideAxis": -139.9
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       395,
+       370
+      ],
+      [
+       490,
+       290
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 442.5,
+      "y": 330.0,
+      "angle": -40.1
+     },
+     "slideAxis": -40.1
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       285,
+       240
+      ],
+      [
+       325,
+       250
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 305.0,
+      "y": 245.0,
+      "angle": 14.0
+     },
+     "slideAxis": 14.0
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": -90.0,
+     "p1": [
+      300.0,
+      309.0
+     ],
+     "p2": [
+      300.0,
+      314.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R1",
+     "angle": 270,
+     "armLength": 45,
+     "armStart": [
+      300.0,
+      321.0
+     ],
+     "cx": 300.0,
+     "cy": 366.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 8,
+   "difficulty": "easy"
+  },
+  {
+   "id": 4,
+   "name_vi": "Bông hoa",
+   "name_en": "Flower",
+   "idea": "Nhuỵ là vòng giữa, 6 cánh hoa là vòng nối vào nhuỵ, cuống và lá là thanh.",
+   "bomb_note": "Bom là nhuỵ hoa: mọi cánh đều nối vào vòng chứa bom.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 210,
+     "r": 40,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 386,
+     "cy": 210,
+     "r": 38,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 0,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 343,
+     "cy": 284,
+     "r": 38,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 60,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 257,
+     "cy": 284,
+     "r": 38,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 120,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 214,
+     "cy": 210,
+     "r": 38,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 180,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R6",
+     "label": "6",
+     "cx": 257,
+     "cy": 136,
+     "r": 38,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 240,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R7",
+     "label": "7",
+     "cx": 343,
+     "cy": 136,
+     "r": 38,
+     "thickness": 12,
+     "color": "green",
+     "gapAngle": 300,
+     "gapSize": 70,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       300,
+       345
+      ],
+      [
+       300,
+       570
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 300.0,
+      "y": 457.5,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       300,
+       480
+      ],
+      [
+       215,
+       420
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 257.5,
+      "y": 450.0,
+      "angle": -144.8
+     },
+     "slideAxis": -144.8
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       300,
+       430
+      ],
+      [
+       385,
+       370
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 342.5,
+      "y": 400.0,
+      "angle": -35.2
+     },
+     "slideAxis": -35.2
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 0.0,
+     "p1": [
+      346.0,
+      210.0
+     ],
+     "p2": [
+      342.0,
+      210.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R3",
+     "angle": 59.8,
+     "p1": [
+      323.1,
+      249.8
+     ],
+     "p2": [
+      320.9,
+      246.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R4",
+     "angle": 120.2,
+     "p1": [
+      276.9,
+      249.8
+     ],
+     "p2": [
+      279.1,
+      246.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R5",
+     "angle": 180.0,
+     "p1": [
+      254.0,
+      210.0
+     ],
+     "p2": [
+      258.0,
+      210.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R6",
+     "angle": -120.2,
+     "p1": [
+      276.9,
+      170.2
+     ],
+     "p2": [
+      279.1,
+      174.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R7",
+     "angle": -59.8,
+     "p1": [
+      323.1,
+      170.2
+     ],
+     "p2": [
+      320.9,
+      174.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R1",
+     "angle": 270,
+     "armLength": 14,
+     "armStart": [
+      300.0,
+      176.0
+     ],
+     "cx": 300.0,
+     "cy": 190.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 11,
+   "difficulty": "medium"
+  },
+  {
+   "id": 5,
+   "name_vi": "Con rùa",
+   "name_en": "Turtle",
+   "idea": "Mai rùa là vòng lớn chứa 5 vòng hoa văn, đầu là vòng ngoài, chân và đuôi là thanh.",
+   "bomb_note": "Bom nằm ở vảy giữa mai (R2); xoay R2 sai hướng sẽ đưa bom chạm các vảy xung quanh.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 290,
+     "cy": 300,
+     "r": 130,
+     "thickness": 12,
+     "color": "dkgreen",
+     "gapAngle": 270,
+     "gapSize": 30,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 290,
+     "cy": 300,
+     "r": 38,
+     "thickness": 12,
+     "color": "green",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 348,
+     "cy": 358,
+     "r": 30,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 45,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 232,
+     "cy": 358,
+     "r": 30,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 135,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 232,
+     "cy": 242,
+     "r": 30,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 225,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R6",
+     "label": "6",
+     "cx": 348,
+     "cy": 242,
+     "r": 30,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 315,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R7",
+     "label": "7",
+     "cx": 470,
+     "cy": 250,
+     "r": 38,
+     "thickness": 12,
+     "color": "green",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       190,
+       410
+      ],
+      [
+       140,
+       480
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 165.0,
+      "y": 445.0,
+      "angle": 125.5
+     },
+     "slideAxis": 125.5
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       390,
+       410
+      ],
+      [
+       440,
+       480
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 415.0,
+      "y": 445.0,
+      "angle": 54.5
+     },
+     "slideAxis": 54.5
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       190,
+       190
+      ],
+      [
+       140,
+       125
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 165.0,
+      "y": 157.5,
+      "angle": -127.6
+     },
+     "slideAxis": -127.6
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       390,
+       190
+      ],
+      [
+       440,
+       125
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 415.0,
+      "y": 157.5,
+      "angle": -52.4
+     },
+     "slideAxis": -52.4
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       155,
+       305
+      ],
+      [
+       85,
+       330
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 120.0,
+      "y": 317.5,
+      "angle": 160.3
+     },
+     "slideAxis": 160.3
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R7",
+     "angle": -15.5,
+     "p1": [
+      421.0,
+      263.6
+     ],
+     "p2": [
+      427.6,
+      261.8
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 45.0,
+     "p1": [
+      321.1,
+      331.1
+     ],
+     "p2": [
+      322.5,
+      332.5
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R5",
+     "angle": -135.0,
+     "p1": [
+      258.9,
+      268.9
+     ],
+     "p2": [
+      257.5,
+      267.5
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R2",
+     "angle": 90,
+     "armLength": 10,
+     "armStart": [
+      290.0,
+      332.0
+     ],
+     "cx": 290.0,
+     "cy": 322.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 13,
+   "difficulty": "medium"
+  },
+  {
+   "id": 6,
+   "name_vi": "Tên lửa",
+   "name_en": "Rocket",
+   "idea": "Thân tên lửa ghép từ thanh, cửa sổ là vòng, ngọn lửa đuôi là vòng chứa bom.",
+   "bomb_note": "Bom là nhiên liệu ở buồng đốt R3.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 230,
+     "r": 30,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 320,
+     "r": 30,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 90,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 300,
+     "cy": 500,
+     "r": 38,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 90,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 110,
+     "cy": 140,
+     "r": 22,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 490,
+     "cy": 200,
+     "r": 26,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 180,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       250,
+       450
+      ],
+      [
+       250,
+       220
+      ],
+      [
+       298,
+       115
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 250.0,
+      "y": 335.0,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       350,
+       450
+      ],
+      [
+       350,
+       220
+      ],
+      [
+       302,
+       115
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 350.0,
+      "y": 335.0,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       250,
+       380
+      ],
+      [
+       185,
+       470
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 217.5,
+      "y": 425.0,
+      "angle": 125.8
+     },
+     "slideAxis": 125.8
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       350,
+       380
+      ],
+      [
+       415,
+       470
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 382.5,
+      "y": 425.0,
+      "angle": 54.2
+     },
+     "slideAxis": 54.2
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       250,
+       452
+      ],
+      [
+       350,
+       452
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 300.0,
+      "y": 452.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 90.0,
+     "p1": [
+      300.0,
+      266.0
+     ],
+     "p2": [
+      300.0,
+      284.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R3",
+     "angle": 90,
+     "armLength": 18,
+     "armStart": [
+      300.0,
+      532.0
+     ],
+     "cx": 300.0,
+     "cy": 514.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 11,
+   "difficulty": "medium"
+  },
+  {
+   "id": 7,
+   "name_vi": "Xe đạp",
+   "name_en": "Bicycle",
+   "idea": "Hai bánh xe là vòng lớn, khung xe, yên và ghi-đông là thanh, giò đĩa là vòng nhỏ.",
+   "bomb_note": "Bom kẹt trên nan bánh trước (R2).",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 165,
+     "cy": 390,
+     "r": 85,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 0,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 435,
+     "cy": 390,
+     "r": 85,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 180,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 290,
+     "cy": 390,
+     "r": 24,
+     "thickness": 12,
+     "color": "green",
+     "gapAngle": 270,
+     "gapSize": 70,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       165,
+       390
+      ],
+      [
+       250,
+       255
+      ],
+      [
+       400,
+       255
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 325.0,
+      "y": 255.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       250,
+       255
+      ],
+      [
+       285,
+       370
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 267.5,
+      "y": 312.5,
+      "angle": 73.1
+     },
+     "slideAxis": 73.1
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       305,
+       375
+      ],
+      [
+       400,
+       255
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 352.5,
+      "y": 315.0,
+      "angle": -51.6
+     },
+     "slideAxis": -51.6
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       400,
+       255
+      ],
+      [
+       432,
+       385
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 416.0,
+      "y": 320.0,
+      "angle": 76.2
+     },
+     "slideAxis": 76.2
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       215,
+       228
+      ],
+      [
+       285,
+       228
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 250.0,
+      "y": 228.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S6",
+     "points": [
+      [
+       375,
+       205
+      ],
+      [
+       415,
+       212
+      ],
+      [
+       405,
+       250
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 395.0,
+      "y": 208.5,
+      "angle": 9.9
+     },
+     "slideAxis": 9.9
+    }
+   ],
+   "links": [],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R2",
+     "angle": 315,
+     "armLength": 30,
+     "armStart": [
+      490.9,
+      334.1
+     ],
+     "cx": 469.6,
+     "cy": 355.4,
+     "r": 13
+    }
+   ],
+   "objectCount": 10,
+   "difficulty": "medium"
+  },
+  {
+   "id": 8,
+   "name_vi": "Cú mèo",
+   "name_en": "Owl",
+   "idea": "Thân cú là vòng lớn, mắt là 2 vòng to có đồng tử, tai và cành cây là thanh, cánh là vòng hở.",
+   "bomb_note": "Bom treo ở cánh trái (R6) - không phải mắt như level mèo/bò.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 320,
+     "r": 150,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 90,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 240,
+     "cy": 275,
+     "r": 45,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 360,
+     "cy": 275,
+     "r": 45,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 180,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 240,
+     "cy": 275,
+     "r": 18,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 90,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 360,
+     "cy": 275,
+     "r": 18,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 90,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R6",
+     "label": "6",
+     "cx": 118,
+     "cy": 360,
+     "r": 36,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 180,
+     "gapSize": 80,
+     "rotatable": true
+    },
+    {
+     "id": "R7",
+     "label": "7",
+     "cx": 482,
+     "cy": 360,
+     "r": 36,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 0,
+     "gapSize": 80,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       283,
+       330
+      ],
+      [
+       300,
+       365
+      ],
+      [
+       317,
+       330
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 291.5,
+      "y": 347.5,
+      "angle": 64.1
+     },
+     "slideAxis": 64.1
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       225,
+       165
+      ],
+      [
+       185,
+       85
+      ],
+      [
+       262,
+       150
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 205.0,
+      "y": 125.0,
+      "angle": -116.6
+     },
+     "slideAxis": -116.6
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       375,
+       165
+      ],
+      [
+       415,
+       85
+      ],
+      [
+       338,
+       150
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 395.0,
+      "y": 125.0,
+      "angle": -63.4
+     },
+     "slideAxis": -63.4
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       110,
+       520
+      ],
+      [
+       490,
+       520
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 300.0,
+      "y": 520.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    }
+   ],
+   "links": [
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 0.0,
+     "p1": [
+      291.0,
+      275.0
+     ],
+     "p2": [
+      309.0,
+      275.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R6",
+     "angle": 167.6,
+     "p1": [
+      147.6,
+      353.5
+     ],
+     "p2": [
+      159.0,
+      351.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R7",
+     "angle": 12.4,
+     "p1": [
+      452.4,
+      353.5
+     ],
+     "p2": [
+      441.0,
+      351.0
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R4",
+     "angle": 180,
+     "p1": [
+      201.0,
+      275.0
+     ],
+     "p2": [
+      216.0,
+      275.0
+     ]
+    },
+    {
+     "from": "R3",
+     "to": "R5",
+     "angle": 0,
+     "p1": [
+      399.0,
+      275.0
+     ],
+     "p2": [
+      384.0,
+      275.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R6",
+     "angle": 180,
+     "armLength": 22,
+     "armStart": [
+      88.0,
+      360.0
+     ],
+     "cx": 110.0,
+     "cy": 360.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 12,
+   "difficulty": "medium"
+  },
+  {
+   "id": 9,
+   "name_vi": "Con ong",
+   "name_en": "Bee",
+   "idea": "Đầu - ngực - bụng là 3 vòng nối nhau, cánh là 2 vòng, sọc và ngòi là thanh.",
+   "bomb_note": "Bom trong bụng ong (R3) = nọc độc.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 170,
+     "cy": 300,
+     "r": 45,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 180,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 282,
+     "cy": 300,
+     "r": 55,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 90,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 415,
+     "cy": 300,
+     "r": 72,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 0,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 255,
+     "cy": 190,
+     "r": 50,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 345,
+     "cy": 175,
+     "r": 45,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 70,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       395,
+       240
+      ],
+      [
+       395,
+       360
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 395.0,
+      "y": 300.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       440,
+       240
+      ],
+      [
+       440,
+       360
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 440.0,
+      "y": 300.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       495,
+       300
+      ],
+      [
+       555,
+       300
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 525.0,
+      "y": 300.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       150,
+       262
+      ],
+      [
+       110,
+       170
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 130.0,
+      "y": 216.0,
+      "angle": -113.5
+     },
+     "slideAxis": -113.5
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       180,
+       256
+      ],
+      [
+       205,
+       170
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 192.5,
+      "y": 213.0,
+      "angle": -73.8
+     },
+     "slideAxis": -73.8
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 0.0,
+     "p1": [
+      221.0,
+      300.0
+     ],
+     "p2": [
+      221.0,
+      300.0
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 0.0,
+     "p1": [
+      343.0,
+      300.0
+     ],
+     "p2": [
+      337.0,
+      300.0
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R4",
+     "angle": -103.8,
+     "p1": [
+      267.5,
+      240.8
+     ],
+     "p2": [
+      268.3,
+      244.4
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R5",
+     "angle": -63.3,
+     "p1": [
+      309.5,
+      245.5
+     ],
+     "p2": [
+      322.0,
+      220.5
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R3",
+     "angle": 0,
+     "armLength": 25,
+     "armStart": [
+      481.0,
+      300.0
+     ],
+     "cx": 456.0,
+     "cy": 300.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 11,
+   "difficulty": "medium"
+  },
+  {
+   "id": 10,
+   "name_vi": "Bọ rùa",
+   "name_en": "Ladybug",
+   "idea": "Thân là vòng đỏ lớn, đầu là vòng nhỏ, đốm lưng là 4 vòng, chân và râu là thanh.",
+   "bomb_note": "2 trong 4 'đốm' là bom ngụy trang (R5, R6) - người chơi phải phân biệt.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 325,
+     "r": 140,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 270,
+     "gapSize": 24,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 135,
+     "r": 40,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 232,
+     "cy": 262,
+     "r": 28,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 0,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 368,
+     "cy": 262,
+     "r": 28,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 180,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 225,
+     "cy": 385,
+     "r": 28,
+     "thickness": 12,
+     "color": "dkgreen",
+     "gapAngle": 0,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R6",
+     "label": "6",
+     "cx": 375,
+     "cy": 385,
+     "r": 28,
+     "thickness": 12,
+     "color": "dkgreen",
+     "gapAngle": 180,
+     "gapSize": 70,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       300,
+       190
+      ],
+      [
+       300,
+       460
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 300.0,
+      "y": 325.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       170,
+       250
+      ],
+      [
+       100,
+       215
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 135.0,
+      "y": 232.5,
+      "angle": -153.4
+     },
+     "slideAxis": -153.4
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       430,
+       250
+      ],
+      [
+       500,
+       215
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 465.0,
+      "y": 232.5,
+      "angle": -26.6
+     },
+     "slideAxis": -26.6
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       170,
+       330
+      ],
+      [
+       100,
+       330
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 135.0,
+      "y": 330.0,
+      "angle": 180.0
+     },
+     "slideAxis": 180.0
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       430,
+       330
+      ],
+      [
+       500,
+       330
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 465.0,
+      "y": 330.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S6",
+     "points": [
+      [
+       170,
+       410
+      ],
+      [
+       100,
+       450
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 135.0,
+      "y": 430.0,
+      "angle": 150.3
+     },
+     "slideAxis": 150.3
+    },
+    {
+     "id": "S7",
+     "points": [
+      [
+       430,
+       410
+      ],
+      [
+       500,
+       450
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 465.0,
+      "y": 430.0,
+      "angle": 29.7
+     },
+     "slideAxis": 29.7
+    },
+    {
+     "id": "S8",
+     "points": [
+      [
+       285,
+       100
+      ],
+      [
+       250,
+       45
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 267.5,
+      "y": 72.5,
+      "angle": -122.5
+     },
+     "slideAxis": -122.5
+    },
+    {
+     "id": "S9",
+     "points": [
+      [
+       315,
+       100
+      ],
+      [
+       350,
+       45
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 332.5,
+      "y": 72.5,
+      "angle": -57.5
+     },
+     "slideAxis": -57.5
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": -90.0,
+     "p1": [
+      300.0,
+      179.0
+     ],
+     "p2": [
+      300.0,
+      181.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R5",
+     "angle": 0,
+     "armLength": 22,
+     "armStart": [
+      247.0,
+      385.0
+     ],
+     "cx": 225.0,
+     "cy": 385.0,
+     "r": 13
+    },
+    {
+     "id": "B2",
+     "attachedTo": "R6",
+     "angle": 180,
+     "armLength": 22,
+     "armStart": [
+      353.0,
+      385.0
+     ],
+     "cx": 375.0,
+     "cy": 385.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 17,
+   "difficulty": "hard"
+  },
+  {
+   "id": 11,
+   "name_vi": "Đèn lồng Trung thu",
+   "name_en": "Mid-Autumn lantern",
+   "idea": "3 vòng đồng tâm làm thân đèn, móc treo, nắp và tua rua là thanh.",
+   "bomb_note": "Bom là ngọn nến ở lõi R3; phải xoay 3 vòng đồng tâm để lộ lối ra.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 290,
+     "r": 140,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 0,
+     "gapSize": 30,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 290,
+     "r": 92,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 180,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 300,
+     "cy": 290,
+     "r": 46,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 90,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       300,
+       40
+      ],
+      [
+       300,
+       135
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 300.0,
+      "y": 87.5,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       235,
+       145
+      ],
+      [
+       365,
+       145
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 300.0,
+      "y": 145.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       235,
+       438
+      ],
+      [
+       365,
+       438
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 300.0,
+      "y": 438.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       275,
+       450
+      ],
+      [
+       275,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 275.0,
+      "y": 500.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       300,
+       450
+      ],
+      [
+       300,
+       565
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 300.0,
+      "y": 507.5,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S6",
+     "points": [
+      [
+       325,
+       450
+      ],
+      [
+       325,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 325.0,
+      "y": 500.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 0,
+     "p1": [
+      434.0,
+      290.0
+     ],
+     "p2": [
+      398.0,
+      290.0
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 180,
+     "p1": [
+      214.0,
+      290.0
+     ],
+     "p2": [
+      248.0,
+      290.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R3",
+     "angle": 270,
+     "armLength": 22,
+     "armStart": [
+      300.0,
+      250.0
+     ],
+     "cx": 300.0,
+     "cy": 272.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 10,
+   "difficulty": "medium"
+  },
+  {
+   "id": 12,
+   "name_vi": "Đoàn tàu hơi nước",
+   "name_en": "Steam train",
+   "idea": "Đầu máy và 2 toa ghép từ thanh, 6 bánh xe và khói là vòng, đường ray là thanh dài.",
+   "bomb_note": "Toa cuối chở bom (R13) - phải tháo toa này cẩn thận.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 90,
+     "cy": 430,
+     "r": 33,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 270,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 180,
+     "cy": 430,
+     "r": 33,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 270,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 290,
+     "cy": 430,
+     "r": 28,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 270,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 365,
+     "cy": 430,
+     "r": 28,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 270,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 460,
+     "cy": 430,
+     "r": 28,
+     "thickness": 12,
+     "color": "green",
+     "gapAngle": 270,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R6",
+     "label": "6",
+     "cx": 535,
+     "cy": 430,
+     "r": 28,
+     "thickness": 12,
+     "color": "green",
+     "gapAngle": 270,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R7",
+     "label": "7",
+     "cx": 205,
+     "cy": 200,
+     "r": 22,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R8",
+     "label": "8",
+     "cx": 240,
+     "cy": 148,
+     "r": 28,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R9",
+     "label": "9",
+     "cx": 290,
+     "cy": 90,
+     "r": 34,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R10",
+     "label": "10",
+     "cx": 100,
+     "cy": 300,
+     "r": 22,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 90,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R11",
+     "label": "11",
+     "cx": 300,
+     "cy": 285,
+     "r": 30,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R12",
+     "label": "12",
+     "cx": 360,
+     "cy": 285,
+     "r": 30,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R13",
+     "label": "13",
+     "cx": 495,
+     "cy": 280,
+     "r": 35,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       55,
+       390
+      ],
+      [
+       55,
+       250
+      ],
+      [
+       150,
+       250
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 55.0,
+      "y": 320.0,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       150,
+       250
+      ],
+      [
+       150,
+       320
+      ],
+      [
+       228,
+       320
+      ],
+      [
+       228,
+       390
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 228.0,
+      "y": 355.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       195,
+       318
+      ],
+      [
+       195,
+       228
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 195.0,
+      "y": 273.0,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       250,
+       392
+      ],
+      [
+       250,
+       322
+      ],
+      [
+       400,
+       322
+      ],
+      [
+       400,
+       392
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 325.0,
+      "y": 322.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       425,
+       392
+      ],
+      [
+       425,
+       322
+      ],
+      [
+       570,
+       322
+      ],
+      [
+       570,
+       392
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 497.5,
+      "y": 322.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S6",
+     "points": [
+      [
+       50,
+       398
+      ],
+      [
+       230,
+       398
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 140.0,
+      "y": 398.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S7",
+     "points": [
+      [
+       250,
+       398
+      ],
+      [
+       400,
+       398
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 325.0,
+      "y": 398.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S8",
+     "points": [
+      [
+       425,
+       398
+      ],
+      [
+       572,
+       398
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 498.5,
+      "y": 398.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S9",
+     "points": [
+      [
+       20,
+       472
+      ],
+      [
+       580,
+       472
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 300.0,
+      "y": 472.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 0.0,
+     "p1": [
+      129.0,
+      430.0
+     ],
+     "p2": [
+      141.0,
+      430.0
+     ]
+    },
+    {
+     "from": "R3",
+     "to": "R4",
+     "angle": 0.0,
+     "p1": [
+      324.0,
+      430.0
+     ],
+     "p2": [
+      331.0,
+      430.0
+     ]
+    },
+    {
+     "from": "R5",
+     "to": "R6",
+     "angle": 0.0,
+     "p1": [
+      494.0,
+      430.0
+     ],
+     "p2": [
+      501.0,
+      430.0
+     ]
+    },
+    {
+     "from": "R7",
+     "to": "R8",
+     "angle": -56.1,
+     "p1": [
+      220.6,
+      176.8
+     ],
+     "p2": [
+      221.0,
+      176.2
+     ]
+    },
+    {
+     "from": "R8",
+     "to": "R9",
+     "angle": -49.2,
+     "p1": [
+      262.2,
+      122.2
+     ],
+     "p2": [
+      263.9,
+      120.3
+     ]
+    },
+    {
+     "from": "R11",
+     "to": "R12",
+     "angle": 0.0,
+     "p1": [
+      336.0,
+      285.0
+     ],
+     "p2": [
+      324.0,
+      285.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R13",
+     "angle": 90,
+     "armLength": 22,
+     "armStart": [
+      495.0,
+      309.0
+     ],
+     "cx": 495.0,
+     "cy": 287.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 23,
+   "difficulty": "hard"
+  },
+  {
+   "id": 13,
+   "name_vi": "Mặt trời",
+   "name_en": "Sun",
+   "idea": "Lõi mặt trời là 2 vòng đồng tâm, 12 tia nắng là thanh trượt hướng tâm.",
+   "bomb_note": "Bom là lõi nóng ở R2; các tia (thanh) phải được rút ra trước khi xoay lõi.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 300,
+     "r": 92,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 270,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 300,
+     "r": 50,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 90,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       418,
+       300
+      ],
+      [
+       480,
+       300
+      ]
+     ],
+     "thickness": 12,
+     "color": "yellow",
+     "guide": {
+      "x": 449.0,
+      "y": 300.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       402,
+       359
+      ],
+      [
+       478,
+       402
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 440.0,
+      "y": 380.5,
+      "angle": 29.5
+     },
+     "slideAxis": 29.5
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       359,
+       402
+      ],
+      [
+       390,
+       456
+      ]
+     ],
+     "thickness": 12,
+     "color": "yellow",
+     "guide": {
+      "x": 374.5,
+      "y": 429.0,
+      "angle": 60.1
+     },
+     "slideAxis": 60.1
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       300,
+       418
+      ],
+      [
+       300,
+       505
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 300.0,
+      "y": 461.5,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       241,
+       402
+      ],
+      [
+       210,
+       456
+      ]
+     ],
+     "thickness": 12,
+     "color": "yellow",
+     "guide": {
+      "x": 225.5,
+      "y": 429.0,
+      "angle": 119.9
+     },
+     "slideAxis": 119.9
+    },
+    {
+     "id": "S6",
+     "points": [
+      [
+       198,
+       359
+      ],
+      [
+       122,
+       402
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 160.0,
+      "y": 380.5,
+      "angle": 150.5
+     },
+     "slideAxis": 150.5
+    },
+    {
+     "id": "S7",
+     "points": [
+      [
+       182,
+       300
+      ],
+      [
+       120,
+       300
+      ]
+     ],
+     "thickness": 12,
+     "color": "yellow",
+     "guide": {
+      "x": 151.0,
+      "y": 300.0,
+      "angle": 180.0
+     },
+     "slideAxis": 180.0
+    },
+    {
+     "id": "S8",
+     "points": [
+      [
+       198,
+       241
+      ],
+      [
+       122,
+       197
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 160.0,
+      "y": 219.0,
+      "angle": -149.9
+     },
+     "slideAxis": -149.9
+    },
+    {
+     "id": "S9",
+     "points": [
+      [
+       241,
+       198
+      ],
+      [
+       210,
+       144
+      ]
+     ],
+     "thickness": 12,
+     "color": "yellow",
+     "guide": {
+      "x": 225.5,
+      "y": 171.0,
+      "angle": -119.9
+     },
+     "slideAxis": -119.9
+    },
+    {
+     "id": "S10",
+     "points": [
+      [
+       300,
+       182
+      ],
+      [
+       300,
+       95
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 300.0,
+      "y": 138.5,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S11",
+     "points": [
+      [
+       359,
+       198
+      ],
+      [
+       390,
+       144
+      ]
+     ],
+     "thickness": 12,
+     "color": "yellow",
+     "guide": {
+      "x": 374.5,
+      "y": 171.0,
+      "angle": -60.1
+     },
+     "slideAxis": -60.1
+    },
+    {
+     "id": "S12",
+     "points": [
+      [
+       402,
+       241
+      ],
+      [
+       478,
+       197
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 440.0,
+      "y": 219.0,
+      "angle": -30.1
+     },
+     "slideAxis": -30.1
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 90,
+     "p1": [
+      300.0,
+      386.0
+     ],
+     "p2": [
+      300.0,
+      356.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R2",
+     "angle": 270,
+     "armLength": 24,
+     "armStart": [
+      300.0,
+      256.0
+     ],
+     "cx": 300.0,
+     "cy": 280.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 15,
+   "difficulty": "medium"
+  },
+  {
+   "id": 14,
+   "name_vi": "Bạch tuộc",
+   "name_en": "Octopus",
+   "idea": "Đầu là vòng lớn với 2 mắt vòng, 8 xúc tu là thanh gấp khúc toả xuống, bong bóng là vòng nhỏ.",
+   "bomb_note": "Bom là túi mực gắn đáy đầu R1, nằm giữa các xúc tu.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 210,
+     "r": 118,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 270,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 252,
+     "cy": 200,
+     "r": 30,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 90,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 348,
+     "cy": 200,
+     "r": 30,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 90,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 80,
+     "cy": 120,
+     "r": 24,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 110,
+     "cy": 55,
+     "r": 16,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 0,
+     "gapSize": 70,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       185,
+       350
+      ],
+      [
+       141,
+       450
+      ],
+      [
+       70,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 163.0,
+      "y": 400.0,
+      "angle": 113.7
+     },
+     "slideAxis": 113.7
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       218,
+       350
+      ],
+      [
+       144,
+       450
+      ],
+      [
+       136,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 181.0,
+      "y": 400.0,
+      "angle": 126.5
+     },
+     "slideAxis": 126.5
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       251,
+       350
+      ],
+      [
+       247,
+       450
+      ],
+      [
+       202,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 249.0,
+      "y": 400.0,
+      "angle": 92.3
+     },
+     "slideAxis": 92.3
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       284,
+       350
+      ],
+      [
+       249,
+       450
+      ],
+      [
+       268,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 266.5,
+      "y": 400.0,
+      "angle": 109.3
+     },
+     "slideAxis": 109.3
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       317,
+       350
+      ],
+      [
+       352,
+       450
+      ],
+      [
+       334,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 334.5,
+      "y": 400.0,
+      "angle": 70.7
+     },
+     "slideAxis": 70.7
+    },
+    {
+     "id": "S6",
+     "points": [
+      [
+       350,
+       350
+      ],
+      [
+       355,
+       450
+      ],
+      [
+       400,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 352.5,
+      "y": 400.0,
+      "angle": 87.1
+     },
+     "slideAxis": 87.1
+    },
+    {
+     "id": "S7",
+     "points": [
+      [
+       383,
+       350
+      ],
+      [
+       458,
+       450
+      ],
+      [
+       466,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 420.5,
+      "y": 400.0,
+      "angle": 53.1
+     },
+     "slideAxis": 53.1
+    },
+    {
+     "id": "S8",
+     "points": [
+      [
+       416,
+       350
+      ],
+      [
+       461,
+       450
+      ],
+      [
+       532,
+       550
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 438.5,
+      "y": 400.0,
+      "angle": 65.8
+     },
+     "slideAxis": 65.8
+    }
+   ],
+   "links": [
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 0.0,
+     "p1": [
+      288.0,
+      200.0
+     ],
+     "p2": [
+      312.0,
+      200.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R1",
+     "angle": 90,
+     "armLength": 22,
+     "armStart": [
+      300.0,
+      322.0
+     ],
+     "cx": 300.0,
+     "cy": 300.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 14,
+   "difficulty": "medium"
+  },
+  {
+   "id": 15,
+   "name_vi": "Đồng hồ báo thức",
+   "name_en": "Alarm clock",
+   "idea": "Mặt đồng hồ là 2 vòng đồng tâm, 2 chuông là vòng phía trên, kim và chân là thanh.",
+   "bomb_note": "Bom hẹn giờ gắn trên vòng R2, nằm ngay dưới tâm mặt đồng hồ.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 320,
+     "r": 150,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 90,
+     "gapSize": 24,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 320,
+     "r": 110,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 270,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 178,
+     "cy": 158,
+     "r": 45,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 225,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 422,
+     "cy": 158,
+     "r": 45,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 315,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       300,
+       305
+      ],
+      [
+       300,
+       225
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 300.0,
+      "y": 265.0,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       310,
+       315
+      ],
+      [
+       385,
+       315
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 347.5,
+      "y": 315.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       300,
+       165
+      ],
+      [
+       300,
+       110
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 300.0,
+      "y": 137.5,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       205,
+       445
+      ],
+      [
+       165,
+       525
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 185.0,
+      "y": 485.0,
+      "angle": 116.6
+     },
+     "slideAxis": 116.6
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       395,
+       445
+      ],
+      [
+       435,
+       525
+      ]
+     ],
+     "thickness": 12,
+     "color": "green",
+     "guide": {
+      "x": 415.0,
+      "y": 485.0,
+      "angle": 63.4
+     },
+     "slideAxis": 63.4
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 270,
+     "p1": [
+      300.0,
+      176.0
+     ],
+     "p2": [
+      300.0,
+      204.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R3",
+     "angle": -127.0,
+     "p1": [
+      206.2,
+      195.4
+     ],
+     "p2": [
+      208.7,
+      198.7
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R4",
+     "angle": -53.0,
+     "p1": [
+      393.8,
+      195.4
+     ],
+     "p2": [
+      391.3,
+      198.7
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R2",
+     "angle": 90,
+     "armLength": 62,
+     "armStart": [
+      300.0,
+      424.0
+     ],
+     "cx": 300.0,
+     "cy": 362.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 10,
+   "difficulty": "medium"
+  },
+  {
+   "id": 16,
+   "name_vi": "Chim cánh cụt",
+   "name_en": "Penguin",
+   "idea": "Thân và đầu là 2 vòng chồng, bụng trắng là vòng trong, mỏ, cánh, chân là thanh.",
+   "bomb_note": "Chim cánh cụt ôm bom trong bụng (R3).",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 375,
+     "r": 120,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 270,
+     "gapSize": 30,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 175,
+     "r": 70,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 90,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 300,
+     "cy": 385,
+     "r": 78,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 50,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       282,
+       190
+      ],
+      [
+       300,
+       215
+      ],
+      [
+       318,
+       190
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 291.0,
+      "y": 202.5,
+      "angle": 54.2
+     },
+     "slideAxis": 54.2
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       185,
+       330
+      ],
+      [
+       130,
+       440
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 157.5,
+      "y": 385.0,
+      "angle": 116.6
+     },
+     "slideAxis": 116.6
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       415,
+       330
+      ],
+      [
+       470,
+       440
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 442.5,
+      "y": 385.0,
+      "angle": 63.4
+     },
+     "slideAxis": 63.4
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       255,
+       500
+      ],
+      [
+       220,
+       535
+      ],
+      [
+       285,
+       535
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 252.5,
+      "y": 535.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       345,
+       500
+      ],
+      [
+       315,
+       535
+      ],
+      [
+       380,
+       535
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 347.5,
+      "y": 535.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": -90.0,
+     "p1": [
+      300.0,
+      249.0
+     ],
+     "p2": [
+      300.0,
+      251.0
+     ]
+    },
+    {
+     "from": "R1",
+     "to": "R3",
+     "angle": 90,
+     "p1": [
+      300.0,
+      489.0
+     ],
+     "p2": [
+      300.0,
+      469.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R3",
+     "angle": 90,
+     "armLength": 30,
+     "armStart": [
+      300.0,
+      457.0
+     ],
+     "cx": 300.0,
+     "cy": 427.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 9,
+   "difficulty": "easy"
+  },
+  {
+   "id": 17,
+   "name_vi": "Chuồn chuồn",
+   "name_en": "Dragonfly",
+   "idea": "Đầu và ngực là 2 vòng, đuôi là thanh dài, 4 cánh là thanh gấp khúc.",
+   "bomb_note": "Bom gắn ở ngực R2, nơi cả 4 cánh bám vào.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 85,
+     "r": 32,
+     "thickness": 12,
+     "color": "dkgreen",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 300,
+     "cy": 165,
+     "r": 40,
+     "thickness": 12,
+     "color": "green",
+     "gapAngle": 90,
+     "gapSize": 40,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 300,
+     "cy": 565,
+     "r": 16,
+     "thickness": 12,
+     "color": "dkgreen",
+     "gapAngle": 270,
+     "gapSize": 90,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       300,
+       215
+      ],
+      [
+       300,
+       545
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 300.0,
+      "y": 380.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       255,
+       155
+      ],
+      [
+       60,
+       110
+      ],
+      [
+       70,
+       185
+      ],
+      [
+       255,
+       178
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 157.5,
+      "y": 132.5,
+      "angle": -167.0
+     },
+     "slideAxis": -167.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       345,
+       155
+      ],
+      [
+       540,
+       110
+      ],
+      [
+       530,
+       185
+      ],
+      [
+       345,
+       178
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 442.5,
+      "y": 132.5,
+      "angle": -13.0
+     },
+     "slideAxis": -13.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       260,
+       195
+      ],
+      [
+       90,
+       265
+      ],
+      [
+       110,
+       315
+      ],
+      [
+       268,
+       212
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 175.0,
+      "y": 230.0,
+      "angle": 157.6
+     },
+     "slideAxis": 157.6
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       340,
+       195
+      ],
+      [
+       510,
+       265
+      ],
+      [
+       490,
+       315
+      ],
+      [
+       332,
+       212
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 425.0,
+      "y": 230.0,
+      "angle": 22.4
+     },
+     "slideAxis": 22.4
+    }
+   ],
+   "links": [
+    {
+     "from": "R1",
+     "to": "R2",
+     "angle": 90.0,
+     "p1": [
+      300.0,
+      123.0
+     ],
+     "p2": [
+      300.0,
+      119.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R2",
+     "angle": 90,
+     "armLength": 20,
+     "armStart": [
+      300.0,
+      199.0
+     ],
+     "cx": 300.0,
+     "cy": 179.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 9,
+   "difficulty": "easy"
+  },
+  {
+   "id": 18,
+   "name_vi": "Cún con",
+   "name_en": "Puppy face",
+   "idea": "Mặt là vòng lớn, tai cụp là thanh gấp, mắt, mũi, lưỡi là vòng, vòng cổ có thẻ tên.",
+   "bomb_note": "Thẻ tên ở vòng cổ (R6) thực chất là quả bom.",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 300,
+     "cy": 310,
+     "r": 140,
+     "thickness": 12,
+     "color": "orange",
+     "gapAngle": 270,
+     "gapSize": 24,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 245,
+     "cy": 270,
+     "r": 26,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 0,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 355,
+     "cy": 270,
+     "r": 26,
+     "thickness": 12,
+     "color": "purple",
+     "gapAngle": 180,
+     "gapSize": 60,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 300,
+     "cy": 350,
+     "r": 24,
+     "thickness": 12,
+     "color": "blue",
+     "gapAngle": 270,
+     "gapSize": 70,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 300,
+     "cy": 415,
+     "r": 22,
+     "thickness": 12,
+     "color": "red",
+     "gapAngle": 270,
+     "gapSize": 90,
+     "rotatable": true
+    },
+    {
+     "id": "R6",
+     "label": "6",
+     "cx": 300,
+     "cy": 530,
+     "r": 28,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 270,
+     "gapSize": 60,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       185,
+       200
+      ],
+      [
+       105,
+       250
+      ],
+      [
+       118,
+       385
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 111.5,
+      "y": 317.5,
+      "angle": 84.5
+     },
+     "slideAxis": 84.5
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       415,
+       200
+      ],
+      [
+       495,
+       250
+      ],
+      [
+       482,
+       385
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 488.5,
+      "y": 317.5,
+      "angle": 95.5
+     },
+     "slideAxis": 95.5
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       300,
+       375
+      ],
+      [
+       300,
+       393
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 300.0,
+      "y": 384.0,
+      "angle": 90.0
+     },
+     "slideAxis": 90.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       195,
+       475
+      ],
+      [
+       405,
+       475
+      ]
+     ],
+     "thickness": 12,
+     "color": "dkgreen",
+     "guide": {
+      "x": 300.0,
+      "y": 475.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    }
+   ],
+   "links": [
+    {
+     "from": "R4",
+     "to": "R5",
+     "angle": 90.0,
+     "p1": [
+      300.0,
+      380.0
+     ],
+     "p2": [
+      300.0,
+      387.0
+     ]
+    },
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 0.0,
+     "p1": [
+      277.0,
+      270.0
+     ],
+     "p2": [
+      323.0,
+      270.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R6",
+     "angle": 270,
+     "armLength": 22,
+     "armStart": [
+      300.0,
+      508.0
+     ],
+     "cx": 300.0,
+     "cy": 530.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 11,
+   "difficulty": "medium"
+  },
+  {
+   "id": 19,
+   "name_vi": "Thuyền buồm",
+   "name_en": "Sailboat",
+   "idea": "Thân thuyền, cột buồm, 2 cánh buồm là thanh; mặt trời và sóng biển là vòng.",
+   "bomb_note": "Bom là thuỷ lôi nổi giữa các con sóng (R3).",
+   "canvas": {
+    "w": 600,
+    "h": 600
+   },
+   "rings": [
+    {
+     "id": "R1",
+     "label": "1",
+     "cx": 500,
+     "cy": 105,
+     "r": 40,
+     "thickness": 12,
+     "color": "yellow",
+     "gapAngle": 180,
+     "gapSize": 50,
+     "rotatable": true
+    },
+    {
+     "id": "R2",
+     "label": "2",
+     "cx": 150,
+     "cy": 555,
+     "r": 38,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 120,
+     "rotatable": true
+    },
+    {
+     "id": "R3",
+     "label": "3",
+     "cx": 260,
+     "cy": 555,
+     "r": 38,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 120,
+     "rotatable": true
+    },
+    {
+     "id": "R4",
+     "label": "4",
+     "cx": 370,
+     "cy": 555,
+     "r": 38,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 120,
+     "rotatable": true
+    },
+    {
+     "id": "R5",
+     "label": "5",
+     "cx": 480,
+     "cy": 555,
+     "r": 38,
+     "thickness": 12,
+     "color": "cyan",
+     "gapAngle": 270,
+     "gapSize": 120,
+     "rotatable": true
+    }
+   ],
+   "sticks": [
+    {
+     "id": "S1",
+     "points": [
+      [
+       120,
+       420
+      ],
+      [
+       180,
+       488
+      ],
+      [
+       420,
+       488
+      ],
+      [
+       480,
+       420
+      ]
+     ],
+     "thickness": 12,
+     "color": "orange",
+     "guide": {
+      "x": 300.0,
+      "y": 488.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S2",
+     "points": [
+      [
+       120,
+       420
+      ],
+      [
+       480,
+       420
+      ]
+     ],
+     "thickness": 12,
+     "color": "red",
+     "guide": {
+      "x": 300.0,
+      "y": 420.0,
+      "angle": 0.0
+     },
+     "slideAxis": 0.0
+    },
+    {
+     "id": "S3",
+     "points": [
+      [
+       300,
+       410
+      ],
+      [
+       300,
+       95
+      ]
+     ],
+     "thickness": 12,
+     "color": "purple",
+     "guide": {
+      "x": 300.0,
+      "y": 252.5,
+      "angle": -90.0
+     },
+     "slideAxis": -90.0
+    },
+    {
+     "id": "S4",
+     "points": [
+      [
+       312,
+       120
+      ],
+      [
+       450,
+       385
+      ],
+      [
+       312,
+       385
+      ]
+     ],
+     "thickness": 12,
+     "color": "cyan",
+     "guide": {
+      "x": 381.0,
+      "y": 252.5,
+      "angle": 62.5
+     },
+     "slideAxis": 62.5
+    },
+    {
+     "id": "S5",
+     "points": [
+      [
+       288,
+       150
+      ],
+      [
+       165,
+       385
+      ],
+      [
+       288,
+       385
+      ]
+     ],
+     "thickness": 12,
+     "color": "blue",
+     "guide": {
+      "x": 226.5,
+      "y": 267.5,
+      "angle": 117.6
+     },
+     "slideAxis": 117.6
+    }
+   ],
+   "links": [
+    {
+     "from": "R2",
+     "to": "R3",
+     "angle": 0.0,
+     "p1": [
+      194.0,
+      555.0
+     ],
+     "p2": [
+      216.0,
+      555.0
+     ]
+    },
+    {
+     "from": "R3",
+     "to": "R4",
+     "angle": 0.0,
+     "p1": [
+      304.0,
+      555.0
+     ],
+     "p2": [
+      326.0,
+      555.0
+     ]
+    },
+    {
+     "from": "R4",
+     "to": "R5",
+     "angle": 0.0,
+     "p1": [
+      414.0,
+      555.0
+     ],
+     "p2": [
+      436.0,
+      555.0
+     ]
+    }
+   ],
+   "bombs": [
+    {
+     "id": "B1",
+     "attachedTo": "R3",
+     "angle": 90,
+     "armLength": 24,
+     "armStart": [
+      260.0,
+      587.0
+     ],
+     "cx": 260.0,
+     "cy": 563.0,
+     "r": 13
+    }
+   ],
+   "objectCount": 11,
+   "difficulty": "medium"
+  }
+ ]
+}

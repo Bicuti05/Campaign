@@ -1,0 +1,169 @@
+{
+  "format": "rotate-closed-body-search",
+  "version": 1,
+  "method": "Finite geometry enumeration with causal motion probes. Not a trained generator or beauty score.",
+  "attempts": 12,
+  "selected": {
+    "design": {
+      "format": "turp-design",
+      "version": 1,
+      "levelId": "draft",
+      "name": "Vòng kín làm vách cho chốt quay",
+      "author": "Codex reference study 20261013",
+      "notes": "Vòng kín trên trái giữ vòng dưới trái và làm vật cản cho chốt trên vòng trên phải. Hai cặp pin dọc được nối bằng quan hệ chặn hình học. Đổi riêng vòng kín sang vòng hở hoặc bỏ chốt phải mở thêm hướng quay. Tháo vòng dưới trái cũng gỡ vách kín, cho phép xử lý cặp bên phải. Không ngàm, bom, Chain hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+      "rings": [
+        {
+          "id": "R1",
+          "x": 0,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 0,
+          "gapDir": 0,
+          "color": "purple",
+          "pins": [
+            {
+              "angle": 270,
+              "target": "R3"
+            }
+          ]
+        },
+        {
+          "id": "R2",
+          "x": 4.5854,
+          "y": 0,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 45,
+          "color": "orange",
+          "stops": [
+            {
+              "angle": 240,
+              "length": 1
+            }
+          ]
+        },
+        {
+          "id": "R3",
+          "x": 0,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 270,
+          "color": "green"
+        },
+        {
+          "id": "R4",
+          "x": 4.5854,
+          "y": -4.5854,
+          "radius": 1.75,
+          "gap": 90,
+          "gapDir": 270,
+          "color": "blue",
+          "pins": [
+            {
+              "angle": 90,
+              "target": "R2"
+            }
+          ]
+        }
+      ]
+    },
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 4,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 2,
+        "pins": 2,
+        "stops": 1,
+        "closedRings": 1
+      }
+    },
+    "solution": {
+      "found": true,
+      "moves": [
+        {
+          "obj": 2,
+          "target": 414
+        },
+        {
+          "obj": 1,
+          "target": -53.99999999999999
+        }
+      ],
+      "log": "found with 2 drags after 12 explorations",
+      "nodes": 12,
+      "seconds": 0.016,
+      "route": [
+        {
+          "step": 1,
+          "part": "ring_3",
+          "label": "R3",
+          "kind": "ring",
+          "from": 270,
+          "to": 414,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "ring_2",
+          "label": "R2",
+          "kind": "ring",
+          "from": 45,
+          "to": -54,
+          "direction": "CW",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ]
+    },
+    "witness": {
+      "closed": [
+        {
+          "direction": -1,
+          "removed": false,
+          "pointerReached": -5.999999999999993
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "pointerReached": 66
+        }
+      ],
+      "opened": [
+        {
+          "direction": -1,
+          "removed": true,
+          "pointerReached": -53.99999999999999
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "pointerReached": 66
+        }
+      ],
+      "withoutStop": [
+        {
+          "direction": -1,
+          "removed": true,
+          "pointerReached": -53.99999999999999
+        },
+        {
+          "direction": 1,
+          "removed": true,
+          "pointerReached": 234
+        }
+      ]
+    },
+    "parameters": {
+      "gap": 45,
+      "stop": 240,
+      "length": 1
+    }
+  }
+}

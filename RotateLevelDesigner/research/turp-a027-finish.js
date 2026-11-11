@@ -1,0 +1,2 @@
+"use strict";
+const fs=require('fs'),path=require('path');let code=fs.readFileSync(path.join(__dirname,'turp-a025-finish.js'),'utf8').replaceAll('20261015-turp-a025','20261015-turp-a027').replace("['70008','A025','turp-A025-70008-shared-U-r02']","['10018','A027','turp-A027-10018-shared-middle-U-r03']");new Function('require','__dirname','process',code)(require,__dirname,process);

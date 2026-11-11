@@ -1,0 +1,442 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "A023 — Cửa U trên và hai nhánh hồi phục / TURP r03",
+  "author": "Codex / TURP continuation",
+  "notes": "Remake10020: bỏ hai receiver rìa trên R9/R10, U hai chân bằng nhau thay thanh ngang dài; hàng/cột 4.9, hai nguồn kín lớn phía dưới. Bom giữa mở receiver chung R1; các nguồn R2/R3/R6 cần quay lại sau cửa. Thanh L hai bên và thanh giữa cần đo vai trò riêng, không coi đủ vật là đủ khó. Chưa GD duyệt, không Booster/Chain. U đổi sang hai vòng kề R6/R8 bước4.9, L S6 qua khe R7 riêng; bỏ ôm rộng và chỗ cắt ngang thanh L ở r01. S4 hạ vào khoảng giữa hai receiver dưới và kéo dài tới đường trượt chân L S2/S3; hai chân L dài xuống để S4 giữ lượt chuẩn bị, cần mở receiver dưới trước rút thanh giữa. Không coi witness ở nhánh tự đóng lại là đủ vai trò trên lời giải.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R2",
+      "x": 4.9,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "angle": 180,
+          "length": 1.1500000000000004,
+          "target": "R1"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R3",
+      "x": -4.9,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "angle": 0,
+          "length": 1.1500000000000004,
+          "target": "R1"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R4",
+      "x": 4.9,
+      "y": -4.9,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR2",
+          "angle": 90,
+          "length": 1.1500000000000004,
+          "target": "R2"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R5",
+      "x": -4.9,
+      "y": -4.9,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR3",
+          "angle": 90,
+          "length": 1.1500000000000004,
+          "target": "R3"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "angle": 270,
+          "length": 1.1500000000000004,
+          "target": "R1"
+        },
+        {
+          "id": "toR7",
+          "angle": 180,
+          "length": 1.1500000000000004,
+          "target": "R7"
+        },
+        {
+          "id": "toR8",
+          "angle": 0,
+          "length": 1.1500000000000004,
+          "target": "R8"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R7",
+      "x": -4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "teal"
+    },
+    {
+      "id": "R8",
+      "x": 4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R11",
+      "x": -4.9,
+      "y": -14.700000000000001,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R12",
+      "x": -4.9,
+      "y": -9.8,
+      "radius": 2.15,
+      "gapDir": 90,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR11",
+          "angle": 270,
+          "length": 0.7500000000000004,
+          "target": "R11"
+        },
+        {
+          "id": "toR5",
+          "angle": 90,
+          "length": 0.7500000000000004,
+          "target": "R5"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R13",
+      "x": 4.9,
+      "y": -14.700000000000001,
+      "radius": 1.75,
+      "gapDir": 180,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R14",
+      "x": 4.9,
+      "y": -9.8,
+      "radius": 2.15,
+      "gapDir": 90,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR13",
+          "angle": 270,
+          "length": 0.7500000000000004,
+          "target": "R13"
+        },
+        {
+          "id": "toR4",
+          "angle": 90,
+          "length": 0.7500000000000004,
+          "target": "R4"
+        }
+      ],
+      "color": "red"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 0,
+      "y": -5.5,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -2.6
+        ],
+        [
+          0,
+          2.6
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": -6,
+          "angle": 90
+        }
+      ],
+      "bomb": {
+        "x": 0,
+        "y": -3.4167
+      },
+      "color": "orange"
+    },
+    {
+      "id": "S2",
+      "x": 2.0646,
+      "y": -8.6,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -3.9
+        ],
+        [
+          0,
+          3.7
+        ],
+        [
+          2.1,
+          3.7
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 2.0646,
+          "y": -7.9,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "S3",
+      "x": -2.0646,
+      "y": -8.6,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -3.9
+        ],
+        [
+          0,
+          3.7
+        ],
+        [
+          -2.1,
+          3.7
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -2.0646,
+          "y": -7.9,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "S4",
+      "x": 0,
+      "y": -13.1,
+      "angle": 0,
+      "path": [
+        [
+          -2.3,
+          0
+        ],
+        [
+          2.3,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": -13.1,
+          "angle": 0
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "S5",
+      "x": 0,
+      "y": 8.5,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -4.2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4.9,
+          0
+        ],
+        [
+          4.9,
+          -4.2
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 7.55,
+          "angle": 90
+        },
+        {
+          "x": 4.9,
+          "y": 7.05,
+          "angle": 90
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "S6",
+      "x": -4.9,
+      "y": 4.9,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3.8
+        ],
+        [
+          1.3,
+          3.8
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -4.9,
+          "y": 7.55,
+          "angle": 90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S7",
+      "x": 0,
+      "y": -14.7,
+      "angle": 0,
+      "path": [
+        [
+          -3.6,
+          0
+        ],
+        [
+          3.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": -14.7,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    }
+  ]
+}

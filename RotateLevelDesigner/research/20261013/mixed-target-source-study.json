@@ -1,0 +1,564 @@
+{
+  "format": "rotate-mixed-target-source-study",
+  "version": 1,
+  "scope": "One source has angular and continuous targets; each bar chooses a different rotation escape",
+  "candidates": [
+    {
+      "stem": "study-20261013-v29-source-ring-and-bars",
+      "holdout": true,
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Chọn thanh mở hướng quay — một nguồn giữ ba đích",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Nguồn A giữ hai thanh đứng và vòng B phía trên bằng ba pin thường. Hai thanh không ngàm, mỗi thanh chặn một phía của hai chốt trên B; B chưa thể quay tháo theo cả hai hướng. Rút thanh phải thì B mở hướng CW, thanh trái thì mở CCW. Khi B rời, A vẫn được thanh còn lại giữ; rút nốt thanh để nhả A. Có thể rút cả hai thanh trước rồi mở B, không tự ép một thứ tự duy nhất. Bỏ từng chốt mở một cửa xoay ngay đầu; pin/than không thêm để trang trí. Không bom/Chain/Booster; chưa GD nghiệm thu bố cục/độ khó.",
+        "rings": [
+          {
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "R"
+              },
+              {
+                "angle": 90,
+                "target": "B"
+              },
+              {
+                "angle": 180,
+                "target": "L"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 0,
+            "y": 4.5854,
+            "gapDir": 90,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [],
+            "stops": [
+              {
+                "angle": 45,
+                "length": 2
+              },
+              {
+                "angle": 135,
+                "length": 2
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "R",
+            "shape": "straight",
+            "x": 2.8354,
+            "y": 2.2927,
+            "length": 5.6,
+            "angle": 90,
+            "color": "blue"
+          },
+          {
+            "id": "L",
+            "shape": "straight",
+            "x": -2.8354,
+            "y": 2.2927,
+            "length": 5.6,
+            "angle": 90,
+            "color": "green"
+          }
+        ]
+      },
+      "authorMoves": [
+        {
+          "part": "R",
+          "target": 0.6
+        },
+        {
+          "part": "B",
+          "target": -90
+        },
+        {
+          "part": "L",
+          "target": 0.6
+        }
+      ],
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 2,
+            "sticks": 2,
+            "guides": 0,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 2,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": false,
+          "moves": [],
+          "nodes": 92,
+          "seconds": 0.77,
+          "log": "NOT FOUND after 92 explorations, 1 s (limits 1000 nodes / 6 s, open 0)",
+          "route": []
+        }
+      },
+      "witness": {
+        "initialB": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 53.477050781249815,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 126.52294921875,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "afterRight": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": -17.092529296874908,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 126.52294921875,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "afterLeft": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 53.477050781249815,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 197.09252929687455,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "withoutRightStop": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": -36.5229492187499,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 126.52294921875,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "withoutLeftStop": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 53.477050781249815,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 216.52294921874955,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "withoutRightBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": -17.092529296874908,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 126.52294921875,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "withoutLeftBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 53.477050781249815,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 197.09252929687455,
+            "remaining": 3,
+            "links": 2
+          }
+        ],
+        "initialSource": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "bothBars": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "R",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "L",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutRingTarget": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "R",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "L",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "rightFirst": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "R",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "leftFirst": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "L",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "trace": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "R",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": -90,
+              "pose": -16.157958984374915,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "L",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feel": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "R",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": -90,
+              "pose": -16.157958984374915,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "L",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "otherRoute": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "L",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_2"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 270,
+              "pose": 196.15795898437455,
+              "remaining": 3,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_2"
+              ],
+              "events": []
+            },
+            {
+              "part": "R",
+              "pointer": 0.6,
+              "pose": 0.6000000000000001,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "afterBothB": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": -17.092529296874908,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 197.09252929687455,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "noStopsAfterBothB": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 90,
+            "to": -53.99999999999966,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 90,
+            "to": 233.99999999999955,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "blockedSourceGeometry": [
+          {
+            "target": -90,
+            "pose": -16.157958984374915,
+            "sourceInputLocked": true,
+            "depths": [
+              {
+                "kind": 16,
+                "sourceBody": 0.019989266727729715,
+                "sourceSolidPins": 0
+              },
+              {
+                "kind": 16,
+                "sourceBody": 0,
+                "sourceSolidPins": 0
+              }
+            ]
+          },
+          {
+            "target": 270,
+            "pose": 196.15795898437455,
+            "sourceInputLocked": true,
+            "depths": [
+              {
+                "kind": 16,
+                "sourceBody": 0,
+                "sourceSolidPins": 0
+              },
+              {
+                "kind": 16,
+                "sourceBody": 0.019989266727705735,
+                "sourceSolidPins": 0
+              }
+            ]
+          }
+        ]
+      },
+      "decision": "Not exported: initial geometry passes but proposed recipe fails. Even after both bars leave, receiver stops hit the source geometry before the incoming pin clears. First blocker is measured against source body/solid pin separately below; do not infer it from the graph alone. Removing both stops opens both angular escape directions."
+    }
+  ]
+}

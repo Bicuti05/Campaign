@@ -1,0 +1,8291 @@
+{
+  "format": "rotate-mechanical-envelope-study",
+  "version": 1,
+  "scope": "Finite samples of geometry preserving causal roles. Not aesthetic scoring, statistical robustness, player difficulty or extra delivered levels.",
+  "summary": {
+    "vertical interior retract": {
+      "tested": 27,
+      "qualified": 18,
+      "rejected": {
+        "intended dependency or direction changed": 9
+      }
+    },
+    "stop in neighboring gap": {
+      "tested": 9,
+      "qualified": 7,
+      "rejected": {
+        "intended dependency or direction changed": 2
+      }
+    },
+    "side pull L": {
+      "tested": 9,
+      "qualified": 9,
+      "rejected": {}
+    },
+    "inside stop and bomb": {
+      "tested": 27,
+      "qualified": 24,
+      "rejected": {
+        "bounded solver did not find a proof": 2,
+        "initial geometry/contact/retention": 1
+      }
+    }
+  },
+  "results": [
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.1,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.2000000000000002,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.9299804687499988,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.2
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.052,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.2,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.2
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.1,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.4000000000000004,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.8000000000000007,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.1,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.6000000000000005,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.6000000000000005,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.4,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.9000000000000004,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.2299804687499987,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.8999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.046,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.9,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.9
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.4,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.0999999999999996,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.1000000000000005,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.4,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.2999999999999998,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.9000000000000004,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.7,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.5999999999999996,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.529980468749999,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.6
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.049,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.6,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.6
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.7,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.7999999999999998,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.4000000000000012,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3,
+        "top": -0.7,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.2,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.1,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.2000000000000002,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.9299804687499988,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.2
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.049,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.2,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.2
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.1,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.4000000000000004,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.9299804687499988,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.4000000000000001
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.048,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.4,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.4
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.1,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.6000000000000005,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.9099853515624994,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.4,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.9000000000000004,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.2299804687499987,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.8999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.038,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.9,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.9
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.4,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.0999999999999996,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.2299804687499987,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.0999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.041,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.1,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.1
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.4,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.2999999999999998,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.209985351562499,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.7,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.5999999999999996,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.5299804687499985,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.6
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.035,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.6,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.6
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.7,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.7999999999999998,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.5299804687499985,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.7999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.038,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.8,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.8
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.3,
+        "top": -0.7,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.509985351562499,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.1,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.2000000000000002,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.9299804687499988,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.2
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.044,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.2,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.2
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.1,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.4000000000000004,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.9299804687499988,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.4000000000000001
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.044,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.4,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.4
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.1,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.6000000000000005,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.9299804687499988,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.6000000000000003
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.042,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.6,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.6
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.4,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.8999999999999995,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.2299804687499982,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.8999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.048,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.9,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.9
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.4,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.0999999999999996,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.2299804687499982,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.0999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.038,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.1,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.1
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.4,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.2999999999999998,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.2299804687499982,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -1.3
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.049,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1.3,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1.3
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.7,
+        "guideY": -1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2922363281251,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7077636718752,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.5999999999999996,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.5299804687499985,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.6
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.04,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.6,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.6
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.7,
+        "guideY": -1.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.2827148437501,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7172851562502,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.7999999999999998,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.5299804687499985,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.7999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.036,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -0.8,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -0.8
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "vertical interior retract",
+      "parameters": {
+        "length": 3.6,
+        "top": -0.7,
+        "guideY": -1.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "first": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 237.27539062500017,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 302.7246093750002,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.5299804687499985,
+            "remaining": 5,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": -0.9999999999999999
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.037,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": -1,
+            "direction": "-",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": -1
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 180,
+            "to": -54,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 180,
+            "to": 233.9999999999999,
+            "remaining": 2,
+            "links": 1
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 0.6
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": false,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 180,
+            "to": -54,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 180,
+            "to": 233.9999999999999,
+            "remaining": 2,
+            "links": 1
+          }
+        ]
+      },
+      "rejected": "intended dependency or direction changed"
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 0.8
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 135.85034179687494,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 224.14965820312494,
+            "remaining": 4,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 414
+          },
+          {
+            "obj": 1,
+            "target": 234
+          }
+        ],
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.013,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 180,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_3",
+            "target": 420
+          },
+          {
+            "part": "ring_2",
+            "target": 240
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 1
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 139.73437499999977,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 220.265625,
+            "remaining": 4,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 414
+          },
+          {
+            "obj": 1,
+            "target": 234
+          }
+        ],
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.014,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 180,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_3",
+            "target": 420
+          },
+          {
+            "part": "ring_2",
+            "target": 240
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 1.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 140.68945312499977,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 219.310546875,
+            "remaining": 4,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 414
+          },
+          {
+            "obj": 1,
+            "target": 234
+          }
+        ],
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.012,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 180,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_3",
+            "target": 420
+          },
+          {
+            "part": "ring_2",
+            "target": 240
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 1.5
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 140.68945312499977,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 219.310546875,
+            "remaining": 4,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 414
+          },
+          {
+            "obj": 1,
+            "target": 234
+          }
+        ],
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.014,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 180,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_3",
+            "target": 420
+          },
+          {
+            "part": "ring_2",
+            "target": 240
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 1.8
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 139.3293457031249,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 220.6706542968749,
+            "remaining": 4,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 414
+          },
+          {
+            "obj": 1,
+            "target": 234
+          }
+        ],
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.011,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 180,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_3",
+            "target": 420
+          },
+          {
+            "part": "ring_2",
+            "target": 240
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 2.1
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 140.48657226562477,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 219.513427734375,
+            "remaining": 4,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 414
+          },
+          {
+            "obj": 1,
+            "target": 234
+          }
+        ],
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.012,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 180,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_3",
+            "target": 420
+          },
+          {
+            "part": "ring_2",
+            "target": 240
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "stop in neighboring gap",
+      "parameters": {
+        "length": 2.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initialDirections": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 180,
+            "to": 140.2426757812499,
+            "remaining": 4,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 180,
+            "to": 219.75732421875,
+            "remaining": 4,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 2,
+            "target": 414
+          },
+          {
+            "obj": 1,
+            "target": 234
+          }
+        ],
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.012,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 414,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 180,
+            "to": 234,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_3",
+            "target": 420
+          },
+          {
+            "part": "ring_2",
+            "target": 240
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 0.9,
+        "guideX": 0.75
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.7019042968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.29809570312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.10434570312500002,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.6000000000000001,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.6
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.044,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.6,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.6
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 0.9,
+        "guideX": 0.85
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.7019042968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.29809570312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.2043457031249996,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.5,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.5
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.037,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.5,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.5
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 0.9,
+        "guideX": 0.95
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.6550292968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.34497070312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.3043457031250002,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.40000000000000036,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.4
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.039,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.4,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.4
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 1.1,
+        "guideX": 0.75
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.7019042968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.29809570312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.10434570312500002,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.6000000000000001,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.6
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.039,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.6,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.6
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 1.1,
+        "guideX": 0.85
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.7019042968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.29809570312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.2043457031249996,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.5,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.5
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.038,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.5,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.5
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 1.1,
+        "guideX": 0.95
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.6550292968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.34497070312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.3043457031250002,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.40000000000000036,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.4
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.038,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.4,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.4
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 1.3,
+        "guideX": 0.75
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.7019042968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.29809570312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.10434570312500002,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.7000000000000002,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.7
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.053,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.7,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.7
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 1.3,
+        "guideX": 0.85
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.7019042968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.29809570312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.2043457031249996,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.6000000000000001,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.6
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.039,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.6,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.6
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "side pull L",
+      "parameters": {
+        "arm": 1.3,
+        "guideX": 0.95
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 3,
+            "pins": 3,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "initial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 230.6550292968746,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 309.34497070312557,
+            "remaining": 5,
+            "links": 3
+          }
+        ],
+        "bar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.3043457031250002,
+            "remaining": 5,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.5,
+            "remaining": 4,
+            "links": 3
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 4,
+            "target": 0.5
+          },
+          {
+            "obj": 3,
+            "target": 504
+          },
+          {
+            "obj": 2,
+            "target": 126
+          },
+          {
+            "obj": 1,
+            "target": 144
+          }
+        ],
+        "log": "found with 4 drags after 25 explorations",
+        "nodes": 25,
+        "seconds": 0.038,
+        "route": [
+          {
+            "step": 1,
+            "part": "slide_bar_1",
+            "label": "S1",
+            "kind": "stick",
+            "from": 0,
+            "to": 0.5,
+            "direction": "+",
+            "removedNow": 1,
+            "remaining": 4
+          },
+          {
+            "step": 2,
+            "part": "ring_4",
+            "label": "R4",
+            "kind": "ring",
+            "from": 270,
+            "to": 504,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 3
+          },
+          {
+            "step": 3,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 270,
+            "to": 126,
+            "direction": "CW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 4,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "slide_bar_1",
+            "target": 0.5
+          },
+          {
+            "part": "ring_4",
+            "target": 510
+          },
+          {
+            "part": "ring_3",
+            "target": 120
+          },
+          {
+            "part": "ring_2",
+            "target": 150
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 90,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": false,
+        "moves": [],
+        "nodes": 26,
+        "seconds": 0.055,
+        "log": "NOT FOUND after 26 explorations, 0 s (limits 700 nodes / 2 s, open 0)",
+        "route": []
+      },
+      "rejected": "bounded solver did not find a proof"
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 90,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": false,
+        "moves": [],
+        "nodes": 26,
+        "seconds": 0.058,
+        "log": "NOT FOUND after 26 explorations, 0 s (limits 700 nodes / 2 s, open 0)",
+        "route": []
+      },
+      "rejected": "bounded solver did not find a proof"
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 90,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 33
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.007,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 33,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 27
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 120,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 48
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.008,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 48,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 42
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 120,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 54
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 54,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 48
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 120,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 63
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 63,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 57
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 135,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 63
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 63,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 57
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 135,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 69
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 69,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 63
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.6,
+        "bombAngle": 135,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 78
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.005,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 78,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 72
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 90,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 165
+          },
+          {
+            "obj": 0,
+            "target": 25.893310546875114
+          }
+        ],
+        "log": "found with 3 drags after 14 explorations",
+        "nodes": 14,
+        "seconds": 0.019,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 165,
+            "direction": "CCW",
+            "removedNow": 0,
+            "remaining": 2
+          },
+          {
+            "step": 3,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 154.89,
+            "to": 25.89,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 171
+          },
+          {
+            "part": "ring_1",
+            "target": 19.89
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 90,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 33
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.008,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 33,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 27
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 90,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 39
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 39,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 33
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 120,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 57
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.012,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 57,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 51
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 120,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 63
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.01,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 63,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 57
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 120,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 69
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.009,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 69,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 63
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 135,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 72
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.018,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 72,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 66
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 135,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 78
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.011,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 78,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 72
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 0.8,
+        "bombAngle": 135,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 84
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.009,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 84,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 78
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 90,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 30
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 30,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 24
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 90,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 39
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 39,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 33
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 90,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 45
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 45,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 39
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 120,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 60
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.007,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 60,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 54
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 120,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 69
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.011,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 69,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 63
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 120,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 75
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.007,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 75,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 69
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 135,
+        "bombRadius": 0.2
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 75
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 75,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 69
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 135,
+        "bombRadius": 0.3
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": []
+      },
+      "role": {
+        "ok": true,
+        "beforePreparation": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 90,
+            "remaining": 3,
+            "links": 2
+          }
+        ]
+      },
+      "solution": {
+        "found": true,
+        "moves": [
+          {
+            "obj": 1,
+            "target": 144
+          },
+          {
+            "obj": 0,
+            "target": 84
+          }
+        ],
+        "log": "found with 2 drags after 10 explorations",
+        "nodes": 10,
+        "seconds": 0.006,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_2",
+            "label": "R2",
+            "kind": "ring",
+            "from": 90,
+            "to": 144,
+            "direction": "CCW",
+            "removedNow": 1,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 84,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "proof": {
+        "moves": [
+          {
+            "part": "ring_2",
+            "target": 150
+          },
+          {
+            "part": "ring_1",
+            "target": 78
+          }
+        ],
+        "analytic": true,
+        "feel": true
+      },
+      "qualified": true
+    },
+    {
+      "family": "inside stop and bomb",
+      "parameters": {
+        "length": 1,
+        "bombAngle": 135,
+        "bombRadius": 0.4
+      },
+      "initial": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 3,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 2,
+            "pins": 2,
+            "stops": 1,
+            "closedRings": 1
+          }
+        },
+        "unengagedGuides": [],
+        "bombContacts": [
+          {
+            "moving": "ring_1",
+            "target": "ring_1",
+            "otherBomb": -1
+          }
+        ]
+      },
+      "rejected": "initial geometry/contact/retention"
+    }
+  ]
+}

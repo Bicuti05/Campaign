@@ -1,0 +1,93 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "B01-008 | Hai thanh và một cửa nối",
+  "author": "Codex + GD / batch 01",
+  "notes": "Bộ 15 level đầu, vị trí đề xuất 8/15. Hai thanh có trục riêng, nhưng hai nhánh vòng cùng đi qua receiver B. D cần nhả pin vào B rồi mới quay để mở C; các thanh phối hợp với cửa vòng. Chờ GD chỉnh bố cục và chơi thử độ khó; thứ tự này chưa ghi vào campaign. Không Booster/Chain; lockCount0. ",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "L"
+        },
+        {
+          "angle": 0,
+          "target": "B"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 315,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "H"
+        },
+        {
+          "angle": 0,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "B"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "L",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "length": 6.5854,
+      "angle": 0,
+      "color": "green"
+    },
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": 7.4208,
+      "length": 6.5854,
+      "angle": 0,
+      "color": "red"
+    }
+  ]
+}

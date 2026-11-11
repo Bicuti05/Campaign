@@ -1,0 +1,174 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "CSW-02 | Thanh chung, hai cửa và nguồn phải quay lại",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp: thanh S giữ A/B; nguồn kín F4 mục tiêu nối A/FA/X/G; G nhận F/C đồng thời giữ B/GB; GB nhận G/D; C được D giữ sau khi G đã nhả. Người chơi cần phân biệt source mở input với hết retention, dùng G nhả F rồi đổi hướng nhả C, dùng GB nhả G rồi quay lại nhả D, cuối cùng quay C đang được D giữ để đóng vùng dưới. Chuẩn bị S ảnh hưởng hai nhánh; trượt nông±1 chỉ mở một phía và xoay có thể re-engage, không chứng nhận chuỗi nông bắt buộc.10 vòng radius1,75 +1 thanh default,12pin,0Guide/Stop/Bom/Chain/Booster. Góc khe225 của G có mục đích giữ hai nguồn hướng180/270 ở đầu. Bản11 vòng ban đầu giữ research: CLI hết budget, chưa có main full-release qua; không gọi vô nghiệm. Chưa GD nghiệm thu khó/đẹp, không dùng count/drag để chứng minh.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        },
+        {
+          "angle": 180,
+          "target": "FA"
+        },
+        {
+          "angle": 270,
+          "target": "X"
+        },
+        {
+          "angle": 0,
+          "target": "G"
+        }
+      ]
+    },
+    {
+      "id": "FA",
+      "x": -4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "X",
+      "x": 0,
+      "y": -9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "G",
+      "x": 4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 225,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "B"
+        },
+        {
+          "angle": 0,
+          "target": "GB"
+        }
+      ]
+    },
+    {
+      "id": "GB",
+      "x": 9.1708,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 4.5854,
+      "y": -9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "G"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 9.1708,
+      "y": -9.1708,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "C"
+        },
+        {
+          "angle": 90,
+          "target": "GB"
+        },
+        {
+          "angle": 270,
+          "target": "DB"
+        }
+      ]
+    },
+    {
+      "id": "DB",
+      "x": 9.1708,
+      "y": -13.7562,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "red",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": 2.8354,
+      "angle": 0,
+      "color": "green"
+    }
+  ]
+}

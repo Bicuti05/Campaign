@@ -1,0 +1,145 @@
+{
+  "file": "Tools/RotateLevelDesigner/levels/A257_20261026_review-r01.rrpack.json",
+  "source": "Tools/RotateLevelDesigner/ingame/A107_20261020_r01.rrpack.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 9,
+        "sticks": 1,
+        "guides": 0,
+        "bombs": 0,
+        "links": 13,
+        "pins": 13,
+        "stops": 0,
+        "closedRings": 5
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "R6",
+        "pin": "toBridge",
+        "margin": 130
+      },
+      {
+        "ring": "R8",
+        "pin": "toBridge",
+        "margin": 82
+      }
+    ],
+    "guides": [],
+    "links": [
+      {
+        "source": "ring_1",
+        "target": "ring_8",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_1",
+        "target": "ring_9",
+        "pin": "attachment.pin_2",
+        "active": true
+      },
+      {
+        "source": "ring_1",
+        "target": "ring_6",
+        "pin": "attachment.pin_3",
+        "active": true
+      },
+      {
+        "source": "ring_1",
+        "target": "ring_7",
+        "pin": "attachment.pin_4",
+        "active": true
+      },
+      {
+        "source": "ring_2",
+        "target": "ring_7",
+        "pin": "attachment.pin_5",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_8",
+        "pin": "attachment.pin_6",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_9",
+        "pin": "attachment.pin_7",
+        "active": true
+      },
+      {
+        "source": "ring_4",
+        "target": "ring_8",
+        "pin": "attachment.pin_8",
+        "active": true
+      },
+      {
+        "source": "ring_4",
+        "target": "ring_6",
+        "pin": "attachment.pin_9",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "ring_9",
+        "pin": "attachment.pin_10",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "ring_7",
+        "pin": "attachment.pin_11",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_12",
+        "active": true
+      },
+      {
+        "source": "ring_8",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_13",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [],
+      "current": [],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [
+      {
+        "id": "Bridge",
+        "lengths": [
+          12.4,
+          2
+        ],
+        "isU": false,
+        "guides": 0
+      }
+    ],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

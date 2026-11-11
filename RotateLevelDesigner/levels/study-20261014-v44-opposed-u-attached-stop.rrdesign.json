@@ -1,0 +1,77 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "U hai pin — chốt ngắn nối đầu cung",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Revision V26: nguồn C dùng radius2.8354, tâm dưới A cách5.6708, khe hướng0; chốt315 dài1.2 nối thật đầu cung dưới bên phải. U arm8.0 thay8.8 để nhả pin trái trước chỗ bị chốt chặn. Hai pin ngược giữ hai nhánh, không ngàm thừa. Hạ U khoảng-0.9, quay A CCW dọn C/chốt rồi hạ tiếp. Chốt cản drag trực tiếp đầu; không khẳng định bước chuẩn bị là bắt buộc trên mọi gesture lặp. Radius khác1.75 có mục đích giảm chiều dài chốt và giữ anchor đúng; không radius0.8/Booster/Chain. Chưa GD nghiệm thu bố cục/độ khó. Kiểm kéo U lặp có đường đi qua chốt trước khi quay A; không dùng chốt này để nhận thứ tự bắt buộc hoặc độ khó. File cũ V26 được giữ nguyên.",
+  "rings": [
+    {
+      "id": "A",
+      "x": -3.9354,
+      "y": 0,
+      "gapDir": 180,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": 3.9354,
+      "y": -4.5854,
+      "gapDir": 0,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": -3.9354,
+      "y": -5.6708,
+      "gapDir": 0,
+      "color": "purple",
+      "radius": 2.8354,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 315,
+          "length": 1.2
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 0,
+      "y": -7.1854,
+      "length": 2.2,
+      "arm": 8,
+      "angle": 0,
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "187",
+  "name": "Level187 – Bom và thanh hồi thấp",
+  "rings": [
+    {
+      "id": "R1",
+      "x": -1.01206,
+      "y": -3.0574404,
+      "gapDir": 90,
+      "gap": 0,
+      "radius": 1.75,
+      "pins": [],
+      "color": "teal",
+      "bomb": {
+        "x": -1.0112601,
+        "y": -1.3074404,
+        "radius": 0.75
+      }
+    },
+    {
+      "id": "R2",
+      "x": 2.4779399,
+      "y": -0.1290404,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 219.999444,
+          "targets": [
+            "R1"
+          ],
+          "length": 0.80583434
+        },
+        {
+          "id": "p2",
+          "angle": 0,
+          "targets": [
+            "R6"
+          ],
+          "length": 0.8059
+        }
+      ],
+      "radius": 1.75,
+      "color": "red"
+    },
+    {
+      "id": "R3",
+      "x": 3.63724,
+      "y": -4.5349404,
+      "gapDir": 95,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 104.741772,
+          "targets": [
+            "R2"
+          ],
+          "length": 0.8058678
+        },
+        {
+          "id": "p2",
+          "angle": 162.370276,
+          "targets": [
+            "R1"
+          ],
+          "length": 1.12842164
+        },
+        {
+          "id": "p3",
+          "angle": 240.37164,
+          "targets": [
+            "R4"
+          ],
+          "length": 0.80587964
+        }
+      ],
+      "radius": 1.75,
+      "color": "green"
+    },
+    {
+      "id": "R4",
+      "x": 1.38494,
+      "y": -8.49514,
+      "gapDir": 1,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -180,
+          "targets": [
+            "S1"
+          ],
+          "length": 0.8125
+        },
+        {
+          "id": "toR8",
+          "angle": 270,
+          "targets": [
+            "R8"
+          ],
+          "length": 0.8011996
+        }
+      ],
+      "radius": 1.75,
+      "color": "red"
+    },
+    {
+      "id": "R5",
+      "x": -1.61506,
+      "y": 4.2869606,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "targets": [
+            "S2"
+          ],
+          "length": 0.8124999
+        },
+        {
+          "id": "toR2",
+          "angle": 312.8261,
+          "targets": [
+            "R2"
+          ],
+          "length": 2.2711056
+        }
+      ],
+      "radius": 1.75,
+      "color": "green"
+    },
+    {
+      "id": "R6",
+      "x": 7.0338399,
+      "y": -0.1290404,
+      "gapDir": 91,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "newN1",
+          "angle": 303.51574,
+          "targets": [
+            "N1"
+          ],
+          "length": 4.459346
+        },
+        {
+          "id": "newS6",
+          "angle": 360,
+          "targets": [
+            "S6"
+          ],
+          "length": 5.39488
+        }
+      ],
+      "radius": 1.75,
+      "color": "teal"
+    },
+    {
+      "id": "R8",
+      "x": 1.38494,
+      "y": -12.79634,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "R9",
+      "x": 5.94024,
+      "y": -15.76502,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 146.90779,
+          "targets": [
+            "R8"
+          ],
+          "length": 1.937262
+        },
+        {
+          "id": "newS6",
+          "angle": 360,
+          "targets": [
+            "S6"
+          ],
+          "length": 6.48848
+        },
+        {
+          "id": "zZ1",
+          "angle": 288.5778,
+          "targets": [
+            "Z1"
+          ],
+          "length": 3.5035475
+        }
+      ],
+      "radius": 1.75,
+      "color": "green"
+    },
+    {
+      "id": "N1",
+      "x": 11.4287195,
+      "y": -6.765019,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": -25,
+      "pins": [
+        {
+          "id": "newR9",
+          "angle": 238.623864,
+          "targets": [
+            "R9"
+          ],
+          "length": 7.04151
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Z1",
+      "x": 8.25116,
+      "y": -22.6406,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": -97,
+      "pins": [
+        {
+          "id": "zS6",
+          "angle": 0,
+          "targets": [
+            "S6"
+          ],
+          "length": 4.17756
+        },
+        {
+          "id": "zZ2",
+          "angle": 171.8699,
+          "targets": [
+            "Z2"
+          ],
+          "length": 3.5710678
+        }
+      ],
+      "color": "green",
+      "bomb": {
+        "x": 10.00116,
+        "y": -22.6406
+      }
+    },
+    {
+      "id": "Z2",
+      "x": 1.2511599,
+      "y": -21.6406,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "id": "zR8",
+          "angle": 89.1334,
+          "targets": [
+            "R8"
+          ],
+          "length": 5.5952717
+        }
+      ],
+      "color": "orange"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -1.42756,
+      "y": -9.244241,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          2.5833
+        ],
+        [
+          0,
+          -2.8333
+        ],
+        [
+          -1.75,
+          -2.8333
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "S2",
+      "x": 3.7807399,
+      "y": 2.8181606,
+      "angle": 0,
+      "path": [
+        [
+          -2.5833,
+          3.5
+        ],
+        [
+          -2.5833,
+          0
+        ],
+        [
+          2.5833,
+          0
+        ],
+        [
+          2.5833,
+          3.5
+        ]
+      ],
+      "guides": [
+        {
+          "x": 1.19744,
+          "y": 5.2369594,
+          "angle": 90
+        },
+        {
+          "x": 6.36404,
+          "y": 5.2369594,
+          "angle": 90
+        }
+      ],
+      "color": "blue",
+      "bomb": {
+        "x": 1.3438865,
+        "y": 2.9646072
+      }
+    },
+    {
+      "id": "S4",
+      "x": -0.74006,
+      "y": -12.79634,
+      "angle": 0,
+      "path": [
+        [
+          2.5833,
+          0
+        ],
+        [
+          -2.8333,
+          0
+        ],
+        [
+          -2.8333,
+          1.75
+        ]
+      ],
+      "guides": [
+        {
+          "x": -0.5838601,
+          "y": -12.79634,
+          "angle": 180
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "S5",
+      "x": -4.42756,
+      "y": -2.9644404,
+      "angle": 0,
+      "path": [
+        [
+          3.75,
+          3.4167
+        ],
+        [
+          0,
+          3.4167
+        ],
+        [
+          0,
+          -3.4167
+        ],
+        [
+          3.75,
+          -3.4167
+        ]
+      ],
+      "guides": [
+        {
+          "x": -3.2504601,
+          "y": 0.4522594,
+          "angle": 180
+        },
+        {
+          "x": -3.2504601,
+          "y": -6.3811406,
+          "angle": 180
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "S6",
+      "x": 14.4287199,
+      "y": -8.265019,
+      "path": [
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          -18
+        ],
+        [
+          2.5,
+          -18
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "angle": 0,
+      "color": "blue"
+    }
+  ],
+  "notes": "Sửa khóa cứng 21/10/2026 theo yêu cầu GD. Giữ toàn bộ vòng/thanh và bố cục nguồn; add_bomb Z1; add_bomb S2. Ý tưởng: mở đường bằng cửa chuyển động hiện có, Bom phá vật chặn khi cần rồi quay lại nguồn pin. Có route full-body/default-feel không Booster được lưu riêng; pack --no-solve, chưa Unity/device hoặc duyệt độ khó. Ghi chú nguồn lịch sử: Nguồn kín R9 chia sẻ S6 với Z1, Z1 nối Z2 trở lại R8; Bom R1 và hai U giữ nguyên. Thêm Z1/Z2 thấp; S6 dài thành L, chân U S2 dài hơn; đổi cỡ R4/R8. Quan hệ cuối thêm: R9→Z1, Z1→S6, Z1→Z2, Z2→R8; bỏ:  Phản chiếu cứng x và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest.",
+  "author": "Codex / GD repair"
+}

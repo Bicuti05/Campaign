@@ -1,0 +1,780 @@
+{
+  "schema": "rr-original-boardA-learning-curve-v1",
+  "date": "2026-10-19",
+  "scope": "Original reference schedule Board A, levels1–20; not generated TURP variants or current campaign.",
+  "source": {
+    "path": "LevelTrainingData/TrainingLevel/TURP_Board_A_100_Dossier_COMPLETE_SOURCE_100/TURP_Board_A_100_Research_Complete_100/dossier.json",
+    "sha256": "4c42a0ecc6d9e890e74c30964d4c12b33829271f2e3a915333822d5caddbb550",
+    "dateChecked": "2026-10-11"
+  },
+  "method": "Targeted dossier counts/connections/action records + direct visual inspection of all20 original reference diagrams; selected public pages checked. No solver, engine replay, level edits or measured player difficulty.",
+  "tags": {
+    "New": "First appearance of a mechanic or structural tool in this reference schedule.",
+    "Practice": "Rehearsal/transfer of a known action or planning skill.",
+    "Combine": "Coordinates previously encountered mechanics.",
+    "Challenge": "Analyst interpretation of a board emphasizing planning, constraints or intermediate states; not measured difficulty.",
+    "Twist": "Reuses familiar objects with a changed role or movement strategy.",
+    "Relief": "Secondary pacing interpretation: reduced simultaneous concept load, not a guaranteed easier solve."
+  },
+  "limits": [
+    "Tags and teaching intent are inferences, not official developer labels.",
+    "Different schedules/game versions may use another board for the same level number.",
+    "All walkthroughs remain unverified in original gameplay; levels1/10/13/15/17/19 are partial,18 has notes only.",
+    "No definitive claim about bomb activation/timing/required victims. Website calls them timed bombs, while current Designer contact-bomb rules cannot establish original-game behavior.",
+    "Object counts, source step counts and diagram complexity are not measured difficulty or tutorial-effectiveness evidence."
+  ],
+  "records": [
+    {
+      "level": 1,
+      "primaryTag": "New",
+      "secondaryTags": [],
+      "observedLayout": "Hai vòng hở, một pin.",
+      "localObjective": "Xoay khe vòng đang nhận pin tới vị trí pin để mở liên kết.",
+      "teaches": "Học thao tác kéo xoay, đọc khe–pin và nhận phản hồi vòng tự rời khi hết ràng buộc.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/1/",
+        "diagram": "https://turp.com/boards/5f423d4cc65cbe2da1b09ceb96680bd4.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 2,
+          "blocking_pins": 1,
+          "stop_pins": 0,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "reviewed_opening_only",
+        "walkthroughCompleteness": "partial",
+        "anchorStepNumbers": [
+          1,
+          2
+        ]
+      },
+      "limitation": "Walkthrough nguồn không đầy đủ; mục tiêu là diễn giải thiết kế, chưa kiểm trong game."
+    },
+    {
+      "level": 2,
+      "primaryTag": "Practice",
+      "secondaryTags": [],
+      "observedLayout": "Ba vòng nối thành một chuỗi phụ thuộc.",
+      "localObjective": "Chọn vòng có thể mở trước, sau đó giải vòng vừa được mở quyền xoay.",
+      "teaches": "Học thứ tự nhân–quả: thao tác trên một vòng có thể mở đường cho vòng khác.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/2/",
+        "diagram": "https://turp.com/boards/dfa435762b0a26bd3fa4437d36936e3b.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 3,
+          "blocking_pins": 2,
+          "stop_pins": 0,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 3,
+      "primaryTag": "Practice",
+      "secondaryTags": [],
+      "observedLayout": "Bốn vòng; một vòng nhận hai pin, một vòng chủ mang hai pin.",
+      "localObjective": "Nhả lần lượt các quan hệ đang giữ cùng một vòng.",
+      "teaches": "Phân biệt mở một liên kết với tháo cả vòng; một vòng có thể cần đi qua nhiều tư thế.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/3/",
+        "diagram": "https://turp.com/boards/6da3983ec2dbda8fef1c50b1734732d3.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 4,
+          "blocking_pins": 3,
+          "stop_pins": 0,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 4,
+      "primaryTag": "New",
+      "secondaryTags": [
+        "Challenge"
+      ],
+      "observedLayout": "Bảy vòng; vòng kín trung tâm liên kết nhiều nhánh.",
+      "localObjective": "Giải vòng kín bằng cách xử lý các vòng xung quanh nó.",
+      "teaches": "Học vòng kín không có khe để tự thoát qua pin; cần giảm các ràng buộc quanh nó, chấp nhận bước chuẩn bị chưa làm vật nào rời.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/4/",
+        "diagram": "https://turp.com/boards/a8ba06dfa85acb667c325cd1c64878e2.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 7,
+          "blocking_pins": 8,
+          "stop_pins": 0,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [
+          4
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 5,
+      "primaryTag": "Practice",
+      "secondaryTags": [
+        "Relief"
+      ],
+      "observedLayout": "Bảy vòng hở; cây phụ thuộc chia nhánh, bỏ vòng kín.",
+      "localObjective": "Đọc nhánh ngoài có thể giải trước rồi thu về cụm giữa.",
+      "teaches": "Củng cố đọc thứ tự và xử lý nhiều pin trên một vòng trong cấu trúc dễ quan sát hơn level 4.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/5/",
+        "diagram": "https://turp.com/boards/fb5c1594225552aba9e9fa3795e32345.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 7,
+          "blocking_pins": 6,
+          "stop_pins": 0,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 6,
+      "primaryTag": "New",
+      "secondaryTags": [],
+      "observedLayout": "Chốt chặn xuất hiện lần đầu; chín vòng hở.",
+      "localObjective": "Chọn đường quay tới khe hợp lệ trong miền bị chốt chặn giới hạn.",
+      "teaches": "Học phân biệt pin giữ liên kết với chốt cản đường quay; kiểm đường đi và vật lân cận.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/6/",
+        "diagram": "https://turp.com/boards/c968cb8aff2cd4b5a08a2c8d254cd9f3.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 9,
+          "blocking_pins": 8,
+          "stop_pins": 1,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 7,
+      "primaryTag": "New",
+      "secondaryTags": [],
+      "observedLayout": "Bốn thanh thẳng với bốn ngàm, kết hợp bảy vòng.",
+      "localObjective": "Mở vòng đang cản lối rồi kéo thanh theo trục của ngàm để nhả cụm tiếp theo.",
+      "teaches": "Học thao tác trượt và chọn chiều kéo; xen kẽ xoay vòng–rút thanh–quay lại vòng.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/7/",
+        "diagram": "https://turp.com/boards/6fd7d0f0ef7a4a89f82bc63d1f860f7d.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 7,
+          "blocking_pins": 5,
+          "stop_pins": 0,
+          "slide_bars": 4,
+          "clamps": 4,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 8,
+      "primaryTag": "Combine",
+      "secondaryTags": [],
+      "observedLayout": "Hai vòng kín và một chốt chặn; không có thanh.",
+      "localObjective": "Áp dụng đồng thời cách giải vòng kín và đọc miền quay có vật cản.",
+      "teaches": "Học xử lý các vòng mở giữ vòng kín, rồi tiếp tục theo dõi liên kết còn lại.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/8/",
+        "diagram": "https://turp.com/boards/b56621381d6f4116a5ae27b088290ab8.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 9,
+          "blocking_pins": 7,
+          "stop_pins": 1,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [
+          1,
+          8
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 9,
+      "primaryTag": "Challenge",
+      "secondaryTags": [],
+      "observedLayout": "Ba vòng kín, hai chốt chặn; nhiều nhánh vòng liên tiếp.",
+      "localObjective": "Dọn các nhánh theo thứ tự và giữ một vòng ở tư thế trung gian khi cần.",
+      "teaches": "Học chuẩn bị một vòng, xử lý vòng khác, rồi quay lại hoàn tất vòng đã chuẩn bị.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/9/",
+        "diagram": "https://turp.com/boards/d0aeb4e654344c527130e0b79ee0f475.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 12,
+          "blocking_pins": 9,
+          "stop_pins": 2,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [
+          4,
+          8,
+          12
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 10,
+      "primaryTag": "New",
+      "secondaryTags": [
+        "Challenge"
+      ],
+      "observedLayout": "Hai bom; năm vòng kín trong sáu vòng, vòng lồng nhau và tám thanh gấp.",
+      "localObjective": "Nhận diện cụm bom và cấu trúc vòng lồng nhau trước khi lập thứ tự xử lý.",
+      "teaches": "Tiếp xúc bom và thanh gấp trong bài phối hợp lớn; chưa đủ bằng chứng để chốt thao tác kích nổ, mục tiêu phá hoặc timer thực tế.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/10/",
+        "diagram": "https://turp.com/boards/099ea6997909281271e0cb5c2dc5dc86.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 6,
+          "blocking_pins": 5,
+          "stop_pins": 2,
+          "slide_bars": 8,
+          "clamps": 8,
+          "bombs": 2
+        },
+        "closedRings": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "partial",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "limitation": "Bom nhìn thấy và được thống kê, route nguồn chỉ mở đầu và bỏ hiệu ứng/timer; không chuyển rule bom của Designer thành dữ kiện game gốc."
+    },
+    {
+      "level": 11,
+      "primaryTag": "Practice",
+      "secondaryTags": [
+        "Relief"
+      ],
+      "observedLayout": "Sáu vòng, hai thanh L, hai ngàm; bỏ bom và chốt chặn.",
+      "localObjective": "Đọc đúng đoạn thanh đi qua ngàm và chiều rút thanh L.",
+      "teaches": "Củng cố hướng trượt từ hình học thanh; xoay tạo lối, kéo thanh, rồi trở lại xử lý vòng.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/11/",
+        "diagram": "https://turp.com/boards/b3c3994dc0a8690589001199ee98e5de.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 6,
+          "blocking_pins": 4,
+          "stop_pins": 0,
+          "slide_bars": 2,
+          "clamps": 2,
+          "bombs": 0
+        },
+        "closedRings": [
+          1
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 12,
+      "primaryTag": "Practice",
+      "secondaryTags": [],
+      "observedLayout": "Một vòng kín giữa, hai chốt chặn và các nhánh bên; không có thanh.",
+      "localObjective": "Mở các nhánh giữ vòng kín bằng các góc chuẩn bị có chủ đích.",
+      "teaches": "Ôn phối hợp vòng kín–chốt chặn, đặc biệt khả năng quay lại vòng đã chuẩn bị.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/12/",
+        "diagram": "https://turp.com/boards/03113b0e77ad1b02f6d99df5f242ef8e.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 9,
+          "blocking_pins": 8,
+          "stop_pins": 2,
+          "slide_bars": 0,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [
+          4
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 13,
+      "primaryTag": "New",
+      "secondaryTags": [],
+      "observedLayout": "Hai thanh U, mỗi thanh đi qua hai ngàm, nối các cặp vòng.",
+      "localObjective": "Quan sát cả hai chân của một thanh U và tạo đường thoát cho chúng.",
+      "teaches": "Học một thanh có thể ràng buộc hai vùng; xử lý một đầu chưa cho biết cả thanh đã rút được.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/13/",
+        "diagram": "https://turp.com/boards/4bba224d232dcb215bf5914f90f4c994.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 7,
+          "blocking_pins": 6,
+          "stop_pins": 0,
+          "slide_bars": 2,
+          "clamps": 4,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "partial",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3
+        ]
+      },
+      "limitation": "Walkthrough nguồn không đầy đủ; mục tiêu là diễn giải thiết kế, chưa kiểm trong game."
+    },
+    {
+      "level": 14,
+      "primaryTag": "Combine",
+      "secondaryTags": [
+        "Challenge"
+      ],
+      "observedLayout": "Mười bốn vòng, năm thanh, ba chốt; có thanh được pin giữ nhưng không có ngàm.",
+      "localObjective": "Chọn vùng có thể mở, chuyển giữa nhiều hướng trượt và trở lại các vùng đang chờ.",
+      "teaches": "Phối hợp vòng kín, thanh thẳng/L, chốt chặn và liên kết pin→thanh trên một board nhiều giai đoạn.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/14/",
+        "diagram": "https://turp.com/boards/94c34921e2cf2517e7a94b88d028e451.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 14,
+          "blocking_pins": 11,
+          "stop_pins": 3,
+          "slide_bars": 5,
+          "clamps": 4,
+          "bombs": 0
+        },
+        "closedRings": [
+          12
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          4,
+          7,
+          8,
+          9,
+          11,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 15,
+      "primaryTag": "Challenge",
+      "secondaryTags": [
+        "Combine"
+      ],
+      "observedLayout": "Tám thanh với nhiều dạng bao quanh vòng giữa nhận nhiều liên kết.",
+      "localObjective": "Dịch một thanh tới vị trí tạm, chỉnh vòng trung tâm, rồi tiếp tục dịch thanh.",
+      "teaches": "Học phân biệt dịch để tạo khoảng trống với dịch để tháo hẳn; quản lý trạng thái trung gian và nhiều liên kết dùng chung.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/15/",
+        "diagram": "https://turp.com/boards/b359e540648f60e4b2468ad56eed74dd.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 9,
+          "blocking_pins": 9,
+          "stop_pins": 1,
+          "slide_bars": 8,
+          "clamps": 8,
+          "bombs": 0
+        },
+        "closedRings": [
+          1,
+          8
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "partial",
+        "anchorStepNumbers": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "limitation": "Walkthrough nguồn không đầy đủ; mục tiêu là diễn giải thiết kế, chưa kiểm trong game."
+    },
+    {
+      "level": 16,
+      "primaryTag": "Twist",
+      "secondaryTags": [
+        "Practice"
+      ],
+      "observedLayout": "Hai thanh L không có ngàm, được pin vòng giữ.",
+      "localObjective": "Dùng trượt để nhả pin/vòng trước, giữ thanh lại và đổi chiều kéo khi điều kiện thay đổi.",
+      "teaches": "Học thanh không ngàm vẫn có ràng buộc; một thanh có thể phải trượt ra–vào qua nhiều giai đoạn.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/16/",
+        "diagram": "https://turp.com/boards/2c8a7d28ed775c5271d64c7fead83d68.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 10,
+          "blocking_pins": 10,
+          "stop_pins": 0,
+          "slide_bars": 2,
+          "clamps": 0,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          1,
+          2,
+          8,
+          9,
+          10,
+          11,
+          14
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    },
+    {
+      "level": 17,
+      "primaryTag": "Combine",
+      "secondaryTags": [],
+      "observedLayout": "Vòng chủ giữa nối nhiều nhánh, bốn thanh và năm ngàm, có thanh U.",
+      "localObjective": "Mở các nhánh giữ cụm giữa rồi phối hợp vòng với thanh nối vùng.",
+      "teaches": "Học theo dõi cụm phụ thuộc dùng chung và quay lại sau khi một nhánh đã mở.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/17/",
+        "diagram": "https://turp.com/boards/92c2f2d4f82410dc3481e8a103135090.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 13,
+          "blocking_pins": 12,
+          "stop_pins": 0,
+          "slide_bars": 4,
+          "clamps": 5,
+          "bombs": 0
+        },
+        "closedRings": [
+          8
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "partial",
+        "anchorStepNumbers": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "limitation": "Walkthrough nguồn không đầy đủ; mục tiêu là diễn giải thiết kế, chưa kiểm trong game."
+    },
+    {
+      "level": 18,
+      "primaryTag": "Combine",
+      "secondaryTags": [
+        "Challenge"
+      ],
+      "observedLayout": "Nhiều thanh U nối cặp vòng; hai vòng kín, sáu thanh và tám ngàm.",
+      "localObjective": "Đọc các đầu thanh và các vòng bị giữ trước khi chọn vùng để giải.",
+      "teaches": "Dự kiến kiểm tra việc phối hợp nhiều đầu thanh và vòng kín; chỉ suy ra từ sơ đồ, nguồn không có chuỗi thao tác.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/18/",
+        "diagram": "https://turp.com/boards/a1252f4b0d7b3a0e90327ff63935caf4.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 11,
+          "blocking_pins": 10,
+          "stop_pins": 0,
+          "slide_bars": 6,
+          "clamps": 8,
+          "bombs": 0
+        },
+        "closedRings": [
+          2,
+          9
+        ],
+        "walkthroughStatus": "board_notes_only",
+        "walkthroughCompleteness": "board_notes_only",
+        "anchorStepNumbers": []
+      },
+      "limitation": "Sơ đồ và ownership notes, không có walkthrough."
+    },
+    {
+      "level": 19,
+      "primaryTag": "Challenge",
+      "secondaryTags": [
+        "Combine"
+      ],
+      "observedLayout": "Bom trở lại trong cụm nhiều vòng kín, có năm thanh L/U và ba ngàm.",
+      "localObjective": "Xác định nút thắt quanh cụm bom, đồng thời mở các ràng buộc thanh–vòng.",
+      "teaches": "Gọi lại nhận thức về bom trong bài phối hợp; chưa chốt cách bom tham gia lời giải vì nguồn chỉ có phần mở đầu.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/19/",
+        "diagram": "https://turp.com/boards/1118ae286f5190f812c12d20f6e01d91.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 10,
+          "blocking_pins": 11,
+          "stop_pins": 0,
+          "slide_bars": 5,
+          "clamps": 3,
+          "bombs": 1
+        },
+        "closedRings": [
+          3,
+          5,
+          6,
+          9,
+          10
+        ],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "partial",
+        "anchorStepNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "limitation": "Bom nhìn thấy và được thống kê, route nguồn chỉ mở đầu và bỏ hiệu ứng/timer; không chuyển rule bom của Designer thành dữ kiện game gốc."
+    },
+    {
+      "level": 20,
+      "primaryTag": "Challenge",
+      "secondaryTags": [
+        "Combine"
+      ],
+      "observedLayout": "Sáu vòng nhưng có vòng lớn chứa hai vòng nhỏ và thanh, cùng các liên kết bên ngoài.",
+      "localObjective": "Phối hợp tư thế vòng trong–vòng ngoài và dịch thanh tạm trước khi tháo hết.",
+      "teaches": "Học lập kế hoạch trên cụm lồng nhau, quay lại cùng một vòng và đổi hướng thanh; ít vật vẫn có thể đòi hỏi nhiều chuẩn bị.",
+      "tagAuthority": "analyst_inference_not_official",
+      "evidence": {
+        "sourcePage": "https://turp.com/levels/20/",
+        "diagram": "https://turp.com/boards/babd6c15303176cef98cd67fd380f1bd.webp",
+        "diagramVisuallyInspected": true,
+        "counts": {
+          "rings": 6,
+          "blocking_pins": 6,
+          "stop_pins": 0,
+          "slide_bars": 4,
+          "clamps": 4,
+          "bombs": 0
+        },
+        "closedRings": [],
+        "walkthroughStatus": "candidate_unverified",
+        "walkthroughCompleteness": "ends_with_zero_remaining",
+        "anchorStepNumbers": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "limitation": "Walkthrough nguồn kết thúc 0 vật nhưng vẫn là candidate chưa xác minh trong game gốc."
+    }
+  ],
+  "curve": [
+    {
+      "range": "1–3",
+      "focus": "Rotate gap to pin, then track sequential and multiple links."
+    },
+    {
+      "range": "4–6",
+      "focus": "Closed hub, practice branching, then physical rotation obstruction."
+    },
+    {
+      "range": "7–10",
+      "focus": "Sliding input, return to closed/stop practice, then a large mixed board with bombs/folded bars/nesting."
+    },
+    {
+      "range": "11–13",
+      "focus": "Smaller L-bar practice, ring-only recall, then two-legged U bars."
+    },
+    {
+      "range": "14–20",
+      "focus": "Shared dependencies, temporary movement, reversing slides, multi-region combinations, bomb recall and compact nested planning."
+    }
+  ]
+}

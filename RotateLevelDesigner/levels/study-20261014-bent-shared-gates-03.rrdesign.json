@@ -1,0 +1,152 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "BSG-03 | L giữ bằng ngàm, nguồn thanh ngang còn phải quay lại",
+  "author": "Codex + GD / research",
+  "notes": "8 vòng radius1,75 +L/H default,1ngàm đầy đủ,8pin; không Stop/Bom/Chain/Booster. L có pin A ở đầu nhánh đứng và ngàm phía trên: trượt0,3 nhả pin nhưng ngàm vẫn giữ L qua release, khác bỏ ngàm. D/AT/DT giữ vùng trên; thân D cản L nâng dài khi còn nguyên. AT là cửa chung A/D. A hết hai outgoing vẫn nhận C nên còn lượt quay thật. H ngang dưới L có hai lối: dọn J cho trái, hoặc dọn L/A cho phải. Sau H tháo, R nhận K nên còn lượt quay thực; pin R→H đã tháo có thể chạm vách pin A→L dù L đã tháo. Left recipe thử R sớm phải quay lại sau vùng A, hoặc có thể vượt cản bằng kéo lặp hữu hạn; không chứng nhận thứ tự bắt buộc hoặc khó từ số drag. Đối chứng arm-only hợp lệ bỏ base của L mở đường hạ trước vùng D, cho thấy L không chỉ đổi hình. Mọi geometry/runtime do builder CLI bake; các draft overlap giữ research. Visual/difficulty chờ GD.",
+  "rings": [
+    {
+      "id": "J",
+      "x": -4.9854,
+      "y": 0.8999999999999999,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "K",
+      "x": -4.9854,
+      "y": -3.6854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "J"
+        },
+        {
+          "angle": 0,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": -0.4,
+      "y": -3.6854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "H"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "x": 5.543733254999999,
+      "y": -2.1,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        },
+        {
+          "angle": 90,
+          "target": "AT"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 5.543733254999999,
+      "y": -6.6854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "x": 5.543733254999999,
+      "y": 2.4854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "D",
+      "x": 0.9583332549999994,
+      "y": 2.4854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "AT"
+        },
+        {
+          "angle": 90,
+          "target": "DT"
+        }
+      ]
+    },
+    {
+      "id": "DT",
+      "x": 0.9583332549999994,
+      "y": 7.0708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "blue",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "L",
+      "shape": "L",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "color": "green",
+      "guides": [
+        {
+          "x": 2.708333255,
+          "y": -0.85,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": -0.4,
+      "y": -0.85,
+      "angle": 0,
+      "color": "red"
+    }
+  ]
+}

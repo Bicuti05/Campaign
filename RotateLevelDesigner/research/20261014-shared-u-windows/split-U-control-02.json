@@ -1,0 +1,340 @@
+{
+  "design": {
+    "format": "turp-design",
+    "version": 1,
+    "levelId": "draft",
+    "name": "SUW-02 | Hai cửa chung và ngàm giữ U sau nhả pin",
+    "author": "Codex + GD / research",
+    "notes": "Revision vị trí ngàm củaSUW01, giữ mọi kích thước: ngàm-.9 cách base đủ để tránh own-wall overlap; prototype ngàm-1.2 giữ research. U default mở input A/B cùng lúc, ngàm có thể giữ cả U qua release; C/D kín giữ A/B và cùng nhận cửa T lớn. T radius2,70833325 khớp span U default và vị trí hai cột;6 vòng khác1,75. T còn nhận E để có cửa quay lại sau các nguồn dưới. Không Bom/Stop/Chain/Booster; chưa đủ proof để giao.",
+    "rings": [
+      {
+        "id": "A",
+        "x": -5.543733254999999,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 180,
+        "color": "orange",
+        "pins": [
+          {
+            "angle": 0,
+            "target": "UL"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "x": 5.543733254999999,
+        "y": 0,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "blue",
+        "pins": [
+          {
+            "angle": 180,
+            "target": "UR"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "x": -5.543733254999999,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "purple",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "A"
+          },
+          {
+            "angle": 0,
+            "target": "T"
+          }
+        ]
+      },
+      {
+        "id": "D",
+        "x": 5.543733254999999,
+        "y": 4.5854,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "green",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "B"
+          },
+          {
+            "angle": 180,
+            "target": "T"
+          }
+        ]
+      },
+      {
+        "id": "T",
+        "x": 0,
+        "y": 4.5854,
+        "radius": 2.708333255,
+        "gap": 90,
+        "gapDir": 270,
+        "color": "red",
+        "pins": []
+      },
+      {
+        "id": "E",
+        "x": 0,
+        "y": 10.129133255,
+        "radius": 1.75,
+        "gap": 0,
+        "gapDir": 0,
+        "color": "navy",
+        "pins": [
+          {
+            "angle": 270,
+            "target": "T"
+          },
+          {
+            "angle": 0,
+            "target": "ER"
+          }
+        ]
+      },
+      {
+        "id": "ER",
+        "x": 4.5854,
+        "y": 10.129133255,
+        "radius": 1.75,
+        "gap": 90,
+        "gapDir": 0,
+        "color": "sky",
+        "pins": []
+      }
+    ],
+    "sticks": [
+      {
+        "id": "UL",
+        "shape": "straight",
+        "x": -2.708333255,
+        "y": -0.6958333750000001,
+        "length": 2.20833325,
+        "angle": 90,
+        "color": "teal"
+      },
+      {
+        "id": "UR",
+        "shape": "straight",
+        "x": 2.708333255,
+        "y": -0.6958333750000001,
+        "length": 2.20833325,
+        "angle": 90,
+        "color": "teal",
+        "guides": [
+          {
+            "x": 2.708333255,
+            "y": -0.9,
+            "angle": 90
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 7,
+        "sticks": 2,
+        "guides": 1,
+        "bombs": 0,
+        "links": 8,
+        "pins": 8,
+        "stops": 0,
+        "closedRings": 3
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "A",
+        "target": "UL",
+        "margin": 135
+      },
+      {
+        "owner": "B",
+        "target": "UR",
+        "margin": 135
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "walls": 2,
+        "engaged": true
+      }
+    ],
+    "bodyAccess": [
+      {
+        "label": "A",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "B",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "C",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "D",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "T",
+        "visibleBodyPoints": 76
+      },
+      {
+        "label": "E",
+        "visibleBodyPoints": 120
+      },
+      {
+        "label": "ER",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "UL",
+        "visibleBodyPoints": 6
+      },
+      {
+        "label": "UR",
+        "visibleBodyPoints": 6
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "moves": [
+    {
+      "part": "UL",
+      "target": -0.5
+    },
+    {
+      "part": "UR",
+      "target": -0.5
+    },
+    {
+      "part": "A",
+      "target": 90
+    }
+  ],
+  "data": {
+    "solved": false,
+    "remaining": 7,
+    "initialContacts": [],
+    "trace": [
+      {
+        "part": "UL",
+        "target": -0.5,
+        "pose": -0.5,
+        "remaining": 8,
+        "began": true,
+        "events": [],
+        "removed": [
+          "slide_bar_1"
+        ]
+      },
+      {
+        "part": "UR",
+        "target": -0.5,
+        "pose": -0.5,
+        "remaining": 8,
+        "began": true,
+        "events": [],
+        "removed": []
+      },
+      {
+        "part": "A",
+        "target": 90,
+        "pose": 101.24999999999986,
+        "remaining": 7,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_1"
+        ]
+      }
+    ],
+    "links": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "bindings": [
+      true
+    ],
+    "guides": [
+      {
+        "active": true,
+        "engaged": true
+      }
+    ],
+    "poses": {
+      "A": {
+        "pose": 101.24999999999986,
+        "solved": true,
+        "locked": false
+      },
+      "B": {
+        "pose": 0,
+        "solved": false,
+        "locked": false
+      },
+      "C": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "D": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "T": {
+        "pose": 270,
+        "solved": false,
+        "locked": false
+      },
+      "E": {
+        "pose": 0,
+        "solved": false,
+        "locked": true
+      },
+      "ER": {
+        "pose": 0,
+        "solved": false,
+        "locked": false
+      },
+      "UL": {
+        "pose": -0.5,
+        "solved": true,
+        "locked": false
+      },
+      "UR": {
+        "pose": -0.5,
+        "solved": false,
+        "locked": false
+      }
+    }
+  }
+}

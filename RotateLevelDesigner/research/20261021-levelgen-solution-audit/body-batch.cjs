@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),{Worker,isMainThread,parentPort,workerData}=require('worker_threads');
+const OUT=__dirname,ROOT=path.resolve(OUT,'../../../..');const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));const write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+if(!isMainThread){try{const {entry,seconds,nodes,stage}=workerData;const file=path.join(ROOT,'Tools/LevelGen',entry.pack),hash=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');if(hash!==entry.sha256)throw Error('Input changed');const {search}=require('./body-search.cjs'),r=search(read(file).runtime,{seconds,nodes,diversify:stage==='deep',onProgress:p=>parentPort.postMessage({type:'progress',slot:entry.slot,...p})});parentPort.postMessage({type:'result',result:{atUtc:new Date().toISOString(),slot:entry.slot,pack:entry.pack,packSha256:hash,limits:{seconds,nodes},stage,method:'full_current_body_default_feel_event_endpoint_search_normalized_angle_keys',...r}});}catch(e){parentPort.postMessage({type:'result',result:{slot:workerData.entry.slot,found:false,verified:false,error:e.stack,stage:workerData.stage}});}}
+else{
+ write(path.join(OUT,'body-batch.pid.json'),{pid:process.pid,startedAt:new Date().toISOString()});
+ const inputs=read(path.join(OUT,'input-manifest.json')).entries,results=new Map(),jobs=[],active=new Map();let phase='body_initial';
+ for(const e of inputs){let verified=false;for(const f of ['A'+e.slot+'-initial.json','A'+e.slot+'-body-180.json'])if(fs.existsSync(path.join(OUT,f))){const r=read(path.join(OUT,f));if(r.replay?.verified||r.verified){results.set(e.slot,{...r,verified:true,evidence:f});verified=true;break;}}
+  if(verified)continue;const existing=path.join(OUT,'A'+e.slot+'-body-v2-initial.json');if(fs.existsSync(existing))results.set(e.slot,{...read(existing),evidence:path.basename(existing)});else jobs.push({entry:e,seconds:180,nodes:200000,stage:'initial'});}
+ function snapshot(){const a=[...results.values()];return{updatedAt:new Date().toISOString(),phase,total:inputs.length,completed:a.length,verified:a.filter(r=>r.verified).map(r=>r.slot).sort((a,b)=>a-b),unresolved:a.filter(r=>!r.verified).map(r=>r.slot).sort((a,b)=>a-b),queued:jobs.length,active:[...active.values()].map(x=>({slot:x.job.entry.slot,stage:x.job.stage,progress:x.progress}))};}
+ function save(){write(path.join(OUT,'body-progress.json'),snapshot());}
+ function pump(){while(active.size<6&&jobs.length){const job=jobs.shift(),slot=job.entry.slot,w=new Worker(__filename,{workerData:job,resourceLimits:{maxOldGenerationSizeMb:512}}),item={w,job};active.set(slot,item);let result=null;const timer=setTimeout(()=>w.terminate(),(job.seconds+90)*1000);
+  w.on('message',m=>{if(m.type==='progress'){item.progress=m;save();}else result=m.result;});w.on('error',e=>{result={slot,found:false,verified:false,error:e.message,stage:job.stage};});
+  w.on('exit',code=>{clearTimeout(timer);if(!result)result={slot,found:false,verified:false,error:'Worker exit '+code,stage:job.stage};const filename='A'+slot+'-body-v2-'+job.stage+'.json';write(path.join(OUT,filename),result);results.set(slot,{...result,evidence:filename});active.delete(slot);console.log('A'+slot+' body-'+job.stage+' '+(result.verified?'VERIFIED':'UNRESOLVED')+' '+(result.seconds?.toFixed(1)||'?')+'s remaining '+result.bestRemaining);save();pump();});
+ }
+ if(!jobs.length&&!active.size){if(phase==='body_initial'){phase='body_deep';for(const e of inputs){const r=results.get(e.slot);if(r.verified||r.open===0)continue;const p=path.join(OUT,'A'+e.slot+'-body-v2-deep.json');if(fs.existsSync(p))results.set(e.slot,{...read(p),evidence:path.basename(p)});else jobs.push({entry:e,seconds:600,nodes:1000000,stage:'deep'});}save();if(jobs.length){console.log('Deep full-body retry '+jobs.length);pump();return;}}
+  phase='complete';save();write(path.join(OUT,'body-summary.json'),{...snapshot(),results:[...results.values()].sort((a,b)=>a.slot-b.slot)});console.log('COMPLETE '+JSON.stringify(snapshot()));}
+ }
+ save();pump();
+}

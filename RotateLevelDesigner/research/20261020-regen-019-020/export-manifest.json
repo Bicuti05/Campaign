@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-20",
+  "batch": [
+    19,
+    20
+  ],
+  "status": "exported_at_user_request_without_further_testing",
+  "userInstruction": "xuất luôn, không cần test",
+  "rows": [
+    {
+      "id": 19,
+      "stem": "A019_20261020_r01",
+      "design": "Tools/RotateLevelDesigner/levels/A019_20261020_r01.rrdesign.json",
+      "pack": "Tools/RotateLevelDesigner/levels/A019_20261020_r01.rrpack.json",
+      "sha256": "4ed50e75b390078d938aa0275896635c327b2f2f62918618794056717a7ca603",
+      "designSha256": "c7bbd7be0ac7452035db2fe05ef13328e5a556d4cd1dded903169afcddeb8072",
+      "status": "proposal_exported_without_further_tests",
+      "exportMode": "native_cli_pack_no_solve",
+      "researchGeometry": "A019-draft04.rrdesign.json",
+      "preview": "A019-export-preview.png",
+      "limits": "No final-pack validate/solve, full serialized replay, jitter/ablation completion or roundtrip was run after the user requested immediate export without further tests."
+    },
+    {
+      "id": 20,
+      "stem": "A020_20261020_r01",
+      "design": "Tools/RotateLevelDesigner/levels/A020_20261020_r01.rrdesign.json",
+      "pack": "Tools/RotateLevelDesigner/levels/A020_20261020_r01.rrpack.json",
+      "sha256": "37cdfeef52ae5ed639eaaf8c26d6316c919279f23ad67ee9303de5ddf3d82850",
+      "designSha256": "bc15a3d5e5f6e6ed122f8d16d98f0e25169975d1f897a504c2a7d877cb30e100",
+      "status": "proposal_exported_without_further_tests",
+      "exportMode": "native_cli_pack_no_solve",
+      "researchGeometry": "A020-draft02.rrdesign.json",
+      "preview": "A020-export-preview.png",
+      "limits": "No final-pack validate/solve, full serialized replay, jitter/ablation completion or roundtrip was run after the user requested immediate export without further tests."
+    }
+  ],
+  "nextBatch": [],
+  "notApproved": true,
+  "ingameCampaignUnchanged": true,
+  "holdouts": [
+    {
+      "file": "A019-draft02.rrdesign.json",
+      "reason": "Additional oblique pin introduced overlap; not exported."
+    },
+    {
+      "file": "A019-draft03.rrdesign.json",
+      "reason": "Bomb contact at load; not exported. Draft04 changes Bomb placement and had no initial contacts in research."
+    },
+    {
+      "file": "A020-draft01.rrdesign.json",
+      "reason": "Full-body counterexample directly extracted mouth L at intermediate offsets; draft02 lengthens the legs."
+    }
+  ]
+}

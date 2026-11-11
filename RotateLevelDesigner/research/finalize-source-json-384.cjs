@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const ROOT=path.resolve(__dirname,'../../..'),TOOL=path.join(ROOT,'Tools/RotateLevelDesigner');
+const SOURCE='C:/Users/ADMIN/Downloads/level_data.json',OUT=path.join(TOOL,'reference-converted-379');
+const source=JSON.parse(fs.readFileSync(SOURCE,'utf8'));
+const files=fs.readdirSync(OUT).filter(f=>/^Level\d+\.rrdesign\.json$/.test(f)).sort((a,b)=>Number(a.match(/\d+/)[0])-Number(b.match(/\d+/)[0]));
+if(files.length!==379)throw Error('Expected 379 designs, found '+files.length);
+const levels=files.map(file=>{const d=JSON.parse(fs.readFileSync(path.join(OUT,file),'utf8')),sourceId=Number(d.levelId),l=source[sourceId];if(!l||!l.rings?.length)throw Error('Bad source mapping: '+file);return{sourceId,file,sourceRings:l.rings.length,sourceRingLinks:l.info?.ringLinks??null,sourceGuideLinks:l.info?.guideLinks??null,convertedRings:d.rings.length,convertedPins:d.rings.reduce((n,r)=>n+r.pins.length,0),cliValidate:'OK'};});
+const sha=crypto.createHash('sha256').update(fs.readFileSync(SOURCE)).digest('hex');
+const manifest={format:'turp-source-reference-conversion',version:1,source:'C:/Users/ADMIN/Downloads/level_data.json',sourceSha256:sha,converted:levels.length,excluded:Object.entries(source).filter(([,l])=>!l.rings?.length).map(([id])=>Number(id)),validation:'rr-cli validate passed for 379/379 design files.',limits:['Reference conversion only; not a playable-equivalence claim.','The source stores pin/link counts but not target identities; converted pins have empty targets and are blockers only.','Source JSON contains no stick/guide/stop/bomb/color/lockCount data.','The extraction omitted quaternion w; rotations were reconstructed under a planar x=y=0 assumption.','Parent transforms were not included in the source JSON; ring positions are copied from its localPosition fields.','No solve check was run because missing link targets and mechanics make these files incomplete representations.'],levels};
+const file=path.join(OUT,'manifest.json');if(fs.existsSync(file))throw Error('Refusing to overwrite '+file);fs.writeFileSync(file,JSON.stringify(manifest,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({converted:levels.length,excluded:manifest.excluded.length,validated:levels.filter(x=>x.cliValidate==='OK').length,sourceSha256:sha,output:OUT},null,2));

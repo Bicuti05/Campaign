@@ -1,0 +1,284 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "A033 — U hai tầng và receiver giữ hai nguồn / TURP r02",
+  "author": "Codex / TURP continuation",
+  "notes": "Remake70010: bỏ R4/R9 rìa, dựng8 vòng trên hàng/cột4,9, R3/R10 kín radius2,15 còn lại1,75. Nguồn kín R10 trước chỉ giữ thanh nay giữ R5/R6; R3 giữ R1/R5; R5 giữ R8 và thanh thẳng S1 ở giữa hai hàng, không Guide dư. U S2 bên phải qua khe R2/R8, hai chân4,2 bằng nhau và hai Guide đầy đủ. R1→R2, R6→R7→R8; quay lại R8 sau mở đầu ra trên, rồi quay receiver R5 để nhả hai nguồn trái. S1 tâm y2,45 nằm đúng giữa R1/R5, pin R5 dài0,45 có mục đích khoảng trống, không lấy minimum radius tool biện hộ. Hai pinbar L S3/S4 trái giữ nguồn kín. Không U giả/Guide nửa ngàm, không Stop/Bom/Booster/Chain; lockCount0. Màu kiểm cả cạnh pin. Stop nguồn không mang sang khi chưa có vai trò mới; proposal visual/độ khó chờ GD.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 270,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR2",
+          "target": "R2",
+          "angle": 0,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R2",
+      "x": 4.9,
+      "y": 0,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R3",
+      "x": -4.9,
+      "y": 0,
+      "radius": 2.15,
+      "gapDir": 90,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR1",
+          "target": "R1",
+          "angle": 0,
+          "length": 0.7500000000000004
+        },
+        {
+          "id": "toR5",
+          "target": "R5",
+          "angle": 45,
+          "length": 2.779646455628166
+        },
+        {
+          "id": "toS4",
+          "target": "S4",
+          "angle": 180,
+          "length": 0.8354
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R5",
+      "x": 0,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 135,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR8",
+          "target": "R8",
+          "angle": 0,
+          "length": 1.1500000000000004
+        },
+        {
+          "id": "toS1",
+          "target": "S1",
+          "angle": 270,
+          "length": 0.45
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR7",
+          "target": "R7",
+          "angle": 0,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R7",
+      "x": 4.9,
+      "y": 9.8,
+      "radius": 1.75,
+      "gapDir": 90,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR8",
+          "target": "R8",
+          "angle": 270,
+          "length": 1.1500000000000004
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R8",
+      "x": 4.9,
+      "y": 4.9,
+      "radius": 1.75,
+      "gapDir": 0,
+      "gap": 90,
+      "lockCount": 0,
+      "pins": [],
+      "color": "teal"
+    },
+    {
+      "id": "R10",
+      "x": -4.9,
+      "y": 4.9,
+      "radius": 2.15,
+      "gapDir": 90,
+      "gap": 0,
+      "lockCount": 0,
+      "pins": [
+        {
+          "id": "toR5",
+          "target": "R5",
+          "angle": 0,
+          "length": 0.7500000000000004
+        },
+        {
+          "id": "toR6",
+          "target": "R6",
+          "angle": 45,
+          "length": 2.779646455628166
+        },
+        {
+          "id": "toS3",
+          "target": "S3",
+          "angle": 180,
+          "length": 0.8354
+        }
+      ],
+      "color": "red"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S2",
+      "x": 8.5,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -4.2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4.9
+        ],
+        [
+          -4.2,
+          4.9
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 7.55,
+          "y": 0,
+          "angle": 0
+        },
+        {
+          "x": 7.05,
+          "y": 4.9,
+          "angle": 0
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "S3",
+      "x": -8.1354,
+      "y": 4.9,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -1.4
+        ],
+        [
+          0,
+          1.4
+        ],
+        [
+          -1.3,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "S4",
+      "x": -8.1354,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -1.4
+        ],
+        [
+          0,
+          1.4
+        ],
+        [
+          -1.3,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S1",
+      "x": 0,
+      "y": 2.45,
+      "angle": 0,
+      "path": [
+        [
+          -1.4,
+          0
+        ],
+        [
+          1.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "color": "blue"
+    }
+  ]
+}

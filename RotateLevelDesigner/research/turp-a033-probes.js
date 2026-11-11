@@ -1,0 +1,11 @@
+"use strict";
+const fs=require('fs'),path=require('path'),g=require('./pose-body-gesture-query'),{RR}=require('./turp-continue'),{OUT,save}=require('./turp-a033-author'),stem='turp-A033-70010-shared-return-U-r02',p=JSON.parse(fs.readFileSync(path.join(__dirname,'../levels',stem+'.rrpack.json'))),main=JSON.parse(fs.readFileSync(path.join(OUT,stem+'-qualification.json'))).moves,b=RR.Design.toLevel(p.design),rebuilt=JSON.parse(RR.json.stringify(b.level)),variants={skipU12:main.filter((_,i)=>i!==3),skipBoth11:main.filter((_,i)=>i!==3&&i!==11),lateMiddleReverse11:[...main.slice(0,11).filter((_,i)=>i!==0&&i!==3),{part:'S1',target:-1.5},main[12]]},profiles={},rows=[];
+for(const [key,moves]of Object.entries(variants)){profiles[key]={};for(const [name,lv]of [['saved',p.runtime],['rebuilt',rebuilt]])for(const feel of [false,true])profiles[key][name+(feel?'Default':'Analytic')]=g.replay(lv,moves.map(m=>({...m,part:b.ids[m.part]})),false,feel);}
+function run(label,moves,feel){const q=g.query(p,moves,false,feel).data;rows.push({label,feel,moves,...q});return q;}
+for(const feel of [false,true]){
+ const late=main.slice(0,11).filter(m=>m.part!=='S1');for(const target of [0,.5,1,1.4,1.5,-1.5])run('middle-bar-'+target,[...late,{part:'S1',target},{part:'R5',target:201}],feel);
+ for(const target of [-2,-6])run('U-repeated-reverse-'+target,[...main.slice(0,3),...Array.from({length:3},()=>({part:'S2',target})),{part:'R8',target:66}],feel);
+ const early=[...main.slice(0,9),{part:'R5',target:201}];run('R5-before-output',early,feel);run('R5-output-recovery',[...early,...main.slice(9)],feel);
+ const deep=[...main.slice(0,11),{part:'R5',target:540}];run('R5-deep-prefix',deep,feel);run('R5-deep-recovery',[...deep,{part:'R5',target:201}],feel);
+}
+save('r02-final-middle-bar-U-alternatives-and-recovery.json',{createdAtUtc:new Date().toISOString(),scope:'Final exported pack and rebuild full material-body pointertarget/release. Finite deep/repeated samples do not establish global necessity or impossibility.',variants,profiles,rows});console.log(JSON.stringify({profiles:Object.fromEntries(Object.entries(profiles).map(([k,v])=>[k,Object.fromEntries(Object.entries(v).map(([j,p])=>[j,p.ok]))])),rows:rows.map(r=>({label:r.label,feel:r.feel,solved:r.solved,remaining:r.remaining,R5:r.poses.R5,S1:r.poses.S1}))}));

@@ -1,0 +1,272 @@
+{
+  "format": "rotate-compact-bomb-study",
+  "version": 1,
+  "scope": "New footprint addressing isolated far-bottom bomber feedback; existing V5 unchanged",
+  "candidates": [
+    {
+      "stem": "study-20261013-v18-compact-bomb-corridor",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Mở chốt giữa ô rồi đưa bom vào cụm pin",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Bốn vòng theo ô 2x2 giữ nhau bằng chu trình pin thường. Thanh bom ngắn đặt ở khoảng giữa hàng/cột, ngàm giữ nó qua bước chuẩn bị. Thanh đứng ngắn chặn đường bom; rút thanh đứng xuống trước, rồi đẩy thanh bom sang phải để phá một nguồn của chu trình. Đi bom trước nổ vào thanh đứng, mất phương tiện phá cụm vòng. Bỏ ngàm thanh bom làm host tự tháo khi dọn thanh đứng, bom còn tại chỗ và cụm vòng không có vật nào được xoay. Ngàm thanh đứng làm hướng rút lên bị giữ/chặn; bỏ nó cho phép một lần thử lên tự tháo thanh. Bom gameplay cần thiết; không Chain/Booster. Mẫu mới nghiên cứu bố cục cùng vùng, không sửa bản bom V5 người dùng đã xem; chưa nghiệm thu đẹp/khó.",
+        "rings": [
+          {
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "gapDir": 90,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "B"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 4.5854,
+            "y": 0,
+            "gapDir": 90,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 270,
+                "target": "D"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": 0,
+            "y": -4.5854,
+            "gapDir": 180,
+            "color": "green",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ]
+          },
+          {
+            "id": "D",
+            "x": 4.5854,
+            "y": -4.5854,
+            "gapDir": 270,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "C"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "BombBar",
+            "shape": "straight",
+            "x": 1.25,
+            "y": -2.2927,
+            "length": 2.2,
+            "angle": 0,
+            "color": "red",
+            "guides": [
+              {
+                "x": 2.25,
+                "y": -2.2927,
+                "angle": 0
+              }
+            ],
+            "bomb": {
+              "x": 2.05,
+              "y": -2.2927,
+              "radius": 0.25
+            }
+          },
+          {
+            "id": "Key",
+            "shape": "L",
+            "x": 2.8,
+            "y": -2.2927,
+            "length": 1.2,
+            "arm": 1.2,
+            "angle": 270,
+            "color": "teal",
+            "guides": [
+              {
+                "x": 2.8,
+                "y": -2,
+                "angle": 90
+              }
+            ]
+          }
+        ]
+      },
+      "bombs": true,
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "slide_bar_2",
+              "text": "S2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.248)"
+            }
+          ],
+          "info": {
+            "rings": 4,
+            "sticks": 2,
+            "guides": 2,
+            "bombs": 1,
+            "links": 4,
+            "pins": 4,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": null
+      },
+      "witness": {
+        "keyDirections": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.1024996682437585,
+            "remaining": 4,
+            "links": 4
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 0.3999999999999999,
+            "remaining": 5,
+            "links": 4
+          }
+        ],
+        "withoutKeyGuide": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.1024996682437585,
+            "remaining": 4,
+            "links": 4
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.22486572265625,
+            "remaining": 5,
+            "links": 4
+          }
+        ],
+        "correct": null,
+        "wrongFirst": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "BombBar",
+              "pointer": 2,
+              "pose": 0,
+              "remaining": 5,
+              "links": 4,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": [
+                {
+                  "bomb": 0,
+                  "target": "slide_bar_1",
+                  "pose": 0
+                }
+              ]
+            }
+          ]
+        },
+        "withoutBomberGuide": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "Key",
+              "pointer": 2,
+              "pose": 0.3999999999999999,
+              "remaining": 4,
+              "links": 4,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutBomb": {
+          "analysis": {
+            "error": null,
+            "warnings": [
+              {
+                "code": "overlap",
+                "part": "slide_bar_2",
+                "text": "S2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.248)"
+              }
+            ],
+            "info": {
+              "rings": 4,
+              "sticks": 2,
+              "guides": 2,
+              "bombs": 0,
+              "links": 4,
+              "pins": 4,
+              "stops": 0,
+              "closedRings": 0
+            }
+          },
+          "solution": null
+        },
+        "withoutBomberGuideSearch": {
+          "analysis": {
+            "error": null,
+            "warnings": [
+              {
+                "code": "free",
+                "part": "slide_bar_1",
+                "text": "S1 không bị khóa từ đầu: sẽ tự tháo ở lần thả tay đầu tiên"
+              }
+            ],
+            "info": {
+              "rings": 4,
+              "sticks": 2,
+              "guides": 1,
+              "bombs": 1,
+              "links": 4,
+              "pins": 4,
+              "stops": 0,
+              "closedRings": 0
+            }
+          },
+          "solution": null
+        }
+      },
+      "holdout": true,
+      "reason": "Not exported: the key overlaps the bomber guide wall, and the hosted bomb touches its own guide trigger. Moving/lengthening the guide and bar inside this pocket must also avoid the pin stems of the surrounding cycle. This draft does not meet the geometry/initial-bomb-contact gate."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "SWH-03 | Mở khe đỡ chốt rồi quay lại nguồn giữ",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp8 vòng radius1,75/pitch4,5854,7pin/1StopA0 dài1,6 có chân trên vật liệu A90. A input mở nhưng hai hướng trực tiếp bị Stop chạm thân R180. DB120/RT180 mở inputR, RR phía trên giữR; R150 chỉ đổi khe để StopA thoát, A180 rồi270 phục vụC/D. DB dùng chungD/R; sauA rời quayDB180, rồi R90 phục vụRR và Q180 dọn cuối. R dùng hai pin vuông góc để còn lượt quaycleanup thật; prototype02 pin đối diện/retainer phải kẹt vách cũ cả hai hướng giữresearch. Không Stick/Guide/Bom/Chain/Booster. Chưa đủ proof để giao; không coi một lần cản là chuẩn bị bắt buộc, visual/difficulty chờGD.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange",
+      "pins": [],
+      "stops": [
+        {
+          "angle": 0,
+          "length": 1.6
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "A"
+        },
+        {
+          "angle": 0,
+          "target": "DB"
+        }
+      ]
+    },
+    {
+      "id": "DB",
+      "x": 4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "R",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "RT"
+        },
+        {
+          "angle": 270,
+          "target": "DB"
+        }
+      ]
+    },
+    {
+      "id": "RT",
+      "x": 9.1708,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "RR",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R"
+        },
+        {
+          "angle": 0,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 9.1708,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "red",
+      "pins": []
+    }
+  ],
+  "sticks": []
+}

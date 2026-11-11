@@ -1,0 +1,133 @@
+{
+  "ok": false,
+  "status": "held_full_material_gesture",
+  "geometry": {
+    "ok": true,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 2,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 0,
+        "links": 1,
+        "pins": 1,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "stopFeet": [],
+    "pinMargins": [
+      {
+        "owner": "R2",
+        "target": "R1",
+        "margin": 135
+      }
+    ],
+    "guides": [],
+    "bodyAccess": [
+      {
+        "label": "R1",
+        "visibleBodyPoints": 82
+      },
+      {
+        "label": "R2",
+        "visibleBodyPoints": 91
+      }
+    ],
+    "initialBombContacts": []
+  },
+  "bakedMargins": {
+    "ok": true,
+    "rows": [
+      {
+        "owner": "ring_2",
+        "pin": 0,
+        "margin": 135,
+        "ok": true
+      }
+    ]
+  },
+  "body": [
+    {
+      "label": "R1",
+      "points": 82,
+      "locked": false,
+      "began": true,
+      "ok": true
+    },
+    {
+      "label": "R2",
+      "points": 91,
+      "locked": true,
+      "began": false,
+      "ok": true
+    }
+  ],
+  "runtimeMoves": [
+    {
+      "part": "ring_1",
+      "target": 234
+    }
+  ],
+  "moves": [
+    {
+      "part": "R1",
+      "target": 234
+    }
+  ],
+  "analytic": {
+    "ok": true,
+    "solved": true,
+    "trace": [
+      {
+        "part": "ring_1",
+        "target": 234,
+        "grab": {
+          "x": -0.9531183112762974,
+          "y": 1.467673493904492
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 82,
+        "began": true,
+        "events": [],
+        "removed": [
+          "ring_2",
+          "ring_1"
+        ],
+        "pose": 233.99999999999932,
+        "remaining": 0,
+        "links": [
+          false
+        ]
+      }
+    ],
+    "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+  },
+  "default": {
+    "ok": false,
+    "solved": false,
+    "trace": [
+      {
+        "part": "ring_1",
+        "target": 234,
+        "grab": {
+          "x": -0.9531183112762974,
+          "y": 1.467673493904492
+        },
+        "grabBodySdf": -0.25,
+        "selectable": 82,
+        "began": true,
+        "events": [],
+        "removed": [],
+        "pose": 231.7499999999994,
+        "remaining": 2,
+        "links": [
+          true
+        ]
+      }
+    ],
+    "scope": "Actual current-pose material-body hitTest/beginDrag and original replay-until-release.apply. World.stickPose includes current offset;authoring stickToWorld does not. Existing full-gesture-query initialization unchanged,no core/app/engine/tolerance edits."
+  }
+}

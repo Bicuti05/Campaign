@@ -1,0 +1,1576 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261014-v44-opposed-u-attached-stop",
+      "name": "U hai pin — chốt ngắn nối đầu cung",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "U hai pin — chốt ngắn nối đầu cung",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Revision V26: nguồn C dùng radius2.8354, tâm dưới A cách5.6708, khe hướng0; chốt315 dài1.2 nối thật đầu cung dưới bên phải. U arm8.0 thay8.8 để nhả pin trái trước chỗ bị chốt chặn. Hai pin ngược giữ hai nhánh, không ngàm thừa. Hạ U khoảng-0.9, quay A CCW dọn C/chốt rồi hạ tiếp. Chốt cản drag trực tiếp đầu; không khẳng định bước chuẩn bị là bắt buộc trên mọi gesture lặp. Radius khác1.75 có mục đích giảm chiều dài chốt và giữ anchor đúng; không radius0.8/Booster/Chain. Chưa GD nghiệm thu bố cục/độ khó. Kiểm kéo U lặp có đường đi qua chốt trước khi quay A; không dùng chốt này để nhận thứ tự bắt buộc hoặc độ khó. File cũ V26 được giữ nguyên.",
+        "rings": [
+          {
+            "id": "A",
+            "x": -3.9354,
+            "y": 0,
+            "gapDir": 180,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "U"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 3.9354,
+            "y": -4.5854,
+            "gapDir": 0,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "U"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": -3.9354,
+            "y": -5.6708,
+            "gapDir": 0,
+            "color": "purple",
+            "radius": 2.8354,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 90,
+                "target": "A"
+              }
+            ],
+            "stops": [
+              {
+                "angle": 315,
+                "length": 1.2
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "U",
+            "shape": "U",
+            "x": 0,
+            "y": -7.1854,
+            "length": 2.2,
+            "arm": 8,
+            "angle": 0,
+            "color": "green",
+            "slideAxis": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 1,
+          "guides": 0,
+          "bombs": 0,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 3 drags after 18 explorations",
+      "moves": [
+        {
+          "part": "slide_bar_1",
+          "target": -2
+        },
+        {
+          "part": "ring_1",
+          "target": 270
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -7
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": -2,
+          "direction": "-",
+          "removedNow": 0,
+          "remaining": 4
+        },
+        {
+          "step": 2,
+          "part": "ring_1",
+          "label": "R1",
+          "kind": "ring",
+          "from": 180,
+          "to": 270,
+          "direction": "CCW",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": -0.93,
+          "to": -7,
+          "direction": "-",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 0,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -2,
+            "pose": -0.9348632812500004,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 270,
+            "pose": 234.0000000000002,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -7,
+            "pose": -5.434863281249997,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -2,
+            "pose": -0.9348632812500004,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 270,
+            "pose": 234.00000000000023,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -7,
+            "pose": -5.434863281249997,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "A",
+          "angle": 0,
+          "logicMargin": 135
+        },
+        {
+          "owner": "B",
+          "angle": 180,
+          "logicMargin": 135
+        },
+        {
+          "owner": "C",
+          "angle": 90,
+          "logicMargin": 45
+        }
+      ],
+      "witness": {
+        "initial": {
+          "solved": false,
+          "remaining": 4,
+          "initialContacts": [],
+          "trace": [],
+          "links": [
+            true,
+            true,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "U": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "partial": {
+          "solved": false,
+          "remaining": 4,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            }
+          ],
+          "links": [
+            false,
+            true,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "U": {
+              "pose": -0.9348632812500004,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "afterGate": {
+          "solved": false,
+          "remaining": 2,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            },
+            {
+              "part": "A",
+              "target": 270,
+              "pose": 258.7500000000004,
+              "remaining": 2,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_3",
+                "ring_1"
+              ]
+            }
+          ],
+          "links": [
+            false,
+            true,
+            false
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 258.7500000000004,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "U": {
+              "pose": -0.9348632812500004,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "correct": {
+          "solved": true,
+          "remaining": 0,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            },
+            {
+              "part": "A",
+              "target": 270,
+              "pose": 258.7500000000004,
+              "remaining": 2,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_3",
+                "ring_1"
+              ]
+            },
+            {
+              "part": "U",
+              "target": -7,
+              "pose": -7,
+              "remaining": 0,
+              "began": true,
+              "events": [],
+              "removed": [
+                "slide_bar_1",
+                "ring_2"
+              ]
+            }
+          ],
+          "links": [
+            false,
+            false,
+            false
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 258.7500000000004,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "C": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "U": {
+              "pose": -7,
+              "solved": true,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 234.0000000000002,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -7,
+              "pose": -5.434863281249997,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feel": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 270,
+              "pose": 234.00000000000023,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -7,
+              "pose": -5.434863281249997,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "initialDown": {
+          "solved": false,
+          "remaining": 4,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -7,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            }
+          ],
+          "links": [
+            false,
+            true,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "U": {
+              "pose": -0.9348632812500004,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "initialUp": {
+          "solved": false,
+          "remaining": 4,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": 7,
+              "pose": 1.9728637695312503,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            }
+          ],
+          "links": [
+            true,
+            true,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "U": {
+              "pose": 1.9728637695312503,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "withoutStop": {
+          "solved": true,
+          "remaining": 0,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -7,
+              "pose": -6.999999999999991,
+              "remaining": 2,
+              "began": true,
+              "events": [],
+              "removed": [
+                "slide_bar_1",
+                "ring_2"
+              ]
+            },
+            {
+              "part": "A",
+              "target": 270,
+              "pose": 258.7500000000004,
+              "remaining": 0,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_3",
+                "ring_1"
+              ]
+            }
+          ],
+          "links": [
+            false,
+            false,
+            false
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 258.7500000000004,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "C": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "U": {
+              "pose": -6.999999999999991,
+              "solved": true,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "withoutLeftPin": {
+          "solved": false,
+          "remaining": 2,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "A",
+              "target": 270,
+              "pose": 258.7500000000004,
+              "remaining": 2,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_3",
+                "ring_1"
+              ]
+            }
+          ],
+          "links": [
+            true,
+            false
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 258.7500000000004,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "U": {
+              "pose": 0,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "withoutRightPin": {
+          "solved": false,
+          "remaining": 2,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 2,
+              "began": true,
+              "events": [],
+              "removed": [
+                "slide_bar_1",
+                "ring_2"
+              ]
+            }
+          ],
+          "links": [
+            false,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "C": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "U": {
+              "pose": -0.9348632812500004,
+              "solved": true,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "wrongA": {
+          "solved": false,
+          "remaining": 4,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            },
+            {
+              "part": "A",
+              "target": 0,
+              "pose": 168.05493164062517,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            }
+          ],
+          "links": [
+            true,
+            true,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 168.05493164062517,
+              "solved": false,
+              "locked": true
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "U": {
+              "pose": -0.9348632812500004,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "undo": {
+          "solved": false,
+          "remaining": 4,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            },
+            {
+              "part": "U",
+              "target": 0,
+              "pose": -2.220446049250313e-16,
+              "remaining": 4,
+              "began": true,
+              "events": [],
+              "removed": []
+            },
+            {
+              "part": "A",
+              "locked": true,
+              "selectable": 82,
+              "began": false
+            }
+          ],
+          "links": [
+            true,
+            true,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": false,
+              "locked": true
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "U": {
+              "pose": -2.220446049250313e-16,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "geometry": {
+          "offset": -0.9348632812500004,
+          "stopDepth": 0.019993075343677447,
+          "sourceBodyDepth": 0,
+          "footSdf": [
+            -0.23898100719010498
+          ]
+        },
+        "withoutIncomingSource": {
+          "solved": false,
+          "remaining": 2,
+          "initialContacts": [],
+          "trace": [
+            {
+              "part": "U",
+              "target": -2,
+              "pose": -0.9348632812500004,
+              "remaining": 2,
+              "began": true,
+              "events": [],
+              "removed": [
+                "ring_3",
+                "ring_1"
+              ]
+            }
+          ],
+          "links": [
+            false,
+            true
+          ],
+          "bindings": [],
+          "guideEngaged": [],
+          "poses": {
+            "A": {
+              "pose": 180,
+              "solved": true,
+              "locked": false
+            },
+            "B": {
+              "pose": 0,
+              "solved": false,
+              "locked": true
+            },
+            "C": {
+              "pose": 0,
+              "solved": true,
+              "locked": false
+            },
+            "U": {
+              "pose": -0.9348632812500004,
+              "solved": false,
+              "locked": false
+            }
+          },
+          "bombs": []
+        },
+        "splitFrame": {
+          "analysis": {
+            "error": null,
+            "warnings": [],
+            "info": {
+              "rings": 3,
+              "sticks": 2,
+              "guides": 0,
+              "bombs": 0,
+              "links": 3,
+              "pins": 3,
+              "stops": 1,
+              "closedRings": 0
+            }
+          },
+          "firstLeft": {
+            "solved": false,
+            "remaining": 4,
+            "initialContacts": [],
+            "trace": [
+              {
+                "part": "UL",
+                "target": -0.9,
+                "pose": -0.8999999999999999,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": [
+                  "slide_bar_1"
+                ]
+              }
+            ],
+            "links": [
+              false,
+              true,
+              true
+            ],
+            "bindings": [],
+            "guideEngaged": [],
+            "poses": {
+              "A": {
+                "pose": 180,
+                "solved": false,
+                "locked": false
+              },
+              "B": {
+                "pose": 0,
+                "solved": false,
+                "locked": true
+              },
+              "C": {
+                "pose": 0,
+                "solved": false,
+                "locked": true
+              },
+              "UL": {
+                "pose": -0.8999999999999999,
+                "solved": true,
+                "locked": false
+              },
+              "UR": {
+                "pose": 0,
+                "solved": false,
+                "locked": false
+              }
+            },
+            "bombs": []
+          }
+        },
+        "finiteStopLengths": [
+          {
+            "length": 1.15,
+            "analysis": {
+              "error": null,
+              "warnings": [],
+              "info": {
+                "rings": 3,
+                "sticks": 1,
+                "guides": 0,
+                "bombs": 0,
+                "links": 3,
+                "pins": 3,
+                "stops": 1,
+                "closedRings": 0
+              }
+            },
+            "result": {
+              "solved": true,
+              "remaining": 0,
+              "initialContacts": [],
+              "trace": [
+                {
+                  "part": "U",
+                  "target": -2,
+                  "pose": -0.9358642578125004,
+                  "remaining": 4,
+                  "began": true,
+                  "events": [],
+                  "removed": []
+                },
+                {
+                  "part": "A",
+                  "target": 270,
+                  "pose": 258.7500000000004,
+                  "remaining": 2,
+                  "began": true,
+                  "events": [],
+                  "removed": [
+                    "ring_3",
+                    "ring_1"
+                  ]
+                },
+                {
+                  "part": "U",
+                  "target": -7,
+                  "pose": -7,
+                  "remaining": 0,
+                  "began": true,
+                  "events": [],
+                  "removed": [
+                    "slide_bar_1",
+                    "ring_2"
+                  ]
+                }
+              ],
+              "links": [
+                false,
+                false,
+                false
+              ],
+              "bindings": [],
+              "guideEngaged": [],
+              "poses": {
+                "A": {
+                  "pose": 258.7500000000004,
+                  "solved": true,
+                  "locked": false
+                },
+                "B": {
+                  "pose": 0,
+                  "solved": true,
+                  "locked": false
+                },
+                "C": {
+                  "pose": 0,
+                  "solved": true,
+                  "locked": false
+                },
+                "U": {
+                  "pose": -7,
+                  "solved": true,
+                  "locked": false
+                }
+              },
+              "bombs": []
+            }
+          },
+          {
+            "length": 1.25,
+            "analysis": {
+              "error": null,
+              "warnings": [],
+              "info": {
+                "rings": 3,
+                "sticks": 1,
+                "guides": 0,
+                "bombs": 0,
+                "links": 3,
+                "pins": 3,
+                "stops": 1,
+                "closedRings": 0
+              }
+            },
+            "result": {
+              "solved": true,
+              "remaining": 0,
+              "initialContacts": [],
+              "trace": [
+                {
+                  "part": "U",
+                  "target": -2,
+                  "pose": -0.9360595703125004,
+                  "remaining": 4,
+                  "began": true,
+                  "events": [],
+                  "removed": []
+                },
+                {
+                  "part": "A",
+                  "target": 270,
+                  "pose": 258.7500000000004,
+                  "remaining": 2,
+                  "began": true,
+                  "events": [],
+                  "removed": [
+                    "ring_3",
+                    "ring_1"
+                  ]
+                },
+                {
+                  "part": "U",
+                  "target": -7,
+                  "pose": -7,
+                  "remaining": 0,
+                  "began": true,
+                  "events": [],
+                  "removed": [
+                    "slide_bar_1",
+                    "ring_2"
+                  ]
+                }
+              ],
+              "links": [
+                false,
+                false,
+                false
+              ],
+              "bindings": [],
+              "guideEngaged": [],
+              "poses": {
+                "A": {
+                  "pose": 258.7500000000004,
+                  "solved": true,
+                  "locked": false
+                },
+                "B": {
+                  "pose": 0,
+                  "solved": true,
+                  "locked": false
+                },
+                "C": {
+                  "pose": 0,
+                  "solved": true,
+                  "locked": false
+                },
+                "U": {
+                  "pose": -7,
+                  "solved": true,
+                  "locked": false
+                }
+              },
+              "bombs": []
+            }
+          }
+        ],
+        "repeatBypass": {
+          "cases": [
+            {
+              "gesture": 1,
+              "offset": -0.9348632812500004,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 2,
+              "offset": -0.9636108398437502,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 3,
+              "offset": -0.9925048828125,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 4,
+              "offset": -1.0198730468750004,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 5,
+              "offset": -1.0480102539062504,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 6,
+              "offset": -1.0770629882812504,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 7,
+              "offset": -1.1072387695312504,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 8,
+              "offset": -1.1388183593750005,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 9,
+              "offset": -1.1612426757812504,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 10,
+              "offset": -1.1907104492187508,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 11,
+              "offset": -1.218334960937501,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 12,
+              "offset": -1.2459228515625012,
+              "remaining": 4,
+              "removed": [],
+              "links": [
+                false,
+                true,
+                true
+              ]
+            },
+            {
+              "gesture": 13,
+              "offset": -7.000000000000002,
+              "remaining": 2,
+              "removed": [
+                "slide_bar_1",
+                "ring_2"
+              ],
+              "links": [
+                false,
+                false,
+                true
+              ]
+            }
+          ],
+          "moves": [
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "U",
+              "target": -7
+            },
+            {
+              "part": "A",
+              "target": 270
+            }
+          ],
+          "completion": {
+            "solved": true,
+            "remaining": 0,
+            "initialContacts": [],
+            "trace": [
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -0.9348632812500004,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -0.9636108398437502,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -0.9925048828125,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.0198730468750004,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.0480102539062504,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.0770629882812504,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.1072387695312504,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.1388183593750005,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.1612426757812504,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.1907104492187508,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.218334960937501,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -1.2459228515625012,
+                "remaining": 4,
+                "began": true,
+                "events": [],
+                "removed": []
+              },
+              {
+                "part": "U",
+                "target": -7,
+                "pose": -7.000000000000002,
+                "remaining": 2,
+                "began": true,
+                "events": [],
+                "removed": [
+                  "slide_bar_1",
+                  "ring_2"
+                ]
+              },
+              {
+                "part": "A",
+                "target": 270,
+                "pose": 258.7500000000004,
+                "remaining": 0,
+                "began": true,
+                "events": [],
+                "removed": [
+                  "ring_3",
+                  "ring_1"
+                ]
+              }
+            ],
+            "links": [
+              false,
+              false,
+              false
+            ],
+            "bindings": [],
+            "guideEngaged": [],
+            "poses": {
+              "A": {
+                "pose": 258.7500000000004,
+                "solved": true,
+                "locked": false
+              },
+              "B": {
+                "pose": 0,
+                "solved": true,
+                "locked": false
+              },
+              "C": {
+                "pose": 0,
+                "solved": true,
+                "locked": false
+              },
+              "U": {
+                "pose": -7.000000000000002,
+                "solved": true,
+                "locked": false
+              }
+            },
+            "bombs": []
+          }
+        }
+      }
+    }
+  ]
+}

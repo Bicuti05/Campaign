@@ -1,0 +1,42 @@
+{
+  "scope": "Actual supplied CLI calls through direct tools; no Unity, no policy changes",
+  "results": [
+    {
+      "stem": "study-20261013-v28-sequential-ring-bombs",
+      "explodeBombs": true,
+      "validate": "OK   levels/study-20261013-v28-sequential-ring-bombs.rrdesign.json (design) rings 4 (closed 3), pins 3, links 3, stops 0, sticks 0, guides 0, bombs 2",
+      "solve": {
+        "found": true,
+        "drags": 2,
+        "log": "found with 2 drags after 11 explorations",
+        "nodes": 11,
+        "seconds": 0.036,
+        "route": [
+          {
+            "step": 1,
+            "part": "ring_3",
+            "label": "R3",
+            "kind": "ring",
+            "from": 180,
+            "to": 105,
+            "direction": "CW",
+            "removedNow": 2,
+            "remaining": 2
+          },
+          {
+            "step": 2,
+            "part": "ring_1",
+            "label": "R1",
+            "kind": "ring",
+            "from": 90,
+            "to": 165,
+            "direction": "CCW",
+            "removedNow": 2,
+            "remaining": 0
+          }
+        ]
+      },
+      "bake": "wrote levels/study-20261013-v28-sequential-ring-bombs.rrpack.json (44216 bytes)"
+    }
+  ]
+}

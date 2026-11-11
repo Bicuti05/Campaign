@@ -1,0 +1,194 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "FSB-02 | Nguồn giữ chốt chạm Bom của nguồn còn khóa",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp10 vòng radius1,75,1straight default,14pin,1StopQ240 length0,6 và1BomA radius0,75/orbit2,4 ở330°. Quan hệ mới: S/U mở input Q nhưng C→Q vẫn giữ Q/Stop, A còn input khóa T; Q160 đưa Stop vào BomA, phá A/Q. C/T/U và vùng trên còn nguyên, phải đổi cửa tiếp. Chuẩn bị S/T rồi kéo A90 liên tục đưa Bom vào thân C, phá A/C; lock giữ A đã nhả trong gesture nhưng chưa release nên Bom còn đi theo A. A60 release sớm hơn chỉ tháo A/detach Bom, route ordinary với Bom vẫn bật có thể thắng không nổ. Bỏ riêng Stop tại Q160 không có contact, kéo Q sâu hơn khi không Stop vẫn có thể chạm bằng vách pin, không chứng nhận Stop/Bom bắt buộc toàn cục. Bỏ riêng Bom/retainer C→Q và từng pin/S có control tại prefix thực; foot Stop kiểm bake trên cung Q, body hitTest/fresh beginDrag, analytic/default feel/full-target release sau serialize. Kế thừa các cửa dùng chung từ STG05 để phục vụ hậu quả nổ khác nhau, không bàn giao lại STG05 và không thêm special chỉ để đủ cơ chế. Các placement hướng Stop vào root pin bị overlap giữ research. Không Guide/Chain/Booster; đẹp/khó/host Bom trong khe chờ GD, không engine/Unity/browser/device proof.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 120,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ],
+      "bomb": {
+        "x": 2.078460969082653,
+        "y": 1.1999999999999997,
+        "radius": 0.6
+      }
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 60,
+          "target": "U"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ],
+      "stops": [
+        {
+          "angle": 120,
+          "length": 0.4
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": -2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "U",
+      "x": 6.8781,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "U"
+        },
+        {
+          "angle": 240,
+          "target": "A"
+        },
+        {
+          "angle": 300,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": -2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 150,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "x": 6.8781,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 30,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "U"
+        },
+        {
+          "angle": 180,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "Z",
+      "x": 2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "DG",
+      "x": -2.2927,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "EG",
+      "x": 6.8781,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "E"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "green"
+    }
+  ]
+}

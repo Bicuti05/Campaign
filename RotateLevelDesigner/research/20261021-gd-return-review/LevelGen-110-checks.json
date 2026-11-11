@@ -1,0 +1,243 @@
+{
+  "file": "Tools/LevelGen/Tools/RotateLevelDesigner/levels/A110_20261020_r01.rrpack.json",
+  "source": "Tools/LevelGen/references/TURPLevel/LevelVariants/sources/Level10015.rrdesign.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 11,
+        "sticks": 4,
+        "guides": 4,
+        "bombs": 0,
+        "links": 11,
+        "pins": 11,
+        "stops": 0,
+        "closedRings": 1
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "R2",
+        "pin": "p1",
+        "margin": 109.11721999999997
+      },
+      {
+        "ring": "R2",
+        "pin": "revisedToR1",
+        "margin": 46.28883999999999
+      },
+      {
+        "ring": "R3",
+        "pin": "toSideL",
+        "margin": 46
+      },
+      {
+        "ring": "R7",
+        "pin": "p1",
+        "margin": 51.268839999999955
+      },
+      {
+        "ring": "R7",
+        "pin": "p2",
+        "margin": 135.800675
+      },
+      {
+        "ring": "R7",
+        "pin": "p3",
+        "margin": 101.814075
+      },
+      {
+        "ring": "R7",
+        "pin": "p4",
+        "margin": 51.65914570000001
+      },
+      {
+        "ring": "R9",
+        "pin": "p1",
+        "margin": 134.74102299999998
+      },
+      {
+        "ring": "R10",
+        "pin": "revisedToR11",
+        "margin": 50.186986700000034
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "engaged": true
+      },
+      {
+        "id": "guide_2",
+        "engaged": true
+      },
+      {
+        "id": "guide_3",
+        "engaged": true
+      },
+      {
+        "id": "guide_4",
+        "engaged": true
+      }
+    ],
+    "links": [
+      {
+        "source": "ring_2",
+        "target": "ring_5",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_2",
+        "target": "ring_1",
+        "pin": "attachment.pin_2",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "slide_bar_4",
+        "pin": "attachment.pin_3",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_9",
+        "pin": "attachment.pin_4",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_3",
+        "pin": "attachment.pin_5",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_5",
+        "pin": "attachment.pin_6",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_7",
+        "pin": "attachment.pin_7",
+        "active": true
+      },
+      {
+        "source": "ring_8",
+        "target": "ring_7",
+        "pin": "attachment.pin_8",
+        "active": true
+      },
+      {
+        "source": "ring_9",
+        "target": "ring_10",
+        "pin": "attachment.pin_9",
+        "active": true
+      },
+      {
+        "source": "ring_11",
+        "target": "ring_10",
+        "pin": "attachment.pin_10",
+        "active": true
+      },
+      {
+        "source": "ring_11",
+        "target": "ring_4",
+        "pin": "attachment.pin_11",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [
+        {
+          "kind": "thanh–thanh",
+          "a": "S2",
+          "b": "S3",
+          "depth": 0.125
+        },
+        {
+          "kind": "thanh–vòng",
+          "a": "S3",
+          "b": "R4",
+          "depth": 0.115
+        },
+        {
+          "kind": "thanh–vòng",
+          "a": "S4",
+          "b": "R6",
+          "depth": 0.482
+        }
+      ],
+      "current": [
+        {
+          "kind": "thanh–thanh",
+          "a": "S2",
+          "b": "S3",
+          "depth": 0.125
+        },
+        {
+          "kind": "thanh–vòng",
+          "a": "S3",
+          "b": "R4",
+          "depth": 0.115
+        }
+      ],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [
+      {
+        "id": "S1",
+        "lengths": [
+          4.75
+        ],
+        "isU": false,
+        "guides": 1
+      },
+      {
+        "id": "S2",
+        "lengths": [
+          2.5833,
+          6.9166,
+          2.5833
+        ],
+        "isU": true,
+        "guides": 2
+      },
+      {
+        "id": "S3",
+        "lengths": [
+          5.1666
+        ],
+        "isU": false,
+        "guides": 1
+      },
+      {
+        "id": "S4",
+        "lengths": [
+          5.4166,
+          1.6458
+        ],
+        "isU": false,
+        "guides": 0
+      }
+    ],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

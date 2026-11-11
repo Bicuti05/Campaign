@@ -1,0 +1,502 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v23-pin-on-l-arm",
+      "name": "Hai pin trên nhánh L — nhả nguồn dưới, dọn chốt rồi nâng tiếp",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Hai pin trên nhánh L — nhả nguồn dưới, dọn chốt rồi nâng tiếp",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Không ngàm. Hai pin cùng hướng giữ ở hai vị trí trên nhánh đứng của L, trục trượt là local Y và vuông góc đoạn ngang ngắn của L. Nâng +0,7 nhả pin dưới, pin trên vẫn giữ L. Vòng dưới được xoay để nhả nguồn chéo mang chốt; chốt biến mất, L mới nâng tiếp và nhả pin trên. Đầu ngang L chặn đường hạ qua thân vòng trên; đổi thành thanh đứng mở lối hạ. Chốt dài 6,5 đi qua khe 120 độ của vòng trên; bố cục chốt dài cần GD đánh giá sau, chưa tự nhận đẹp/khó. Không bom/Chain/Booster, không thêm ngàm trùng vai trò pin.",
+        "rings": [
+          {
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "S"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "x": 0,
+            "y": 4.5854,
+            "gapDir": 135,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 120,
+            "pins": [
+              {
+                "angle": 0,
+                "target": "S"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "x": -3.801468885193888,
+            "y": 2.564123139574763,
+            "gapDir": 135,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 326,
+                "target": "A"
+              }
+            ],
+            "stops": [
+              {
+                "angle": 45,
+                "length": 6.5
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S",
+            "shape": "L",
+            "x": 2.2354,
+            "y": 6.7854,
+            "length": 1.2,
+            "arm": 7.3854,
+            "angle": 0,
+            "color": "green",
+            "slideAxis": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 3,
+          "sticks": 1,
+          "guides": 0,
+          "bombs": 0,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 3 drags after 17 explorations",
+      "moves": [
+        {
+          "part": "slide_bar_1",
+          "target": 0.7
+        },
+        {
+          "part": "ring_1",
+          "target": 174
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 6
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": 0.7,
+          "direction": "+",
+          "removedNow": 0,
+          "remaining": 4
+        },
+        {
+          "step": 2,
+          "part": "ring_1",
+          "label": "R1",
+          "kind": "ring",
+          "from": 270,
+          "to": 174,
+          "direction": "CW",
+          "removedNow": 2,
+          "remaining": 2
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0.7,
+          "to": 6,
+          "direction": "+",
+          "removedNow": 2,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 6,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": 0.7,
+            "pose": 0.7000000000000002,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 174,
+            "pose": 180.0000000000004,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": 6,
+            "pose": 5.299999999999998,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": 0.7,
+            "pose": 0.7000000000000002,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 174,
+            "pose": 180.00000000000043,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": 6,
+            "pose": 5.299999999999998,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "A",
+          "angle": 0,
+          "logicMargin": 45
+        },
+        {
+          "owner": "B",
+          "angle": 0,
+          "logicMargin": 75
+        },
+        {
+          "owner": "C",
+          "angle": 326,
+          "logicMargin": 124
+        }
+      ],
+      "witness": {
+        "initialBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.6388916015625,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.1153320312500001,
+            "remaining": 4,
+            "links": 2
+          }
+        ],
+        "sourceBefore": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 270,
+            "remaining": 4,
+            "links": 3
+          }
+        ],
+        "partial": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 0.7,
+              "pose": 0.7000000000000002,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "afterPartialBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0.7000000000000002,
+            "to": -1.6171874999999998,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0.7000000000000002,
+            "to": 1.13704833984375,
+            "remaining": 4,
+            "links": 2
+          }
+        ],
+        "afterGateBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0.7000000000000002,
+            "to": -1.6388916015625,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0.7000000000000002,
+            "to": 5.299999999999998,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "withoutStop": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.6388916015625,
+            "remaining": 4,
+            "links": 3
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 5.299999999999998,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "withoutUpper": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 0.7,
+              "pose": 0.7000000000000002,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_2",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutLowerSource": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 270,
+            "to": 180.0000000000004,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 270,
+            "to": 470.9999999999996,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "straightDirections": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -6.8999999999999915,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 5.299999999999997,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "narrowGap": {
+          "analysis": {
+            "error": null,
+            "warnings": [
+              {
+                "code": "overlap",
+                "part": "ring_2",
+                "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.250)"
+              },
+              {
+                "code": "overlap",
+                "part": "ring_3",
+                "text": "R3 chồng lên vật khác lúc bắt đầu (độ xuyên 0.250)"
+              }
+            ],
+            "info": {
+              "rings": 3,
+              "sticks": 1,
+              "guides": 0,
+              "bombs": 0,
+              "links": 3,
+              "pins": 3,
+              "stops": 1,
+              "closedRings": 0
+            }
+          },
+          "solution": null
+        },
+        "undo": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 0.7,
+              "pose": 0.7000000000000002,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "S",
+              "pointer": 0,
+              "pose": 0,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 180,
+              "pose": 270,
+              "remaining": 4,
+              "links": 3,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 0.7,
+              "pose": 0.7000000000000002,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "A",
+              "pointer": 180,
+              "pose": 180.0000000000004,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_3"
+              ],
+              "events": []
+            },
+            {
+              "part": "S",
+              "pointer": 6,
+              "pose": 5.299999999999998,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "STG-01 research | Thanh chung mở hai nhánh, nguồn trên chờ hai cửa",
+  "author": "Codex + GD / research",
+  "notes": "8 vòng radius1,75,1 thanh straight default,9 pin; S ngang mở A/Q dưới, T chung A/C và U chung Q/C. C chỉ mở input sau cả T/U nhả đúng pin, E kín bên trái còn giữ C để quay thực; B/D kín giữ A/Q sau S và cửa. Hai cửa có thể phục vụ C trước rồi quay lại A/Q hoặc dọn nguồn dưới trước; cần đo geometry, role, tái khóa, đường khác và full-release sau serialize. Không Guide/Stop/Bom/Chain/Booster, không giả tăng số kéo là khó. Bản author research chưa bàn giao.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "U"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "U",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 240,
+          "target": "T"
+        },
+        {
+          "angle": 300,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "x": -4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "A"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": 9.1708,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "x": -2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "C"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "green"
+    }
+  ]
+}

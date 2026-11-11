@@ -1,0 +1,220 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 315,
+          "target": "R4"
+        },
+        {
+          "angle": 45,
+          "target": "R2"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R2",
+      "x": 3.2424,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 135,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R3",
+      "x": 6.4847,
+      "y": 6.4847,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 315.0009,
+          "target": "R6"
+        },
+        {
+          "angle": 225,
+          "target": "R2"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R4",
+      "x": 3.2424,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 225,
+      "pins": [],
+      "color": "red"
+    },
+    {
+      "id": "R5",
+      "x": 6.4847,
+      "y": 0,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 45,
+          "target": "R6"
+        },
+        {
+          "angle": 134.9991,
+          "target": "R2"
+        },
+        {
+          "angle": 225.0009,
+          "target": "R4"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R6",
+      "x": 9.7271,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R7",
+      "x": 6.4847,
+      "y": -6.4847,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R4"
+        },
+        {
+          "angle": 315,
+          "target": "R9"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R8",
+      "x": 12.9695,
+      "y": 0,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R6"
+        },
+        {
+          "angle": 314.9991,
+          "target": "R11"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R9",
+      "x": 9.7271,
+      "y": -9.7271,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [],
+      "color": "teal",
+      "stops": [
+        {
+          "angle": 345,
+          "length": 1.47
+        },
+        {
+          "angle": 195,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "x": 12.9695,
+      "y": -6.4847,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 45,
+          "target": "R11"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R11",
+      "x": 16.2118,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 315,
+      "pins": [],
+      "color": "sky"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "L",
+      "x": 10.75,
+      "y": 4.25,
+      "angle": 45,
+      "color": "red",
+      "guides": [
+        {
+          "x": 10.75,
+          "y": 4.25,
+          "angle": 45
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "shape": "straight",
+      "x": 10,
+      "y": -5.75,
+      "angle": 315,
+      "color": "navy",
+      "guides": [
+        {
+          "x": 10,
+          "y": -5.75,
+          "angle": 315
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "shape": "straight",
+      "x": 14.5,
+      "y": -8.5,
+      "angle": 225,
+      "color": "blue",
+      "guides": [
+        {
+          "x": 14.5,
+          "y": -8.5,
+          "angle": 225
+        }
+      ]
+    }
+  ],
+  "name": "G01-032 | Chương cuối",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 32 (build). Ý tưởng: R4 bị 3 vòng (R1, R5, R7) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R1 còn giữ R2: nếu chưa nhả hết nơi khác thì quay R4 tiếp sẽ bị khóa lại; vòng kín R3, R5, R8 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R9 chặn một chiều quay: chọn chiều hoặc dọn đường trước. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 4.3 lần kéo/vật, mục tiêu 4–6). Không Booster/Chain/bom; lockCount 0."
+}

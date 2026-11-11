@@ -1,0 +1,209 @@
+{
+  "file": "Tools/LevelGen/Tools/RotateLevelDesigner/levels/A133_20261020_r01.rrpack.json",
+  "source": "Tools/LevelGen/references/TURPLevel/LevelVariants/sources/Level70004.rrdesign.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 9,
+        "sticks": 3,
+        "guides": 3,
+        "bombs": 0,
+        "links": 12,
+        "pins": 12,
+        "stops": 0,
+        "closedRings": 1
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "R1",
+        "pin": "p1",
+        "margin": 60
+      },
+      {
+        "ring": "R2",
+        "pin": "p1",
+        "margin": 46.00109999999995
+      },
+      {
+        "ring": "R3",
+        "pin": "p2",
+        "margin": 45.96343000000002
+      },
+      {
+        "ring": "R3",
+        "pin": "toS4",
+        "margin": 120
+      },
+      {
+        "ring": "R5",
+        "pin": "p1",
+        "margin": 46.00110000000001
+      },
+      {
+        "ring": "R6",
+        "pin": "p1",
+        "margin": 45.647519999999986
+      },
+      {
+        "ring": "R8",
+        "pin": "p1",
+        "margin": 45.648199999999974
+      },
+      {
+        "ring": "R9",
+        "pin": "p1",
+        "margin": 118.32587000000001
+      },
+      {
+        "ring": "R9",
+        "pin": "p2",
+        "margin": 45.67412999999999
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "engaged": true
+      },
+      {
+        "id": "guide_2",
+        "engaged": true
+      },
+      {
+        "id": "guide_3",
+        "engaged": true
+      }
+    ],
+    "links": [
+      {
+        "source": "ring_1",
+        "target": "ring_6",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_2",
+        "target": "ring_8",
+        "pin": "attachment.pin_2",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_5",
+        "pin": "attachment.pin_3",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "slide_bar_2",
+        "pin": "attachment.pin_4",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "ring_2",
+        "pin": "attachment.pin_5",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_4",
+        "pin": "attachment.pin_6",
+        "active": true
+      },
+      {
+        "source": "ring_7",
+        "target": "ring_3",
+        "pin": "attachment.pin_7",
+        "active": true
+      },
+      {
+        "source": "ring_7",
+        "target": "ring_1",
+        "pin": "attachment.pin_8",
+        "active": true
+      },
+      {
+        "source": "ring_7",
+        "target": "slide_bar_3",
+        "pin": "attachment.pin_9",
+        "active": true
+      },
+      {
+        "source": "ring_8",
+        "target": "ring_4",
+        "pin": "attachment.pin_10",
+        "active": true
+      },
+      {
+        "source": "ring_9",
+        "target": "ring_6",
+        "pin": "attachment.pin_11",
+        "active": true
+      },
+      {
+        "source": "ring_9",
+        "target": "ring_1",
+        "pin": "attachment.pin_12",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [
+        {
+          "kind": "thanh–vòng",
+          "a": "S4",
+          "b": "R10",
+          "depth": 0.478
+        }
+      ],
+      "current": [],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [
+      {
+        "id": "S3",
+        "lengths": [
+          5.1666
+        ],
+        "isU": false,
+        "guides": 1
+      },
+      {
+        "id": "S4",
+        "lengths": [
+          12.5001
+        ],
+        "isU": false,
+        "guides": 1
+      },
+      {
+        "id": "S5",
+        "lengths": [
+          16
+        ],
+        "isU": false,
+        "guides": 1
+      }
+    ],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

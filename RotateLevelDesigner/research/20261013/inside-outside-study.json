@@ -1,0 +1,544 @@
+{
+  "format": "rotate-inside-outside-study",
+  "version": 1,
+  "scope": "Shared bar in nested crescent and external ring region; no core changes",
+  "candidates": [
+    {
+      "stem": "study-20261013-v19-shared-bar-inside-outside",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Thanh dùng chung — nâng mở vùng dưới, hạ mở vòng lớn",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Vòng nhỏ lệch tâm nằm trong vòng lớn, chừa vùng trống bên phải cho thanh đứng đi qua khe dưới của vòng lớn và khe trên của vòng ngoài phía dưới. Thanh không tháo được theo cả hai phía lúc đầu. Nâng một đoạn mở vòng dưới nhưng thanh vẫn bị ngàm giữ và vẫn chặn vòng lớn. Nhả cụm dưới rồi hạ thanh khỏi ngàm mới mở được vòng lớn. Ngàm giữ vật không nhận pin; bỏ ngàm tạo tự tháo ở bước chuẩn bị. Nhóm nghiên cứu vòng lớn/nhỏ, không bom/Chain/Booster; chưa nghiệm thu bố cục hoặc độ khó.",
+        "rings": [
+          {
+            "id": "I",
+            "x": -1.0854,
+            "y": 0,
+            "gapDir": 0,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "O"
+              }
+            ]
+          },
+          {
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "gapDir": 270,
+            "color": "red",
+            "radius": 3.9208,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "T",
+            "x": 2,
+            "y": -6.7,
+            "gapDir": 90,
+            "color": "blue",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": []
+          },
+          {
+            "id": "B",
+            "x": 6.5854,
+            "y": -6.7,
+            "gapDir": 0,
+            "color": "purple",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "T"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "S",
+            "shape": "straight",
+            "x": 2,
+            "y": -5.1,
+            "length": 6.2,
+            "angle": 90,
+            "color": "green",
+            "guides": [
+              {
+                "x": 2,
+                "y": -2.6,
+                "angle": 90
+              }
+            ]
+          }
+        ]
+      },
+      "authorMoves": [
+        {
+          "part": "S",
+          "target": 3.6
+        },
+        {
+          "part": "T",
+          "target": 0
+        },
+        {
+          "part": "S",
+          "target": -1
+        },
+        {
+          "part": "O",
+          "target": 180
+        }
+      ],
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 4,
+            "sticks": 1,
+            "guides": 1,
+            "bombs": 0,
+            "links": 2,
+            "pins": 2,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 4,
+              "target": 5.599999999999996
+            },
+            {
+              "obj": 2,
+              "target": 324
+            },
+            {
+              "obj": 4,
+              "target": -0.7001708984375004
+            },
+            {
+              "obj": 1,
+              "target": 501
+            }
+          ],
+          "log": "found with 4 drags after 27 explorations",
+          "nodes": 27,
+          "seconds": 0.089,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 5.6,
+              "direction": "+",
+              "removedNow": 0,
+              "remaining": 5
+            },
+            {
+              "step": 2,
+              "part": "ring_3",
+              "label": "R3",
+              "kind": "ring",
+              "from": 90,
+              "to": 324,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 3
+            },
+            {
+              "step": 3,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 5.3,
+              "to": -0.7,
+              "direction": "-",
+              "removedNow": 1,
+              "remaining": 2
+            },
+            {
+              "step": 4,
+              "part": "ring_2",
+              "label": "R2",
+              "kind": "ring",
+              "from": 270,
+              "to": 501,
+              "direction": "CCW",
+              "removedNow": 2,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "initialGuideEngaged": true,
+        "initialBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.32998046875000053,
+            "remaining": 5,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 5.373229980468747,
+            "remaining": 5,
+            "links": 2
+          }
+        ],
+        "initialOuter": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 262.9929199218751,
+            "remaining": 5,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 342.41674804687443,
+            "remaining": 5,
+            "links": 2
+          }
+        ],
+        "initialLower": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 50.701904296874886,
+            "remaining": 5,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 129.29809570312506,
+            "remaining": 5,
+            "links": 2
+          }
+        ],
+        "partialOuter": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 262.9929199218751,
+            "remaining": 5,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 342.41674804687443,
+            "remaining": 5,
+            "links": 2
+          }
+        ],
+        "partialLower": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 90,
+            "to": 35.999999999999936,
+            "remaining": 3,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 90,
+            "to": 323.9999999999998,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "afterLowerOuter": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 270,
+            "to": 262.9929199218751,
+            "remaining": 3,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 270,
+            "to": 342.41674804687443,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "afterLowerBar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 3.6,
+            "to": -0.700000000000002,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 3.6,
+            "to": 5.373229980468746,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "withoutBarOuter": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 270,
+            "to": 219.0000000000005,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 270,
+            "to": 500.99999999999994,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "withoutBarLower": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 90,
+            "to": 35.999999999999936,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 90,
+            "to": 323.9999999999998,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "withoutGuidePartial": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 3.6,
+              "pose": 3.6,
+              "remaining": 4,
+              "links": 2,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutLowerBar": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.7000000000000002,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 5.373229980468747,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "withoutOuterBar": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.32998046875000053,
+            "remaining": 3,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 5.699999999999996,
+            "remaining": 2,
+            "links": 1
+          }
+        ],
+        "undoLower": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 90,
+            "to": 50.701904296874886,
+            "remaining": 5,
+            "links": 2
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 90,
+            "to": 129.29809570312506,
+            "remaining": 5,
+            "links": 2
+          }
+        ],
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 3.6,
+              "pose": 3.6,
+              "remaining": 5,
+              "links": 2,
+              "bindings": 1,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "T",
+              "pointer": 0,
+              "pose": 35.999999999999936,
+              "remaining": 3,
+              "links": 1,
+              "bindings": 1,
+              "solved": [
+                "ring_3",
+                "ring_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "S",
+              "pointer": -1,
+              "pose": -0.700000000000002,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "O",
+              "pointer": 180,
+              "pose": 219.0000000000005,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feelTrace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "S",
+              "pointer": 3.6,
+              "pose": 3.6,
+              "remaining": 5,
+              "links": 2,
+              "bindings": 1,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "T",
+              "pointer": 0,
+              "pose": 35.99999999999989,
+              "remaining": 3,
+              "links": 1,
+              "bindings": 1,
+              "solved": [
+                "ring_3",
+                "ring_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "S",
+              "pointer": -1,
+              "pose": -0.700000000000002,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "O",
+              "pointer": 180,
+              "pose": 220.50000000000057,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "ring_2",
+                "ring_3",
+                "ring_4",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

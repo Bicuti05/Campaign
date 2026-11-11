@@ -1,0 +1,583 @@
+{
+  "format": "rotate-stick-only-study",
+  "version": 1,
+  "scope": "Supported existing straight/L/U/guide mechanics; no new gameplay rule",
+  "candidates": [
+    {
+      "stem": "study-20261013-v15-orthogonal-l-corners",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Hai thanh L — đổi trục ở góc",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Nhóm nghiên cứu chỉ có thanh/ngàm, được gợi ý bởi quan hệ thanh dày ở ref_037 và các L riêng phía dưới ref_043. L đứng chặn lối trượt phải của L ngang; góc L ngang bị ngàm chặn khi kéo trái. Nâng L đứng một đoạn để đầu dưới ra khỏi đường ngang trong khi nó vẫn còn được ngàm giữ, kéo L ngang sang phải, rồi dọn L đứng. Góc L đứng chặn lối kéo xuống qua ngàm; bỏ từng nhánh gập thay hướng được phép. Mỗi thanh không nhận pin nên ngàm giữ thật. Không vòng/pin/bom/Chain/Booster; đây là thử cơ học với luật Designer có sẵn, chưa nghiệm thu đẹp/khó.",
+        "rings": [],
+        "sticks": [
+          {
+            "id": "V",
+            "shape": "L",
+            "x": 3,
+            "y": -1,
+            "length": 4,
+            "arm": 2,
+            "angle": 90,
+            "color": "blue",
+            "guides": [
+              {
+                "x": 3,
+                "y": 0,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "L",
+            "x": 0,
+            "y": -1,
+            "length": 4,
+            "arm": 2,
+            "angle": 0,
+            "color": "orange",
+            "guides": [
+              {
+                "x": 0,
+                "y": -1,
+                "angle": 0
+              }
+            ]
+          }
+        ]
+      },
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 0,
+            "sticks": 2,
+            "guides": 2,
+            "bombs": 0,
+            "links": 0,
+            "pins": 0,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 0,
+              "target": 3.1000000000000014
+            },
+            {
+              "obj": 1,
+              "target": 2.1000000000000005
+            }
+          ],
+          "log": "found with 2 drags after 5 explorations",
+          "nodes": 5,
+          "seconds": 0.022,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": 3.1,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 1
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_2",
+              "label": "S2",
+              "kind": "stick",
+              "from": 0,
+              "to": 2.1,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "authorMoves": [
+        {
+          "part": "V",
+          "target": 2.2
+        },
+        {
+          "part": "H",
+          "target": 3
+        },
+        {
+          "part": "V",
+          "target": 3.2
+        }
+      ],
+      "witness": {
+        "initialH": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.354345703125,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.5799804687500005,
+            "remaining": 2,
+            "links": 0
+          }
+        ],
+        "afterPartial": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.354345703125,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.1000000000000005,
+            "remaining": 1,
+            "links": 0
+          }
+        ],
+        "withoutV": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.354345703125,
+            "remaining": 1,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.1000000000000005,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "initialV": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.354345703125,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 3.1000000000000014,
+            "remaining": 1,
+            "links": 0
+          }
+        ],
+        "straightV": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.0999999999999996,
+            "remaining": 1,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 3.1000000000000014,
+            "remaining": 1,
+            "links": 0
+          }
+        ],
+        "straightHAfterKey": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -2.1000000000000005,
+            "remaining": 1,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.1000000000000005,
+            "remaining": 1,
+            "links": 0
+          }
+        ],
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "V",
+              "pointer": 2.2,
+              "pose": 2.2,
+              "remaining": 2,
+              "links": 0,
+              "bindings": 2,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_2"
+              ],
+              "events": []
+            },
+            {
+              "part": "V",
+              "pointer": 3.2,
+              "pose": 3.100000000000001,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutGuideV": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 0.5199951171875001,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 2.119995117187501,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutGuideH": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "V",
+              "pointer": 2.2,
+              "pose": 2.2,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "stem": "study-20261013-v15-stick-only-u-gate",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "U mở hai lối cho thanh — không vòng",
+        "author": "Codex ongoing research 20261013",
+        "notes": "U quay xuống tạo hai thành ở hai phía thanh ngang. Ngàm trên một chân định trục dọc và giữ U; ngàm ngang giữ thanh thẳng. Nâng U để mở cả hai lối ngang; hạ U bị thân thanh chắn. Bỏ riêng U mở hai lối, bỏ riêng ngàm U làm U tự tháo sau lần thử ngang. Không thêm vòng để lấp bố cục; đây là family chỉ có thanh theo ref_037, chưa nghiệm thu đẹp/khó. Không pin/bom/Chain/Booster.",
+        "rings": [],
+        "sticks": [
+          {
+            "id": "U",
+            "shape": "U",
+            "x": 0,
+            "y": 0,
+            "length": 4.4,
+            "arm": 3,
+            "angle": 180,
+            "color": "green",
+            "slideAxis": [
+              0,
+              1
+            ],
+            "guides": [
+              {
+                "x": 2.2,
+                "y": -1.5,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": 0,
+            "y": -1,
+            "length": 3.8,
+            "angle": 0,
+            "color": "purple",
+            "guides": [
+              {
+                "x": 0,
+                "y": -1,
+                "angle": 0
+              }
+            ]
+          }
+        ]
+      },
+      "inspection": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 0,
+            "sticks": 2,
+            "guides": 2,
+            "bombs": 0,
+            "links": 0,
+            "pins": 0,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "solution": {
+          "found": true,
+          "moves": [
+            {
+              "obj": 0,
+              "target": -1.6000000000000003
+            },
+            {
+              "obj": 1,
+              "target": 2.0000000000000004
+            }
+          ],
+          "log": "found with 2 drags after 5 explorations",
+          "nodes": 5,
+          "seconds": 0.015,
+          "route": [
+            {
+              "step": 1,
+              "part": "slide_bar_1",
+              "label": "S1",
+              "kind": "stick",
+              "from": 0,
+              "to": -1.6,
+              "direction": "-",
+              "removedNow": 1,
+              "remaining": 1
+            },
+            {
+              "step": 2,
+              "part": "slide_bar_2",
+              "label": "S2",
+              "kind": "stick",
+              "from": 0,
+              "to": 2,
+              "direction": "+",
+              "removedNow": 1,
+              "remaining": 0
+            }
+          ]
+        }
+      },
+      "witness": {
+        "initialH": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.3799804687500006,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.1949951171875,
+            "remaining": 2,
+            "links": 0
+          }
+        ],
+        "afterLift": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -2.0000000000000004,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.0000000000000004,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "withoutU": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -2.0000000000000004,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 2.0000000000000004,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "uDirections": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.6000000000000003,
+            "remaining": 1,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.3874755859375004,
+            "remaining": 2,
+            "links": 0
+          }
+        ],
+        "withGuideFirst": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 0.13299560546875,
+              "remaining": 2,
+              "links": 0,
+              "bindings": 2,
+              "solved": [],
+              "events": []
+            }
+          ]
+        },
+        "withoutGuideFirst": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 0.3199951171875002,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutGuideH": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -2,
+              "pose": -1.6000000000000003,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "slide_bar_1",
+              "pointer": -1.6,
+              "pose": -1.6,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "slide_bar_2",
+              "pointer": 2,
+              "pose": 2,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

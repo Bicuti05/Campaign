@@ -1,0 +1,183 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "STG-05 | Thanh mở đôi, ba cửa dùng chung và nguồn quay lại",
+  "author": "Codex + GD / research",
+  "notes": "Tổ hợp10 vòng radius1,75 +1 thanh straight default/14pin. T/C/U và D/Z/E là hai hàng đều pitch4,5854; hai nguồn A/Q lệch nửa cột có mục đích pin chéo120/60 và thanh chung S default. T/U cùng phục vụ nguồn trên D/E, nguồn dưới A/Q và C kín; Z đổi cửa D rồi E. DG/EG giữ D/E, C giữ A/Q sau mở outgoing nên cả bốn có lượt quay thực. Recipe trên-trước, dưới-trước và E-trước đều được kiểm full-release; T/U còn để đổi cửa nhiều pha chứ không ghép các cụm độc lập. S±0,5 chọn một pin nhưng vẫn còn thanh: nguồn vừa mở input có thể quay khoảng11,945° rồi vách pin của chính nó chạm S/re-engage; kéo S sâu hồi phục. T/U mở cho A/Q khi chưa nhả S vẫn giữ input khóa. Hai cửa trên mở lệch Z/D-E không mở input D/E. Bỏ từng pin/S và riêng root giữ nguồn có khác biệt tại prefix thực. Có đường U240 tháo U sớm, recipe sâu/reverse/repeated cũng được ghi; không chứng nhận thứ tự duy nhất, toàn bộ input, đẹp hoặc khó bằng số mảnh/kéo. Không Guide/Stop/Bom/Chain/Booster. CLI bake/validate/solve, analytic/default feel và body gesture kéo tới target rồi mới thả trên file serialize cuối; không Unity/browser/device proof. Các PWS01 overlap và STG01/02/03 geometry/retention/recipe lỗi giữ research;05 cùng geometry04 với proof/notes cuối, không ghi đè.",
+  "rings": [
+    {
+      "id": "A",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 120,
+          "target": "T"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "Q",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 60,
+          "target": "U"
+        },
+        {
+          "angle": 270,
+          "target": "S"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": -2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "U",
+      "x": 6.8781,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "C",
+      "x": 2.2927,
+      "y": 3.9710728865131646,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "U"
+        },
+        {
+          "angle": 240,
+          "target": "A"
+        },
+        {
+          "angle": 300,
+          "target": "Q"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "x": -2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 150,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "T"
+        },
+        {
+          "angle": 0,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "x": 6.8781,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 30,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "U"
+        },
+        {
+          "angle": 180,
+          "target": "Z"
+        }
+      ]
+    },
+    {
+      "id": "Z",
+      "x": 2.2927,
+      "y": 8.556472886513165,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "DG",
+      "x": -2.2927,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "D"
+        }
+      ]
+    },
+    {
+      "id": "EG",
+      "x": 6.8781,
+      "y": 13.141872886513164,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "teal",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "E"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,753 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v30-u-pin-keeps-guide-walls",
+      "name": "Ngàm đã nhả — pin còn giữ U và vách",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Ngàm đã nhả — pin còn giữ U và vách",
+        "author": "Codex ongoing research 20261013",
+        "notes": "U nhận pin vào nhánh phải, ngàm ở nhánh trái; cả hai passage theo Y. Hạ U một đoạn nhả binding ngàm trái nhưng pin phải vẫn giữ nguyên U, nên vách ngàm trái vẫn chặn thanh ngang H. Vòng nguồn giữ pin bên phải đồng thời chặn lối H phải bằng thân vòng. Hạ U tiếp để nhả pin: U/ngàm và nguồn vòng rời, H mới được rút hai phía. Bỏ ngàm U mở lối H trái, bỏ vòng nguồn mở lối H phải; tách U thành hai thanh làm vách trái rời sớm dù thanh phải còn pin. Có thể hạ U liền một lần; proof chia bước để kiểm trạng thái, không coi số drag là độ khó. Không thêm ngàm trên nhánh đang có pin. Không bom/chốt/Chain/Booster; chưa GD nghiệm thu bố cục/độ khó.",
+        "rings": [
+          {
+            "id": "R",
+            "x": 4.6354,
+            "y": 3,
+            "gapDir": 0,
+            "color": "orange",
+            "radius": 1.75,
+            "gap": 90,
+            "pins": [
+              {
+                "angle": 180,
+                "target": "U"
+              }
+            ]
+          }
+        ],
+        "sticks": [
+          {
+            "id": "U",
+            "shape": "U",
+            "x": 0,
+            "y": 0,
+            "length": 3.6,
+            "arm": 3.6,
+            "angle": 0,
+            "color": "green",
+            "slideAxis": [
+              0,
+              1
+            ],
+            "guides": [
+              {
+                "x": -1.8,
+                "y": 3.5,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": 0,
+            "y": 3.75,
+            "length": 3,
+            "angle": 0,
+            "color": "blue",
+            "guides": [
+              {
+                "x": 0.2,
+                "y": 3.75,
+                "angle": 0
+              }
+            ]
+          }
+        ]
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 1,
+          "sticks": 2,
+          "guides": 2,
+          "bombs": 0,
+          "links": 1,
+          "pins": 1,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 3 drags after 13 explorations",
+      "moves": [
+        {
+          "part": "slide_bar_1",
+          "target": -0.3
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -2
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 3
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": -0.3,
+          "direction": "-",
+          "removedNow": 0,
+          "remaining": 3
+        },
+        {
+          "step": 2,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": -0.3,
+          "to": -2,
+          "direction": "-",
+          "removedNow": 2,
+          "remaining": 1
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_2",
+          "label": "S2",
+          "kind": "stick",
+          "from": 0,
+          "to": 3,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 0,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -0.3,
+            "pose": -0.3,
+            "remaining": 3,
+            "links": 1,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -2,
+            "pose": -0.7,
+            "remaining": 1,
+            "links": 0,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_2",
+            "pointer": 3,
+            "pose": 1.8000000000000005,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -0.3,
+            "pose": -0.3,
+            "remaining": 3,
+            "links": 1,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -2,
+            "pose": -0.7,
+            "remaining": 1,
+            "links": 0,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_2",
+            "pointer": 3,
+            "pose": 1.8000000000000005,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [
+        {
+          "owner": "R",
+          "angle": 180,
+          "logicMargin": 135
+        }
+      ],
+      "witness": {
+        "initial": {
+          "remaining": 3,
+          "links": [
+            true
+          ],
+          "bindings": [
+            true,
+            true
+          ],
+          "guides": [
+            {
+              "id": "guide_1",
+              "active": true,
+              "engaged": true
+            },
+            {
+              "id": "guide_2",
+              "active": true,
+              "engaged": true
+            }
+          ],
+          "sourceLocked": true
+        },
+        "partial": {
+          "remaining": 3,
+          "links": [
+            true
+          ],
+          "bindings": [
+            false,
+            true
+          ],
+          "guides": [
+            {
+              "id": "guide_1",
+              "active": true,
+              "engaged": false
+            },
+            {
+              "id": "guide_2",
+              "active": true,
+              "engaged": true
+            }
+          ],
+          "sourceLocked": true
+        },
+        "undo": {
+          "remaining": 3,
+          "links": [
+            true
+          ],
+          "bindings": [
+            true,
+            true
+          ],
+          "guides": [
+            {
+              "id": "guide_1",
+              "active": true,
+              "engaged": true
+            },
+            {
+              "id": "guide_2",
+              "active": true,
+              "engaged": true
+            }
+          ],
+          "sourceLocked": true
+        },
+        "initialH": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.18933105468749992,
+            "remaining": 3,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.5990966796875006,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "partialH": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.18933105468749992,
+            "remaining": 3,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.5990966796875006,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "afterU": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.4000000000000001,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.8000000000000005,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "uDirections": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.7,
+            "remaining": 1,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.43887939453125,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "withoutUGuideH": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.4000000000000001,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.5990966796875006,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "withoutRingH": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.18933105468749992,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.8000000000000005,
+            "remaining": 1,
+            "links": 0
+          }
+        ],
+        "withoutHGuide": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -0.3,
+              "pose": -0.3,
+              "remaining": 2,
+              "links": 1,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutPin": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -0.3,
+              "pose": -0.2,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "ring_1",
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "splitAnalysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 1,
+            "sticks": 3,
+            "guides": 2,
+            "bombs": 0,
+            "links": 1,
+            "pins": 1,
+            "stops": 0,
+            "closedRings": 0
+          }
+        },
+        "splitPartial": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "UL",
+              "pointer": -0.3,
+              "pose": -0.19999999999999996,
+              "remaining": 3,
+              "links": 1,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "splitH": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.4000000000000001,
+            "remaining": 2,
+            "links": 1
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 1.5990966796875006,
+            "remaining": 3,
+            "links": 1
+          }
+        ],
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -0.3,
+              "pose": -0.3,
+              "remaining": 3,
+              "links": 1,
+              "bindings": 1,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -2,
+              "pose": -0.7,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "ring_1",
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 1.8000000000000005,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feel": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -0.3,
+              "pose": -0.3,
+              "remaining": 3,
+              "links": 1,
+              "bindings": 1,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -2,
+              "pose": -0.7,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "ring_1",
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 1.8000000000000005,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "ring_1",
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "hCollisionGeometry": [
+          {
+            "target": -3,
+            "offset": -0.128857421875,
+            "sourceBody": 0,
+            "sourceSolidPins": 0,
+            "guideWalls": [
+              {
+                "id": "guide_1",
+                "host": "slide_bar_1",
+                "depth": 0.019994720643967234
+              },
+              {
+                "id": "guide_2",
+                "host": "slide_bar_2",
+                "depth": 0
+              }
+            ]
+          },
+          {
+            "target": 3,
+            "offset": 1.5353027343750003,
+            "sourceBody": 0.019998088546649306,
+            "sourceSolidPins": 0,
+            "guideWalls": [
+              {
+                "id": "guide_1",
+                "host": "slide_bar_1",
+                "depth": 0
+              },
+              {
+                "id": "guide_2",
+                "host": "slide_bar_2",
+                "depth": 0
+              }
+            ]
+          }
+        ],
+        "rejectedFarSource": {
+          "design": {
+            "format": "turp-design",
+            "version": 1,
+            "levelId": "draft",
+            "name": "Ngàm đã nhả — pin còn giữ U và vách",
+            "author": "Codex ongoing research 20261013",
+            "notes": "U nhận pin vào nhánh phải, ngàm ở nhánh trái; cả hai passage theo Y. Hạ U một đoạn nhả binding ngàm trái nhưng pin phải vẫn giữ nguyên U, nên vách ngàm trái vẫn chặn thanh ngang H. Vòng nguồn giữ pin bên phải đồng thời chặn lối H phải bằng thân vòng. Hạ U tiếp để nhả pin: U/ngàm và nguồn vòng rời, H mới được rút hai phía. Bỏ ngàm U mở lối H trái, bỏ vòng nguồn mở lối H phải; tách U thành hai thanh làm vách trái rời sớm dù thanh phải còn pin. Có thể hạ U liền một lần; proof chia bước để kiểm trạng thái, không coi số drag là độ khó. Không thêm ngàm trên nhánh đang có pin. Không bom/chốt/Chain/Booster; chưa GD nghiệm thu bố cục/độ khó.",
+            "rings": [
+              {
+                "id": "R",
+                "x": 5.0354,
+                "y": 2,
+                "gapDir": 0,
+                "color": "orange",
+                "radius": 1.75,
+                "gap": 90,
+                "pins": [
+                  {
+                    "angle": 180,
+                    "target": "U"
+                  }
+                ]
+              }
+            ],
+            "sticks": [
+              {
+                "id": "U",
+                "shape": "U",
+                "x": 0,
+                "y": 0,
+                "length": 4.4,
+                "arm": 3.6,
+                "angle": 0,
+                "color": "green",
+                "slideAxis": [
+                  0,
+                  1
+                ],
+                "guides": [
+                  {
+                    "x": -2.2,
+                    "y": 3.5,
+                    "angle": 90
+                  }
+                ]
+              },
+              {
+                "id": "H",
+                "shape": "straight",
+                "x": 0,
+                "y": 3.7,
+                "length": 3,
+                "angle": 0,
+                "color": "blue",
+                "guides": [
+                  {
+                    "x": 0,
+                    "y": 3.7,
+                    "angle": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "inspection": {
+            "analysis": {
+              "error": null,
+              "warnings": [],
+              "info": {
+                "rings": 1,
+                "sticks": 2,
+                "guides": 2,
+                "bombs": 0,
+                "links": 1,
+                "pins": 1,
+                "stops": 0,
+                "closedRings": 0
+              }
+            },
+            "solution": {
+              "found": true,
+              "moves": [
+                {
+                  "obj": 2,
+                  "target": 1.6000000000000003
+                },
+                {
+                  "obj": 1,
+                  "target": -0.2
+                },
+                {
+                  "obj": 1,
+                  "target": -1.7000000000000004
+                }
+              ],
+              "log": "found with 3 drags after 12 explorations",
+              "nodes": 12,
+              "seconds": 0.042,
+              "route": [
+                {
+                  "step": 1,
+                  "part": "slide_bar_2",
+                  "label": "S2",
+                  "kind": "stick",
+                  "from": 0,
+                  "to": 1.6,
+                  "direction": "+",
+                  "removedNow": 1,
+                  "remaining": 2
+                },
+                {
+                  "step": 2,
+                  "part": "slide_bar_1",
+                  "label": "S1",
+                  "kind": "stick",
+                  "from": 0,
+                  "to": -0.2,
+                  "direction": "-",
+                  "removedNow": 0,
+                  "remaining": 2
+                },
+                {
+                  "step": 3,
+                  "part": "slide_bar_1",
+                  "label": "S1",
+                  "kind": "stick",
+                  "from": -0.2,
+                  "to": -1.7,
+                  "direction": "-",
+                  "removedNow": 2,
+                  "remaining": 0
+                }
+              ]
+            }
+          },
+          "initialH": [
+            {
+              "direction": -1,
+              "removed": false,
+              "from": 0,
+              "to": -0.5893310546875002,
+              "remaining": 3,
+              "links": 1
+            },
+            {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 1.6000000000000003,
+              "remaining": 2,
+              "links": 1
+            }
+          ],
+          "decision": "Rejected: H can leave its guide to the right before reaching the remote ring. Valid analysis/found does not prove the intended right-side blocker role."
+        }
+      }
+    }
+  ]
+}

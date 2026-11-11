@@ -1,0 +1,103 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R2"
+        },
+        {
+          "angle": 240.0002,
+          "target": "R4"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 4.5854,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 209.9998,
+          "target": "R3"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R3",
+      "x": -3.9711,
+      "y": 2.2927,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R5"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R4",
+      "x": -2.2927,
+      "y": -3.9711,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "green"
+    },
+    {
+      "id": "R5",
+      "x": -3.9711,
+      "y": 6.8781,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R6",
+      "x": 3.9711,
+      "y": 2.2927,
+      "gap": 90,
+      "gapDir": 285,
+      "pins": [
+        {
+          "angle": 150.0002,
+          "target": "R2"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R7",
+      "x": -2.7843,
+      "y": 11.3073,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 255,
+          "target": "R5"
+        }
+      ],
+      "color": "blue"
+    }
+  ],
+  "sticks": [],
+  "name": "G01-005 | Nghỉ: nhánh rõ ràng",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 5 (relief). Ý tưởng: R2 bị 2 vòng (R1, R6) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R1 còn giữ R4: nếu chưa nhả hết nơi khác thì quay R2 tiếp sẽ bị khóa lại. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 1.4 lần kéo/vật, mục tiêu 1–2). Không Booster/Chain/bom; lockCount 0."
+}

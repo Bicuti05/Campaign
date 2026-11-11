@@ -1,0 +1,98 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Ngàm giữ khung không có pin — mở đường ngang",
+  "author": "Codex reference study 20261013",
+  "notes": "Ý tưởng cần nhận ra: thanh ngang được hai pin giữ; khung U ngoài không nhận pin nên cần đúng một ngàm để tồn tại và chặn hai lối trượt ngang. Trượt khung U xuống khỏi ngàm, mở đường cho thanh ngang; rồi tháo cặp vòng dưới. Đối chứng bỏ ngàm phải cho phép thanh ngang đi trước mà không kéo U. Không Chain, bom hoặc Booster. Bản nghiên cứu, chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "S2"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "S2"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "blue",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "U",
+      "length": 10.2562,
+      "arm": 8.1208,
+      "x": 2.2927,
+      "y": -7.4208,
+      "angle": 0,
+      "color": "blue",
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "id": "G1",
+          "x": -2.8354,
+          "y": 0.2,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "shape": "straight",
+      "length": 8.1854,
+      "x": 2.2927,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "red"
+    }
+  ]
+}

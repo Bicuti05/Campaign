@@ -1,0 +1,95 @@
+{
+  "file": "Tools/RingLab-GameDeveloper-20261021-r01/ready_for_GD_review/V1_093/V1_093_export_r01.rrpack.json",
+  "source": "Tools/RingLab-GameDeveloper-20261021-r01/ready_for_GD_review/V1_093/source-reference.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 3,
+        "sticks": 2,
+        "guides": 2,
+        "bombs": 0,
+        "links": 2,
+        "pins": 2,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "ring_2",
+        "pin": "attachment.pin_1",
+        "margin": 119.99174
+      },
+      {
+        "ring": "ring_3",
+        "pin": "attachment.pin_2",
+        "margin": 120.00027
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "engaged": true
+      },
+      {
+        "id": "guide_2",
+        "engaged": true
+      }
+    ],
+    "links": [
+      {
+        "source": "ring_2",
+        "target": "ring_1",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_2",
+        "pin": "attachment.pin_2",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [],
+      "current": [],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [
+      {
+        "id": "slide_bar_4",
+        "lengths": [
+          3.83334
+        ],
+        "isU": false,
+        "guides": 1
+      },
+      {
+        "id": "slide_bar_5",
+        "lengths": [
+          3.83334
+        ],
+        "isU": false,
+        "guides": 1
+      }
+    ],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

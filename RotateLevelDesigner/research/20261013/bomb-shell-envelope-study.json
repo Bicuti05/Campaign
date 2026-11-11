@@ -1,0 +1,2420 @@
+{
+  "format": "rotate-bomb-shell-envelope-study",
+  "version": 1,
+  "scope": "Finite geometry counterexamples, not statistical robustness or new level variants",
+  "cases": [
+    {
+      "radius": 4.8,
+      "analysis": {
+        "error": null,
+        "warnings": [
+          {
+            "code": "overlap",
+            "part": "ring_1",
+            "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.095)"
+          },
+          {
+            "code": "overlap",
+            "part": "ring_2",
+            "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.095)"
+          }
+        ],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 2,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 4
+        }
+      },
+      "initial": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 90,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.2927,
+              "y": 2.2
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 7.6354
+            }
+          }
+        ]
+      },
+      "bodyClearanceInvariant": -0.24270000000000014,
+      "beforeK": [
+        {
+          "direction": -1,
+          "removed": false,
+          "from": 90,
+          "to": 87.637939453125,
+          "remaining": 5,
+          "links": 3
+        },
+        {
+          "direction": 1,
+          "removed": true,
+          "from": 90,
+          "to": 142.15331016488702,
+          "remaining": 0,
+          "links": 0
+        }
+      ],
+      "secondFirst": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 89.413330078125,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.270173885754946,
+              "y": 2.1998846729265193
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 7.6354
+            }
+          }
+        ]
+      },
+      "authoredRoute": {
+        "initialContacts": [],
+        "events": [
+          {
+            "part": "R",
+            "target": "ring_2",
+            "otherBomb": -1,
+            "pose": 107.60301401381672,
+            "bodyClearance": 0.22823472697817576,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.1569910713173816
+              },
+              {
+                "kind": 4,
+                "clearance": 0.481705361888018
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000007954905817564306
+              }
+            ]
+          },
+          {
+            "part": "K",
+            "target": "ring_4",
+            "otherBomb": -1,
+            "pose": 17.603026333158464,
+            "bodyClearance": 0.2758239976089006,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699152219644635
+              },
+              {
+                "kind": 4,
+                "clearance": 0.4817054019493577
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000008417313737185683
+              }
+            ]
+          }
+        ],
+        "explosions": [
+          {
+            "contact": {
+              "bomb": 1,
+              "target": 1,
+              "otherBomb": -1,
+              "colliderId": "bomb_2/object/000001",
+              "pose": 107.60301401381672
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_2",
+                "hostId": "ring_3",
+                "position": {
+                  "x": 0.6653240713173819,
+                  "y": 5.538415526970773
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_3",
+              "ring_2"
+            ]
+          },
+          {
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 17.603026333158464
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_1",
+                "position": {
+                  "x": -0.195715670024196,
+                  "y": 0.6653245221964467
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_1",
+              "ring_4"
+            ]
+          }
+        ],
+        "solved": true,
+        "remaining": 0,
+        "links": 0,
+        "kLocked": false,
+        "angles": {
+          "K": 17.603026333158464,
+          "M": 90,
+          "R": 107.60301401381672,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [
+          "ring_1",
+          "ring_2",
+          "ring_3",
+          "ring_4",
+          "ring_5"
+        ],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": false,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.195715670024196,
+              "y": 0.6653245221964467
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": false,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 0.6653240713173819,
+              "y": 5.538415526970773
+            }
+          }
+        ]
+      },
+      "withoutFirst": {
+        "analysis": {
+          "error": null,
+          "warnings": [
+            {
+              "code": "overlap",
+              "part": "ring_1",
+              "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.095)"
+            },
+            {
+              "code": "overlap",
+              "part": "ring_2",
+              "text": "R2 chồng lên vật khác lúc bắt đầu (độ xuyên 0.095)"
+            }
+          ],
+          "info": {
+            "rings": 5,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 3,
+            "pins": 3,
+            "stops": 1,
+            "closedRings": 4
+          }
+        },
+        "solution": null
+      }
+    },
+    {
+      "radius": 5,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 2,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 4
+        }
+      },
+      "initial": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 90,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.2927,
+              "y": 2.2
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 7.8354
+            }
+          }
+        ]
+      },
+      "bodyClearanceInvariant": -0.04269999999999996,
+      "beforeK": [
+        {
+          "direction": -1,
+          "removed": false,
+          "from": 90,
+          "to": 84.46948242187506,
+          "remaining": 5,
+          "links": 3
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 90,
+          "to": 152.09252929687443,
+          "remaining": 5,
+          "links": 3
+        }
+      ],
+      "secondFirst": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 86.29394531250006,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.15049692391007,
+              "y": 2.1953993452560203
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 7.8354
+            }
+          }
+        ]
+      },
+      "authoredRoute": {
+        "initialContacts": [],
+        "events": [
+          {
+            "part": "R",
+            "target": "ring_2",
+            "otherBomb": -1,
+            "pose": 107.60301401381672,
+            "bodyClearance": 0.22685631464497985,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.1569910713173816
+              },
+              {
+                "kind": 4,
+                "clearance": 0.48170536188801877
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000007954905817453284
+              }
+            ]
+          },
+          {
+            "part": "K",
+            "target": "ring_4",
+            "otherBomb": -1,
+            "pose": 17.603026333158464,
+            "bodyClearance": 0.2758239976089006,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699152219644635
+              },
+              {
+                "kind": 4,
+                "clearance": 0.4817054019493577
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000008417313737185683
+              }
+            ]
+          }
+        ],
+        "explosions": [
+          {
+            "contact": {
+              "bomb": 1,
+              "target": 1,
+              "otherBomb": -1,
+              "colliderId": "bomb_2/object/000001",
+              "pose": 107.60301401381672
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_2",
+                "hostId": "ring_3",
+                "position": {
+                  "x": 0.6653240713173819,
+                  "y": 5.738415526970773
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_3",
+              "ring_2"
+            ]
+          },
+          {
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 17.603026333158464
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_1",
+                "position": {
+                  "x": -0.195715670024196,
+                  "y": 0.6653245221964467
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_1",
+              "ring_4"
+            ]
+          }
+        ],
+        "solved": true,
+        "remaining": 0,
+        "links": 0,
+        "kLocked": false,
+        "angles": {
+          "K": 17.603026333158464,
+          "M": 90,
+          "R": 107.60301401381672,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [
+          "ring_1",
+          "ring_2",
+          "ring_3",
+          "ring_4",
+          "ring_5"
+        ],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": false,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.195715670024196,
+              "y": 0.6653245221964467
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": false,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 0.6653240713173819,
+              "y": 5.738415526970773
+            }
+          }
+        ]
+      },
+      "withoutFirst": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 5,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 3,
+            "pins": 3,
+            "stops": 1,
+            "closedRings": 4
+          }
+        },
+        "solution": {
+          "found": false,
+          "moves": [],
+          "nodes": 150,
+          "seconds": 0.717,
+          "log": "NOT FOUND after 150 explorations, 1 s (limits 500 nodes / 2 s, open 0)",
+          "route": []
+        }
+      }
+    },
+    {
+      "radius": 5.3354,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 2,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 4
+        }
+      },
+      "initial": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 90,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.2927,
+              "y": 2.2
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 8.1708
+            }
+          }
+        ]
+      },
+      "bodyClearanceInvariant": 0.29269999999999996,
+      "beforeK": [
+        {
+          "direction": -1,
+          "removed": false,
+          "from": 90,
+          "to": 73.63110351562537,
+          "remaining": 5,
+          "links": 3
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 90,
+          "to": 152.09252929687443,
+          "remaining": 5,
+          "links": 3
+        }
+      ],
+      "secondFirst": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 75.66137695312537,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -1.7478652272889121,
+              "y": 2.1314678206449327
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 8.1708
+            }
+          }
+        ]
+      },
+      "authoredRoute": {
+        "initialContacts": [],
+        "events": [
+          {
+            "part": "R",
+            "target": "ring_2",
+            "otherBomb": -1,
+            "pose": 107.60301401381672,
+            "bodyClearance": 0.22474657561875394,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.1569910713173816
+              },
+              {
+                "kind": 4,
+                "clearance": 0.48170536188801877
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000007954905817397773
+              }
+            ]
+          },
+          {
+            "part": "K",
+            "target": "ring_4",
+            "otherBomb": -1,
+            "pose": 17.603026333158464,
+            "bodyClearance": 0.2758239976089006,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699152219644635
+              },
+              {
+                "kind": 4,
+                "clearance": 0.4817054019493577
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000008417313737185683
+              }
+            ]
+          }
+        ],
+        "explosions": [
+          {
+            "contact": {
+              "bomb": 1,
+              "target": 1,
+              "otherBomb": -1,
+              "colliderId": "bomb_2/object/000001",
+              "pose": 107.60301401381672
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_2",
+                "hostId": "ring_3",
+                "position": {
+                  "x": 0.6653240713173819,
+                  "y": 6.0738155269707725
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_3",
+              "ring_2"
+            ]
+          },
+          {
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 17.603026333158464
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_1",
+                "position": {
+                  "x": -0.195715670024196,
+                  "y": 0.6653245221964467
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_1",
+              "ring_4"
+            ]
+          }
+        ],
+        "solved": true,
+        "remaining": 0,
+        "links": 0,
+        "kLocked": false,
+        "angles": {
+          "K": 17.603026333158464,
+          "M": 90,
+          "R": 107.60301401381672,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [
+          "ring_1",
+          "ring_2",
+          "ring_3",
+          "ring_4",
+          "ring_5"
+        ],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": false,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.195715670024196,
+              "y": 0.6653245221964467
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": false,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 0.6653240713173819,
+              "y": 6.0738155269707725
+            }
+          }
+        ]
+      },
+      "withoutFirst": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 5,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 3,
+            "pins": 3,
+            "stops": 1,
+            "closedRings": 4
+          }
+        },
+        "solution": {
+          "found": false,
+          "moves": [],
+          "nodes": 136,
+          "seconds": 0.516,
+          "log": "NOT FOUND after 136 explorations, 1 s (limits 500 nodes / 2 s, open 0)",
+          "route": []
+        }
+      }
+    },
+    {
+      "radius": 5.8,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 2,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 4
+        }
+      },
+      "initial": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 90,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.2927,
+              "y": 2.2
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 8.6354
+            }
+          }
+        ]
+      },
+      "bodyClearanceInvariant": 0.7572999999999999,
+      "beforeK": [
+        {
+          "direction": -1,
+          "removed": false,
+          "from": 90,
+          "to": 55.82299804687541,
+          "remaining": 5,
+          "links": 3
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 90,
+          "to": 152.09252929687443,
+          "remaining": 5,
+          "links": 3
+        }
+      ],
+      "secondFirst": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 58.39599609375048,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -1.139800066064704,
+              "y": 1.8737186934894978
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 8.6354
+            }
+          }
+        ]
+      },
+      "authoredRoute": {
+        "initialContacts": [],
+        "events": [
+          {
+            "part": "R",
+            "target": "ring_2",
+            "otherBomb": -1,
+            "pose": 107.60301401381672,
+            "bodyClearance": 0.22217876531115338,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699107131738155
+              },
+              {
+                "kind": 4,
+                "clearance": 0.481705361888018
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000007954905817508795
+              }
+            ]
+          },
+          {
+            "part": "K",
+            "target": "ring_4",
+            "otherBomb": -1,
+            "pose": 17.603026333158464,
+            "bodyClearance": 0.2758239976089006,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699152219644635
+              },
+              {
+                "kind": 4,
+                "clearance": 0.4817054019493577
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000008417313737185683
+              }
+            ]
+          }
+        ],
+        "explosions": [
+          {
+            "contact": {
+              "bomb": 1,
+              "target": 1,
+              "otherBomb": -1,
+              "colliderId": "bomb_2/object/000001",
+              "pose": 107.60301401381672
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_2",
+                "hostId": "ring_3",
+                "position": {
+                  "x": 0.6653240713173819,
+                  "y": 6.538415526970773
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_3",
+              "ring_2"
+            ]
+          },
+          {
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 17.603026333158464
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_1",
+                "position": {
+                  "x": -0.195715670024196,
+                  "y": 0.6653245221964467
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_1",
+              "ring_4"
+            ]
+          }
+        ],
+        "solved": true,
+        "remaining": 0,
+        "links": 0,
+        "kLocked": false,
+        "angles": {
+          "K": 17.603026333158464,
+          "M": 90,
+          "R": 107.60301401381672,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [
+          "ring_1",
+          "ring_2",
+          "ring_3",
+          "ring_4",
+          "ring_5"
+        ],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": false,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.195715670024196,
+              "y": 0.6653245221964467
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": false,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 0.6653240713173819,
+              "y": 6.538415526970773
+            }
+          }
+        ]
+      },
+      "withoutFirst": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 5,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 3,
+            "pins": 3,
+            "stops": 1,
+            "closedRings": 4
+          }
+        },
+        "solution": {
+          "found": false,
+          "moves": [],
+          "nodes": 102,
+          "seconds": 0.349,
+          "log": "NOT FOUND after 102 explorations, 0 s (limits 500 nodes / 2 s, open 0)",
+          "route": []
+        }
+      }
+    },
+    {
+      "radius": 6.2,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 2,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 4
+        }
+      },
+      "initial": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 90,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.2927,
+              "y": 2.2
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 9.0354
+            }
+          }
+        ]
+      },
+      "bodyClearanceInvariant": 1.1573000000000002,
+      "beforeK": [
+        {
+          "direction": -1,
+          "removed": false,
+          "from": 90,
+          "to": 34.56518554687503,
+          "remaining": 5,
+          "links": 3
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 90,
+          "to": 152.09252929687443,
+          "remaining": 5,
+          "links": 3
+        }
+      ],
+      "secondFirst": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 38.34887695312507,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.5673557771606159,
+              "y": 1.3649861950638045
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 9.0354
+            }
+          }
+        ]
+      },
+      "authoredRoute": {
+        "initialContacts": [],
+        "events": [
+          {
+            "part": "R",
+            "target": "ring_2",
+            "otherBomb": -1,
+            "pose": 107.60301401381672,
+            "bodyClearance": 0.22024146961806662,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.1569910713173815
+              },
+              {
+                "kind": 4,
+                "clearance": 0.48170536188801955
+              },
+              {
+                "kind": 4,
+                "clearance": 0.00000795490581728675
+              }
+            ]
+          },
+          {
+            "part": "K",
+            "target": "ring_4",
+            "otherBomb": -1,
+            "pose": 17.603026333158464,
+            "bodyClearance": 0.2758239976089006,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699152219644635
+              },
+              {
+                "kind": 4,
+                "clearance": 0.4817054019493577
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000008417313737185683
+              }
+            ]
+          }
+        ],
+        "explosions": [
+          {
+            "contact": {
+              "bomb": 1,
+              "target": 1,
+              "otherBomb": -1,
+              "colliderId": "bomb_2/object/000001",
+              "pose": 107.60301401381672
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_2",
+                "hostId": "ring_3",
+                "position": {
+                  "x": 0.6653240713173819,
+                  "y": 6.938415526970772
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_3",
+              "ring_2"
+            ]
+          },
+          {
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 17.603026333158464
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_1",
+                "position": {
+                  "x": -0.195715670024196,
+                  "y": 0.6653245221964467
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_1",
+              "ring_4"
+            ]
+          }
+        ],
+        "solved": true,
+        "remaining": 0,
+        "links": 0,
+        "kLocked": false,
+        "angles": {
+          "K": 17.603026333158464,
+          "M": 90,
+          "R": 107.60301401381672,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [
+          "ring_1",
+          "ring_2",
+          "ring_3",
+          "ring_4",
+          "ring_5"
+        ],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": false,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.195715670024196,
+              "y": 0.6653245221964467
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": false,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 0.6653240713173819,
+              "y": 6.938415526970772
+            }
+          }
+        ]
+      },
+      "withoutFirst": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 5,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 3,
+            "pins": 3,
+            "stops": 1,
+            "closedRings": 4
+          }
+        },
+        "solution": {
+          "found": false,
+          "moves": [],
+          "nodes": 102,
+          "seconds": 0.302,
+          "log": "NOT FOUND after 102 explorations, 0 s (limits 500 nodes / 2 s, open 0)",
+          "route": []
+        }
+      }
+    },
+    {
+      "radius": 6.6,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 5,
+          "sticks": 0,
+          "guides": 0,
+          "bombs": 2,
+          "links": 3,
+          "pins": 3,
+          "stops": 1,
+          "closedRings": 4
+        }
+      },
+      "initial": {
+        "initialContacts": [],
+        "events": [],
+        "explosions": [],
+        "solved": false,
+        "remaining": 5,
+        "links": 3,
+        "kLocked": false,
+        "angles": {
+          "K": 90,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": true,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -2.2927,
+              "y": 2.2
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 9.4354
+            }
+          }
+        ]
+      },
+      "bodyClearanceInvariant": 1.5572999999999997,
+      "beforeK": [
+        {
+          "direction": -1,
+          "removed": true,
+          "from": 90,
+          "to": 17.603026333158464,
+          "remaining": 3,
+          "links": 2
+        },
+        {
+          "direction": 1,
+          "removed": false,
+          "from": 90,
+          "to": 152.09252929687443,
+          "remaining": 5,
+          "links": 3
+        }
+      ],
+      "secondFirst": {
+        "initialContacts": [],
+        "events": [
+          {
+            "part": "K",
+            "target": "ring_4",
+            "otherBomb": -1,
+            "pose": 17.603026333158464,
+            "bodyClearance": 0.2758239976089006,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699152219644635
+              },
+              {
+                "kind": 4,
+                "clearance": 0.4817054019493577
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000008417313737185683
+              }
+            ]
+          }
+        ],
+        "explosions": [
+          {
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 17.603026333158464
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_1",
+                "position": {
+                  "x": -0.195715670024196,
+                  "y": 0.6653245221964467
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_1",
+              "ring_4"
+            ]
+          }
+        ],
+        "solved": false,
+        "remaining": 3,
+        "links": 2,
+        "kLocked": false,
+        "angles": {
+          "K": 17.603026333158464,
+          "M": 90,
+          "R": 180,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [
+          "ring_1",
+          "ring_4"
+        ],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": false,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.195715670024196,
+              "y": 0.6653245221964467
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": true,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 2.2,
+              "y": 9.4354
+            }
+          }
+        ]
+      },
+      "authoredRoute": {
+        "initialContacts": [],
+        "events": [
+          {
+            "part": "R",
+            "target": "ring_2",
+            "otherBomb": -1,
+            "pose": 107.60301401381672,
+            "bodyClearance": 0.21851399987541936,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.1569910713173815
+              },
+              {
+                "kind": 4,
+                "clearance": 0.481705361888018
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000007954905817342262
+              }
+            ]
+          },
+          {
+            "part": "K",
+            "target": "ring_4",
+            "otherBomb": -1,
+            "pose": 17.603026333158464,
+            "bodyClearance": 0.2758239976089006,
+            "solidQuads": [
+              {
+                "kind": 2,
+                "clearance": 0.15699152219644635
+              },
+              {
+                "kind": 4,
+                "clearance": 0.4817054019493577
+              },
+              {
+                "kind": 4,
+                "clearance": 0.000008417313737185683
+              }
+            ]
+          }
+        ],
+        "explosions": [
+          {
+            "contact": {
+              "bomb": 1,
+              "target": 1,
+              "otherBomb": -1,
+              "colliderId": "bomb_2/object/000001",
+              "pose": 107.60301401381672
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_2",
+                "hostId": "ring_3",
+                "position": {
+                  "x": 0.6653240713173819,
+                  "y": 7.338415526970772
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_3",
+              "ring_2"
+            ]
+          },
+          {
+            "contact": {
+              "bomb": 0,
+              "target": 3,
+              "otherBomb": -1,
+              "colliderId": "bomb_1/object/000003",
+              "pose": 17.603026333158464
+            },
+            "explosions": [
+              {
+                "bombId": "bomb_1",
+                "hostId": "ring_1",
+                "position": {
+                  "x": -0.195715670024196,
+                  "y": 0.6653245221964467
+                }
+              }
+            ],
+            "removedParts": [
+              "ring_1",
+              "ring_4"
+            ]
+          }
+        ],
+        "solved": true,
+        "remaining": 0,
+        "links": 0,
+        "kLocked": false,
+        "angles": {
+          "K": 17.603026333158464,
+          "M": 90,
+          "R": 107.60301401381672,
+          "J": 90,
+          "N": 90
+        },
+        "solvedParts": [
+          "ring_1",
+          "ring_2",
+          "ring_3",
+          "ring_4",
+          "ring_5"
+        ],
+        "bombs": [
+          {
+            "id": "bomb_1",
+            "active": false,
+            "host": 0,
+            "hostId": "ring_1",
+            "center": {
+              "x": -0.195715670024196,
+              "y": 0.6653245221964467
+            }
+          },
+          {
+            "id": "bomb_2",
+            "active": false,
+            "host": 2,
+            "hostId": "ring_3",
+            "center": {
+              "x": 0.6653240713173819,
+              "y": 7.338415526970772
+            }
+          }
+        ]
+      },
+      "withoutFirst": {
+        "analysis": {
+          "error": null,
+          "warnings": [],
+          "info": {
+            "rings": 5,
+            "sticks": 0,
+            "guides": 0,
+            "bombs": 1,
+            "links": 3,
+            "pins": 3,
+            "stops": 1,
+            "closedRings": 4
+          }
+        },
+        "solution": {
+          "found": false,
+          "moves": [],
+          "nodes": 86,
+          "seconds": 0.25,
+          "log": "NOT FOUND after 86 explorations, 0 s (limits 500 nodes / 2 s, open 0)",
+          "route": []
+        }
+      }
+    }
+  ],
+  "openShell": {
+    "analysis": {
+      "error": null,
+      "warnings": [
+        {
+          "code": "link-idle",
+          "part": "ring_5",
+          "text": "Liên kết R5 → R2 không chạm lúc bắt đầu (chưa khóa)"
+        },
+        {
+          "code": "free",
+          "part": "ring_5",
+          "text": "R5 không bị khóa từ đầu: sẽ tự tháo ở lần thả tay đầu tiên"
+        }
+      ],
+      "info": {
+        "rings": 5,
+        "sticks": 0,
+        "guides": 0,
+        "bombs": 2,
+        "links": 3,
+        "pins": 3,
+        "stops": 1,
+        "closedRings": 3
+      }
+    },
+    "wrongFirstThenSecond": {
+      "initialContacts": [],
+      "events": [
+        {
+          "part": "K",
+          "target": "ring_4",
+          "otherBomb": -1,
+          "pose": 17.603026333158464,
+          "bodyClearance": 0.2758239976089006,
+          "solidQuads": [
+            {
+              "kind": 2,
+              "clearance": 0.15699152219644635
+            },
+            {
+              "kind": 4,
+              "clearance": 0.4817054019493577
+            },
+            {
+              "kind": 4,
+              "clearance": 0.000008417313737185683
+            }
+          ]
+        }
+      ],
+      "explosions": [
+        {
+          "contact": {
+            "bomb": 0,
+            "target": 3,
+            "otherBomb": -1,
+            "colliderId": "bomb_1/object/000003",
+            "pose": 17.603026333158464
+          },
+          "explosions": [
+            {
+              "bombId": "bomb_1",
+              "hostId": "ring_1",
+              "position": {
+                "x": -0.195715670024196,
+                "y": 0.6653245221964467
+              }
+            }
+          ],
+          "removedParts": [
+            "ring_1",
+            "ring_4"
+          ]
+        }
+      ],
+      "solved": true,
+      "remaining": 0,
+      "links": 0,
+      "kLocked": false,
+      "angles": {
+        "K": 17.603026333158464,
+        "M": 270,
+        "R": 233.99999999999991,
+        "J": 90,
+        "N": 90
+      },
+      "solvedParts": [
+        "ring_1",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "ring_5"
+      ],
+      "bombs": [
+        {
+          "id": "bomb_1",
+          "active": false,
+          "host": 0,
+          "hostId": "ring_1",
+          "center": {
+            "x": -0.195715670024196,
+            "y": 0.6653245221964467
+          }
+        },
+        {
+          "id": "bomb_2",
+          "active": true,
+          "host": -1,
+          "hostId": null,
+          "center": {
+            "x": 1.2931275550434442,
+            "y": 9.950637387624882
+          }
+        }
+      ]
+    }
+  },
+  "openDoorHoldoutAlternatives": [
+    {
+      "pointerExtension": 0,
+      "moves": [
+        {
+          "part": "ring_3",
+          "target": 234
+        },
+        {
+          "part": "ring_2",
+          "target": 132
+        },
+        {
+          "part": "ring_1",
+          "target": 165
+        },
+        {
+          "part": "ring_2",
+          "target": 235.68
+        }
+      ],
+      "analytic": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 234,
+            "pose": 234.00000000000023,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 132,
+            "pose": 142.68017578124977,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 165,
+            "pose": 162.39697366684155,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_3",
+              "ring_4"
+            ],
+            "events": [
+              {
+                "bomb": 0,
+                "target": "ring_4",
+                "otherBomb": null,
+                "pose": 162.39697366684155
+              }
+            ]
+          },
+          {
+            "part": "ring_2",
+            "pointer": 235.68,
+            "pose": 235.67999999999972,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4",
+              "ring_5"
+            ],
+            "events": []
+          }
+        ]
+      },
+      "feel": {
+        "solved": false,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 234,
+            "pose": 231.7500000000003,
+            "remaining": 5,
+            "links": 3,
+            "bindings": 0,
+            "solved": [],
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 132,
+            "pose": 180,
+            "remaining": 5,
+            "links": 3,
+            "bindings": 0,
+            "solved": [],
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 165,
+            "pose": 104.37963867187497,
+            "remaining": 5,
+            "links": 3,
+            "bindings": 0,
+            "solved": [],
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 235.68,
+            "pose": 180,
+            "remaining": 5,
+            "links": 3,
+            "bindings": 0,
+            "solved": [],
+            "events": []
+          }
+        ]
+      }
+    },
+    {
+      "pointerExtension": 6,
+      "moves": [
+        {
+          "part": "ring_3",
+          "target": 240
+        },
+        {
+          "part": "ring_2",
+          "target": 126
+        },
+        {
+          "part": "ring_1",
+          "target": 171
+        },
+        {
+          "part": "ring_2",
+          "target": 241.68
+        }
+      ],
+      "analytic": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 240,
+            "pose": 234.00000000000023,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 126,
+            "pose": 142.68017578124977,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 171,
+            "pose": 162.39697366684155,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_3",
+              "ring_4"
+            ],
+            "events": [
+              {
+                "bomb": 0,
+                "target": "ring_4",
+                "otherBomb": null,
+                "pose": 162.39697366684155
+              }
+            ]
+          },
+          {
+            "part": "ring_2",
+            "pointer": 241.68,
+            "pose": 235.68017578124952,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4",
+              "ring_5"
+            ],
+            "events": []
+          }
+        ]
+      },
+      "feel": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 240,
+            "pose": 234.00000000000026,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 126,
+            "pose": 142.68017578124977,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 171,
+            "pose": 162.39697366684155,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_3",
+              "ring_4"
+            ],
+            "events": [
+              {
+                "bomb": 0,
+                "target": "ring_4",
+                "otherBomb": null,
+                "pose": 162.39697366684155
+              }
+            ]
+          },
+          {
+            "part": "ring_2",
+            "pointer": 241.68,
+            "pose": 235.68017578124943,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4",
+              "ring_5"
+            ],
+            "events": []
+          }
+        ]
+      }
+    },
+    {
+      "pointerExtension": 12,
+      "moves": [
+        {
+          "part": "ring_3",
+          "target": 246
+        },
+        {
+          "part": "ring_2",
+          "target": 120
+        },
+        {
+          "part": "ring_1",
+          "target": 177
+        },
+        {
+          "part": "ring_2",
+          "target": 247.68
+        }
+      ],
+      "analytic": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 246,
+            "pose": 234.00000000000023,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 120,
+            "pose": 142.68017578124977,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 177,
+            "pose": 162.39697366684155,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_3",
+              "ring_4"
+            ],
+            "events": [
+              {
+                "bomb": 0,
+                "target": "ring_4",
+                "otherBomb": null,
+                "pose": 162.39697366684155
+              }
+            ]
+          },
+          {
+            "part": "ring_2",
+            "pointer": 247.68,
+            "pose": 235.68017578124952,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4",
+              "ring_5"
+            ],
+            "events": []
+          }
+        ]
+      },
+      "feel": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "ring_3",
+            "pointer": 246,
+            "pose": 234.00000000000026,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_2",
+            "pointer": 120,
+            "pose": 142.68017578124977,
+            "remaining": 4,
+            "links": 2,
+            "bindings": 0,
+            "solved": [
+              "ring_3"
+            ],
+            "events": []
+          },
+          {
+            "part": "ring_1",
+            "pointer": 177,
+            "pose": 162.39697366684155,
+            "remaining": 2,
+            "links": 1,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_3",
+              "ring_4"
+            ],
+            "events": [
+              {
+                "bomb": 0,
+                "target": "ring_4",
+                "otherBomb": null,
+                "pose": 162.39697366684155
+              }
+            ]
+          },
+          {
+            "part": "ring_2",
+            "pointer": 247.68,
+            "pose": 235.68017578124943,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "solved": [
+              "ring_1",
+              "ring_2",
+              "ring_3",
+              "ring_4",
+              "ring_5"
+            ],
+            "events": []
+          }
+        ]
+      }
+    }
+  ],
+  "openDoorHoldoutAlternative": {
+    "pointerExtension": 6,
+    "moves": [
+      {
+        "part": "ring_3",
+        "target": 240
+      },
+      {
+        "part": "ring_2",
+        "target": 126
+      },
+      {
+        "part": "ring_1",
+        "target": 171
+      },
+      {
+        "part": "ring_2",
+        "target": 241.68
+      }
+    ],
+    "analytic": {
+      "solved": true,
+      "trace": [
+        {
+          "part": "ring_3",
+          "pointer": 240,
+          "pose": 234.00000000000023,
+          "remaining": 4,
+          "links": 2,
+          "bindings": 0,
+          "solved": [
+            "ring_3"
+          ],
+          "events": []
+        },
+        {
+          "part": "ring_2",
+          "pointer": 126,
+          "pose": 142.68017578124977,
+          "remaining": 4,
+          "links": 2,
+          "bindings": 0,
+          "solved": [
+            "ring_3"
+          ],
+          "events": []
+        },
+        {
+          "part": "ring_1",
+          "pointer": 171,
+          "pose": 162.39697366684155,
+          "remaining": 2,
+          "links": 1,
+          "bindings": 0,
+          "solved": [
+            "ring_1",
+            "ring_3",
+            "ring_4"
+          ],
+          "events": [
+            {
+              "bomb": 0,
+              "target": "ring_4",
+              "otherBomb": null,
+              "pose": 162.39697366684155
+            }
+          ]
+        },
+        {
+          "part": "ring_2",
+          "pointer": 241.68,
+          "pose": 235.68017578124952,
+          "remaining": 0,
+          "links": 0,
+          "bindings": 0,
+          "solved": [
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "ring_5"
+          ],
+          "events": []
+        }
+      ]
+    },
+    "feel": {
+      "solved": true,
+      "trace": [
+        {
+          "part": "ring_3",
+          "pointer": 240,
+          "pose": 234.00000000000026,
+          "remaining": 4,
+          "links": 2,
+          "bindings": 0,
+          "solved": [
+            "ring_3"
+          ],
+          "events": []
+        },
+        {
+          "part": "ring_2",
+          "pointer": 126,
+          "pose": 142.68017578124977,
+          "remaining": 4,
+          "links": 2,
+          "bindings": 0,
+          "solved": [
+            "ring_3"
+          ],
+          "events": []
+        },
+        {
+          "part": "ring_1",
+          "pointer": 171,
+          "pose": 162.39697366684155,
+          "remaining": 2,
+          "links": 1,
+          "bindings": 0,
+          "solved": [
+            "ring_1",
+            "ring_3",
+            "ring_4"
+          ],
+          "events": [
+            {
+              "bomb": 0,
+              "target": "ring_4",
+              "otherBomb": null,
+              "pose": 162.39697366684155
+            }
+          ]
+        },
+        {
+          "part": "ring_2",
+          "pointer": 241.68,
+          "pose": 235.68017578124943,
+          "remaining": 0,
+          "links": 0,
+          "bindings": 0,
+          "solved": [
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "ring_5"
+          ],
+          "events": []
+        }
+      ]
+    }
+  }
+}

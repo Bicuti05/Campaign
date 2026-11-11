@@ -1,0 +1,76 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Nổ cửa trước — mở quyền xoay bom thứ hai",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Ba vòng kín và một vòng hở nối bằng pin thường. Vòng kín K mang bom nhưng còn pin đi ra vào C nên bị khóa input. Vòng hở R nhận pin từ C, quay bom R chạm phần rắn của pin C để phá C/R trước; thân vòng C chưa chạm bom tại contact. K hết pin đi ra nhưng còn được vòng kín J giữ, nên bom K vẫn có host; lúc này K mới xoay bom tới phần rắn pin J để phá cặp kín còn lại. Hai bom nổ ở hai contact riêng, không cần ba bom chạm đồng thời, không ngàm/chốt/thanh thêm để giữ host. Không Booster/Chain. Chưa GD nghiệm thu bố cục/độ khó.",
+  "rings": [
+    {
+      "id": "K",
+      "x": 0,
+      "y": 0,
+      "gapDir": 90,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "C"
+        }
+      ],
+      "bomb": {
+        "x": -2.2,
+        "y": 0,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "C",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 90,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "R",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [],
+      "bomb": {
+        "x": 6.7854,
+        "y": 4.5854,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "J",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 90,
+      "color": "green",
+      "radius": 1.75,
+      "gap": 0,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "K"
+        }
+      ]
+    }
+  ],
+  "sticks": []
+}

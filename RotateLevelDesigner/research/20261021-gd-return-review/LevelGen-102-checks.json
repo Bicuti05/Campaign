@@ -1,0 +1,134 @@
+{
+  "file": "Tools/LevelGen/Tools/RotateLevelDesigner/levels/A102_20261020_r01.rrpack.json",
+  "source": "Tools/LevelGen/references/TURPLevel/LevelVariants/sources/Level10005.rrdesign.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 6,
+        "sticks": 1,
+        "guides": 0,
+        "bombs": 0,
+        "links": 7,
+        "pins": 7,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "R2",
+        "pin": "toBridge",
+        "margin": 80
+      },
+      {
+        "ring": "R2",
+        "pin": "revisedToR1",
+        "margin": 75.28226999999998
+      },
+      {
+        "ring": "R3",
+        "pin": "p1",
+        "margin": 90.000768
+      },
+      {
+        "ring": "R3",
+        "pin": "p2",
+        "margin": 90.26648599999999
+      },
+      {
+        "ring": "R5",
+        "pin": "p1",
+        "margin": 61.999954
+      },
+      {
+        "ring": "R7",
+        "pin": "toBridge",
+        "margin": 79
+      },
+      {
+        "ring": "R7",
+        "pin": "revisedToR5",
+        "margin": 46.000260000000026
+      }
+    ],
+    "guides": [],
+    "links": [
+      {
+        "source": "ring_2",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_2",
+        "target": "ring_1",
+        "pin": "attachment.pin_2",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_1",
+        "pin": "attachment.pin_3",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_4",
+        "pin": "attachment.pin_4",
+        "active": true
+      },
+      {
+        "source": "ring_4",
+        "target": "ring_5",
+        "pin": "attachment.pin_5",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "slide_bar_1",
+        "pin": "attachment.pin_6",
+        "active": true
+      },
+      {
+        "source": "ring_6",
+        "target": "ring_4",
+        "pin": "attachment.pin_7",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [],
+      "current": [],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [
+      {
+        "id": "Bridge",
+        "lengths": [
+          12.7482,
+          2
+        ],
+        "isU": false,
+        "guides": 0
+      }
+    ],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

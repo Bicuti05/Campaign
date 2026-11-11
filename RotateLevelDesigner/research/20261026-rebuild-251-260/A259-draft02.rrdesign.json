@@ -1,0 +1,279 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "259",
+  "name": "A259 | Khung U giữ cửa dưới",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": -3.2,
+      "gapDir": 90,
+      "gap": 90,
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "toLowerWindow",
+          "angle": 270,
+          "length": 0.85,
+          "targets": [
+            "R9"
+          ]
+        }
+      ],
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R2",
+      "x": 4,
+      "y": -1.5,
+      "gapDir": 90,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 203.0255,
+          "targets": [
+            "R1"
+          ],
+          "length": 0.5963
+        }
+      ],
+      "stops": [
+        {
+          "angle": 90,
+          "length": 0.4
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": -4,
+      "y": -1.5,
+      "gapDir": 45.6624,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 336.9745,
+          "targets": [
+            "R1"
+          ],
+          "length": 0.5963
+        },
+        {
+          "id": "p2",
+          "angle": 90,
+          "targets": [
+            "R4"
+          ],
+          "length": 1
+        }
+      ],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": -4,
+      "y": 3,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [],
+      "color": "teal",
+      "lockCount": 0
+    },
+    {
+      "id": "R5",
+      "x": 4,
+      "y": 3,
+      "gapDir": 0,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": -180,
+          "targets": [
+            "S1"
+          ],
+          "length": 2
+        },
+        {
+          "id": "returnR6",
+          "angle": 90,
+          "targets": [
+            "R6"
+          ],
+          "length": 0.75
+        }
+      ],
+      "radius": 1.75,
+      "color": "blue",
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": 4,
+      "y": 7.5,
+      "gapDir": 180,
+      "gap": 90,
+      "pins": [],
+      "radius": 1.75,
+      "color": "red",
+      "lockCount": 0
+    },
+    {
+      "id": "R9",
+      "x": 0,
+      "y": -7.8,
+      "gapDir": 270,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "toBottomU",
+          "angle": 180,
+          "length": 1.94,
+          "targets": [
+            "S4"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "color": "orange",
+      "lockCount": 0
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 0,
+      "y": 2.2,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "green",
+      "guides": []
+    },
+    {
+      "id": "S2",
+      "x": 0,
+      "y": 7.1,
+      "angle": 0,
+      "path": [
+        [
+          2.5,
+          0
+        ],
+        [
+          -2.8,
+          0
+        ],
+        [
+          -2.8,
+          -2.2
+        ]
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 7.1,
+          "angle": 0
+        }
+      ],
+      "color": "purple",
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S3",
+      "x": 0,
+      "y": -9.5,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          1.7
+        ],
+        [
+          0,
+          -1.7
+        ]
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": -9.7,
+          "angle": 90
+        }
+      ],
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S4",
+      "x": 0,
+      "y": -12.2,
+      "angle": 0,
+      "path": [
+        [
+          -3.94,
+          5.8
+        ],
+        [
+          -3.94,
+          0
+        ],
+        [
+          3.94,
+          0
+        ],
+        [
+          3.94,
+          5.8
+        ]
+      ],
+      "guides": [
+        {
+          "x": -3.94,
+          "y": -9.1,
+          "angle": 90
+        },
+        {
+          "x": 3.94,
+          "y": -10.6,
+          "angle": 90
+        }
+      ],
+      "color": "purple",
+      "slideAxis": [
+        0,
+        1
+      ]
+    }
+  ],
+  "author": "Codex / Designer review batch01",
+  "notes": "Practice L/U + Combine. L ở mái, thanh giữa và U dưới nối qua cùng chuỗi receiver; giảm các thanh song song không rõ vai trò, đưa nhánh thấp sát phần giữa. Tham chiếu A109; bố cục và vai trò được dựng lại, không tự GD-approved. Kiểm Designer, không Unity/device. Chi tiết kiểm/giới hạn nằm trong delivery manifest."
+}

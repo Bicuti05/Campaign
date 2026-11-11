@@ -1,0 +1,293 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "120",
+  "name": "Level 120",
+  "author": "Codex / source distinction 2026-10-27",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 0,
+      "radius": 1.75,
+      "color": "teal",
+      "pins": [],
+      "bomb": {
+        "x": 1.2374369,
+        "y": 1.2374369,
+        "radius": 0.75
+      }
+    },
+    {
+      "id": "R2",
+      "x": -4.8,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 0,
+      "radius": 1.75,
+      "color": "red",
+      "pins": [
+        {
+          "id": "toR1",
+          "targets": [
+            "R1"
+          ],
+          "angle": 0,
+          "length": 1.05
+        },
+        {
+          "id": "toR6",
+          "targets": [
+            "R6"
+          ],
+          "angle": 270,
+          "length": 1.05
+        },
+        {
+          "id": "toR7",
+          "targets": [
+            "R7"
+          ],
+          "angle": 90,
+          "length": 1.05
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": 4.8,
+      "gapDir": 0,
+      "gap": 0,
+      "radius": 1.75,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "toR1",
+          "targets": [
+            "R1"
+          ],
+          "angle": 270,
+          "length": 1.05
+        },
+        {
+          "id": "toR4",
+          "targets": [
+            "R4"
+          ],
+          "angle": 0,
+          "length": 1.05
+        },
+        {
+          "id": "toR7",
+          "targets": [
+            "R7"
+          ],
+          "angle": 180,
+          "length": 1.05
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.8,
+      "y": 4.8,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 1.75,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "toR9",
+          "targets": [
+            "R9"
+          ],
+          "angle": 270,
+          "length": 1.05
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": 0,
+      "y": -4.8,
+      "gapDir": 0,
+      "gap": 0,
+      "radius": 1.75,
+      "color": "green",
+      "pins": [
+        {
+          "id": "toR1",
+          "targets": [
+            "R1"
+          ],
+          "angle": 90,
+          "length": 1.05
+        },
+        {
+          "id": "toR8",
+          "targets": [
+            "R8"
+          ],
+          "angle": 0,
+          "length": 1.05
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": -4.8,
+      "y": -4.8,
+      "gapDir": 270,
+      "gap": 90,
+      "radius": 1.75,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "R7",
+      "x": -4.8,
+      "y": 4.8,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 1.75,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "R8",
+      "x": 4.8,
+      "y": -4.8,
+      "gapDir": 270,
+      "gap": 90,
+      "radius": 1.75,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "toR9",
+          "targets": [
+            "R9"
+          ],
+          "angle": 90,
+          "length": 1.05
+        }
+      ]
+    },
+    {
+      "id": "R9",
+      "x": 4.8,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 1.75,
+      "color": "navy",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 2.5,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 2.5,
+          "y": -3,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "S2",
+      "x": -8,
+      "y": 4.8,
+      "angle": 0,
+      "path": [
+        [
+          3.2,
+          0
+        ],
+        [
+          -1.6,
+          0
+        ],
+        [
+          -1.6,
+          2.2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.2,
+          "y": 4.8,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "S3",
+      "x": 0,
+      "y": -8,
+      "angle": 0,
+      "path": [
+        [
+          -4.8,
+          3.8
+        ],
+        [
+          -4.8,
+          0
+        ],
+        [
+          4.8,
+          0
+        ],
+        [
+          4.8,
+          3.8
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -4.8,
+          "y": -7,
+          "angle": 90
+        },
+        {
+          "x": 4.8,
+          "y": -7,
+          "angle": 90
+        }
+      ],
+      "color": "orange"
+    }
+  ],
+  "notes": "A120 sửa khác nguồn10090: bốn nguồn kín thành cụm vuông quanh receiver Bom R1; thanh thẳng S1 nằm giữa để kích nổ, cánh L trái và U đáy. Bỏ hình hai cột xiên, U đứng ngoài phải và các đường chéo của bản cũ. R7/R9 là receiver chung cho nhánh trên/dưới. Bom phải phá R1; quay lại các nguồn sau khi mở receiver. Không Booster/Chain. Độ khó chưa GD kiểm."
+}

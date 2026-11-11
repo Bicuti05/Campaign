@@ -1,0 +1,51 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Vòng lớn nhận pin từ trong và ngoài",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Vòng lớn nhận một pin của vòng nhỏ đồng tâm và một pin từ nguồn ở phía trên. Xoay vành lớn qua từng cửa: một nguồn rời trước, vành lớn còn được nguồn kia giữ, rồi tiếp tục tới cửa còn lại. Radius 1,75 và 2,8354, nguồn trên cách 5,6708 theo hình học pin vào vòng lớn. Không thanh/ngàm/bom/Chain/Booster. Nhóm lớn/nhỏ đã được GD mở riêng; chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "I",
+      "x": 0,
+      "y": 0,
+      "gapDir": 180,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "purple",
+      "radius": 2.8354,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "T",
+      "x": 0,
+      "y": 5.6708,
+      "gapDir": 90,
+      "color": "blue",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "O"
+        }
+      ]
+    }
+  ],
+  "sticks": []
+}

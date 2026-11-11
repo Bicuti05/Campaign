@@ -1,0 +1,135 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R2",
+      "x": 3.2424,
+      "y": 3.2424,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 314.9991,
+          "target": "R5"
+        },
+        {
+          "angle": 225,
+          "target": "R1"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R3",
+      "x": 6.4847,
+      "y": 6.4847,
+      "gap": 90,
+      "gapDir": 135,
+      "pins": [],
+      "color": "sky",
+      "stops": [
+        {
+          "angle": 60,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 3.2424,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R1"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R5",
+      "x": 6.4847,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 225,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 9.7271,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [
+        {
+          "angle": 315,
+          "target": "R9"
+        },
+        {
+          "angle": 225,
+          "target": "R5"
+        },
+        {
+          "angle": 135.0009,
+          "target": "R3"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R7",
+      "x": 6.4847,
+      "y": -6.4847,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 44.9991,
+          "target": "R8"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "R8",
+      "x": 9.7271,
+      "y": -3.2424,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "angle": 135,
+          "target": "R5"
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "R9",
+      "x": 12.9695,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "navy"
+    }
+  ],
+  "sticks": [],
+  "name": "G01-007 | Chốt chặn: chọn chiều",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 7 (build). Ý tưởng: R5 bị 3 vòng (R2, R6, R8) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R2 còn giữ R1: nếu chưa nhả hết nơi khác thì quay R5 tiếp sẽ bị khóa lại; vòng kín R2 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R3 chặn một chiều quay: chọn chiều hoặc dọn đường trước. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 2.3 lần kéo/vật, mục tiêu 1.2–2.5). Không Booster/Chain/bom; lockCount 0."
+}

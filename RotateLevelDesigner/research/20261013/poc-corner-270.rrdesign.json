@@ -1,0 +1,88 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Thanh L giữ biên trên–trái",
+  "author": "Codex reference study 20261013",
+  "notes": "ref_019/ref_052: thanh L tổ chức hai cạnh của cùng một vùng vòng. Thanh là nguồn khóa chung của hai pin bên trái, phải kéo lên; ngàm giữ thanh sau khi pin rời. Vòng dưới phải nhận hai pin từ hai hướng, nhả một pin trước rồi đổi pose để nhả pin còn lại. Không giả định đẹp/khó từ solver.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 270,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "S1"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 225,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -4.5854,
+      "gapDir": 270,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "S1"
+        },
+        {
+          "angle": 0,
+          "target": "R4"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.5854,
+      "y": -4.5854,
+      "gapDir": 270,
+      "radius": 1.75,
+      "gap": 90,
+      "color": "green",
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "L",
+      "length": 8.1208,
+      "arm": 8.2208,
+      "x": -2.8354,
+      "y": -1.225,
+      "angle": 90,
+      "color": "red",
+      "guides": [
+        {
+          "x": -2.8354,
+          "y": 1.8,
+          "angle": 90
+        }
+      ]
+    }
+  ]
+}

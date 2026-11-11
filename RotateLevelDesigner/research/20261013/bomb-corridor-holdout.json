@@ -1,0 +1,161 @@
+{
+  "format": "rotate-bomb-corridor-holdout",
+  "version": 1,
+  "delivery": "Not in Designer levels; bounded CLI search gate has not passed",
+  "solver": {
+    "found": false,
+    "moves": [],
+    "nodes": 850,
+    "seconds": 30.208,
+    "log": "NOT FOUND after 850 explorations, 30 s (limits 1200 nodes / 30 s, open 8)",
+    "route": []
+  },
+  "authoredNoFeelRoute": {
+    "solved": true,
+    "trace": [
+      {
+        "part": "R4",
+        "target": 150,
+        "remaining": 4,
+        "solved": [
+          "ring_4"
+        ],
+        "contacts": [],
+        "bombHosts": [
+          4
+        ]
+      },
+      {
+        "part": "R3",
+        "target": 120,
+        "remaining": 3,
+        "solved": [
+          "ring_3",
+          "ring_4"
+        ],
+        "contacts": [],
+        "bombHosts": [
+          4
+        ]
+      },
+      {
+        "part": "S1",
+        "target": 5.3,
+        "remaining": 0,
+        "solved": [
+          "ring_1",
+          "ring_2",
+          "ring_3",
+          "ring_4",
+          "slide_bar_1"
+        ],
+        "contacts": [
+          {
+            "target": "ring_1",
+            "pose": 5.1499936260251316
+          }
+        ],
+        "bombHosts": [
+          4
+        ]
+      }
+    ]
+  },
+  "wrongOrder": {
+    "solved": false,
+    "trace": [
+      {
+        "part": "S1",
+        "target": 5.3,
+        "remaining": 3,
+        "solved": [
+          "ring_4",
+          "slide_bar_1"
+        ],
+        "contacts": [
+          {
+            "target": "ring_4",
+            "pose": 0.56459176482447
+          }
+        ],
+        "bombHosts": [
+          4
+        ]
+      },
+      {
+        "part": "R4",
+        "target": 150,
+        "remaining": 3,
+        "solved": [
+          "ring_4",
+          "slide_bar_1"
+        ],
+        "contacts": [],
+        "bombHosts": [
+          4
+        ]
+      },
+      {
+        "part": "R3",
+        "target": 120,
+        "remaining": 2,
+        "solved": [
+          "ring_3",
+          "ring_4",
+          "slide_bar_1"
+        ],
+        "contacts": [],
+        "bombHosts": [
+          4
+        ]
+      }
+    ]
+  },
+  "withoutGuideAfterPreparation": {
+    "solved": false,
+    "trace": [
+      {
+        "part": "R4",
+        "target": 150,
+        "remaining": 3,
+        "solved": [
+          "ring_4",
+          "slide_bar_1"
+        ],
+        "contacts": [],
+        "bombHosts": [
+          -1
+        ]
+      },
+      {
+        "part": "R3",
+        "target": 120,
+        "remaining": 2,
+        "solved": [
+          "ring_3",
+          "ring_4",
+          "slide_bar_1"
+        ],
+        "contacts": [],
+        "bombHosts": [
+          -1
+        ]
+      },
+      {
+        "part": "S1",
+        "target": 5.3,
+        "remaining": 2,
+        "solved": [
+          "ring_3",
+          "ring_4",
+          "slide_bar_1"
+        ],
+        "contacts": [],
+        "bombHosts": [
+          -1
+        ]
+      }
+    ]
+  },
+  "limits": "Analytic Designer research only; an authored route is not a solver FOUND result. No Unity or feel claim."
+}

@@ -1,0 +1,79 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "U giữ thân cản — ngàm ở giữa nhánh",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Revision V30: chuyển ngàm U từ đầu nhánh xuống giữa đoạn thẳng Y1.4; thanh H ở Y2.6. Ngàm đầy đủ giữ U sau khi nhả pin, thân hai nhánh U cản H. Thêm C giữ R sau nhả pin U để còn thao tác quay nguồn. Hạ U, quay R dọn C/R, hạ thêm U rồi rút H và U. Không dùng vách ngàm ở đầu U làm cản H. Mọi ring radius1.75, không Stop/Bom/Chain/Booster. Đây là mẫu bốn Ring/Stick để sửa ý tưởng V30, chưa GD nghiệm thu hình hoặc khó. Cản cơ học theo từng gesture; không tự suy ra thứ tự toàn cục từ một lần kéo bị chặn. Có thể rút sâu U từ đầu để mở H cùng lúc nhả pin R; kéo H lặp cũng đi qua thân U trong engine hiện tại. Mẫu giữ quan hệ input và vai trò ngàm, không nhận thứ tự bắt buộc.",
+  "rings": [
+    {
+      "id": "R",
+      "x": 4.6354,
+      "y": 3,
+      "gapDir": 0,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 4.6354,
+      "y": -1.5854,
+      "gapDir": 180,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 0,
+      "y": 0,
+      "length": 3.6,
+      "arm": 3.6,
+      "angle": 0,
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -1.8,
+          "y": 1.4,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "shape": "straight",
+      "x": 0,
+      "y": 2.6,
+      "length": 3,
+      "angle": 0,
+      "color": "blue",
+      "guides": [
+        {
+          "x": 0.2,
+          "y": 2.6,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

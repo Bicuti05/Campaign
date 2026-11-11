@@ -1,0 +1,53 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Vòng lồng — rút thanh khỏi khe ngoài",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Nhóm lớn/nhỏ được GD mở riêng. Vòng nhỏ gửi một pin tới vành vòng lớn đồng tâm. Thanh ngang đi qua khe dưới của vòng lớn, cản cả hai đường quay. Một ngàm giữ thanh không nhận pin; rút thanh rồi xoay vòng ngoài để nhả vòng nhỏ. Không bom/Chain/Booster. Radius 1,75 và 2,8354; bản nghiên cứu chưa nghiệm thu đẹp/khó.",
+  "rings": [
+    {
+      "id": "I",
+      "x": 0,
+      "y": 0,
+      "gapDir": 180,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 0,
+          "target": "O"
+        }
+      ]
+    },
+    {
+      "id": "O",
+      "x": 0,
+      "y": 0,
+      "gapDir": 270,
+      "color": "purple",
+      "radius": 2.8354,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "length": 5,
+      "x": 0,
+      "y": -2.8354,
+      "angle": 0,
+      "color": "red",
+      "guides": [
+        {
+          "x": 0,
+          "y": -2.8354,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

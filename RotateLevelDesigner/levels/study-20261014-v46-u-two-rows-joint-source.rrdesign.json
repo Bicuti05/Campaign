@@ -1,0 +1,124 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Một U mở hai hàng — nguồn cần hai nhánh",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Bảy Ring/Stick trong một cụm: R giữ pin vào U và T, T giữ L, C giữ R. Hai nhánh U và L/T cùng nhả input R; C giữ R để còn cần quay. Ngàm đầy đủ ở đoạn thẳng U giữ cả hai tay, thân U mở H trên rồi H dưới ở các độ sâu rút khác nhau. Hai H có ngàm riêng để không tự tháo trong lúc thao tác nhánh khác. Mọi ring radius1.75, không Stop/Bom/Chain/Booster. Không ghép các cụm độc lập, chưa chốt campaign, đẹp hoặc khó. Cản thân theo gesture và ngưỡng hàng là bằng chứng lựa chọn không gian, không chứng nhận thứ tự toàn cục nếu kéo lặp. Người chơi có thể chọn rút U sâu và mở cả hai hàng cùng lúc trước nhánh L/T. Kéo H lặp có đường qua thân U. Nhánh R vẫn cần cả U và T nhả pin; tiến trình hai hàng là lựa chọn, không ép thứ tự thanh trên/dưới.",
+  "rings": [
+    {
+      "id": "R",
+      "x": 4.6354,
+      "y": 3,
+      "gapDir": 0,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "U"
+        },
+        {
+          "angle": 90,
+          "target": "T"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "x": 4.6354,
+      "y": -1.5854,
+      "gapDir": 180,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R"
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "x": 4.6354,
+      "y": 7.5854,
+      "gapDir": 0,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "x": 0.04999999999999982,
+      "y": 7.5854,
+      "gapDir": 90,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 0,
+      "y": 0,
+      "length": 3.6,
+      "arm": 3.6,
+      "angle": 0,
+      "color": "green",
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -1.8,
+          "y": 0.8,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "HU",
+      "shape": "straight",
+      "x": 0,
+      "y": 2.8,
+      "length": 3,
+      "angle": 0,
+      "color": "blue",
+      "guides": [
+        {
+          "x": 0.2,
+          "y": 2.8,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "HL",
+      "shape": "straight",
+      "x": 0,
+      "y": 1.7,
+      "length": 3,
+      "angle": 0,
+      "color": "red",
+      "guides": [
+        {
+          "x": 0.2,
+          "y": 1.7,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

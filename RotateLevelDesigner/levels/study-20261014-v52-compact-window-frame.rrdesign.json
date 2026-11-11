@@ -1,0 +1,125 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Cửa giữa trong khung hai hàng",
+  "author": "Codex ongoing research 20261013",
+  "notes": "Sáu vòng chuẩn1.75 thành hai cột ba hàng nằm trong một U mở bên trái; tổng7 Ring+Stick. Nguồn trên và dưới mỗi nguồn giữ cửa góc, cửa giữa M và một tay của cùng U. M dùng chung cho cả ba nguồn nên được quay lại ở các pha khác nhau. Hai pin giữ nguyên U, không thêm ngàm. Rút một khung sang phải nhả cả hai liên kết thanh, nhưng nguồn còn được các vòng giữ; tách khung thành hai thanh tạo chuyển động độc lập. Hình khung bao là hướng bố cục từ tham khảo ring-lab; không xác nhận một biểu tượng, đẹp/khó hoặc thứ tự chuẩn bị duy nhất. Có thể rút U sâu từ đầu; đây là lựa chọn chuẩn bị. Không Stop/Bom/Booster/Chain; chưa chốt campaign.",
+  "rings": [
+    {
+      "id": "BL",
+      "x": 0,
+      "y": 0,
+      "gapDir": 225,
+      "color": "orange",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "SB",
+      "x": 4.5854,
+      "y": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "BL"
+        },
+        {
+          "angle": 90,
+          "target": "M"
+        },
+        {
+          "angle": 270,
+          "target": "U"
+        }
+      ]
+    },
+    {
+      "id": "SL",
+      "x": 0,
+      "y": 4.5854,
+      "gapDir": 180,
+      "color": "red",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "BL"
+        },
+        {
+          "angle": 90,
+          "target": "TL"
+        },
+        {
+          "angle": 0,
+          "target": "M"
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "x": 4.5854,
+      "y": 4.5854,
+      "gapDir": 45,
+      "color": "sky",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "TL",
+      "x": 0,
+      "y": 9.1708,
+      "gapDir": 135,
+      "color": "teal",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": []
+    },
+    {
+      "id": "ST",
+      "x": 4.5854,
+      "y": 9.1708,
+      "gapDir": 0,
+      "color": "navy",
+      "radius": 1.75,
+      "gap": 90,
+      "pins": [
+        {
+          "angle": 180,
+          "target": "TL"
+        },
+        {
+          "angle": 270,
+          "target": "M"
+        },
+        {
+          "angle": 90,
+          "target": "U"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "U",
+      "shape": "U",
+      "x": 7.5,
+      "y": 4.5854,
+      "length": 14.8416,
+      "arm": 6.8,
+      "angle": 90,
+      "color": "red",
+      "slideAxis": [
+        0,
+        1
+      ]
+    }
+  ]
+}

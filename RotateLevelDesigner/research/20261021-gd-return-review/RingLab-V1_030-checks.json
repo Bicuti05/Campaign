@@ -1,0 +1,151 @@
+{
+  "file": "Tools/RingLab-GameDeveloper-20261021-r01/ready_for_GD_review/V1_030/V1_030_export_r01.rrpack.json",
+  "source": "Tools/RingLab-GameDeveloper-20261021-r01/ready_for_GD_review/V1_030/source-reference.json",
+  "solutionSearch": false,
+  "checks": {
+    "nativeValidation": null,
+    "analysis": {
+      "error": null,
+      "warnings": [],
+      "info": {
+        "rings": 7,
+        "sticks": 2,
+        "guides": 4,
+        "bombs": 0,
+        "links": 6,
+        "pins": 6,
+        "stops": 0,
+        "closedRings": 0
+      }
+    },
+    "pinMargins": [
+      {
+        "ring": "ring_1",
+        "pin": "attachment.pin_1",
+        "margin": 45.05
+      },
+      {
+        "ring": "ring_1",
+        "pin": "attachment.pin_2",
+        "margin": 125.05
+      },
+      {
+        "ring": "ring_1",
+        "pin": "attachment.pin_3",
+        "margin": 100.05
+      },
+      {
+        "ring": "ring_1",
+        "pin": "attachment.pin_4",
+        "margin": 45.05
+      },
+      {
+        "ring": "ring_3",
+        "pin": "attachment.pin_5",
+        "margin": 134.99951999999996
+      },
+      {
+        "ring": "ring_5",
+        "pin": "attachment.pin_6",
+        "margin": 134.99982
+      }
+    ],
+    "guides": [
+      {
+        "id": "guide_1",
+        "engaged": true
+      },
+      {
+        "id": "guide_2",
+        "engaged": true
+      },
+      {
+        "id": "guide_3",
+        "engaged": true
+      },
+      {
+        "id": "guide_4",
+        "engaged": true
+      }
+    ],
+    "links": [
+      {
+        "source": "ring_1",
+        "target": "ring_2",
+        "pin": "attachment.pin_1",
+        "active": true
+      },
+      {
+        "source": "ring_1",
+        "target": "ring_4",
+        "pin": "attachment.pin_2",
+        "active": true
+      },
+      {
+        "source": "ring_1",
+        "target": "ring_6",
+        "pin": "attachment.pin_3",
+        "active": true
+      },
+      {
+        "source": "ring_1",
+        "target": "ring_7",
+        "pin": "attachment.pin_4",
+        "active": true
+      },
+      {
+        "source": "ring_3",
+        "target": "ring_2",
+        "pin": "attachment.pin_5",
+        "active": true
+      },
+      {
+        "source": "ring_5",
+        "target": "ring_4",
+        "pin": "attachment.pin_6",
+        "active": true
+      }
+    ],
+    "colors": {
+      "near": [],
+      "sizeClash": []
+    },
+    "strictOVL": {
+      "source": [],
+      "current": [],
+      "newOrDeeper": []
+    },
+    "initialBombContacts": [],
+    "stopRoots": [],
+    "bars": [
+      {
+        "id": "slide_bar_1",
+        "lengths": [
+          3.33333,
+          6.5,
+          3.33333
+        ],
+        "isU": true,
+        "guides": 2
+      },
+      {
+        "id": "slide_bar_2",
+        "lengths": [
+          3.33333,
+          3.75,
+          3.33333
+        ],
+        "isU": true,
+        "guides": 2
+      }
+    ],
+    "roundtripRuntime": true
+  },
+  "errors": [],
+  "limitations": [
+    "Static model checks do not establish solvability, difficulty, visual quality or dynamic necessity of a feature.",
+    "Strict OVL is the historical conservative body-only checker (sampled bars; circles ignore gaps). It excludes pins/stops/Guides/Boms; native analyzer covers additional geometry.",
+    "Same-colour near distance1.5 and OVL baseline allowance0.01 are research measurements, not gameplay tolerance changes. Different palette names still need human contrast review."
+  ],
+  "ok": true
+}

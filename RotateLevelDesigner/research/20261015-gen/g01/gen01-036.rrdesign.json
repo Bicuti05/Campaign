@@ -1,0 +1,246 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": -4.5854,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [
+        {
+          "angle": 150.0002,
+          "target": "R11"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R3",
+      "x": 3.9711,
+      "y": -2.2927,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 299.9998,
+          "target": "R12"
+        },
+        {
+          "angle": 209.9998,
+          "target": "R2"
+        },
+        {
+          "angle": 150.0002,
+          "target": "R1"
+        },
+        {
+          "angle": 90,
+          "target": "R6"
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "R4",
+      "x": 0,
+      "y": 4.5854,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R1"
+        }
+      ],
+      "color": "teal",
+      "stops": [
+        {
+          "angle": 0,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": -3.9711,
+      "y": 2.2927,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R11"
+        },
+        {
+          "angle": 135,
+          "target": "R8"
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 3.9711,
+      "y": 2.2927,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 330.0002,
+          "target": "R13"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "R7",
+      "x": 1.1868,
+      "y": 9.0146,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 255,
+          "target": "R4"
+        },
+        {
+          "angle": 345,
+          "target": "R10"
+        },
+        {
+          "angle": 150.0002,
+          "target": "R9"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R8",
+      "x": -7.2135,
+      "y": 5.5351,
+      "gap": 90,
+      "gapDir": 45,
+      "pins": [],
+      "color": "sky"
+    },
+    {
+      "id": "R9",
+      "x": -2.7843,
+      "y": 11.3073,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "blue"
+    },
+    {
+      "id": "R10",
+      "x": 5.616,
+      "y": 7.8278,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "green",
+      "stops": [
+        {
+          "angle": 285,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "x": -3.9711,
+      "y": -2.2927,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R12",
+      "x": 6.2638,
+      "y": -6.2638,
+      "gap": 90,
+      "gapDir": 285,
+      "pins": [],
+      "color": "teal",
+      "stops": [
+        {
+          "angle": 210,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "x": 7.9422,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "purple"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "shape": "straight",
+      "x": -3.25,
+      "y": 13.5,
+      "angle": 270,
+      "color": "sky",
+      "guides": [
+        {
+          "x": -3.25,
+          "y": 13.5,
+          "angle": 270
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "shape": "straight",
+      "x": 8.5,
+      "y": 7.5,
+      "angle": 0,
+      "color": "teal",
+      "guides": [
+        {
+          "x": 8.5,
+          "y": 7.5,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "shape": "straight",
+      "x": 10.5,
+      "y": 0.5,
+      "angle": 180,
+      "color": "orange",
+      "guides": [
+        {
+          "x": 10.5,
+          "y": 0.5,
+          "angle": 180
+        }
+      ]
+    }
+  ],
+  "name": "G01-036 | Chương cuối",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 36 (build). Ý tưởng: R11 bị 2 vòng (R2, R5) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R5 còn giữ R8: nếu chưa nhả hết nơi khác thì quay R11 tiếp sẽ bị khóa lại; vòng kín R3, R5, R7 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R10 chặn một chiều quay: chọn chiều hoặc dọn đường trước. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 2.6 lần kéo/vật, mục tiêu 6–8). Không Booster/Chain/bom; lockCount 0."
+}

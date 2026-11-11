@@ -1,0 +1,737 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v21-four-l-corners",
+      "name": "Bốn góc L — truyền khoảng trống rồi quay lại góc đầu",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Bốn góc L — truyền khoảng trống rồi quay lại góc đầu",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Bốn L và bốn ngàm tạo cụm vuông với trục ngang/dọc xen kẽ. Trong các đường trượt đầu đã kiểm, không thanh nào rút hết theo hai phía. Dịch góc trên sang phải một đoạn, vẫn giữ cả bốn binding, làm góc trái có lối nâng lên. Nhả góc trái, góc dưới, góc phải rồi quay lại dọn góc trên. Có thể bắt đầu ở các góc khác; không có góc đầu duy nhất. Mỗi nhánh L vừa chọn hướng rút qua ngàm, vừa tham gia chặn thanh lân cận; bỏ riêng nhánh mở lối sớm. Đây là phụ thuộc do đường trượt/thân thanh, không link pin, Xích, bom hoặc Booster. Chưa nghiệm thu bố cục/độ khó.",
+        "rings": [],
+        "sticks": [
+          {
+            "id": "T",
+            "shape": "L",
+            "x": 0,
+            "y": 3,
+            "length": 4,
+            "arm": 1.7,
+            "angle": 0,
+            "color": "orange",
+            "guides": [
+              {
+                "x": 0,
+                "y": 3,
+                "angle": 0
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "shape": "L",
+            "x": 3,
+            "y": 0,
+            "length": 4,
+            "arm": 1.7,
+            "angle": 270,
+            "color": "blue",
+            "guides": [
+              {
+                "x": 3,
+                "y": 0,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "shape": "L",
+            "x": 0,
+            "y": -3,
+            "length": 4,
+            "arm": 1.7,
+            "angle": 180,
+            "color": "purple",
+            "guides": [
+              {
+                "x": 0,
+                "y": -3,
+                "angle": 0
+              }
+            ]
+          },
+          {
+            "id": "L",
+            "shape": "L",
+            "x": -3,
+            "y": 0,
+            "length": 4,
+            "arm": 1.7,
+            "angle": 90,
+            "color": "green",
+            "guides": [
+              {
+                "x": -3,
+                "y": 0,
+                "angle": 90
+              }
+            ]
+          }
+        ]
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 0,
+          "sticks": 4,
+          "guides": 4,
+          "bombs": 0,
+          "links": 0,
+          "pins": 0,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 5 drags after 27 explorations",
+      "moves": [
+        {
+          "part": "slide_bar_1",
+          "target": 0.5
+        },
+        {
+          "part": "slide_bar_4",
+          "target": 3
+        },
+        {
+          "part": "slide_bar_3",
+          "target": 3
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 3
+        },
+        {
+          "part": "slide_bar_1",
+          "target": 3
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": 0.5,
+          "direction": "+",
+          "removedNow": 0,
+          "remaining": 4
+        },
+        {
+          "step": 2,
+          "part": "slide_bar_4",
+          "label": "S4",
+          "kind": "stick",
+          "from": 0,
+          "to": 3,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 3
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_3",
+          "label": "S3",
+          "kind": "stick",
+          "from": 0,
+          "to": 3,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 2
+        },
+        {
+          "step": 4,
+          "part": "slide_bar_2",
+          "label": "S2",
+          "kind": "stick",
+          "from": 0,
+          "to": 3,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 1
+        },
+        {
+          "step": 5,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0.5,
+          "to": 3,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 0,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": 0.5,
+            "pose": 0.5,
+            "remaining": 4,
+            "links": 0,
+            "bindings": 4,
+            "events": []
+          },
+          {
+            "part": "slide_bar_4",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 3,
+            "links": 0,
+            "bindings": 3,
+            "events": []
+          },
+          {
+            "part": "slide_bar_3",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 2,
+            "links": 0,
+            "bindings": 2,
+            "events": []
+          },
+          {
+            "part": "slide_bar_2",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 1,
+            "links": 0,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": 0.5,
+            "pose": 0.5,
+            "remaining": 4,
+            "links": 0,
+            "bindings": 4,
+            "events": []
+          },
+          {
+            "part": "slide_bar_4",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 3,
+            "links": 0,
+            "bindings": 3,
+            "events": []
+          },
+          {
+            "part": "slide_bar_3",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 2,
+            "links": 0,
+            "bindings": 2,
+            "events": []
+          },
+          {
+            "part": "slide_bar_2",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 1,
+            "links": 0,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": 3,
+            "pose": 2.1000000000000005,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [],
+      "witness": {
+        "initialGuideEngaged": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "initialMotion": [
+          {
+            "id": "T",
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.354345703125,
+            "remaining": 4,
+            "links": 0
+          },
+          {
+            "id": "T",
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.7060180664062501,
+            "remaining": 4,
+            "links": 0
+          },
+          {
+            "id": "R",
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.354345703125,
+            "remaining": 4,
+            "links": 0
+          },
+          {
+            "id": "R",
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.7060180664062501,
+            "remaining": 4,
+            "links": 0
+          },
+          {
+            "id": "B",
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.354345703125,
+            "remaining": 4,
+            "links": 0
+          },
+          {
+            "id": "B",
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.7060180664062501,
+            "remaining": 4,
+            "links": 0
+          },
+          {
+            "id": "L",
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -1.354345703125,
+            "remaining": 4,
+            "links": 0
+          },
+          {
+            "id": "L",
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.7060180664062501,
+            "remaining": 4,
+            "links": 0
+          }
+        ],
+        "roles": [
+          {
+            "id": "T",
+            "neighbor": "L",
+            "afterPartial": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 3,
+              "links": 0
+            },
+            "withoutBar": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 2,
+              "links": 0
+            },
+            "withoutGuide": {
+              "solved": false,
+              "trace": [
+                {
+                  "part": "T",
+                  "pointer": 0.5,
+                  "pose": 0.5,
+                  "remaining": 3,
+                  "links": 0,
+                  "bindings": 3,
+                  "solved": [
+                    "slide_bar_1"
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            "withoutArm": [
+              {
+                "direction": -1,
+                "removed": true,
+                "from": 0,
+                "to": -2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              },
+              {
+                "direction": 1,
+                "removed": true,
+                "from": 0,
+                "to": 2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              }
+            ]
+          },
+          {
+            "id": "R",
+            "neighbor": "T",
+            "afterPartial": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 3,
+              "links": 0
+            },
+            "withoutBar": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 2,
+              "links": 0
+            },
+            "withoutGuide": {
+              "solved": false,
+              "trace": [
+                {
+                  "part": "R",
+                  "pointer": 0.5,
+                  "pose": 0.5,
+                  "remaining": 3,
+                  "links": 0,
+                  "bindings": 3,
+                  "solved": [
+                    "slide_bar_2"
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            "withoutArm": [
+              {
+                "direction": -1,
+                "removed": true,
+                "from": 0,
+                "to": -2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              },
+              {
+                "direction": 1,
+                "removed": true,
+                "from": 0,
+                "to": 2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "neighbor": "R",
+            "afterPartial": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 3,
+              "links": 0
+            },
+            "withoutBar": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 2,
+              "links": 0
+            },
+            "withoutGuide": {
+              "solved": false,
+              "trace": [
+                {
+                  "part": "B",
+                  "pointer": 0.5,
+                  "pose": 0.5,
+                  "remaining": 3,
+                  "links": 0,
+                  "bindings": 3,
+                  "solved": [
+                    "slide_bar_3"
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            "withoutArm": [
+              {
+                "direction": -1,
+                "removed": true,
+                "from": 0,
+                "to": -2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              },
+              {
+                "direction": 1,
+                "removed": true,
+                "from": 0,
+                "to": 2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              }
+            ]
+          },
+          {
+            "id": "L",
+            "neighbor": "B",
+            "afterPartial": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 3,
+              "links": 0
+            },
+            "withoutBar": {
+              "direction": 1,
+              "removed": true,
+              "from": 0,
+              "to": 2.1000000000000005,
+              "remaining": 2,
+              "links": 0
+            },
+            "withoutGuide": {
+              "solved": false,
+              "trace": [
+                {
+                  "part": "L",
+                  "pointer": 0.5,
+                  "pose": 0.5,
+                  "remaining": 3,
+                  "links": 0,
+                  "bindings": 3,
+                  "solved": [
+                    "slide_bar_4"
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            "withoutArm": [
+              {
+                "direction": -1,
+                "removed": true,
+                "from": 0,
+                "to": -2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              },
+              {
+                "direction": 1,
+                "removed": true,
+                "from": 0,
+                "to": 2.1000000000000005,
+                "remaining": 3,
+                "links": 0
+              }
+            ]
+          }
+        ],
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "T",
+              "pointer": 0.5,
+              "pose": 0.5,
+              "remaining": 4,
+              "links": 0,
+              "bindings": 4,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "L",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 3,
+              "links": 0,
+              "bindings": 3,
+              "solved": [
+                "slide_bar_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 2,
+              "links": 0,
+              "bindings": 2,
+              "solved": [
+                "slide_bar_3",
+                "slide_bar_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "R",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_2",
+                "slide_bar_3",
+                "slide_bar_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "T",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2",
+                "slide_bar_3",
+                "slide_bar_4"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "feelTrace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "T",
+              "pointer": 0.5,
+              "pose": 0.5,
+              "remaining": 4,
+              "links": 0,
+              "bindings": 4,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "L",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 3,
+              "links": 0,
+              "bindings": 3,
+              "solved": [
+                "slide_bar_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "B",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 2,
+              "links": 0,
+              "bindings": 2,
+              "solved": [
+                "slide_bar_3",
+                "slide_bar_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "R",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_2",
+                "slide_bar_3",
+                "slide_bar_4"
+              ],
+              "events": []
+            },
+            {
+              "part": "T",
+              "pointer": 3,
+              "pose": 2.1000000000000005,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2",
+                "slide_bar_3",
+                "slide_bar_4"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "undoNeighbor": {
+          "direction": 1,
+          "removed": false,
+          "from": 0,
+          "to": 0.7060180664062501,
+          "remaining": 4,
+          "links": 0
+        }
+      }
+    }
+  ]
+}

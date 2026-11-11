@@ -1,0 +1,140 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "R2",
+      "x": 1.1868,
+      "y": -4.4292,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "angle": 270,
+          "target": "R4"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R3",
+      "x": 4.4292,
+      "y": -1.1868,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 225,
+          "target": "R2"
+        },
+        {
+          "angle": 15,
+          "target": "R9"
+        },
+        {
+          "angle": 75,
+          "target": "R5"
+        },
+        {
+          "angle": 165,
+          "target": "R1"
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "R4",
+      "x": 1.1868,
+      "y": -9.0146,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [],
+      "color": "teal"
+    },
+    {
+      "id": "R5",
+      "x": 5.616,
+      "y": 3.2424,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "R6",
+      "x": 4.4292,
+      "y": -12.257,
+      "gap": 90,
+      "gapDir": 30,
+      "pins": [],
+      "color": "blue",
+      "stops": [
+        {
+          "angle": 255,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": 7.6716,
+      "y": -4.4292,
+      "gap": 90,
+      "gapDir": 270,
+      "pins": [],
+      "color": "red",
+      "stops": [
+        {
+          "angle": 195,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R8",
+      "x": 0,
+      "y": -13.4438,
+      "gap": 0,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 75,
+          "target": "R4"
+        },
+        {
+          "angle": 15,
+          "target": "R6"
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "R9",
+      "x": 8.8584,
+      "y": 0,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "angle": 255,
+          "target": "R7"
+        }
+      ],
+      "color": "purple"
+    }
+  ],
+  "sticks": [],
+  "name": "G01-008 | Hai chốt",
+  "author": "rr-gen research 2026-10-15",
+  "notes": "Bản nháp tự sinh, slot 8 (build). Ý tưởng: R4 bị 2 vòng (R2, R8) cùng giữ: một lần quay không nhả hết, phải nhả từng phía; R8 còn giữ R6: nếu chưa nhả hết nơi khác thì quay R4 tiếp sẽ bị khóa lại; vòng kín R3, R8 không tự quay để thoát: phải nhả hết các vòng nó giữ; chốt trên R6 chặn một chiều quay: chọn chiều hoặc dọn đường trước. Chờ GD chơi thử/chỉnh; độ khó chỉ là proxy (người chơi ngẫu nhiên 1.7 lần kéo/vật, mục tiêu 1.5–3). Không Booster/Chain/bom; lockCount 0."
+}

@@ -1,0 +1,212 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "253",
+  "name": "A253 | Cửa trên và chốt dưới",
+  "author": "Codex / Designer review batch01",
+  "notes": "Combine. Nguồn kín giữ cửa trái và cửa trên; receiver có Stop ở nhánh dưới nhận hai nguồn, nối vào thanh chung bên phải. Tham chiếu A103; bố cục và vai trò được dựng lại, không tự GD-approved. Kiểm Designer, không Unity/device. Chi tiết kiểm/giới hạn nằm trong delivery manifest.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": -2.4,
+      "y": 3.5,
+      "gapDir": 90.0629,
+      "gap": 0,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 56.3099,
+          "length": 0.5767,
+          "targets": [
+            "R2"
+          ]
+        },
+        {
+          "id": "new-R4",
+          "targets": [
+            "R4"
+          ],
+          "angle": 180,
+          "length": 0.65
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 7.1,
+      "gapDir": 120,
+      "gap": 90,
+      "color": "teal",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 303.6901,
+          "length": 0.8267,
+          "targets": [
+            "R3"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R3",
+      "x": 2.4,
+      "y": 3.5,
+      "gapDir": 174,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 1.05,
+          "targets": [
+            "S1"
+          ]
+        }
+      ],
+      "lockCount": 0
+    },
+    {
+      "id": "R4",
+      "x": -6.8,
+      "y": 3.5,
+      "gapDir": 240,
+      "gap": 90,
+      "color": "green",
+      "radius": 1.75,
+      "lockCount": 0,
+      "pins": []
+    },
+    {
+      "id": "R5",
+      "x": -2.4,
+      "y": -1.2,
+      "gapDir": 309,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 44.3969,
+          "length": 3.2179,
+          "targets": [
+            "R3"
+          ]
+        },
+        {
+          "id": "new-R6",
+          "targets": [
+            "R6"
+          ],
+          "angle": 218.2902,
+          "length": 1.3415
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R6",
+      "x": -6.2,
+      "y": -4.2,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "blue",
+      "stops": [
+        {
+          "angle": 15,
+          "length": 1.47
+        }
+      ],
+      "lockCount": 0,
+      "pins": []
+    },
+    {
+      "id": "R7",
+      "x": 1.6,
+      "y": -4.2,
+      "gapDir": 100,
+      "gap": 90,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 216.8699,
+          "length": 1.25,
+          "targets": [
+            "R8"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 0,
+          "length": 1.6,
+          "targets": [
+            "S1"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "angle": 165,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    },
+    {
+      "id": "R8",
+      "x": -2.4,
+      "y": -7.2,
+      "gapDir": 327,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 141.7098,
+          "length": 1.3415,
+          "targets": [
+            "R6"
+          ]
+        }
+      ],
+      "radius": 1.75,
+      "lockCount": 0
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 5.2,
+      "y": -0.35,
+      "angle": 0,
+      "color": "orange",
+      "path": [
+        [
+          0,
+          -5.6
+        ],
+        [
+          0,
+          5.6
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": []
+    }
+  ]
+}

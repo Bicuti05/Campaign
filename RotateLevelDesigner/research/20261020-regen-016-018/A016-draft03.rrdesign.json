@@ -1,0 +1,256 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "016",
+  "name": "Level 16 — Dịch L, mở vòng rồi quay lại",
+  "author": "Codex / report_20Level remake",
+  "notes": "Proposal theo report_20Level L16/§10.3: tăng hai cánh L S1/S2 từ1.3/1.5 lên1.9; giữ10 vòng và bố cục liên kết của bản ingame. Kiểm riêng cách dịch tạm và quay lại, không coi mọi thao tác trượt là phải rút thanh ngay. Không Bom/Chain/Booster; chưa GD duyệt, không nhập ingame/campaign. S2 dựng lại L thân2.2/cánh1.9, thêm Guide giữ sau khi pin R2 nhả: dịch phải một đoạn ngắn mở R2, cánh còn gặp R7 nên chưa rút hết; sau mở R7 quay lại rút S2. Guide có vai trò giữ trạng thái trung gian, không phải ngàm dư tại vị trí nhận pin. Bỏ thanh thẳng S3 của revision ingame để không chồng R7 khi đổi khe; giữ2 L theo bài học nguồn. S2 cuối thân2.8/cánh2.4.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": -3.9113,
+      "y": -0.1227,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 2.3688,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 28.7417,
+          "length": 0.6337,
+          "targets": [
+            "R4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "x": -3.9113,
+      "y": -5.0574,
+      "gapDir": 180,
+      "gap": 80,
+      "radius": 1.4805,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 0.9421,
+          "targets": [
+            "S2"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 90.1313,
+          "targets": [
+            "R1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": -3.9528,
+      "y": 4.8072,
+      "gapDir": 0,
+      "gap": 80,
+      "radius": 1.4805,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "S1"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 270.4823,
+          "length": 0.8308,
+          "targets": [
+            "R1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 0.2385,
+      "y": 2.1532,
+      "gapDir": 270,
+      "gap": 45,
+      "radius": 1.4805,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 37.4944,
+          "length": 1.0385,
+          "targets": [
+            "R5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": 4.1583,
+      "y": 5.1603,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 2.1714,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 162.9377,
+          "targets": [
+            "R8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": 0.8664,
+      "y": -3.2647,
+      "gapDir": 215,
+      "gap": 90,
+      "radius": 1.4805,
+      "color": "navy"
+    },
+    {
+      "id": "R7",
+      "x": 0.0606,
+      "y": -7.4592,
+      "gapDir": 225,
+      "gap": 90,
+      "radius": 2.1714,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 26.9589,
+          "targets": [
+            "R9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R8",
+      "x": -0.2448,
+      "y": 6.5117,
+      "gapDir": 225,
+      "gap": 90,
+      "radius": 1.3489,
+      "color": "red"
+    },
+    {
+      "id": "R9",
+      "x": 4.1662,
+      "y": -5.371,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 1.3489,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 147.4492,
+          "targets": [
+            "R6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "x": 4.1987,
+      "y": -0.1332,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 2.0069,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 150,
+          "targets": [
+            "R4"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 223.2199,
+          "targets": [
+            "R6"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -3.9528,
+      "y": 7.3731,
+      "angle": 0,
+      "color": "teal",
+      "path": [
+        [
+          1.8,
+          0
+        ],
+        [
+          -2.1,
+          0
+        ],
+        [
+          -2.1,
+          1.9
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S2",
+      "x": -3.43,
+      "y": -7.73,
+      "angle": 0,
+      "color": "purple",
+      "path": [
+        [
+          -0.8,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          -2.4
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.5,
+          "y": -7.73,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

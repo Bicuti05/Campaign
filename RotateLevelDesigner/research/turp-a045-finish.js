@@ -1,0 +1,15 @@
+"use strict";
+// A045 r01 export (generate-only; GD solves). New files only.
+const fs=require('fs'),path=require('path'),{execFileSync}=require('child_process'),A=require('./turp-a045-author.js');
+const stem='turp-A045-10027-spine-sources-stop-cap-r01',LV=path.join(__dirname,'../levels'),CLI=path.join(__dirname,'../rr-cli.js'),sharp=require('C:/Users/ADMIN/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const d=A.author('01');
+d.rings.find(r=>r.id==='R8').color='navy';{const n=require('./turp-color-near.js')(d);if(n.near.length||n.sizeClash.length)throw Error(JSON.stringify(n));}
+d.notes='Remake10027: nguồn13 vòng (2 kín) hữu cơ, 10 thanh (có thanh xiên mang Bom), 4 Stop. Bản mới dựng thẳng: hai cột vòng hai bên bước4,9 (bỏ góc dưới trái và trên phải) và trục giữa xếp nguồn kín R7 → hub mở R8 → nguồn kín R9 → vòng đỉnh R10, pin chéo đều; 10 vòng + 6 thanh ngang/dọc + 1 Stop. Nguồn kín R7/R9 radius2,15, vòng mở1,75, lockCount0, không Bom/Xích (bỏ Bom của nguồn vì không chạy solve thì không bảo đảm Bom không tạo thế kẹt). Liên kết: R7→R1/R4/R5/R8, R9→R2/R3/R6/R10, R8→R1/R5, R2→R1, R3→R10, R6 và R4 cùng cắm thanh pin S2. Receiver chung: R1 nhận R7/R8/R2, R5 nhận R7/R8, R10 nhận R9/R3. Thanh: U trái S1 xuyên khe R1/R2, hai chân bằng nhau4,1, mỗi chân một Guide; S2 thanh pin dài bên phải giữ hai nguồn mở R6/R4; S4 L góc trên phải có móc chặn S2 trượt lên và chặn Stop của R6; Stop R6 góc90 dài1,4, chân trên cung vật liệu đối diện khe; S3 L vào khe R3 từ trái; S5 L vào khe R10 từ trên; S6 L vào khe R4 từ dưới, chân dài lấp góc dưới trái. Ý tưởng cần nhận ra: hub R8 nằm giữa hai nguồn kín; thanh pin S2 chỉ nhả từng đầu sau khi tháo cap S4 hoặc trượt xuống; receiver chung quay lại sau khi nguồn kia mở. Lời giải do GD tìm (quyết định người dùng16/10/2026), Codex không chạy solve/proof.';
+const dp=path.join(LV,stem+'.rrdesign.json'),pp=path.join(LV,stem+'.rrpack.json');
+fs.writeFileSync(dp,JSON.stringify(d,null,2)+'\n',{flag:'wx'});
+fs.writeFileSync(path.join(A.OUT,stem+'-geometry.json'),JSON.stringify(require('./turp-a042-author.js').check(d),null,2)+'\n',{flag:'wx'});
+console.log(execFileSync('node',[CLI,'validate',dp]).toString());
+execFileSync('node',[CLI,'pack',dp,'-o',pp,'--author','Codex / TURP','--no-solve']);
+console.log(execFileSync('node',[CLI,'validate',pp]).toString());
+execFileSync('node',[CLI,'render',dp,'-o',path.join(A.OUT,'r01.svg'),'--links']);
+(async()=>{await sharp(path.join(A.OUT,'r01.svg')).png().toFile(path.join(A.OUT,'r01.png'));const a=await sharp(path.join(A.OUT,'source.png')).resize({height:800}).toBuffer(),b=await sharp(path.join(A.OUT,'r01.png')).resize({height:800}).toBuffer(),ma=await sharp(a).metadata(),mb=await sharp(b).metadata();await sharp({create:{width:ma.width+mb.width+20,height:800,channels:3,background:'#ffffff'}}).composite([{input:a,left:0,top:0},{input:b,left:ma.width+20,top:0}]).png().toFile(path.join(A.OUT,'r01-vs-source.png'));console.log(require('crypto').createHash('sha256').update(fs.readFileSync(pp)).digest('hex'));})();

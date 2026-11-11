@@ -1,0 +1,476 @@
+{
+  "format": "rotate-ongoing-verification",
+  "version": 1,
+  "scope": "Designer engine only",
+  "results": [
+    {
+      "stem": "study-20261013-v20-two-guide-walls",
+      "name": "Hai ngàm U giữ hai lối — nhả binding chưa dọn vách",
+      "design": {
+        "format": "turp-design",
+        "version": 1,
+        "levelId": "draft",
+        "name": "Hai ngàm U giữ hai lối — nhả binding chưa dọn vách",
+        "author": "Codex ongoing research 20261013",
+        "notes": "Thanh ngang nằm cao hơn đầu hai nhánh U, nên thân U không tự chặn lối ngang. Vách ngàm trái chặn lối trái, ngàm phải chặn lối phải; bỏ riêng từng ngàm mở đúng một lối khi U còn tồn tại. Hạ U một đoạn nhả binding ngàm phải nhưng ngàm trái vẫn giữ U, vì vậy vách phải vẫn ở đó và còn chặn thanh ngang. Hạ tiếp để nhả U, hai ngàm con mới rời cùng U và thanh ngang có thể rút hai phía. Có thể hạ U liền một lần; proof chia bước để kiểm trạng thái, không coi đó là số thao tác bắt buộc. Không vòng/pin/bom/Chain/Booster; chưa nghiệm thu hình thức hoặc độ khó.",
+        "rings": [],
+        "sticks": [
+          {
+            "id": "U",
+            "shape": "U",
+            "x": 0,
+            "y": 0,
+            "length": 4.4,
+            "arm": 3.6,
+            "angle": 0,
+            "color": "green",
+            "slideAxis": [
+              0,
+              1
+            ],
+            "guides": [
+              {
+                "x": -2.2,
+                "y": 3.3,
+                "angle": 90
+              },
+              {
+                "x": 2.2,
+                "y": 3.5,
+                "angle": 90
+              }
+            ]
+          },
+          {
+            "id": "H",
+            "shape": "straight",
+            "x": 0,
+            "y": 3.7,
+            "length": 3,
+            "angle": 0,
+            "color": "blue",
+            "guides": [
+              {
+                "x": 0,
+                "y": 3.7,
+                "angle": 0
+              }
+            ]
+          }
+        ]
+      },
+      "bombs": false,
+      "analysis": {
+        "error": null,
+        "warnings": [],
+        "info": {
+          "rings": 0,
+          "sticks": 2,
+          "guides": 3,
+          "bombs": 0,
+          "links": 0,
+          "pins": 0,
+          "stops": 0,
+          "closedRings": 0
+        }
+      },
+      "solverLog": "found with 3 drags after 9 explorations",
+      "moves": [
+        {
+          "part": "slide_bar_1",
+          "target": -0.2
+        },
+        {
+          "part": "slide_bar_1",
+          "target": -0.5
+        },
+        {
+          "part": "slide_bar_2",
+          "target": 3
+        }
+      ],
+      "route": [
+        {
+          "step": 1,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": 0,
+          "to": -0.2,
+          "direction": "-",
+          "removedNow": 0,
+          "remaining": 2
+        },
+        {
+          "step": 2,
+          "part": "slide_bar_1",
+          "label": "S1",
+          "kind": "stick",
+          "from": -0.2,
+          "to": -0.5,
+          "direction": "-",
+          "removedNow": 1,
+          "remaining": 1
+        },
+        {
+          "step": 3,
+          "part": "slide_bar_2",
+          "label": "S2",
+          "kind": "stick",
+          "from": 0,
+          "to": 3,
+          "direction": "+",
+          "removedNow": 1,
+          "remaining": 0
+        }
+      ],
+      "pointerExtensionDegrees": 0,
+      "analyticReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -0.2,
+            "pose": -0.2,
+            "remaining": 2,
+            "links": 0,
+            "bindings": 2,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -0.5,
+            "pose": -0.4,
+            "remaining": 1,
+            "links": 0,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_2",
+            "pointer": 3,
+            "pose": 1.6000000000000003,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "feelReplay": {
+        "solved": true,
+        "trace": [
+          {
+            "part": "slide_bar_1",
+            "pointer": -0.2,
+            "pose": -0.2,
+            "remaining": 2,
+            "links": 0,
+            "bindings": 2,
+            "events": []
+          },
+          {
+            "part": "slide_bar_1",
+            "pointer": -0.5,
+            "pose": -0.4,
+            "remaining": 1,
+            "links": 0,
+            "bindings": 1,
+            "events": []
+          },
+          {
+            "part": "slide_bar_2",
+            "pointer": 3,
+            "pose": 1.6000000000000003,
+            "remaining": 0,
+            "links": 0,
+            "bindings": 0,
+            "events": []
+          }
+        ]
+      },
+      "pinMargins": [],
+      "witness": {
+        "initial": {
+          "remaining": 2,
+          "bindings": [
+            true,
+            true,
+            true
+          ],
+          "guides": [
+            {
+              "active": true,
+              "engaged": true
+            },
+            {
+              "active": true,
+              "engaged": true
+            },
+            {
+              "active": true,
+              "engaged": true
+            }
+          ]
+        },
+        "partial": {
+          "remaining": 2,
+          "bindings": [
+            true,
+            false,
+            true
+          ],
+          "guides": [
+            {
+              "active": true,
+              "engaged": true
+            },
+            {
+              "active": true,
+              "engaged": false
+            },
+            {
+              "active": true,
+              "engaged": true
+            }
+          ]
+        },
+        "afterUndo": {
+          "remaining": 2,
+          "bindings": [
+            true,
+            true,
+            true
+          ],
+          "guides": [
+            {
+              "active": true,
+              "engaged": true
+            },
+            {
+              "active": true,
+              "engaged": true
+            },
+            {
+              "active": true,
+              "engaged": true
+            }
+          ]
+        },
+        "initialH": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.5875976562500005,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.5893310546875002,
+            "remaining": 2,
+            "links": 0
+          }
+        ],
+        "partialH": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.5875976562500005,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.5893310546875002,
+            "remaining": 2,
+            "links": 0
+          }
+        ],
+        "afterU": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.6000000000000003,
+            "remaining": 0,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.6000000000000003,
+            "remaining": 0,
+            "links": 0
+          }
+        ],
+        "withoutLeft": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -1.6000000000000003,
+            "remaining": 1,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 0.5893310546875002,
+            "remaining": 2,
+            "links": 0
+          }
+        ],
+        "withoutRight": [
+          {
+            "direction": -1,
+            "removed": false,
+            "from": 0,
+            "to": -0.5875976562500005,
+            "remaining": 2,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": true,
+            "from": 0,
+            "to": 1.6000000000000003,
+            "remaining": 1,
+            "links": 0
+          }
+        ],
+        "uDirections": [
+          {
+            "direction": -1,
+            "removed": true,
+            "from": 0,
+            "to": -0.4,
+            "remaining": 1,
+            "links": 0
+          },
+          {
+            "direction": 1,
+            "removed": false,
+            "from": 0,
+            "to": 2.654345703125001,
+            "remaining": 2,
+            "links": 0
+          }
+        ],
+        "withoutHGuide": {
+          "solved": false,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -0.2,
+              "pose": -0.2,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "withoutUGuides": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 1.6000000000000003,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "trace": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -0.2,
+              "pose": -0.2,
+              "remaining": 2,
+              "links": 0,
+              "bindings": 2,
+              "solved": [],
+              "events": []
+            },
+            {
+              "part": "U",
+              "pointer": -0.5,
+              "pose": -0.4,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 1.6000000000000003,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        },
+        "directRoute": {
+          "solved": true,
+          "trace": [
+            {
+              "part": "U",
+              "pointer": -0.5,
+              "pose": -0.4,
+              "remaining": 1,
+              "links": 0,
+              "bindings": 1,
+              "solved": [
+                "slide_bar_1"
+              ],
+              "events": []
+            },
+            {
+              "part": "H",
+              "pointer": 3,
+              "pose": 1.6000000000000003,
+              "remaining": 0,
+              "links": 0,
+              "bindings": 0,
+              "solved": [
+                "slide_bar_1",
+                "slide_bar_2"
+              ],
+              "events": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
