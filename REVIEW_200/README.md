@@ -1,3 +1,7 @@
+# Cập nhật push mới nhất
+
+195/200 có hồ sơ kiểm định kỹ thuật. Còn: 63, 73, 160, 170, 186. Các feedback hình/gameplay mới vẫn chưa sửa; xem PENDING_GD_FEEDBACK.md. Draft và bản đạt được phân biệt, chưa có bộ200 hoàn chỉnh cuối. CURRENT_STATE.json là trạng thái có thẩm quyền; các dòng bàn giao cũ dưới đây là lịch sử.
+
 # Trạng thái bàn giao: 189/200 đã kiểm định, CHƯA hoàn thành
 
 Còn thiếu: 30, 63, 73, 90, 125, 133, 160, 170, 183, 186, 193. Đã dừng mọi worker. Xem CURRENT_STATE.json và HANDOFF_PROMPT.md. Thư mục packs chỉ chứa pack có hồ sơ kiểm định; bản chưa đạt nằm ở drafts. Chưa có ZIP hoàn chỉnh200.

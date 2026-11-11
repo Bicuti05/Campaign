@@ -1,0 +1,110 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Campaign review 020 — Con bướm bốn cánh",
+  "author": "Codex",
+  "notes": "Special: nhận ra đầu nhỏ, thân giữa và bốn cánh bướm đối xứng. 6 vòng; không thêm thanh làm hình. Mỗi vòng cánh/đầu nhận pin thật từ thân. Chọn cá bằng bộ luật chính thức sau khi build. Không dùng Booster/bom/xích. Không suy ra độ khó từ số lệnh solver; cần GD playtest.",
+  "rings": [
+    {
+      "id": "BODY",
+      "x": 0,
+      "y": 0,
+      "radius": 1.5,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "id": "to_HEAD",
+          "angle": 90,
+          "length": 0.5000000000000001,
+          "targets": [
+            "HEAD"
+          ]
+        },
+        {
+          "id": "to_WING_UL",
+          "angle": 150.25511870305778,
+          "length": 0.6811288741492745,
+          "targets": [
+            "WING_UL"
+          ]
+        },
+        {
+          "id": "to_WING_UR",
+          "angle": 29.74488129694222,
+          "length": 0.6811288741492745,
+          "targets": [
+            "WING_UR"
+          ]
+        },
+        {
+          "id": "to_WING_LL",
+          "angle": 209.74488129694222,
+          "length": 0.9311288741492745,
+          "targets": [
+            "WING_LL"
+          ]
+        },
+        {
+          "id": "to_WING_LR",
+          "angle": 330.2551187030578,
+          "length": 0.9311288741492745,
+          "targets": [
+            "WING_LR"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "HEAD",
+      "x": 0,
+      "y": 3.1,
+      "radius": 0.85,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange"
+    },
+    {
+      "id": "WING_UL",
+      "x": -3.5,
+      "y": 2,
+      "radius": 1.6,
+      "gap": 90,
+      "gapDir": 150.25511870305778,
+      "color": "purple",
+      "collect": true
+    },
+    {
+      "id": "WING_UR",
+      "x": 3.5,
+      "y": 2,
+      "radius": 1.6,
+      "gap": 90,
+      "gapDir": 29.74488129694222,
+      "color": "purple",
+      "collect": true
+    },
+    {
+      "id": "WING_LL",
+      "x": -3.5,
+      "y": -2,
+      "radius": 1.35,
+      "gap": 90,
+      "gapDir": 209.74488129694222,
+      "color": "blue"
+    },
+    {
+      "id": "WING_LR",
+      "x": 3.5,
+      "y": -2,
+      "radius": 1.35,
+      "gap": 90,
+      "gapDir": 330.2551187030578,
+      "color": "blue"
+    }
+  ],
+  "sticks": []
+}

@@ -1,0 +1,347 @@
+{
+  "position": 30,
+  "status": "qualified",
+  "validateOK": true,
+  "found": true,
+  "replayComplete": true,
+  "noBooster": true,
+  "routeNeedsBomb": false,
+  "info": {
+    "rings": 10,
+    "sticks": 8,
+    "guides": 6,
+    "bombs": 0,
+    "links": 7,
+    "pins": 7,
+    "stops": 0,
+    "closedRings": 6
+  },
+  "warnings": [
+    {
+      "code": "overlap",
+      "part": "ring_1",
+      "text": "R1 chồng lên vật khác lúc bắt đầu (độ xuyên 0.118)"
+    },
+    {
+      "code": "overlap",
+      "part": "slide_bar_7",
+      "text": "S7 chồng lên vật khác lúc bắt đầu (độ xuyên 0.118)"
+    },
+    {
+      "code": "fish-corridor",
+      "part": "ring_1",
+      "text": "Cá trên R1 nằm trên S1 (đường trượt) — ưu tiên vòng kín/vòng khác nếu có"
+    },
+    {
+      "code": "fish-corridor",
+      "part": "ring_8",
+      "text": "Cá trên R8 nằm trên S1 (đường trượt) — ưu tiên vòng kín/vòng khác nếu có"
+    },
+    {
+      "code": "fish-corridor",
+      "part": "ring_10",
+      "text": "Cá trên R10 nằm trên S7 (đường trượt) — ưu tiên vòng kín/vòng khác nếu có"
+    }
+  ],
+  "fish": [
+    {
+      "id": "ring_1",
+      "closed": true,
+      "hard": [],
+      "sweep": [],
+      "soft": [
+        "S1 (đường trượt)"
+      ],
+      "tier": 2
+    },
+    {
+      "id": "ring_8",
+      "closed": true,
+      "hard": [],
+      "sweep": [],
+      "soft": [
+        "S1 (đường trượt)"
+      ],
+      "tier": 2
+    },
+    {
+      "id": "ring_10",
+      "closed": true,
+      "hard": [],
+      "sweep": [],
+      "soft": [
+        "S7 (đường trượt)"
+      ],
+      "tier": 2
+    }
+  ],
+  "chains": null,
+  "mountChecks": [
+    {
+      "owner": "R1",
+      "pass": true,
+      "margin": 180,
+      "foot": 6.620307926271345
+    },
+    {
+      "owner": "R2",
+      "pass": true,
+      "margin": 15,
+      "foot": 9.499632985454703
+    },
+    {
+      "owner": "R3",
+      "pass": true,
+      "margin": 180,
+      "foot": 4.811534884793667
+    },
+    {
+      "owner": "R5",
+      "pass": true,
+      "margin": 180,
+      "foot": 3.8571469566119196
+    },
+    {
+      "owner": "CurveAdd0",
+      "pin": "to_B2",
+      "pass": true,
+      "margin": 180,
+      "foot": 18.43495019802071
+    },
+    {
+      "owner": "CurveAdd1",
+      "pin": "to_B2",
+      "pass": true,
+      "margin": 180,
+      "foot": 18.43495019802071
+    },
+    {
+      "owner": "CurveAdd2",
+      "pin": "to_B3",
+      "pass": true,
+      "margin": 180,
+      "foot": 18.43495019802071
+    }
+  ],
+  "ablation": {
+    "tests": [
+      {
+        "feature": "pin",
+        "owner": "R1",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "pin",
+        "owner": "R2",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "pin",
+        "owner": "R3",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "pin",
+        "owner": "R5",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "pin",
+        "owner": "CurveAdd0",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "pin",
+        "owner": "CurveAdd1",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "pin",
+        "owner": "CurveAdd2",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B1",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": false,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "guide",
+        "owner": "B1",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B2",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B3",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B4",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": false,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "guide",
+        "owner": "B4",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B5",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": false,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "guide",
+        "owner": "B5",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B6",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": false,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "guide",
+        "owner": "B6",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B7",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": false,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "guide",
+        "owner": "B7",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      },
+      {
+        "feature": "stick",
+        "owner": "B8",
+        "detail": "whole",
+        "physicallyRemoved": true,
+        "traceChanged": false,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": true,
+        "meaningful": true
+      },
+      {
+        "feature": "guide",
+        "owner": "B8",
+        "detail": 0,
+        "physicallyRemoved": true,
+        "traceChanged": true,
+        "alternateRouteRestricted": false,
+        "requiredExtraction": false,
+        "meaningful": true
+      }
+    ],
+    "redundant": []
+  },
+  "removedRedundantFeatures": [],
+  "geometryChanged": true,
+  "source": "/workspace/Campaign/IMPORTS/R7_20261111/TURP_UNITY_R7/NEW_CAMPAIGN_500_SELECTED_LEVELS/Level013.rrpack.json",
+  "sha256": "98adf661779974a9227079b1f12484f2ec8b1f9d2291882583283761ced09048",
+  "curveTarget": 10,
+  "actualRings": 10
+}

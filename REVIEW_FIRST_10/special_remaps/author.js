@@ -22,7 +22,7 @@ function candidates(d,b,added,used){const result=[],w=RR.World.build(b.level,{le
   const growth=Math.max(0,bounds.xMin-(r.x-rr))+Math.max(0,r.x+rr-bounds.xMax)+Math.max(0,bounds.yMin-(r.y-rr))+Math.max(0,r.y+rr-bounds.yMax);const meanX=(added.reduce((s,p)=>s+p.x,0)+r.x)/(added.length+1),meanY=(added.reduce((s,p)=>s+p.y,0)+r.y)/(added.length+1);const score=(kind==='leaf'?5:kind==='badge'?100:0)+growth*.8+Math.abs(meanX-cx)/Math.max(1,width)*6+Math.abs(meanY-cy)/Math.max(1,height)*2+(used[target]||0)*.08+(r.radius<1?.15:0);
   result.push({ring:r,kind,target,score,extra});
  }
- for(const s of d.sticks||[]){let axis;try{axis=RR.W.stickAxis(w.stickOf(w.objectIndexById[b.ids[s.id]]));}catch(e){continue;}
+ for(const s of d.sticks||[]){const segs=segments(s),first=segs[0];if(!first)continue;const vx=first.b.x-first.a.x,vy=first.b.y-first.a.y,vl=Math.hypot(vx,vy);if(segs.some(t=>[t.a,t.b].some(p=>Math.abs((p.x-first.a.x)*vy-(p.y-first.a.y)*vx)/vl>.02)))continue;let axis;try{axis=RR.W.stickAxis(w.stickOf(w.objectIndexById[b.ids[s.id]]));}catch(e){continue;}
   for(const seg of segments(s)){const dx=seg.b.x-seg.a.x,dy=seg.b.y-seg.a.y,length=Math.hypot(dx,dy);if(length<2.2||Math.abs((dx*axis.x+dy*axis.y)/length)<.98)continue;const ux=dx/length,uy=dy/length;
    const fractions=[.5,.25,.75,.125,.875,.375,.625,.0625,.9375];for(const t of fractions){if(Math.min(t,1-t)*length<.8)continue;for(const side of [-1,1])for(const radius of [1.0,.8]){const reach=radius+.25+.65,x=seg.a.x+dx*t-side*uy*reach,y=seg.a.y+dy*t+side*ux*reach;const r={id:'CurveAdd'+added.length,x,y,radius,gap:0,gapDir:0,color:contrast(s.id),pins:[{id:'to_'+s.id,angle:Math.atan2(-side*ux,side*uy)/rad,length:.65,targets:[s.id]}]};push(r,'button',s.id);}}
   }

@@ -57,7 +57,7 @@ try{
  orderLevel(level,source);let fish=selectFish(level,reserveChains(level)),analysis=RR.analyze(level);if(analysis.error)throw Error(analysis.error);
  let proof;
  if(source.proof?.moves?.length){const sim=RR.Solver.newSim(level,true),moves=source.proof.moves.map(m=>({obj:sim.indexOf(m.part),target:m.target}));if(moves.every(m=>m.obj>=0)&&RR.Solver.replay(level,moves,true).allSolved())proof={found:true,moves,log:'Source route independently replayed in current repository JS runtime; final CLI search also required',nodes:0,seconds:0};}
- if(!proof)proof=find(level,Number(process.env.SOLVE_TIME||60));if(!proof.found)throw Error('NOT FOUND '+proof.log);
+ if(!proof)proof=require('./hinted.js')(level,source,design);if(!proof)proof=find(level,Number(process.env.SOLVE_TIME||60));if(!proof.found)throw Error('NOT FOUND '+proof.log);
  let ablation=null,removed=[];
  if(row.input_design){
  for(let attempt=0;attempt<60;attempt++){

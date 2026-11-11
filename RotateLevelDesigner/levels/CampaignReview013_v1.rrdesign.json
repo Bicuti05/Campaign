@@ -1,0 +1,139 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Campaign review 013 — Chùm nho và lá",
+  "author": "Codex",
+  "notes": "Special: nhận ra chùm sáu quả nho thu nhỏ thành tam giác 3/2/1 và lá xanh phía trên. 7 vòng. Mở quả dưới trước để cho hai quả giữa được quay; sau đó mở các nhánh còn lại. Không dùng Booster/bom/xích. Không suy ra độ khó từ số lệnh solver; cần GD playtest.",
+  "rings": [
+    {
+      "id": "GRAPE_TOP",
+      "x": 0,
+      "y": 2,
+      "radius": 1.45,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "to_GRAPE_L",
+          "angle": 180,
+          "length": 0.6499999999999997,
+          "targets": [
+            "GRAPE_L"
+          ]
+        },
+        {
+          "id": "to_GRAPE_R",
+          "angle": 0,
+          "length": 0.6499999999999997,
+          "targets": [
+            "GRAPE_R"
+          ]
+        },
+        {
+          "id": "to_GRAPE_ML",
+          "angle": 242.81888891452277,
+          "length": 1.009326868617084,
+          "targets": [
+            "GRAPE_ML"
+          ]
+        },
+        {
+          "id": "to_GRAPE_MR",
+          "angle": 297.1811110854772,
+          "length": 1.009326868617084,
+          "targets": [
+            "GRAPE_MR"
+          ]
+        },
+        {
+          "id": "to_LEAF",
+          "angle": 62.81888891452279,
+          "length": 1.259326868617084,
+          "targets": [
+            "LEAF"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "GRAPE_L",
+      "x": -3.8,
+      "y": 2,
+      "radius": 1.45,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple"
+    },
+    {
+      "id": "GRAPE_R",
+      "x": 3.8,
+      "y": 2,
+      "radius": 1.45,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "purple"
+    },
+    {
+      "id": "GRAPE_ML",
+      "x": -1.9,
+      "y": -1.7,
+      "radius": 1.45,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "to_GRAPE_BOTTOM",
+          "angle": 297.1811110854772,
+          "length": 1.009326868617084,
+          "targets": [
+            "GRAPE_BOTTOM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GRAPE_MR",
+      "x": 1.9,
+      "y": -1.7,
+      "radius": 1.45,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "to_GRAPE_BOTTOM",
+          "angle": 242.81888891452277,
+          "length": 1.009326868617084,
+          "targets": [
+            "GRAPE_BOTTOM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GRAPE_BOTTOM",
+      "x": 0,
+      "y": -5.4,
+      "radius": 1.45,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "collect": true
+    },
+    {
+      "id": "LEAF",
+      "x": 1.9,
+      "y": 5.7,
+      "radius": 1.2,
+      "gap": 220,
+      "gapDir": 62.8189,
+      "color": "green",
+      "collect": true
+    }
+  ],
+  "sticks": []
+}

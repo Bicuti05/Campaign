@@ -1,0 +1,986 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "133",
+  "name": "Special 133 — Cối xay gió",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí143 →133. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: New unassigned Special concept requested by user. Portrait silhouette; native geometry, no campaign slot overwritten. Gameplay and visual review pending.\nRuntime repair: widened existing open arcs to160 degrees while retaining icon, ring count, fixed width and physically mounted pins; must re-validate, solve, replay and ablate.",
+  "rings": [
+    {
+      "id": "HubCore",
+      "x": 0,
+      "y": 9,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "HubRim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HubRim",
+      "x": 0,
+      "y": 9,
+      "radius": 1.8,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": []
+    },
+    {
+      "id": "WindowCore",
+      "x": 0,
+      "y": -2.2,
+      "radius": 0.8,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "WindowRim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WindowRim",
+      "x": 0,
+      "y": -2.2,
+      "radius": 1.6,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "CurveAdd0",
+      "x": -0.353553389406726,
+      "y": 15.151829377915606,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_SailFront135",
+          "angle": -135.00000000000003,
+          "length": 0.65,
+          "targets": [
+            "SailFront135"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd1",
+      "x": 3.4062992038099305,
+      "y": -10.129587791701066,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_WallLower1",
+          "angle": 4.666858000000008,
+          "length": 0.65,
+          "targets": [
+            "WallLower1"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "CurveAdd2",
+      "x": -2.9062992038099296,
+      "y": -4.529587791701065,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_WallUpper-1",
+          "angle": 175.333142,
+          "length": 0.65,
+          "targets": [
+            "WallUpper-1"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "CurveAdd3",
+      "x": -3.747665937915607,
+      "y": 4.828069990593274,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_SailBack225",
+          "angle": -45,
+          "length": 0.65,
+          "targets": [
+            "SailBack225"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd4",
+      "x": 3.5355339035596423,
+      "y": 4.757359575050762,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_SailRoot315",
+          "angle": 135,
+          "length": 0.65,
+          "targets": [
+            "SailRoot315"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd5",
+      "x": 2.9062992038099305,
+      "y": -4.529587791701065,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_WallUpper1",
+          "angle": 4.66685800000001,
+          "length": 0.65,
+          "targets": [
+            "WallUpper1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd6",
+      "x": -3.5355339035596427,
+      "y": 13.242640424949236,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_SailRoot135",
+          "angle": -44.99999999999999,
+          "length": 0.65,
+          "targets": [
+            "SailRoot135"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd7",
+      "x": -3.4062992038099296,
+      "y": -10.129587791701065,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_WallLower-1",
+          "angle": 175.333142,
+          "length": 0.65,
+          "targets": [
+            "WallLower-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd8",
+      "x": 4.242640724949238,
+      "y": 12.535533943559642,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_SailRoot45",
+          "angle": -135,
+          "length": 0.65,
+          "targets": [
+            "SailRoot45"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd9",
+      "x": 6.788225343559642,
+      "y": -0.1923881549492381,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_SailTip315",
+          "angle": 135,
+          "length": 0.65,
+          "targets": [
+            "SailTip315"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd10",
+      "x": -6.151828977915607,
+      "y": 8.646446390593272,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_SailFront225",
+          "angle": -45,
+          "length": 0.65,
+          "targets": [
+            "SailFront225"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd11",
+      "x": 6.151828977915607,
+      "y": 9.353553609406726,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_SailFront45",
+          "angle": 135,
+          "length": 0.65,
+          "targets": [
+            "SailFront45"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd12",
+      "x": -2.9124678497173,
+      "y": -0.7315832544522736,
+      "radius": 0.8,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_Roof-1",
+          "angle": 117.597296,
+          "length": 0.65,
+          "targets": [
+            "Roof-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd13",
+      "x": 6.993700762690139,
+      "y": -7.370412189649986,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_WallLower1",
+          "angle": -175.33314199999998,
+          "length": 0.65,
+          "targets": [
+            "WallLower1"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "CurveAdd14",
+      "x": -6.493700762690139,
+      "y": -1.7704121896499867,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_WallUpper-1",
+          "angle": -4.6668579999999995,
+          "length": 0.65,
+          "targets": [
+            "WallUpper-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "SailFront45",
+      "x": 3.8183766,
+      "y": 9.707107,
+      "angle": 45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "orange"
+    },
+    {
+      "id": "SailBack45",
+      "x": 1.41421356,
+      "y": 13.525483,
+      "angle": 45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          4.440892e-16
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 3.3941125,
+          "y": 15.5053824,
+          "angle": 45
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "SailFront135",
+      "x": -0.70710678,
+      "y": 12.818377,
+      "angle": 135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "navy"
+    },
+    {
+      "id": "SailBack135",
+      "x": -4.5254834,
+      "y": 10.4142136,
+      "angle": 135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6.5053824,
+          "y": 12.394113,
+          "angle": 135
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "SailFront225",
+      "x": -3.8183766,
+      "y": 8.292893,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "navy"
+    },
+    {
+      "id": "SailBack225",
+      "x": -1.41421356,
+      "y": 4.4745166,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "blue"
+    },
+    {
+      "id": "SailFront315",
+      "x": 0.70710678,
+      "y": 5.1816234,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          -4.440892e-16
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 2.6870058,
+          "y": 3.2017244,
+          "angle": -45
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "SailBack315",
+      "x": 4.5254834,
+      "y": 7.5857864,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 6.5053824,
+          "y": 5.6058875,
+          "angle": -45
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Roof-1",
+      "x": -4.8,
+      "y": 0.2,
+      "angle": 27.597296,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9648766,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "orange"
+    },
+    {
+      "id": "WallUpper-1",
+      "x": -4.5,
+      "y": -0.7,
+      "angle": -94.666858,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9162994,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "green"
+    },
+    {
+      "id": "WallLower-1",
+      "x": -5,
+      "y": -6.3,
+      "angle": -94.666858,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9162994,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "blue"
+    },
+    {
+      "id": "Base-1",
+      "x": -2.6,
+      "y": -13,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -4.8,
+          "y": -13,
+          "angle": 180
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Roof1",
+      "x": 4.8,
+      "y": 0.2,
+      "angle": 152.402704,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9648766,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 2.6,
+          "y": 1.35,
+          "angle": 152.402704
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "WallUpper1",
+      "x": 4.5,
+      "y": -0.7,
+      "angle": -85.333142,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9162994,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "sky"
+    },
+    {
+      "id": "WallLower1",
+      "x": 5,
+      "y": -6.3,
+      "angle": -85.333142,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9162994,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [],
+      "color": "orange"
+    },
+    {
+      "id": "Base1",
+      "x": 2.6,
+      "y": -13,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 4.8,
+          "y": -13,
+          "angle": 0
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Door",
+      "x": -1.8,
+      "y": -12.9,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.1,
+          0
+        ],
+        [
+          6.1,
+          -3.6
+        ],
+        [
+          0,
+          -3.6
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.8,
+          "y": -12.5,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "SailTip45",
+      "color": "red",
+      "x": 8.6267027,
+      "y": 13.6669048,
+      "angle": 135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 7.071068,
+          "y": 15.22254,
+          "angle": 135
+        }
+      ]
+    },
+    {
+      "id": "SailRoot45",
+      "color": "sky",
+      "x": 3.6769553,
+      "y": 10.4142136,
+      "angle": 135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": []
+    },
+    {
+      "id": "SailTip135",
+      "color": "purple",
+      "x": -4.666905,
+      "y": 17.626703,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6.22254,
+          "y": 16.071068,
+          "angle": -135
+        }
+      ]
+    },
+    {
+      "id": "SailRoot135",
+      "color": "green",
+      "x": -1.41421356,
+      "y": 12.676955,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": []
+    },
+    {
+      "id": "SailTip225",
+      "color": "sky",
+      "x": -8.6267027,
+      "y": 4.333095,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.071068,
+          "y": 2.7774603,
+          "angle": -45
+        }
+      ]
+    },
+    {
+      "id": "SailRoot225",
+      "color": "sky",
+      "x": -3.6769553,
+      "y": 7.5857864,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.1213203,
+          "y": 6.0301515,
+          "angle": -45
+        }
+      ]
+    },
+    {
+      "id": "SailTip315",
+      "color": "green",
+      "x": 4.666905,
+      "y": 0.37329727,
+      "angle": 45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": []
+    },
+    {
+      "id": "SailRoot315",
+      "color": "blue",
+      "x": 1.41421356,
+      "y": 5.323045,
+      "angle": 45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": []
+    }
+  ]
+}
