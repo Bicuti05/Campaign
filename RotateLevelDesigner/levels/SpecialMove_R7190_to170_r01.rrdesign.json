@@ -1,0 +1,990 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 170 — Đàn guitar (mốc 190)",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí190 →170. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: User explicitly changed the instrument to guitar. Portrait acoustic-guitar silhouette: eight waist/body-rim sections, two sound-hole rings, two neck sections, four headstock sections, six L tuning keys and two bridge strokes. 24 anatomical instrument parts. Body rim bars are pin-coupled to sound hole; full role and visual checks pending. Gameplay revision: tuning keys extend inward to straddle headstock joints; middle keys slide vertically, two headstock pieces block their paths. Neck/headstock stay within the approved portrait proportions (height increase under 3%). Needs a fresh visual comparison after proof.\nRuntime repair: widened existing open arcs to160 degrees while retaining icon, ring count, fixed width and physically mounted pins; must re-validate, solve, replay and ablate.",
+  "rings": [
+    {
+      "id": "SoundHole",
+      "x": 0,
+      "y": 0.3,
+      "radius": 3.45,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 1.25,
+          "inner": true,
+          "targets": [
+            "SoundHoleRim"
+          ]
+        },
+        {
+          "angle": 130.60129,
+          "length": 1.5226008,
+          "targets": [
+            "UpperBodyInner-1"
+          ]
+        },
+        {
+          "angle": 49.398705,
+          "length": 1.5226008,
+          "targets": [
+            "UpperBodyInner1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SoundHoleRim",
+      "x": 0,
+      "y": 0.3,
+      "radius": 1.95,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "green",
+      "pins": []
+    },
+    {
+      "id": "CurveAdd0",
+      "x": 2.9,
+      "y": 7.775,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Neck1_0",
+          "angle": 180,
+          "length": 0.65,
+          "targets": [
+            "Neck1_0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd1",
+      "x": -2.9,
+      "y": 9.3875,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Neck-1_0",
+          "angle": -2.9586555176404806e-15,
+          "length": 0.65,
+          "targets": [
+            "Neck-1_0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd2",
+      "x": 3.25,
+      "y": -3.9,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_Bridge1",
+          "angle": -90,
+          "length": 0.65,
+          "targets": [
+            "Bridge1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd3",
+      "x": -3.3,
+      "y": 20.475,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_Headstock-1_1",
+          "angle": -3.1029801770375762e-15,
+          "length": 0.65,
+          "targets": [
+            "Headstock-1_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd4",
+      "x": -3.25,
+      "y": -3.9,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Bridge0",
+          "angle": -90,
+          "length": 0.65,
+          "targets": [
+            "Bridge0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd5",
+      "x": 3.3,
+      "y": 15.274999999999999,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Headstock1_0",
+          "angle": 180,
+          "length": 0.65,
+          "targets": [
+            "Headstock1_0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd6",
+      "x": 3.3,
+      "y": 20.475,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Headstock1_1",
+          "angle": 180,
+          "length": 0.65,
+          "targets": [
+            "Headstock1_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd7",
+      "x": -6.030026182122198,
+      "y": 6.336598703567932,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_UpperBodyOuter-1",
+          "angle": -53.97263000000001,
+          "length": 0.65,
+          "targets": [
+            "UpperBodyOuter-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd8",
+      "x": 6.030026215454425,
+      "y": 6.336598580259049,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_UpperBodyOuter1",
+          "angle": -126.02737299999998,
+          "length": 0.65,
+          "targets": [
+            "UpperBodyOuter1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd9",
+      "x": -8.505026276769609,
+      "y": 4.536598858302097,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_UpperBodyOuter-1",
+          "angle": -53.97263000000001,
+          "length": 0.65,
+          "targets": [
+            "UpperBodyOuter-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd10",
+      "x": -9.47179208071861,
+      "y": -3.8257762440686944,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_LowerBodyOuter-1",
+          "angle": -29.53878000000001,
+          "length": 0.65,
+          "targets": [
+            "LowerBodyOuter-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd11",
+      "x": 0,
+      "y": 0.3,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_SoundHoleRim",
+          "angle": 0,
+          "length": 0.7,
+          "targets": [
+            "SoundHoleRim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd12",
+      "x": 8.505026215854063,
+      "y": 4.536598605402513,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_UpperBodyOuter1",
+          "angle": -126.02737299999998,
+          "length": 0.65,
+          "targets": [
+            "UpperBodyOuter1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "UpperBodyOuter-1",
+      "x": -3.675,
+      "y": 5.7,
+      "angle": -143.97263,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.1206617,
+          0
+        ],
+        [
+          6.230944,
+          4.742134
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6.5729656,
+          "y": 3.5923887,
+          "angle": -143.97263
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "UpperBodyInner-1",
+      "x": -3.3,
+      "y": 4.35,
+      "angle": -139.39871,
+      "path": [
+        [
+          -3.6,
+          0
+        ],
+        [
+          4.148795,
+          4.440892e-16
+        ],
+        [
+          4.588079,
+          3.9698274
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.639344,
+          "y": 2.3448477,
+          "angle": -139.39871
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "LowerBodyOuter-1",
+      "x": -6.225,
+      "y": -1.95,
+      "angle": -119.53878,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.1722819,
+          0
+        ],
+        [
+          6.973228,
+          4.123905
+        ],
+        [
+          4.237008,
+          8.952528
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -7.1612883,
+          "y": -3.6022735,
+          "angle": -119.53878
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "LowerBodyInner-1",
+      "x": -4.35,
+      "y": -1.95,
+      "angle": -117.474432,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.226701,
+          -2.220446e-16
+        ],
+        [
+          6.0179916,
+          3.3829577
+        ],
+        [
+          4.357122,
+          6.576938
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.0294604,
+          "y": -3.2566547,
+          "angle": -117.474432
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Neck-1_0",
+      "x": -1,
+      "y": 6.7,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.3,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -1,
+          "y": 8.241858,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Headstock-1_0",
+      "x": -1.4,
+      "y": 12.2,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.1,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -1.4,
+          "y": 14.594126,
+          "angle": 90
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Headstock-1_1",
+      "x": -1.4,
+      "y": 17.4,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.1,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -1.4,
+          "y": 19.274157,
+          "angle": 90
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Tuner-1_0",
+      "x": -0.9,
+      "y": 11.55,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.5,
+          0
+        ],
+        [
+          3.5,
+          -2.3
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "guides": [
+        {
+          "x": -4.4,
+          "y": 12.7,
+          "angle": 90
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Tuner-1_1",
+      "x": -0.9,
+      "y": 16.85,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.5,
+          0
+        ],
+        [
+          3.5,
+          -2.3
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "guides": [
+        {
+          "x": -4.4,
+          "y": 18,
+          "angle": 90
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "Tuner-1_2",
+      "x": -0.9,
+      "y": 22.05,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.5,
+          0
+        ],
+        [
+          3.5,
+          -2.3
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ],
+      "guides": [
+        {
+          "x": -4.4,
+          "y": 23.2,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "UpperBodyOuter1",
+      "x": 3.675,
+      "y": 5.7,
+      "angle": -36.027373,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.1206617,
+          0
+        ],
+        [
+          6.230944,
+          -4.742134
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 6.40188,
+          "y": 3.71681487,
+          "angle": -36.027373
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "UpperBodyInner1",
+      "x": 3.3,
+      "y": 4.35,
+      "angle": -40.601295,
+      "path": [
+        [
+          -3.6,
+          0
+        ],
+        [
+          4.148795,
+          -4.440892e-16
+        ],
+        [
+          4.588079,
+          -3.9698274
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.6309323,
+          "y": 2.352058,
+          "angle": -40.601295
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "LowerBodyOuter1",
+      "x": 6.225,
+      "y": -1.95,
+      "angle": -60.4612177,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.1722819,
+          0
+        ],
+        [
+          6.973228,
+          -4.123905
+        ],
+        [
+          4.237008,
+          -8.952528
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 7.193992,
+          "y": -3.6599865,
+          "angle": -60.4612177
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "LowerBodyInner1",
+      "x": 4.35,
+      "y": -1.95,
+      "angle": -62.52557,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.226701,
+          2.220446e-16
+        ],
+        [
+          6.0179916,
+          -3.3829577
+        ],
+        [
+          4.357122,
+          -6.576938
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.197081,
+          "y": -3.5790021,
+          "angle": -62.52557
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Neck1_0",
+      "x": 1,
+      "y": 6.7,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.3,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1,
+          "y": 8.800684,
+          "angle": 90
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "Headstock1_0",
+      "x": 1.4,
+      "y": 12.2,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.1,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.4,
+          "y": 13.926113,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Headstock1_1",
+      "x": 1.4,
+      "y": 17.4,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.1,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.4,
+          "y": 19.25413,
+          "angle": 90
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Tuner1_0",
+      "x": 0.9,
+      "y": 11.55,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.5,
+          0
+        ],
+        [
+          3.5,
+          2.3
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 4.4,
+          "y": 12.7,
+          "angle": 90
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Tuner1_1",
+      "x": 0.9,
+      "y": 16.85,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.5,
+          0
+        ],
+        [
+          3.5,
+          2.3
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 4.4,
+          "y": 18,
+          "angle": 90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Tuner1_2",
+      "x": 0.9,
+      "y": 22.05,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.5,
+          0
+        ],
+        [
+          3.5,
+          2.3
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 4.4,
+          "y": 23.2,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Bridge0",
+      "x": -4.25,
+      "y": -5.8,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.25,
+          "y": -5.8,
+          "angle": 0
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Bridge1",
+      "x": 0.25,
+      "y": -5.8,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 2.25,
+          "y": -5.8,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    }
+  ]
+}

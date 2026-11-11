@@ -1,0 +1,476 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 83 — Vòng đu quay",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí80 →83. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: Part3 native repair of source ID 33. Vành đu quay là vòng lớn, trục là vòng nhỏ, 8 nan hoa là thanh hướng tâm, 8 cabin là vòng treo ngoài vành, chân đế là thanh. Removed unproven picture-only Bomb and drawing arms; no Booster/Chain. Native .5-unit tube, pins and complete Guides only. Drawing tabs replaced by real engaged joints. Wheel 7.5-unit radius uses uniform22px/unit; all cabins at exact native spacing, openings moved onto material-safe directions. Two top cabins own inward pins away from wheel gap. One short tangential hub strut replaces a radial shaft that disagreed with native passage; seven radial spokes remain. Figure silhouette is a design reference, not evidence of difficulty or necessary cross-object preparation for every bar. No campaign import. Validation/full-gesture evidence: research/20261015-genai-part3-v03.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0.6818182,
+      "radius": 7.5,
+      "gap": 16,
+      "gapDir": 90,
+      "color": "#e0403a",
+      "pins": [
+        {
+          "angle": 337.59016,
+          "target": "R3"
+        },
+        {
+          "angle": 292.40984,
+          "target": "R4"
+        },
+        {
+          "angle": 247.59016,
+          "target": "R5"
+        },
+        {
+          "angle": 202.40984,
+          "target": "R6"
+        },
+        {
+          "angle": 157.59016,
+          "target": "R7"
+        },
+        {
+          "angle": 22.409837,
+          "target": "R10"
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 0.6818182,
+      "radius": 1.0909091,
+      "gap": 60,
+      "gapDir": 270,
+      "color": "#ef8c2b",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "S1"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 8.861516,
+      "y": -2.97241533,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 67.590163,
+      "color": "#4a6fe0",
+      "pins": []
+    },
+    {
+      "id": "R4",
+      "x": 3.6542335,
+      "y": -8.179698,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 22.409837,
+      "color": "#63c13d",
+      "pins": []
+    },
+    {
+      "id": "R5",
+      "x": -3.6542335,
+      "y": -8.179698,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 337.59016,
+      "color": "#9b4ddc",
+      "pins": []
+    },
+    {
+      "id": "R6",
+      "x": -8.861516,
+      "y": -2.97241533,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 292.40984,
+      "color": "#2eaadc",
+      "pins": []
+    },
+    {
+      "id": "R7",
+      "x": -8.861516,
+      "y": 4.3360517,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 247.59016,
+      "color": "#4a6fe0",
+      "pins": []
+    },
+    {
+      "id": "R8",
+      "x": -3.6542335,
+      "y": 9.543334,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 112.409837,
+      "color": "#63c13d",
+      "pins": [
+        {
+          "angle": 292.40984,
+          "target": "R1"
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R9",
+      "x": 3.6542335,
+      "y": 9.543334,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 67.590163,
+      "color": "#9b4ddc",
+      "pins": [
+        {
+          "angle": 247.59016,
+          "target": "R1"
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "x": 8.861516,
+      "y": 4.3360517,
+      "radius": 1,
+      "gap": 70,
+      "gapDir": 112.409837,
+      "color": "#2eaadc",
+      "pins": []
+    },
+    {
+      "id": "CurveAdd0",
+      "x": 4.09350279675444,
+      "y": -0.7246789282455597,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_S2",
+          "angle": -135,
+          "length": 0.65,
+          "targets": [
+            "S2"
+          ]
+        }
+      ],
+      "collect": true
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 2.176309,
+      "y": -0.6181818,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2.6
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "#f2c230",
+      "guides": []
+    },
+    {
+      "id": "S2",
+      "x": 3.4454545,
+      "y": -2.7636364,
+      "angle": 0,
+      "path": [
+        [
+          -1.8545455,
+          1.8545455
+        ],
+        [
+          1.2363636,
+          -1.2363636
+        ]
+      ],
+      "slideAxis": [
+        0.70710678,
+        -0.70710678
+      ],
+      "color": "#ef8c2b",
+      "guides": [
+        {
+          "x": 3.4454545,
+          "y": -2.7636364,
+          "angle": 315
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "x": 0,
+      "y": -4.2090909,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          2.6181818
+        ],
+        [
+          0,
+          -1.7454545
+        ]
+      ],
+      "slideAxis": [
+        6.123234e-17,
+        -1
+      ],
+      "color": "#f2c230",
+      "guides": [
+        {
+          "x": 0,
+          "y": -4.2090909,
+          "angle": 270
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "x": -3.4454545,
+      "y": -2.7636364,
+      "angle": 0,
+      "path": [
+        [
+          1.8545455,
+          1.8545455
+        ],
+        [
+          -1.2363636,
+          -1.2363636
+        ]
+      ],
+      "slideAxis": [
+        -0.70710678,
+        -0.70710678
+      ],
+      "color": "#ef8c2b",
+      "guides": [
+        {
+          "x": -3.4454545,
+          "y": -2.7636364,
+          "angle": 225
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "x": -4.890909,
+      "y": 0.6818182,
+      "angle": 0,
+      "path": [
+        [
+          2.6181818,
+          0
+        ],
+        [
+          -1.7454545,
+          0
+        ]
+      ],
+      "slideAxis": [
+        -1,
+        -1.2246468e-16
+      ],
+      "color": "#f2c230",
+      "guides": [
+        {
+          "x": -4.890909,
+          "y": 0.6818182,
+          "angle": 180
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "x": -3.4454545,
+      "y": 4.1272727,
+      "angle": 0,
+      "path": [
+        [
+          1.8545455,
+          -1.8545455
+        ],
+        [
+          -1.2363636,
+          1.2363636
+        ]
+      ],
+      "slideAxis": [
+        -0.70710678,
+        0.70710678
+      ],
+      "color": "#ef8c2b",
+      "guides": [
+        {
+          "x": -3.4454545,
+          "y": 4.1272727,
+          "angle": 135
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "x": 0,
+      "y": 5.572727,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -2.6181818
+        ],
+        [
+          0,
+          1.7454545
+        ]
+      ],
+      "slideAxis": [
+        6.123234e-17,
+        1
+      ],
+      "color": "#f2c230",
+      "guides": [
+        {
+          "x": 0,
+          "y": 5.572727,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "x": 3.4454545,
+      "y": 4.1272727,
+      "angle": 0,
+      "path": [
+        [
+          -1.8545455,
+          -1.8545455
+        ],
+        [
+          1.2363636,
+          1.2363636
+        ]
+      ],
+      "slideAxis": [
+        0.70710678,
+        0.70710678
+      ],
+      "color": "#ef8c2b",
+      "guides": [
+        {
+          "x": 3.4454545,
+          "y": 4.1272727,
+          "angle": 45
+        }
+      ]
+    },
+    {
+      "id": "S9",
+      "x": -1.56818182,
+      "y": -9.931818,
+      "angle": 0,
+      "path": [
+        [
+          -0.70454545,
+          -1.8863636
+        ],
+        [
+          0.70454545,
+          1.8863636
+        ]
+      ],
+      "slideAxis": [
+        0.3502074,
+        0.9366722
+      ],
+      "color": "#9b4ddc",
+      "guides": [
+        {
+          "x": -1.56818182,
+          "y": -9.931818,
+          "angle": 69.5
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "x": 1.56818182,
+      "y": -9.931818,
+      "angle": 0,
+      "path": [
+        [
+          0.70454545,
+          -1.8863636
+        ],
+        [
+          -0.70454545,
+          1.8863636
+        ]
+      ],
+      "slideAxis": [
+        -0.3502074,
+        0.9366722
+      ],
+      "color": "#9b4ddc",
+      "guides": [
+        {
+          "x": 1.56818182,
+          "y": -9.931818,
+          "angle": 110.5
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "x": 0,
+      "y": -12.818182,
+      "angle": 0,
+      "path": [
+        [
+          -7.2727273,
+          0
+        ],
+        [
+          7.2727273,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "color": "#1fa060",
+      "guides": [
+        {
+          "x": 0,
+          "y": -12.818182,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

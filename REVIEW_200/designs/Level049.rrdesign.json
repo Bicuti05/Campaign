@@ -1,0 +1,299 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "015",
+  "name": "Level033 — ",
+  "author": "Codex",
+  "notes": "Review copy / position33 / source ID033. Geometry unchanged; Specific is a manifest/name tag, not a runtime mechanic. Source notes follow:\nRemake70010: bỏ R4/R9 rìa, dựng8 vòng trên hàng/cột4,9, R3/R10 kín radius2,15 còn lại1,75. Nguồn kín R10 trước chỉ giữ thanh nay giữ R5/R6; R3 giữ R1/R5; R5 giữ R8 và thanh thẳng S1 ở giữa hai hàng, không Guide dư. U S2 bên phải qua khe R2/R8, hai chân4,2 bằng nhau và hai Guide đầy đủ. R1→R2, R6→R7→R8; quay lại R8 sau mở đầu ra trên, rồi quay receiver R5 để nhả hai nguồn trái. S1 tâm y2,45 nằm đúng giữa R1/R5, pin R5 dài0,45 có mục đích khoảng trống, không lấy minimum radius tool biện hộ. Hai pinbar L S3/S4 trái giữ nguồn kín. Không U giả/Guide nửa ngàm, không Stop/Bom/Booster/Chain; lockCount0. Màu kiểm cả cạnh pin. Stop nguồn không mang sang khi chưa có vai trò mới; proposal visual/độ khó chờ GD. Toàn bố cục quay90° để viền dọc; thanh giữa trở thành dọc. Giữ path/slideAxis trong hệ local của thanh, không xoay trục hai lần. Không đổi quan hệ hoặc kích cỡ.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 1.15,
+          "targets": [
+            "R2"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 4.9,
+      "gapDir": 90,
+      "gap": 90,
+      "color": "purple"
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": -5.2,
+      "gapDir": 180,
+      "gap": 0,
+      "radius": 2.15,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 1.05,
+          "targets": [
+            "R1"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 133.2987,
+          "length": 2.9949,
+          "targets": [
+            "R4"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 270,
+          "length": 0.9,
+          "targets": [
+            "S5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": -4.9,
+      "y": 0,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 1.15,
+          "targets": [
+            "R7"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 45,
+          "length": 3.1796,
+          "targets": [
+            "R2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": -9.4854,
+      "y": 0,
+      "gapDir": 225,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 93.6736,
+          "length": 1.1601,
+          "targets": [
+            "R6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": -9.8,
+      "y": 4.9,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 1.15,
+          "targets": [
+            "R7"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R7",
+      "x": -4.9,
+      "y": 4.9,
+      "gapDir": 90,
+      "gap": 90,
+      "color": "teal"
+    },
+    {
+      "id": "R8",
+      "x": -5.2,
+      "y": -5.2,
+      "gapDir": 180,
+      "gap": 0,
+      "radius": 2.15,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 86.6981,
+          "length": 1.0586,
+          "targets": [
+            "R4"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 129.4925,
+          "length": 2.5883,
+          "targets": [
+            "R5"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 270,
+          "length": 0.9,
+          "targets": [
+            "S6"
+          ]
+        }
+      ],
+      "collect": true
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 0,
+      "y": 8.5,
+      "angle": 90,
+      "color": "orange",
+      "path": [
+        [
+          -4.2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4.9
+        ],
+        [
+          -4.2,
+          4.9
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 7.05,
+          "angle": 90
+        },
+        {
+          "x": -4.9,
+          "y": 7.05,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "x": 2.5,
+      "y": 0,
+      "angle": 90,
+      "color": "blue",
+      "shape": "straight",
+      "length": 5.47,
+      "guides": [
+        {
+          "x": 2.5,
+          "y": -0.0154,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "x": 0,
+      "y": -8.5,
+      "angle": 0,
+      "color": "red",
+      "shape": "L",
+      "length": 4.77,
+      "arm": 1.93,
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S6",
+      "x": -5.5,
+      "y": -8.5,
+      "angle": 0,
+      "color": "blue",
+      "shape": "L",
+      "length": 4.36,
+      "arm": 1.93,
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S7",
+      "x": -9.1708,
+      "y": -6.8,
+      "angle": 180,
+      "color": "teal",
+      "shape": "L",
+      "length": 2.5,
+      "arm": 4.91,
+      "guides": [
+        {
+          "x": -10.4208,
+          "y": -4.4982,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "x": -8,
+      "y": -10,
+      "angle": 0,
+      "color": "navy",
+      "shape": "straight",
+      "length": 5.47,
+      "guides": [
+        {
+          "x": -8.0154,
+          "y": -10,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

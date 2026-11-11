@@ -1,0 +1,472 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 140 — Rùa biển (mốc 150) — GD xác nhận nhận diện 10.11",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí150 →140. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: Sea turtle: six shell cells, eight curved shell contours, head, four U flippers and straight tail. 20 natural parts. Independent shell hubs avoid circular pin constraints. Needs gameplay and visual review.",
+  "rings": [
+    {
+      "id": "Shell-1_1Cell",
+      "x": -2.8,
+      "y": 1.9,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 135,
+          "length": 0.55,
+          "targets": [
+            "Shell-1_1Inner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell-1_1Inner",
+      "x": -2.8,
+      "y": 1.9,
+      "radius": 2.1,
+      "gap": 270,
+      "gapDir": 315,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 110,
+          "length": 0.55,
+          "targets": [
+            "Shell-1_1Outer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell-1_1Outer",
+      "x": -2.8,
+      "y": 1.9,
+      "radius": 2.9,
+      "gap": 250,
+      "gapDir": 315,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 155,
+          "length": 0.65,
+          "targets": [
+            "Shell-1_1Flipper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell1_1Cell",
+      "x": 2.8,
+      "y": 1.9,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 45,
+          "length": 0.55,
+          "targets": [
+            "Shell1_1Inner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell1_1Inner",
+      "x": 2.8,
+      "y": 1.9,
+      "radius": 2.1,
+      "gap": 270,
+      "gapDir": 225,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 70,
+          "length": 0.55,
+          "targets": [
+            "Shell1_1Outer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell1_1Outer",
+      "x": 2.8,
+      "y": 1.9,
+      "radius": 2.9,
+      "gap": 250,
+      "gapDir": 225,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 25,
+          "length": 0.65,
+          "targets": [
+            "Shell1_1Flipper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell-1_-1Cell",
+      "x": -2.8,
+      "y": -1.9,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": -150,
+          "length": 0.55,
+          "targets": [
+            "Shell-1_-1Inner"
+          ]
+        },
+        {
+          "angle": -34.159695,
+          "length": 0.53378486,
+          "targets": [
+            "BottomShellCell"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell-1_-1Inner",
+      "x": -2.8,
+      "y": -1.9,
+      "radius": 2.1,
+      "gap": 300,
+      "gapDir": 45,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": -120,
+          "length": 0.55,
+          "targets": [
+            "Shell-1_-1Outer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell-1_-1Outer",
+      "x": -2.8,
+      "y": -1.9,
+      "radius": 2.9,
+      "gap": 250,
+      "gapDir": 45,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": -155,
+          "length": 0.65,
+          "targets": [
+            "Shell-1_-1Flipper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell1_-1Cell",
+      "x": 2.8,
+      "y": -1.9,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": -45,
+          "length": 0.55,
+          "targets": [
+            "Shell1_-1Inner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell1_-1Inner",
+      "x": 2.8,
+      "y": -1.9,
+      "radius": 2.1,
+      "gap": 270,
+      "gapDir": 135,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": -70,
+          "length": 0.55,
+          "targets": [
+            "Shell1_-1Outer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Shell1_-1Outer",
+      "x": 2.8,
+      "y": -1.9,
+      "radius": 2.9,
+      "gap": 250,
+      "gapDir": 135,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": -25,
+          "length": 0.65,
+          "targets": [
+            "Shell1_-1Flipper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TopShellCell",
+      "x": 0,
+      "y": 3.8,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "Head"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Head",
+      "x": 0,
+      "y": 7.3,
+      "radius": 1.4,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "blue"
+    },
+    {
+      "id": "BottomShellCell",
+      "x": 0,
+      "y": -3.8,
+      "radius": 1.3,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 270,
+          "length": 0.55,
+          "targets": [
+            "Tail"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Shell-1_1Flipper",
+      "x": -6.2439696,
+      "y": 3.5059494,
+      "angle": 245,
+      "path": [
+        [
+          -1.5,
+          0
+        ],
+        [
+          1.5,
+          0
+        ],
+        [
+          1.5,
+          -2.4
+        ],
+        [
+          -1.5,
+          -2.4
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.794374,
+          "y": 4.4701106,
+          "angle": 245
+        },
+        {
+          "x": -8.46137,
+          "y": 4.4296024,
+          "angle": 245
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Shell1_1Flipper",
+      "x": 6.2439696,
+      "y": 3.5059494,
+      "angle": 115,
+      "path": [
+        [
+          -1.5,
+          0
+        ],
+        [
+          1.5,
+          0
+        ],
+        [
+          1.5,
+          -2.4
+        ],
+        [
+          -1.5,
+          -2.4
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 6.6961701,
+          "y": 2.5362022,
+          "angle": 115
+        },
+        {
+          "x": 8.376846,
+          "y": 4.610864,
+          "angle": 115
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Shell-1_-1Flipper",
+      "x": -6.2439696,
+      "y": -3.5059494,
+      "angle": -65,
+      "path": [
+        [
+          -1.5,
+          0
+        ],
+        [
+          1.5,
+          0
+        ],
+        [
+          1.5,
+          -2.4
+        ],
+        [
+          -1.5,
+          -2.4
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6.7083004,
+          "y": -2.5101888,
+          "angle": -65
+        },
+        {
+          "x": -8.376846,
+          "y": -4.610864,
+          "angle": -65
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Shell1_-1Flipper",
+      "x": 6.2439696,
+      "y": -3.5059494,
+      "angle": 65,
+      "path": [
+        [
+          -1.5,
+          0
+        ],
+        [
+          1.5,
+          0
+        ],
+        [
+          1.5,
+          -2.4
+        ],
+        [
+          -1.5,
+          -2.4
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.7984449,
+          "y": -4.46138,
+          "angle": 65
+        },
+        {
+          "x": 8.46137,
+          "y": -4.4296024,
+          "angle": 65
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Tail",
+      "x": 0,
+      "y": -5.9,
+      "angle": 0,
+      "path": [
+        [
+          -2.3,
+          0
+        ],
+        [
+          2.3,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.2,
+          "y": -5.9,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    }
+  ]
+}

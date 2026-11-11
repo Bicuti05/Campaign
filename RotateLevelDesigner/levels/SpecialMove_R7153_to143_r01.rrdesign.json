@@ -1,0 +1,753 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 143 — Máy ảnh trên chân máy",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí153 →143. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: New unassigned Special concept requested by user. Portrait silhouette; native geometry, no campaign slot overwritten. Gameplay and visual review pending.",
+  "rings": [
+    {
+      "id": "Lens45Outer",
+      "x": 0,
+      "y": 7,
+      "radius": 4.8,
+      "gap": 285,
+      "gapDir": 225,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 45,
+          "length": 0.85,
+          "inner": true,
+          "targets": [
+            "Lens45Inner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Lens45Inner",
+      "x": 0,
+      "y": 7,
+      "radius": 3.7,
+      "gap": 315,
+      "gapDir": 225,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "Lens135Outer",
+      "x": 0,
+      "y": 7,
+      "radius": 4.8,
+      "gap": 285,
+      "gapDir": 315,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 135,
+          "length": 0.85,
+          "inner": true,
+          "targets": [
+            "Lens135Inner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Lens135Inner",
+      "x": 0,
+      "y": 7,
+      "radius": 3.7,
+      "gap": 315,
+      "gapDir": 315,
+      "color": "red",
+      "pins": []
+    },
+    {
+      "id": "Lens225Outer",
+      "x": 0,
+      "y": 7,
+      "radius": 4.8,
+      "gap": 285,
+      "gapDir": 45,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 225,
+          "length": 0.85,
+          "inner": true,
+          "targets": [
+            "Lens225Inner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Lens225Inner",
+      "x": 0,
+      "y": 7,
+      "radius": 3.7,
+      "gap": 315,
+      "gapDir": 45,
+      "color": "green",
+      "pins": []
+    },
+    {
+      "id": "Lens315Outer",
+      "x": 0,
+      "y": 7,
+      "radius": 4.8,
+      "gap": 285,
+      "gapDir": 135,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 315,
+          "length": 0.85,
+          "inner": true,
+          "targets": [
+            "Lens315Inner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Lens315Inner",
+      "x": 0,
+      "y": 7,
+      "radius": 3.7,
+      "gap": 315,
+      "gapDir": 135,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "CurveAdd0",
+      "x": -0.056669228651696546,
+      "y": -6.52766589748637,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Leg-1_0",
+          "angle": 160.70995,
+          "length": 0.65,
+          "targets": [
+            "Leg-1_0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd1",
+      "x": 1.6566692286516966,
+      "y": -11.22766589748637,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Leg1_1",
+          "angle": 19.290049999999997,
+          "length": 0.65,
+          "targets": [
+            "Leg1_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd2",
+      "x": -4.375,
+      "y": 11.9,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_BodyTopRail-1",
+          "angle": 90,
+          "length": 0.65,
+          "targets": [
+            "BodyTopRail-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "BodyTop-1",
+      "x": -8,
+      "y": 9,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -8,
+          "y": 11,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "BodyBottom-1",
+      "x": -8,
+      "y": 8.2,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          7.2,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -8,
+          "y": 4.6,
+          "angle": -90
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Viewfinder-1",
+      "x": -0.4,
+      "y": 17,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          2.6,
+          0
+        ],
+        [
+          2.6,
+          2.6
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -1.7,
+          "y": 17,
+          "angle": 180
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "TopControl-1",
+      "x": -4.2,
+      "y": 15,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.2,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6.3,
+          "y": 15,
+          "angle": 180
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "TripodHead-1",
+      "x": -1.2,
+      "y": 0.2,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.2,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -1.2,
+          "y": -1.9,
+          "angle": -90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Leg-1_0",
+      "x": -1.5,
+      "y": -4.9,
+      "angle": -109.29005,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.237924,
+          -2.220446e-16
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.2,
+          "y": -6.9,
+          "angle": -109.29005
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Leg-1_1",
+      "x": -3.1,
+      "y": -9.6,
+      "angle": -109.29005,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.237924,
+          -2.220446e-16
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -3.8,
+          "y": -11.6,
+          "angle": -109.29005
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Leg-1_2",
+      "x": -4.7,
+      "y": -14.3,
+      "angle": -109.29005,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.237924,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.4,
+          "y": -16.3,
+          "angle": -109.29005
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "BodyTop1",
+      "x": 8,
+      "y": 9,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 8,
+          "y": 11,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "BodyBottom1",
+      "x": 8,
+      "y": 8.2,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          7.2,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 8,
+          "y": 4.6,
+          "angle": -90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Viewfinder1",
+      "x": 0.4,
+      "y": 17,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          2.6,
+          0
+        ],
+        [
+          2.6,
+          -2.6
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.7,
+          "y": 17,
+          "angle": 0
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "TopControl1",
+      "x": 4.2,
+      "y": 15,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.2,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 6.3,
+          "y": 15,
+          "angle": 0
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "TripodHead1",
+      "x": 1.2,
+      "y": 0.2,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.2,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.2,
+          "y": -1.9,
+          "angle": -90
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Leg1_0",
+      "x": 1.5,
+      "y": -4.9,
+      "angle": -70.70995,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.237924,
+          2.220446e-16
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 2.2,
+          "y": -6.9,
+          "angle": -70.70995
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Leg1_1",
+      "x": 3.1,
+      "y": -9.6,
+      "angle": -70.70995,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.237924,
+          2.220446e-16
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 3.8,
+          "y": -11.6,
+          "angle": -70.70995
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Leg1_2",
+      "x": 4.7,
+      "y": -14.3,
+      "angle": -70.70995,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.237924,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.4,
+          "y": -16.3,
+          "angle": -70.70995
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "BodyTopRail-1",
+      "color": "orange",
+      "x": -3,
+      "y": 13.8,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.5,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.75,
+          "y": 13.8,
+          "angle": 180
+        }
+      ]
+    },
+    {
+      "id": "BodyBottomRail-1",
+      "color": "sky",
+      "x": -3,
+      "y": 0.2,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.5,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.75,
+          "y": 0.2,
+          "angle": 180
+        }
+      ]
+    },
+    {
+      "id": "BodyTopRail1",
+      "color": "orange",
+      "x": 3,
+      "y": 13.8,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.5,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.75,
+          "y": 13.8,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "BodyBottomRail1",
+      "color": "green",
+      "x": 3,
+      "y": 0.2,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.5,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.75,
+          "y": 0.2,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

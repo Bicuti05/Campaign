@@ -1,0 +1,642 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "190",
+  "name": "Special 190 — Thuyền buồm (mốc 180)",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí180 →190. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: Single sailing ship requested by user: six split hull strakes, two paired portholes, two mast sections, six sail sections, two deck sections, flag, rudder and bowsprit. 23 parts of one vessel. Review pending.",
+  "rings": [
+    {
+      "id": "Hull-1_0",
+      "x": 0,
+      "y": 0,
+      "radius": 6.4,
+      "gap": 280,
+      "gapDir": 405,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 205,
+          "length": 0.55,
+          "targets": [
+            "Hull-1_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Hull-1_1",
+      "x": 0,
+      "y": 0,
+      "radius": 7.2,
+      "gap": 300,
+      "gapDir": 405,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 225,
+          "length": 0.55,
+          "targets": [
+            "Hull-1_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Hull-1_2",
+      "x": 0,
+      "y": 0,
+      "radius": 8,
+      "gap": 300,
+      "gapDir": 405,
+      "color": "green",
+      "pins": []
+    },
+    {
+      "id": "Porthole-1",
+      "x": -2.8,
+      "y": -2.8,
+      "radius": 1.5,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "PortholeRim-1"
+          ]
+        },
+        {
+          "angle": 225,
+          "length": 0.690202,
+          "targets": [
+            "Hull-1_0"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "PortholeRim-1",
+      "x": -2.8,
+      "y": -2.8,
+      "radius": 2.3,
+      "gap": 180,
+      "gapDir": 225,
+      "color": "navy"
+    },
+    {
+      "id": "Hull1_0",
+      "x": 0,
+      "y": 0,
+      "radius": 6.4,
+      "gap": 280,
+      "gapDir": 495,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 335,
+          "length": 0.55,
+          "targets": [
+            "Hull1_1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Hull1_1",
+      "x": 0,
+      "y": 0,
+      "radius": 7.2,
+      "gap": 300,
+      "gapDir": 495,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 315,
+          "length": 0.55,
+          "targets": [
+            "Hull1_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Hull1_2",
+      "x": 0,
+      "y": 0,
+      "radius": 8,
+      "gap": 300,
+      "gapDir": 495,
+      "color": "green",
+      "pins": []
+    },
+    {
+      "id": "Porthole1",
+      "x": 2.8,
+      "y": -2.8,
+      "radius": 1.5,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "PortholeRim1"
+          ]
+        },
+        {
+          "angle": 315,
+          "length": 0.690202,
+          "targets": [
+            "Hull1_0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PortholeRim1",
+      "x": 2.8,
+      "y": -2.8,
+      "radius": 2.3,
+      "gap": 180,
+      "gapDir": 315,
+      "color": "purple"
+    },
+    {
+      "id": "CurveAdd0",
+      "x": 2.3499999999999996,
+      "y": 3.9,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_SailFoot1",
+          "angle": -90,
+          "length": 0.65,
+          "targets": [
+            "SailFoot1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd1",
+      "x": -2.349999999999999,
+      "y": 3.9,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_SailFoot-1",
+          "angle": -90.00000000000001,
+          "length": 0.65,
+          "targets": [
+            "SailFoot-1"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "CurveAdd2",
+      "x": 3.0403896196126468,
+      "y": 11.903447610984355,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_SailUpper1",
+          "angle": -141.66666,
+          "length": 0.65,
+          "targets": [
+            "SailUpper1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd3",
+      "x": -3.0403896196126468,
+      "y": 11.903447610984355,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_SailUpper-1",
+          "angle": -38.333339999999986,
+          "length": 0.65,
+          "targets": [
+            "SailUpper-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd4",
+      "x": 6.840389619612647,
+      "y": 7.103447610984355,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_SailLower1",
+          "angle": -141.66666,
+          "length": 0.65,
+          "targets": [
+            "SailLower1"
+          ]
+        }
+      ],
+      "collect": true
+    }
+  ],
+  "sticks": [
+    {
+      "id": "MastLower",
+      "x": 0,
+      "y": 1.6,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 4.1618037,
+          "angle": 90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "MastUpper",
+      "x": 0,
+      "y": 7.1,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.9,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 9.088966,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "SailUpper-1",
+      "x": -0.7,
+      "y": 11.8,
+      "angle": -128.33334,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.481788,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.1381776,
+          "y": 9.9811284,
+          "angle": -128.33334
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "SailLower-1",
+      "x": -4.5,
+      "y": 7,
+      "angle": -128.33334,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.481788,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6.045197,
+          "y": 5.0457805,
+          "angle": -128.33334
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "SailFoot-1",
+      "x": -0.7,
+      "y": 2,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -3.407393,
+          "y": 2,
+          "angle": 180
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Deck-1",
+      "x": -0.5,
+      "y": 0.7,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.7,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -3.472581,
+          "y": 0.7,
+          "angle": 180
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "SailUpper1",
+      "x": 0.7,
+      "y": 11.8,
+      "angle": -51.66666,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.481788,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 2.3414778,
+          "y": 9.724013,
+          "angle": -51.66666
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "SailLower1",
+      "x": 4.5,
+      "y": 7,
+      "angle": -51.66666,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.481788,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.857743,
+          "y": 5.282855,
+          "angle": -51.66666
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "SailFoot1",
+      "x": 0.7,
+      "y": 2,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 4.719582,
+          "y": 2,
+          "angle": 0
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Deck1",
+      "x": 0.5,
+      "y": 0.7,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.7,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 4.723833,
+          "y": 0.7,
+          "angle": 0
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Flag",
+      "x": 0,
+      "y": 12.6,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 13.9780735,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Rudder",
+      "x": -8.4,
+      "y": -0.2,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.3,
+          0
+        ],
+        [
+          4.3,
+          -2.3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -8.4,
+          "y": -2.43124164,
+          "angle": -90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Bowsprit",
+      "x": 7.8,
+      "y": 0.2,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.2,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 9.538933,
+          "y": 0.2,
+          "angle": 0
+        }
+      ],
+      "color": "blue"
+    }
+  ]
+}

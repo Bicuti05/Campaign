@@ -1,0 +1,411 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "088",
+  "name": "C22 | Hai thanh trong cụm 22 vòng",
+  "author": "Codex + GD",
+  "notes": "Theo yêu cầu: 22 Ring radius mặc định1.75, một Stick thẳng và một Stick L giữ length/arm mặc định Designer. Cụm bốn cột sáu hàng, hai thanh tận dụng hai góc khuyết; các cửa dùng chung nối qua hàng/cột. Thanh L giữ cửa dưới, thanh thẳng giữ cửa trên; mở thanh rồi phối hợp các cửa để tháo nguồn. Không Guide/Stop/Bom/Chain/Booster. Thứ tự lời giải là một lựa chọn, không chứng nhận độ khó hoặc tối ưu toàn cục.",
+  "rings": [
+    {
+      "id": "R10",
+      "x": 4.5854,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 180,
+          "target": "L"
+        }
+      ]
+    },
+    {
+      "id": "R20",
+      "x": 9.1708,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 270,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R30"
+        },
+        {
+          "angle": 90,
+          "target": "R21"
+        },
+        {
+          "angle": 180,
+          "target": "R10"
+        }
+      ]
+    },
+    {
+      "id": "R30",
+      "x": 13.7562,
+      "y": 0,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "green",
+      "pins": []
+    },
+    {
+      "id": "R01",
+      "x": 0,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "green",
+      "pins": []
+    },
+    {
+      "id": "R11",
+      "x": 4.5854,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 45,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R21"
+        },
+        {
+          "angle": 90,
+          "target": "R12"
+        },
+        {
+          "angle": 180,
+          "target": "R01"
+        },
+        {
+          "angle": 270,
+          "target": "R10"
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R21",
+      "x": 9.1708,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 45,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "R31",
+      "x": 13.7562,
+      "y": 4.5854,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R32"
+        },
+        {
+          "angle": 180,
+          "target": "R21"
+        },
+        {
+          "angle": 270,
+          "target": "R30"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "x": 0,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R12"
+        },
+        {
+          "angle": 90,
+          "target": "R03"
+        },
+        {
+          "angle": 270,
+          "target": "R01"
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "x": 4.5854,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 45,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "R22",
+      "x": 9.1708,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 45,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R32"
+        },
+        {
+          "angle": 90,
+          "target": "R23"
+        },
+        {
+          "angle": 180,
+          "target": "R12"
+        },
+        {
+          "angle": 270,
+          "target": "R21"
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R32",
+      "x": 13.7562,
+      "y": 9.1708,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "R03",
+      "x": 0,
+      "y": 13.7562,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "R13",
+      "x": 4.5854,
+      "y": 13.7562,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 45,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R23"
+        },
+        {
+          "angle": 90,
+          "target": "R14"
+        },
+        {
+          "angle": 180,
+          "target": "R03"
+        },
+        {
+          "angle": 270,
+          "target": "R12"
+        }
+      ]
+    },
+    {
+      "id": "R23",
+      "x": 9.1708,
+      "y": 13.7562,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 45,
+      "color": "green",
+      "pins": []
+    },
+    {
+      "id": "R33",
+      "x": 13.7562,
+      "y": 13.7562,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "target": "R34"
+        },
+        {
+          "angle": 180,
+          "target": "R23"
+        },
+        {
+          "angle": 270,
+          "target": "R32"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "x": 0,
+      "y": 18.3416,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R14"
+        },
+        {
+          "angle": 90,
+          "target": "R05"
+        },
+        {
+          "angle": 270,
+          "target": "R03"
+        }
+      ]
+    },
+    {
+      "id": "R14",
+      "x": 4.5854,
+      "y": 18.3416,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 45,
+      "color": "teal",
+      "pins": []
+    },
+    {
+      "id": "R24",
+      "x": 9.1708,
+      "y": 18.3416,
+      "radius": 1.75,
+      "gap": 0,
+      "gapDir": 45,
+      "color": "navy",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R34"
+        },
+        {
+          "angle": 90,
+          "target": "R25"
+        },
+        {
+          "angle": 180,
+          "target": "R14"
+        },
+        {
+          "angle": 270,
+          "target": "R23"
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R34",
+      "x": 13.7562,
+      "y": 18.3416,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 0,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "R05",
+      "x": 0,
+      "y": 22.927,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 180,
+      "color": "sky",
+      "pins": []
+    },
+    {
+      "id": "R15",
+      "x": 4.5854,
+      "y": 22.927,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "R25"
+        },
+        {
+          "angle": 180,
+          "target": "R05"
+        },
+        {
+          "angle": 270,
+          "target": "R14"
+        }
+      ]
+    },
+    {
+      "id": "R25",
+      "x": 9.1708,
+      "y": 22.927,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 90,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 0,
+          "target": "S"
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S",
+      "shape": "straight",
+      "x": 12.0062,
+      "y": 22.927,
+      "angle": 90,
+      "color": "red"
+    },
+    {
+      "id": "L",
+      "shape": "L",
+      "x": 1.75,
+      "y": 0,
+      "angle": 270,
+      "slideAxis": [
+        1,
+        0
+      ],
+      "color": "green"
+    }
+  ]
+}

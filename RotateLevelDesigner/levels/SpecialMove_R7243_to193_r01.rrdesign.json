@@ -1,0 +1,866 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 193 — Robot thám hiểm (trùng chủ đề robot P385 — đặt xa)",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí243 →193. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: New unassigned Special concept requested by user. Portrait silhouette; native geometry, no campaign slot overwritten. Gameplay and visual review pending.\nRuntime repair: widened existing open arcs to160 degrees while retaining icon, ring count, fixed width and physically mounted pins; must re-validate, solve, replay and ablate.",
+  "rings": [
+    {
+      "id": "Eye-1Core",
+      "x": -2.6,
+      "y": 10,
+      "radius": 0.8,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.45,
+          "targets": [
+            "Eye-1Rim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Eye-1Rim",
+      "x": -2.6,
+      "y": 10,
+      "radius": 1.5,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "navy",
+      "pins": []
+    },
+    {
+      "id": "Eye1Core",
+      "x": 2.6,
+      "y": 10,
+      "radius": 0.8,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.45,
+          "targets": [
+            "Eye1Rim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Eye1Rim",
+      "x": 2.6,
+      "y": 10,
+      "radius": 1.5,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "AntennaTipCore",
+      "x": 0,
+      "y": 20.5,
+      "radius": 0.8,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "AntennaTipRim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AntennaTipRim",
+      "x": 0,
+      "y": 20.5,
+      "radius": 1.6,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "blue",
+      "pins": []
+    },
+    {
+      "id": "Torso",
+      "x": 0,
+      "y": -4,
+      "radius": 3.5,
+      "gap": 160,
+      "gapDir": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "angle": 270,
+          "length": 0.95,
+          "inner": true,
+          "targets": [
+            "Chest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Chest",
+      "x": 0,
+      "y": -4,
+      "radius": 2.3,
+      "gap": 160,
+      "gapDir": 90,
+      "color": "red",
+      "pins": []
+    },
+    {
+      "id": "CurveAdd0",
+      "x": 0.20816769736928342,
+      "y": -9.5509844171781,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Leg1",
+          "angle": 5.314546000000005,
+          "length": 0.65,
+          "targets": [
+            "Leg1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd1",
+      "x": -2,
+      "y": 16.5,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_HeadTopRail-1",
+          "angle": -90,
+          "length": 0.65,
+          "targets": [
+            "HeadTopRail-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd2",
+      "x": 3.4000000000000004,
+      "y": 1.7124999999999997,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_Neck1",
+          "angle": -180,
+          "length": 0.65,
+          "targets": [
+            "Neck1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd3",
+      "x": -3.4,
+      "y": 2.5749999999999997,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_Neck-1",
+          "angle": 3.687599630682338e-15,
+          "length": 0.65,
+          "targets": [
+            "Neck-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd4",
+      "x": 2,
+      "y": 16.5,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_HeadTopRail1",
+          "angle": -90,
+          "length": 0.65,
+          "targets": [
+            "HeadTopRail1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd5",
+      "x": -3.9918323161117355,
+      "y": -9.199015593450014,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_Leg-1",
+          "angle": -5.314546000000005,
+          "length": 0.65,
+          "targets": [
+            "Leg-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd6",
+      "x": 4.1,
+      "y": 12.8,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_HeadTop1",
+          "angle": 0,
+          "length": 0.65,
+          "targets": [
+            "HeadTop1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd7",
+      "x": -5.6000000000000005,
+      "y": -14.4,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_Foot-1",
+          "angle": -90,
+          "length": 0.65,
+          "targets": [
+            "Foot-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "HeadTop-1",
+      "x": -6,
+      "y": 9.8,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6,
+          "y": 11.8,
+          "angle": 90
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "HeadBottom-1",
+      "x": -6,
+      "y": 9,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -6,
+          "y": 7,
+          "angle": -90
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Neck-1",
+      "x": -1.5,
+      "y": 4.3,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.9,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -1.5,
+          "y": 0.85,
+          "angle": -90
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "UpperArm-1",
+      "x": -7,
+      "y": 2,
+      "angle": -123.69007,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.6055513,
+          0
+        ],
+        [
+          6.101702,
+          1.6641006
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -8,
+          "y": 0.5,
+          "angle": -123.69007
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "Forearm-1",
+      "x": -9.4,
+      "y": -3.3,
+      "angle": -98.471145,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.7518417,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -9.75,
+          "y": -5.65,
+          "angle": -98.471145
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Leg-1",
+      "x": -2,
+      "y": -8.3,
+      "angle": -95.314546,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.3185646,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.2,
+          "y": -10.45,
+          "angle": -95.314546
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Foot-1",
+      "x": -2.9,
+      "y": -12,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4.3
+        ],
+        [
+          3.6,
+          4.3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -4.7,
+          "y": -16.3,
+          "angle": 180
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "HeadTop1",
+      "x": 6,
+      "y": 9.8,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 6,
+          "y": 11.8,
+          "angle": 90
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "HeadBottom1",
+      "x": 6,
+      "y": 9,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 6,
+          "y": 7,
+          "angle": -90
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Neck1",
+      "x": 1.5,
+      "y": 4.3,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6.9,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.5,
+          "y": 0.85,
+          "angle": -90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "UpperArm1",
+      "x": 7,
+      "y": 2,
+      "angle": -56.309932,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.6055513,
+          0
+        ],
+        [
+          6.101702,
+          -1.6641006
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 8,
+          "y": 0.5,
+          "angle": -56.309932
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Forearm1",
+      "x": 9.4,
+      "y": -3.3,
+      "angle": -81.528855,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.7518417,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 9.75,
+          "y": -5.65,
+          "angle": -81.528855
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Leg1",
+      "x": 2,
+      "y": -8.3,
+      "angle": -84.685454,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.3185646,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 2.2,
+          "y": -10.45,
+          "angle": -84.685454
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Foot1",
+      "x": 2.9,
+      "y": -12,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -4.3
+        ],
+        [
+          3.6,
+          -4.3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 4.7,
+          "y": -16.3,
+          "angle": 0
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Mouth",
+      "x": -2.6,
+      "y": 9.1,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          2.3,
+          0
+        ],
+        [
+          2.3,
+          5.2
+        ],
+        [
+          0,
+          5.2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.6,
+          "y": 7.95,
+          "angle": -90
+        },
+        {
+          "x": 2.6,
+          "y": 7.95,
+          "angle": 90
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "Antenna",
+      "x": 0,
+      "y": 14,
+      "angle": 90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          5.4,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": 16.7,
+          "angle": 90
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "HeadTopRail-1",
+      "color": "sky",
+      "x": -0.5,
+      "y": 14.6,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -3.5,
+          "y": 14.6,
+          "angle": 180
+        }
+      ]
+    },
+    {
+      "id": "HeadBottomRail-1",
+      "color": "green",
+      "x": -0.5,
+      "y": 4.5,
+      "angle": 180,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -3.5,
+          "y": 4.5,
+          "angle": 180
+        }
+      ]
+    },
+    {
+      "id": "HeadTopRail1",
+      "color": "navy",
+      "x": 0.5,
+      "y": 14.6,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 3.5,
+          "y": 14.6,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "HeadBottomRail1",
+      "color": "purple",
+      "x": 0.5,
+      "y": 4.5,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 3.5,
+          "y": 4.5,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

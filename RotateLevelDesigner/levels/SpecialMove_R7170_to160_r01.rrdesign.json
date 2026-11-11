@@ -1,0 +1,862 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 160 — Cây thông và quà (mốc 170)",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí170 →160. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: Authored Christmas tree scene: six pairs of tiered branches, two trunk strokes, paired top ornament, four gift crates. Every item is a recognizable scene part; visual and gameplay role review pending. User approved tree direction and requested more items: two paired hanging baubles, total 24. Gameplay revalidation required.\nRuntime repair: widened existing open arcs to160 degrees while retaining icon, ring count, fixed width and physically mounted pins; must re-validate, solve, replay and ablate.",
+  "rings": [
+    {
+      "id": "TopOrnament",
+      "x": 0,
+      "y": 5.4,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "red",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "OrnamentRim"
+          ]
+        },
+        {
+          "id": "curve_to_CurveAdd0",
+          "angle": 270,
+          "length": 4,
+          "targets": [
+            "CurveAdd0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OrnamentRim",
+      "x": 0,
+      "y": 5.4,
+      "radius": 2.1,
+      "gap": 160,
+      "gapDir": 235,
+      "color": "sky",
+      "pins": [
+        {
+          "id": "curve_to_CurveAdd1",
+          "angle": 75,
+          "length": 0.7,
+          "targets": [
+            "CurveAdd1"
+          ]
+        },
+        {
+          "id": "curve_to_CurveAdd3",
+          "angle": 330,
+          "length": 0.7,
+          "targets": [
+            "CurveAdd3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TreeBauble0",
+      "x": 0,
+      "y": -5.3,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "TreeBauble0Rim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TreeBauble0Rim",
+      "x": 0,
+      "y": -5.3,
+      "radius": 2.1,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "orange"
+    },
+    {
+      "id": "TreeBauble1",
+      "x": 0,
+      "y": -10.5,
+      "radius": 1.3,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "green",
+      "pins": [
+        {
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "TreeBauble1Rim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TreeBauble1Rim",
+      "x": 0,
+      "y": -10.5,
+      "radius": 2.1,
+      "gap": 160,
+      "gapDir": 270,
+      "color": "navy"
+    },
+    {
+      "id": "CurveAdd0",
+      "x": -1.2032154801622745e-15,
+      "y": -1.1499999999999995,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 270,
+      "color": "blue"
+    },
+    {
+      "id": "CurveAdd1",
+      "x": 1.048217132665209,
+      "y": 9.311999596470727,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 75,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "curve_to_CurveAdd2",
+          "angle": 180,
+          "length": 0.7,
+          "targets": [
+            "CurveAdd2"
+          ]
+        },
+        {
+          "id": "curve_to_CurveAdd4",
+          "angle": 210,
+          "length": 3,
+          "targets": [
+            "CurveAdd4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd2",
+      "x": -1.9017828673347912,
+      "y": 9.311999596470727,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 180,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "curve_to_CurveAdd5",
+          "angle": 45,
+          "length": 1.4,
+          "targets": [
+            "CurveAdd5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd3",
+      "x": 3.507402885326975,
+      "y": 3.3749999999999987,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 330,
+      "color": "orange"
+    },
+    {
+      "id": "CurveAdd4",
+      "x": -3.4984162372030942,
+      "y": 6.686999596470727,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 210,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "curve_to_CurveAdd6",
+          "angle": 75,
+          "length": 4,
+          "targets": [
+            "CurveAdd6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd5",
+      "x": 0.6791568839961075,
+      "y": 11.892939347801626,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 45,
+      "color": "orange"
+    },
+    {
+      "id": "CurveAdd6",
+      "x": -1.8807972053123396,
+      "y": 12.724036010777404,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 75,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "curve_to_CurveAdd7",
+          "angle": 195,
+          "length": 4,
+          "targets": [
+            "CurveAdd7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd7",
+      "x": -7.917833619619016,
+      "y": 11.10641697888665,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 195,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "curve_to_CurveAdd8",
+          "angle": 300,
+          "length": 7,
+          "targets": [
+            "CurveAdd8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd8",
+      "x": -3.2928336196190156,
+      "y": 3.095681993880593,
+      "radius": 1,
+      "gap": 240,
+      "gapDir": 300,
+      "color": "orange"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Branch0_-1",
+      "x": -0.3,
+      "y": 3.9,
+      "angle": -126.32683,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.2201896,
+          4.440892e-16
+        ],
+        [
+          2.8576915,
+          1.8529973
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -1.55,
+          "y": 2.2,
+          "angle": -126.32683
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Branch0_1",
+      "x": 0.3,
+      "y": 3.9,
+      "angle": -53.673174,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          4.2201896,
+          -4.440892e-16
+        ],
+        [
+          2.8576915,
+          -1.8529973
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.55,
+          "y": 2.2,
+          "angle": -53.673174
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Branch1_-1",
+      "x": -1.1,
+      "y": 0.1,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.1573522,
+          "y": -0.9573522,
+          "angle": -135
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Branch1_1",
+      "x": 1.1,
+      "y": 0.1,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          -1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 1.88078885,
+          "y": -0.6807889,
+          "angle": -45
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Branch2_-1",
+      "x": -1.9,
+      "y": -2.8,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -2.9629697,
+          "y": -3.8629697,
+          "angle": -135
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Branch2_1",
+      "x": 1.9,
+      "y": -2.8,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          -1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 3.0731459,
+          "y": -3.973146,
+          "angle": -45
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "Branch3_-1",
+      "x": -2.7,
+      "y": -5.7,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -3.6550338,
+          "y": -6.655034,
+          "angle": -135
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Branch3_1",
+      "x": 2.7,
+      "y": -5.7,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          -1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 4.185759,
+          "y": -7.185759,
+          "angle": -45
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Branch4_-1",
+      "x": -3.5,
+      "y": -8.6,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -4.769827,
+          "y": -9.869827,
+          "angle": -135
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Branch4_1",
+      "x": 3.5,
+      "y": -8.6,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          -1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 4.900272,
+          "y": -10.000272,
+          "angle": -45
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Branch5_-1",
+      "x": -4.3,
+      "y": -11.5,
+      "angle": -135,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.246674,
+          "y": -12.446674,
+          "angle": -135
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Branch5_1",
+      "x": 4.3,
+      "y": -11.5,
+      "angle": -45,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          3.535534,
+          0
+        ],
+        [
+          1.9091883,
+          -1.6263456
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 5.5000915,
+          "y": -12.7000915,
+          "angle": -45
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "Trunk-1",
+      "x": -0.7,
+      "y": -12,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          7.1,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -0.7,
+          "y": -15.55,
+          "angle": -90
+        }
+      ],
+      "color": "orange"
+    },
+    {
+      "id": "Trunk1",
+      "x": 0.7,
+      "y": -12,
+      "angle": -90,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          7.1,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0.7,
+          "y": -15.55,
+          "angle": -90
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "Gift0",
+      "x": -4,
+      "y": -15.9,
+      "angle": 0,
+      "path": [
+        [
+          -1.4,
+          1.4
+        ],
+        [
+          -1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -5.4,
+          "y": -16.1,
+          "angle": 90
+        },
+        {
+          "x": -2.6,
+          "y": -15.8,
+          "angle": 90
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Gift1",
+      "x": 4,
+      "y": -15.9,
+      "angle": 0,
+      "path": [
+        [
+          -1.4,
+          1.4
+        ],
+        [
+          -1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 2.6,
+          "y": -16.1,
+          "angle": 90
+        },
+        {
+          "x": 5.4,
+          "y": -15.8,
+          "angle": 90
+        }
+      ],
+      "color": "navy"
+    },
+    {
+      "id": "Gift2",
+      "x": -4,
+      "y": -19.6,
+      "angle": 0,
+      "path": [
+        [
+          -1.4,
+          1.4
+        ],
+        [
+          -1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -5.4,
+          "y": -19.8,
+          "angle": 90
+        },
+        {
+          "x": -2.6,
+          "y": -19.5,
+          "angle": 90
+        }
+      ],
+      "color": "sky"
+    },
+    {
+      "id": "Gift3",
+      "x": 4,
+      "y": -19.6,
+      "angle": 0,
+      "path": [
+        [
+          -1.4,
+          1.4
+        ],
+        [
+          -1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          -1.4
+        ],
+        [
+          1.4,
+          1.4
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 2.6,
+          "y": -19.8,
+          "angle": 90
+        },
+        {
+          "x": 5.4,
+          "y": -19.5,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    }
+  ]
+}

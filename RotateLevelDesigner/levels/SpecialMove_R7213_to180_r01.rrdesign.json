@@ -1,0 +1,594 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 180 — Chim công xòe đuôi",
+  "author": "Codex",
+  "notes": "Nguồn R7 vị trí213 →180. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: Review copy / position60 / source ID060. Geometry unchanged; Specific is a manifest/name tag, not a runtime mechanic. Source notes follow:\nPart3 native repair of source ID 32. Thân và đầu là vòng, 8 lông đuôi là thanh toả ra mang 'mắt lông' là vòng ở đầu, chân và mặt đất là thanh. R3 enlarged from 0.75 to .85 units to make the small eye/flame legible with native authoring geometry. Removed unproven picture-only Bomb and drawing arms; no Booster/Chain. Native .5-unit tube, pins and complete Guides only. Drawing tabs replaced by real engaged joints. Feather S4 uses its own aligned local frame: same world geometry, stable offset direction after canonical numeric serialization; avoids the exact diagonal x/y dominance tie. No engine/tolerance edits. Feather eyes pair along fan arc at native spacing. Body/head spacing fixed; stepped neck has two parallel native pin passages, no redundant Guide. Head rotation releases body after neck withdrawal. Figure silhouette is a design reference, not evidence of difficulty or necessary cross-object preparation for every bar. No campaign import. Validation/full-gesture evidence: research/20261015-genai-part3-v04.",
+  "rings": [
+    {
+      "id": "R2",
+      "x": 0,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 50,
+      "color": "#4a6fe0",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "S1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 0,
+      "y": 6.375,
+      "gapDir": 90,
+      "gap": 80,
+      "radius": 0.85,
+      "color": "#63c13d",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "S1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": -13.1875,
+      "y": -6.375,
+      "gapDir": 175,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#63c13d",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 75.2173,
+          "targets": [
+            "R5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": -12.0813,
+      "y": -2.1831,
+      "gapDir": 155,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#2eaadc"
+    },
+    {
+      "id": "R6",
+      "x": -9.375,
+      "y": 1.875,
+      "gapDir": 135,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#1fa060",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 34.992,
+          "targets": [
+            "R7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": -5.8233,
+      "y": 4.3612,
+      "gapDir": 115,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#9b4ddc"
+    },
+    {
+      "id": "R8",
+      "x": 5.625,
+      "y": 4.5,
+      "gapDir": 65,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#9b4ddc",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 325.008,
+          "targets": [
+            "R9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R9",
+      "x": 9.1767,
+      "y": 2.0138,
+      "gapDir": 45,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#1fa060"
+    },
+    {
+      "id": "R10",
+      "x": 12,
+      "y": -1.875,
+      "gapDir": 25,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#2eaadc",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 284.7827,
+          "targets": [
+            "R11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "x": 13.1062,
+      "y": -6.0669,
+      "gapDir": 5,
+      "gap": 60,
+      "radius": 1.625,
+      "color": "#63c13d"
+    },
+    {
+      "id": "R12",
+      "x": 0,
+      "y": -6.2734,
+      "gapDir": 39,
+      "gap": 0,
+      "radius": 3.438,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "R2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd0",
+      "x": -3.490274964265762,
+      "y": -10.52232667083566,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_S10",
+          "angle": -6.654425046006595,
+          "length": 0.65,
+          "targets": [
+            "S10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd1",
+      "x": 3.6278749642657617,
+      "y": -10.52232667083566,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_S11",
+          "angle": -173.3455749539934,
+          "length": 0.65,
+          "targets": [
+            "S11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd2",
+      "x": -6.345286411722106,
+      "y": -8.830936940665271,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_S2",
+          "angle": 85.23635830927383,
+          "length": 0.65,
+          "targets": [
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CurveAdd3",
+      "x": 6.345286411722106,
+      "y": -8.830936940665271,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "to_S9",
+          "angle": 94.76364169072619,
+          "length": 0.65,
+          "targets": [
+            "S9"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": -0.8,
+      "y": 2.8354,
+      "angle": 0,
+      "color": "#1fa060",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          1.6,
+          0
+        ],
+        [
+          1.6,
+          1.6042
+        ],
+        [
+          0,
+          1.6042
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S2",
+      "x": -7.0875,
+      "y": -6.8625,
+      "angle": 0,
+      "color": "#63c13d",
+      "path": [
+        [
+          2.4,
+          -0.2
+        ],
+        [
+          -3.6,
+          0.3
+        ]
+      ],
+      "slideAxis": [
+        -0.9965,
+        0.0837
+      ],
+      "guides": [
+        {
+          "x": -7.0875,
+          "y": -6.8625,
+          "angle": 175.2
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "x": -6.45,
+      "y": -4.475,
+      "angle": 0,
+      "color": "#2eaadc",
+      "path": [
+        [
+          2.2,
+          -1.025
+        ],
+        [
+          -3.3,
+          1.5375
+        ]
+      ],
+      "slideAxis": [
+        -0.9063,
+        0.4226
+      ],
+      "guides": [
+        {
+          "x": -6.45,
+          "y": -4.475,
+          "angle": 155
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "x": -5.0375,
+      "y": -2.4625,
+      "angle": 135,
+      "color": "#1fa060",
+      "path": [
+        [
+          -2.4395,
+          0
+        ],
+        [
+          3.6593,
+          0
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.0375,
+          "y": -2.4625,
+          "angle": 135
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "x": -3.025,
+      "y": -1.05,
+      "angle": 0,
+      "color": "#9b4ddc",
+      "path": [
+        [
+          1.025,
+          -2.2
+        ],
+        [
+          -1.5375,
+          3.3
+        ]
+      ],
+      "slideAxis": [
+        -0.4226,
+        0.9063
+      ],
+      "guides": [
+        {
+          "x": -3.025,
+          "y": -1.05,
+          "angle": 115
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "x": 3.025,
+      "y": -1.05,
+      "angle": 0,
+      "color": "#9b4ddc",
+      "path": [
+        [
+          -1.025,
+          -2.2
+        ],
+        [
+          1.5375,
+          3.3
+        ]
+      ],
+      "slideAxis": [
+        0.4226,
+        0.9063
+      ],
+      "guides": [
+        {
+          "x": 3.025,
+          "y": -1.05,
+          "angle": 65
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "x": 5.0375,
+      "y": -2.4625,
+      "angle": 0,
+      "color": "#1fa060",
+      "path": [
+        [
+          -1.725,
+          -1.725
+        ],
+        [
+          2.5875,
+          2.5875
+        ]
+      ],
+      "slideAxis": [
+        0.7071,
+        0.7071
+      ],
+      "guides": [
+        {
+          "x": 5.0375,
+          "y": -2.4625,
+          "angle": 45
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "x": 6.45,
+      "y": -4.475,
+      "angle": 0,
+      "color": "#2eaadc",
+      "path": [
+        [
+          -2.2,
+          -1.025
+        ],
+        [
+          3.3,
+          1.5375
+        ]
+      ],
+      "slideAxis": [
+        0.9063,
+        0.4226
+      ],
+      "guides": [
+        {
+          "x": 6.45,
+          "y": -4.475,
+          "angle": 25
+        }
+      ]
+    },
+    {
+      "id": "S9",
+      "x": 7.0875,
+      "y": -6.8625,
+      "angle": 0,
+      "color": "#63c13d",
+      "path": [
+        [
+          -2.4,
+          -0.2
+        ],
+        [
+          3.6,
+          0.3
+        ]
+      ],
+      "slideAxis": [
+        0.9965,
+        0.0837
+      ],
+      "guides": [
+        {
+          "x": 7.0875,
+          "y": -6.8625,
+          "angle": 4.8
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "x": -1.7125,
+      "y": -11.68,
+      "angle": 0,
+      "color": "#ef8c2b",
+      "path": [
+        [
+          0.2188,
+          1.875
+        ],
+        [
+          -0.2187,
+          -1.875
+        ]
+      ],
+      "slideAxis": [
+        -0.1167,
+        -0.9932
+      ],
+      "guides": [
+        {
+          "x": -1.7125,
+          "y": -11.68,
+          "angle": 263.3
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "x": 1.85,
+      "y": -11.68,
+      "angle": 0,
+      "color": "#ef8c2b",
+      "path": [
+        [
+          -0.2187,
+          1.875
+        ],
+        [
+          0.2188,
+          -1.875
+        ]
+      ],
+      "slideAxis": [
+        0.1167,
+        -0.9932
+      ],
+      "guides": [
+        {
+          "x": 1.85,
+          "y": -11.68,
+          "angle": 276.7
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "x": 0,
+      "y": -14.14,
+      "angle": 0,
+      "color": "#1fa060",
+      "shape": "straight",
+      "length": 18.75,
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": -14.14,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "x": 1.85,
+      "y": 0,
+      "angle": 0,
+      "color": "orange",
+      "shape": "straight",
+      "length": 2.45,
+      "guides": [
+        {
+          "x": 1.25,
+          "y": 0,
+          "angle": 0
+        }
+      ]
+    }
+  ]
+}

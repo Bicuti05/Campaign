@@ -1,0 +1,458 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "158",
+  "name": "Level037 — ",
+  "author": "Codex",
+  "notes": "Review copy / position37 / source ID037. Geometry unchanged; Specific is a manifest/name tag, not a runtime mechanic. Source notes follow:\nRemake10038: bỏ ba vòng rìa R19/R20/R21, dựng18 vòng/6 thanh cardinal thành hàng/cột dọc. R1/R7 kín radius2,15, còn lại1,75. Nguồn trên và giữa dùng chung R8; chuỗi phải R3→R4→R13→R11, R11 nhận cả R6/R12/R13 và giữ R14. U S1 dùng chung khe R11/R14, hai chân4,2 bằng nhau và hai Guide. Hai nguồn đáy R18/R17 cùng giữ R16, R18 giữ R12, R17 giữ R14; R16 còn giữ R15. Ba tầng liên hệ thật qua receiver, không ghép cụm độc lập. S3 thanh thẳng giữ R18; S4/S5/S6 pinbar L không Guide dư; S2 L với Guide qua khe trái R5. Stop230° dài1,75 của R10 được thử vai trò trên thân vật liệu và đường kéo S3/R10; chưa coi giả thuyết hình học là proof. Không Bom/Booster/Chain, lockCount0; visual/độ khó chờ GD. r02 đảo R16→R15 thành R15→R16. r01 pin ra của R16 quét vào WALL của pin R17→R16 trước khi mở đầu R18; giữ counterexample, không sửa engine. R16 nay receiver ba nguồn R18/R15/R17, không có pin ra, cần đo ba pha và tái khóa. r03 đảo vị trí dọc hai chân U: Guide trên giữ muộn hơn, Guide dưới gần đầu chân hơn. r02 chưa có witness riêng cho Guide trên sau các prefix đã thử, không giao khi thiếu proof; thử pha U trung gian để đo riêng mỗi ngàm.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 19.6,
+      "gapDir": 90,
+      "gap": 0,
+      "radius": 2.15,
+      "color": "blue",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 180,
+          "length": 0.75,
+          "targets": [
+            "R2"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 0,
+          "length": 0.75,
+          "targets": [
+            "R3"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 270,
+          "length": 0.75,
+          "targets": [
+            "R8"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R2",
+      "x": -4.9,
+      "y": 19.6,
+      "gapDir": 90,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "x": 4.9,
+      "y": 19.6,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "teal",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 4.9,
+      "y": 14.7,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": -4.9,
+      "y": 14.7,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple"
+    },
+    {
+      "id": "R6",
+      "x": 0,
+      "y": 9.8,
+      "gapDir": 90,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 315,
+          "length": 3.1796,
+          "targets": [
+            "R11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": -4.9,
+      "y": 9.8,
+      "gapDir": 90,
+      "gap": 0,
+      "radius": 2.15,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 0.75,
+          "targets": [
+            "R6"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 45,
+          "length": 2.7796,
+          "targets": [
+            "R8"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 270,
+          "length": 0.75,
+          "targets": [
+            "R9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R8",
+      "x": 0,
+      "y": 14.7,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "green"
+    },
+    {
+      "id": "R9",
+      "x": -4.9,
+      "y": 4.9,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "x": -4.9,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "teal",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 180,
+          "length": 1.54,
+          "targets": [
+            "S7"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "angle": 230,
+          "length": 1.75
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "x": 4.9,
+      "y": 4.9,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "x": 0,
+      "y": 4.9,
+      "gapDir": 90,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 1.15,
+          "targets": [
+            "R11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "x": 4.9,
+      "y": 9.8,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "teal",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R14",
+      "x": 4.9,
+      "y": 0,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "teal"
+    },
+    {
+      "id": "R15",
+      "x": 0,
+      "y": -4.9,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 1.15,
+          "targets": [
+            "R16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R16",
+      "x": 0,
+      "y": 0,
+      "gapDir": 135,
+      "gap": 90,
+      "color": "purple"
+    },
+    {
+      "id": "R17",
+      "x": 4.9,
+      "y": -4.9,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 1.15,
+          "targets": [
+            "R14"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 135,
+          "length": 3.1796,
+          "targets": [
+            "R16"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R18",
+      "x": -4.9,
+      "y": -4.9,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 1.15,
+          "targets": [
+            "R10"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 45,
+          "length": 3.1796,
+          "targets": [
+            "R16"
+          ]
+        }
+      ],
+      "collect": true
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 8.5,
+      "y": 0,
+      "angle": 0,
+      "color": "red",
+      "path": [
+        [
+          -4.2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4.9
+        ],
+        [
+          -4.2,
+          4.9
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 6.01,
+          "y": 0,
+          "angle": 0
+        },
+        {
+          "x": 6.01,
+          "y": 4.9,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "x": -4.9,
+      "y": 14.7,
+      "angle": 0,
+      "color": "orange",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          -3.8,
+          0
+        ],
+        [
+          -3.8,
+          -2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -5.92,
+          "y": 14.7,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "x": 7.95,
+      "y": 13.85,
+      "angle": 90,
+      "color": "orange",
+      "shape": "straight",
+      "length": 12.35,
+      "guides": [
+        {
+          "x": 7.95,
+          "y": 14.1188,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "x": -8.44,
+      "y": 1.4,
+      "angle": 90,
+      "color": "blue",
+      "shape": "L",
+      "length": 6.39,
+      "arm": 2.21,
+      "slideAxis": [
+        1,
+        0
+      ]
+    }
+  ]
+}

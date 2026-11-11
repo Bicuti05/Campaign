@@ -1,0 +1,455 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "draft",
+  "name": "Special 100 — Nhân vật zombie (đầu + thân)",
+  "notes": "Nguồn R7 vị trí110 →100. GD: không giảm số vòng; source cao hơn curve giữ nguyên, source thấp hơn bổ sung vòng có link thật. Chuẩn hóa độ dày bằng official builder. Chuẩn hóa độ dày và điều chỉnh bám curve hơn. Ghi chú nguồn chỉ là tham khảo: Review copy / position380 / source ID344. Geometry unchanged; Specific is a manifest/name tag, not a runtime mechanic. Source notes follow:\nĐầu lớn với mắt lệch cỡ, miệng U, tay phải giơ cao và hai chân lệch. Đầu giữ các nhánh mặt/tóc/tay và thân; thân giữ tay trái và hai chân, tháo đầu mút rồi quay lại nguồn. Native manualplay riêng, pack no-solve/proof:null; chưaUnity/GDapproved.",
+  "rings": [
+    {
+      "id": "Head",
+      "x": 0,
+      "y": 8,
+      "radius": 8,
+      "gap": 0,
+      "gapDir": 0,
+      "pins": [
+        {
+          "id": "toBody",
+          "angle": 270,
+          "length": 1.75,
+          "targets": [
+            "Body"
+          ]
+        },
+        {
+          "id": "toEyeL",
+          "angle": 146.30993,
+          "inner": true,
+          "length": 2.6444487,
+          "targets": [
+            "EyeL"
+          ]
+        },
+        {
+          "id": "toEyeR",
+          "angle": 45,
+          "inner": true,
+          "length": 2.4073593,
+          "targets": [
+            "EyeR"
+          ]
+        },
+        {
+          "id": "toArmR",
+          "angle": -10.304847,
+          "length": 1.4303399,
+          "targets": [
+            "ArmR"
+          ]
+        },
+        {
+          "id": "toHair1",
+          "angle": 109.98311,
+          "length": 2.1546999,
+          "targets": [
+            "Hair1"
+          ]
+        },
+        {
+          "id": "toHair3",
+          "angle": 70.01689,
+          "length": 2.1546999,
+          "targets": [
+            "Hair3"
+          ]
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Body",
+      "x": 0,
+      "y": -6,
+      "radius": 4,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "id": "toArmL",
+          "angle": 180,
+          "length": 1.25,
+          "targets": [
+            "ArmL"
+          ]
+        },
+        {
+          "id": "toLegL",
+          "angle": -116.56505,
+          "length": 3.1942719,
+          "targets": [
+            "LegL"
+          ]
+        },
+        {
+          "id": "toLegR",
+          "angle": -90,
+          "length": 2.25,
+          "targets": [
+            "LegR"
+          ]
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "EyeL",
+      "x": -3,
+      "y": 10,
+      "radius": 1.5,
+      "gap": 180,
+      "gapDir": 326.30993,
+      "pins": [],
+      "color": "teal"
+    },
+    {
+      "id": "EyeR",
+      "x": 3,
+      "y": 11,
+      "radius": 1.1,
+      "gap": 180,
+      "gapDir": 225,
+      "pins": [],
+      "color": "orange"
+    },
+    {
+      "id": "ArmL",
+      "x": -7,
+      "y": -6,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "id": "toHandL",
+          "angle": 180,
+          "length": 0.75,
+          "targets": [
+            "HandL"
+          ]
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "HandL",
+      "x": -11,
+      "y": -6,
+      "radius": 1.5,
+      "gap": 180,
+      "gapDir": 180,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "ArmR",
+      "x": 11,
+      "y": 6,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": 90,
+      "pins": [
+        {
+          "id": "toHandR",
+          "angle": -26.5650512,
+          "length": 1.2221359,
+          "targets": [
+            "HandR"
+          ]
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "HandR",
+      "x": 15,
+      "y": 4,
+      "radius": 1.5,
+      "gap": 180,
+      "gapDir": -26.5650512,
+      "pins": [],
+      "color": "navy"
+    },
+    {
+      "id": "LegL",
+      "x": -4,
+      "y": -14,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "id": "toFootL",
+          "angle": -116.56505,
+          "length": 0.92213595,
+          "targets": [
+            "FootL"
+          ]
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "FootL",
+      "x": -6,
+      "y": -18,
+      "radius": 1.8,
+      "gap": 180,
+      "gapDir": -116.56505,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "LegR",
+      "x": 0,
+      "y": -14,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": 180,
+      "pins": [
+        {
+          "id": "toFootR",
+          "angle": -45,
+          "length": 0.69264069,
+          "targets": [
+            "FootR"
+          ]
+        }
+      ],
+      "color": "teal"
+    },
+    {
+      "id": "FootR",
+      "x": 3,
+      "y": -17,
+      "radius": 1.8,
+      "gap": 180,
+      "gapDir": -45,
+      "pins": [],
+      "color": "purple"
+    },
+    {
+      "id": "Hair1",
+      "x": -4,
+      "y": 19,
+      "radius": 1.3,
+      "gap": 90,
+      "gapDir": 0,
+      "pins": [
+        {
+          "id": "toHair2",
+          "angle": 126.869898,
+          "length": 2.15,
+          "targets": [
+            "Hair2"
+          ]
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "id": "Hair2",
+      "x": -7,
+      "y": 23,
+      "radius": 1.3,
+      "gap": 180,
+      "gapDir": 126.869898,
+      "pins": [],
+      "color": "red"
+    },
+    {
+      "id": "Hair3",
+      "x": 4,
+      "y": 19,
+      "radius": 1.3,
+      "gap": 180,
+      "gapDir": 70.01689,
+      "pins": [],
+      "color": "red"
+    },
+    {
+      "id": "CurveAdd0",
+      "x": 3,
+      "y": -17,
+      "radius": 1,
+      "gap": 0,
+      "gapDir": 0,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "to_FootR",
+          "angle": 90,
+          "length": 0.55,
+          "targets": [
+            "FootR"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "BrowL",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -5,
+          12.5
+        ],
+        [
+          -1,
+          12.5
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": -3,
+          "y": 12.5,
+          "angle": 0
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "BrowR",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          1,
+          13.3
+        ],
+        [
+          5,
+          13.3
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 3,
+          "y": 13.3,
+          "angle": 0
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "Shirt1",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -2,
+          -5
+        ],
+        [
+          2,
+          -5
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": -5,
+          "angle": 0
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Shirt2",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -2,
+          -8
+        ],
+        [
+          2,
+          -8
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 0,
+          "y": -8,
+          "angle": 0
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "Mouth",
+      "x": 0,
+      "y": 0,
+      "angle": 0,
+      "path": [
+        [
+          -2,
+          6
+        ],
+        [
+          -2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": -2,
+          "y": 5,
+          "angle": 90
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "angle": 90
+        }
+      ],
+      "color": "green"
+    }
+  ],
+  "author": "Codex"
+}

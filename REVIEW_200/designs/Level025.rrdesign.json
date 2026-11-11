@@ -1,0 +1,262 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "012",
+  "name": "Level028 — ",
+  "author": "Codex",
+  "notes": "Review copy / position28 / source ID028. Geometry unchanged; Specific is a manifest/name tag, not a runtime mechanic. Source notes follow:\nRemake70012: bỏ R8/R10 rìa, dựng lại dọc; Bom chuyển từ receiver kín sang thanh riêng phía trên để mở R1 chung cho R3/R4. R3 và R6 cùng giữ thanh L S2 bằng hai pin song song khác cao độ, liên hệ phần trên và dưới; đo từng pin còn giữ ở pha trượt. R4 kín vẫn giữ R5 và L S6 sau khi R1 bị phá, chưa tự hoàn thành. R7 nhận cả R6/R9, thêm cửa L có ngàm qua khe, các nguồn cần quay lại khi mở đầu ra. Không Guide dư trên thanh nhận pin; thanh mới cardinal. Có Bom, không Booster/Xích, chưa GD duyệt. r02+ thay r01 về đề xuất: chuyển vòng lớn từ R4 sang receiver Bom R1 để không ép pin tối thiểu giữa hai vòng lớn; gập S6 lên tránh thân R9. Giữ nguyên r01 lỗi. r03 đưa Guide S4 ra xa góc gập để đủ ngàm, thay r02 về đề xuất. r04 thêm R3→R6 để R6 còn nhận pin khi đã mở R7 và S2, cần quay R6 thật qua cửa S4; nối vòng phụ thuộc giữa hai nguồn của thanh chung. Thay r03 về đề xuất, không ghi đè. r05 bỏ R3→R1 vì đối chứng r04 cho thấy pin này không tạo thay đổi trên tập prefix thực: R3 đã bị S2/R6 giữ, R1 vẫn nhận R4. Bom mở liên kết R4→R1; R4 tiếp tục bị giữ ở R5/S6. Thay r04 về đề xuất, giữ counterexample.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 2.85,
+      "y": 9.8,
+      "gapDir": 90,
+      "gap": 0,
+      "radius": 2.15,
+      "color": "orange"
+    },
+    {
+      "id": "R2",
+      "x": 8.15,
+      "y": 9.8,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 0.75,
+          "targets": [
+            "R5"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 0,
+          "length": 1.35,
+          "targets": [
+            "S8"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R3",
+      "x": -2.45,
+      "y": 9.4854,
+      "gapDir": 90,
+      "gap": 90,
+      "color": "teal",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 180,
+          "length": 1.15,
+          "targets": [
+            "S7"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 270,
+          "length": 1.15,
+          "targets": [
+            "R6"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R4",
+      "x": 2.85,
+      "y": 4.9,
+      "gapDir": 90,
+      "gap": 0,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 0.75,
+          "targets": [
+            "R1"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 0,
+          "length": 1.15,
+          "targets": [
+            "R5"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 270,
+          "length": 1.8,
+          "targets": [
+            "S9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": 8.15,
+      "y": 4.9,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 2.15,
+      "color": "red",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "x": -2.45,
+      "y": 4.5854,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "navy",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "targets": [
+            "R7"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 180,
+          "length": 1.15,
+          "targets": [
+            "S7"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R7",
+      "x": -2.45,
+      "y": 0,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple"
+    },
+    {
+      "id": "R8",
+      "x": 2.85,
+      "y": -2.3708,
+      "gapDir": 0,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 155.9,
+          "length": 2.0561,
+          "targets": [
+            "R7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R9",
+      "x": 8.15,
+      "y": 0,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "orange"
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S3",
+      "x": 3.25,
+      "y": 15.3,
+      "angle": 0,
+      "color": "navy",
+      "path": [
+        [
+          0,
+          -2.6
+        ],
+        [
+          0,
+          2.6
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "guides": [
+        {
+          "x": 3.25,
+          "y": 15.8,
+          "angle": 90
+        }
+      ],
+      "bomb": {
+        "x": 3.25,
+        "y": 13.2167,
+        "radius": 0.64
+      }
+    },
+    {
+      "id": "S7",
+      "x": -6.5,
+      "y": 11,
+      "angle": 0,
+      "color": "orange",
+      "shape": "L",
+      "length": 1.8,
+      "arm": 8.42,
+      "slideAxis": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S8",
+      "x": 11.5,
+      "y": 7,
+      "angle": 90,
+      "color": "blue",
+      "shape": "L",
+      "length": 8.42,
+      "arm": 1.8,
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S9",
+      "x": 5.4,
+      "y": 2,
+      "angle": 270,
+      "color": "red",
+      "shape": "L",
+      "length": 1.8,
+      "arm": 5.4,
+      "slideAxis": [
+        0,
+        1
+      ]
+    }
+  ]
+}

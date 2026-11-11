@@ -1,0 +1,239 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "008",
+  "name": "Level389 — Stop và đường hồi ngoài",
+  "rings": [
+    {
+      "id": "R1",
+      "x": 8.27423,
+      "y": -4.2881935,
+      "gapDir": 89.9371,
+      "gap": 0,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 146.41278,
+          "targets": [
+            "R2"
+          ],
+          "length": 1.1921291
+        },
+        {
+          "id": "newN1",
+          "angle": 322.4314,
+          "targets": [
+            "N1"
+          ],
+          "length": 4.4506097
+        }
+      ],
+      "radius": 1.75,
+      "color": "purple",
+      "collect": true
+    },
+    {
+      "id": "R2",
+      "x": 4.3654766,
+      "y": -1.6924806,
+      "gapDir": 60,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 239.9993,
+          "targets": [
+            "R4"
+          ],
+          "length": 1.30590314
+        }
+      ],
+      "radius": 1.5,
+      "color": "blue",
+      "lockCount": 7
+    },
+    {
+      "id": "R4",
+      "x": 2.0874766,
+      "y": -5.6379805,
+      "gapDir": 0,
+      "gap": 90,
+      "radius": 1.5,
+      "pins": [
+        {
+          "id": "toBridge",
+          "angle": 180,
+          "length": 1.05,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "R6",
+      "x": 6.643377,
+      "y": -9.80208,
+      "gapDir": -90,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 137.572637,
+          "targets": [
+            "R4"
+          ],
+          "length": 2.67219196
+        },
+        {
+          "id": "newN1",
+          "angle": 3.616404,
+          "targets": [
+            "N1"
+          ],
+          "length": 4.397076
+        }
+      ],
+      "radius": 1.75,
+      "color": "red"
+    },
+    {
+      "id": "R7",
+      "x": 10.375377,
+      "y": -12.41518,
+      "gapDir": 0,
+      "gap": 90,
+      "stops": [
+        {
+          "angle": 165,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.5,
+      "pins": [],
+      "color": "blue",
+      "lockCount": 4
+    },
+    {
+      "id": "R8",
+      "x": 2.9113766,
+      "y": -12.41518,
+      "gapDir": 80,
+      "gap": 90,
+      "stops": [
+        {
+          "angle": 15,
+          "length": 1.47
+        }
+      ],
+      "radius": 1.75,
+      "pins": [
+        {
+          "id": "returnR9",
+          "angle": 326.72216,
+          "targets": [
+            "R9"
+          ],
+          "length": 0.7140099
+        },
+        {
+          "id": "toBridge",
+          "angle": 180,
+          "length": 1.6239,
+          "targets": [
+            "Bridge"
+          ]
+        }
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "R9",
+      "x": 6.643377,
+      "y": -14.86458,
+      "gapDir": -147,
+      "gap": 90,
+      "pins": [
+        {
+          "id": "p2",
+          "angle": 33.27784,
+          "targets": [
+            "R7"
+          ],
+          "length": 0.9640099
+        },
+        {
+          "id": "newN2",
+          "angle": 357.0176,
+          "targets": [
+            "N2"
+          ],
+          "length": 4.6418805
+        }
+      ],
+      "radius": 1.75,
+      "color": "red"
+    },
+    {
+      "id": "N1",
+      "x": 14.77423,
+      "y": -9.288194,
+      "radius": 1.75,
+      "gap": 90,
+      "gapDir": 88,
+      "pins": [
+        {
+          "id": "newN2",
+          "angle": 270,
+          "targets": [
+            "N2"
+          ],
+          "length": 2.5
+        }
+      ],
+      "color": "purple",
+      "collect": true
+    },
+    {
+      "id": "N2",
+      "x": 14.77423,
+      "y": -15.288194,
+      "radius": 1.5,
+      "gap": 90,
+      "gapDir": 36,
+      "pins": [],
+      "color": "blue",
+      "collect": true
+    }
+  ],
+  "sticks": [
+    {
+      "id": "Bridge",
+      "x": -0.7125234,
+      "y": -9.0265805,
+      "angle": 0,
+      "path": [
+        [
+          0,
+          -5.0886
+        ],
+        [
+          0,
+          5.0886
+        ],
+        [
+          -2.5,
+          5.0886
+        ]
+      ],
+      "slideAxis": [
+        0,
+        1
+      ],
+      "color": "orange"
+    }
+  ],
+  "author": "Codex / GD authoring",
+  "notes": "Review copy / position389 / source ID143. Geometry unchanged; Specific is a manifest/name tag, not a runtime mechanic. Source notes follow:\nNguồn kín trên và cửa đáy chia sẻ nhánh trái mới; thanh bên giữ hai tầng Stop. Bỏ R5, thêm N1/N2 trái; nối R1→N1, R9→N2; thu R2, dời R1, đổi thanh bên thành L. Quan hệ cuối thêm: R1→N1, R6→N1, R9→N2, N1→N2; bỏ: R6→R5 Phản chiếu cứng x và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest."
+}

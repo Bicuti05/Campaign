@@ -1,0 +1,452 @@
+{
+  "format": "turp-design",
+  "version": 1,
+  "levelId": "175",
+  "name": "Level369 — Cửa chung hai thanh",
+  "notes": "Review copy / position369 / source ID248. Geometry unchanged; Specific is a manifest/name tag, not a runtime mechanic. Source notes follow:\nR5 giữ W1, W1 giữ W2/S6; W2 giữ S7 dùng chung R1. Thay U1/U2, thêm S7 dùng chung R1/W2; đổi cỡ R1/R10, giữ ba Stop/Guide. Quan hệ cuối thêm: R1→S7, R5→W1, W1→W2, W1→S6, W2→S7; bỏ: R5→U1, U1→U2, U1→S6, U2→S6 Phản chiếu cứng y và căn tâm bounding box với nguồn để so cùng camera/tỷ lệ; không đổi khoảng cách nội bộ. GD tự giải; nguồn proposal chưa duyệt; ID provisional; proof:null; chưa Unity playtest.",
+  "rings": [
+    {
+      "id": "R1",
+      "x": -6.9835,
+      "y": -10.2852,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 8.054,
+          "length": 4.8381,
+          "targets": [
+            "R2"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 90,
+          "length": 7.8091,
+          "targets": [
+            "S6"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R2",
+      "x": 1.5199,
+      "y": -9.0819,
+      "gapDir": 92,
+      "gap": 90,
+      "color": "green"
+    },
+    {
+      "id": "R3",
+      "x": -2.2159,
+      "y": -18.0529,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 32.9998,
+          "length": 0.8059,
+          "targets": [
+            "R4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "x": 1.605,
+      "y": -15.5716,
+      "gapDir": 269,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 0,
+          "length": 0.5124,
+          "targets": [
+            "R5"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "angle": 67,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "x": 5.8674,
+      "y": -15.5716,
+      "gapDir": 270,
+      "gap": 0,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 270,
+          "length": 0.8059,
+          "targets": [
+            "R6"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 90,
+          "length": 0.8059,
+          "targets": [
+            "R7"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 26.1503,
+          "length": 3.2737,
+          "targets": [
+            "R12"
+          ]
+        }
+      ],
+      "bomb": {
+        "x": 4.8461,
+        "y": -16.9393
+      }
+    },
+    {
+      "id": "R6",
+      "x": 5.8674,
+      "y": -20.1275,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "purple",
+      "stops": [
+        {
+          "angle": 140,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "x": 5.8674,
+      "y": -11.0157,
+      "gapDir": 180,
+      "gap": 90,
+      "color": "purple"
+    },
+    {
+      "id": "R8",
+      "x": 1.605,
+      "y": -22.7895,
+      "gapDir": 171,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 31.986,
+          "length": 1.2754,
+          "targets": [
+            "R6"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "angle": 55,
+          "length": 1.47
+        }
+      ]
+    },
+    {
+      "id": "R9",
+      "x": 1.605,
+      "y": -27.3454,
+      "gapDir": 270,
+      "gap": 90,
+      "color": "purple",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 0.8059,
+          "targets": [
+            "R8"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 0,
+          "length": 0.8059,
+          "targets": [
+            "R11"
+          ]
+        },
+        {
+          "id": "p3",
+          "angle": 180,
+          "length": 1.0559,
+          "targets": [
+            "R10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "x": -2.9509,
+      "y": -27.3454,
+      "gapDir": 180,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 45,
+          "length": 2.943,
+          "targets": [
+            "R8"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R11",
+      "x": 6.1609,
+      "y": -27.3454,
+      "gapDir": 359,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "targets": [
+            "S3"
+          ]
+        }
+      ],
+      "collect": true
+    },
+    {
+      "id": "R12",
+      "x": 12.1722,
+      "y": -12.4761,
+      "gapDir": 269,
+      "gap": 90,
+      "color": "green",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 113.1986,
+          "length": 4.1158,
+          "targets": [
+            "R13"
+          ]
+        },
+        {
+          "id": "p2",
+          "angle": 0,
+          "length": 2.8443,
+          "targets": [
+            "S5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R13",
+      "x": 9.1722,
+      "y": -5.4761,
+      "gapDir": 239,
+      "gap": 90,
+      "radius": 1.5,
+      "color": "orange",
+      "pins": [
+        {
+          "id": "p1",
+          "angle": 90,
+          "length": 3.25,
+          "targets": [
+            "S6"
+          ]
+        }
+      ]
+    }
+  ],
+  "sticks": [
+    {
+      "id": "S1",
+      "x": 2.8531,
+      "y": -11.5276,
+      "angle": 0,
+      "color": "blue",
+      "path": [
+        [
+          1.75,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -2,
+          -2
+        ]
+      ],
+      "guides": [
+        {
+          "x": 2.6551635,
+          "y": -11.527649,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "x": 0.4716,
+      "y": -20.1109,
+      "angle": 0,
+      "color": "blue",
+      "shape": "straight",
+      "length": 5.1666,
+      "guides": [
+        {
+          "x": 0.5341,
+          "y": -20.1109,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "x": 5.6922,
+      "y": -24.51,
+      "angle": 0,
+      "color": "blue",
+      "path": [
+        [
+          -2.2917,
+          0
+        ],
+        [
+          2.5417,
+          0
+        ],
+        [
+          2.5417,
+          3.5
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S4",
+      "x": 1.5216,
+      "y": -7.2931,
+      "angle": 0,
+      "color": "blue",
+      "path": [
+        [
+          0,
+          -2.5833
+        ],
+        [
+          0,
+          3.2
+        ]
+      ],
+      "guides": [
+        {
+          "x": 1.5216,
+          "y": -8.1473,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "x": 17.0165,
+      "y": -20.2852,
+      "angle": 0,
+      "color": "blue",
+      "path": [
+        [
+          0,
+          5.2869
+        ],
+        [
+          0,
+          18
+        ],
+        [
+          3.5,
+          18
+        ]
+      ],
+      "slideAxis": [
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "S6",
+      "x": 0.1722,
+      "y": -0.4761,
+      "angle": 0,
+      "color": "blue",
+      "path": [
+        [
+          -10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          2
+        ]
+      ],
+      "slideAxis": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "GUIDED_NEW_0",
+      "x": 8.575414744320277,
+      "y": -28.276935765385787,
+      "angle": 90,
+      "shape": "straight",
+      "length": 3.8,
+      "slideAxis": [
+        1,
+        0
+      ],
+      "guides": [
+        {
+          "x": 8.575414744320277,
+          "y": -28.276935765385787,
+          "angle": 90
+        }
+      ],
+      "color": "blue"
+    }
+  ]
+}

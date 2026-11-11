@@ -1,0 +1,15 @@
+{
+  "chain_positions": [101, 102, 108, 118, 131, 145, 158, 198],
+  "chain_rings_per_level": 2,
+  "chain_placement": "Two well-separated rings spread across board; exclude fish rings and outer rings containing smaller rings.",
+  "chain_behavior": "While lock count > 0, both rotation and board exit are locked. Each other Ring or Stick exiting reduces count by one.",
+  "chain_count": "Choose per level according to opening route and target difficulty. Solve and simulate after applying; no fixed count schedule.",
+  "fish_from_position": 11,
+  "fish_preferred_count": 3,
+  "fish_allowed_count": [0,1,2,3],
+  "fish_location": "Ring center; collect:true",
+  "fish_priority": ["clean closed ring", "clean open ring", "only stick slide corridor intersects"],
+  "fish_initial_coverage": "No initial coverage by ring, stick, pin, StopPin, jaw or bomb.",
+  "fish_sweep": "Use pin/bomb sweep-risk positions only when better choices exhausted.",
+  "fish_alignment": "Avoid horizontal/vertical alignment as secondary preference."
+}
